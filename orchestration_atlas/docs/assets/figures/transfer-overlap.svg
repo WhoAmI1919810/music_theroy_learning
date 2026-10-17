@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 500" role="img" aria-labelledby="title desc">
+<title id="title">乐器转接的交叠与留缝</title>
+<desc id="desc">平滑转接让前后乐器短暂交叠；需要清晰断句或重新起音时留出间隙。</desc>
+<rect width="1100" height="500" fill="#fffdf8"/>
+<text font-family="'Noto Serif SC','Source Han Serif SC','Songti SC',serif" font-size="22" font-weight="700" fill="#172123" text-anchor="start"><tspan x="28" y="36">转接方式由断句目标决定：平滑交叠或清晰留缝</tspan></text>
+<text font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="12" font-weight="400" fill="#66716d" text-anchor="start"><tspan x="28" y="62.0">交叠让两件乐器在换手处同时发声；留缝保留重复音、断句或发音法的边界。</tspan></text>
+<text font-family="'Noto Serif SC','Source Han Serif SC','Songti SC',serif" font-size="14" font-weight="700" fill="#172123" text-anchor="start"><tspan x="62" y="94">平滑衔接：交叠</tspan></text>
+<line x1="84" y1="346" x2="500" y2="346" stroke="#d5cbbb" stroke-width="1"/>
+<rect x="309" y="130" width="41" height="216" fill="#2c6c68" opacity=".1"/>
+<text x="329" y="154" text-anchor="middle" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="10" font-weight="700" fill="#2c6c68">交叠</text>
+<path d="M 84 346 C 102 175, 139 157, 176 157 L 327 157 C 343 182, 350 316, 355 346 Z" fill="#2c6c68" fill-opacity=".18" stroke="#2c6c68" stroke-width="1.8"/>
+<path d="M 309 346 C 319 194, 339 164, 363 164 C 492 180, 500 301, 500 346 Z" fill="#bb5d2b" fill-opacity=".18" stroke="#bb5d2b" stroke-width="1.8"/>
+<text x="118" y="147" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="11" font-weight="700" fill="#2c6c68">A 渐退</text>
+<text x="424" y="154" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="11" font-weight="700" fill="#bb5d2b">B 进入</text>
+<text font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="10" font-weight="400" fill="#66716d" text-anchor="start"><tspan x="62" y="374">适合长线、连奏与同质音色。交叠长度取决于起音速度、力度与音色差异。</tspan></text>
+<text font-family="'Noto Serif SC','Source Han Serif SC','Songti SC',serif" font-size="14" font-weight="700" fill="#172123" text-anchor="start"><tspan x="578" y="94">需要清晰断开：留缝</tspan></text>
+<line x1="600" y1="346" x2="1016" y2="346" stroke="#d5cbbb" stroke-width="1"/>
+<rect x="871" y="130" width="9" height="216" fill="#9e4d5b" opacity=".08"/>
+<line x1="875.5" y1="140" x2="875.5" y2="346" stroke="#9e4d5b" stroke-width="1.3" stroke-dasharray="4 4"/>
+<text x="875.5" y="154" text-anchor="middle" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="10" font-weight="700" fill="#9e4d5b">留缝</text>
+<path d="M 600 346 C 618 175, 655 157, 692 157 L 843 157 C 859 182, 866 316, 871 346 Z" fill="#2c6c68" fill-opacity=".18" stroke="#2c6c68" stroke-width="1.8"/>
+<path d="M 880 346 C 890 194, 910 164, 934 164 C 1008 180, 1016 301, 1016 346 Z" fill="#bb5d2b" fill-opacity=".18" stroke="#bb5d2b" stroke-width="1.8"/>
+<text x="634" y="147" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="11" font-weight="700" fill="#2c6c68">A 渐退</text>
+<text x="940" y="154" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="11" font-weight="700" fill="#bb5d2b">B 进入</text>
+<text font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="10" font-weight="400" fill="#66716d" text-anchor="start"><tspan x="578" y="374">适合同音重复、断奏、句法分界或前后乐器起音差异很大的情况。</tspan></text>
+<text font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="12" font-weight="700" fill="#172123" text-anchor="start"><tspan x="28" y="434">核对顺序：实际响度 → 起音速度 → 音区与音色 → 交叠长度。</tspan></text>
+<text font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="11" font-weight="400" fill="#66716d" text-anchor="start"><tspan x="28" y="458">例：低音区长笛独奏约 72–75 分贝，难以接续大管 80 分贝以上的声压；此时换双簧管或单簧管，比只写一个力度记号可靠。</tspan></text>
+<text font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="10" font-weight="400" fill="#66716d" text-anchor="start"><tspan x="28" y="478">依据：杨立青中册 PDF p.6；施咏康 PDF p.448。详见手册对应章节的论点链接。</tspan></text>
+</svg>

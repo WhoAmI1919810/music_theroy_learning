@@ -1,0 +1,294 @@
+:root{
+  --ink:#172123;--ink-soft:#344649;--paper:#fffdf7;--bg:#ece7dc;--wash:#f5f0e6;
+  --line:#d5cbbb;--line-soft:#e6ded1;--accent:#bb5d2b;--accent-soft:#f3dfcf;
+  --teal:#2c6c68;--teal-soft:#dcebe7;--gold:#a47a2e;--danger:#9f3f3a;
+  --shadow:0 18px 54px rgba(38,31,22,.08);--radius:16px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.65 "Noto Sans SC","Source Han Sans SC","Microsoft YaHei",sans-serif}
+button,input,select,textarea{font:inherit;color:inherit}
+button{cursor:pointer}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+.app-header{display:flex;align-items:center;justify-content:space-between;gap:28px;padding:22px clamp(18px,4vw,54px);background:linear-gradient(120deg,#142226,#203538 62%,#2e3b35);color:#f9f5ea}
+.brand{display:flex;align-items:center;gap:15px;min-width:0}
+.brand-mark{display:grid;place-items:center;width:48px;height:48px;border:1px solid rgba(255,255,255,.35);border-radius:50%;font:700 22px/1 Georgia,serif;color:#f4c89a;background:rgba(255,255,255,.04)}
+.brand h1{margin:0;font:600 25px/1.2 "Noto Serif SC","Source Han Serif SC","Songti SC",serif;letter-spacing:.02em}
+.brand p{margin:3px 0 0;color:#c7d3ce;font-size:12px;letter-spacing:.05em}
+.header-controls{display:flex;align-items:center;gap:14px;flex-wrap:wrap;justify-content:flex-end}
+.compact-field{display:flex;align-items:center;gap:6px;color:#cbd6d1;font-size:12px}
+.compact-field select{min-width:130px;border:1px solid rgba(255,255,255,.22);border-radius:8px;background:#203236;color:#fff8ea;padding:7px 28px 7px 9px}
+.header-link{border:1px solid rgba(255,255,255,.22);border-radius:8px;background:transparent;color:#f5eee2;padding:7px 11px;font-size:12px;text-decoration:none}
+.header-link:hover{background:rgba(255,255,255,.08);text-decoration:none}
+.tabs{display:flex;gap:4px;padding:0 clamp(18px,4vw,54px);background:#f8f4ec;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:30;overflow-x:auto}
+.tab{border:0;border-bottom:3px solid transparent;background:transparent;padding:14px 18px 12px;color:#63706f;font-weight:600;white-space:nowrap}
+.tab:hover{color:var(--ink)}
+.tab.active{border-bottom-color:var(--accent);color:var(--ink)}
+main{max-width:1500px;margin:0 auto;padding:30px clamp(16px,3.4vw,46px) 60px}
+.tab-panel{display:none;animation:fade .18s ease}
+.tab-panel.active{display:block}
+@keyframes fade{from{opacity:0;transform:translateY(3px)}to{opacity:1;transform:none}}
+.panel{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow)}
+.panel-head{display:flex;align-items:flex-start;justify-content:space-between;gap:16px;margin-bottom:16px}
+.panel-head h2{margin:2px 0 0;font:600 21px/1.35 "Noto Serif SC","Source Han Serif SC","Songti SC",serif}
+.eyebrow{margin:0;color:var(--accent);font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase}
+.muted{color:#78817d;font-size:12px}
+.lead{max-width:760px;color:var(--ink-soft);font-size:16px;line-height:1.8}
+.footnote{margin:12px 0 0;color:#737b77;font-size:12px;line-height:1.6}
+.hero{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(330px,.9fr);gap:34px;padding:38px;overflow:hidden;position:relative;background:radial-gradient(circle at 100% 0,rgba(187,93,43,.11),transparent 42%),var(--paper)}
+.hero h2{max-width:680px;margin:10px 0 14px;font:600 clamp(30px,4vw,52px)/1.2 "Noto Serif SC","Source Han Serif SC","Songti SC",serif;letter-spacing:-.02em}
+.hero-actions{display:flex;gap:10px;margin-top:24px;flex-wrap:wrap}
+.primary,.secondary{border:1px solid transparent;border-radius:9px;padding:10px 16px;font-weight:650;transition:.16s ease}
+.primary{background:var(--accent);color:white;box-shadow:0 7px 18px rgba(187,93,43,.2)}
+.primary:hover{background:#9e4c21;transform:translateY(-1px)}
+.secondary{background:transparent;border-color:var(--line);color:var(--ink)}
+.secondary:hover{background:var(--wash);border-color:#bfb29f}
+.small{padding:7px 11px;font-size:12px;border-radius:7px}
+.text-button{border:0;background:transparent;color:var(--accent);font-size:12px;font-weight:700;padding:5px}
+.signal-figure{border-left:1px solid var(--line);padding-left:26px;display:flex;flex-direction:column;justify-content:center;gap:2px}
+.signal-row{display:grid;grid-template-columns:30px 105px minmax(0,1fr);align-items:center;gap:10px;padding:13px 0;border-bottom:1px solid var(--line-soft)}
+.signal-row:last-child{border-bottom:0}
+.signal-row span{font:700 11px/1 ui-monospace,Consolas,monospace;color:var(--accent)}
+.signal-row b{font-size:14px}
+.signal-row small{color:#727b77;font-size:12px}
+.overview-grid{display:grid;grid-template-columns:1.35fr .65fr;gap:18px;margin-top:18px}
+.wide-panel{grid-column:1/-1}
+.overview-grid>.panel{padding:24px}
+.period-timeline{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.period-card{border:1px solid var(--line);border-radius:12px;background:var(--wash);padding:16px;text-align:left;transition:.16s ease}
+.period-card:hover,.period-card.active{border-color:var(--accent);background:var(--accent-soft);transform:translateY(-1px)}
+.period-card b{display:block;font:600 18px/1.3 "Noto Serif SC","Songti SC",serif}
+.period-card span{display:block;margin-top:4px;color:var(--accent);font-size:11px;font-weight:700}
+.period-card small{display:block;margin-top:8px;color:#65706c;font-size:12px;line-height:1.55}
+.period-detail{margin-top:16px;padding:16px 18px;border-left:3px solid var(--accent);background:var(--wash);border-radius:0 10px 10px 0}
+.period-detail p{margin:0;color:var(--ink-soft)}
+.period-detail ul{margin:10px 0 0;padding-left:20px;columns:2;column-gap:30px;color:#58645f;font-size:13px}
+.formula-list{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.formula-item{border:1px solid var(--line-soft);border-radius:10px;padding:14px;background:var(--wash)}
+.formula-item b{display:block;font:600 16px "Noto Serif SC","Songti SC",serif;color:var(--teal)}
+.formula-item span{display:block;margin-top:5px;font-size:12px;color:#65706c}
+.mini-card-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
+.mini-card{border:1px solid var(--line-soft);border-radius:11px;background:#fbf9f3;padding:14px;text-align:left}
+.mini-card:hover{border-color:#bbae9a;background:white}
+.mini-card b{display:block;font-size:13px;line-height:1.45}
+.mini-card span{display:block;margin-top:5px;color:#6d7773;font-size:11px;line-height:1.55}
+
+/* Studio */
+.studio-layout{display:grid;grid-template-columns:360px minmax(0,1fr);gap:18px;align-items:start}
+.studio-layout>*{min-width:0}
+.input-panel{padding:20px;position:sticky;top:70px;max-height:calc(100vh - 92px);overflow:auto;min-width:0}
+.preset-row{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:16px;min-width:0;max-width:100%}
+.preset-button{border:1px solid var(--line);border-radius:999px;background:white;padding:6px 10px;font-size:11px;color:#596461}
+.preset-button:hover,.preset-button.active{background:var(--teal);border-color:var(--teal);color:white}
+.layer-editor{display:flex;flex-direction:column;gap:10px;min-width:0}
+.layer-card{border:1px solid var(--line-soft);border-radius:11px;background:#fbf9f4;padding:12px;min-width:0}
+.layer-card-head{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:9px}
+.role-tag{display:inline-flex;align-items:center;gap:6px;font-weight:700;font-size:12px}
+.role-dot{width:8px;height:8px;border-radius:50%;background:var(--accent)}
+.remove-layer{border:0;background:transparent;color:#999;font-size:18px;line-height:1;padding:2px 5px}
+.remove-layer:hover{color:var(--danger)}
+.field-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+.mini-field{display:flex;flex-direction:column;gap:3px;font-size:10px;color:#7b817e}
+.mini-field select{border:1px solid var(--line);background:white;border-radius:6px;padding:5px 7px;font-size:12px;width:100%;min-width:0}
+.range-line{display:grid;grid-template-columns:22px minmax(0,1fr) 34px;align-items:center;gap:5px;margin-top:6px;min-width:0}
+.range-line input[type=range]{width:100%;min-width:0;accent-color:var(--accent)}
+.range-line span{font:600 10px/1 ui-monospace,Consolas,monospace;color:#646d69}
+.range-line .range-label{font:700 9px/1 "Noto Sans SC","Microsoft YaHei",sans-serif;color:#8b908d;letter-spacing:.04em}
+.note-readout{display:flex;justify-content:space-between;margin-top:3px;color:#69736f;font-size:10px}
+.layer-sliders{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin-top:8px}
+.slider-field{font-size:10px;color:#7c837f;min-width:0}
+.slider-field output{float:right;color:var(--ink);font-weight:700}
+.slider-field input{display:block;width:100%;min-width:0;margin-top:3px;accent-color:var(--teal)}
+.input-actions{display:flex;gap:7px;margin-top:12px}
+.output-area{min-width:0;display:flex;flex-direction:column;gap:14px}
+.result-toolbar{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 16px;flex-wrap:wrap}
+.plan-tabs{display:flex;gap:4px;padding:3px;border-radius:9px;background:var(--wash)}
+.plan-tab{border:0;border-radius:7px;background:transparent;padding:8px 12px;font-size:12px;font-weight:700;color:#6c7672;text-align:left}
+.plan-tab b{display:block;font-size:12px}.plan-tab small{display:block;margin-top:2px;color:#8a928e;font-size:9px;font-weight:500}.plan-tab.active small{color:#697470}
+.plan-tab.active{background:white;color:var(--ink);box-shadow:0 2px 8px rgba(30,24,18,.08)}
+.result-actions{display:flex;gap:7px}
+.result-summary{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
+.metric{border:1px solid var(--line);border-radius:11px;background:var(--paper);padding:13px 15px}
+.metric b{display:block;font:600 24px/1.2 "Noto Serif SC","Songti SC",serif;color:var(--teal)}
+.metric span{display:block;margin-top:2px;color:#78817d;font-size:10px;letter-spacing:.05em}
+.result-grid{display:grid;grid-template-columns:minmax(0,1.45fr) minmax(280px,.55fr);gap:14px}
+.register-panel,.diagnostic-panel,.assignment-panel{padding:20px}
+.register-map{min-height:320px}
+.register-map svg{display:block;width:100%;height:auto}
+.diagnostics{display:flex;flex-direction:column;gap:8px;max-height:390px;overflow:auto;padding-right:3px}
+.diagnostic{border:1px solid var(--line-soft);border-left:3px solid var(--teal);border-radius:0 8px 8px 0;background:var(--wash);padding:10px 11px}
+.diagnostic.warn{border-left-color:var(--danger);background:#fbf0ec}
+.diagnostic b{display:block;font-size:12px}
+.diagnostic span{display:block;margin-top:3px;color:#6e7773;font-size:11px;line-height:1.55}
+.assignment-list{display:flex;flex-direction:column;gap:11px}
+.assignment-row{display:grid;grid-template-columns:150px minmax(0,1fr);gap:14px;border-bottom:1px solid var(--line-soft);padding-bottom:11px}
+.assignment-row:last-child{border-bottom:0;padding-bottom:0}
+.assignment-label b{display:block;font:600 15px "Noto Serif SC","Songti SC",serif}
+.assignment-label span{display:block;color:#78817d;font-size:10px;margin-top:2px}
+.assignment-instruments{display:flex;flex-wrap:wrap;gap:6px}
+.instrument-chip{border:1px solid var(--line);border-radius:8px;background:#fbf9f4;padding:7px 9px;min-width:190px;max-width:310px}
+.instrument-chip b{display:block;font-size:12px}
+.instrument-chip span{display:block;color:#737c78;font-size:10px;line-height:1.45;margin-top:2px}
+.instrument-chip.melody{border-color:#d6a27e;background:#fff5ec}
+.instrument-chip.bass{border-color:#9cbab4;background:#eff7f4}
+.instrument-chip.rhythm{border-color:#c4b071;background:#fbf7e8}
+.candidate-details{margin-top:7px;border-top:1px dashed var(--line-soft);padding-top:5px;font-size:9px;color:#6f7874}
+.candidate-details summary{cursor:pointer;color:var(--teal);font-weight:700}
+.feature-grid{display:grid;grid-template-columns:1fr 1fr;gap:3px 8px;margin-top:7px}
+.feature-grid span{display:flex;justify-content:space-between;gap:5px;border-bottom:1px dotted var(--line-soft);padding-bottom:2px}
+.feature-grid b{color:var(--ink-soft);font-weight:700}
+.candidate-list{margin-top:7px}.candidate-list ol{list-style:none;margin:4px 0 0;padding:0}.candidate-list li{display:grid;grid-template-columns:minmax(0,1fr) 34px;gap:4px;padding:3px 0;border-bottom:1px dotted var(--line-soft)}.candidate-list li small{grid-column:1/-1;color:#8a918d;font-size:8px}.candidate-list li b{text-align:right;color:var(--accent)}
+.score-note{margin:6px 0 0!important;color:#8a918d!important;font-size:8px!important;line-height:1.45!important}
+
+/* Map */
+.map-toolbar{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:12px 15px;margin-bottom:14px;flex-wrap:wrap}
+.period-filter,.filter-group{display:flex;gap:5px;flex-wrap:wrap}
+.filter-button{border:1px solid var(--line);border-radius:999px;background:white;padding:6px 11px;font-size:11px;color:#64706c}
+.filter-button.active,.filter-button:hover{background:var(--ink);border-color:var(--ink);color:white}
+.map-legend{display:flex;gap:10px;flex-wrap:wrap;color:#707975;font-size:10px}
+.map-legend span{display:flex;align-items:center;gap:4px}
+.map-period-note{flex-basis:100%;margin:0;padding-top:9px;border-top:1px solid var(--line-soft);color:#707975;font-size:10px;line-height:1.6}
+.legend-dot{width:8px;height:8px;border-radius:50%;display:inline-block}
+.legend-dot.acoustics{background:#b86635}.legend-dot.instrument{background:#a47a2e}.legend-dot.structure{background:#78699a}.legend-dot.combination{background:#2c6c68}.legend-dot.balance{background:#4b7b9c}.legend-dot.time{background:#9e4d5b}.legend-dot.notation{background:#6c7468}
+.map-layout{display:grid;grid-template-columns:minmax(0,1fr) 360px;gap:14px;align-items:start}
+.map-canvas{padding:18px;overflow:auto}
+.theory-map{position:relative;display:grid;grid-template-columns:repeat(7,minmax(132px,1fr));gap:10px;min-width:1120px}
+.map-edges{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:0;overflow:visible}
+.map-edges path{fill:none;stroke:#b9b1a4;stroke-width:1.1;opacity:.55;marker-end:url(#map-arrow)}
+.map-edges path.active{stroke:var(--accent);stroke-width:2;opacity:1}
+.map-edges path.period-dim:not(.active){opacity:.13}
+.map-column{position:relative;z-index:1;display:flex;flex-direction:column;gap:8px}
+.map-column-head{position:sticky;top:0;background:var(--paper);padding:5px 3px 8px;border-bottom:1px solid var(--line);z-index:2}
+.map-column-head b{display:block;font-size:12px}
+.map-column-head span{display:block;margin-top:3px;color:#818783;font-size:9px;line-height:1.45}
+.node-card{border:1px solid var(--line-soft);border-left:3px solid #b86635;border-radius:8px;background:#fcfaf5;padding:9px;text-align:left;transition:.14s ease}
+.node-card:hover,.node-card.active{background:white;border-color:#b9a98e;transform:translateX(2px);box-shadow:0 5px 14px rgba(39,32,22,.06)}
+.node-card.connected{border-color:#b66a3b;background:#fff8ee}
+.node-card.period-dim:not(.active):not(.connected){opacity:.35;filter:saturate(.45)}
+.node-card.period-dim:not(.active):not(.connected):hover{opacity:.9;filter:none}
+.node-card b{display:block;font-size:10px;line-height:1.4}
+.node-card span{display:block;margin-top:3px;color:#757d79;font-size:8px;line-height:1.45}
+.node-card[data-layer=acoustics]{border-left-color:#b86635}.node-card[data-layer=instrument]{border-left-color:#a47a2e}.node-card[data-layer=structure]{border-left-color:#78699a}.node-card[data-layer=combination]{border-left-color:#2c6c68}.node-card[data-layer=balance]{border-left-color:#4b7b9c}.node-card[data-layer=time]{border-left-color:#9e4d5b}.node-card[data-layer=notation]{border-left-color:#6c7468}
+.map-detail{padding:22px;position:sticky;top:70px;max-height:calc(100vh - 92px);overflow:auto}
+.map-detail h3{margin:5px 0 12px;font:600 24px/1.35 "Noto Serif SC","Songti SC",serif}
+.map-detail h4{margin:18px 0 6px;color:var(--accent);font-size:11px;letter-spacing:.08em;text-transform:uppercase}
+.map-detail p{margin:0;color:#4a5754;font-size:13px}
+.causal-line{display:flex;align-items:center;gap:6px;flex-wrap:wrap;margin:8px 0 12px;padding:9px 10px;border:1px solid var(--line-soft);border-radius:8px;background:var(--wash);font-size:9px;color:#75807b}.causal-line b{color:var(--ink-soft);font-size:10px}.causal-line i{color:var(--accent);font-style:normal}
+.map-detail ul{margin:7px 0 0;padding-left:19px;color:#586460;font-size:12px}
+.map-detail li{margin:4px 0}
+.detail-actions{display:flex;flex-wrap:wrap;gap:5px;margin-top:9px}
+.detail-chip{border:1px solid var(--line);border-radius:999px;background:white;padding:4px 8px;font-size:10px;color:#59635f}
+.detail-chip:hover{border-color:var(--accent);color:var(--accent);text-decoration:none}
+.empty-state{padding:35px 15px;text-align:center;color:#77817d}
+.empty-state h3{margin:12px 0 7px;font:600 20px "Noto Serif SC","Songti SC",serif;color:var(--ink)}
+.empty-state p{margin:0 auto;max-width:270px;font-size:12px}
+.empty-mark{font:400 32px/1 Georgia,serif;color:var(--accent)}
+
+/* Techniques */
+.technique-toolbar{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:13px 15px;margin-bottom:14px;flex-wrap:wrap}
+.search-field{display:flex;align-items:center;gap:8px;color:#7b837f;font-size:11px}
+.search-field input{width:230px;border:1px solid var(--line);border-radius:8px;background:white;padding:7px 10px;font-size:12px}
+.technique-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.technique-card{border:1px solid var(--line);border-radius:12px;background:var(--paper);padding:18px;box-shadow:0 8px 24px rgba(40,32,22,.04);display:flex;flex-direction:column;min-height:270px}
+.technique-card:hover{border-color:#b9a98e}
+.technique-card-head{display:flex;justify-content:space-between;gap:10px;align-items:flex-start}.technique-badges{display:flex;gap:4px;flex-wrap:wrap;justify-content:flex-end}
+.mechanism-id{font:700 10px/1 ui-monospace,Consolas,monospace;color:var(--accent)}
+.technique-card h3{margin:7px 0 10px;font:600 19px/1.35 "Noto Serif SC","Songti SC",serif}
+.technique-card p{margin:0;color:#4e5b57;font-size:12px;line-height:1.7}
+.technique-meta{display:flex;gap:5px;flex-wrap:wrap;margin:10px 0}
+.meta-pill{border-radius:999px;background:var(--wash);padding:3px 7px;color:#737b77;font-size:9px;letter-spacing:.03em}
+.meta-pill.evidence-direct{background:#e1efe8;color:#27624f}.meta-pill.evidence-derived{background:#e8e2f2;color:#594c7b}
+.technique-preview{position:relative;display:block;margin:2px 0 11px;border:1px solid var(--line-soft);border-radius:8px;overflow:hidden;background:#fff}.technique-preview img{display:block;width:100%;max-height:104px;object-fit:cover;object-position:center top}.technique-preview span{position:absolute;right:7px;bottom:6px;border-radius:5px;background:rgba(23,33,35,.78);color:white;padding:2px 6px;font-size:8px}
+.technique-extra{margin-top:auto;border-top:1px solid var(--line-soft);padding-top:10px;display:grid;gap:5px}
+.technique-extra div{display:grid;grid-template-columns:48px minmax(0,1fr);gap:7px;font-size:10px;color:#6b7571}
+.technique-extra b{color:var(--ink-soft);font-size:10px}
+.technique-links{display:flex;gap:8px;margin-top:11px;flex-wrap:wrap}
+.technique-links a{font-size:10px}
+
+/* Sources */
+.source-intro{display:flex;justify-content:space-between;gap:24px;padding:26px;margin-bottom:14px}
+.source-intro h2{margin:5px 0 7px;font:600 28px/1.3 "Noto Serif SC","Songti SC",serif}
+.source-intro p{max-width:760px;margin:0;color:#596662;font-size:13px}
+.source-stats{display:flex;gap:8px;flex-wrap:wrap;align-content:center}
+.source-stat{min-width:100px;border:1px solid var(--line);border-radius:10px;background:var(--wash);padding:11px 13px}
+.source-stat b{display:block;font:600 22px/1.1 "Noto Serif SC","Songti SC",serif;color:var(--teal)}
+.source-stat span{display:block;color:#7c837f;font-size:9px;margin-top:3px}
+.source-layout{display:grid;grid-template-columns:320px minmax(0,1fr);gap:14px;align-items:start}
+.book-list{padding:15px;position:sticky;top:70px}
+.book-button{display:block;width:100%;border:0;border-bottom:1px solid var(--line-soft);background:transparent;padding:12px 8px;text-align:left}
+.book-button:last-child{border-bottom:0}
+.book-button:hover,.book-button.active{background:var(--wash);border-radius:8px}
+.book-button b{display:block;font-size:12px}
+.book-button span{display:block;margin-top:3px;color:#78817d;font-size:9px;line-height:1.45}
+.claim-list{padding:20px}
+.claim-card{border-bottom:1px solid var(--line-soft);padding:0 0 18px;margin-bottom:18px}
+.claim-card:last-child{border-bottom:0;margin-bottom:0}
+.claim-card-head{display:flex;align-items:flex-start;justify-content:space-between;gap:12px}
+.claim-card h3{margin:5px 0 8px;font:600 18px/1.45 "Noto Serif SC","Songti SC",serif}
+.claim-card p{margin:0;color:#52605c;font-size:12px}
+.claim-status{border-radius:999px;padding:3px 8px;font-size:9px;white-space:nowrap}
+.claim-status.direct{background:#e1efe8;color:#27624f}.claim-status.derived{background:#e8e2f2;color:#594c7b}.claim-status.pending{background:#f4e6c9;color:#7b5a17}
+.citation{margin-top:10px;border-left:2px solid var(--line);padding-left:12px}
+.citation blockquote{margin:4px 0 5px;color:#68736f;font:12px/1.7 "Noto Serif SC","Songti SC",serif}
+.citation-links{display:flex;gap:8px;flex-wrap:wrap;font-size:10px}
+.citation-links a{border-bottom:1px dotted #c3a58b}
+.citation-preview{margin-top:7px;font-size:10px}.citation-preview summary{cursor:pointer;color:var(--teal)}.citation-preview img{display:block;width:100%;max-height:240px;object-fit:contain;object-position:left top;margin-top:6px;border:1px solid var(--line-soft);border-radius:7px;background:white}
+.footer{display:flex;align-items:center;justify-content:space-between;gap:16px;max-width:1500px;margin:0 auto;padding:22px clamp(16px,3.4vw,46px) 38px;color:#7a817e;font-size:10px;border-top:1px solid rgba(120,108,90,.18)}
+.modal{position:fixed;inset:0;z-index:100;display:grid;place-items:center;background:rgba(20,31,32,.55);padding:18px}
+.modal.hidden{display:none}
+.modal-card{width:min(620px,100%);max-height:85vh;overflow:auto;border-radius:16px;background:var(--paper);box-shadow:0 30px 90px rgba(0,0,0,.25)}
+.modal-head{display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line);padding:18px 22px}
+.modal-head h2{margin:0;font:600 21px "Noto Serif SC","Songti SC",serif}
+.icon-button{border:0;background:transparent;font-size:25px;line-height:1;color:#6f7874}
+.modal-body{padding:18px 22px 24px;font-size:13px;color:#4f5c58}
+.modal-body p{margin:0 0 10px}
+@media (max-width:1180px){
+  .studio-layout{grid-template-columns:315px minmax(0,1fr)}
+  .result-grid{grid-template-columns:1fr}
+  .mini-card-grid{grid-template-columns:repeat(2,1fr)}
+  .technique-grid{grid-template-columns:repeat(2,1fr)}
+  .map-layout{grid-template-columns:1fr}
+  .map-detail{position:relative;top:0;max-height:none}
+}
+@media (max-width:860px){
+  .app-header{align-items:flex-start;flex-direction:column;padding:18px}
+  .header-controls{width:100%;justify-content:flex-start}
+  main{padding:18px 12px 45px}
+  .hero{grid-template-columns:1fr;padding:24px}
+  .hero h2{font-size:33px}
+  .signal-figure{border-left:0;border-top:1px solid var(--line);padding-left:0;padding-top:12px}
+  .overview-grid{grid-template-columns:1fr}
+  .wide-panel{grid-column:auto}
+  .period-timeline{grid-template-columns:1fr}
+  .period-detail ul{columns:1}
+  .studio-layout{grid-template-columns:minmax(0,1fr)}
+  .input-panel{position:relative;top:0;max-height:none}
+  .result-summary{grid-template-columns:repeat(2,1fr)}
+  .result-grid{grid-template-columns:1fr}
+  .assignment-row{grid-template-columns:1fr;gap:7px}
+  .source-layout{grid-template-columns:1fr}
+  .book-list{position:relative;top:0}
+  .source-intro{flex-direction:column;padding:20px}
+  .technique-grid{grid-template-columns:1fr}
+  .mini-card-grid{grid-template-columns:1fr 1fr}
+  .footer{flex-direction:column;align-items:flex-start}
+}
+@media (max-width:520px){
+  .brand h1{font-size:21px}
+  .brand p{font-size:10px}
+  .compact-field{width:100%;justify-content:space-between}
+  .compact-field select{flex:1}
+  .tabs{padding:0 6px}
+  .tab{padding:12px 10px}
+  .period-timeline{grid-template-columns:1fr}
+  .formula-list{grid-template-columns:1fr}
+  .mini-card-grid{grid-template-columns:1fr}
+  .result-summary{grid-template-columns:1fr 1fr}
+  .search-field{width:100%}.search-field input{width:100%}
+}
+@media print{
+  .app-header,.tabs,.header-controls,.result-actions,.input-panel,.footer{display:none!important}
+  body{background:white}.panel{box-shadow:none;border-color:#bbb}main{max-width:none;padding:0}
+  .tab-panel{display:block!important}.tab-panel:not(#panel-overview){page-break-before:always}
+}

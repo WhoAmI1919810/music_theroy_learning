@@ -1,0 +1,3040 @@
+{
+  "version": 1,
+  "note": "Reverse references from source-textbook pages to the claims, examples, period evidence, prose summaries, or representative-page entries in the harmony manual.",
+  "books": {
+    "beethoven_sonata": {
+      "6": [
+        {
+          "kind": "claim",
+          "id": "form.micro-macro",
+          "anchor": "ref-claim-form-micro-macro-p0006",
+          "label": "曲式中的和声策略 · form.micro-macro",
+          "text": "手册提炼：微观和声事件需与宏观调性布局互相校验，才能解释其在曲式中的功能。",
+          "href": "../和声学手册.html#claim-form-micro-macro"
+        },
+        {
+          "kind": "profile",
+          "id": "profile-beethoven_sonata-p0006",
+          "anchor": "ref-profile-profile-beethoven_sonata-p0006",
+          "label": "教材代表页 · 贝多芬研究",
+          "text": "手册将本页列为《贝多芬研究》代表页；该书定位：以贝多芬28首奏鸣曲第一乐章为对象，分析和声技法、调性布局、展开部策略与再现回归，连接古典规范与浪漫扩张。",
+          "href": "../和声学手册.html#book-profiles"
+        }
+      ],
+      "12": [
+        {
+          "kind": "claim",
+          "id": "modal-interchange.beethoven-mode-mixture",
+          "anchor": "ref-claim-modal-interchange-beethoven-mode-mixture-p0012",
+          "label": "同主音调式交替（借用和弦） · modal-interchange.beethoven-mode-mixture",
+          "text": "手册提炼：贝多芬把调式交替用于奏鸣曲式的主题与调性对比，使色彩变化承担结构作用，而非只是局部装饰。",
+          "href": "../和声学手册.html#claim-modal-interchange-beethoven-mode-mixture"
+        }
+      ],
+      "13": [
+        {
+          "kind": "profile",
+          "id": "profile-beethoven_sonata-p0013",
+          "anchor": "ref-profile-profile-beethoven_sonata-p0013",
+          "label": "教材代表页 · 贝多芬研究",
+          "text": "手册将本页列为《贝多芬研究》代表页；该书定位：以贝多芬28首奏鸣曲第一乐章为对象，分析和声技法、调性布局、展开部策略与再现回归，连接古典规范与浪漫扩张。",
+          "href": "../和声学手册.html#book-profiles"
+        }
+      ],
+      "14": [
+        {
+          "kind": "claim",
+          "id": "inversion.harmonic-rhythm-flex",
+          "anchor": "ref-claim-inversion-harmonic-rhythm-flex-p0014",
+          "label": "转位、低音与和声节奏 · inversion.harmonic-rhythm-flex",
+          "text": "手册提炼：和声节奏的宽紧与动静变化形成结构弹性；分析转位与低音时应同时记录和弦更换频率。",
+          "href": "../和声学手册.html#claim-inversion-harmonic-rhythm-flex"
+        }
+      ],
+      "19": [
+        {
+          "kind": "claim",
+          "id": "modulation.transition-dominant",
+          "anchor": "ref-claim-modulation-transition-dominant-p0019",
+          "label": "转调体系：类型、距离与确认 · modulation.transition-dominant",
+          "text": "手册提炼：奏鸣曲式连接部常以转调结束在副部平行调的属和弦，为副部主题建立新调期待。",
+          "href": "../和声学手册.html#claim-modulation-transition-dominant"
+        }
+      ],
+      "20": [
+        {
+          "kind": "claim",
+          "id": "form.development-tonal-plan",
+          "anchor": "ref-claim-form-development-tonal-plan-p0020",
+          "label": "曲式中的和声策略 · form.development-tonal-plan",
+          "text": "手册提炼：奏鸣曲式展开部的调性布局同时影响主题发展与结构分段；调性变化参与大型结构的成立。",
+          "href": "../和声学手册.html#claim-form-development-tonal-plan"
+        },
+        {
+          "kind": "claim",
+          "id": "form.development-conflict",
+          "anchor": "ref-claim-form-development-conflict-p0020",
+          "label": "曲式中的和声策略 · form.development-conflict",
+          "text": "手册提炼：贝多芬把展开部扩展为奏鸣曲式的戏剧重心：其规模、矛盾、动力与调性不稳定性共同形成结构张力。",
+          "href": "../和声学手册.html#claim-form-development-conflict"
+        },
+        {
+          "kind": "profile",
+          "id": "profile-beethoven_sonata-p0020",
+          "anchor": "ref-profile-profile-beethoven_sonata-p0020",
+          "label": "教材代表页 · 贝多芬研究",
+          "text": "手册将本页列为《贝多芬研究》代表页；该书定位：以贝多芬28首奏鸣曲第一乐章为对象，分析和声技法、调性布局、展开部策略与再现回归，连接古典规范与浪漫扩张。",
+          "href": "../和声学手册.html#book-profiles"
+        }
+      ],
+      "81": [
+        {
+          "kind": "profile",
+          "id": "profile-beethoven_sonata-p0081",
+          "anchor": "ref-profile-profile-beethoven_sonata-p0081",
+          "label": "教材代表页 · 贝多芬研究",
+          "text": "手册将本页列为《贝多芬研究》代表页；该书定位：以贝多芬28首奏鸣曲第一乐章为对象，分析和声技法、调性布局、展开部策略与再现回归，连接古典规范与浪漫扩张。",
+          "href": "../和声学手册.html#book-profiles"
+        }
+      ],
+      "91": [
+        {
+          "kind": "profile",
+          "id": "profile-beethoven_sonata-p0091",
+          "anchor": "ref-profile-profile-beethoven_sonata-p0091",
+          "label": "教材代表页 · 贝多芬研究",
+          "text": "手册将本页列为《贝多芬研究》代表页；该书定位：以贝多芬28首奏鸣曲第一乐章为对象，分析和声技法、调性布局、展开部策略与再现回归，连接古典规范与浪漫扩张。",
+          "href": "../和声学手册.html#book-profiles"
+        }
+      ]
+    },
+    "forte_atonal": {
+      "10": [
+        {
+          "kind": "profile",
+          "id": "profile-forte_atonal-p0010",
+          "anchor": "ref-profile-profile-forte_atonal-p0010",
+          "label": "教材代表页 · 福特",
+          "text": "手册将本页列为《福特》代表页；该书定位：以音级集合、标准序/原型、音程向量、不变量、补集、截段与集合复合型分析无调性音乐。",
+          "href": "../和声学手册.html#book-profiles"
+        }
+      ],
+      "15": [
+        {
+          "kind": "example",
+          "id": "M05",
+          "anchor": "ref-example-m05-p0015",
+          "label": "手册案例 M05 · 移位相等：集合的音程不变量",
+          "text": "例5｜韦伯恩《弦乐四重奏五章》Op.5/5\n原书要点：集合 A [2,3,7,8,9] 与 B [0,1,5,6,7] 用来演示移位相等；书内脚注称反行，但按整数直接核对，B=T10(A)。\n机制：移位只改变集合的绝对音高，不改变内部音程与音程向量；A 与 B 若相差固定整数，就属于同一集合类的不同移位。\n读谱：把两集合都写成整数，逐项核对 B 的每个数是否等于 A 加 10；不要被音名、八度或书中“反行”字样带偏。\n用法：分析无调性片段时，先算移位 Tn 与原型，再谈音区、配器造成的听感差异；同一集合不等于同一效果。",
+          "href": "../和声学手册.html#example-m05"
+        }
+      ],
+      "25": [
+        {
+          "kind": "profile",
+          "id": "profile-forte_atonal-p0025",
+          "anchor": "ref-profile-profile-forte_atonal-p0025",
+          "label": "教材代表页 · 福特",
+          "text": "手册将本页列为《福特》代表页；该书定位：以音级集合、标准序/原型、音程向量、不变量、补集、截段与集合复合型分析无调性音乐。",
+          "href": "../和声学手册.html#book-profiles"
+        }
+      ],
+      "28": [
+        {
+          "kind": "profile",
+          "id": "profile-forte_atonal-p0028",
+          "anchor": "ref-profile-profile-forte_atonal-p0028",
+          "label": "教材代表页 · 福特",
+          "text": "手册将本页列为《福特》代表页；该书定位：以音级集合、标准序/原型、音程向量、不变量、补集、截段与集合复合型分析无调性音乐。",
+          "href": "../和声学手册.html#book-profiles"
+        }
+      ],
+      "35": [
+        {
+          "kind": "claim",
+          "id": "set-theory.z-relation",
+          "anchor": "ref-claim-set-theory-z-relation-p0035",
+          "label": "音级集合与集合类 · set-theory.z-relation",
+          "text": "手册提炼：相同音程向量不保证集合等价；4-Z15 与 4-Z29 向量同为 [111111]，却是不同原型，因此向量只能描述音程含量而不能替代集合身份。",
+          "href": "../和声学手册.html#claim-set-theory-z-relation"
+        },
+        {
+          "kind": "profile",
+          "id": "profile-forte_atonal-p0035",
+          "anchor": "ref-profile-profile-forte_atonal-p0035",
+          "label": "教材代表页 · 福特",
+          "text": "手册将本页列为《福特》代表页；该书定位：以音级集合、标准序/原型、音程向量、不变量、补集、截段与集合复合型分析无调性音乐。",
+          "href": "../和声学手册.html#book-profiles"
+        }
+      ],
+      "36": [
+        {
+          "kind": "example",
+          "id": "M06",
+          "anchor": "ref-example-m06-p0036",
+          "label": "手册案例 M06 · Z 关系：不同集合，相同音程向量",
+          "text": "例21｜韦伯恩《三首小品》Op.11/1\n原书要点：6-Z10 的 Z 对应 6-Z39 为 B 与 D 的并集；Z 关系使五个构造连成连锁型。\n机制：Z 关系指两个集合互不包含，却具有相同音程向量；它们音高内容不同，但内部音程分布一致，可形成远层联系。\n读谱：先列 A、B、C、D、E 的集合与 Z 标记；验证 B 与 D 的并集是否得到 6-Z39，再看它们在谱面上的位置与音区。\n用法：需要统一而不重复的集合网络时，可用 Z 对或并集建立远层联系；音程向量负责统一，具体音高与音区负责变化。",
+          "href": "../和声学手册.html#example-m06"
+        }
+      ],
+      "47": [
+        {
+          "kind": "profile",
+          "id": "profile-forte_atonal-p0047",
+          "anchor": "ref-profile-profile-forte_atonal-p0047",
+          "label": "教材代表页 · 福特",
+          "text": "手册将本页列为《福特》代表页；该书定位：以音级集合、标准序/原型、音程向量、不变量、补集、截段与集合复合型分析无调性音乐。",
+          "href": "../和声学手册.html#book-profiles"
+        }
+      ],
+      "95": [
+        {
+          "kind": "profile",
+          "id": "profile-forte_atonal-p0095",
+          "anchor": "ref-profile-profile-forte_atonal-p0095",
+          "label": "教材代表页 · 福特",
+          "text": "手册将本页列为《福特》代表页；该书定位：以音级集合、标准序/原型、音程向量、不变量、补集、截段与集合复合型分析无调性音乐。",
+          "href": "../和声学手册.html#book-profiles"
+        }
+      ],
+      "108": [
+        {
+          "kind": "claim",
+          "id": "set-theory.segmentation",
+          "anchor": "ref-claim-set-theory-segmentation-p0108",
+          "label": "音级集合与集合类 · set-theory.segmentation",
+          "text": "手册提炼：集合分析的起点是截段：先判断哪些音高事件属于同一分析单位；无调性作品缺少功能和声标签，因此截段更需要节奏、织体、音区等证据。",
+          "href": "../和声学手册.html#claim-set-theory-segmentation"
+        },
+        {
+          "kind": "profile",
+          "id": "profile-forte_atonal-p0108",
+          "anchor": "ref-profile-profile-forte_atonal-p0108",
+          "label": "教材代表页 · 福特",
+          "text": "手册将本页列为《福特》代表页；该书定位：以音级集合、标准序/原型、音程向量、不变量、补集、截段与集合复合型分析无调性音乐。",
+          "href": "../和声学手册.html#book-profiles"
+        }
+      ],
+      "109": [
+        {
+          "kind": "claim",
+          "id": "atonal.deep-structure",
+          "anchor": "ref-claim-atonal-deep-structure-p0109",
+          "label": "无调性与自由音高组织 · atonal.deep-structure",
+          "text": "手册提炼：无调性音乐仍有结构，只是结构由截段、集合关系与不变量等非功能关系承担；分析需重建这些关系。",
+          "href": "../和声学手册.html#claim-atonal-deep-structure"
+        },
+        {
+          "kind": "profile",
+          "id": "profile-forte_atonal-p0109",
+          "anchor": "ref-profile-profile-forte_atonal-p0109",
+          "label": "教材代表页 · 福特",
+          "text": "手册将本页列为《福特》代表页；该书定位：以音级集合、标准序/原型、音程向量、不变量、补集、截段与集合复合型分析无调性音乐。",
+          "href": "../和声学手册.html#book-profiles"
+        }
+      ]
+    },
+    "huacui_color": {
+      "5": [
+        {
+          "kind": "period",
+          "id": "commonPractice",
+          "anchor": "ref-period-commonpractice-1-p0005",
+          "label": "历史阶段依据 · 古典与共同实践",
+          "text": "阶段结论：调性中心、功能语法与声部规范\n原文依据：第一阶段，从和声学诞生，到维也纳古典乐派这一时期，作曲家们为人类贡献了功能和声技法。",
+          "href": "../和声学手册.html#period-basis"
+        },
+        {
+          "kind": "period",
+          "id": "expandedTonality",
+          "anchor": "ref-period-expandedtonality-1-p0005",
+          "label": "历史阶段依据 · 调性扩张与半音化",
+          "text": "阶段结论：交替、变和弦、远关系与色彩功能\n原文依据：第二阶段，自浪漫派到印象派的几乎整个19世纪，是和声的功能性逐步减弱、色彩性逐步增强的时期。",
+          "href": "../和声学手册.html#period-basis"
+        },
+        {
+          "kind": "period",
+          "id": "modernPostTonal",
+          "anchor": "ref-period-modernposttonal-1-p0005",
+          "label": "历史阶段依据 · 现代与后调性",
+          "text": "阶段结论：对称音阶、集合、无调性与十二音\n原文依据：第三阶段，20世纪的作曲家们又为人类贡献了无调性、泛调性和声技法。",
+          "href": "../和声学手册.html#period-basis"
+        },
+        {
+          "kind": "profile",
+          "id": "profile-huacui_color-p0005",
+          "anchor": "ref-profile-profile-huacui_color-p0005",
+          "label": "教材代表页 · 色彩和声",
+          "text": "手册将本页列为《色彩和声》代表页；该书定位：以功能、张力、色彩三元框架量化和弦色彩，讨论调式色彩、和弦组与色彩性和声进行。",
+          "href": "../和声学手册.html#book-profiles"
+        }
+      ],
+      "6": [
+        {
+          "kind": "claim",
+          "id": "color-harmony.function-tension-color",
+          "anchor": "ref-claim-color-harmony-function-tension-color-p0006",
+          "label": "色彩和声与调式色彩 · color-harmony.function-tension-color",
+          "text": "手册提炼：和声表现力可拆为功能、张力与色彩三个相互区别又相互渗透的维度，不能把色彩简单等同于“非功能”。",
+          "href": "../和声学手册.html#claim-color-harmony-function-tension-color"
+        },
+        {
+          "kind": "profile",
+          "id": "profile-huacui_color-p0006",
+          "anchor": "ref-profile-profile-huacui_color-p0006",
+          "label": "教材代表页 · 色彩和声",
+          "text": "手册将本页列为《色彩和声》代表页；该书定位：以功能、张力、色彩三元框架量化和弦色彩，讨论调式色彩、和弦组与色彩性和声进行。",
+          "href": "../和声学手册.html#book-profiles"
+        }
+      ],
+      "39": [
+        {
+          "kind": "claim",
+          "id": "color-harmony.characteristic-chords",
+          "anchor": "ref-claim-color-harmony-characteristic-chords-p0039",
+          "label": "色彩和声与调式色彩 · color-harmony.characteristic-chords",
+          "text": "手册提炼：含调式特性音的和弦构成特性和弦组，可用于识别调式色彩并把一般功能和弦与调式标志分开。",
+          "href": "../和声学手册.html#claim-color-harmony-characteristic-chords"
+        },
+        {
+          "kind": "prose",
+          "id": "cite-huacui_color-p0039-1",
+          "anchor": "ref-prose-cite-huacui_color-p0039-1-p0039",
+          "label": "手册正文引用",
+          "text": "再圈特性和弦：华萃康把“包含调式特性音的和弦”统称为特性和弦组（《色彩和声》PDF p.39）。它们最能标记调式身份，也最适合做同主音调式交替与色彩中介。",
+          "href": "../和声学手册.html#cite-huacui_color-p0039-1"
+        }
+      ],
+      "46": [
+        {
+          "kind": "claim",
+          "id": "color-harmony.relative-degree",
+          "anchor": "ref-claim-color-harmony-relative-degree-p0046",
+          "label": "色彩和声与调式色彩 · color-harmony.relative-degree",
+          "text": "手册提炼：和弦的相对色彩度可与功能组位置对应：大调 S 组与 D 组分居主和弦两侧，功能特性与色彩度大体一致。",
+          "href": "../和声学手册.html#claim-color-harmony-relative-degree"
+        },
+        {
+          "kind": "profile",
+          "id": "profile-huacui_color-p0046",
+          "anchor": "ref-profile-profile-huacui_color-p0046",
+          "label": "教材代表页 · 色彩和声",
+          "text": "手册将本页列为《色彩和声》代表页；该书定位：以功能、张力、色彩三元框架量化和弦色彩，讨论调式色彩、和弦组与色彩性和声进行。",
+          "href": "../和声学手册.html#book-profiles"
+        }
+      ],
+      "80": [
+        {
+          "kind": "example",
+          "id": "E07",
+          "anchor": "ref-example-e07-p0080",
+          "label": "手册案例 E07 · 平行和弦：保持音程结构",
+          "text": "谱例1-28｜巴托克《献给孩子们》II 之40–41\n原书要点：这是典型的 T→s→d→T 进行；大量平行和弦削弱连接感，但不改变和弦之间的色彩关系。\n机制：平行进行保持各和弦的音程结构，以相同方向移动；连接感减弱，但 T–s–d–T 的根音与功能关系仍可由低音和句法辨认。\n读谱：先标 T→s→d→T 的功能进行，再看各和弦是否保持同一音程结构平行移动；比较低音落点与声部间距。\n用法：需要平行和声色彩时，保留 T–s–d–T 的功能进行，将中间和弦做成相同结构的平行进行；用低音和句法维持中心。",
+          "href": "../和声学手册.html#example-e07"
+        }
+      ],
+      "95": [
+        {
+          "kind": "profile",
+          "id": "profile-huacui_color-p0095",
+          "anchor": "ref-profile-profile-huacui_color-p0095",
+          "label": "教材代表页 · 色彩和声",
+          "text": "手册将本页列为《色彩和声》代表页；该书定位：以功能、张力、色彩三元框架量化和弦色彩，讨论调式色彩、和弦组与色彩性和声进行。",
+          "href": "../和声学手册.html#book-profiles"
+        }
+      ],
+      "175": [
+        {
+          "kind": "profile",
+          "id": "profile-huacui_color-p0175",
+          "anchor": "ref-profile-profile-huacui_color-p0175",
+          "label": "教材代表页 · 色彩和声",
+          "text": "手册将本页列为《色彩和声》代表页；该书定位：以功能、张力、色彩三元框架量化和弦色彩，讨论调式色彩、和弦组与色彩性和声进行。",
+          "href": "../和声学手册.html#book-profiles"
+        }
+      ],
+      "198": [
+        {
+          "kind": "profile",
+          "id": "profile-huacui_color-p0198",
+          "anchor": "ref-profile-profile-huacui_color-p0198",
+          "label": "教材代表页 · 色彩和声",
+          "text": "手册将本页列为《色彩和声》代表页；该书定位：以功能、张力、色彩三元框架量化和弦色彩，讨论调式色彩、和弦组与色彩性和声进行。",
+          "href": "../和声学手册.html#book-profiles"
+        }
+      ],
+      "327": [
+        {
+          "kind": "claim",
+          "id": "color-harmony.function-transfer",
+          "anchor": "ref-claim-color-harmony-function-transfer-p0327",
+          "label": "色彩和声与调式色彩 · color-harmony.function-transfer",
+          "text": "手册提炼：色彩和弦可改变主要功能特性音；判断功能时应追踪特性音的归属与解决方向，不能只看根音级数。",
+          "href": "../和声学手册.html#claim-color-harmony-function-transfer"
+        },
+        {
+          "kind": "prose",
+          "id": "cite-huacui_color-p0327-1",
+          "anchor": "ref-prose-cite-huacui_color-p0327-1-p0327",
+          "label": "手册正文引用",
+          "text": "检查功能转移：若根音级数提示某个功能，但特性音把重心移向另一功能，就要按特性音的倾向与解决重判。华萃康以小重属和弦说明，主要功能特性音可以从下属音转移到大六度音（PDF p.327）。",
+          "href": "../和声学手册.html#cite-huacui_color-p0327-1"
+        }
+      ],
+      "341": [
+        {
+          "kind": "claim",
+          "id": "color-harmony.color-progression",
+          "anchor": "ref-claim-color-harmony-color-progression-p0341",
+          "label": "色彩和声与调式色彩 · color-harmony.color-progression",
+          "text": "手册提炼：连续采用较强色彩对比的和声进行可组织为色彩性和弦序列，其逻辑是色彩张力与解决，而非传统 T–S–D 的简单替代。",
+          "href": "../和声学手册.html#claim-color-harmony-color-progression"
+        },
+        {
+          "kind": "prose",
+          "id": "cite-huacui_color-p0341-1",
+          "anchor": "ref-prose-cite-huacui_color-p0341-1-p0341",
+          "label": "手册正文引用",
+          "text": "最后组织色彩序列：连续采用较强色彩对比的和声进行可称为色彩性和弦序列（PDF p.341）。写作时同时记录共同音、半音移动、低音方向、张力峰值与解决点；若没有新调主和弦与终止确认，仍应标为色彩进行，而不是转调。",
+          "href": "../和声学手册.html#cite-huacui_color-p0341-1"
+        }
+      ]
+    },
+    "kizler_20c": {
+      "2": [
+        {
+          "kind": "profile",
+          "id": "profile-kizler_20c-p0002",
+          "anchor": "ref-profile-profile-kizler_20c-p0002",
+          "label": "教材代表页 · 基泽勒",
+          "text": "手册将本页列为《基泽勒》代表页；该书定位：从功能/非功能、和弦构造、和弦序进、音响场、中心音与微分音等角度梳理二十世纪和声技法。",
+          "href": "../和声学手册.html#book-profiles"
+        }
+      ],
+      "10": [
+        {
+          "kind": "claim",
+          "id": "atonal.expanded-tonality-overlap",
+          "anchor": "ref-claim-atonal-expanded-tonality-overlap-p0010",
+          "label": "无调性与自由音高组织 · atonal.expanded-tonality-overlap",
+          "text": "手册提炼：扩展调性、自由无调性与十二音在同一时期并存；各流派都以不同方式控制纵向和声事件，年代上并无截然断裂。",
+          "href": "../和声学手册.html#claim-atonal-expanded-tonality-overlap"
+        },
+        {
+          "kind": "claim",
+          "id": "serialism.pitch-order-first",
+          "anchor": "ref-claim-serialism-pitch-order-first-p0010",
+          "label": "十二音序列与序列和声 · serialism.pitch-order-first",
+          "text": "手册提炼：早期十二音序列主要组织音高次序，节奏、音色与和声仍保留作曲家的自由；整体序列则把序列原则扩展到更多参数。",
+          "href": "../和声学手册.html#claim-serialism-pitch-order-first"
+        },
+        {
+          "kind": "profile",
+          "id": "profile-kizler_20c-p0010",
+          "anchor": "ref-profile-profile-kizler_20c-p0010",
+          "label": "教材代表页 · 基泽勒",
+          "text": "手册将本页列为《基泽勒》代表页；该书定位：从功能/非功能、和弦构造、和弦序进、音响场、中心音与微分音等角度梳理二十世纪和声技法。",
+          "href": "../和声学手册.html#book-profiles"
+        }
+      ],
+      "12": [
+        {
+          "kind": "profile",
+          "id": "profile-kizler_20c-p0012",
+          "anchor": "ref-profile-profile-kizler_20c-p0012",
+          "label": "教材代表页 · 基泽勒",
+          "text": "手册将本页列为《基泽勒》代表页；该书定位：从功能/非功能、和弦构造、和弦序进、音响场、中心音与微分音等角度梳理二十世纪和声技法。",
+          "href": "../和声学手册.html#book-profiles"
+        }
+      ],
+      "16": [
+        {
+          "kind": "claim",
+          "id": "atonal.harmony-not-tonality",
+          "anchor": "ref-claim-atonal-harmony-not-tonality-p0016",
+          "label": "无调性与自由音高组织 · atonal.harmony-not-tonality",
+          "text": "手册提炼：和声技法不等于调性功能；剥除调性功能后，和弦仍可作为具有自身结构的音响单位被组织。",
+          "href": "../和声学手册.html#claim-atonal-harmony-not-tonality"
+        },
+        {
+          "kind": "profile",
+          "id": "profile-kizler_20c-p0016",
+          "anchor": "ref-profile-profile-kizler_20c-p0016",
+          "label": "教材代表页 · 基泽勒",
+          "text": "手册将本页列为《基泽勒》代表页；该书定位：从功能/非功能、和弦构造、和弦序进、音响场、中心音与微分音等角度梳理二十世纪和声技法。",
+          "href": "../和声学手册.html#book-profiles"
+        }
+      ],
+      "113": [
+        {
+          "kind": "example",
+          "id": "M04",
+          "anchor": "ref-example-m04-p0113",
+          "label": "手册案例 M04 · 多层材料：独立音集与声部连接",
+          "text": "例D5｜梅西安《时间终结四重奏》第一乐章\n原书要点：钢琴仪式性和弦具12音倾向，单簧管12音鸟鸣，大提琴奏C全音阶泛音，小提琴混合半音与全音；声部进行使非常规序进可接受。\n机制：多层并置时，每层可拥有独立音集、节奏与音色；层间共同音或级进负责连接，统一性来自声部进行而非共同调性。\n读谱：按乐器分层：钢琴看和弦对置、单簧管数12音、大提琴认全音阶、小提琴看半音加全音；再找层间共同音或级进。\n用法：写多层音乐时，先给每层独立音集与节奏，再用共同音或级进连接；不必强迫各层共用一个调。",
+          "href": "../和声学手册.html#example-m04"
+        }
+      ],
+      "118": [
+        {
+          "kind": "profile",
+          "id": "profile-kizler_20c-p0118",
+          "anchor": "ref-profile-profile-kizler_20c-p0118",
+          "label": "教材代表页 · 基泽勒",
+          "text": "手册将本页列为《基泽勒》代表页；该书定位：从功能/非功能、和弦构造、和弦序进、音响场、中心音与微分音等角度梳理二十世纪和声技法。",
+          "href": "../和声学手册.html#book-profiles"
+        }
+      ],
+      "151": [
+        {
+          "kind": "profile",
+          "id": "profile-kizler_20c-p0151",
+          "anchor": "ref-profile-profile-kizler_20c-p0151",
+          "label": "教材代表页 · 基泽勒",
+          "text": "手册将本页列为《基泽勒》代表页；该书定位：从功能/非功能、和弦构造、和弦序进、音响场、中心音与微分音等角度梳理二十世纪和声技法。",
+          "href": "../和声学手册.html#book-profiles"
+        }
+      ],
+      "202": [
+        {
+          "kind": "claim",
+          "id": "atonal.harmony-technique-survives",
+          "anchor": "ref-claim-atonal-harmony-technique-survives-p0202",
+          "label": "无调性与自由音高组织 · atonal.harmony-technique-survives",
+          "text": "手册提炼：功能性和声的退场不等于和声技法死亡；二十世纪音乐继续以音高、音色、密度、音区与织体组织纵向关系。",
+          "href": "../和声学手册.html#claim-atonal-harmony-technique-survives"
+        },
+        {
+          "kind": "profile",
+          "id": "profile-kizler_20c-p0202",
+          "anchor": "ref-profile-profile-kizler_20c-p0202",
+          "label": "教材代表页 · 基泽勒",
+          "text": "手册将本页列为《基泽勒》代表页；该书定位：从功能/非功能、和弦构造、和弦序进、音响场、中心音与微分音等角度梳理二十世纪和声技法。",
+          "href": "../和声学手册.html#book-profiles"
+        }
+      ]
+    },
+    "persichetti_20c": {
+      "30": [
+        {
+          "kind": "claim",
+          "id": "scale.twentieth-century-materials",
+          "anchor": "ref-claim-scale-twentieth-century-materials-p0030",
+          "label": "调式、音阶与音级 · scale.twentieth-century-materials",
+          "text": "手册提炼：二十世纪音阶材料扩展到多种人工音阶、五声/六声、全音与半音音阶；七种自然调式仍可使用，但中心与用法不再受共同实践语法约束。",
+          "href": "../和声学手册.html#claim-scale-twentieth-century-materials"
+        },
+        {
+          "kind": "profile",
+          "id": "profile-persichetti_20c-p0030",
+          "anchor": "ref-profile-profile-persichetti_20c-p0030",
+          "label": "教材代表页 · 佩尔西采蒂",
+          "text": "手册将本页列为《佩尔西采蒂》代表页；该书定位：按材料组织二十世纪和声：音阶素材、三度/四度/二度叠置、复和弦、平行和声、调中心与无调性。",
+          "href": "../和声学手册.html#book-profiles"
+        }
+      ],
+      "37": [
+        {
+          "kind": "profile",
+          "id": "profile-persichetti_20c-p0037",
+          "anchor": "ref-profile-profile-persichetti_20c-p0037",
+          "label": "教材代表页 · 佩尔西采蒂",
+          "text": "手册将本页列为《佩尔西采蒂》代表页；该书定位：按材料组织二十世纪和声：音阶素材、三度/四度/二度叠置、复和弦、平行和声、调中心与无调性。",
+          "href": "../和声学手册.html#book-profiles"
+        }
+      ],
+      "81": [
+        {
+          "kind": "example",
+          "id": "M07",
+          "anchor": "ref-example-m07-p0081",
+          "label": "手册案例 M07 · 十二音和弦：音区与音色分层",
+          "text": "谱例3-44｜十二音和弦配器模型\n原书要点：十二音和弦极密，必须特别关注音域与乐器；位于高音区或协和音程由分开的管弦乐器演奏时，密集结构才被弱化。\n机制：十二个音同时发声时，听觉分辨受音区密度限制；把音高分配到不同音区与音色，能让协和音程和内部层次重新可辨。\n读谱：按乐器或音区把和弦拆成三到四组，找每组内部的协和音程；再看密集音簇是否被移到高音区或被音色隔开。\n用法：写十二音和弦时先做音区与音色分层：低音保留根音或五度，中部承担冲突，高音分开音色；避免全部挤在同一八度。",
+          "href": "../和声学手册.html#example-m07"
+        }
+      ],
+      "83": [
+        {
+          "kind": "profile",
+          "id": "profile-persichetti_20c-p0083",
+          "anchor": "ref-profile-profile-persichetti_20c-p0083",
+          "label": "教材代表页 · 佩尔西采蒂",
+          "text": "手册将本页列为《佩尔西采蒂》代表页；该书定位：按材料组织二十世纪和声：音阶素材、三度/四度/二度叠置、复和弦、平行和声、调中心与无调性。",
+          "href": "../和声学手册.html#book-profiles"
+        }
+      ],
+      "112": [
+        {
+          "kind": "claim",
+          "id": "atonal.chord-material",
+          "anchor": "ref-claim-atonal-chord-material-p0112",
+          "label": "无调性与自由音高组织 · atonal.chord-material",
+          "text": "手册提炼：后调性和弦不再只按三度叠置；三度/六度、四度/五度、二度/七度都可作为构建和弦的音程材料。",
+          "href": "../和声学手册.html#claim-atonal-chord-material"
+        },
+        {
+          "kind": "profile",
+          "id": "profile-persichetti_20c-p0112",
+          "anchor": "ref-profile-profile-persichetti_20c-p0112",
+          "label": "教材代表页 · 佩尔西采蒂",
+          "text": "手册将本页列为《佩尔西采蒂》代表页；该书定位：按材料组织二十世纪和声：音阶素材、三度/四度/二度叠置、复和弦、平行和声、调中心与无调性。",
+          "href": "../和声学手册.html#book-profiles"
+        }
+      ],
+      "126": [
+        {
+          "kind": "profile",
+          "id": "profile-persichetti_20c-p0126",
+          "anchor": "ref-profile-profile-persichetti_20c-p0126",
+          "label": "教材代表页 · 佩尔西采蒂",
+          "text": "手册将本页列为《佩尔西采蒂》代表页；该书定位：按材料组织二十世纪和声：音阶素材、三度/四度/二度叠置、复和弦、平行和声、调中心与无调性。",
+          "href": "../和声学手册.html#book-profiles"
+        }
+      ],
+      "226": [
+        {
+          "kind": "claim",
+          "id": "atonal.tonal-continuum",
+          "anchor": "ref-claim-atonal-tonal-continuum-p0226",
+          "label": "无调性与自由音高组织 · atonal.tonal-continuum",
+          "text": "手册提炼：调性与无调性可按调中心引力的强弱排成连续范围；局部无调性可在模糊、过渡或属准备中发挥作用。",
+          "href": "../和声学手册.html#claim-atonal-tonal-continuum"
+        },
+        {
+          "kind": "profile",
+          "id": "profile-persichetti_20c-p0226",
+          "anchor": "ref-profile-profile-persichetti_20c-p0226",
+          "label": "教材代表页 · 佩尔西采蒂",
+          "text": "手册将本页列为《佩尔西采蒂》代表页；该书定位：按材料组织二十世纪和声：音阶素材、三度/四度/二度叠置、复和弦、平行和声、调中心与无调性。",
+          "href": "../和声学手册.html#book-profiles"
+        }
+      ],
+      "235": [
+        {
+          "kind": "claim",
+          "id": "atonal.definition-persichetti",
+          "anchor": "ref-claim-atonal-definition-persichetti-p0235",
+          "label": "无调性与自由音高组织 · atonal.definition-persichetti",
+          "text": "手册提炼：无调性指明确调性感觉的削弱或消失，以及音乐中不存在调引力；无调性写作仍通过音程、音区、旋律与排列组织音响。",
+          "href": "../和声学手册.html#claim-atonal-definition-persichetti"
+        },
+        {
+          "kind": "profile",
+          "id": "profile-persichetti_20c-p0235",
+          "anchor": "ref-profile-profile-persichetti_20c-p0235",
+          "label": "教材代表页 · 佩尔西采蒂",
+          "text": "手册将本页列为《佩尔西采蒂》代表页；该书定位：按材料组织二十世纪和声：音阶素材、三度/四度/二度叠置、复和弦、平行和声、调中心与无调性。",
+          "href": "../和声学手册.html#book-profiles"
+        }
+      ],
+      "236": [
+        {
+          "kind": "example",
+          "id": "M08",
+          "anchor": "ref-example-m08-p0236",
+          "label": "手册案例 M08 · 序列和声：连续截段的纵向叠置",
+          "text": "谱例12-23｜序列和声模型\n原书要点：序列可横向进行，也可在两个或多个声部间分开形成纵向叠缩的和声；旋律音集可以控制和声织体。\n机制：把序列的连续音级截段同时奏响，就得到纵向和声；横向顺序决定截段内容，移位、倒影与音区决定它们之间的关系。\n读谱：把原形、倒影、移位1按序号对齐；看哪些相邻序号被同时奏响，哪些被分到不同声部。\n用法：需要序列和声时，从音列取连续截段纵向叠置；用移位、倒影保持关系，用音区与节奏区分不同截段。",
+          "href": "../和声学手册.html#example-m08"
+        }
+      ]
+    },
+    "sangtong_chromatic": {
+      "9": [
+        {
+          "kind": "claim",
+          "id": "chromaticism.historical-periodization",
+          "anchor": "ref-claim-chromaticism-historical-periodization-p0009",
+          "label": "半音化与变化和弦 · chromaticism.historical-periodization",
+          "text": "手册提炼：半音化在不同时期承担不同功能：巴洛克用于情感与特定体裁，古典围绕调性功能与离调，19世纪成为浪漫主义主线，并延伸至20世纪。",
+          "href": "../和声学手册.html#claim-chromaticism-historical-periodization"
+        },
+        {
+          "kind": "period",
+          "id": "commonPractice",
+          "anchor": "ref-period-commonpractice-2-p0009",
+          "label": "历史阶段依据 · 古典与共同实践",
+          "text": "阶段结论：调性中心、功能语法与声部规范\n原文依据：18世纪古典时期，围绕着和声的调性功能而展开半音化的应用，强调了离调性半音化手法和装饰性半音化风格。",
+          "href": "../和声学手册.html#period-basis"
+        },
+        {
+          "kind": "period",
+          "id": "expandedTonality",
+          "anchor": "ref-period-expandedtonality-2-p0009",
+          "label": "历史阶段依据 · 调性扩张与半音化",
+          "text": "阶段结论：交替、变和弦、远关系与色彩功能\n原文依据：19世纪的半音化是浪漫主义音乐风格的主线，感情世界的特殊载体。它既扩大了调性范围，又模糊或削弱了调性领域的区分，直接引向了20世纪广阔的半音化天地。",
+          "href": "../和声学手册.html#period-basis"
+        },
+        {
+          "kind": "profile",
+          "id": "profile-sangtong_chromatic-p0009",
+          "anchor": "ref-profile-profile-sangtong_chromatic-p0009",
+          "label": "教材代表页 · 半音化历史",
+          "text": "手册将本页列为《半音化历史》代表页；该书定位：以历史演进为线索：从14–15世纪伪乐、巴洛克情感表达、古典离调、19世纪浪漫半音化，到20世纪无调性与十二音。",
+          "href": "../和声学手册.html#book-profiles"
+        }
+      ],
+      "15": [
+        {
+          "kind": "profile",
+          "id": "profile-sangtong_chromatic-p0015",
+          "anchor": "ref-profile-profile-sangtong_chromatic-p0015",
+          "label": "教材代表页 · 半音化历史",
+          "text": "手册将本页列为《半音化历史》代表页；该书定位：以历史演进为线索：从14–15世纪伪乐、巴洛克情感表达、古典离调、19世纪浪漫半音化，到20世纪无调性与十二音。",
+          "href": "../和声学手册.html#book-profiles"
+        }
+      ],
+      "32": [
+        {
+          "kind": "claim",
+          "id": "modal-interchange.mixed-alternation",
+          "anchor": "ref-claim-modal-interchange-mixed-alternation-p0032",
+          "label": "同主音调式交替（借用和弦） · modal-interchange.mixed-alternation",
+          "text": "手册提炼：通过平行调关系引入的同主音交替变音构成混合交替，把关系调与同主音调的色彩叠合在同一主音上。",
+          "href": "../和声学手册.html#claim-modal-interchange-mixed-alternation"
+        }
+      ],
+      "33": [
+        {
+          "kind": "example",
+          "id": "E01",
+          "anchor": "ref-example-e01-p0033",
+          "label": "手册案例 E01 · 远关系和弦：半音声部连接",
+          "text": "例7｜理查·施特劳斯《埃莱克特拉》\n原书要点：从升F大三到升C大三之间插入降VI级四六、降II级小、降V级小三和弦；旋律简单，和声因远关系插入而半音化。\n机制：远关系根音之间可用半音声部连接：各声部取最近的半音或全音进行，纵向和弦可以相距很远，横向听感仍然连续。\n读谱：逐声部看升F→插入和弦→升C的半音或全音移动，尤其共同音与半音级进；不要只盯根音。\n用法：插入远关系和弦时，先写平滑的半音声部，再选择能容纳这些音的和弦；根音关系可以远，声部移动要短。",
+          "href": "../和声学手册.html#example-e01"
+        },
+        {
+          "kind": "example",
+          "id": "E02",
+          "anchor": "ref-example-e02-p0033",
+          "label": "手册案例 E02 · 主持续音上的调式交替",
+          "text": "例8｜普罗科菲耶夫《罗密欧与朱丽叶》\n原书要点：终止主和弦后保持高音主持续音，下方用同主音大小调交替与混合交替变音和弦，最后从升IV级小三和弦以增四度根音进行回到 C 主和弦。\n机制：持续音固定低音与调中心；上方和弦可频繁改变三音、五音并借用同主音调式，而不形成新调。\n读谱：先锁定持续音 C，再看上方和弦的三音、五音怎样改变；最后看低音是否从升IV级以增四度回到 C。\n用法：写曲尾色彩段可用主持续音承托混合交替；上方扩大音程与调式色彩，最后用明确的根音进行收束。",
+          "href": "../和声学手册.html#example-e02"
+        }
+      ],
+      "34": [
+        {
+          "kind": "example",
+          "id": "E03",
+          "anchor": "ref-example-e03-p0034",
+          "label": "手册案例 E03 · 同名大小三和弦并置",
+          "text": "例9｜李斯特《奥菲欧》\n原书要点：尾声在主和弦延伸中并置大、小主和弦，上方向高音区扩展、低音反向下行，再以 V7–I 收束；其间插入混合交替变音和弦。\n机制：同一主音上的大三和弦与小三和弦共享根音；三音相差半音，五音相同或相近。并置时中心音不变，和弦性质改变。\n读谱：以持续的主音或主和弦为参照，观察三音的大/小三度替换、五音是否保持，以及外声部是否反向扩张；最后找 V7→I。\n用法：终曲需要延续主和弦时，保持主音，交换大小三音并做反向音区扩张，最后以 V7–I 明确收束。",
+          "href": "../和声学手册.html#example-e03"
+        }
+      ],
+      "41": [
+        {
+          "kind": "example",
+          "id": "E06",
+          "anchor": "ref-example-e06-p0041",
+          "label": "手册案例 E06 · 变属和弦作为终止音响",
+          "text": "例13｜斯克里亚宾《愿望》Op.57 No.1\n原书要点：结尾经降II级七和弦进入属九、属七九十三与升五音属七九，最后低音到 C 五度而上方保留未解决复合和弦。\n机制：变音扩张后的属和弦可以保留不解决，低音落到主音，上方保持属功能复合体，使未解决张力成为终止音响。\n读谱：看最后和弦的低音是否到 C，而上方是否仍是升五音属七或属九的延续；找哪些音没有按传统倾向解决。\n用法：写悬停终止时，让低音到主音，上方保留属九或升五音属七；降II7 与变属和弦可加强最后的半音进行。",
+          "href": "../和声学手册.html#example-e06"
+        }
+      ],
+      "47": [
+        {
+          "kind": "profile",
+          "id": "profile-sangtong_chromatic-p0047",
+          "anchor": "ref-profile-profile-sangtong_chromatic-p0047",
+          "label": "教材代表页 · 半音化历史",
+          "text": "手册将本页列为《半音化历史》代表页；该书定位：以历史演进为线索：从14–15世纪伪乐、巴洛克情感表达、古典离调、19世纪浪漫半音化，到20世纪无调性与十二音。",
+          "href": "../和声学手册.html#book-profiles"
+        }
+      ],
+      "100": [
+        {
+          "kind": "profile",
+          "id": "profile-sangtong_chromatic-p0100",
+          "anchor": "ref-profile-profile-sangtong_chromatic-p0100",
+          "label": "教材代表页 · 半音化历史",
+          "text": "手册将本页列为《半音化历史》代表页；该书定位：以历史演进为线索：从14–15世纪伪乐、巴洛克情感表达、古典离调、19世纪浪漫半音化，到20世纪无调性与十二音。",
+          "href": "../和声学手册.html#book-profiles"
+        }
+      ],
+      "128": [
+        {
+          "kind": "profile",
+          "id": "profile-sangtong_chromatic-p0128",
+          "anchor": "ref-profile-profile-sangtong_chromatic-p0128",
+          "label": "教材代表页 · 半音化历史",
+          "text": "手册将本页列为《半音化历史》代表页；该书定位：以历史演进为线索：从14–15世纪伪乐、巴洛克情感表达、古典离调、19世纪浪漫半音化，到20世纪无调性与十二音。",
+          "href": "../和声学手册.html#book-profiles"
+        }
+      ],
+      "194": [
+        {
+          "kind": "claim",
+          "id": "chromaticism.functional-control",
+          "anchor": "ref-claim-chromaticism-functional-control-p0194",
+          "label": "半音化与变化和弦 · chromaticism.functional-control",
+          "text": "手册提炼：19 世纪半音和声即使高度复杂，整体仍受调性功能控制；分析时应区分功能扩张与真正的调性解体。",
+          "href": "../和声学手册.html#claim-chromaticism-functional-control"
+        }
+      ],
+      "219": [
+        {
+          "kind": "profile",
+          "id": "profile-sangtong_chromatic-p0219",
+          "anchor": "ref-profile-profile-sangtong_chromatic-p0219",
+          "label": "教材代表页 · 半音化历史",
+          "text": "手册将本页列为《半音化历史》代表页；该书定位：以历史演进为线索：从14–15世纪伪乐、巴洛克情感表达、古典离调、19世纪浪漫半音化，到20世纪无调性与十二音。",
+          "href": "../和声学手册.html#book-profiles"
+        }
+      ],
+      "389": [
+        {
+          "kind": "claim",
+          "id": "chromaticism.twentieth-century",
+          "anchor": "ref-claim-chromaticism-twentieth-century-p0389",
+          "label": "半音化与变化和弦 · chromaticism.twentieth-century",
+          "text": "手册提炼：20世纪半音化从19世纪末的浪漫主义继承中分化，走向独立不协和和弦、自由半音化与更整体的半音阶基础。",
+          "href": "../和声学手册.html#claim-chromaticism-twentieth-century"
+        },
+        {
+          "kind": "profile",
+          "id": "profile-sangtong_chromatic-p0389",
+          "anchor": "ref-profile-profile-sangtong_chromatic-p0389",
+          "label": "教材代表页 · 半音化历史",
+          "text": "手册将本页列为《半音化历史》代表页；该书定位：以历史演进为线索：从14–15世纪伪乐、巴洛克情感表达、古典离调、19世纪浪漫半音化，到20世纪无调性与十二音。",
+          "href": "../和声学手册.html#book-profiles"
+        }
+      ],
+      "436": [
+        {
+          "kind": "period",
+          "id": "modernPostTonal",
+          "anchor": "ref-period-modernposttonal-2-p0436",
+          "label": "历史阶段依据 · 现代与后调性",
+          "text": "阶段结论：对称音阶、集合、无调性与十二音\n原文依据：十二音体系的写作，亦属于无调性音乐范围，但以特定的十二音列为基础",
+          "href": "../和声学手册.html#period-basis"
+        },
+        {
+          "kind": "profile",
+          "id": "profile-sangtong_chromatic-p0436",
+          "anchor": "ref-profile-profile-sangtong_chromatic-p0436",
+          "label": "教材代表页 · 半音化历史",
+          "text": "手册将本页列为《半音化历史》代表页；该书定位：以历史演进为线索：从14–15世纪伪乐、巴洛克情感表达、古典离调、19世纪浪漫半音化，到20世纪无调性与十二音。",
+          "href": "../和声学手册.html#book-profiles"
+        }
+      ]
+    },
+    "sangtong_six": {
+      "3": [
+        {
+          "kind": "profile",
+          "id": "profile-sangtong_six-p0003",
+          "anchor": "ref-profile-profile-sangtong_six-p0003",
+          "label": "教材代表页 · 桑桐六讲",
+          "text": "手册将本页列为《桑桐六讲》代表页；该书定位：从创作写法出发的专题研究：衬托声部、低音十型、和声变奏、复合和弦、贝多芬对比处理，以及稳定/紧张度/节奏/功能—色彩四种关系。",
+          "href": "../和声学手册.html#book-profiles"
+        }
+      ],
+      "5": [
+        {
+          "kind": "profile",
+          "id": "profile-sangtong_six-p0005",
+          "anchor": "ref-profile-profile-sangtong_six-p0005",
+          "label": "教材代表页 · 桑桐六讲",
+          "text": "手册将本页列为《桑桐六讲》代表页；该书定位：从创作写法出发的专题研究：衬托声部、低音十型、和声变奏、复合和弦、贝多芬对比处理，以及稳定/紧张度/节奏/功能—色彩四种关系。",
+          "href": "../和声学手册.html#book-profiles"
+        }
+      ],
+      "76": [
+        {
+          "kind": "claim",
+          "id": "inversion.bass-role",
+          "anchor": "ref-claim-inversion-bass-role-p0076",
+          "label": "转位、低音与和声节奏 · inversion.bass-role",
+          "text": "手册提炼：低音部不仅是和弦的最低音，还决定原位/转位、功能属性、织体基础与结构位置；分析低音线是判断和声句法的入口。",
+          "href": "../和声学手册.html#claim-inversion-bass-role"
+        },
+        {
+          "kind": "profile",
+          "id": "profile-sangtong_six-p0076",
+          "anchor": "ref-profile-profile-sangtong_six-p0076",
+          "label": "教材代表页 · 桑桐六讲",
+          "text": "手册将本页列为《桑桐六讲》代表页；该书定位：从创作写法出发的专题研究：衬托声部、低音十型、和声变奏、复合和弦、贝多芬对比处理，以及稳定/紧张度/节奏/功能—色彩四种关系。",
+          "href": "../和声学手册.html#book-profiles"
+        }
+      ],
+      "104": [
+        {
+          "kind": "claim",
+          "id": "prolongation.fixed-bass",
+          "anchor": "ref-claim-prolongation-fixed-bass-p0104",
+          "label": "延长、层次与曲式 · prolongation.fixed-bass",
+          "text": "手册提炼：固定低音反复同一短小低音模式，上方声部作连续发展与变奏；这种重复把局部和声组织成可延长的结构层。",
+          "href": "../和声学手册.html#claim-prolongation-fixed-bass"
+        },
+        {
+          "kind": "profile",
+          "id": "profile-sangtong_six-p0104",
+          "anchor": "ref-profile-profile-sangtong_six-p0104",
+          "label": "教材代表页 · 桑桐六讲",
+          "text": "手册将本页列为《桑桐六讲》代表页；该书定位：从创作写法出发的专题研究：衬托声部、低音十型、和声变奏、复合和弦、贝多芬对比处理，以及稳定/紧张度/节奏/功能—色彩四种关系。",
+          "href": "../和声学手册.html#book-profiles"
+        }
+      ],
+      "123": [
+        {
+          "kind": "profile",
+          "id": "profile-sangtong_six-p0123",
+          "anchor": "ref-profile-profile-sangtong_six-p0123",
+          "label": "教材代表页 · 桑桐六讲",
+          "text": "手册将本页列为《桑桐六讲》代表页；该书定位：从创作写法出发的专题研究：衬托声部、低音十型、和声变奏、复合和弦、贝多芬对比处理，以及稳定/紧张度/节奏/功能—色彩四种关系。",
+          "href": "../和声学手册.html#book-profiles"
+        }
+      ],
+      "185": [
+        {
+          "kind": "claim",
+          "id": "chromaticism.nineteenth-century-complexity",
+          "anchor": "ref-claim-chromaticism-nineteenth-century-complexity-p0185",
+          "label": "半音化与变化和弦 · chromaticism.nineteenth-century-complexity",
+          "text": "手册提炼：19 世纪后期起，表现需求推动和弦结构复杂化：高度叠置、附加音、非三度叠置与复合和弦共同扩大色彩与紧张度。",
+          "href": "../和声学手册.html#claim-chromaticism-nineteenth-century-complexity"
+        },
+        {
+          "kind": "profile",
+          "id": "profile-sangtong_six-p0185",
+          "anchor": "ref-profile-profile-sangtong_six-p0185",
+          "label": "教材代表页 · 桑桐六讲",
+          "text": "手册将本页列为《桑桐六讲》代表页；该书定位：从创作写法出发的专题研究：衬托声部、低音十型、和声变奏、复合和弦、贝多芬对比处理，以及稳定/紧张度/节奏/功能—色彩四种关系。",
+          "href": "../和声学手册.html#book-profiles"
+        }
+      ],
+      "225": [
+        {
+          "kind": "claim",
+          "id": "atonal.compound-chord-precursor",
+          "anchor": "ref-claim-atonal-compound-chord-precursor-p0225",
+          "label": "无调性与自由音高组织 · atonal.compound-chord-precursor",
+          "text": "手册提炼：复合和弦把不同根音/结构的和弦同时叠合，可产生复合调性与高密度音响；贝多芬的复调化写法已显示其先声。",
+          "href": "../和声学手册.html#claim-atonal-compound-chord-precursor"
+        },
+        {
+          "kind": "profile",
+          "id": "profile-sangtong_six-p0225",
+          "anchor": "ref-profile-profile-sangtong_six-p0225",
+          "label": "教材代表页 · 桑桐六讲",
+          "text": "手册将本页列为《桑桐六讲》代表页；该书定位：从创作写法出发的专题研究：衬托声部、低音十型、和声变奏、复合和弦、贝多芬对比处理，以及稳定/紧张度/节奏/功能—色彩四种关系。",
+          "href": "../和声学手册.html#book-profiles"
+        }
+      ],
+      "236": [
+        {
+          "kind": "claim",
+          "id": "form.beethoven-functional-base",
+          "anchor": "ref-claim-form-beethoven-functional-base-p0236",
+          "label": "曲式中的和声策略 · form.beethoven-functional-base",
+          "text": "手册提炼：贝多芬的和声建立在大小调功能体系上；其结构作用来自扩大对比、延迟与调性布局，同时保留调性中心。",
+          "href": "../和声学手册.html#claim-form-beethoven-functional-base"
+        },
+        {
+          "kind": "profile",
+          "id": "profile-sangtong_six-p0236",
+          "anchor": "ref-profile-profile-sangtong_six-p0236",
+          "label": "教材代表页 · 桑桐六讲",
+          "text": "手册将本页列为《桑桐六讲》代表页；该书定位：从创作写法出发的专题研究：衬托声部、低音十型、和声变奏、复合和弦、贝多芬对比处理，以及稳定/紧张度/节奏/功能—色彩四种关系。",
+          "href": "../和声学手册.html#book-profiles"
+        }
+      ],
+      "281": [
+        {
+          "kind": "profile",
+          "id": "profile-sangtong_six-p0281",
+          "anchor": "ref-profile-profile-sangtong_six-p0281",
+          "label": "教材代表页 · 桑桐六讲",
+          "text": "手册将本页列为《桑桐六讲》代表页；该书定位：从创作写法出发的专题研究：衬托声部、低音十型、和声变奏、复合和弦、贝多芬对比处理，以及稳定/紧张度/节奏/功能—色彩四种关系。",
+          "href": "../和声学手册.html#book-profiles"
+        }
+      ],
+      "334": [
+        {
+          "kind": "claim",
+          "id": "color-harmony.function-color-history",
+          "anchor": "ref-claim-color-harmony-function-color-history-p0334",
+          "label": "色彩和声与调式色彩 · color-harmony.function-color-history",
+          "text": "手册提炼：功能和色彩是同一和弦的两种作用；历史上色彩作用增强，会相对削弱功能联系，两类作用仍可并存。",
+          "href": "../和声学手册.html#claim-color-harmony-function-color-history"
+        },
+        {
+          "kind": "profile",
+          "id": "profile-sangtong_six-p0334",
+          "anchor": "ref-profile-profile-sangtong_six-p0334",
+          "label": "教材代表页 · 桑桐六讲",
+          "text": "手册将本页列为《桑桐六讲》代表页；该书定位：从创作写法出发的专题研究：衬托声部、低音十型、和声变奏、复合和弦、贝多芬对比处理，以及稳定/紧张度/节奏/功能—色彩四种关系。",
+          "href": "../和声学手册.html#book-profiles"
+        }
+      ]
+    },
+    "sangtong_tutorial": {
+      "20": [
+        {
+          "kind": "prose",
+          "id": "cite-sangtong_tutorial-p0020-1",
+          "anchor": "ref-prose-cite-sangtong_tutorial-p0020-1-p0020",
+          "label": "手册正文引用",
+          "text": "桑桐《和声学教程》PDF p.20 给出一个仍然适用于四部和声的基本层级：",
+          "href": "../和声学手册.html#cite-sangtong_tutorial-p0020-1"
+        },
+        {
+          "kind": "profile",
+          "id": "profile-sangtong_tutorial-p0020",
+          "anchor": "ref-profile-profile-sangtong_tutorial-p0020",
+          "label": "教材代表页 · 桑桐教程",
+          "text": "手册将本页列为《桑桐教程》代表页；该书定位：汉语功能体系和声的主干教材：写作规则、T–S–D、七/九和弦、离调、交替、转调、调式与近现代概览。",
+          "href": "../和声学手册.html#book-profiles"
+        }
+      ],
+      "24": [
+        {
+          "kind": "profile",
+          "id": "profile-sangtong_tutorial-p0024",
+          "anchor": "ref-profile-profile-sangtong_tutorial-p0024",
+          "label": "教材代表页 · 桑桐教程",
+          "text": "手册将本页列为《桑桐教程》代表页；该书定位：汉语功能体系和声的主干教材：写作规则、T–S–D、七/九和弦、离调、交替、转调、调式与近现代概览。",
+          "href": "../和声学手册.html#book-profiles"
+        }
+      ],
+      "32": [
+        {
+          "kind": "prose",
+          "id": "cite-sangtong_tutorial-p0032-1",
+          "anchor": "ref-prose-cite-sangtong_tutorial-p0032-1-p0032",
+          "label": "手册正文引用",
+          "text": "桑桐 PDF p.32–34 将调内三和弦按稳定/不稳定与倾向关系归入三类功能：",
+          "href": "../和声学手册.html#cite-sangtong_tutorial-p0032-1"
+        },
+        {
+          "kind": "profile",
+          "id": "profile-sangtong_tutorial-p0032",
+          "anchor": "ref-profile-profile-sangtong_tutorial-p0032",
+          "label": "教材代表页 · 桑桐教程",
+          "text": "手册将本页列为《桑桐教程》代表页；该书定位：汉语功能体系和声的主干教材：写作规则、T–S–D、七/九和弦、离调、交替、转调、调式与近现代概览。",
+          "href": "../和声学手册.html#book-profiles"
+        }
+      ],
+      "33": [
+        {
+          "kind": "claim",
+          "id": "diatonic.tonic-subdominant-dominant",
+          "anchor": "ref-claim-diatonic-tonic-subdominant-dominant-p0033",
+          "label": "自然音级功能：T–S–D · diatonic.tonic-subdominant-dominant",
+          "text": "手册提炼：大调 I、IV、V 分别承担主、下属、属的核心功能，其他自然三和弦按共同音与倾向归入功能组。",
+          "href": "../和声学手册.html#claim-diatonic-tonic-subdominant-dominant"
+        }
+      ],
+      "34": [
+        {
+          "kind": "claim",
+          "id": "diatonic.function-sequence",
+          "anchor": "ref-claim-diatonic-function-sequence-p0034",
+          "label": "自然音级功能：T–S–D · diatonic.function-sequence",
+          "text": "手册提炼：功能和声的基本序列是稳定—不稳定—稳定，典型为 T–S–D–T；D–S 属特殊情况而非常规。",
+          "href": "../和声学手册.html#claim-diatonic-function-sequence"
+        },
+        {
+          "kind": "profile",
+          "id": "profile-sangtong_tutorial-p0034",
+          "anchor": "ref-profile-profile-sangtong_tutorial-p0034",
+          "label": "教材代表页 · 桑桐教程",
+          "text": "手册将本页列为《桑桐教程》代表页；该书定位：汉语功能体系和声的主干教材：写作规则、T–S–D、七/九和弦、离调、交替、转调、调式与近现代概览。",
+          "href": "../和声学手册.html#book-profiles"
+        }
+      ],
+      "60": [
+        {
+          "kind": "claim",
+          "id": "seventh.general-resolution",
+          "anchor": "ref-claim-seventh-general-resolution-p0060",
+          "label": "七和弦、九和弦与不协和等级 · seventh.general-resolution",
+          "text": "手册提炼：七和弦是不协和和弦，需准备并按倾向解决；其七音通常下行级进，属七是最强的功能和声形态。",
+          "href": "../和声学手册.html#claim-seventh-general-resolution"
+        },
+        {
+          "kind": "prose",
+          "id": "cite-sangtong_tutorial-p0060-1",
+          "anchor": "ref-prose-cite-sangtong_tutorial-p0060-1-p0060",
+          "label": "手册正文引用",
+          "text": "七和弦常可省略五音，有时省略三音；省略后通常重复根音。属九和弦的九音通常不可省略，因为九音既增加张力，也常暗示调式性质（桑桐 PDF p.60、p.72）。",
+          "href": "../和声学手册.html#cite-sangtong_tutorial-p0060-1"
+        },
+        {
+          "kind": "prose",
+          "id": "cite-sangtong_tutorial-p0060-2",
+          "anchor": "ref-prose-cite-sangtong_tutorial-p0060-2-p0060",
+          "label": "手册正文引用",
+          "text": "桑桐 PDF p.60、p.72 与柴可夫斯基 PDF p.46 对七/九和弦的省略、重复、解决给出了可操作规则；程序的 tendencyWarnings() 会对未解决到目标音的导音、七音、增六音给出警告。",
+          "href": "../和声学手册.html#cite-sangtong_tutorial-p0060-2"
+        },
+        {
+          "kind": "profile",
+          "id": "profile-sangtong_tutorial-p0060",
+          "anchor": "ref-profile-profile-sangtong_tutorial-p0060",
+          "label": "教材代表页 · 桑桐教程",
+          "text": "手册将本页列为《桑桐教程》代表页；该书定位：汉语功能体系和声的主干教材：写作规则、T–S–D、七/九和弦、离调、交替、转调、调式与近现代概览。",
+          "href": "../和声学手册.html#book-profiles"
+        }
+      ],
+      "72": [
+        {
+          "kind": "claim",
+          "id": "seventh.ninth-composite",
+          "anchor": "ref-claim-seventh-ninth-composite-p0072",
+          "label": "七和弦、九和弦与不协和等级 · seventh.ninth-composite",
+          "text": "手册提炼：属九和弦在属功能上叠入下属功能因素，形成复合功能；九音通常不可省略并下行解决。",
+          "href": "../和声学手册.html#claim-seventh-ninth-composite"
+        },
+        {
+          "kind": "prose",
+          "id": "cite-sangtong_tutorial-p0072-1",
+          "anchor": "ref-prose-cite-sangtong_tutorial-p0072-1-p0072",
+          "label": "手册正文引用",
+          "text": "七和弦常可省略五音，有时省略三音；省略后通常重复根音。属九和弦的九音通常不可省略，因为九音既增加张力，也常暗示调式性质（桑桐 PDF p.60、p.72）。",
+          "href": "../和声学手册.html#cite-sangtong_tutorial-p0072-1"
+        },
+        {
+          "kind": "prose",
+          "id": "cite-sangtong_tutorial-p0072-2",
+          "anchor": "ref-prose-cite-sangtong_tutorial-p0072-2-p0072",
+          "label": "手册正文引用",
+          "text": "桑桐 PDF p.60、p.72 与柴可夫斯基 PDF p.46 对七/九和弦的省略、重复、解决给出了可操作规则；程序的 tendencyWarnings() 会对未解决到目标音的导音、七音、增六音给出警告。",
+          "href": "../和声学手册.html#cite-sangtong_tutorial-p0072-2"
+        },
+        {
+          "kind": "profile",
+          "id": "profile-sangtong_tutorial-p0072",
+          "anchor": "ref-profile-profile-sangtong_tutorial-p0072",
+          "label": "教材代表页 · 桑桐教程",
+          "text": "手册将本页列为《桑桐教程》代表页；该书定位：汉语功能体系和声的主干教材：写作规则、T–S–D、七/九和弦、离调、交替、转调、调式与近现代概览。",
+          "href": "../和声学手册.html#book-profiles"
+        }
+      ],
+      "103": [
+        {
+          "kind": "prose",
+          "id": "cite-sangtong_tutorial-p0103-1",
+          "anchor": "ref-prose-cite-sangtong_tutorial-p0103-1-p0103",
+          "label": "手册正文引用",
+          "text": "桑桐 PDF p.103–105 特别指出：除宫调式外，许多调式缺少导音，因此确立中心不能主要依赖属七，而要靠旋律终止感、结构位置与相应终止式。",
+          "href": "../和声学手册.html#cite-sangtong_tutorial-p0103-1"
+        },
+        {
+          "kind": "profile",
+          "id": "profile-sangtong_tutorial-p0103",
+          "anchor": "ref-profile-profile-sangtong_tutorial-p0103",
+          "label": "教材代表页 · 桑桐教程",
+          "text": "手册将本页列为《桑桐教程》代表页；该书定位：汉语功能体系和声的主干教材：写作规则、T–S–D、七/九和弦、离调、交替、转调、调式与近现代概览。",
+          "href": "../和声学手册.html#book-profiles"
+        }
+      ],
+      "131": [
+        {
+          "kind": "example",
+          "id": "C04",
+          "anchor": "ref-example-c04-p0131",
+          "label": "手册案例 C04 · 副属和弦：局部主音化",
+          "text": "例290｜韦伯《自由射手》序曲\n原书要点：副属和弦分别强化 III、V、VI，使局部像进入降E大调、g小调、降B大调的 V–I。\n机制：副属和弦把目标和弦临时当作主音：它自身的导音或三全音指向目标和弦，目标出现后临时主音化结束。\n读谱：从每个副属和弦看三全音或导音指向哪个目标和弦；目标一出现，临时主音化就结束。\n用法：让某级和弦获得到达感时，在它前面写自己的 V(7)；目标出现后回到原调，避免临时中心持续过久。",
+          "href": "../和声学手册.html#example-c04"
+        }
+      ],
+      "132": [
+        {
+          "kind": "claim",
+          "id": "secondary-dominant.definition",
+          "anchor": "ref-claim-secondary-dominant-definition-p0132",
+          "label": "副属和弦与离调 · secondary-dominant.definition",
+          "text": "手册提炼：副属和弦把调内某一大三或小三和弦临时当主，以 V/x 或 vii°/x 加强它而不改变全局主调。",
+          "href": "../和声学手册.html#claim-secondary-dominant-definition"
+        },
+        {
+          "kind": "profile",
+          "id": "profile-sangtong_tutorial-p0132",
+          "anchor": "ref-profile-profile-sangtong_tutorial-p0132",
+          "label": "教材代表页 · 桑桐教程",
+          "text": "手册将本页列为《桑桐教程》代表页；该书定位：汉语功能体系和声的主干教材：写作规则、T–S–D、七/九和弦、离调、交替、转调、调式与近现代概览。",
+          "href": "../和声学手册.html#book-profiles"
+        }
+      ],
+      "178": [
+        {
+          "kind": "claim",
+          "id": "tonicization.time-structure",
+          "anchor": "ref-claim-tonicization-time-structure-p0178",
+          "label": "临时主音化（离调） · tonicization.time-structure",
+          "text": "手册提炼：离调与转调的界限主要取决于持续时间、结构位置与终止确认；单靠一个变化和弦不能判定转调。",
+          "href": "../和声学手册.html#claim-tonicization-time-structure"
+        },
+        {
+          "kind": "prose",
+          "id": "cite-sangtong_tutorial-p0178-1",
+          "anchor": "ref-prose-cite-sangtong_tutorial-p0178-1-p0178",
+          "label": "手册正文引用",
+          "text": "时间是最重要的因素之一（《概述》PDF p.313）；桑桐 PDF p.178 则把结构位置与终止确认作为区分离调、交替、转调的关键。实际作品中存在连续过渡，分析应说明证据强弱，而不是强行二选一。",
+          "href": "../和声学手册.html#cite-sangtong_tutorial-p0178-1"
+        },
+        {
+          "kind": "profile",
+          "id": "profile-sangtong_tutorial-p0178",
+          "anchor": "ref-profile-profile-sangtong_tutorial-p0178",
+          "label": "教材代表页 · 桑桐教程",
+          "text": "手册将本页列为《桑桐教程》代表页；该书定位：汉语功能体系和声的主干教材：写作规则、T–S–D、七/九和弦、离调、交替、转调、调式与近现代概览。",
+          "href": "../和声学手册.html#book-profiles"
+        }
+      ],
+      "221": [
+        {
+          "kind": "claim",
+          "id": "modal-interchange.borrowed",
+          "anchor": "ref-claim-modal-interchange-borrowed-p0221",
+          "label": "同主音调式交替（借用和弦） · modal-interchange.borrowed",
+          "text": "手册提炼：同主音交替以主音不变为前提，把另一调式的特性音级与和弦借入当前调式，是变化和弦的重要来源。",
+          "href": "../和声学手册.html#claim-modal-interchange-borrowed"
+        },
+        {
+          "kind": "profile",
+          "id": "profile-sangtong_tutorial-p0221",
+          "anchor": "ref-profile-profile-sangtong_tutorial-p0221",
+          "label": "教材代表页 · 桑桐教程",
+          "text": "手册将本页列为《桑桐教程》代表页；该书定位：汉语功能体系和声的主干教材：写作规则、T–S–D、七/九和弦、离调、交替、转调、调式与近现代概览。",
+          "href": "../和声学手册.html#book-profiles"
+        }
+      ],
+      "234": [
+        {
+          "kind": "prose",
+          "id": "cite-sangtong_tutorial-p0234-1",
+          "anchor": "ref-prose-cite-sangtong_tutorial-p0234-1-p0234",
+          "label": "手册正文引用",
+          "text": "大调借用同主音小调资源，最常见的是含 ♭6 的 iv、♭VI、iiø7、vii°7；♭3 与 ♭7 进一步扩展为 ♭III、♭VII（《概述》PDF p.374–377）。小调借用大调常表现为升高三音、六音、七音，形成“交替小—大调”（桑桐 PDF p.234）。",
+          "href": "../和声学手册.html#cite-sangtong_tutorial-p0234-1"
+        }
+      ],
+      "313": [
+        {
+          "kind": "example",
+          "id": "M01",
+          "anchor": "ref-example-m01-p0313",
+          "label": "手册案例 M01 · 全音阶：缺少导音后的组织方式",
+          "text": "例707｜德彪西《帆》\n原书要点：建立在全音阶上的和声，其结构可追溯为升、降五音的属九和弦；实际相当于降E的降五音属九。\n机制：全音阶没有半音导音，因此 V→I 的倾向被削弱；音高组织更多依赖音集、低音、音区与节奏的重复和变化。\n读谱：先圈出是否只有全音阶六音，找有没有半音导音；再看低音是否提供唯一的方向感。\n用法：需要弱化功能方向时，可选全音阶截段与属九变体，省略导音；用低音与音区变化组织段落。",
+          "href": "../和声学手册.html#example-m01"
+        }
+      ],
+      "352": [
+        {
+          "kind": "prose",
+          "id": "cite-sangtong_tutorial-p0352-1",
+          "anchor": "ref-prose-cite-sangtong_tutorial-p0352-1-p0352",
+          "label": "手册正文引用",
+          "text": "减七由三个小三度叠置，完全对称；转位后小三度可写为增二度，用等音小三度替换即产生新减七。每个减七有三种等音写法（同一音响）和四个解决方向，可作为属功能、副属功能或导音和弦进入不同调（柴可夫斯基 PDF p.109；桑桐 PDF p.352–354）。",
+          "href": "../和声学手册.html#cite-sangtong_tutorial-p0352-1"
+        },
+        {
+          "kind": "profile",
+          "id": "profile-sangtong_tutorial-p0352",
+          "anchor": "ref-profile-profile-sangtong_tutorial-p0352",
+          "label": "教材代表页 · 桑桐教程",
+          "text": "手册将本页列为《桑桐教程》代表页；该书定位：汉语功能体系和声的主干教材：写作规则、T–S–D、七/九和弦、离调、交替、转调、调式与近现代概览。",
+          "href": "../和声学手册.html#book-profiles"
+        }
+      ],
+      "354": [
+        {
+          "kind": "claim",
+          "id": "diminished-seventh.four-resolutions",
+          "anchor": "ref-claim-diminished-seventh-four-resolutions-p0354",
+          "label": "减七和弦与等音网络 · diminished-seventh.four-resolutions",
+          "text": "手册提炼：同一减七音响可向四个方向解决，因而能通向二十四个调，是远关系转调的常用连接和弦。",
+          "href": "../和声学手册.html#claim-diminished-seventh-four-resolutions"
+        },
+        {
+          "kind": "prose",
+          "id": "cite-sangtong_tutorial-p0354-1",
+          "anchor": "ref-prose-cite-sangtong_tutorial-p0354-1-p0354",
+          "label": "手册正文引用",
+          "text": "减七和弦可等音重写为四个不同根音的减七，分别解决到四个方向；同一减七音响因此可通向 24 个调（柴可夫斯基 PDF p.109；桑桐 PDF p.354）。大小七和弦可等音为德国增六或另一调属七，形成两个主要解决方向（《概述》PDF p.433–434）。等音转调的关键不只是“音响相同”，而是：",
+          "href": "../和声学手册.html#cite-sangtong_tutorial-p0354-1"
+        },
+        {
+          "kind": "profile",
+          "id": "profile-sangtong_tutorial-p0354",
+          "anchor": "ref-profile-profile-sangtong_tutorial-p0354",
+          "label": "教材代表页 · 桑桐教程",
+          "text": "手册将本页列为《桑桐教程》代表页；该书定位：汉语功能体系和声的主干教材：写作规则、T–S–D、七/九和弦、离调、交替、转调、调式与近现代概览。",
+          "href": "../和声学手册.html#book-profiles"
+        }
+      ],
+      "410": [
+        {
+          "kind": "claim",
+          "id": "symmetry.whole-tone",
+          "anchor": "ref-claim-symmetry-whole-tone-p0410",
+          "label": "对称音阶与有限移位 · symmetry.whole-tone",
+          "text": "手册提炼：全音阶把八度等分为六个全音，只有两种不同组成音的移位，缺乏导音与纯五度，因而削弱功能调性。",
+          "href": "../和声学手册.html#claim-symmetry-whole-tone"
+        },
+        {
+          "kind": "prose",
+          "id": "cite-sangtong_tutorial-p0410-1",
+          "anchor": "ref-prose-cite-sangtong_tutorial-p0410-1-p0410",
+          "label": "手册正文引用",
+          "text": "全音阶：八度等分为六个全音，只有两种不同组成音的移位，无导音、无纯五度，功能属—主进行被削弱。适合悬浮、梦境、紧张渐强与色彩块（桑桐 PDF p.410）。",
+          "href": "../和声学手册.html#cite-sangtong_tutorial-p0410-1"
+        },
+        {
+          "kind": "profile",
+          "id": "profile-sangtong_tutorial-p0410",
+          "anchor": "ref-profile-profile-sangtong_tutorial-p0410",
+          "label": "教材代表页 · 桑桐教程",
+          "text": "手册将本页列为《桑桐教程》代表页；该书定位：汉语功能体系和声的主干教材：写作规则、T–S–D、七/九和弦、离调、交替、转调、调式与近现代概览。",
+          "href": "../和声学手册.html#book-profiles"
+        }
+      ],
+      "423": [
+        {
+          "kind": "example",
+          "id": "M02",
+          "anchor": "ref-example-m02-p0423",
+          "label": "手册案例 M02 · 八声音阶：音程模式决定身份",
+          "text": "例935｜巴托克钢琴组曲 III\n原书要点：音阶式运动虽缺降D音，八声音阶特性仍鲜明；前两小节有降五度五声音列特点。\n机制：八声音阶由半音与全音交替构成；判断身份看小二、增二、大三度的固定排列，缺一个音仍是省略。\n读谱：把旋律音按半音整数排列，找小二—大三或全—半的交替模式；确认缺的是哪个音，而非误判成其他音阶。\n用法：写八声色彩时先定 1–2–1–2 的对称结构，可省略一个音避免过密；让特征小二度落在句法重音上。",
+          "href": "../和声学手册.html#example-m02"
+        }
+      ],
+      "498": [
+        {
+          "kind": "example",
+          "id": "M03",
+          "anchor": "ref-example-m03-p0498",
+          "label": "手册案例 M03 · 复合和弦：两个完整和弦的叠置",
+          "text": "例1106｜斯特拉文斯基《春之祭》\n原书要点：下方为降F大三和弦（等音为 E），上方为降E属七第一转位，根音相差半音；两层结构明确、关系远，故是复合和弦。\n机制：复合和弦由两个可分别命名的完整和弦同时构成；根音距离、音区分离与音色分工决定两层是否可辨。\n读谱：分别给下方和上方写和弦名，确认两层各自完整；再看根音是否半音、音区是否拉开。\n用法：写复合和弦时先分别写两个完整和弦，使根音相差半音或三全音，再用音区或节奏分开；避免随机堆音。",
+          "href": "../和声学手册.html#example-m03"
+        }
+      ],
+      "563": [
+        {
+          "kind": "claim",
+          "id": "atonal.features",
+          "anchor": "ref-claim-atonal-features-p0563",
+          "label": "无调性与自由音高组织 · atonal.features",
+          "text": "手册提炼：自由无调性常避免主和弦与大三、小三和弦，自由运用半音阶与不协和音，并让每首作品自定进行规则。",
+          "href": "../和声学手册.html#claim-atonal-features"
+        },
+        {
+          "kind": "prose",
+          "id": "cite-sangtong_tutorial-p0563-1",
+          "anchor": "ref-prose-cite-sangtong_tutorial-p0563-1-p0563",
+          "label": "手册正文引用",
+          "text": "无调性避免形成可辨认的调中心。桑桐 PDF p.563 列出其主要特征：无主和弦、半音阶自由运用、纵向不协和、避免功能进行、织体多层次等。《概述》PDF p.536 把无调性定义为“避免形成任何调中心或中心的作曲方法”。分析时应关注：",
+          "href": "../和声学手册.html#cite-sangtong_tutorial-p0563-1"
+        },
+        {
+          "kind": "profile",
+          "id": "profile-sangtong_tutorial-p0563",
+          "anchor": "ref-profile-profile-sangtong_tutorial-p0563",
+          "label": "教材代表页 · 桑桐教程",
+          "text": "手册将本页列为《桑桐教程》代表页；该书定位：汉语功能体系和声的主干教材：写作规则、T–S–D、七/九和弦、离调、交替、转调、调式与近现代概览。",
+          "href": "../和声学手册.html#book-profiles"
+        }
+      ]
+    },
+    "schoenberg_harmony": {
+      "24": [
+        {
+          "kind": "claim",
+          "id": "voice-leading.dissonance-preparation",
+          "anchor": "ref-claim-voice-leading-dissonance-preparation-p0024",
+          "label": "声部进行与不协和解决 · voice-leading.dissonance-preparation",
+          "text": "手册提炼：不协和音应在前一和弦中作为协和音出现，并在同一人声部进入下一和弦的不协和位置，随后按倾向解决；这使不协和成为可追踪的声部事件。",
+          "href": "../和声学手册.html#claim-voice-leading-dissonance-preparation"
+        },
+        {
+          "kind": "profile",
+          "id": "profile-schoenberg_harmony-p0024",
+          "anchor": "ref-profile-profile-schoenberg_harmony-p0024",
+          "label": "教材代表页 · 勋伯格和声学",
+          "text": "手册将本页列为《勋伯格和声学》代表页；该书定位：功能与表现性和声的理论解释，强调倾向、预备与解决、根音进行、转调的双重标记以及游移和弦的多义性。",
+          "href": "../和声学手册.html#book-profiles"
+        }
+      ],
+      "59": [
+        {
+          "kind": "claim",
+          "id": "root-motion.fourth-up",
+          "anchor": "ref-claim-root-motion-fourth-up-p0059",
+          "label": "自然音级功能：T–S–D · root-motion.fourth-up",
+          "text": "手册提炼：根音向上四度的进行具有最强的功能推进力；新根音把前一和弦根音纳入自身结构，从听感上提升其功能等级。",
+          "href": "../和声学手册.html#claim-root-motion-fourth-up"
+        },
+        {
+          "kind": "profile",
+          "id": "profile-schoenberg_harmony-p0059",
+          "anchor": "ref-profile-profile-schoenberg_harmony-p0059",
+          "label": "教材代表页 · 勋伯格和声学",
+          "text": "手册将本页列为《勋伯格和声学》代表页；该书定位：功能与表现性和声的理论解释，强调倾向、预备与解决、根音进行、转调的双重标记以及游移和弦的多义性。",
+          "href": "../和声学手册.html#book-profiles"
+        }
+      ],
+      "81": [
+        {
+          "kind": "claim",
+          "id": "pivot.neutral-chord-double-label",
+          "anchor": "ref-claim-pivot-neutral-chord-double-label-p0081",
+          "label": "中介和弦与转调 · pivot.neutral-chord-double-label",
+          "text": "手册提炼：转调初期以两调共同的中立和弦为媒介，并对其作双重功能标记；随后进入新调属和弦，再用终止式确认新调。",
+          "href": "../和声学手册.html#claim-pivot-neutral-chord-double-label"
+        },
+        {
+          "kind": "profile",
+          "id": "profile-schoenberg_harmony-p0081",
+          "anchor": "ref-profile-profile-schoenberg_harmony-p0081",
+          "label": "教材代表页 · 勋伯格和声学",
+          "text": "手册将本页列为《勋伯格和声学》代表页；该书定位：功能与表现性和声的理论解释，强调倾向、预备与解决、根音进行、转调的双重标记以及游移和弦的多义性。",
+          "href": "../和声学手册.html#book-profiles"
+        }
+      ],
+      "82": [
+        {
+          "kind": "claim",
+          "id": "pivot.neutral-chord-double-label",
+          "anchor": "ref-claim-pivot-neutral-chord-double-label-p0082",
+          "label": "中介和弦与转调 · pivot.neutral-chord-double-label",
+          "text": "手册提炼：转调初期以两调共同的中立和弦为媒介，并对其作双重功能标记；随后进入新调属和弦，再用终止式确认新调。",
+          "href": "../和声学手册.html#claim-pivot-neutral-chord-double-label"
+        },
+        {
+          "kind": "profile",
+          "id": "profile-schoenberg_harmony-p0082",
+          "anchor": "ref-profile-profile-schoenberg_harmony-p0082",
+          "label": "教材代表页 · 勋伯格和声学",
+          "text": "手册将本页列为《勋伯格和声学》代表页；该书定位：功能与表现性和声的理论解释，强调倾向、预备与解决、根音进行、转调的双重标记以及游移和弦的多义性。",
+          "href": "../和声学手册.html#book-profiles"
+        }
+      ],
+      "107": [
+        {
+          "kind": "claim",
+          "id": "secondary-dominant.usage",
+          "anchor": "ref-claim-secondary-dominant-usage-p0107",
+          "label": "副属和弦与离调 · secondary-dominant.usage",
+          "text": "手册提炼：副属和弦可用于任何能被自然音级目标和弦接收的位置，但实际用法受根音进行与不协和音处理约束。",
+          "href": "../和声学手册.html#claim-secondary-dominant-usage"
+        },
+        {
+          "kind": "profile",
+          "id": "profile-schoenberg_harmony-p0107",
+          "anchor": "ref-profile-profile-schoenberg_harmony-p0107",
+          "label": "教材代表页 · 勋伯格和声学",
+          "text": "手册将本页列为《勋伯格和声学》代表页；该书定位：功能与表现性和声的理论解释，强调倾向、预备与解决、根音进行、转调的双重标记以及游移和弦的多义性。",
+          "href": "../和声学手册.html#book-profiles"
+        }
+      ],
+      "115": [
+        {
+          "kind": "claim",
+          "id": "function-network.wandering-chords",
+          "anchor": "ref-claim-function-network-wandering-chords-p0115",
+          "label": "功能网与功能转换 · function-network.wandering-chords",
+          "text": "手册提炼：游移和弦不固定属于某一调，其功能由前后和弦决定，并可在多个方向与远关系调之间连接；同一和弦因此可被重新解释。",
+          "href": "../和声学手册.html#claim-function-network-wandering-chords"
+        },
+        {
+          "kind": "profile",
+          "id": "profile-schoenberg_harmony-p0115",
+          "anchor": "ref-profile-profile-schoenberg_harmony-p0115",
+          "label": "教材代表页 · 勋伯格和声学",
+          "text": "手册将本页列为《勋伯格和声学》代表页；该书定位：功能与表现性和声的理论解释，强调倾向、预备与解决、根音进行、转调的双重标记以及游移和弦的多义性。",
+          "href": "../和声学手册.html#book-profiles"
+        }
+      ],
+      "154": [
+        {
+          "kind": "claim",
+          "id": "enharmonic.same-sound",
+          "anchor": "ref-claim-enharmonic-same-sound-p0154",
+          "label": "等音转调 · enharmonic.same-sound",
+          "text": "手册提炼：同一音响可用不同方式记谱；当同一和弦被等音重释为新调中的属、导或增六功能时，记谱改变对应功能归属。",
+          "href": "../和声学手册.html#claim-enharmonic-same-sound"
+        },
+        {
+          "kind": "profile",
+          "id": "profile-schoenberg_harmony-p0154",
+          "anchor": "ref-profile-profile-schoenberg_harmony-p0154",
+          "label": "教材代表页 · 勋伯格和声学",
+          "text": "手册将本页列为《勋伯格和声学》代表页；该书定位：功能与表现性和声的理论解释，强调倾向、预备与解决、根音进行、转调的双重标记以及游移和弦的多义性。",
+          "href": "../和声学手册.html#book-profiles"
+        }
+      ]
+    },
+    "spossbin_answers_1": {
+      "2": [
+        {
+          "kind": "claim",
+          "id": "voice-leading.multiple-solutions",
+          "anchor": "ref-claim-voice-leading-multiple-solutions-p0002",
+          "label": "声部进行与不协和解决 · voice-leading.multiple-solutions",
+          "text": "手册提炼：同一旋律与低音可有多条合格的四部写法；语法约束限定可行域，并不产生唯一正确答案。",
+          "href": "../和声学手册.html#claim-voice-leading-multiple-solutions"
+        }
+      ],
+      "45": [
+        {
+          "kind": "profile",
+          "id": "profile-spossbin_answers_1-p0045",
+          "anchor": "ref-profile-profile-spossbin_answers_1-p0045",
+          "label": "教材代表页 · 斯波索宾答案上",
+          "text": "手册将本页列为《斯波索宾答案上》代表页；该书定位：上册章节配套的四声部写作范例：正/副三和弦、连接、终止、六和弦、属七、下属与导七、调式音阶和自然模进。",
+          "href": "../和声学手册.html#book-profiles"
+        }
+      ],
+      "57": [
+        {
+          "kind": "profile",
+          "id": "profile-spossbin_answers_1-p0057",
+          "anchor": "ref-profile-profile-spossbin_answers_1-p0057",
+          "label": "教材代表页 · 斯波索宾答案上",
+          "text": "手册将本页列为《斯波索宾答案上》代表页；该书定位：上册章节配套的四声部写作范例：正/副三和弦、连接、终止、六和弦、属七、下属与导七、调式音阶和自然模进。",
+          "href": "../和声学手册.html#book-profiles"
+        }
+      ],
+      "92": [
+        {
+          "kind": "profile",
+          "id": "profile-spossbin_answers_1-p0092",
+          "anchor": "ref-profile-profile-spossbin_answers_1-p0092",
+          "label": "教材代表页 · 斯波索宾答案上",
+          "text": "手册将本页列为《斯波索宾答案上》代表页；该书定位：上册章节配套的四声部写作范例：正/副三和弦、连接、终止、六和弦、属七、下属与导七、调式音阶和自然模进。",
+          "href": "../和声学手册.html#book-profiles"
+        }
+      ],
+      "123": [
+        {
+          "kind": "profile",
+          "id": "profile-spossbin_answers_1-p0123",
+          "anchor": "ref-profile-profile-spossbin_answers_1-p0123",
+          "label": "教材代表页 · 斯波索宾答案上",
+          "text": "手册将本页列为《斯波索宾答案上》代表页；该书定位：上册章节配套的四声部写作范例：正/副三和弦、连接、终止、六和弦、属七、下属与导七、调式音阶和自然模进。",
+          "href": "../和声学手册.html#book-profiles"
+        }
+      ],
+      "160": [
+        {
+          "kind": "profile",
+          "id": "profile-spossbin_answers_1-p0160",
+          "anchor": "ref-profile-profile-spossbin_answers_1-p0160",
+          "label": "教材代表页 · 斯波索宾答案上",
+          "text": "手册将本页列为《斯波索宾答案上》代表页；该书定位：上册章节配套的四声部写作范例：正/副三和弦、连接、终止、六和弦、属七、下属与导七、调式音阶和自然模进。",
+          "href": "../和声学手册.html#book-profiles"
+        }
+      ],
+      "204": [
+        {
+          "kind": "profile",
+          "id": "profile-spossbin_answers_1-p0204",
+          "anchor": "ref-profile-profile-spossbin_answers_1-p0204",
+          "label": "教材代表页 · 斯波索宾答案上",
+          "text": "手册将本页列为《斯波索宾答案上》代表页；该书定位：上册章节配套的四声部写作范例：正/副三和弦、连接、终止、六和弦、属七、下属与导七、调式音阶和自然模进。",
+          "href": "../和声学手册.html#book-profiles"
+        }
+      ],
+      "218": [
+        {
+          "kind": "profile",
+          "id": "profile-spossbin_answers_1-p0218",
+          "anchor": "ref-profile-profile-spossbin_answers_1-p0218",
+          "label": "教材代表页 · 斯波索宾答案上",
+          "text": "手册将本页列为《斯波索宾答案上》代表页；该书定位：上册章节配套的四声部写作范例：正/副三和弦、连接、终止、六和弦、属七、下属与导七、调式音阶和自然模进。",
+          "href": "../和声学手册.html#book-profiles"
+        }
+      ]
+    },
+    "spossbin_answers_2": {
+      "2": [
+        {
+          "kind": "profile",
+          "id": "profile-spossbin_answers_2-p0002",
+          "anchor": "ref-profile-profile-spossbin_answers_2-p0002",
+          "label": "教材代表页 · 斯波索宾答案下",
+          "text": "手册将本页列为《斯波索宾答案下》代表页；该书定位：下册习题解答：重属与离调、半音体系、各级关系转调、和弦外音、持续音、变和弦与等音转调。",
+          "href": "../和声学手册.html#book-profiles"
+        }
+      ],
+      "3": [
+        {
+          "kind": "claim",
+          "id": "prolongation.phrase-extension",
+          "anchor": "ref-claim-prolongation-phrase-extension-p0003",
+          "label": "延长、层次与曲式 · prolongation.phrase-extension",
+          "text": "手册提炼：终止后继续的小节若不属于补充变格终止，可视为乐段扩展；判定要看它是否继续结构过程，而不只看和弦名称。",
+          "href": "../和声学手册.html#claim-prolongation-phrase-extension"
+        }
+      ],
+      "12": [
+        {
+          "kind": "claim",
+          "id": "secondary-dominant.dd-targets",
+          "anchor": "ref-claim-secondary-dominant-dd-targets-p0012",
+          "label": "副属和弦与离调 · secondary-dominant.dd-targets",
+          "text": "手册提炼：重属和弦既可解决到属和弦或主和弦，也可进入下属组和弦；其具体形态、转位与变音须由终止位置和声部进行决定。",
+          "href": "../和声学手册.html#claim-secondary-dominant-dd-targets"
+        }
+      ],
+      "40": [
+        {
+          "kind": "profile",
+          "id": "profile-spossbin_answers_2-p0040",
+          "anchor": "ref-profile-profile-spossbin_answers_2-p0040",
+          "label": "教材代表页 · 斯波索宾答案下",
+          "text": "手册将本页列为《斯波索宾答案下》代表页；该书定位：下册习题解答：重属与离调、半音体系、各级关系转调、和弦外音、持续音、变和弦与等音转调。",
+          "href": "../和声学手册.html#book-profiles"
+        }
+      ],
+      "42": [
+        {
+          "kind": "claim",
+          "id": "tonicization.ambiguity",
+          "anchor": "ref-claim-tonicization-ambiguity-p0042",
+          "label": "临时主音化（离调） · tonicization.ambiguity",
+          "text": "手册提炼：同一变化音可能解释为自然调式音、副属和弦音或其他功能和弦音；判断离调必须结合前后和弦与临时主音，而不能只看单个音。",
+          "href": "../和声学手册.html#claim-tonicization-ambiguity"
+        }
+      ],
+      "63": [
+        {
+          "kind": "profile",
+          "id": "profile-spossbin_answers_2-p0063",
+          "anchor": "ref-profile-profile-spossbin_answers_2-p0063",
+          "label": "教材代表页 · 斯波索宾答案下",
+          "text": "手册将本页列为《斯波索宾答案下》代表页；该书定位：下册习题解答：重属与离调、半音体系、各级关系转调、和弦外音、持续音、变和弦与等音转调。",
+          "href": "../和声学手册.html#book-profiles"
+        }
+      ],
+      "188": [
+        {
+          "kind": "profile",
+          "id": "profile-spossbin_answers_2-p0188",
+          "anchor": "ref-profile-profile-spossbin_answers_2-p0188",
+          "label": "教材代表页 · 斯波索宾答案下",
+          "text": "手册将本页列为《斯波索宾答案下》代表页；该书定位：下册习题解答：重属与离调、半音体系、各级关系转调、和弦外音、持续音、变和弦与等音转调。",
+          "href": "../和声学手册.html#book-profiles"
+        }
+      ],
+      "192": [
+        {
+          "kind": "claim",
+          "id": "prolongation.pedal-reinterpretation",
+          "anchor": "ref-claim-prolongation-pedal-reinterpretation-p0192",
+          "label": "延长、层次与曲式 · prolongation.pedal-reinterpretation",
+          "text": "手册提炼：持续音上的局部和声可随转调被重新解释：同一低音先作为旧调属持续音，随后可成为新调主持续音，从而延长结构过渡。",
+          "href": "../和声学手册.html#claim-prolongation-pedal-reinterpretation"
+        }
+      ],
+      "201": [
+        {
+          "kind": "claim",
+          "id": "modulation.intermediate-keys",
+          "anchor": "ref-claim-modulation-intermediate-keys-p0201",
+          "label": "转调体系：类型、距离与确认 · modulation.intermediate-keys",
+          "text": "手册提炼：相差两个调号的调可通过一个与前后两调都相邻的中间调连接；这种分段转调把远关系拆成可听的近关系步骤。",
+          "href": "../和声学手册.html#claim-modulation-intermediate-keys"
+        },
+        {
+          "kind": "profile",
+          "id": "profile-spossbin_answers_2-p0201",
+          "anchor": "ref-profile-profile-spossbin_answers_2-p0201",
+          "label": "教材代表页 · 斯波索宾答案下",
+          "text": "手册将本页列为《斯波索宾答案下》代表页；该书定位：下册习题解答：重属与离调、半音体系、各级关系转调、和弦外音、持续音、变和弦与等音转调。",
+          "href": "../和声学手册.html#book-profiles"
+        }
+      ],
+      "205": [
+        {
+          "kind": "claim",
+          "id": "sequence.modulating",
+          "anchor": "ref-claim-sequence-modulating-p0205",
+          "label": "模进与五度循环 · sequence.modulating",
+          "text": "手册提炼：模进可以把同一旋律或和声模式移到不同音高或调上；连续模进既推进音乐，也可作为转调或转调模进的基础。",
+          "href": "../和声学手册.html#claim-sequence-modulating"
+        },
+        {
+          "kind": "claim",
+          "id": "voice-leading.phrase-boundary-exception",
+          "anchor": "ref-claim-voice-leading-phrase-boundary-exception-p0205",
+          "label": "声部进行与不协和解决 · voice-leading.phrase-boundary-exception",
+          "text": "手册提炼：平行五、八度规则以同一连续声部进行为前提；乐句结束与下一乐句开始之间的断开可使相同音程的相邻出现成为语境例外。",
+          "href": "../和声学手册.html#claim-voice-leading-phrase-boundary-exception"
+        },
+        {
+          "kind": "profile",
+          "id": "profile-spossbin_answers_2-p0205",
+          "anchor": "ref-profile-profile-spossbin_answers_2-p0205",
+          "label": "教材代表页 · 斯波索宾答案下",
+          "text": "手册将本页列为《斯波索宾答案下》代表页；该书定位：下册习题解答：重属与离调、半音体系、各级关系转调、和弦外音、持续音、变和弦与等音转调。",
+          "href": "../和声学手册.html#book-profiles"
+        }
+      ],
+      "221": [
+        {
+          "kind": "profile",
+          "id": "profile-spossbin_answers_2-p0221",
+          "anchor": "ref-profile-profile-spossbin_answers_2-p0221",
+          "label": "教材代表页 · 斯波索宾答案下",
+          "text": "手册将本页列为《斯波索宾答案下》代表页；该书定位：下册习题解答：重属与离调、半音体系、各级关系转调、和弦外音、持续音、变和弦与等音转调。",
+          "href": "../和声学手册.html#book-profiles"
+        }
+      ],
+      "225": [
+        {
+          "kind": "profile",
+          "id": "profile-spossbin_answers_2-p0225",
+          "anchor": "ref-profile-profile-spossbin_answers_2-p0225",
+          "label": "教材代表页 · 斯波索宾答案下",
+          "text": "手册将本页列为《斯波索宾答案下》代表页；该书定位：下册习题解答：重属与离调、半音体系、各级关系转调、和弦外音、持续音、变和弦与等音转调。",
+          "href": "../和声学手册.html#book-profiles"
+        }
+      ]
+    },
+    "tchaikovsky_guide": {
+      "8": [
+        {
+          "kind": "claim",
+          "id": "interval.inversion",
+          "anchor": "ref-claim-interval-inversion-p0008",
+          "label": "音程、音高集合与音名拼写 · interval.inversion",
+          "text": "手册提炼：音程转位会改变度数，但保持两音的等音音高关系，是拼写、和弦转位与集合运算的共同前提。",
+          "href": "../和声学手册.html#claim-interval-inversion"
+        },
+        {
+          "kind": "prose",
+          "id": "cite-tchaikovsky_guide-p0008-1",
+          "anchor": "ref-prose-cite-tchaikovsky_guide-p0008-1-p0008",
+          "label": "手册正文引用",
+          "text": "因此程序同时保存 pitch class 与 拼写音名。同一个音响可以有多个分析，但具体作品中的记谱与声部进行通常只支持其中一个。音程转位的定义见柴可夫斯基《和声学指南》PDF p.8。",
+          "href": "../和声学手册.html#cite-tchaikovsky_guide-p0008-1"
+        },
+        {
+          "kind": "profile",
+          "id": "profile-tchaikovsky_guide-p0008",
+          "anchor": "ref-profile-profile-tchaikovsky_guide-p0008",
+          "label": "教材代表页 · 柴可夫斯基指南",
+          "text": "手册将本页列为《柴可夫斯基指南》代表页；该书定位：以实践写作为中心的简明教程：连接法、平行五八、属七解决、模进、转调、和弦外音与增六。",
+          "href": "../和声学手册.html#book-profiles"
+        }
+      ],
+      "14": [
+        {
+          "kind": "claim",
+          "id": "triad.construction",
+          "anchor": "ref-claim-triad-construction-p0014",
+          "label": "三和弦与七和弦（前置速查） · triad.construction",
+          "text": "手册提炼：三和弦由根音、三音、五音按三度叠置；三度与五度的性质决定大、小、减、增四类结构。",
+          "href": "../和声学手册.html#claim-triad-construction"
+        },
+        {
+          "kind": "profile",
+          "id": "profile-tchaikovsky_guide-p0014",
+          "anchor": "ref-profile-profile-tchaikovsky_guide-p0014",
+          "label": "教材代表页 · 柴可夫斯基指南",
+          "text": "手册将本页列为《柴可夫斯基指南》代表页；该书定位：以实践写作为中心的简明教程：连接法、平行五八、属七解决、模进、转调、和弦外音与增六。",
+          "href": "../和声学手册.html#book-profiles"
+        }
+      ],
+      "15": [
+        {
+          "kind": "claim",
+          "id": "diatonic.tonic-subdominant-dominant",
+          "anchor": "ref-claim-diatonic-tonic-subdominant-dominant-p0015",
+          "label": "自然音级功能：T–S–D · diatonic.tonic-subdominant-dominant",
+          "text": "手册提炼：大调 I、IV、V 分别承担主、下属、属的核心功能，其他自然三和弦按共同音与倾向归入功能组。",
+          "href": "../和声学手册.html#claim-diatonic-tonic-subdominant-dominant"
+        }
+      ],
+      "21": [
+        {
+          "kind": "claim",
+          "id": "voice-leading.parallels",
+          "anchor": "ref-claim-voice-leading-parallels-p0021",
+          "label": "声部进行与不协和解决 · voice-leading.parallels",
+          "text": "手册提炼：平行纯五度、纯八度削弱声部独立性，因此传统调性写作把它们视为需要避免的进行。",
+          "href": "../和声学手册.html#claim-voice-leading-parallels"
+        },
+        {
+          "kind": "prose",
+          "id": "cite-tchaikovsky_guide-p0021-1",
+          "anchor": "ref-prose-cite-tchaikovsky_guide-p0021-1-p0021",
+          "label": "手册正文引用",
+          "text": "平行纯五度、纯八度：两个声部以相同纯音程同向移动到新的纯音程，会削弱独立性，传统写作中避免（柴可夫斯基 PDF p.21；《概述》PDF p.103）。",
+          "href": "../和声学手册.html#cite-tchaikovsky_guide-p0021-1"
+        },
+        {
+          "kind": "profile",
+          "id": "profile-tchaikovsky_guide-p0021",
+          "anchor": "ref-profile-profile-tchaikovsky_guide-p0021",
+          "label": "教材代表页 · 柴可夫斯基指南",
+          "text": "手册将本页列为《柴可夫斯基指南》代表页；该书定位：以实践写作为中心的简明教程：连接法、平行五八、属七解决、模进、转调、和弦外音与增六。",
+          "href": "../和声学手册.html#book-profiles"
+        }
+      ],
+      "25": [
+        {
+          "kind": "claim",
+          "id": "voice-leading.leading-tone",
+          "anchor": "ref-claim-voice-leading-leading-tone-p0025",
+          "label": "声部进行与不协和解决 · voice-leading.leading-tone",
+          "text": "手册提炼：导音具有上行到主音的强烈倾向；当它位于外声部时，这一解决要求尤其严格。",
+          "href": "../和声学手册.html#claim-voice-leading-leading-tone"
+        },
+        {
+          "kind": "profile",
+          "id": "profile-tchaikovsky_guide-p0025",
+          "anchor": "ref-profile-profile-tchaikovsky_guide-p0025",
+          "label": "教材代表页 · 柴可夫斯基指南",
+          "text": "手册将本页列为《柴可夫斯基指南》代表页；该书定位：以实践写作为中心的简明教程：连接法、平行五八、属七解决、模进、转调、和弦外音与增六。",
+          "href": "../和声学手册.html#book-profiles"
+        }
+      ],
+      "36": [
+        {
+          "kind": "claim",
+          "id": "inversion.bass-function",
+          "anchor": "ref-claim-inversion-bass-function-p0036",
+          "label": "转位、低音与和声节奏 · inversion.bass-function",
+          "text": "手册提炼：转位由低音是否为根音决定；低音改变会削弱根音支持，并改变和弦的连接与结构功能。",
+          "href": "../和声学手册.html#claim-inversion-bass-function"
+        },
+        {
+          "kind": "prose",
+          "id": "cite-tchaikovsky_guide-p0036-1",
+          "anchor": "ref-prose-cite-tchaikovsky_guide-p0036-1-p0036",
+          "label": "手册正文引用",
+          "text": "终止四六应出现在比其后 V 更强的节奏位置，并尽量平稳进出（《概述》PDF p.173）。柴可夫斯基 PDF p.36 则强调原位与转位的“和声精神”不同：转位缺少纯五度支撑，更具前进动力。",
+          "href": "../和声学手册.html#cite-tchaikovsky_guide-p0036-1"
+        },
+        {
+          "kind": "profile",
+          "id": "profile-tchaikovsky_guide-p0036",
+          "anchor": "ref-profile-profile-tchaikovsky_guide-p0036",
+          "label": "教材代表页 · 柴可夫斯基指南",
+          "text": "手册将本页列为《柴可夫斯基指南》代表页；该书定位：以实践写作为中心的简明教程：连接法、平行五八、属七解决、模进、转调、和弦外音与增六。",
+          "href": "../和声学手册.html#book-profiles"
+        }
+      ],
+      "46": [
+        {
+          "kind": "claim",
+          "id": "dominant.v7-resolution",
+          "anchor": "ref-claim-dominant-v7-resolution-p0046",
+          "label": "属功能与属七解决 · dominant.v7-resolution",
+          "text": "手册提炼：属七解决的基本声部规则是导音上行到主音、七音下行到三级；外声部导音尤其应上行。",
+          "href": "../和声学手册.html#claim-dominant-v7-resolution"
+        },
+        {
+          "kind": "claim",
+          "id": "seventh.general-resolution",
+          "anchor": "ref-claim-seventh-general-resolution-p0046",
+          "label": "七和弦、九和弦与不协和等级 · seventh.general-resolution",
+          "text": "手册提炼：七和弦是不协和和弦，需准备并按倾向解决；其七音通常下行级进，属七是最强的功能和声形态。",
+          "href": "../和声学手册.html#claim-seventh-general-resolution"
+        },
+        {
+          "kind": "prose",
+          "id": "cite-tchaikovsky_guide-p0046-1",
+          "anchor": "ref-prose-cite-tchaikovsky_guide-p0046-1-p0046",
+          "label": "手册正文引用",
+          "text": "这些规则分别见《调性和声及20世纪音乐概述》PDF p.229–230、p.402–403，以及柴可夫斯基 PDF p.46。",
+          "href": "../和声学手册.html#cite-tchaikovsky_guide-p0046-1"
+        },
+        {
+          "kind": "prose",
+          "id": "cite-tchaikovsky_guide-p0046-2",
+          "anchor": "ref-prose-cite-tchaikovsky_guide-p0046-2-p0046",
+          "label": "手册正文引用",
+          "text": "桑桐 PDF p.60、p.72 与柴可夫斯基 PDF p.46 对七/九和弦的省略、重复、解决给出了可操作规则；程序的 tendencyWarnings() 会对未解决到目标音的导音、七音、增六音给出警告。",
+          "href": "../和声学手册.html#cite-tchaikovsky_guide-p0046-2"
+        },
+        {
+          "kind": "profile",
+          "id": "profile-tchaikovsky_guide-p0046",
+          "anchor": "ref-profile-profile-tchaikovsky_guide-p0046",
+          "label": "教材代表页 · 柴可夫斯基指南",
+          "text": "手册将本页列为《柴可夫斯基指南》代表页；该书定位：以实践写作为中心的简明教程：连接法、平行五八、属七解决、模进、转调、和弦外音与增六。",
+          "href": "../和声学手册.html#book-profiles"
+        }
+      ],
+      "68": [
+        {
+          "kind": "claim",
+          "id": "sequence.transposition",
+          "anchor": "ref-claim-sequence-transposition-p0068",
+          "label": "模进与五度循环 · sequence.transposition",
+          "text": "手册提炼：模进把同一和声单元整体移位，可保持局部连接语法，同时累积离开原调的压力。",
+          "href": "../和声学手册.html#claim-sequence-transposition"
+        },
+        {
+          "kind": "profile",
+          "id": "profile-tchaikovsky_guide-p0068",
+          "anchor": "ref-profile-profile-tchaikovsky_guide-p0068",
+          "label": "教材代表页 · 柴可夫斯基指南",
+          "text": "手册将本页列为《柴可夫斯基指南》代表页；该书定位：以实践写作为中心的简明教程：连接法、平行五八、属七解决、模进、转调、和弦外音与增六。",
+          "href": "../和声学手册.html#book-profiles"
+        }
+      ],
+      "94": [
+        {
+          "kind": "example",
+          "id": "C05",
+          "anchor": "ref-example-c05-p0094",
+          "label": "手册案例 C05 · 对斜：变化音保持同一声部",
+          "text": "转调示例｜教材转调示例\n原书要点：同一音级的变化音应保留在同一声部，否则形成对斜；低声部跳进优于上方声部跳进。\n机制：对斜来自同一音级的变化音在相邻和弦间换了声部。把变化音保留在同一声部，可让音级身份与进行方向连续。\n读谱：找变化音前后两次出现，确认是否沿同一声部横向移动；若跨声部跳走，即形成对斜。\n用法：转调或变和弦前先标出变化音轨迹；可由低音跳进承担换位，但不要让变化音跨声部。",
+          "href": "../和声学手册.html#example-c05"
+        }
+      ],
+      "100": [
+        {
+          "kind": "claim",
+          "id": "modulation.confirmation",
+          "anchor": "ref-claim-modulation-confirmation-p0100",
+          "label": "转调体系：类型、距离与确认 · modulation.confirmation",
+          "text": "手册提炼：转调必须由新调的和声进行与终止式确认；短促强调或单一副属和弦通常只是离调。",
+          "href": "../和声学手册.html#claim-modulation-confirmation"
+        },
+        {
+          "kind": "profile",
+          "id": "profile-tchaikovsky_guide-p0100",
+          "anchor": "ref-profile-profile-tchaikovsky_guide-p0100",
+          "label": "教材代表页 · 柴可夫斯基指南",
+          "text": "手册将本页列为《柴可夫斯基指南》代表页；该书定位：以实践写作为中心的简明教程：连接法、平行五八、属七解决、模进、转调、和弦外音与增六。",
+          "href": "../和声学手册.html#book-profiles"
+        }
+      ],
+      "102": [
+        {
+          "kind": "example",
+          "id": "C06",
+          "anchor": "ref-example-c06-p0102",
+          "label": "手册案例 C06 · 转调模进：局部属—主链",
+          "text": "转调模进示例｜教材转调模进示例\n原书要点：前四小节各调的 II7→V 造成调性模糊，直到第 5 小节才明确感到转调。\n机制：模进以同一音型连续移位，每次 ii7–V 指向不同临时主音；目标主和弦出现并稳定后，转调才被确认。\n读谱：标出每小节 II7→V 的局部目标和低音落点；数真正的新主和弦到第几小节才出现。\n用法：写转调模进时连续使用 ii7–V 保留多个出口，最后用一个目标主和弦和终止式确认新调。",
+          "href": "../和声学手册.html#example-c06"
+        }
+      ],
+      "109": [
+        {
+          "kind": "claim",
+          "id": "diminished-seventh.enharmonic",
+          "anchor": "ref-claim-diminished-seventh-enharmonic-p0109",
+          "label": "减七和弦与等音网络 · diminished-seventh.enharmonic",
+          "text": "手册提炼：减七和弦由等分小三度构成，只有三种不同音响；每个音响可等音重写为四个不同根音的减七。",
+          "href": "../和声学手册.html#claim-diminished-seventh-enharmonic"
+        },
+        {
+          "kind": "claim",
+          "id": "diminished-seventh.four-resolutions",
+          "anchor": "ref-claim-diminished-seventh-four-resolutions-p0109",
+          "label": "减七和弦与等音网络 · diminished-seventh.four-resolutions",
+          "text": "手册提炼：同一减七音响可向四个方向解决，因而能通向二十四个调，是远关系转调的常用连接和弦。",
+          "href": "../和声学手册.html#claim-diminished-seventh-four-resolutions"
+        },
+        {
+          "kind": "prose",
+          "id": "cite-tchaikovsky_guide-p0109-1",
+          "anchor": "ref-prose-cite-tchaikovsky_guide-p0109-1-p0109",
+          "label": "手册正文引用",
+          "text": "减七和弦可等音重写为四个不同根音的减七，分别解决到四个方向；同一减七音响因此可通向 24 个调（柴可夫斯基 PDF p.109；桑桐 PDF p.354）。大小七和弦可等音为德国增六或另一调属七，形成两个主要解决方向（《概述》PDF p.433–434）。等音转调的关键不只是“音响相同”，而是：",
+          "href": "../和声学手册.html#cite-tchaikovsky_guide-p0109-1"
+        },
+        {
+          "kind": "prose",
+          "id": "cite-tchaikovsky_guide-p0109-2",
+          "anchor": "ref-prose-cite-tchaikovsky_guide-p0109-2-p0109",
+          "label": "手册正文引用",
+          "text": "减七由三个小三度叠置，完全对称；转位后小三度可写为增二度，用等音小三度替换即产生新减七。每个减七有三种等音写法（同一音响）和四个解决方向，可作为属功能、副属功能或导音和弦进入不同调（柴可夫斯基 PDF p.109；桑桐 PDF p.352–354）。",
+          "href": "../和声学手册.html#cite-tchaikovsky_guide-p0109-2"
+        },
+        {
+          "kind": "profile",
+          "id": "profile-tchaikovsky_guide-p0109",
+          "anchor": "ref-profile-profile-tchaikovsky_guide-p0109",
+          "label": "教材代表页 · 柴可夫斯基指南",
+          "text": "手册将本页列为《柴可夫斯基指南》代表页；该书定位：以实践写作为中心的简明教程：连接法、平行五八、属七解决、模进、转调、和弦外音与增六。",
+          "href": "../和声学手册.html#book-profiles"
+        }
+      ],
+      "154": [
+        {
+          "kind": "claim",
+          "id": "augmented-sixth.definition",
+          "anchor": "ref-claim-augmented-sixth-definition-p0154",
+          "label": "增六和弦 · augmented-sixth.definition",
+          "text": "手册提炼：增六和弦以增六度音程半音向外解决到属音，是强属前和弦，包含意大利、法国、德国三类常见形态。",
+          "href": "../和声学手册.html#claim-augmented-sixth-definition"
+        },
+        {
+          "kind": "prose",
+          "id": "cite-tchaikovsky_guide-p0154-1",
+          "anchor": "ref-prose-cite-tchaikovsky_guide-p0154-1-p0154",
+          "label": "手册正文引用",
+          "text": "增六的“强”来自双半音向外解决；若声部方向被破坏，它只剩怪异音响。柴可夫斯基 PDF p.154–157 还提醒：增六解决到小三和弦较少见，转调时若没有较长终止，听感可能只是离调。",
+          "href": "../和声学手册.html#cite-tchaikovsky_guide-p0154-1"
+        },
+        {
+          "kind": "profile",
+          "id": "profile-tchaikovsky_guide-p0154",
+          "anchor": "ref-profile-profile-tchaikovsky_guide-p0154",
+          "label": "教材代表页 · 柴可夫斯基指南",
+          "text": "手册将本页列为《柴可夫斯基指南》代表页；该书定位：以实践写作为中心的简明教程：连接法、平行五八、属七解决、模进、转调、和弦外音与增六。",
+          "href": "../和声学手册.html#book-profiles"
+        }
+      ],
+      "196": [
+        {
+          "kind": "claim",
+          "id": "cadence.pac-iac",
+          "anchor": "ref-claim-cadence-pac-iac-p0196",
+          "label": "终止式 · cadence.pac-iac",
+          "text": "手册提炼：完满正格终止由原位属到原位主、且主音位于最高声部构成；其余 V–I 多为不完满正格终止。",
+          "href": "../和声学手册.html#claim-cadence-pac-iac"
+        },
+        {
+          "kind": "profile",
+          "id": "profile-tchaikovsky_guide-p0196",
+          "anchor": "ref-profile-profile-tchaikovsky_guide-p0196",
+          "label": "教材代表页 · 柴可夫斯基指南",
+          "text": "手册将本页列为《柴可夫斯基指南》代表页；该书定位：以实践写作为中心的简明教程：连接法、平行五八、属七解决、模进、转调、和弦外音与增六。",
+          "href": "../和声学手册.html#book-profiles"
+        }
+      ],
+      "197": [
+        {
+          "kind": "claim",
+          "id": "cadence.half-plagal-deceptive",
+          "anchor": "ref-claim-cadence-half-plagal-deceptive-p0197",
+          "label": "终止式 · cadence.half-plagal-deceptive",
+          "text": "手册提炼：半终止停在属功能，变格终止为 IV–I，阻碍进行为 V–vi；三者收束强度与结构作用不同。",
+          "href": "../和声学手册.html#claim-cadence-half-plagal-deceptive"
+        }
+      ]
+    },
+    "tonal_20c_overview": {
+      "94": [
+        {
+          "kind": "profile",
+          "id": "profile-tonal_20c_overview-p0094",
+          "anchor": "ref-profile-profile-tonal_20c_overview-p0094",
+          "label": "教材代表页 · 调性和声概述",
+          "text": "手册将本页列为《调性和声概述》代表页；该书定位：从四部和声基础到 20 世纪后调性技法的完整课程，是本项目最系统的结构参照。",
+          "href": "../和声学手册.html#book-profiles"
+        }
+      ],
+      "103": [
+        {
+          "kind": "claim",
+          "id": "voice-leading.parallels",
+          "anchor": "ref-claim-voice-leading-parallels-p0103",
+          "label": "声部进行与不协和解决 · voice-leading.parallels",
+          "text": "手册提炼：平行纯五度、纯八度削弱声部独立性，因此传统调性写作把它们视为需要避免的进行。",
+          "href": "../和声学手册.html#claim-voice-leading-parallels"
+        },
+        {
+          "kind": "prose",
+          "id": "cite-tonal_20c_overview-p0103-1",
+          "anchor": "ref-prose-cite-tonal_20c_overview-p0103-1-p0103",
+          "label": "手册正文引用",
+          "text": "平行纯五度、纯八度：两个声部以相同纯音程同向移动到新的纯音程，会削弱独立性，传统写作中避免（柴可夫斯基 PDF p.21；《概述》PDF p.103）。",
+          "href": "../和声学手册.html#cite-tonal_20c_overview-p0103-1"
+        },
+        {
+          "kind": "profile",
+          "id": "profile-tonal_20c_overview-p0103",
+          "anchor": "ref-profile-profile-tonal_20c_overview-p0103",
+          "label": "教材代表页 · 调性和声概述",
+          "text": "手册将本页列为《调性和声概述》代表页；该书定位：从四部和声基础到 20 世纪后调性技法的完整课程，是本项目最系统的结构参照。",
+          "href": "../和声学手册.html#book-profiles"
+        }
+      ],
+      "173": [
+        {
+          "kind": "claim",
+          "id": "inversion.cadential-six-four",
+          "anchor": "ref-claim-inversion-cadential-six-four-p0173",
+          "label": "转位、低音与和声节奏 · inversion.cadential-six-four",
+          "text": "手册提炼：终止四六和弦延迟 V 的到来，应处于比其后 V 更强的节奏位置，并以平稳声部进出。",
+          "href": "../和声学手册.html#claim-inversion-cadential-six-four"
+        },
+        {
+          "kind": "prose",
+          "id": "cite-tonal_20c_overview-p0173-1",
+          "anchor": "ref-prose-cite-tonal_20c_overview-p0173-1-p0173",
+          "label": "手册正文引用",
+          "text": "终止四六应出现在比其后 V 更强的节奏位置，并尽量平稳进出（《概述》PDF p.173）。柴可夫斯基 PDF p.36 则强调原位与转位的“和声精神”不同：转位缺少纯五度支撑，更具前进动力。",
+          "href": "../和声学手册.html#cite-tonal_20c_overview-p0173-1"
+        }
+      ],
+      "174": [
+        {
+          "kind": "claim",
+          "id": "cadence.pac-iac",
+          "anchor": "ref-claim-cadence-pac-iac-p0174",
+          "label": "终止式 · cadence.pac-iac",
+          "text": "手册提炼：完满正格终止由原位属到原位主、且主音位于最高声部构成；其余 V–I 多为不完满正格终止。",
+          "href": "../和声学手册.html#claim-cadence-pac-iac"
+        },
+        {
+          "kind": "prose",
+          "id": "cite-tonal_20c_overview-p0174-1",
+          "anchor": "ref-prose-cite-tonal_20c_overview-p0174-1-p0174",
+          "label": "手册正文引用",
+          "text": "终止式由功能张力、低音、旋律位置、节拍强位、前文准备共同决定。相同的 V–I 在乐句内部可能只是经过，在段落结尾才成为终止；并非所有 V–I 都是终止式（《概述》PDF p.174、p.184）。",
+          "href": "../和声学手册.html#cite-tonal_20c_overview-p0174-1"
+        },
+        {
+          "kind": "profile",
+          "id": "profile-tonal_20c_overview-p0174",
+          "anchor": "ref-profile-profile-tonal_20c_overview-p0174",
+          "label": "教材代表页 · 调性和声概述",
+          "text": "手册将本页列为《调性和声概述》代表页；该书定位：从四部和声基础到 20 世纪后调性技法的完整课程，是本项目最系统的结构参照。",
+          "href": "../和声学手册.html#book-profiles"
+        }
+      ],
+      "178": [
+        {
+          "kind": "claim",
+          "id": "cadence.half-plagal-deceptive",
+          "anchor": "ref-claim-cadence-half-plagal-deceptive-p0178",
+          "label": "终止式 · cadence.half-plagal-deceptive",
+          "text": "手册提炼：半终止停在属功能，变格终止为 IV–I，阻碍进行为 V–vi；三者收束强度与结构作用不同。",
+          "href": "../和声学手册.html#claim-cadence-half-plagal-deceptive"
+        }
+      ],
+      "184": [
+        {
+          "kind": "claim",
+          "id": "cadence.phrase-pair",
+          "anchor": "ref-claim-cadence-phrase-pair-p0184",
+          "label": "终止式 · cadence.phrase-pair",
+          "text": "手册提炼：典型乐段由两个终止强度不同的乐句构成，常见布局为 HC→PAC/IAC 或 IAC→PAC。",
+          "href": "../和声学手册.html#claim-cadence-phrase-pair"
+        },
+        {
+          "kind": "prose",
+          "id": "cite-tonal_20c_overview-p0184-1",
+          "anchor": "ref-prose-cite-tonal_20c_overview-p0184-1-p0184",
+          "label": "手册正文引用",
+          "text": "终止式由功能张力、低音、旋律位置、节拍强位、前文准备共同决定。相同的 V–I 在乐句内部可能只是经过，在段落结尾才成为终止；并非所有 V–I 都是终止式（《概述》PDF p.174、p.184）。",
+          "href": "../和声学手册.html#cite-tonal_20c_overview-p0184-1"
+        },
+        {
+          "kind": "prose",
+          "id": "cite-tonal_20c_overview-p0184-2",
+          "anchor": "ref-prose-cite-tonal_20c_overview-p0184-2-p0184",
+          "label": "手册正文引用",
+          "text": "典型乐段由两个乐句构成“前提—结论”关系：第一句常停在 HC 或 IAC，第二句以 PAC 收束（《概述》PDF p.184）。如果两句终止强度相同，结构上更像重复乐句而非真正的乐段。奏鸣曲式进一步把这种开合扩大为呈示部、展开部、再现部的调性冲突与解决（PDF p.353）。",
+          "href": "../和声学手册.html#cite-tonal_20c_overview-p0184-2"
+        },
+        {
+          "kind": "profile",
+          "id": "profile-tonal_20c_overview-p0184",
+          "anchor": "ref-profile-profile-tonal_20c_overview-p0184",
+          "label": "教材代表页 · 调性和声概述",
+          "text": "手册将本页列为《调性和声概述》代表页；该书定位：从四部和声基础到 20 世纪后调性技法的完整课程，是本项目最系统的结构参照。",
+          "href": "../和声学手册.html#book-profiles"
+        }
+      ],
+      "229": [
+        {
+          "kind": "claim",
+          "id": "dominant.v7-resolution",
+          "anchor": "ref-claim-dominant-v7-resolution-p0229",
+          "label": "属功能与属七解决 · dominant.v7-resolution",
+          "text": "手册提炼：属七解决的基本声部规则是导音上行到主音、七音下行到三级；外声部导音尤其应上行。",
+          "href": "../和声学手册.html#claim-dominant-v7-resolution"
+        },
+        {
+          "kind": "example",
+          "id": "C01",
+          "anchor": "ref-example-c01-p0229",
+          "label": "手册案例 C01 · 属七七音：下行级进解决",
+          "text": "例13-2｜四声部教材模型\n原书要点：七音几乎总下行级进解决；上行解决虽可弹，却在调性语料中极罕见。\n机制：属七的七音与主和弦三音相差半音；七音下行解决时，半音级进把未完成的和声张力收束到主和弦。\n读谱：只盯 V7 的七音（4）到主和弦三音（3）的级进；导音（7）若在外声部，再另看它是否上行到 1。\n用法：写终止时先确定 4→3，再安排 7→1；若声部冲突，改排列或转位，保留七音下行。",
+          "href": "../和声学手册.html#example-c01"
+        },
+        {
+          "kind": "prose",
+          "id": "cite-tonal_20c_overview-p0229-1",
+          "anchor": "ref-prose-cite-tonal_20c_overview-p0229-1-p0229",
+          "label": "手册正文引用",
+          "text": "这些规则分别见《调性和声及20世纪音乐概述》PDF p.229–230、p.402–403，以及柴可夫斯基 PDF p.46。",
+          "href": "../和声学手册.html#cite-tonal_20c_overview-p0229-1"
+        },
+        {
+          "kind": "profile",
+          "id": "profile-tonal_20c_overview-p0229",
+          "anchor": "ref-profile-profile-tonal_20c_overview-p0229",
+          "label": "教材代表页 · 调性和声概述",
+          "text": "手册将本页列为《调性和声概述》代表页；该书定位：从四部和声基础到 20 世纪后调性技法的完整课程，是本项目最系统的结构参照。",
+          "href": "../和声学手册.html#book-profiles"
+        }
+      ],
+      "230": [
+        {
+          "kind": "claim",
+          "id": "dominant.tritone-resolution",
+          "anchor": "ref-claim-dominant-tritone-resolution-p0230",
+          "label": "属功能与属七解决 · dominant.tritone-resolution",
+          "text": "手册提炼：属七中的三全音按增四度向外、减五度向内收缩，分别解决到主和弦的六度或三度。",
+          "href": "../和声学手册.html#claim-dominant-tritone-resolution"
+        },
+        {
+          "kind": "example",
+          "id": "C02",
+          "anchor": "ref-example-c02-p0230",
+          "label": "手册案例 C02 · 不完全主和弦：省略五音仍完成终止",
+          "text": "例13-5｜舒伯特《弦乐四重奏》“死神与少女”第一乐章\n原书要点：V7 解决到省略五音的主三和弦在终止中很常见；导音仍上行解决。\n机制：终止的完成感由 4→3、7→1 的解决建立；主和弦省略五音、重复根音，可以避免声部反向。\n读谱：看 V7 到 i 的最后一步：导音是否上行到主音、七音是否下行到三音，主和弦是否省五音并重复根音。\n用法：四声部终止若补全会迫使某声部反向，可省五音、重复根音；保留 4→3 与 7→1 的方向。",
+          "href": "../和声学手册.html#example-c02"
+        }
+      ],
+      "231": [
+        {
+          "kind": "example",
+          "id": "C03",
+          "anchor": "ref-example-c03-p0231",
+          "label": "手册案例 C03 · 省五音属七：保留导音级进",
+          "text": "例13-7｜巴赫《树林都安静了》\n原书要点：巴赫用省略五音、重复根音的不完全 V7 进入完全主和弦。\n机制：完全主和弦要求导音上行到主音；省略属七五音并重复根音，可减少声部挤压，保留 7→1 与 4→3。\n读谱：看 V7 是否省五音并重复根音；再看进入 I 时七音是否到三音、导音是否到主音。\n用法：需要完全主和弦时，可先试“省 V7 五音、重复根音”；不要重复导音或让导音跳进。",
+          "href": "../和声学手册.html#example-c03"
+        }
+      ],
+      "273": [
+        {
+          "kind": "claim",
+          "id": "secondary-dominant.definition",
+          "anchor": "ref-claim-secondary-dominant-definition-p0273",
+          "label": "副属和弦与离调 · secondary-dominant.definition",
+          "text": "手册提炼：副属和弦把调内某一大三或小三和弦临时当主，以 V/x 或 vii°/x 加强它而不改变全局主调。",
+          "href": "../和声学手册.html#claim-secondary-dominant-definition"
+        },
+        {
+          "kind": "profile",
+          "id": "profile-tonal_20c_overview-p0273",
+          "anchor": "ref-profile-profile-tonal_20c_overview-p0273",
+          "label": "教材代表页 · 调性和声概述",
+          "text": "手册将本页列为《调性和声概述》代表页；该书定位：从四部和声基础到 20 世纪后调性技法的完整课程，是本项目最系统的结构参照。",
+          "href": "../和声学手册.html#book-profiles"
+        }
+      ],
+      "274": [
+        {
+          "kind": "claim",
+          "id": "secondary-dominant.targets",
+          "anchor": "ref-claim-secondary-dominant-targets-p0274",
+          "label": "副属和弦与离调 · secondary-dominant.targets",
+          "text": "手册提炼：除主和弦外，调内自然大三、小三和弦都可成为副属或副属七的临时主和弦。",
+          "href": "../和声学手册.html#claim-secondary-dominant-targets"
+        }
+      ],
+      "312": [
+        {
+          "kind": "claim",
+          "id": "modulation.confirmation",
+          "anchor": "ref-claim-modulation-confirmation-p0312",
+          "label": "转调体系：类型、距离与确认 · modulation.confirmation",
+          "text": "手册提炼：转调必须由新调的和声进行与终止式确认；短促强调或单一副属和弦通常只是离调。",
+          "href": "../和声学手册.html#claim-modulation-confirmation"
+        }
+      ],
+      "313": [
+        {
+          "kind": "claim",
+          "id": "tonicization.time-structure",
+          "anchor": "ref-claim-tonicization-time-structure-p0313",
+          "label": "临时主音化（离调） · tonicization.time-structure",
+          "text": "手册提炼：离调与转调的界限主要取决于持续时间、结构位置与终止确认；单靠一个变化和弦不能判定转调。",
+          "href": "../和声学手册.html#claim-tonicization-time-structure"
+        },
+        {
+          "kind": "prose",
+          "id": "cite-tonal_20c_overview-p0313-1",
+          "anchor": "ref-prose-cite-tonal_20c_overview-p0313-1-p0313",
+          "label": "手册正文引用",
+          "text": "时间是最重要的因素之一（《概述》PDF p.313）；桑桐 PDF p.178 则把结构位置与终止确认作为区分离调、交替、转调的关键。实际作品中存在连续过渡，分析应说明证据强弱，而不是强行二选一。",
+          "href": "../和声学手册.html#cite-tonal_20c_overview-p0313-1"
+        },
+        {
+          "kind": "profile",
+          "id": "profile-tonal_20c_overview-p0313",
+          "anchor": "ref-profile-profile-tonal_20c_overview-p0313",
+          "label": "教材代表页 · 调性和声概述",
+          "text": "手册将本页列为《调性和声概述》代表页；该书定位：从四部和声基础到 20 世纪后调性技法的完整课程，是本项目最系统的结构参照。",
+          "href": "../和声学手册.html#book-profiles"
+        }
+      ],
+      "316": [
+        {
+          "kind": "claim",
+          "id": "pivot.common-chord",
+          "anchor": "ref-claim-pivot-common-chord-p0316",
+          "label": "中介和弦与转调 · pivot.common-chord",
+          "text": "手册提炼：中介和弦转调以两调共有的和弦为连接点；同一音集从旧调功能重释为新调功能，再由新调的属—主或终止式确认。",
+          "href": "../和声学手册.html#claim-pivot-common-chord"
+        },
+        {
+          "kind": "prose",
+          "id": "cite-tonal_20c_overview-p0316-1",
+          "anchor": "ref-prose-cite-tonal_20c_overview-p0316-1-p0316",
+          "label": "手册正文引用",
+          "text": "《概述》PDF p.316–317 用共同和弦连接两个调，并指出任何两个近关系调至少有一个共同自然三和弦，远关系调则不一定。中介转调要求同一和弦在旧调与新调中承担不同功能；仅找到同音和弦还不够。",
+          "href": "../和声学手册.html#cite-tonal_20c_overview-p0316-1"
+        },
+        {
+          "kind": "profile",
+          "id": "profile-tonal_20c_overview-p0316",
+          "anchor": "ref-profile-profile-tonal_20c_overview-p0316",
+          "label": "教材代表页 · 调性和声概述",
+          "text": "手册将本页列为《调性和声概述》代表页；该书定位：从四部和声基础到 20 世纪后调性技法的完整课程，是本项目最系统的结构参照。",
+          "href": "../和声学手册.html#book-profiles"
+        }
+      ],
+      "317": [
+        {
+          "kind": "claim",
+          "id": "pivot.common-chord",
+          "anchor": "ref-claim-pivot-common-chord-p0317",
+          "label": "中介和弦与转调 · pivot.common-chord",
+          "text": "手册提炼：中介和弦转调以两调共有的和弦为连接点；同一音集从旧调功能重释为新调功能，再由新调的属—主或终止式确认。",
+          "href": "../和声学手册.html#claim-pivot-common-chord"
+        }
+      ],
+      "353": [
+        {
+          "kind": "claim",
+          "id": "form.sonata-conflict",
+          "anchor": "ref-claim-form-sonata-conflict-p0353",
+          "label": "曲式中的和声策略 · form.sonata-conflict",
+          "text": "手册提炼：奏鸣曲呈示部建立主调与副调的主题/调性冲突，展开部扩大不稳定，再现部把副调主题带回主调解决冲突。",
+          "href": "../和声学手册.html#claim-form-sonata-conflict"
+        },
+        {
+          "kind": "prose",
+          "id": "cite-tonal_20c_overview-p0353-1",
+          "anchor": "ref-prose-cite-tonal_20c_overview-p0353-1-p0353",
+          "label": "手册正文引用",
+          "text": "典型乐段由两个乐句构成“前提—结论”关系：第一句常停在 HC 或 IAC，第二句以 PAC 收束（《概述》PDF p.184）。如果两句终止强度相同，结构上更像重复乐句而非真正的乐段。奏鸣曲式进一步把这种开合扩大为呈示部、展开部、再现部的调性冲突与解决（PDF p.353）。",
+          "href": "../和声学手册.html#cite-tonal_20c_overview-p0353-1"
+        }
+      ],
+      "374": [
+        {
+          "kind": "claim",
+          "id": "modal-interchange.borrowed",
+          "anchor": "ref-claim-modal-interchange-borrowed-p0374",
+          "label": "同主音调式交替（借用和弦） · modal-interchange.borrowed",
+          "text": "手册提炼：同主音交替以主音不变为前提，把另一调式的特性音级与和弦借入当前调式，是变化和弦的重要来源。",
+          "href": "../和声学手册.html#claim-modal-interchange-borrowed"
+        },
+        {
+          "kind": "prose",
+          "id": "cite-tonal_20c_overview-p0374-1",
+          "anchor": "ref-prose-cite-tonal_20c_overview-p0374-1-p0374",
+          "label": "手册正文引用",
+          "text": "大调借用同主音小调资源，最常见的是含 ♭6 的 iv、♭VI、iiø7、vii°7；♭3 与 ♭7 进一步扩展为 ♭III、♭VII（《概述》PDF p.374–377）。小调借用大调常表现为升高三音、六音、七音，形成“交替小—大调”（桑桐 PDF p.234）。",
+          "href": "../和声学手册.html#cite-tonal_20c_overview-p0374-1"
+        },
+        {
+          "kind": "profile",
+          "id": "profile-tonal_20c_overview-p0374",
+          "anchor": "ref-profile-profile-tonal_20c_overview-p0374",
+          "label": "教材代表页 · 调性和声概述",
+          "text": "手册将本页列为《调性和声概述》代表页；该书定位：从四部和声基础到 20 世纪后调性技法的完整课程，是本项目最系统的结构参照。",
+          "href": "../和声学手册.html#book-profiles"
+        }
+      ],
+      "377": [
+        {
+          "kind": "claim",
+          "id": "modal-interchange.flat-degrees",
+          "anchor": "ref-claim-modal-interchange-flat-degrees-p0377",
+          "label": "同主音调式交替（借用和弦） · modal-interchange.flat-degrees",
+          "text": "手册提炼：大调借用中最常见的是含 ♭6 的 iv、♭VI、iiø7、vii°7；♭3 与 ♭7 进一步扩展色彩。",
+          "href": "../和声学手册.html#claim-modal-interchange-flat-degrees"
+        }
+      ],
+      "389": [
+        {
+          "kind": "claim",
+          "id": "neapolitan.definition",
+          "anchor": "ref-claim-neapolitan-definition-p0389",
+          "label": "拿波里和弦（♭II） · neapolitan.definition",
+          "text": "手册提炼：拿波里和弦是降低二级音上建立的大三和弦，常以第一转位出现并承担属前功能。",
+          "href": "../和声学手册.html#claim-neapolitan-definition"
+        },
+        {
+          "kind": "prose",
+          "id": "cite-tonal_20c_overview-p0389-1",
+          "anchor": "ref-prose-cite-tonal_20c_overview-p0389-1-p0389",
+          "label": "手册正文引用",
+          "text": "拿波里是降低二级音上的大三和弦，通常第一转位，承担属前功能（《概述》PDF p.389–390）。操作要点：",
+          "href": "../和声学手册.html#cite-tonal_20c_overview-p0389-1"
+        },
+        {
+          "kind": "profile",
+          "id": "profile-tonal_20c_overview-p0389",
+          "anchor": "ref-profile-profile-tonal_20c_overview-p0389",
+          "label": "教材代表页 · 调性和声概述",
+          "text": "手册将本页列为《调性和声概述》代表页；该书定位：从四部和声基础到 20 世纪后调性技法的完整课程，是本项目最系统的结构参照。",
+          "href": "../和声学手册.html#book-profiles"
+        }
+      ],
+      "390": [
+        {
+          "kind": "claim",
+          "id": "neapolitan.resolution",
+          "anchor": "ref-claim-neapolitan-resolution-p0390",
+          "label": "拿波里和弦（♭II） · neapolitan.resolution",
+          "text": "手册提炼：拿波里的 ♭2 通常下行到导音，再进入属；应避免在它后面接 iv 或 ii。",
+          "href": "../和声学手册.html#claim-neapolitan-resolution"
+        }
+      ],
+      "402": [
+        {
+          "kind": "claim",
+          "id": "augmented-sixth.definition",
+          "anchor": "ref-claim-augmented-sixth-definition-p0402",
+          "label": "增六和弦 · augmented-sixth.definition",
+          "text": "手册提炼：增六和弦以增六度音程半音向外解决到属音，是强属前和弦，包含意大利、法国、德国三类常见形态。",
+          "href": "../和声学手册.html#claim-augmented-sixth-definition"
+        },
+        {
+          "kind": "prose",
+          "id": "cite-tonal_20c_overview-p0402-1",
+          "anchor": "ref-prose-cite-tonal_20c_overview-p0402-1-p0402",
+          "label": "手册正文引用",
+          "text": "这些规则分别见《调性和声及20世纪音乐概述》PDF p.229–230、p.402–403，以及柴可夫斯基 PDF p.46。",
+          "href": "../和声学手册.html#cite-tonal_20c_overview-p0402-1"
+        },
+        {
+          "kind": "prose",
+          "id": "cite-tonal_20c_overview-p0402-2",
+          "anchor": "ref-prose-cite-tonal_20c_overview-p0402-2-p0402",
+          "label": "手册正文引用",
+          "text": "增六和弦是属前和弦，基本音响是 ♭6 与 ♯4 构成增六度，向外半音解决到八度属音（《概述》PDF p.402–403）。三类常见形态：",
+          "href": "../和声学手册.html#cite-tonal_20c_overview-p0402-2"
+        },
+        {
+          "kind": "profile",
+          "id": "profile-tonal_20c_overview-p0402",
+          "anchor": "ref-profile-profile-tonal_20c_overview-p0402",
+          "label": "教材代表页 · 调性和声概述",
+          "text": "手册将本页列为《调性和声概述》代表页；该书定位：从四部和声基础到 20 世纪后调性技法的完整课程，是本项目最系统的结构参照。",
+          "href": "../和声学手册.html#book-profiles"
+        }
+      ],
+      "403": [
+        {
+          "kind": "claim",
+          "id": "augmented-sixth.resolution",
+          "anchor": "ref-claim-augmented-sixth-resolution-p0403",
+          "label": "增六和弦 · augmented-sixth.resolution",
+          "text": "手册提炼：增六度的两个外音半音向外扩张到八度属音；上方音偶尔可下行成为 V7 的七音。",
+          "href": "../和声学手册.html#claim-augmented-sixth-resolution"
+        }
+      ],
+      "433": [
+        {
+          "kind": "claim",
+          "id": "enharmonic-modulation.definition",
+          "anchor": "ref-claim-enharmonic-modulation-definition-p0433",
+          "label": "等音转调 · enharmonic-modulation.definition",
+          "text": "手册提炼：等和弦转调把两调共同的大小七或减七和弦作等音功能重释，再按新调倾向解决。",
+          "href": "../和声学手册.html#claim-enharmonic-modulation-definition"
+        },
+        {
+          "kind": "prose",
+          "id": "cite-tonal_20c_overview-p0433-1",
+          "anchor": "ref-prose-cite-tonal_20c_overview-p0433-1-p0433",
+          "label": "手册正文引用",
+          "text": "减七和弦可等音重写为四个不同根音的减七，分别解决到四个方向；同一减七音响因此可通向 24 个调（柴可夫斯基 PDF p.109；桑桐 PDF p.354）。大小七和弦可等音为德国增六或另一调属七，形成两个主要解决方向（《概述》PDF p.433–434）。等音转调的关键不只是“音响相同”，而是：",
+          "href": "../和声学手册.html#cite-tonal_20c_overview-p0433-1"
+        },
+        {
+          "kind": "profile",
+          "id": "profile-tonal_20c_overview-p0433",
+          "anchor": "ref-profile-profile-tonal_20c_overview-p0433",
+          "label": "教材代表页 · 调性和声概述",
+          "text": "手册将本页列为《调性和声概述》代表页；该书定位：从四部和声基础到 20 世纪后调性技法的完整课程，是本项目最系统的结构参照。",
+          "href": "../和声学手册.html#book-profiles"
+        }
+      ],
+      "434": [
+        {
+          "kind": "claim",
+          "id": "enharmonic-modulation.four-directions",
+          "anchor": "ref-claim-enharmonic-modulation-four-directions-p0434",
+          "label": "等音转调 · enharmonic-modulation.four-directions",
+          "text": "手册提炼：减七和弦可向四个方向解决；大小七和弦因等音关系有两个解决方向，但实际路线受记谱与声部进行约束。",
+          "href": "../和声学手册.html#claim-enharmonic-modulation-four-directions"
+        }
+      ],
+      "461": [
+        {
+          "kind": "claim",
+          "id": "color-harmony.chromatic-mediants",
+          "anchor": "ref-claim-color-harmony-chromatic-mediants-p0461",
+          "label": "色彩和声与调式色彩 · color-harmony.chromatic-mediants",
+          "text": "手册提炼：色彩性和弦连续常通过变化中音关系连接非本调和弦，以意外根音进行制造色彩而不必立即转调。",
+          "href": "../和声学手册.html#claim-color-harmony-chromatic-mediants"
+        }
+      ],
+      "469": [
+        {
+          "kind": "claim",
+          "id": "color-harmony.late-tonal",
+          "anchor": "ref-claim-color-harmony-late-tonal-p0469",
+          "label": "色彩和声与调式色彩 · color-harmony.late-tonal",
+          "text": "手册提炼：晚期调性和声通过六度替代属和弦、变化中音、功能九和弦、三度扩张与色彩性连续不断削弱传统功能边界。",
+          "href": "../和声学手册.html#claim-color-harmony-late-tonal"
+        }
+      ],
+      "496": [
+        {
+          "kind": "claim",
+          "id": "scale.natural-modes",
+          "anchor": "ref-claim-scale-natural-modes-p0496",
+          "label": "调式、音阶与音级 · scale.natural-modes",
+          "text": "手册提炼：自然七调式可由同一音列移位并更换中心音得到；中心音与调式名称共同决定音阶身份。",
+          "href": "../和声学手册.html#claim-scale-natural-modes"
+        },
+        {
+          "kind": "prose",
+          "id": "cite-tonal_20c_overview-p0496-1",
+          "anchor": "ref-prose-cite-tonal_20c_overview-p0496-1-p0496",
+          "label": "手册正文引用",
+          "text": "调式身份由 中心音 + 音程结构 共同确定。把 C 大调音阶的每个音轮流当中心，就得到七种自然调式；移调到 12 个主音可获得全部调式音阶（《概述》PDF p.496）。调式色彩可按主音上方大音程、增音程数量排列为“明亮度”序列（PDF p.497），但实际听感还受旋律、配器、持续音与和声节奏影响。",
+          "href": "../和声学手册.html#cite-tonal_20c_overview-p0496-1"
+        },
+        {
+          "kind": "prose",
+          "id": "cite-tonal_20c_overview-p0496-2",
+          "anchor": "ref-prose-cite-tonal_20c_overview-p0496-2-p0496",
+          "label": "手册正文引用",
+          "text": "十九世纪晚期对半音化的反拨之一是重新发现自然调式。自然调式既可以借用大调调号，也可以用临时记号；每个调式的半音位置不同，因此“同一主音上的不同调式”会产生不同色彩（《概述》PDF p.496–499）。印象主义、民谣、摇滚与电影配乐都大量使用这种“同主音调式交换”。",
+          "href": "../和声学手册.html#cite-tonal_20c_overview-p0496-2"
+        },
+        {
+          "kind": "profile",
+          "id": "profile-tonal_20c_overview-p0496",
+          "anchor": "ref-profile-profile-tonal_20c_overview-p0496",
+          "label": "教材代表页 · 调性和声概述",
+          "text": "手册将本页列为《调性和声概述》代表页；该书定位：从四部和声基础到 20 世纪后调性技法的完整课程，是本项目最系统的结构参照。",
+          "href": "../和声学手册.html#book-profiles"
+        }
+      ],
+      "497": [
+        {
+          "kind": "claim",
+          "id": "scale.brightness-order",
+          "anchor": "ref-claim-scale-brightness-order-p0497",
+          "label": "调式、音阶与音级 · scale.brightness-order",
+          "text": "手册提炼：调式色彩可按主音上方大音程、增音程的数量排序，形成从利底亚到洛克里亚的明亮度序列。",
+          "href": "../和声学手册.html#claim-scale-brightness-order"
+        },
+        {
+          "kind": "prose",
+          "id": "cite-tonal_20c_overview-p0497-1",
+          "anchor": "ref-prose-cite-tonal_20c_overview-p0497-1-p0497",
+          "label": "手册正文引用",
+          "text": "调式身份由 中心音 + 音程结构 共同确定。把 C 大调音阶的每个音轮流当中心，就得到七种自然调式；移调到 12 个主音可获得全部调式音阶（《概述》PDF p.496）。调式色彩可按主音上方大音程、增音程数量排列为“明亮度”序列（PDF p.497），但实际听感还受旋律、配器、持续音与和声节奏影响。",
+          "href": "../和声学手册.html#cite-tonal_20c_overview-p0497-1"
+        }
+      ],
+      "508": [
+        {
+          "kind": "prose",
+          "id": "cite-tonal_20c_overview-p0508-1",
+          "anchor": "ref-prose-cite-tonal_20c_overview-p0508-1-p0508",
+          "label": "手册正文引用",
+          "text": "复合和弦：两个或更多和弦单元同时发声，根音可呈半音、三全音或三度关系（《概述》PDF p.508–509）。",
+          "href": "../和声学手册.html#cite-tonal_20c_overview-p0508-1"
+        },
+        {
+          "kind": "profile",
+          "id": "profile-tonal_20c_overview-p0508",
+          "anchor": "ref-profile-profile-tonal_20c_overview-p0508",
+          "label": "教材代表页 · 调性和声概述",
+          "text": "手册将本页列为《调性和声概述》代表页；该书定位：从四部和声基础到 20 世纪后调性技法的完整课程，是本项目最系统的结构参照。",
+          "href": "../和声学手册.html#book-profiles"
+        }
+      ],
+      "510": [
+        {
+          "kind": "prose",
+          "id": "cite-tonal_20c_overview-p0510-1",
+          "anchor": "ref-prose-cite-tonal_20c_overview-p0510-1-p0510",
+          "label": "手册正文引用",
+          "text": "双调性/多调性：两个或更多调中心同时存在；实际听感通常只能稳定把握两个中心（PDF p.510）。",
+          "href": "../和声学手册.html#cite-tonal_20c_overview-p0510-1"
+        }
+      ],
+      "512": [
+        {
+          "kind": "prose",
+          "id": "cite-tonal_20c_overview-p0512-1",
+          "anchor": "ref-prose-cite-tonal_20c_overview-p0512-1-p0512",
+          "label": "手册正文引用",
+          "text": "四度/五度和声：以纯四度叠置削弱三度功能和声的根音支持（PDF p.512）。",
+          "href": "../和声学手册.html#cite-tonal_20c_overview-p0512-1"
+        }
+      ],
+      "513": [
+        {
+          "kind": "prose",
+          "id": "cite-tonal_20c_overview-p0513-1",
+          "anchor": "ref-prose-cite-tonal_20c_overview-p0513-1-p0513",
+          "label": "手册正文引用",
+          "text": "二度/音簇：以密集邻音制造打击性、噪声性或织体性音响（PDF p.513–514）。",
+          "href": "../和声学手册.html#cite-tonal_20c_overview-p0513-1"
+        }
+      ],
+      "514": [
+        {
+          "kind": "prose",
+          "id": "cite-tonal_20c_overview-p0514-1",
+          "anchor": "ref-prose-cite-tonal_20c_overview-p0514-1-p0514",
+          "label": "手册正文引用",
+          "text": "平行进行：在二十世纪被重新接受，用于色彩、织体与去功能化（PDF p.514）。",
+          "href": "../和声学手册.html#cite-tonal_20c_overview-p0514-1"
+        }
+      ],
+      "536": [
+        {
+          "kind": "claim",
+          "id": "atonal.definition",
+          "anchor": "ref-claim-atonal-definition-p0536",
+          "label": "无调性与自由音高组织 · atonal.definition",
+          "text": "手册提炼：无调性避免形成任何调中心；音高、音程、和弦与节奏关系仍需组织，只是功能进行不再承担调性结构。",
+          "href": "../和声学手册.html#claim-atonal-definition"
+        },
+        {
+          "kind": "prose",
+          "id": "cite-tonal_20c_overview-p0536-1",
+          "anchor": "ref-prose-cite-tonal_20c_overview-p0536-1-p0536",
+          "label": "手册正文引用",
+          "text": "无调性避免形成可辨认的调中心。桑桐 PDF p.563 列出其主要特征：无主和弦、半音阶自由运用、纵向不协和、避免功能进行、织体多层次等。《概述》PDF p.536 把无调性定义为“避免形成任何调中心或中心的作曲方法”。分析时应关注：",
+          "href": "../和声学手册.html#cite-tonal_20c_overview-p0536-1"
+        },
+        {
+          "kind": "profile",
+          "id": "profile-tonal_20c_overview-p0536",
+          "anchor": "ref-profile-profile-tonal_20c_overview-p0536",
+          "label": "教材代表页 · 调性和声概述",
+          "text": "手册将本页列为《调性和声概述》代表页；该书定位：从四部和声基础到 20 世纪后调性技法的完整课程，是本项目最系统的结构参照。",
+          "href": "../和声学手册.html#book-profiles"
+        }
+      ],
+      "539": [
+        {
+          "kind": "claim",
+          "id": "set-theory.normal-form",
+          "anchor": "ref-claim-set-theory-normal-form-p0539",
+          "label": "音级集合与集合类 · set-theory.normal-form",
+          "text": "手册提炼：音级集合的标准型是集合在一个八度内最紧凑的升序排列，是计算基本形与集合类的起点。",
+          "href": "../和声学手册.html#claim-set-theory-normal-form"
+        },
+        {
+          "kind": "prose",
+          "id": "cite-tonal_20c_overview-p0539-1",
+          "anchor": "ref-prose-cite-tonal_20c_overview-p0539-1-p0539",
+          "label": "手册正文引用",
+          "text": "《概述》PDF p.539–542 对标准型与模 12 运算给出直接说明。程序的集合实验室会自动计算标准型、基本形、音程向量、补集、包含音阶与当前调性和弦；输入 C E G B♭ 时显示为 C · E · G · B♭，说明集合运算仍保留用户输入中的降号拼写。",
+          "href": "../和声学手册.html#cite-tonal_20c_overview-p0539-1"
+        }
+      ],
+      "542": [
+        {
+          "kind": "claim",
+          "id": "set-theory.mod-12",
+          "anchor": "ref-claim-set-theory-mod-12-p0542",
+          "label": "音级集合与集合类 · set-theory.mod-12",
+          "text": "手册提炼：后调性音高运算以 12 为模；移位、倒影、补集与音程向量都建立在这一等价关系上。",
+          "href": "../和声学手册.html#claim-set-theory-mod-12"
+        }
+      ],
+      "550": [
+        {
+          "kind": "claim",
+          "id": "serialism.row",
+          "anchor": "ref-claim-serialism-row-p0550",
+          "label": "十二音序列与序列和声 · serialism.row",
+          "text": "手册提炼：十二音技法以预先设计的十二音级排序为全曲音高材料，并通过移位、逆行、倒影、逆行倒影组织 48 种形式。",
+          "href": "../和声学手册.html#claim-serialism-row"
+        },
+        {
+          "kind": "prose",
+          "id": "cite-tonal_20c_overview-p0550-1",
+          "anchor": "ref-prose-cite-tonal_20c_overview-p0550-1-p0550",
+          "label": "手册正文引用",
+          "text": "十二音技法把 12 个音级排成序列，通过原型 P、逆行 R、倒影 I、逆行倒影 RI 及其 12 个移位组织全曲，共 48 种形式（《概述》PDF p.550）。12×12 矩阵把 48 种形式集中呈现：横向为 P/R，纵向为 I/RI（PDF p.552）。",
+          "href": "../和声学手册.html#cite-tonal_20c_overview-p0550-1"
+        },
+        {
+          "kind": "profile",
+          "id": "profile-tonal_20c_overview-p0550",
+          "anchor": "ref-profile-profile-tonal_20c_overview-p0550",
+          "label": "教材代表页 · 调性和声概述",
+          "text": "手册将本页列为《调性和声概述》代表页；该书定位：从四部和声基础到 20 世纪后调性技法的完整课程，是本项目最系统的结构参照。",
+          "href": "../和声学手册.html#book-profiles"
+        }
+      ],
+      "552": [
+        {
+          "kind": "claim",
+          "id": "serialism.matrix",
+          "anchor": "ref-claim-serialism-matrix-p0552",
+          "label": "十二音序列与序列和声 · serialism.matrix",
+          "text": "手册提炼：12×12 矩阵把 48 种序列形式集中呈现，横向为原型/逆行，纵向为倒影/逆行倒影。",
+          "href": "../和声学手册.html#claim-serialism-matrix"
+        },
+        {
+          "kind": "prose",
+          "id": "cite-tonal_20c_overview-p0552-1",
+          "anchor": "ref-prose-cite-tonal_20c_overview-p0552-1-p0552",
+          "label": "手册正文引用",
+          "text": "十二音技法把 12 个音级排成序列，通过原型 P、逆行 R、倒影 I、逆行倒影 RI 及其 12 个移位组织全曲，共 48 种形式（《概述》PDF p.550）。12×12 矩阵把 48 种形式集中呈现：横向为 P/R，纵向为 I/RI（PDF p.552）。",
+          "href": "../和声学手册.html#cite-tonal_20c_overview-p0552-1"
+        }
+      ],
+      "562": [
+        {
+          "kind": "prose",
+          "id": "cite-tonal_20c_overview-p0562-1",
+          "anchor": "ref-prose-cite-tonal_20c_overview-p0562-1-p0562",
+          "label": "手册正文引用",
+          "text": "整体序列进一步把节奏、力度、音色、发音法等参数也序列化（PDF p.562）。程序提供十二音矩阵生成器，并检查输入必须恰好包含 12 个不同音级；它不替用户判断序列的音乐质量，只保证运算结构正确。",
+          "href": "../和声学手册.html#cite-tonal_20c_overview-p0562-1"
+        }
+      ]
+    },
+    "tong_function_net": {
+      "4": [
+        {
+          "kind": "claim",
+          "id": "function-network.medieval-expansion",
+          "anchor": "ref-claim-function-network-medieval-expansion-p0004",
+          "label": "功能网与功能转换 · function-network.medieval-expansion",
+          "text": "手册提炼：同主音大小调互换属于传统手法；同中音大小调互换则把调性关系扩展为功能网。",
+          "href": "../和声学手册.html#claim-function-network-medieval-expansion"
+        },
+        {
+          "kind": "profile",
+          "id": "profile-tong_function_net-p0004",
+          "anchor": "ref-profile-profile-tong_function_net-p0004",
+          "label": "教材代表页 · 功能网",
+          "text": "手册将本页列为《功能网》代表页；该书定位：把近现代和声功能扩展为网络：同名/同中音、功能族、重中音循环与三大功能重划。",
+          "href": "../和声学手册.html#book-profiles"
+        }
+      ],
+      "5": [
+        {
+          "kind": "profile",
+          "id": "profile-tong_function_net-p0005",
+          "anchor": "ref-profile-profile-tong_function_net-p0005",
+          "label": "教材代表页 · 功能网",
+          "text": "手册将本页列为《功能网》代表页；该书定位：把近现代和声功能扩展为网络：同名/同中音、功能族、重中音循环与三大功能重划。",
+          "href": "../和声学手册.html#book-profiles"
+        }
+      ],
+      "6": [
+        {
+          "kind": "profile",
+          "id": "profile-tong_function_net-p0006",
+          "anchor": "ref-profile-profile-tong_function_net-p0006",
+          "label": "教材代表页 · 功能网",
+          "text": "手册将本页列为《功能网》代表页；该书定位：把近现代和声功能扩展为网络：同名/同中音、功能族、重中音循环与三大功能重划。",
+          "href": "../和声学手册.html#book-profiles"
+        }
+      ],
+      "9": [
+        {
+          "kind": "example",
+          "id": "E05",
+          "anchor": "ref-example-e05-p0009",
+          "label": "手册案例 E05 · 半音根音与无主和弦段落",
+          "text": "例2｜瓦格纳《特里斯坦与伊索尔德》\n原书要点：降A与A两个大三和弦被直接连接；这段音乐建立在 c 小调上，但主和弦从未出现，形成“浮荡的调性”。\n机制：根音相差半音的两个三和弦可直接连接；若主和弦长期缺席，属功能会成为临时参照，调中心因此不稳定。\n读谱：看低音降A→A的半音进行，以及前后是否出现 c 小调主和弦；注意“没有主和弦”本身怎样制造浮荡。\n用法：需要无主和弦的段落时，可用半音根音直接连接，并以属或导音暗示中心；不要补主和弦，否则中心会立即明确。",
+          "href": "../和声学手册.html#example-e05"
+        }
+      ],
+      "15": [
+        {
+          "kind": "profile",
+          "id": "profile-tong_function_net-p0015",
+          "anchor": "ref-profile-profile-tong_function_net-p0015",
+          "label": "教材代表页 · 功能网",
+          "text": "手册将本页列为《功能网》代表页；该书定位：把近现代和声功能扩展为网络：同名/同中音、功能族、重中音循环与三大功能重划。",
+          "href": "../和声学手册.html#book-profiles"
+        }
+      ],
+      "16": [
+        {
+          "kind": "claim",
+          "id": "function-network.three-functions",
+          "anchor": "ref-claim-function-network-three-functions-p0016",
+          "label": "功能网与功能转换 · function-network.three-functions",
+          "text": "手册提炼：近现代功能理论把功能重划为调功能、双属功能与中音功能三类；中音功能获得独立地位。",
+          "href": "../和声学手册.html#claim-function-network-three-functions"
+        },
+        {
+          "kind": "profile",
+          "id": "profile-tong_function_net-p0016",
+          "anchor": "ref-profile-profile-tong_function_net-p0016",
+          "label": "教材代表页 · 功能网",
+          "text": "手册将本页列为《功能网》代表页；该书定位：把近现代和声功能扩展为网络：同名/同中音、功能族、重中音循环与三大功能重划。",
+          "href": "../和声学手册.html#book-profiles"
+        }
+      ],
+      "28": [
+        {
+          "kind": "example",
+          "id": "C07",
+          "anchor": "ref-example-c07-p0028",
+          "label": "手册案例 C07 · T–s–T：下属回落式终止",
+          "text": "例20｜肖邦《降b小调奏鸣曲》\n原书要点：此例为 T–s–T 终止式：主功能—下属功能—主功能，用变格关系完成收束。\n机制：属和弦以导音和根音支持推进，下属和弦则以低音下行与主音回归收束；T–s–T 的终止力来自低音进行和功能回落。\n读谱：看低音与功能和弦：T 之后是否下沉到 s，再回到同一主音；不要找 V。\n用法：需要安静收束或避免强属终止时，可用 T–s–T；由下属低音下行回到主音，并以主和弦稳定结束。",
+          "href": "../和声学手册.html#example-c07"
+        }
+      ],
+      "34": [
+        {
+          "kind": "example",
+          "id": "C08",
+          "anchor": "ref-example-c08-p0034",
+          "label": "手册案例 C08 · 三度关系：根音落点分析",
+          "text": "例30｜巴赫《马太受难曲》\n原书要点：教材把该转调片段压缩为三度关系的根音落点。\n机制：把转调片段压成根音落点，可看出多个远关系和弦由三度或六度根音关系串联；表面声部运动不改变这一框架。\n读谱：把每小节压成一个根音或功能和弦，忽略经过音；看这些落点是否按三度或六度排列。\n用法：写色彩转调时先定两三个三度根音落点，再以半音或共同音声部连接填中间；分析时先看落点，不逐和弦贴功能标签。",
+          "href": "../和声学手册.html#example-c08"
+        }
+      ],
+      "95": [
+        {
+          "kind": "claim",
+          "id": "function-network.mediant-cycle",
+          "anchor": "ref-claim-function-network-mediant-cycle-p0095",
+          "label": "功能网与功能转换 · function-network.mediant-cycle",
+          "text": "手册提炼：重中音和弦沿三度关系延伸，把核心调、同名调与重同名调的骨干和弦直接连接成循环，并改变功能属性。",
+          "href": "../和声学手册.html#claim-function-network-mediant-cycle"
+        },
+        {
+          "kind": "profile",
+          "id": "profile-tong_function_net-p0095",
+          "anchor": "ref-profile-profile-tong_function_net-p0095",
+          "label": "教材代表页 · 功能网",
+          "text": "手册将本页列为《功能网》代表页；该书定位：把近现代和声功能扩展为网络：同名/同中音、功能族、重中音循环与三大功能重划。",
+          "href": "../和声学手册.html#book-profiles"
+        }
+      ],
+      "111": [
+        {
+          "kind": "profile",
+          "id": "profile-tong_function_net-p0111",
+          "anchor": "ref-profile-profile-tong_function_net-p0111",
+          "label": "教材代表页 · 功能网",
+          "text": "手册将本页列为《功能网》代表页；该书定位：把近现代和声功能扩展为网络：同名/同中音、功能族、重中音循环与三大功能重划。",
+          "href": "../和声学手册.html#book-profiles"
+        }
+      ],
+      "112": [
+        {
+          "kind": "profile",
+          "id": "profile-tong_function_net-p0112",
+          "anchor": "ref-profile-profile-tong_function_net-p0112",
+          "label": "教材代表页 · 功能网",
+          "text": "手册将本页列为《功能网》代表页；该书定位：把近现代和声功能扩展为网络：同名/同中音、功能族、重中音循环与三大功能重划。",
+          "href": "../和声学手册.html#book-profiles"
+        }
+      ],
+      "113": [
+        {
+          "kind": "claim",
+          "id": "function-network.definition",
+          "anchor": "ref-claim-function-network-definition-p0113",
+          "label": "功能网与功能转换 · function-network.definition",
+          "text": "手册提炼：功能网是诸种和声进行与调性中心之间的逻辑关系及其相互关系的总图，而非单一和弦的功能标签。",
+          "href": "../和声学手册.html#claim-function-network-definition"
+        },
+        {
+          "kind": "profile",
+          "id": "profile-tong_function_net-p0113",
+          "anchor": "ref-profile-profile-tong_function_net-p0113",
+          "label": "教材代表页 · 功能网",
+          "text": "手册将本页列为《功能网》代表页；该书定位：把近现代和声功能扩展为网络：同名/同中音、功能族、重中音循环与三大功能重划。",
+          "href": "../和声学手册.html#book-profiles"
+        }
+      ]
+    },
+    "xu_advanced": {
+      "12": [
+        {
+          "kind": "claim",
+          "id": "chromaticism.four-sources",
+          "anchor": "ref-claim-chromaticism-four-sources-p0012",
+          "label": "半音化与变化和弦 · chromaticism.four-sources",
+          "text": "手册提炼：变化音需区分四类来源：离调、调式交替、变和弦、装饰性外音；四者的调性与功能含义不同。",
+          "href": "../和声学手册.html#claim-chromaticism-four-sources"
+        },
+        {
+          "kind": "prose",
+          "id": "cite-xu_advanced-p0012-1",
+          "anchor": "ref-prose-cite-xu_advanced-p0012-1-p0012",
+          "label": "手册正文引用",
+          "text": "徐平力 PDF p.12 把变化音分为四类，这一分类对分析极有用：",
+          "href": "../和声学手册.html#cite-xu_advanced-p0012-1"
+        },
+        {
+          "kind": "profile",
+          "id": "profile-xu_advanced-p0012",
+          "anchor": "ref-profile-profile-xu_advanced-p0012",
+          "label": "教材代表页 · 徐平力高级",
+          "text": "手册将本页列为《徐平力高级》代表页；该书定位：高级功能和声：变和弦、持续音、调性远近、交替转调、线性与平行进行。",
+          "href": "../和声学手册.html#book-profiles"
+        }
+      ],
+      "16": [
+        {
+          "kind": "example",
+          "id": "E04",
+          "anchor": "ref-example-e04-p0016",
+          "label": "手册案例 E04 · 同一和弦的功能重释",
+          "text": "例1-6｜瓦格纳《特里斯坦与伊索尔德》序曲\n原书要点：同一“特里斯坦和弦”在降E、a小调、C大调等语境中被重释为不同功能，音高关系不变而调性归属改变。\n机制：同一组音在和弦结构上可以不变，但前后和弦、低音与解决目标会指定不同的临时主音，从而改变其功能与张力方向。\n读谱：找反复出现的同一音集或同一和弦，比较它每次前后的功能标记与低音；不要急着重算音名。\n用法：写模糊调性时，固定一个音集，改变它的前后文、低音或解决目标；功能多义由上下文建立，无需增加音高。",
+          "href": "../和声学手册.html#example-e04"
+        }
+      ],
+      "25": [
+        {
+          "kind": "example",
+          "id": "E08",
+          "anchor": "ref-example-e08-p0025",
+          "label": "手册案例 E08 · 变副属：按解决目标命名",
+          "text": "例1-23｜舒曼《幻想曲集》Op.12 No.6\n原书要点：升五音副属变和弦到下属的用法与升五音属到主的用法相同；此例为舒曼《幻想曲集》片段。\n机制：变副属的结构可能与另一调的导七相同；判断功能应看它解决到哪个和弦，以及升高三音或五音形成的半音方向。\n读谱：先确认目标和弦是否为下属，再检查所谓“属”的三音或五音是否升高；命名以解决目标为准。\n用法：为下属和弦加强导向时，可写升五音副属到下属；命名依据是解决目标与声部方向，和弦外形只是线索。",
+          "href": "../和声学手册.html#example-e08"
+        }
+      ],
+      "46": [
+        {
+          "kind": "profile",
+          "id": "profile-xu_advanced-p0046",
+          "anchor": "ref-profile-profile-xu_advanced-p0046",
+          "label": "教材代表页 · 徐平力高级",
+          "text": "手册将本页列为《徐平力高级》代表页；该书定位：高级功能和声：变和弦、持续音、调性远近、交替转调、线性与平行进行。",
+          "href": "../和声学手册.html#book-profiles"
+        }
+      ],
+      "54": [
+        {
+          "kind": "claim",
+          "id": "prolongation.sustained-dominant",
+          "anchor": "ref-claim-prolongation-sustained-dominant-p0054",
+          "label": "延长、层次与曲式 · prolongation.sustained-dominant",
+          "text": "手册提炼：属持续音把属功能保持在同一低音上，常用于再现前的属准备，延迟并强化结构回归。",
+          "href": "../和声学手册.html#claim-prolongation-sustained-dominant"
+        },
+        {
+          "kind": "profile",
+          "id": "profile-xu_advanced-p0054",
+          "anchor": "ref-profile-profile-xu_advanced-p0054",
+          "label": "教材代表页 · 徐平力高级",
+          "text": "手册将本页列为《徐平力高级》代表页；该书定位：高级功能和声：变和弦、持续音、调性远近、交替转调、线性与平行进行。",
+          "href": "../和声学手册.html#book-profiles"
+        }
+      ],
+      "94": [
+        {
+          "kind": "claim",
+          "id": "modulation.distance",
+          "anchor": "ref-claim-modulation-distance-p0094",
+          "label": "转调体系：类型、距离与确认 · modulation.distance",
+          "text": "手册提炼：调性远近应综合调号、共同和弦、主音距离与转调方法来判定，不能只看调号差。",
+          "href": "../和声学手册.html#claim-modulation-distance"
+        },
+        {
+          "kind": "prose",
+          "id": "cite-xu_advanced-p0094-1",
+          "anchor": "ref-prose-cite-xu_advanced-p0094-1-p0094",
+          "label": "手册正文引用",
+          "text": "徐平力 PDF p.94 给出四个标准：",
+          "href": "../和声学手册.html#cite-xu_advanced-p0094-1"
+        },
+        {
+          "kind": "profile",
+          "id": "profile-xu_advanced-p0094",
+          "anchor": "ref-profile-profile-xu_advanced-p0094",
+          "label": "教材代表页 · 徐平力高级",
+          "text": "手册将本页列为《徐平力高级》代表页；该书定位：高级功能和声：变和弦、持续音、调性远近、交替转调、线性与平行进行。",
+          "href": "../和声学手册.html#book-profiles"
+        }
+      ],
+      "96": [
+        {
+          "kind": "profile",
+          "id": "profile-xu_advanced-p0096",
+          "anchor": "ref-profile-profile-xu_advanced-p0096",
+          "label": "教材代表页 · 徐平力高级",
+          "text": "手册将本页列为《徐平力高级》代表页；该书定位：高级功能和声：变和弦、持续音、调性远近、交替转调、线性与平行进行。",
+          "href": "../和声学手册.html#book-profiles"
+        }
+      ],
+      "145": [
+        {
+          "kind": "claim",
+          "id": "modal-interchange.parallel-key-modulation",
+          "anchor": "ref-claim-modal-interchange-parallel-key-modulation-p0145",
+          "label": "同主音调式交替（借用和弦） · modal-interchange.parallel-key-modulation",
+          "text": "手册提炼：以同主音交替和弦转调需检查前后调关系、交替和弦的引入、音级计算与新调终止式四个要点。",
+          "href": "../和声学手册.html#claim-modal-interchange-parallel-key-modulation"
+        }
+      ],
+      "151": [
+        {
+          "kind": "claim",
+          "id": "tonicization.opening-chord",
+          "anchor": "ref-claim-tonicization-opening-chord-p0151",
+          "label": "临时主音化（离调） · tonicization.opening-chord",
+          "text": "手册提炼：段落开头的和弦会被听觉暂时赋予主和弦权重；判断离调或转调时应结合开头、持续与终止，而不只看单个和弦的调性归属。",
+          "href": "../和声学手册.html#claim-tonicization-opening-chord"
+        }
+      ],
+      "247": [
+        {
+          "kind": "profile",
+          "id": "profile-xu_advanced-p0247",
+          "anchor": "ref-profile-profile-xu_advanced-p0247",
+          "label": "教材代表页 · 徐平力高级",
+          "text": "手册将本页列为《徐平力高级》代表页；该书定位：高级功能和声：变和弦、持续音、调性远近、交替转调、线性与平行进行。",
+          "href": "../和声学手册.html#book-profiles"
+        }
+      ],
+      "257": [
+        {
+          "kind": "profile",
+          "id": "profile-xu_advanced-p0257",
+          "anchor": "ref-profile-profile-xu_advanced-p0257",
+          "label": "教材代表页 · 徐平力高级",
+          "text": "手册将本页列为《徐平力高级》代表页；该书定位：高级功能和声：变和弦、持续音、调性远近、交替转调、线性与平行进行。",
+          "href": "../和声学手册.html#book-profiles"
+        }
+      ],
+      "345": [
+        {
+          "kind": "profile",
+          "id": "profile-xu_advanced-p0345",
+          "anchor": "ref-profile-profile-xu_advanced-p0345",
+          "label": "教材代表页 · 徐平力高级",
+          "text": "手册将本页列为《徐平力高级》代表页；该书定位：高级功能和声：变和弦、持续音、调性远近、交替转调、线性与平行进行。",
+          "href": "../和声学手册.html#book-profiles"
+        }
+      ],
+      "347": [
+        {
+          "kind": "profile",
+          "id": "profile-xu_advanced-p0347",
+          "anchor": "ref-profile-profile-xu_advanced-p0347",
+          "label": "教材代表页 · 徐平力高级",
+          "text": "手册将本页列为《徐平力高级》代表页；该书定位：高级功能和声：变和弦、持续音、调性远近、交替转调、线性与平行进行。",
+          "href": "../和声学手册.html#book-profiles"
+        }
+      ]
+    }
+  }
+}

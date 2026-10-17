@@ -1,0 +1,132 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 731" role="img" aria-labelledby="title desc">
+<title id="title">管弦乐器实际发声音域与舒适音区</title>
+<desc id="desc">横轴为实际发声音高，浅色为物理音域，深色为常用舒适音区。</desc>
+<rect width="1200" height="731" fill="#fffdf8"/>
+<text font-family="'Noto Serif SC','Source Han Serif SC','Songti SC',serif" font-size="22" font-weight="700" fill="#172123" text-anchor="start"><tspan x="28" y="36">配器速查：实际发声音域与舒适音区</tspan></text>
+<text font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="12" font-weight="400" fill="#66716d" text-anchor="start"><tspan x="28" y="62.0">横轴为实际发声音高；移调乐器已换算。浅色带为物理音域，深色带为常用工作区，不等同于技巧极限。</tspan></text>
+<line x1="247.3" y1="84" x2="247.3" y2="623" stroke="#d5cbbb" stroke-width="1"/>
+<text x="247.3" y="78" text-anchor="middle" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="10" fill="#66716d">C1</text>
+<line x1="374.1" y1="84" x2="374.1" y2="623" stroke="#d5cbbb" stroke-width="1"/>
+<text x="374.1" y="78" text-anchor="middle" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="10" fill="#66716d">C2</text>
+<line x1="500.9" y1="84" x2="500.9" y2="623" stroke="#d5cbbb" stroke-width="1"/>
+<text x="500.9" y="78" text-anchor="middle" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="10" fill="#66716d">C3</text>
+<line x1="627.7" y1="84" x2="627.7" y2="623" stroke="#d5cbbb" stroke-width="1"/>
+<text x="627.7" y="78" text-anchor="middle" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="10" fill="#66716d">C4</text>
+<line x1="754.5" y1="84" x2="754.5" y2="623" stroke="#d5cbbb" stroke-width="1"/>
+<text x="754.5" y="78" text-anchor="middle" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="10" fill="#66716d">C5</text>
+<line x1="881.3" y1="84" x2="881.3" y2="623" stroke="#d5cbbb" stroke-width="1"/>
+<text x="881.3" y="78" text-anchor="middle" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="10" fill="#66716d">C6</text>
+<line x1="1008.1" y1="84" x2="1008.1" y2="623" stroke="#d5cbbb" stroke-width="1"/>
+<text x="1008.1" y="78" text-anchor="middle" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="10" fill="#66716d">C7</text>
+<line x1="1134.9" y1="84" x2="1134.9" y2="623" stroke="#d5cbbb" stroke-width="1"/>
+<text x="1134.9" y="78" text-anchor="middle" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="10" fill="#66716d">C8</text>
+<rect x="18" y="94" width="1164" height="25" fill="#f8f3e9"/>
+<line x1="18" y1="94" x2="1182" y2="94" stroke="#d5cbbb" stroke-width="1"/>
+<text x="28" y="111" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="10" font-weight="700" fill="#2c6c68">弦乐</text>
+<text x="192" y="111" text-anchor="end" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="11" font-weight="600" fill="#172123">第一小提琴</text>
+<rect x="574.8" y="102" width="475.5" height="10" rx="5" fill="#2c6c68" opacity=".2" stroke="#2c6c68" stroke-opacity=".55"/>
+<rect x="574.8" y="104" width="433.2" height="6" rx="3" fill="#2c6c68" opacity=".9"/>
+<text x="812.6" y="101" text-anchor="middle" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="8" fill="#66716d">G3–E7</text>
+<text x="192" y="136" text-anchor="end" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="11" font-weight="600" fill="#172123">第二小提琴</text>
+<rect x="574.8" y="127" width="475.5" height="10" rx="5" fill="#2c6c68" opacity=".2" stroke="#2c6c68" stroke-opacity=".55"/>
+<rect x="574.8" y="129" width="401.5" height="6" rx="3" fill="#2c6c68" opacity=".9"/>
+<text x="812.6" y="126" text-anchor="middle" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="8" fill="#66716d">G3–E7</text>
+<rect x="18" y="144" width="1164" height="25" fill="#f8f3e9"/>
+<text x="192" y="161" text-anchor="end" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="11" font-weight="600" fill="#172123">中提琴</text>
+<rect x="500.9" y="152" width="422.7" height="10" rx="5" fill="#2c6c68" opacity=".2" stroke="#2c6c68" stroke-opacity=".55"/>
+<rect x="500.9" y="154" width="380.4" height="6" rx="3" fill="#2c6c68" opacity=".9"/>
+<text x="712.2" y="151" text-anchor="middle" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="8" fill="#66716d">C3–E6</text>
+<text x="192" y="186" text-anchor="end" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="11" font-weight="600" fill="#172123">大提琴</text>
+<rect x="374.1" y="177" width="475.5" height="10" rx="5" fill="#2c6c68" opacity=".2" stroke="#2c6c68" stroke-opacity=".55"/>
+<rect x="374.1" y="179" width="380.4" height="6" rx="3" fill="#2c6c68" opacity=".9"/>
+<text x="611.8" y="176" text-anchor="middle" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="8" fill="#66716d">C2–A5</text>
+<rect x="18" y="194" width="1164" height="25" fill="#f8f3e9"/>
+<text x="192" y="211" text-anchor="end" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="11" font-weight="600" fill="#172123">低音提琴</text>
+<rect x="289.5" y="202" width="412.1" height="10" rx="5" fill="#2c6c68" opacity=".2" stroke="#2c6c68" stroke-opacity=".55"/>
+<rect x="289.5" y="204" width="285.3" height="6" rx="3" fill="#2c6c68" opacity=".9"/>
+<text x="495.6" y="201" text-anchor="middle" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="8" fill="#66716d">E1–G4</text>
+<line x1="18" y1="219" x2="1182" y2="219" stroke="#d5cbbb" stroke-width="1"/>
+<text x="28" y="236" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="10" font-weight="700" fill="#b36b32">木管</text>
+<text x="192" y="236" text-anchor="end" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="11" font-weight="600" fill="#172123">短笛</text>
+<rect x="902.4" y="227" width="232.5" height="10" rx="5" fill="#b36b32" opacity=".2" stroke="#b36b32" stroke-opacity=".55"/>
+<rect x="955.2" y="229" width="147.9" height="6" rx="3" fill="#b36b32" opacity=".9"/>
+<text x="1018.6" y="226" text-anchor="middle" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="8" fill="#66716d">D6–C8</text>
+<rect x="18" y="244" width="1164" height="25" fill="#f8f3e9"/>
+<text x="192" y="261" text-anchor="end" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="11" font-weight="600" fill="#172123">长笛</text>
+<rect x="627.7" y="252" width="401.5" height="10" rx="5" fill="#b36b32" opacity=".2" stroke="#b36b32" stroke-opacity=".55"/>
+<rect x="648.8" y="254" width="359.3" height="6" rx="3" fill="#b36b32" opacity=".9"/>
+<text x="828.4" y="251" text-anchor="middle" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="8" fill="#66716d">C4–D7</text>
+<text x="192" y="286" text-anchor="end" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="11" font-weight="600" fill="#172123">双簧管</text>
+<rect x="606.5" y="277" width="369.8" height="10" rx="5" fill="#b36b32" opacity=".2" stroke="#b36b32" stroke-opacity=".55"/>
+<rect x="627.7" y="279" width="295.9" height="6" rx="3" fill="#b36b32" opacity=".9"/>
+<text x="791.5" y="276" text-anchor="middle" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="8" fill="#66716d">A#3–A6</text>
+<rect x="18" y="294" width="1164" height="25" fill="#f8f3e9"/>
+<text x="192" y="311" text-anchor="end" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="11" font-weight="600" fill="#172123">单簧管</text>
+<rect x="522.0" y="302" width="464.9" height="10" rx="5" fill="#b36b32" opacity=".2" stroke="#b36b32" stroke-opacity=".55"/>
+<rect x="543.1" y="304" width="338.1" height="6" rx="3" fill="#b36b32" opacity=".9"/>
+<text x="754.5" y="301" text-anchor="middle" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="8" fill="#66716d">D3–A#6</text>
+<text x="192" y="336" text-anchor="end" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="11" font-weight="600" fill="#172123">低音单簧管</text>
+<rect x="352.9" y="327" width="475.5" height="10" rx="5" fill="#b36b32" opacity=".2" stroke="#b36b32" stroke-opacity=".55"/>
+<rect x="437.5" y="329" width="264.2" height="6" rx="3" fill="#b36b32" opacity=".9"/>
+<text x="590.7" y="326" text-anchor="middle" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="8" fill="#66716d">A#1–G5</text>
+<rect x="18" y="344" width="1164" height="25" fill="#f8f3e9"/>
+<text x="192" y="361" text-anchor="end" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="11" font-weight="600" fill="#172123">大管</text>
+<rect x="352.9" y="352" width="443.8" height="10" rx="5" fill="#b36b32" opacity=".2" stroke="#b36b32" stroke-opacity=".55"/>
+<rect x="374.1" y="354" width="359.3" height="6" rx="3" fill="#b36b32" opacity=".9"/>
+<text x="574.8" y="351" text-anchor="middle" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="8" fill="#66716d">A#1–E5</text>
+<text x="192" y="386" text-anchor="end" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="11" font-weight="600" fill="#172123">低音大管</text>
+<rect x="226.1" y="377" width="380.4" height="10" rx="5" fill="#b36b32" opacity=".2" stroke="#b36b32" stroke-opacity=".55"/>
+<rect x="247.3" y="379" width="274.7" height="6" rx="3" fill="#b36b32" opacity=".9"/>
+<text x="416.3" y="376" text-anchor="middle" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="8" fill="#66716d">A#0–A#3</text>
+<rect x="18" y="394" width="1164" height="25" fill="#f8f3e9"/>
+<line x1="18" y1="394" x2="1182" y2="394" stroke="#d5cbbb" stroke-width="1"/>
+<text x="28" y="411" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="10" font-weight="700" fill="#9b5a24">铜管</text>
+<text x="192" y="411" text-anchor="end" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="11" font-weight="600" fill="#172123">圆号</text>
+<rect x="363.5" y="402" width="443.8" height="10" rx="5" fill="#9b5a24" opacity=".2" stroke="#9b5a24" stroke-opacity=".55"/>
+<rect x="426.9" y="404" width="327.6" height="6" rx="3" fill="#9b5a24" opacity=".9"/>
+<text x="585.4" y="401" text-anchor="middle" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="8" fill="#66716d">B1–F5</text>
+<text x="192" y="436" text-anchor="end" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="11" font-weight="600" fill="#172123">小号</text>
+<rect x="522.0" y="427" width="359.3" height="10" rx="5" fill="#9b5a24" opacity=".2" stroke="#9b5a24" stroke-opacity=".55"/>
+<rect x="574.8" y="429" width="253.6" height="6" rx="3" fill="#9b5a24" opacity=".9"/>
+<text x="701.6" y="426" text-anchor="middle" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="8" fill="#66716d">D3–C6</text>
+<rect x="18" y="444" width="1164" height="25" fill="#f8f3e9"/>
+<text x="192" y="461" text-anchor="end" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="11" font-weight="600" fill="#172123">长号</text>
+<rect x="416.3" y="452" width="317.0" height="10" rx="5" fill="#9b5a24" opacity=".2" stroke="#9b5a24" stroke-opacity=".55"/>
+<rect x="426.9" y="454" width="253.6" height="6" rx="3" fill="#9b5a24" opacity=".9"/>
+<text x="574.8" y="451" text-anchor="middle" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="8" fill="#66716d">E2–A#4</text>
+<text x="192" y="486" text-anchor="end" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="11" font-weight="600" fill="#172123">低音长号</text>
+<rect x="352.9" y="477" width="380.4" height="10" rx="5" fill="#9b5a24" opacity=".2" stroke="#9b5a24" stroke-opacity=".55"/>
+<rect x="374.1" y="479" width="253.6" height="6" rx="3" fill="#9b5a24" opacity=".9"/>
+<text x="543.1" y="476" text-anchor="middle" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="8" fill="#66716d">A#1–A#4</text>
+<rect x="18" y="494" width="1164" height="25" fill="#f8f3e9"/>
+<text x="192" y="511" text-anchor="end" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="11" font-weight="600" fill="#172123">大号</text>
+<rect x="268.4" y="502" width="412.1" height="10" rx="5" fill="#9b5a24" opacity=".2" stroke="#9b5a24" stroke-opacity=".55"/>
+<rect x="289.5" y="504" width="317.0" height="6" rx="3" fill="#9b5a24" opacity=".9"/>
+<text x="474.4" y="501" text-anchor="middle" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="8" fill="#66716d">D1–F4</text>
+<line x1="18" y1="519" x2="1182" y2="519" stroke="#d5cbbb" stroke-width="1"/>
+<text x="28" y="536" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="10" font-weight="700" fill="#8b7d49">打击乐</text>
+<text x="192" y="536" text-anchor="end" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="11" font-weight="600" fill="#172123">定音鼓</text>
+<rect x="395.2" y="527" width="200.8" height="10" rx="5" fill="#8b7d49" opacity=".2" stroke="#8b7d49" stroke-opacity=".55"/>
+<rect x="395.2" y="529" width="179.6" height="6" rx="3" fill="#8b7d49" opacity=".9"/>
+<text x="495.6" y="526" text-anchor="middle" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="8" fill="#66716d">D2–A3</text>
+<rect x="18" y="544" width="1164" height="25" fill="#f8f3e9"/>
+<text x="192" y="561" text-anchor="end" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="11" font-weight="600" fill="#172123">无音高打击乐</text>
+<line x1="205" y1="557" x2="297" y2="557" stroke="#8b7d49" stroke-width="3" stroke-dasharray="4 5" opacity=".55"/>
+<text x="309" y="561" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="10" fill="#66716d">无固定音高</text>
+<line x1="18" y1="569" x2="1182" y2="569" stroke="#d5cbbb" stroke-width="1"/>
+<text x="28" y="586" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="10" font-weight="700" fill="#6f6292">竖琴/键盘</text>
+<text x="192" y="586" text-anchor="end" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="11" font-weight="600" fill="#172123">竖琴</text>
+<rect x="236.7" y="577" width="855.9" height="10" rx="5" fill="#6f6292" opacity=".2" stroke="#6f6292" stroke-opacity=".55"/>
+<rect x="300.1" y="579" width="708.0" height="6" rx="3" fill="#6f6292" opacity=".9"/>
+<text x="664.6" y="576" text-anchor="middle" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="8" fill="#66716d">B0–G#7</text>
+<rect x="18" y="594" width="1164" height="25" fill="#f8f3e9"/>
+<text x="192" y="611" text-anchor="end" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="11" font-weight="600" fill="#172123">钢琴</text>
+<rect x="215.6" y="602" width="919.3" height="10" rx="5" fill="#6f6292" opacity=".2" stroke="#6f6292" stroke-opacity=".55"/>
+<rect x="247.3" y="604" width="834.8" height="6" rx="3" fill="#6f6292" opacity=".9"/>
+<text x="675.2" y="601" text-anchor="middle" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="8" fill="#66716d">A0–C8</text>
+<rect x="28" y="653" width="34" height="10" rx="5" fill="#2c6c68" opacity=".2" stroke="#2c6c68"/>
+<text x="72" y="662" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="11" fill="#66716d">物理音域</text>
+<rect x="142" y="654" width="34" height="8" rx="4" fill="#2c6c68"/>
+<text x="186" y="662" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="11" fill="#66716d">常用舒适音区</text>
+<text font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="11" font-weight="400" fill="#66716d" text-anchor="start"><tspan x="28" y="687.0">读法：先确认实际发声音高，再判断目标音区落在物理边缘还是舒适区。高音与低音两端的力度、音准和音色控制成本都会上升。</tspan></text>
+</svg>

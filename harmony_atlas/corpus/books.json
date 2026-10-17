@@ -1,0 +1,22 @@
+{
+  "books": [
+    {"id":"sangtong_tutorial","title":"桑桐《和声学教程》","file":"桑桐《和声学教程》.pdf","pages":570,"kind":"tonal_theory","priority":1,"unique":true},
+    {"id":"xu_advanced","title":"徐平力《高级和声学教程》","file":"徐平力《高级和声学教程》.pdf","pages":490,"kind":"advanced_tonal","priority":2,"unique":true},
+    {"id":"tonal_20c_overview","title":"《调性和声及20世纪音乐概述》","file":"调性和声及20世纪音乐概述.pdf","pages":702,"kind":"tonal_and_20c","priority":3,"unique":true},
+    {"id":"tchaikovsky_guide","title":"柴可夫斯基《和声学指南》","file":"柴可夫斯基《和声学指南》.pdf","pages":202,"kind":"tonal_theory","priority":4,"unique":true},
+    {"id":"schoenberg_harmony","title":"勋伯格《和声学》","file":"勋伯格《勋伯格和声学》.pdf","pages":264,"kind":"tonal_theory","priority":5,"unique":true},
+    {"id":"spossbin_answers_1","title":"斯波索宾和声学上册答案","file":"斯波索宾和声学上册答案.pdf","pages":250,"kind":"exercises","priority":6,"unique":true},
+    {"id":"spossbin_answers_2","title":"斯波索宾和声学下册答案","file":"斯波索宾和声学下册答案.pdf","pages":232,"kind":"exercises","priority":7,"unique":true},
+    {"id":"sangtong_six","title":"桑桐《和声学专题六讲》","file":"桑桐 - 和声学专题六讲 - 人民音乐出版社.pdf","pages":366,"kind":"advanced_tonal","priority":8,"unique":true},
+    {"id":"sangtong_chromatic","title":"桑桐《半音化的历史演进》","file":"桑桐《半音化的历史演进》.pdf","pages":469,"kind":"chromatic_history","priority":9,"unique":true},
+    {"id":"huacui_color","title":"华萃康《色彩和声》","file":"华萃康《色彩和声》.pdf","pages":565,"kind":"color_harmony","priority":10,"unique":true},
+    {"id":"tong_function_net","title":"童忠良《近现代和声的功能网》","file":"童忠良《近现代和声的功能网》.pdf","pages":141,"kind":"function_network","priority":11,"unique":true},
+    {"id":"beethoven_sonata","title":"王晔《贝多芬钢琴奏鸣曲和声研究》","file":"《贝多芬钢琴奏鸣曲和声研究》 - 王晔.pdf","pages":334,"kind":"analysis","priority":12,"unique":true},
+    {"id":"persichetti_20c","title":"佩尔西采蒂《二十世纪和声学》","file":"佩尔西采蒂《二十世纪和声学》.pdf","pages":287,"kind":"post_tonal","priority":13,"unique":true},
+    {"id":"kizler_20c","title":"基泽勒《二十世纪音乐的和声技法》","file":"基泽勒《二十世纪音乐的和声技法》.pdf","pages":280,"kind":"post_tonal","priority":14,"unique":true},
+    {"id":"forte_atonal","title":"福特《无调性音乐的结构》","file":"福特《无调性音乐的结构》.pdf","pages":275,"kind":"post_tonal","priority":15,"unique":true}
+  ],
+  "duplicates": [
+    {"file":"瓦尔特·基泽勒 - 二十世纪音乐的和声技法 - 上海音乐学院出版社.pdf","same_as":"kizler_20c","evidence":"pages 6,21,101,280 render pixel-identical at 0.5x"}
+  ]
+}

@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 590" role="img" aria-labelledby="title desc">
+<title id="title">加倍方式与结构层关系</title>
+<desc id="desc">按音高关系和节奏句法两个维度区分同度、八度、平行音程、节奏分层和对位。</desc>
+<rect width="1100" height="590" fill="#fffdf8"/>
+<text font-family="'Noto Serif SC','Source Han Serif SC','Songti SC',serif" font-size="22" font-weight="700" fill="#172123" text-anchor="start"><tspan x="28" y="36">加倍是否新增声部：先看音高关系，再看节奏与句法</tspan></text>
+<text font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="12" font-weight="400" fill="#66716d" text-anchor="start"><tspan x="28" y="62.0">音高关系与节奏/句法共同决定结构层数是否增加。</tspan></text>
+<text font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="12" font-weight="700" fill="#172123" text-anchor="middle"><tspan x="415.0" y="102">节奏与句法：相同</tspan></text>
+<text font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="12" font-weight="700" fill="#172123" text-anchor="middle"><tspan x="835.0" y="102">节奏与句法：不同</tspan></text>
+<text font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="12" font-weight="700" fill="#172123" text-anchor="end"><tspan x="187" y="235.0">音高关系</tspan><tspan x="187" y="254.0">同音或八度</tspan></text>
+<text font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="12" font-weight="700" fill="#172123" text-anchor="end"><tspan x="187" y="405.0">音高关系</tspan><tspan x="187" y="424.0">不同音高</tspan></text>
+<rect x="205" y="150" width="420" height="170" rx="12" fill="#2c6c68" fill-opacity=".07" stroke="#2c6c68" stroke-width="1.2"/>
+<text font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="10" font-weight="700" fill="#2c6c68" text-anchor="start"><tspan x="223" y="178.0">同度或八度</tspan></text>
+<text font-family="'Noto Serif SC','Source Han Serif SC','Songti SC',serif" font-size="17" font-weight="700" fill="#172123" text-anchor="start"><tspan x="223" y="206">增加已有声部的支撑</tspan></text>
+<text font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="11" font-weight="400" fill="#66716d" text-anchor="start"><tspan x="223" y="238">同度增加人数、音准稳定与音色融合。</tspan><tspan x="223" y="257">八度扩展音高平面与频带。</tspan><tspan x="223" y="276">结构层数不变。</tspan></text>
+<rect x="625" y="150" width="420" height="170" rx="12" fill="#4b7b9c" fill-opacity=".07" stroke="#4b7b9c" stroke-width="1.2"/>
+<text font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="10" font-weight="700" fill="#4b7b9c" text-anchor="start"><tspan x="643" y="178.0">不同音高</tspan></text>
+<text font-family="'Noto Serif SC','Source Han Serif SC','Songti SC',serif" font-size="17" font-weight="700" fill="#172123" text-anchor="start"><tspan x="643" y="206">平行音程或和弦分配</tspan></text>
+<text font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="11" font-weight="400" fill="#66716d" text-anchor="start"><tspan x="643" y="238">平行三/六度、和弦音分配、弦乐分部。</tspan><tspan x="643" y="257">增加已有旋律或和声的频带与响度。</tspan><tspan x="643" y="276">通常仍归入同一结构层。</tspan></text>
+<rect x="205" y="320" width="420" height="170" rx="12" fill="#9e4d5b" fill-opacity=".07" stroke="#9e4d5b" stroke-width="1.2"/>
+<text font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="10" font-weight="700" fill="#9e4d5b" text-anchor="start"><tspan x="223" y="348.0">同音或八度</tspan></text>
+<text font-family="'Noto Serif SC','Source Han Serif SC','Songti SC',serif" font-size="17" font-weight="700" fill="#172123" text-anchor="start"><tspan x="223" y="376">节奏化重叠或冲突</tspan></text>
+<text font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="11" font-weight="400" fill="#66716d" text-anchor="start"><tspan x="223" y="408">同音交错、切分、hocket 可形成节奏层。</tspan><tspan x="223" y="427">若没有节奏设计，会被听成声部竞争。</tspan><tspan x="223" y="446">结构结果取决于节奏与句法。</tspan></text>
+<rect x="625" y="320" width="420" height="170" rx="12" fill="#78699a" fill-opacity=".07" stroke="#78699a" stroke-width="1.2"/>
+<text font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="10" font-weight="700" fill="#78699a" text-anchor="start"><tspan x="643" y="348.0">不同音高</tspan></text>
+<text font-family="'Noto Serif SC','Source Han Serif SC','Songti SC',serif" font-size="17" font-weight="700" fill="#172123" text-anchor="start"><tspan x="643" y="376">对位或独立结构层</tspan></text>
+<text font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="11" font-weight="400" fill="#66716d" text-anchor="start"><tspan x="643" y="408">独立旋律、副旋律、固定音型。</tspan><tspan x="643" y="427">需要独立音区、起音或句法支撑。</tspan><tspan x="643" y="446">听者能把它追成另一条线。</tspan></text>
+<text font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="11" font-weight="400" fill="#66716d" text-anchor="start"><tspan x="28" y="535.0">判断顺序：先问这段是否需要新的独立线。若不需要，同度、八度、平行音程与和弦分配只是改变响度贡献、频谱与音高平面；</tspan></text>
+<text font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="11" font-weight="400" fill="#66716d" text-anchor="start"><tspan x="28" y="556.0">若需要新的线，就必须在音高、节奏、起音或句法上提供独立信息。</tspan></text>
+</svg>

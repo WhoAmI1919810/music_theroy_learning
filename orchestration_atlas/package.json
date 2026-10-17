@@ -1,0 +1,14 @@
+{
+  "name": "orchestration-atlas",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Offline orchestration theory atlas and orchestration planner",
+  "scripts": {
+    "test": "node --test tests/engine.test.js tests/evidence.test.js",
+    "build:data": "node tools/export_data.js",
+    "build:figures": "python tools/build_figures.py",
+    "build:docs": "python tools/build_docs.py",
+    "build:snippets": "python tools/build_snippets.py",
+    "build": "node tools/export_data.js && python tools/build_figures.py && python tools/build_docs.py && python tools/build_snippets.py"
+  }
+}

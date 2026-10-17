@@ -1,0 +1,72 @@
+[
+  {
+    "id": "adler_1",
+    "title": "阿德勒《配器法教程》第三版 上册",
+    "pages_total": 551,
+    "pages_ocr": 44,
+    "chars": 25928,
+    "mean_conf": 0.966,
+    "complete": false,
+    "kind": "orchestration_course"
+  },
+  {
+    "id": "adler_2",
+    "title": "阿德勒《配器法教程》第三版 下册",
+    "pages_total": 257,
+    "pages_ocr": 54,
+    "chars": 23415,
+    "mean_conf": 0.948,
+    "complete": false,
+    "kind": "orchestration_course"
+  },
+  {
+    "id": "piston",
+    "title": "辟斯顿《配器法》",
+    "pages_total": 116,
+    "pages_ocr": 43,
+    "chars": 12416,
+    "mean_conf": 0.905,
+    "complete": false,
+    "kind": "classic_treatise"
+  },
+  {
+    "id": "shi_yongkang",
+    "title": "施咏康《管弦乐队配器法》",
+    "pages_total": 611,
+    "pages_ocr": 100,
+    "chars": 27105,
+    "mean_conf": 0.937,
+    "complete": false,
+    "kind": "chinese_course"
+  },
+  {
+    "id": "yang_1",
+    "title": "杨立青《管弦乐配器教程》上册",
+    "pages_total": 494,
+    "pages_ocr": 30,
+    "chars": 17501,
+    "mean_conf": 0.924,
+    "complete": false,
+    "kind": "advanced_course"
+  },
+  {
+    "id": "yang_2",
+    "title": "杨立青《管弦乐配器教程》中册",
+    "pages_total": 560,
+    "pages_ocr": 20,
+    "chars": 8045,
+    "mean_conf": 0.917,
+    "complete": false,
+    "kind": "advanced_course"
+  },
+  {
+    "id": "yang_3",
+    "title": "杨立青《管弦乐配器教程》下册",
+    "pages_total": 536,
+    "pages_ocr": 20,
+    "chars": 8618,
+    "mean_conf": 0.945,
+    "complete": false,
+    "kind": "advanced_course"
+  }
+]

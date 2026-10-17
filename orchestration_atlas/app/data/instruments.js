@@ -1,0 +1,168 @@
+(function (root) {
+  "use strict";
+
+  const INSTRUMENTS = [
+    {
+      id: "violin", name: "第一小提琴", short: "Vn. I", family: "string", familyLabel: "弦乐",
+      midiLow: 55, midiHigh: 100, comfortable: [55, 96], maxDynamic: 8, agility: 5, sustain: 5,
+      blend: 5, penetration: 4, roles: { melody: 5, counter: 5, harmony: 5, bass: 2, pedal: 5, rhythm: 4 },
+      note: "音区连续，弓法、分句与弱音器都能改变起音和频谱；高把位穿透力上升。"
+    },
+    {
+      id: "violin2", name: "第二小提琴", short: "Vn. II", family: "string", familyLabel: "弦乐",
+      midiLow: 55, midiHigh: 100, comfortable: [55, 93], maxDynamic: 8, agility: 5, sustain: 5,
+      blend: 5, penetration: 3, roles: { melody: 4, counter: 4, harmony: 5, bass: 2, pedal: 5, rhythm: 4 },
+      note: "与第一小提琴同质，适合内声部、对位与八度补强；同音区并列会提高融合与掩蔽。"
+    },
+    {
+      id: "viola", name: "中提琴", short: "Va.", family: "string", familyLabel: "弦乐",
+      midiLow: 48, midiHigh: 88, comfortable: [48, 84], maxDynamic: 7, agility: 4, sustain: 5,
+      blend: 5, penetration: 3, roles: { melody: 4, counter: 5, harmony: 5, bass: 3, pedal: 5, rhythm: 3 },
+      note: "中低音区厚，高音区张力增加；内声部与副旋律的常用声部。"
+    },
+    {
+      id: "cello", name: "大提琴", short: "Vc.", family: "string", familyLabel: "弦乐",
+      midiLow: 36, midiHigh: 81, comfortable: [36, 72], maxDynamic: 8, agility: 4, sustain: 5,
+      blend: 5, penetration: 4, roles: { melody: 5, counter: 5, harmony: 4, bass: 5, pedal: 4, rhythm: 4 },
+      note: "低音区有基本响度贡献与低频支撑，高音区歌唱性强；与低音提琴叠加时通常写作八度。"
+    },
+    {
+      id: "doublebass", name: "低音提琴", short: "Cb.", family: "string", familyLabel: "弦乐",
+      midiLow: 28, midiHigh: 67, comfortable: [28, 55], maxDynamic: 7, agility: 3, sustain: 4,
+      blend: 5, penetration: 3, roles: { melody: 1, counter: 2, harmony: 2, bass: 5, pedal: 4, rhythm: 4 },
+      note: "实际发声比记谱低八度；高音区音准与音量控制困难，通常与大提琴构成八度低音。"
+    },
+    {
+      id: "piccolo", name: "短笛", short: "Picc.", family: "woodwind", familyLabel: "木管",
+      midiLow: 86, midiHigh: 108, comfortable: [91, 105], maxDynamic: 8, agility: 5, sustain: 4,
+      blend: 2, penetration: 5, roles: { melody: 4, counter: 3, harmony: 1, bass: 0, pedal: 2, rhythm: 4 },
+      note: "实际发声高八度；极高频穿透力强，不适合作为普通和声填充。"
+    },
+    {
+      id: "flute", name: "长笛", short: "Fl.", family: "woodwind", familyLabel: "木管",
+      midiLow: 60, midiHigh: 98, comfortable: [62, 96], maxDynamic: 7, agility: 5, sustain: 4,
+      blend: 4, penetration: 4, roles: { melody: 5, counter: 4, harmony: 3, bass: 1, pedal: 3, rhythm: 5 },
+      note: "高音区穿透力强，低音区弱而气声多；长音需要换气，连奏依赖气柱与吐音控制。"
+    },
+    {
+      id: "oboe", name: "双簧管", short: "Ob.", family: "woodwind", familyLabel: "木管",
+      midiLow: 58, midiHigh: 93, comfortable: [60, 88], maxDynamic: 6, agility: 4, sustain: 4,
+      blend: 3, penetration: 5, roles: { melody: 5, counter: 4, harmony: 2, bass: 1, pedal: 3, rhythm: 3 },
+      note: "频谱集中，辨识别度高；弱奏仍可穿透，因此和声填充时容易突出。"
+    },
+    {
+      id: "clarinet", name: "单簧管", short: "Cl.", family: "woodwind", familyLabel: "木管",
+      midiLow: 50, midiHigh: 94, comfortable: [52, 84], maxDynamic: 7, agility: 5, sustain: 4,
+      blend: 5, penetration: 3, roles: { melody: 5, counter: 5, harmony: 5, bass: 2, pedal: 4, rhythm: 4 },
+      note: "低音区暗厚，中音区融合度高，高音区亮度上升；常作木管与弦乐之间的连接音色。"
+    },
+    {
+      id: "bassclarinet", name: "低音单簧管", short: "B. Cl.", family: "woodwind", familyLabel: "木管",
+      midiLow: 34, midiHigh: 79, comfortable: [42, 67], maxDynamic: 6, agility: 4, sustain: 4,
+      blend: 4, penetration: 3, roles: { melody: 3, counter: 4, harmony: 4, bass: 4, pedal: 5, rhythm: 3 },
+      note: "低音区厚而不易过分突出，可补足木管低端；高音区音质变薄。"
+    },
+    {
+      id: "bassoon", name: "大管", short: "Bsn.", family: "woodwind", familyLabel: "木管",
+      midiLow: 34, midiHigh: 76, comfortable: [36, 70], maxDynamic: 6, agility: 3, sustain: 4,
+      blend: 4, penetration: 4, roles: { melody: 4, counter: 5, harmony: 4, bass: 5, pedal: 5, rhythm: 3 },
+      note: "低音区承担木管低音，中音区可作副旋律；高音区音准与音色控制要求高。"
+    },
+    {
+      id: "contrabassoon", name: "低音大管", short: "C. Bsn.", family: "woodwind", familyLabel: "木管",
+      midiLow: 22, midiHigh: 58, comfortable: [24, 50], maxDynamic: 5, agility: 2, sustain: 4,
+      blend: 4, penetration: 3, roles: { melody: 1, counter: 1, harmony: 2, bass: 5, pedal: 5, rhythm: 1 },
+      note: "实际发声低八度；提供木管最低端的响度贡献与低频支撑，快速密集音型代价高。"
+    },
+    {
+      id: "horn", name: "圆号", short: "Hn.", family: "brass", familyLabel: "铜管",
+      midiLow: 35, midiHigh: 77, comfortable: [41, 72], maxDynamic: 7, agility: 3, sustain: 4,
+      blend: 5, penetration: 3, roles: { melody: 4, counter: 5, harmony: 5, bass: 3, pedal: 5, rhythm: 3 },
+      note: "铜管中融合度最高；中音区可连接木管和弦乐，强奏时仍能覆盖较宽频带。"
+    },
+    {
+      id: "trumpet", name: "小号", short: "Tpt.", family: "brass", familyLabel: "铜管",
+      midiLow: 50, midiHigh: 84, comfortable: [55, 79], maxDynamic: 8, agility: 4, sustain: 3,
+      blend: 2, penetration: 5, roles: { melody: 5, counter: 3, harmony: 2, bass: 1, pedal: 2, rhythm: 5 },
+      note: "起音明确、穿透力高；同音区强奏容易压过木管与弦乐，不宜只按人数判断平衡。"
+    },
+    {
+      id: "trombone", name: "长号", short: "Trb.", family: "brass", familyLabel: "铜管",
+      midiLow: 40, midiHigh: 70, comfortable: [41, 65], maxDynamic: 8, agility: 2, sustain: 4,
+      blend: 4, penetration: 4, roles: { melody: 3, counter: 3, harmony: 4, bass: 4, pedal: 5, rhythm: 3 },
+      note: "中低音区有明确核心；滑管允许连续滑音，但快速换把与连奏需要时间。"
+    },
+    {
+      id: "basstrombone", name: "低音长号", short: "B. Trb.", family: "brass", familyLabel: "铜管",
+      midiLow: 34, midiHigh: 70, comfortable: [36, 60], maxDynamic: 8, agility: 2, sustain: 4,
+      blend: 4, penetration: 4, roles: { melody: 1, counter: 2, harmony: 3, bass: 5, pedal: 5, rhythm: 2 },
+      note: "补强铜管与低音之间的下端，适合持续低音和强奏结构点。"
+    },
+    {
+      id: "tuba", name: "大号", short: "Tba.", family: "brass", familyLabel: "铜管",
+      midiLow: 26, midiHigh: 65, comfortable: [28, 58], maxDynamic: 7, agility: 2, sustain: 4,
+      blend: 4, penetration: 3, roles: { melody: 1, counter: 1, harmony: 2, bass: 5, pedal: 5, rhythm: 2 },
+      note: "低频支撑明显；音区越低，和声间距越需要拉开，密集排列会失去清晰度。"
+    },
+    {
+      id: "timpani", name: "定音鼓", short: "Timp.", family: "percussion", familyLabel: "打击乐",
+      midiLow: 38, midiHigh: 57, comfortable: [38, 55], maxDynamic: 8, agility: 3, sustain: 3,
+      blend: 2, penetration: 5, roles: { melody: 1, counter: 1, harmony: 1, bass: 3, pedal: 2, rhythm: 5 },
+      note: "提供低频重音与结构落点；音高受调音限制，滚奏持续力强于单次击打。"
+    },
+    {
+      id: "percussion", name: "无音高打击乐", short: "Perc.", family: "percussion", familyLabel: "打击乐",
+      midiLow: 0, midiHigh: 0, comfortable: [0, 0], maxDynamic: 8, agility: 5, sustain: 1,
+      blend: 1, penetration: 5, roles: { melody: 0, counter: 0, harmony: 0, bass: 0, pedal: 0, rhythm: 5 },
+      note: "主要组织起音、重音与时间边界；频带取决于具体乐器，不能按单一音高估算。"
+    },
+    {
+      id: "harp", name: "竖琴", short: "Hp.", family: "key", familyLabel: "竖琴/键盘",
+      midiLow: 23, midiHigh: 104, comfortable: [29, 96], maxDynamic: 6, agility: 4, sustain: 4,
+      blend: 4, penetration: 3, roles: { melody: 4, counter: 4, harmony: 5, bass: 3, pedal: 5, rhythm: 4 },
+      note: "宽音域与琶音能力强；踏板转调、同音重复与和弦排列影响可演奏性。"
+    },
+    {
+      id: "piano", name: "钢琴", short: "Pf.", family: "key", familyLabel: "竖琴/键盘",
+      midiLow: 21, midiHigh: 108, comfortable: [24, 103], maxDynamic: 8, agility: 5, sustain: 3,
+      blend: 3, penetration: 4, roles: { melody: 5, counter: 5, harmony: 5, bass: 4, pedal: 4, rhythm: 5 },
+      note: "宽音域与复调能力强；在乐队中持续力受制于击弦衰减，强奏融合需谨慎。"
+    }
+  ];
+
+  const INSTRUMENT_MAP = Object.fromEntries(INSTRUMENTS.map((item) => [item.id, item]));
+
+  const ENSEMBLES = {
+    chamber: {
+      label: "室内乐队（单管制）",
+      ids: ["flute", "oboe", "clarinet", "bassoon", "horn", "violin", "viola", "cello", "doublebass"]
+    },
+    classical: {
+      label: "古典双管编制",
+      ids: ["flute", "oboe", "clarinet", "bassoon", "horn", "trumpet", "timpani", "violin", "violin2", "viola", "cello", "doublebass"]
+    },
+    romantic: {
+      label: "晚期浪漫大型编制",
+      ids: ["piccolo", "flute", "oboe", "clarinet", "bassclarinet", "bassoon", "contrabassoon", "horn", "trumpet", "trombone", "basstrombone", "tuba", "timpani", "harp", "violin", "violin2", "viola", "cello", "doublebass"]
+    },
+    full: {
+      label: "现代全编制",
+      ids: ["piccolo", "flute", "oboe", "clarinet", "bassclarinet", "bassoon", "contrabassoon", "horn", "trumpet", "trombone", "basstrombone", "tuba", "timpani", "percussion", "harp", "piano", "violin", "violin2", "viola", "cello", "doublebass"]
+    }
+  };
+
+  const ROLE_LABELS = {
+    melody: "主要旋律",
+    counter: "对位/副旋律",
+    harmony: "和声填充",
+    bass: "低音",
+    pedal: "踏板音/持续音",
+    rhythm: "节奏层"
+  };
+
+  const DYNAMIC_NAMES = ["ppp", "pp", "p", "mp", "mf", "f", "ff", "fff"];
+
+  const data = { INSTRUMENTS, INSTRUMENT_MAP, ENSEMBLES, ROLE_LABELS, DYNAMIC_NAMES };
+  if (typeof module !== "undefined" && module.exports) module.exports = data;
+  root.ORCH_INSTRUMENTS = data;
+})(typeof window !== "undefined" ? window : globalThis);

@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>和声推演台 · Harmony Atlas</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="app-shell">
+  <header class="topbar">
+    <div class="brand">
+      <div class="brand-mark">H</div>
+      <div class="brand-text">
+        <h1>和声推演台</h1>
+        <p>Harmony Atlas · 原理、应用与转调</p>
+      </div>
+    </div>
+    <div class="global-key" aria-label="当前调性">
+      <div class="key-field"><label for="tonic">主音</label><select id="tonic"></select></div>
+      <div class="key-field"><label for="mode">调式</label><select id="mode"></select></div>
+      <div class="key-readout" id="keyReadout">C 大调</div>
+    </div>
+    <div class="header-actions">
+      <button class="ghost" id="btnHelp">使用说明</button>
+      <a class="ghost" href="../docs/和声学手册.html" target="_blank" rel="noopener">理论手册</a>
+    </div>
+  </header>
+
+  <nav class="tabs" id="tabs" aria-label="功能页">
+    <button class="tab active" data-tab="studio">推演台</button>
+    <button class="tab" data-tab="modulate">转调</button>
+    <button class="tab" data-tab="library">和弦库</button>
+    <button class="tab" data-tab="sets">集合实验室</button>
+    <button class="tab" data-tab="map">理论地图</button>
+  </nav>
+
+  <main class="main">
+    <section class="tab-panel active" id="panel-studio">
+      <div class="studio-toolbar">
+        <div class="segmented" id="catalogFilter" role="group" aria-label="和弦类别">
+          <button class="active" data-filter="all">全部</button>
+          <button data-filter="diatonic">调内</button>
+          <button data-filter="secondary">副属/离调</button>
+          <button data-filter="borrowed">借用/交替</button>
+          <button data-filter="chromatic">变化/色彩</button>
+          <button data-filter="modal">调式/对称</button>
+        </div>
+        <div class="toolbar-switches">
+          <label class="switch"><input type="checkbox" id="includeSevenths" checked><span>七和弦</span></label>
+          <label class="switch"><input type="checkbox" id="includeChromatic" checked><span>变化和弦</span></label>
+        </div>
+      </div>
+
+      <div class="studio-grid">
+        <aside class="panel palette-panel">
+          <div class="panel-head">
+            <h2>可用和弦</h2>
+            <span class="muted" id="catalogCount"></span>
+          </div>
+          <div class="hint-line">点击和弦加入进行；悬停或点击右侧查看原理。</div>
+          <div class="palette-groups" id="palette"></div>
+        </aside>
+
+        <section class="panel progression-panel">
+          <div class="panel-head">
+            <h2>和声进行</h2>
+            <div class="btn-row">
+              <button class="small" id="btnUndo">撤销</button>
+              <button class="small" id="btnClear">清空</button>
+              <button class="small primary" id="btnPlayProg">▶ 播放</button>
+              <button class="small" id="btnMidi">导出 MIDI</button>
+            </div>
+          </div>
+          <div class="progression" id="progression" aria-live="polite"></div>
+          <div class="analysis" id="analysis"></div>
+          <div class="progression-foot">
+            <span id="progressionHint">建议从 I 开始，再尝试 ii–V–I 或 IV–V–I。</span>
+            <span class="muted" id="progressionCount"></span>
+          </div>
+        </section>
+
+        <aside class="panel next-panel">
+          <div class="panel-head">
+            <h2>下一步可接</h2>
+            <span class="muted" id="nextHint"></span>
+          </div>
+          <div class="segmented small" id="nextFilter" role="group" aria-label="推荐类型">
+            <button class="active" data-next="functional">功能</button>
+            <button data-next="smooth">平滑</button>
+            <button data-next="color">色彩</button>
+            <button data-next="modulation">转调</button>
+          </div>
+          <div class="next-list" id="nextList"></div>
+        </aside>
+      </div>
+
+      <div class="lower-grid">
+        <section class="panel detail-panel" id="detailPanel">
+          <div class="detail-empty" id="detailEmpty">
+            <div class="empty-mark">♬</div>
+            <h3>选择一个和弦</h3>
+            <p>查看它的音级功能、倾向音、解决方向、可用连接，以及在哪些调式/转调中能被重新解释。</p>
+          </div>
+          <div class="detail-content hidden" id="detailContent"></div>
+        </section>
+
+        <section class="panel keyboard-panel">
+          <div class="panel-head">
+            <h2>试听与音高</h2>
+            <span class="muted">点击琴键试听；高亮为当前和弦音</span>
+          </div>
+          <div class="piano" id="piano"></div>
+          <div class="keyboard-readout" id="keyboardReadout">选择一个和弦后显示音高。</div>
+        </section>
+      </div>
+    </section>
+
+    <section class="tab-panel" id="panel-modulate">
+      <div class="mod-grid">
+        <aside class="panel mod-side">
+          <div class="panel-head"><h2>调性关系</h2><span class="muted" id="relationLabel"></span></div>
+          <div class="target-controls">
+            <div class="key-field"><label for="targetTonic">目标主音</label><select id="targetTonic"></select></div>
+            <div class="key-field"><label for="targetMode">目标调式</label><select id="targetMode"></select></div>
+          </div>
+          <div class="subsection-head radar-head"><h3>目标调式雷达</h3><span class="muted" id="radarHint">从当前进行反查</span></div>
+          <div class="segmented small radar-scope" id="radarScope" role="group" aria-label="候选目标范围">
+            <button class="active" data-scope="near">近关系</button>
+            <button data-scope="parallel">同主音</button>
+            <button data-scope="all">全部</button>
+          </div>
+          <div id="targetRadar" class="target-radar" aria-live="polite"></div>
+          <div id="relationCard" class="relation-card"></div>
+          <div class="subsection-head"><h3>共同和弦 / 中介</h3><span class="muted">同一音集，两种功能</span></div>
+          <div id="pivotList" class="pivot-list"></div>
+        </aside>
+        <section class="panel mod-main">
+          <div class="panel-head"><h2>转调路线</h2><span class="muted">由易到难排序，可试听</span></div>
+          <div id="routeList" class="route-list"></div>
+        </section>
+      </div>
+    </section>
+
+    <section class="tab-panel" id="panel-library">
+      <div class="panel library-panel">
+        <div class="panel-head">
+          <h2>和弦库</h2>
+          <div class="library-tools">
+            <input type="search" id="librarySearch" placeholder="搜索罗马数字、音名或类别…">
+            <select id="libraryCategory">
+              <option value="all">全部类别</option>
+              <option value="diatonic">调内</option>
+              <option value="secondary">副属/离调</option>
+              <option value="borrowed">借用/交替</option>
+              <option value="neapolitan">拿波里</option>
+              <option value="aug6">增六</option>
+              <option value="tritoneSub">三全音替代</option>
+              <option value="chromaticMediant">色彩中介</option>
+              <option value="modal">调式/对称</option>
+            </select>
+            <label class="switch"><input type="checkbox" id="librarySevenths" checked><span>七和弦</span></label>
+          </div>
+        </div>
+        <div class="table-wrap"><table class="chord-table" id="libraryTable"></table></div>
+        <div class="subsection-head"><h3>调式库存</h3><span class="muted">点击切换当前调式</span></div>
+        <div class="mode-gallery" id="modeGallery"></div>
+      </div>
+    </section>
+
+    <section class="tab-panel" id="panel-sets">
+      <div class="sets-grid">
+        <section class="panel">
+          <div class="panel-head"><h2>音级集合</h2><span class="muted">12 平均律 / 无序集合</span></div>
+          <div class="pc-picker" id="pcPicker"></div>
+          <div class="set-input-row">
+            <input id="pcInput" placeholder="例如 C E G Bb，或 0 4 7 10">
+            <button class="primary" id="btnAnalyzeSet">分析</button>
+          </div>
+          <div id="setResult" class="set-result"></div>
+        </section>
+        <section class="panel">
+          <div class="panel-head"><h2>包含关系</h2><span class="muted">这个集合能在哪里出现</span></div>
+          <div class="subsection-head"><h3>音阶</h3></div>
+          <div id="setScales" class="chip-list"></div>
+          <div class="subsection-head"><h3>当前调性和弦</h3></div>
+          <div id="setChords" class="chip-list"></div>
+        </section>
+        <section class="panel">
+          <div class="panel-head"><h2>新里曼变换</h2><span class="muted">P / L / R 三度关系</span></div>
+          <div id="neoRiemann" class="neo-riemann"></div>
+          <div class="subsection-head"><h3>十二音矩阵</h3></div>
+          <textarea id="twelveToneRow" rows="2" placeholder="输入 12 个不重复音级，例如 C C# D D# E F F# G G# A A# B"></textarea>
+          <button class="small" id="btnMatrix">生成矩阵</button>
+          <div id="matrixResult" class="matrix-wrap"></div>
+        </section>
+      </div>
+    </section>
+
+    <section class="tab-panel" id="panel-map">
+      <div class="map-layout">
+        <div class="panel map-canvas">
+          <div class="panel-head"><h2>理论依赖地图</h2><span class="muted">先修 → 后续；点击历史阶段聚焦</span></div>
+          <div id="periodTimeline" class="period-timeline"></div>
+          <div id="periodBasis" class="period-basis" aria-live="polite"></div>
+          <div id="theoryMap" class="theory-map"></div>
+        </div>
+        <aside class="panel map-detail" id="mapDetail">
+          <div class="detail-empty"><div class="empty-mark">↗</div><h3>点击一个节点</h3><p>查看它的原理、操作、应用、先修关系与教材依据。</p></div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>基于 15 本独立和声教材（16 个 PDF，含 1 个重复本）整理 · 所有推演在本地浏览器完成</span>
+    <span id="footerMeta"></span>
+  </footer>
+</div>
+
+<div class="modal hidden" id="helpModal" role="dialog" aria-modal="true" aria-labelledby="helpTitle">
+  <div class="modal-card">
+    <div class="modal-head"><h2 id="helpTitle">使用说明</h2><button class="icon-btn" id="btnCloseHelp" aria-label="关闭">×</button></div>
+    <div class="modal-body">
+      <p><strong>推演台</strong>：选择主音与调式，左侧是当前调式可用的和弦库存。点击和弦加入进行，右侧会按“功能语法、根音进行、声部平滑、共同音、倾向音解决”给出下一步建议。</p>
+      <p><strong>跨调式用途</strong>：选中和弦后，详情区会列出同一音集在其他调与调式中的级数和功能。标有“可作中介”的条目可充当转调枢纽；点击条目会把它设为目标调并跳到转调页。</p>
+      <p><strong>转调</strong>：选择目标主音/调式，系统会计算共同音、共同和弦（中介）与调性距离，并生成中介、直接、拿波里、增六、色彩中介等路线。左侧“目标调式雷达”可从当前进行的最后一个和弦反查候选目标；范围可选“近关系 / 同主音 / 全部”。点击雷达条目即可切换目标，路线也会从当前末和弦开始。</p>
+      <p><strong>和弦库</strong>：查看当前调式全部和弦的级数、音名、功能、类别与解决方向；可搜索、筛选、切换调式。</p>
+      <p><strong>集合实验室</strong>：输入音级集合，计算常态/基本形、音程向量、补集、包含它的音阶与和弦；也可做新里曼 P/L/R 变换与十二音矩阵。</p>
+      <p><strong>理论地图</strong>：从“属解决”到“副属”“转调”“集合论”的先后关系；可按古典、扩张、现代三个阶段聚焦，每个节点标注先修、后续、原理、应用和教材依据。</p>
+      <p class="muted">提示：网页完全离线运行。音频使用浏览器 Web Audio；首次播放需点击按钮授权。</p>
+    </div>
+  </div>
+</div>
+
+<script src="js/pitch.js"></script>
+<script src="js/theory-data.js"></script>
+<script src="js/engine.js"></script>
+<script src="js/audio.js"></script>
+<script src="js/midi.js"></script>
+<script src="../evidence/source-map.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

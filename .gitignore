@@ -1,0 +1,15 @@
+# Local build and browser artifacts
+_work/
+**/_work/
+**/__pycache__/
+*.py[cod]
+node_modules/
+.pytest_cache/
+.playwright/
+coverage/
+
+# OS/editor files
+.DS_Store
+Thumbs.db
+desktop.ini
+*.log

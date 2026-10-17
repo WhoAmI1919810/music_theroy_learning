@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="zh-CN">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Harmony Atlas UI check</title>
+<body>
+<iframe id="app" src="../app/index.html" width="1440" height="1000"></iframe>
+<pre id="result">PENDING</pre>
+<script>
+const frame = document.getElementById('app');
+const requestedWidth = Number(new URLSearchParams(location.search).get('w') || 1440);
+frame.width = requestedWidth;
+frame.addEventListener('load', () => {
+  const result = { errors: [], viewportWidth: frame.contentWindow.innerWidth };
+  try {
+    const win = frame.contentWindow;
+    const doc = frame.contentDocument;
+    const click = (selector) => {
+      const element = doc.querySelector(selector);
+      if (!element) throw new Error('missing element: ' + selector);
+      element.click();
+    };
+    const text = (selector) => (doc.querySelector(selector) || {}).textContent || '';
+    result.readyState = doc.readyState;
+    result.theoryNodes = doc.querySelectorAll('#theoryMap [data-node-id]').length;
+    result.hasSources = !!win.HarmonySources;
+
+    click('[data-tab="sets"]');
+    const input = doc.querySelector('#pcInput');
+    input.value = 'C E G Bb';
+    click('#btnAnalyzeSet');
+    result.setNotes = text('.set-notes').trim();
+    result.setPrime = text('.set-prime').trim();
+
+    click('[data-tab="map"]');
+    result.periodCards = doc.querySelectorAll('#periodTimeline [data-period-id]').length;
+    click('[data-period-id="modernPostTonal"]');
+    result.periodFocus = doc.querySelectorAll('#theoryMap .period-focus').length;
+    result.periodMuted = doc.querySelectorAll('#theoryMap .period-muted').length;
+    result.periodBasis = text('#periodBasis').replace(/\s+/g, ' ').trim();
+    click('[data-node-id="functionNetwork"]');
+    result.mapDetail = text('#mapDetail').replace(/\s+/g, ' ').trim();
+    result.mapAudit = [];
+    result.invalidMapRelations = [];
+    result.mapExternalOutcomes = 0;
+    const mapNodeIds = new Set([...doc.querySelectorAll('#theoryMap [data-node-id]')].map((node) => node.dataset.nodeId));
+    for (const nodeButton of doc.querySelectorAll('#theoryMap [data-node-id]')) {
+      nodeButton.click();
+      const detail = text('#mapDetail');
+      const required = ['操作', '应用', '先修', '后续', '教材依据'];
+      if (!required.every((label) => detail.includes(label)) || detail.includes('尚无直接页码证据')) {
+        result.mapAudit.push(nodeButton.dataset.nodeId);
+      }
+      for (const relation of doc.querySelectorAll('#mapDetail [data-map-rel]')) {
+        if (!mapNodeIds.has(relation.dataset.mapRel)) {
+          result.invalidMapRelations.push(nodeButton.dataset.nodeId + ':' + relation.dataset.mapRel);
+        }
+      }
+      result.mapExternalOutcomes += doc.querySelectorAll('#mapDetail .relation-chip.external').length;
+    }
+    result.mapDetailsComplete = result.mapAudit.length === 0 && result.invalidMapRelations.length === 0;
+
+    click('[data-tab="studio"]');
+    click('#palette [data-chord-key]');
+    result.detailInterpretations = doc.querySelectorAll('#detailContent [data-interpret]').length;
+    click('#detailAdd');
+    click('[data-tab="modulate"]');
+    result.radarItems = doc.querySelectorAll('#targetRadar [data-radar]').length;
+    result.radarHint = text('#radarHint');
+    const radarBefore = doc.querySelector('#targetTonic').value + '|' + doc.querySelector('#targetMode').value;
+    click('#targetRadar [data-radar="0"]');
+    result.radarChangedTarget = radarBefore !== (doc.querySelector('#targetTonic').value + '|' + doc.querySelector('#targetMode').value);
+    result.radarReason = text('#targetRadar .radar-reason');
+
+    result.overflow = {};
+    for (const tab of ['studio', 'modulate', 'library', 'sets', 'map']) {
+      click('[data-tab="' + tab + '"]');
+      result.overflow[tab] = {
+        document: doc.documentElement.scrollWidth - doc.documentElement.clientWidth,
+        body: doc.body.scrollWidth - doc.body.clientWidth
+      };
+    }
+    result.pass = result.setNotes === 'C · E · G · B♭' &&
+      result.theoryNodes === 28 && result.hasSources &&
+      result.periodCards === 3 && result.periodFocus > 0 && result.periodMuted > 0 &&
+      result.periodBasis.includes('色彩和声') && result.periodBasis.includes('PDF p.5') &&
+      result.periodBasis.includes('无调性、泛调性和声技法') &&
+      result.mapDetail.includes('勋伯格') && result.mapDetail.includes('PDF p.115') &&
+      result.mapDetailsComplete && result.mapExternalOutcomes > 0 &&
+      result.detailInterpretations > 0 && result.radarItems > 0 &&
+      result.radarHint.includes('反查') && result.radarChangedTarget && result.radarReason.length > 0;
+  } catch (error) {
+    result.errors.push(String(error && error.stack || error));
+    result.pass = false;
+  }
+  document.getElementById('result').textContent = JSON.stringify(result, null, 2);
+});
+</script>
+</body>
+</html>

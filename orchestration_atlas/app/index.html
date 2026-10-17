@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>配器推演台 · Orchestration Atlas</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="app-header">
+    <div class="brand">
+      <div class="brand-mark" aria-hidden="true">O</div>
+      <div>
+        <h1>配器推演台</h1>
+        <p>Orchestration Atlas · 原理、方案与教材原页</p>
+      </div>
+    </div>
+    <div class="header-controls">
+      <label class="compact-field">编制
+        <select id="ensembleSelect" aria-label="选择乐队编制"></select>
+      </label>
+      <label class="compact-field">目标
+        <select id="goalSelect" aria-label="选择配器目标"></select>
+      </label>
+      <a class="header-link" href="../docs/配器法手册.html">理论手册</a>
+      <button class="header-link" id="helpButton" type="button">使用说明</button>
+    </div>
+  </header>
+
+  <nav class="tabs" id="tabs" aria-label="功能页">
+    <button class="tab active" data-tab="overview" type="button">总览</button>
+    <button class="tab" data-tab="studio" type="button">推演台</button>
+    <button class="tab" data-tab="map" type="button">理论地图</button>
+    <button class="tab" data-tab="techniques" type="button">技法库</button>
+    <button class="tab" data-tab="sources" type="button">教材依据</button>
+  </nav>
+
+  <main>
+    <section class="tab-panel active" id="panel-overview">
+      <div class="hero panel">
+        <div class="hero-copy">
+          <p class="eyebrow">把复杂配器压成可检验的变量</p>
+          <h2>先分配听觉角色，再选择乐器与加倍方式。</h2>
+          <p class="lead">每套方案都围绕同一组问题：哪些结构层必须被听清，各自占用哪段音区，哪些声音会互相掩蔽，哪些加倍只增加同频带响度、不增加独立层。</p>
+          <div class="hero-actions">
+            <button class="primary" type="button" data-jump="studio">开始推演</button>
+            <button class="secondary" type="button" data-jump="techniques">先看 24 条机制</button>
+          </div>
+        </div>
+        <div class="signal-figure" aria-label="配器推导链">
+          <div class="signal-row"><span>01</span><b>结构层</b><small>旋律 · 低音 · 和声 · 对位 · 踏板 · 节奏</small></div>
+          <div class="signal-row"><span>02</span><b>听觉权重</b><small>前景 · 中景 · 背景</small></div>
+          <div class="signal-row"><span>03</span><b>音区与频谱</b><small>舒适音区 · 有效力度 · 瞬态</small></div>
+          <div class="signal-row"><span>04</span><b>组合方式</b><small>同度 · 八度 · 混合 · 分部 · 排列</small></div>
+          <div class="signal-row"><span>05</span><b>平衡校验</b><small>掩蔽 · 密度 · 耐力 · 可演奏性</small></div>
+        </div>
+      </div>
+
+      <div class="overview-grid">
+        <section class="panel wide-panel">
+          <div class="panel-head">
+            <div><p class="eyebrow">历史分段</p><h2>编制扩张改变了选择范围，声学条件没有改变</h2></div>
+          </div>
+          <div id="periodTimeline" class="period-timeline"></div>
+          <div id="periodDetail" class="period-detail"></div>
+        </section>
+        <section class="panel">
+          <div class="panel-head"><div><p class="eyebrow">判断顺序</p><h2>平衡的四个变量</h2></div></div>
+          <div class="formula-list">
+            <div class="formula-item"><b>音区</b><span>决定基频与谐波落在哪段频带。</span></div>
+            <div class="formula-item"><b>频谱</b><span>决定音色的融合、穿透与掩蔽。</span></div>
+            <div class="formula-item"><b>力度</b><span>决定动态余量与声压上限。</span></div>
+            <div class="formula-item"><b>时间</b><span>决定起音、持续、换手与句法。</span></div>
+          </div>
+          <p class="footnote">四者共同决定可听度，不能相互抵消；不同段落的限制项不同。乐器数量只影响其中一部分，不能单独用来配平。</p>
+        </section>
+        <section class="panel wide-panel">
+          <div class="panel-head">
+            <div><p class="eyebrow">先掌握的机制</p><h2>八条判断，能排除大部分无效方案</h2></div>
+            <button class="text-button" type="button" data-jump="techniques">查看全部 24 条</button>
+          </div>
+          <div id="overviewMechanisms" class="mini-card-grid"></div>
+        </section>
+      </div>
+    </section>
+
+    <section class="tab-panel" id="panel-studio">
+      <div class="studio-layout">
+        <aside class="panel input-panel">
+          <div class="panel-head"><div><p class="eyebrow">输入</p><h2>结构层</h2></div><span class="muted" id="layerCount"></span></div>
+          <div id="presetRow" class="preset-row"></div>
+          <div id="layerEditor" class="layer-editor"></div>
+          <div class="input-actions">
+            <button class="secondary small" type="button" id="addLayerButton">增加层</button>
+            <button class="secondary small" type="button" id="resetLayersButton">恢复预设</button>
+          </div>
+          <p class="footnote">音高范围用 MIDI 编号表示；界面同时显示实际音名。所有推演在本地浏览器完成。</p>
+        </aside>
+
+        <section class="output-area">
+          <div class="panel result-toolbar">
+            <div class="plan-tabs" id="planTabs" role="group" aria-label="配器方案"></div>
+            <div class="result-actions">
+              <button class="secondary small" type="button" id="copyPlanButton">复制方案</button>
+              <button class="primary small" type="button" id="downloadPlanButton">导出 Markdown</button>
+            </div>
+          </div>
+          <div id="resultSummary" class="result-summary"></div>
+          <div class="result-grid">
+            <section class="panel register-panel">
+              <div class="panel-head"><div><p class="eyebrow">音区分布</p><h2>各层与乐器落点</h2></div><span class="muted">横轴：实际发声音高</span></div>
+              <div id="registerMap" class="register-map"></div>
+            </section>
+            <section class="panel diagnostic-panel">
+              <div class="panel-head"><div><p class="eyebrow">校验</p><h2>需要处理的问题</h2></div><span class="muted" id="warningCount"></span></div>
+              <div id="diagnostics" class="diagnostics"></div>
+            </section>
+          </div>
+          <section class="panel assignment-panel">
+            <div class="panel-head"><div><p class="eyebrow">方案明细</p><h2>每层用了什么、为什么</h2></div><span class="muted" id="planDescription"></span></div>
+            <div id="assignments" class="assignment-list"></div>
+          </section>
+        </section>
+      </div>
+    </section>
+
+    <section class="tab-panel" id="panel-map">
+      <div class="map-toolbar panel">
+        <div class="period-filter" id="periodFilter" role="group" aria-label="历史阶段筛选"></div>
+          <div class="map-legend">
+          <span><i class="legend-dot acoustics"></i>声学</span><span><i class="legend-dot instrument"></i>乐器</span><span><i class="legend-dot structure"></i>结构</span><span><i class="legend-dot combination"></i>组合</span><span><i class="legend-dot balance"></i>平衡</span><span><i class="legend-dot time"></i>时间</span><span><i class="legend-dot notation"></i>制谱</span>
+          <span class="legend-arrow">箭头：先修 → 后续</span>
+        </div>
+        <p class="map-period-note" id="mapPeriodNote"></p>
+      </div>
+      <div class="map-layout">
+        <section class="panel map-canvas"><div id="theoryMap" class="theory-map"></div></section>
+        <aside class="panel map-detail" id="mapDetail">
+          <div class="empty-state"><div class="empty-mark">↗</div><h3>选择一个原理节点</h3><p>查看它的物理/听觉机制、操作方法、常见失败与教材依据。</p></div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="tab-panel" id="panel-techniques">
+      <div class="panel technique-toolbar">
+        <div class="filter-group" id="techniqueLayerFilter" role="group" aria-label="按知识层筛选"></div>
+        <div class="filter-group technique-period-filter" id="techniquePeriodFilter" role="group" aria-label="按历史阶段筛选"></div>
+        <label class="search-field"><span>搜索</span><input id="techniqueSearch" type="search" placeholder="音区、掩蔽、全奏、转接…"></label>
+      </div>
+      <div id="techniqueGrid" class="technique-grid"></div>
+    </section>
+
+    <section class="tab-panel" id="panel-sources">
+      <div class="source-intro panel">
+        <div><p class="eyebrow">证据链</p><h2>每条结论都能回到教材页</h2><p>页码以 PDF 物理页为准。点击条目会打开该页的扫描图与 OCR 文本；本地服务运行时还可打开原 PDF 的对应页。</p></div>
+        <div class="source-stats" id="sourceStats"></div>
+      </div>
+      <div class="source-layout">
+        <aside class="panel book-list" id="bookList"></aside>
+        <section class="panel claim-list" id="claimList"></section>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>基于 7 册（4 部）配器法教材整理 · 关键页定向 OCR · 推演在本地完成</span>
+    <span id="footerMeta"></span>
+  </footer>
+
+  <div class="modal hidden" id="helpModal" role="dialog" aria-modal="true" aria-labelledby="helpTitle">
+    <div class="modal-card">
+      <div class="modal-head"><h2 id="helpTitle">使用说明</h2><button class="icon-button" id="closeHelpButton" type="button" aria-label="关闭">×</button></div>
+      <div class="modal-body">
+        <p><b>推演台</b>把一段音乐压成若干结构层。为每层设置音高范围、力度、事件密度和优先级，系统会给出三套方案。</p>
+        <p><b>清晰优先</b>减少同音区叠加；<b>标准平衡</b>使用常规加倍；<b>扩展全奏</b>增加八度与混合音色。三套方案都是规则推演，不代替试奏。</p>
+        <p><b>评分</b>只在同一结构层的候选乐器之间比较，不是作品质量分。展开“评分与备选”可以看到舒适音区、角色适配、力度余量、敏捷度、持续力、掩蔽惩罚和落选候选。</p>
+        <p><b>理论地图</b>箭头表示先修关系。点击节点只高亮与它直接相连的箭头；历史阶段筛选压暗该阶段次要节点，突出当时最需要处理的编制与结构问题，不删除通用声学原理。</p>
+        <p><b>教材依据</b>同时保存 PDF 页码、印刷页码、章节名和原文引句；点击条目会直达教材页中的对应论点。</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="data/instruments.js"></script>
+  <script src="data/theory-data.js"></script>
+  <script src="data/mechanisms.js"></script>
+  <script src="data/sources.js"></script>
+  <script src="js/engine.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

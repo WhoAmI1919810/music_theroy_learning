@@ -1,0 +1,75 @@
+{
+  "books": [
+    {
+      "id": "adler_1",
+      "title": "阿德勒《配器法教程》第三版 上册",
+      "file": "配器法教程 第3版 上.pdf",
+      "pages": 551,
+      "kind": "orchestration_course",
+      "work": "adler_orchestration",
+      "volume": "上",
+      "priority": 1
+    },
+    {
+      "id": "adler_2",
+      "title": "阿德勒《配器法教程》第三版 下册",
+      "file": "配器法教程 第3版 下.pdf",
+      "pages": 257,
+      "kind": "orchestration_course",
+      "work": "adler_orchestration",
+      "volume": "下",
+      "priority": 2
+    },
+    {
+      "id": "piston",
+      "title": "辟斯顿《配器法》",
+      "file": "辟斯顿 - 配器法 - 上海文艺出版社.pdf",
+      "pages": 116,
+      "kind": "classic_treatise",
+      "work": "piston_orchestration",
+      "volume": "",
+      "priority": 3
+    },
+    {
+      "id": "shi_yongkang",
+      "title": "施咏康《管弦乐队配器法》",
+      "file": "施咏康《管弦乐队配器法》.pdf",
+      "pages": 611,
+      "kind": "chinese_course",
+      "work": "shi_orchestration",
+      "volume": "",
+      "priority": 4
+    },
+    {
+      "id": "yang_1",
+      "title": "杨立青《管弦乐配器教程》上册",
+      "file": "杨立青－管弦乐配器教程（上）.pdf",
+      "pages": 494,
+      "kind": "advanced_course",
+      "work": "yang_orchestration",
+      "volume": "上",
+      "priority": 5
+    },
+    {
+      "id": "yang_2",
+      "title": "杨立青《管弦乐配器教程》中册",
+      "file": "杨立青－管弦乐配器教程（中）.pdf",
+      "pages": 560,
+      "kind": "advanced_course",
+      "work": "yang_orchestration",
+      "volume": "中",
+      "priority": 6
+    },
+    {
+      "id": "yang_3",
+      "title": "杨立青《管弦乐配器教程》下册",
+      "file": "杨立青－管弦乐配器教程（下）.pdf",
+      "pages": 536,
+      "kind": "advanced_course",
+      "work": "yang_orchestration",
+      "volume": "下",
+      "priority": 7
+    }
+  ],
+  "duplicates": []
+}

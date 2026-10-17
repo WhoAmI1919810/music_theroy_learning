@@ -1,0 +1,152 @@
+[
+  {
+    "id": "sangtong_tutorial",
+    "title": "桑桐《和声学教程》",
+    "pages_total": 570,
+    "pages_ocr": 570,
+    "chars": 206479,
+    "mean_conf": 0.959,
+    "complete": true,
+    "kind": "tonal_theory"
+  },
+  {
+    "id": "xu_advanced",
+    "title": "徐平力《高级和声学教程》",
+    "pages_total": 490,
+    "pages_ocr": 490,
+    "chars": 216129,
+    "mean_conf": 0.968,
+    "complete": true,
+    "kind": "advanced_tonal"
+  },
+  {
+    "id": "tonal_20c_overview",
+    "title": "《调性和声及20世纪音乐概述》",
+    "pages_total": 702,
+    "pages_ocr": 702,
+    "chars": 315609,
+    "mean_conf": 0.956,
+    "complete": true,
+    "kind": "tonal_and_20c"
+  },
+  {
+    "id": "tchaikovsky_guide",
+    "title": "柴可夫斯基《和声学指南》",
+    "pages_total": 202,
+    "pages_ocr": 202,
+    "chars": 53243,
+    "mean_conf": 0.956,
+    "complete": true,
+    "kind": "tonal_theory"
+  },
+  {
+    "id": "schoenberg_harmony",
+    "title": "勋伯格《和声学》",
+    "pages_total": 264,
+    "pages_ocr": 264,
+    "chars": 140345,
+    "mean_conf": 0.93,
+    "complete": true,
+    "kind": "tonal_theory"
+  },
+  {
+    "id": "spossbin_answers_1",
+    "title": "斯波索宾和声学上册答案",
+    "pages_total": 250,
+    "pages_ocr": 250,
+    "chars": 48654,
+    "mean_conf": 0.947,
+    "complete": true,
+    "kind": "exercises"
+  },
+  {
+    "id": "spossbin_answers_2",
+    "title": "斯波索宾和声学下册答案",
+    "pages_total": 232,
+    "pages_ocr": 232,
+    "chars": 82670,
+    "mean_conf": 0.986,
+    "complete": true,
+    "kind": "exercises"
+  },
+  {
+    "id": "sangtong_six",
+    "title": "桑桐《和声学专题六讲》",
+    "pages_total": 366,
+    "pages_ocr": 366,
+    "chars": 125103,
+    "mean_conf": 0.963,
+    "complete": true,
+    "kind": "advanced_tonal"
+  },
+  {
+    "id": "sangtong_chromatic",
+    "title": "桑桐《半音化的历史演进》",
+    "pages_total": 469,
+    "pages_ocr": 469,
+    "chars": 203869,
+    "mean_conf": 0.971,
+    "complete": true,
+    "kind": "chromatic_history"
+  },
+  {
+    "id": "huacui_color",
+    "title": "华萃康《色彩和声》",
+    "pages_total": 565,
+    "pages_ocr": 565,
+    "chars": 269464,
+    "mean_conf": 0.953,
+    "complete": true,
+    "kind": "color_harmony"
+  },
+  {
+    "id": "tong_function_net",
+    "title": "童忠良《近现代和声的功能网》",
+    "pages_total": 141,
+    "pages_ocr": 141,
+    "chars": 38785,
+    "mean_conf": 0.942,
+    "complete": true,
+    "kind": "function_network"
+  },
+  {
+    "id": "beethoven_sonata",
+    "title": "王晔《贝多芬钢琴奏鸣曲和声研究》",
+    "pages_total": 334,
+    "pages_ocr": 334,
+    "chars": 102793,
+    "mean_conf": 0.933,
+    "complete": true,
+    "kind": "analysis"
+  },
+  {
+    "id": "persichetti_20c",
+    "title": "佩尔西采蒂《二十世纪和声学》",
+    "pages_total": 287,
+    "pages_ocr": 287,
+    "chars": 128459,
+    "mean_conf": 0.977,
+    "complete": true,
+    "kind": "post_tonal"
+  },
+  {
+    "id": "kizler_20c",
+    "title": "基泽勒《二十世纪音乐的和声技法》",
+    "pages_total": 280,
+    "pages_ocr": 280,
+    "chars": 164344,
+    "mean_conf": 0.966,
+    "complete": true,
+    "kind": "post_tonal"
+  },
+  {
+    "id": "forte_atonal",
+    "title": "福特《无调性音乐的结构》",
+    "pages_total": 275,
+    "pages_ocr": 275,
+    "chars": 156610,
+    "mean_conf": 0.972,
+    "complete": true,
+    "kind": "post_tonal"
+  }
+]

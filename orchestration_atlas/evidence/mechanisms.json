@@ -1,0 +1,706 @@
+{
+  "MECHANISMS": [
+    {
+      "id": "M01",
+      "title": "同一音高在不同音区的频谱不同",
+      "layer": "acoustics",
+      "period": "all",
+      "evidence": "direct",
+      "principle": "乐器的音色随音区改变：共振峰、谐波强度、噪声成分和可控力度都会变化。音域表只回答“能不能奏”，配器要求回答“在这个音区是否合用”。",
+      "check": "把同一个旋律分别移到乐器低、中、高音区，先听音色和力度余量，再看总谱是否需要换乐器。",
+      "use": "旋律、持续音、和声填充与全奏高声部都先按有效音区筛选。",
+      "limit": "不要用弱奏音区的印象判断强奏；力度改变会改变频谱和穿透力。",
+      "claims": [
+        "yang.spectrum-basis",
+        "adler.instrument-basics"
+      ]
+    },
+    {
+      "id": "M02",
+      "title": "起音先被听见，稳态随后才被辨认",
+      "layer": "acoustics",
+      "period": "all",
+      "evidence": "derived",
+      "principle": "弓压、气流、舌奏、槌击和唇振形成不同的瞬态。多个乐器同时起音时，瞬态是否对齐决定融合或分裂。",
+      "check": "把注意力放在每个声部的第一个音和长音中段；听合奏是否形成单个起音事件。",
+      "use": "同度加倍、齐奏、乐器转接和打击乐与乐队的同步。",
+      "limit": "不同乐器的自然起音速度不同，完全对齐有时需要改变发音法或让后一乐器提前进入。",
+      "claims": [
+        "adler.inner-hearing"
+      ]
+    },
+    {
+      "id": "M03",
+      "title": "掩蔽发生在重叠处",
+      "layer": "balance",
+      "period": "all",
+      "evidence": "derived",
+      "principle": "两个声音在频带、时间包络和空间位置上重叠时，较弱者会被遮住。音高相同、节奏相同、起音相近，是风险最高的组合。",
+      "check": "先看旋律与内声部是否落在同一八度，再看节奏和起音是否相同；最后才看力度。",
+      "use": "解决旋律被伴奏盖住、对位线消失、内声部听不见的问题。",
+      "limit": "改变音区最有效；只改音色有时仍会留下相同频带的竞争。",
+      "claims": [
+        "yang.balance-definition",
+        "yang.balance-register-example",
+        "yang.balance-relative"
+      ]
+    },
+    {
+      "id": "M04",
+      "title": "加倍两件乐器，不会自动得到两倍响度",
+      "layer": "acoustics",
+      "period": "all",
+      "evidence": "derived",
+      "principle": "响度感知同时受音区、频谱、持续时间和听力曲线影响。理想自由场中，同功率声源不相干叠加约 +3 分贝，相干叠加约 +6 分贝；听感翻倍通常需要约 +10 分贝。乐器重复远不等于响度线性加倍，同频带叠加还可能产生掩蔽与音准冲突。",
+      "check": "把加倍层单独静音，比较它是否真的增加了需要的响度贡献、人数支撑或清晰度，而不只是更响。",
+      "use": "平衡旋律与伴奏、控制全奏、判断是否需要八度或混合音色。",
+      "limit": "实际声压还受演奏者、厅堂和座位影响；不能用固定倍数当作总谱规则。",
+      "claims": [
+        "yang.balance-definition",
+        "yang.balance-register-example"
+      ]
+    },
+    {
+      "id": "M05",
+      "title": "同度加倍增加一个声部的支撑",
+      "layer": "combination",
+      "period": "all",
+      "evidence": "direct",
+      "principle": "同度加倍的两件乐器基频相同，差异在谐波和瞬态。它增加同频带的响度贡献、音准稳定和音色融合，不增加新的旋律或对位声部。",
+      "check": "问这段到底需要几个独立声部；如果答案不变，同度只是在增加已有声部的响度贡献与音准稳定。",
+      "use": "弱奏旋律、木管与弦乐融合、全奏核心、音准保障。",
+      "limit": "同度叠加会提高掩蔽风险；两件乐器音准不完全一致时，会听到拍频或粗糙感。",
+      "claims": [
+        "adler.tutti-unison-octave",
+        "piston.octave-not-new-factor"
+      ]
+    },
+    {
+      "id": "M06",
+      "title": "八度加倍扩展的是音高平面",
+      "layer": "combination",
+      "period": "all",
+      "evidence": "direct",
+      "principle": "八度关系的基频成 2:1，谐波高度重合，听感上仍归入同一个旋律声部。它加宽音高平面与频带；单个声部的响度贡献是否增加，要看演奏人数与同度支撑；整个乐队的响度与频带覆盖是否增加，还要看组别、音区跨度和低音。",
+      "check": "先比较加倍前后的最低音、最高音与中声部空间，再分清目标是增加单声部响度还是扩张全奏。",
+      "use": "低音线、旋律全奏、木管与弦乐结合、高潮。",
+      "limit": "每个声部都写八度会让所有层同时增加频带占用与响度，层次反而消失。",
+      "claims": [
+        "adler.tutti-unison-octave",
+        "piston.octave-not-new-factor"
+      ]
+    },
+    {
+      "id": "M07",
+      "title": "混合加倍补的是频谱缺口",
+      "layer": "combination",
+      "period": "expanded",
+      "evidence": "derived",
+      "principle": "不同乐器的谐波与共振峰叠加后形成新音色。互补的频带会补足对应频段的能量并提高清晰度；重叠的频带只会增加响度和掩蔽。",
+      "check": "先判断主乐器缺低频、高频还是起音，再选择补该处的乐器。",
+      "use": "混合旋律音色、和声填充、全奏、独立音色层。",
+      "limit": "高穿透乐器叠加后仍会抢占同一频段；混合前先做音区分离。",
+      "claims": [
+        "yang.balance-definition"
+      ]
+    },
+    {
+      "id": "M08",
+      "title": "平行三度、六度重复一个旋律",
+      "layer": "combination",
+      "period": "classical",
+      "evidence": "direct",
+      "principle": "整条旋律用平行三度或六度重复时，附加声部与旋律保持固定音程，听感上属于同一旋律声部的重复，难以形成独立对位线。",
+      "check": "看附加声部是否始终跟随旋律轮廓、同节奏移动；若是，它承担重复而非独立声部。",
+      "use": "旋律重复、木管或弦乐平行进行、平行齐奏。",
+      "limit": "平行音程会改变和声内容；低音区密集进行容易浑浊。",
+      "claims": [
+        "piston.octave-not-new-factor"
+      ]
+    },
+    {
+      "id": "M09",
+      "title": "低音区要拉开，高音区才宜收密",
+      "layer": "combination",
+      "period": "all",
+      "evidence": "derived",
+      "principle": "低频波长长，相邻低音的谐波更容易落在相近频带内，形成粗糙或浑浊。上方声部间距较小仍可分辨。",
+      "check": "先看最低两三个声部的音程；再看高音区是否堆了过多三度与二度。",
+      "use": "和弦配器、铜管和声、木管和弦、弦乐分部。",
+      "limit": "间距没有固定数字；音色、力度和厅堂都会改变可接受的密度。",
+      "claims": [
+        "piston.chord-arrangement"
+      ]
+    },
+    {
+      "id": "M10",
+      "title": "和弦排列先分配功能音，再分配附加音",
+      "layer": "combination",
+      "period": "all",
+      "evidence": "derived",
+      "principle": "根音、三音、七音和变化音承担不同的和声识别任务。低音与旋律确定框架后，内声部才负责补全功能音与附加音。",
+      "check": "删去内声部，听和弦性质是否仍清楚；若不清楚，先补功能音。",
+      "use": "和弦配器、分部写作、缩谱与改编。",
+      "limit": "重复哪个音取决于和声功能、旋律位置和音区，不能一律重复根音。",
+      "claims": [
+        "piston.chord-arrangement"
+      ]
+    },
+    {
+      "id": "M11",
+      "title": "先做结构分析，再谈乐器",
+      "layer": "structure",
+      "period": "all",
+      "evidence": "direct",
+      "principle": "把总谱还原为旋律、低音、和声背景、对位线、和弦与踏板等结构因素，才能判断乐器分配是否实现了音乐意图。",
+      "check": "用一小段总谱，在纸上只写结构层，不写乐器名；第二步再把乐器填回去。",
+      "use": "总谱分析、缩谱、改编、仿写。",
+      "limit": "结构层会随时间变化；不要把一个标签贴满整段。",
+      "claims": [
+        "piston.analysis-protocol"
+      ]
+    },
+    {
+      "id": "M12",
+      "title": "踏板音固定调中心，也占用频带",
+      "layer": "combination",
+      "period": "classical",
+      "evidence": "direct",
+      "principle": "持续音固定主音、属音或某个和弦音，使上方变化被听成同一中心内的运动。它同时占用一个演奏资源和一个频带，可能限制内声部。",
+      "check": "听持续音与上方每个和弦的关系；确认它提供稳定参照，没有覆盖旋律核心。",
+      "use": "引子、尾奏、和声扩张、全奏底层、调性确立。",
+      "limit": "持续音过强会变成前景；音区落在旋律核心时会掩蔽上方。",
+      "claims": [
+        "shi.pedal-tone"
+      ]
+    },
+    {
+      "id": "M13",
+      "title": "前景、中景、背景必须能被听出来",
+      "layer": "balance",
+      "period": "expanded",
+      "evidence": "direct",
+      "principle": "全乐队需要分层，但层级要靠音区、节奏、音色或力度差异实现。只在分析表上标“前景”没有声学效果。",
+      "check": "闭眼听段落，先说听见什么，再说总谱写了什么；两者顺序应基本一致。",
+      "use": "管弦乐织体、伴奏、协奏曲、全奏。",
+      "limit": "前景不必总是最高音；低音或固定音型也可以成为主要听觉对象。",
+      "claims": [
+        "adler.foreground-background"
+      ]
+    },
+    {
+      "id": "M14",
+      "title": "特殊音色不适合做普通和声填充",
+      "layer": "balance",
+      "period": "expanded",
+      "evidence": "direct",
+      "principle": "泛音异常丰富或音色特殊的乐器，在弱奏时也可能从和声层中突出。它们适合承担旋律、独立音色层或结构强调，不适合无差别铺满内声部。",
+      "check": "把该乐器从和声层单独抽出听；如果它立即变成旋律或独立音色焦点，说明位置不适合。",
+      "use": "木管和声、全奏内声部、特殊乐器分配。",
+      "limit": "特殊音色也可以在低力度、宽间距或同质音色包围下融入；判断要看具体上下文。",
+      "claims": [
+        "yang.special-timbre"
+      ]
+    },
+    {
+      "id": "M15",
+      "title": "铜管强奏占据宽频带，也带来掩蔽",
+      "layer": "balance",
+      "period": "expanded",
+      "evidence": "derived",
+      "principle": "铜管强奏时谐波密集、瞬态明确，能迅速增加宽频带的声压。它们适合结构点、低音与高潮，也容易压过同音区的木管和弦乐。",
+      "check": "比较铜管进入前后的频带占用；确认它增加的是结构点的响度与频带覆盖，直接盖住旋律会掩盖结构。",
+      "use": "高潮、终止、节奏强调、低音支撑。",
+      "limit": "圆号融合度高，小号与长号穿透力强；不能用“铜管”一概而论。",
+      "claims": [
+        "adler.tutti-unison-octave"
+      ]
+    },
+    {
+      "id": "M16",
+      "title": "弦乐分部增加声部，减少每部人数与响度贡献",
+      "layer": "combination",
+      "period": "classical",
+      "evidence": "direct",
+      "principle": "同一组弦乐拆成更多声部，可获得完整和弦或独立对位；每个分部的演奏者减少，音准协调变难，强奏时的响度与统一度下降。",
+      "check": "先数独立声部，再看每部还剩多少人；弱奏可分部，强奏需保留核心人数。",
+      "use": "弦乐和声、内声部、对位、弱奏音色。",
+      "limit": "双音与换位可以提供额外音，但会增加技术负担并改变音色。",
+      "claims": [
+        "piston.divisi-analysis",
+        "shi.string-writing"
+      ]
+    },
+    {
+      "id": "M17",
+      "title": "转接要交叠，不能只换乐器名",
+      "layer": "time",
+      "period": "expanded",
+      "evidence": "direct",
+      "principle": "不同乐器的起音、音色和力度曲线不同。后一乐器先进入、前一乐器稍后退出，可以避免换手处出现音量凹陷或音色跳变。",
+      "check": "在换手处听是否有音量凹陷、音色跳变或发音错位；看总谱是否留了交叠。",
+      "use": "旋律换色、木管交接、铜管与弦乐交替、长线分配。",
+      "limit": "交叠过长会让两个音色同时被听见，反而形成平行声部。",
+      "claims": [
+        "shi.instrument-transfer",
+        "yang.balance-transfer-example"
+      ]
+    },
+    {
+      "id": "M18",
+      "title": "呼应靠音色与位置分句",
+      "layer": "time",
+      "period": "classical",
+      "evidence": "direct",
+      "principle": "听者用音色、音区和空间位置追踪声源。把短句分给不同组别，可以形成对话；降低力度、改变音区或加弱音器可以形成回声。",
+      "check": "先不看总谱，记录每句来自哪个方向、哪组音色；再看是否符合句法。",
+      "use": "木管对答、铜管呼应、弦乐回声、戏剧性段落。",
+      "limit": "换色过密会让句法碎裂；呼应需要保留可识别的节奏或轮廓。",
+      "claims": [
+        "shi.call-response"
+      ]
+    },
+    {
+      "id": "M19",
+      "title": "全奏分配权重，不要求全员同奏",
+      "layer": "time",
+      "period": "expanded",
+      "evidence": "direct",
+      "principle": "全奏的力度来自多个频带和多个结构层同时被填充。若所有乐器同度齐奏，音域受限、瞬态拥挤，清晰度反而下降。",
+      "check": "把总谱分成旋律、低音、和声、节奏、持续五类；确认每类都有乐器，且没有全部挤在同一音区。",
+      "use": "高潮、终止、开场、结构分界。",
+      "limit": "部分全奏常比全体全奏更有效；不要为了“全”而填满每个频带。",
+      "claims": [
+        "adler.tutti-unison-octave",
+        "shi.tutti",
+        "adler.tutti-restraint"
+      ]
+    },
+    {
+      "id": "M20",
+      "title": "高潮需要参数变化的参照",
+      "layer": "time",
+      "period": "expanded",
+      "evidence": "derived",
+      "principle": "听感增长依赖频谱变宽、音区扩展、力度上升、事件密度增加与张力变化。所有参数同时拉满后，后续变化失去参照。",
+      "check": "比较高潮前两小节、高潮点和高潮后一小节；确认至少有一个参数在前后形成差异。",
+      "use": "渐强、全奏高潮、曲式转折。",
+      "limit": "高潮不一定最响；改变音色、密度或和声张力也能形成高点。",
+      "claims": [
+        "adler.tutti-unison-octave",
+        "adler.tutti-restraint"
+      ]
+    },
+    {
+      "id": "M21",
+      "title": "打击乐组织时间与重音",
+      "layer": "time",
+      "period": "modern",
+      "evidence": "derived",
+      "principle": "无音高打击乐主要提供起音、重音、时间边界和噪声频带，不承担传统和声功能。它的清晰度取决于具体乐器、击法与力度。",
+      "check": "先问它标记的是拍点、结构分界还是持续噪声层或节奏层；再选择鼓种和击法。",
+      "use": "节奏强调、结构分界、噪声层、全奏。",
+      "limit": "不同鼓种的频带与余音差异很大，不能用“打击乐”一个标签代替配器。",
+      "claims": [
+        "adler.instrument-basics",
+        "shi.percussion-role"
+      ]
+    },
+    {
+      "id": "M22",
+      "title": "弱音器与揉弦改变频谱和瞬态",
+      "layer": "instrument",
+      "period": "expanded",
+      "evidence": "derived",
+      "principle": "弦乐弱音器抑制部分高频并改变共振，铜管弱音器改变阻抗与指向性；揉弦使频率与谐波周期性变化。它们改变声音结构，不能只用“柔和”或“紧张”描述。",
+      "check": "比较加与不加时的起音、高频亮度、音量与融合度；不要只记“柔和”或“紧张”。",
+      "use": "音色变化、背景层、特殊效果、独奏与乐队对比。",
+      "limit": "弱音器不等于降低力度；某些乐器加弱音器后仍保持很强穿透力。",
+      "claims": [
+        "adler.instrument-basics"
+      ]
+    },
+    {
+      "id": "M23",
+      "title": "可演奏性要单独检查",
+      "layer": "notation",
+      "period": "all",
+      "evidence": "direct",
+      "principle": "换气、换弓、换把、滑管位置、双音、耐力、移调和分谱都会限制配器方案。总谱上的音高正确，并不保证实际可演奏。",
+      "check": "按乐器逐项检查：音域、换气/换弓、连续强奏、特殊技法、移调与分谱。",
+      "use": "总谱定稿、改编、分谱准备、排练前校对。",
+      "limit": "演奏者可以解决个别困难片段，但不能把例外当作常规写法。",
+      "claims": [
+        "adler.inner-hearing",
+        "adler.instrument-basics"
+      ]
+    },
+    {
+      "id": "M24",
+      "title": "历史编制决定可用手段",
+      "layer": "notation",
+      "period": "classical",
+      "evidence": "direct",
+      "principle": "自然铜管受调性与音高限制，阀键铜管扩大半音能力；木管按键与演奏技术也随时代变化。历史风格判断必须落实到具体乐器与音区。",
+      "check": "先确认作品时代的乐器构造与编制，再判断省略、移调或音区选择是否出于实际限制。",
+      "use": "作品分析、历史仿写、改编制、风格辨识。",
+      "limit": "历史限制不能解释所有配器选择；作曲家的个人偏好与演出条件同样重要。",
+      "claims": [
+        "adler.history-classical",
+        "adler.history-expanded"
+      ]
+    }
+  ],
+  "MECHANISM_MAP": {
+    "M01": {
+      "id": "M01",
+      "title": "同一音高在不同音区的频谱不同",
+      "layer": "acoustics",
+      "period": "all",
+      "evidence": "direct",
+      "principle": "乐器的音色随音区改变：共振峰、谐波强度、噪声成分和可控力度都会变化。音域表只回答“能不能奏”，配器要求回答“在这个音区是否合用”。",
+      "check": "把同一个旋律分别移到乐器低、中、高音区，先听音色和力度余量，再看总谱是否需要换乐器。",
+      "use": "旋律、持续音、和声填充与全奏高声部都先按有效音区筛选。",
+      "limit": "不要用弱奏音区的印象判断强奏；力度改变会改变频谱和穿透力。",
+      "claims": [
+        "yang.spectrum-basis",
+        "adler.instrument-basics"
+      ]
+    },
+    "M02": {
+      "id": "M02",
+      "title": "起音先被听见，稳态随后才被辨认",
+      "layer": "acoustics",
+      "period": "all",
+      "evidence": "derived",
+      "principle": "弓压、气流、舌奏、槌击和唇振形成不同的瞬态。多个乐器同时起音时，瞬态是否对齐决定融合或分裂。",
+      "check": "把注意力放在每个声部的第一个音和长音中段；听合奏是否形成单个起音事件。",
+      "use": "同度加倍、齐奏、乐器转接和打击乐与乐队的同步。",
+      "limit": "不同乐器的自然起音速度不同，完全对齐有时需要改变发音法或让后一乐器提前进入。",
+      "claims": [
+        "adler.inner-hearing"
+      ]
+    },
+    "M03": {
+      "id": "M03",
+      "title": "掩蔽发生在重叠处",
+      "layer": "balance",
+      "period": "all",
+      "evidence": "derived",
+      "principle": "两个声音在频带、时间包络和空间位置上重叠时，较弱者会被遮住。音高相同、节奏相同、起音相近，是风险最高的组合。",
+      "check": "先看旋律与内声部是否落在同一八度，再看节奏和起音是否相同；最后才看力度。",
+      "use": "解决旋律被伴奏盖住、对位线消失、内声部听不见的问题。",
+      "limit": "改变音区最有效；只改音色有时仍会留下相同频带的竞争。",
+      "claims": [
+        "yang.balance-definition",
+        "yang.balance-register-example",
+        "yang.balance-relative"
+      ]
+    },
+    "M04": {
+      "id": "M04",
+      "title": "加倍两件乐器，不会自动得到两倍响度",
+      "layer": "acoustics",
+      "period": "all",
+      "evidence": "derived",
+      "principle": "响度感知同时受音区、频谱、持续时间和听力曲线影响。理想自由场中，同功率声源不相干叠加约 +3 分贝，相干叠加约 +6 分贝；听感翻倍通常需要约 +10 分贝。乐器重复远不等于响度线性加倍，同频带叠加还可能产生掩蔽与音准冲突。",
+      "check": "把加倍层单独静音，比较它是否真的增加了需要的响度贡献、人数支撑或清晰度，而不只是更响。",
+      "use": "平衡旋律与伴奏、控制全奏、判断是否需要八度或混合音色。",
+      "limit": "实际声压还受演奏者、厅堂和座位影响；不能用固定倍数当作总谱规则。",
+      "claims": [
+        "yang.balance-definition",
+        "yang.balance-register-example"
+      ]
+    },
+    "M05": {
+      "id": "M05",
+      "title": "同度加倍增加一个声部的支撑",
+      "layer": "combination",
+      "period": "all",
+      "evidence": "direct",
+      "principle": "同度加倍的两件乐器基频相同，差异在谐波和瞬态。它增加同频带的响度贡献、音准稳定和音色融合，不增加新的旋律或对位声部。",
+      "check": "问这段到底需要几个独立声部；如果答案不变，同度只是在增加已有声部的响度贡献与音准稳定。",
+      "use": "弱奏旋律、木管与弦乐融合、全奏核心、音准保障。",
+      "limit": "同度叠加会提高掩蔽风险；两件乐器音准不完全一致时，会听到拍频或粗糙感。",
+      "claims": [
+        "adler.tutti-unison-octave",
+        "piston.octave-not-new-factor"
+      ]
+    },
+    "M06": {
+      "id": "M06",
+      "title": "八度加倍扩展的是音高平面",
+      "layer": "combination",
+      "period": "all",
+      "evidence": "direct",
+      "principle": "八度关系的基频成 2:1，谐波高度重合，听感上仍归入同一个旋律声部。它加宽音高平面与频带；单个声部的响度贡献是否增加，要看演奏人数与同度支撑；整个乐队的响度与频带覆盖是否增加，还要看组别、音区跨度和低音。",
+      "check": "先比较加倍前后的最低音、最高音与中声部空间，再分清目标是增加单声部响度还是扩张全奏。",
+      "use": "低音线、旋律全奏、木管与弦乐结合、高潮。",
+      "limit": "每个声部都写八度会让所有层同时增加频带占用与响度，层次反而消失。",
+      "claims": [
+        "adler.tutti-unison-octave",
+        "piston.octave-not-new-factor"
+      ]
+    },
+    "M07": {
+      "id": "M07",
+      "title": "混合加倍补的是频谱缺口",
+      "layer": "combination",
+      "period": "expanded",
+      "evidence": "derived",
+      "principle": "不同乐器的谐波与共振峰叠加后形成新音色。互补的频带会补足对应频段的能量并提高清晰度；重叠的频带只会增加响度和掩蔽。",
+      "check": "先判断主乐器缺低频、高频还是起音，再选择补该处的乐器。",
+      "use": "混合旋律音色、和声填充、全奏、独立音色层。",
+      "limit": "高穿透乐器叠加后仍会抢占同一频段；混合前先做音区分离。",
+      "claims": [
+        "yang.balance-definition"
+      ]
+    },
+    "M08": {
+      "id": "M08",
+      "title": "平行三度、六度重复一个旋律",
+      "layer": "combination",
+      "period": "classical",
+      "evidence": "direct",
+      "principle": "整条旋律用平行三度或六度重复时，附加声部与旋律保持固定音程，听感上属于同一旋律声部的重复，难以形成独立对位线。",
+      "check": "看附加声部是否始终跟随旋律轮廓、同节奏移动；若是，它承担重复而非独立声部。",
+      "use": "旋律重复、木管或弦乐平行进行、平行齐奏。",
+      "limit": "平行音程会改变和声内容；低音区密集进行容易浑浊。",
+      "claims": [
+        "piston.octave-not-new-factor"
+      ]
+    },
+    "M09": {
+      "id": "M09",
+      "title": "低音区要拉开，高音区才宜收密",
+      "layer": "combination",
+      "period": "all",
+      "evidence": "derived",
+      "principle": "低频波长长，相邻低音的谐波更容易落在相近频带内，形成粗糙或浑浊。上方声部间距较小仍可分辨。",
+      "check": "先看最低两三个声部的音程；再看高音区是否堆了过多三度与二度。",
+      "use": "和弦配器、铜管和声、木管和弦、弦乐分部。",
+      "limit": "间距没有固定数字；音色、力度和厅堂都会改变可接受的密度。",
+      "claims": [
+        "piston.chord-arrangement"
+      ]
+    },
+    "M10": {
+      "id": "M10",
+      "title": "和弦排列先分配功能音，再分配附加音",
+      "layer": "combination",
+      "period": "all",
+      "evidence": "derived",
+      "principle": "根音、三音、七音和变化音承担不同的和声识别任务。低音与旋律确定框架后，内声部才负责补全功能音与附加音。",
+      "check": "删去内声部，听和弦性质是否仍清楚；若不清楚，先补功能音。",
+      "use": "和弦配器、分部写作、缩谱与改编。",
+      "limit": "重复哪个音取决于和声功能、旋律位置和音区，不能一律重复根音。",
+      "claims": [
+        "piston.chord-arrangement"
+      ]
+    },
+    "M11": {
+      "id": "M11",
+      "title": "先做结构分析，再谈乐器",
+      "layer": "structure",
+      "period": "all",
+      "evidence": "direct",
+      "principle": "把总谱还原为旋律、低音、和声背景、对位线、和弦与踏板等结构因素，才能判断乐器分配是否实现了音乐意图。",
+      "check": "用一小段总谱，在纸上只写结构层，不写乐器名；第二步再把乐器填回去。",
+      "use": "总谱分析、缩谱、改编、仿写。",
+      "limit": "结构层会随时间变化；不要把一个标签贴满整段。",
+      "claims": [
+        "piston.analysis-protocol"
+      ]
+    },
+    "M12": {
+      "id": "M12",
+      "title": "踏板音固定调中心，也占用频带",
+      "layer": "combination",
+      "period": "classical",
+      "evidence": "direct",
+      "principle": "持续音固定主音、属音或某个和弦音，使上方变化被听成同一中心内的运动。它同时占用一个演奏资源和一个频带，可能限制内声部。",
+      "check": "听持续音与上方每个和弦的关系；确认它提供稳定参照，没有覆盖旋律核心。",
+      "use": "引子、尾奏、和声扩张、全奏底层、调性确立。",
+      "limit": "持续音过强会变成前景；音区落在旋律核心时会掩蔽上方。",
+      "claims": [
+        "shi.pedal-tone"
+      ]
+    },
+    "M13": {
+      "id": "M13",
+      "title": "前景、中景、背景必须能被听出来",
+      "layer": "balance",
+      "period": "expanded",
+      "evidence": "direct",
+      "principle": "全乐队需要分层，但层级要靠音区、节奏、音色或力度差异实现。只在分析表上标“前景”没有声学效果。",
+      "check": "闭眼听段落，先说听见什么，再说总谱写了什么；两者顺序应基本一致。",
+      "use": "管弦乐织体、伴奏、协奏曲、全奏。",
+      "limit": "前景不必总是最高音；低音或固定音型也可以成为主要听觉对象。",
+      "claims": [
+        "adler.foreground-background"
+      ]
+    },
+    "M14": {
+      "id": "M14",
+      "title": "特殊音色不适合做普通和声填充",
+      "layer": "balance",
+      "period": "expanded",
+      "evidence": "direct",
+      "principle": "泛音异常丰富或音色特殊的乐器，在弱奏时也可能从和声层中突出。它们适合承担旋律、独立音色层或结构强调，不适合无差别铺满内声部。",
+      "check": "把该乐器从和声层单独抽出听；如果它立即变成旋律或独立音色焦点，说明位置不适合。",
+      "use": "木管和声、全奏内声部、特殊乐器分配。",
+      "limit": "特殊音色也可以在低力度、宽间距或同质音色包围下融入；判断要看具体上下文。",
+      "claims": [
+        "yang.special-timbre"
+      ]
+    },
+    "M15": {
+      "id": "M15",
+      "title": "铜管强奏占据宽频带，也带来掩蔽",
+      "layer": "balance",
+      "period": "expanded",
+      "evidence": "derived",
+      "principle": "铜管强奏时谐波密集、瞬态明确，能迅速增加宽频带的声压。它们适合结构点、低音与高潮，也容易压过同音区的木管和弦乐。",
+      "check": "比较铜管进入前后的频带占用；确认它增加的是结构点的响度与频带覆盖，直接盖住旋律会掩盖结构。",
+      "use": "高潮、终止、节奏强调、低音支撑。",
+      "limit": "圆号融合度高，小号与长号穿透力强；不能用“铜管”一概而论。",
+      "claims": [
+        "adler.tutti-unison-octave"
+      ]
+    },
+    "M16": {
+      "id": "M16",
+      "title": "弦乐分部增加声部，减少每部人数与响度贡献",
+      "layer": "combination",
+      "period": "classical",
+      "evidence": "direct",
+      "principle": "同一组弦乐拆成更多声部，可获得完整和弦或独立对位；每个分部的演奏者减少，音准协调变难，强奏时的响度与统一度下降。",
+      "check": "先数独立声部，再看每部还剩多少人；弱奏可分部，强奏需保留核心人数。",
+      "use": "弦乐和声、内声部、对位、弱奏音色。",
+      "limit": "双音与换位可以提供额外音，但会增加技术负担并改变音色。",
+      "claims": [
+        "piston.divisi-analysis",
+        "shi.string-writing"
+      ]
+    },
+    "M17": {
+      "id": "M17",
+      "title": "转接要交叠，不能只换乐器名",
+      "layer": "time",
+      "period": "expanded",
+      "evidence": "direct",
+      "principle": "不同乐器的起音、音色和力度曲线不同。后一乐器先进入、前一乐器稍后退出，可以避免换手处出现音量凹陷或音色跳变。",
+      "check": "在换手处听是否有音量凹陷、音色跳变或发音错位；看总谱是否留了交叠。",
+      "use": "旋律换色、木管交接、铜管与弦乐交替、长线分配。",
+      "limit": "交叠过长会让两个音色同时被听见，反而形成平行声部。",
+      "claims": [
+        "shi.instrument-transfer",
+        "yang.balance-transfer-example"
+      ]
+    },
+    "M18": {
+      "id": "M18",
+      "title": "呼应靠音色与位置分句",
+      "layer": "time",
+      "period": "classical",
+      "evidence": "direct",
+      "principle": "听者用音色、音区和空间位置追踪声源。把短句分给不同组别，可以形成对话；降低力度、改变音区或加弱音器可以形成回声。",
+      "check": "先不看总谱，记录每句来自哪个方向、哪组音色；再看是否符合句法。",
+      "use": "木管对答、铜管呼应、弦乐回声、戏剧性段落。",
+      "limit": "换色过密会让句法碎裂；呼应需要保留可识别的节奏或轮廓。",
+      "claims": [
+        "shi.call-response"
+      ]
+    },
+    "M19": {
+      "id": "M19",
+      "title": "全奏分配权重，不要求全员同奏",
+      "layer": "time",
+      "period": "expanded",
+      "evidence": "direct",
+      "principle": "全奏的力度来自多个频带和多个结构层同时被填充。若所有乐器同度齐奏，音域受限、瞬态拥挤，清晰度反而下降。",
+      "check": "把总谱分成旋律、低音、和声、节奏、持续五类；确认每类都有乐器，且没有全部挤在同一音区。",
+      "use": "高潮、终止、开场、结构分界。",
+      "limit": "部分全奏常比全体全奏更有效；不要为了“全”而填满每个频带。",
+      "claims": [
+        "adler.tutti-unison-octave",
+        "shi.tutti",
+        "adler.tutti-restraint"
+      ]
+    },
+    "M20": {
+      "id": "M20",
+      "title": "高潮需要参数变化的参照",
+      "layer": "time",
+      "period": "expanded",
+      "evidence": "derived",
+      "principle": "听感增长依赖频谱变宽、音区扩展、力度上升、事件密度增加与张力变化。所有参数同时拉满后，后续变化失去参照。",
+      "check": "比较高潮前两小节、高潮点和高潮后一小节；确认至少有一个参数在前后形成差异。",
+      "use": "渐强、全奏高潮、曲式转折。",
+      "limit": "高潮不一定最响；改变音色、密度或和声张力也能形成高点。",
+      "claims": [
+        "adler.tutti-unison-octave",
+        "adler.tutti-restraint"
+      ]
+    },
+    "M21": {
+      "id": "M21",
+      "title": "打击乐组织时间与重音",
+      "layer": "time",
+      "period": "modern",
+      "evidence": "derived",
+      "principle": "无音高打击乐主要提供起音、重音、时间边界和噪声频带，不承担传统和声功能。它的清晰度取决于具体乐器、击法与力度。",
+      "check": "先问它标记的是拍点、结构分界还是持续噪声层或节奏层；再选择鼓种和击法。",
+      "use": "节奏强调、结构分界、噪声层、全奏。",
+      "limit": "不同鼓种的频带与余音差异很大，不能用“打击乐”一个标签代替配器。",
+      "claims": [
+        "adler.instrument-basics",
+        "shi.percussion-role"
+      ]
+    },
+    "M22": {
+      "id": "M22",
+      "title": "弱音器与揉弦改变频谱和瞬态",
+      "layer": "instrument",
+      "period": "expanded",
+      "evidence": "derived",
+      "principle": "弦乐弱音器抑制部分高频并改变共振，铜管弱音器改变阻抗与指向性；揉弦使频率与谐波周期性变化。它们改变声音结构，不能只用“柔和”或“紧张”描述。",
+      "check": "比较加与不加时的起音、高频亮度、音量与融合度；不要只记“柔和”或“紧张”。",
+      "use": "音色变化、背景层、特殊效果、独奏与乐队对比。",
+      "limit": "弱音器不等于降低力度；某些乐器加弱音器后仍保持很强穿透力。",
+      "claims": [
+        "adler.instrument-basics"
+      ]
+    },
+    "M23": {
+      "id": "M23",
+      "title": "可演奏性要单独检查",
+      "layer": "notation",
+      "period": "all",
+      "evidence": "direct",
+      "principle": "换气、换弓、换把、滑管位置、双音、耐力、移调和分谱都会限制配器方案。总谱上的音高正确，并不保证实际可演奏。",
+      "check": "按乐器逐项检查：音域、换气/换弓、连续强奏、特殊技法、移调与分谱。",
+      "use": "总谱定稿、改编、分谱准备、排练前校对。",
+      "limit": "演奏者可以解决个别困难片段，但不能把例外当作常规写法。",
+      "claims": [
+        "adler.inner-hearing",
+        "adler.instrument-basics"
+      ]
+    },
+    "M24": {
+      "id": "M24",
+      "title": "历史编制决定可用手段",
+      "layer": "notation",
+      "period": "classical",
+      "evidence": "direct",
+      "principle": "自然铜管受调性与音高限制，阀键铜管扩大半音能力；木管按键与演奏技术也随时代变化。历史风格判断必须落实到具体乐器与音区。",
+      "check": "先确认作品时代的乐器构造与编制，再判断省略、移调或音区选择是否出于实际限制。",
+      "use": "作品分析、历史仿写、改编制、风格辨识。",
+      "limit": "历史限制不能解释所有配器选择；作曲家的个人偏好与演出条件同样重要。",
+      "claims": [
+        "adler.history-classical",
+        "adler.history-expanded"
+      ]
+    }
+  }
+}

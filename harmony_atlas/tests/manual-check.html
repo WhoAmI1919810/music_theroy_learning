@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Manual audit</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#111;color:#eee;font:14px/1.5 ui-monospace,Consolas,monospace}
+#result{padding:12px;white-space:pre-wrap;background:#0b0b0b;border-bottom:1px solid #333;min-height:80px}
+#manual{display:block;width:100%;height:900px;border:0;background:#fff}
+body[data-audit="pass"] #result{color:#8ee6a8}body[data-audit="fail"] #result{color:#ff9a9a}
+</style>
+</head>
+<body>
+<pre id="result">auditing...</pre>
+<iframe id="manual" src="../docs/和声学手册.html" title="和声学手册布局审计"></iframe>
+<script>
+(function () {
+  const iframe = document.getElementById('manual');
+  const result = document.getElementById('result');
+  let finished = false;
+  const params = new URLSearchParams(window.location.search);
+  const requestedWidth = Number(params.get('width'));
+  const shotMode = params.get('shot') === '1';
+  const anchor = params.get('anchor');
+  if (requestedWidth >= 300 && requestedWidth <= 2000) {
+    iframe.style.width = requestedWidth + 'px';
+  }
+  if (anchor) iframe.src = '../docs/和声学手册.html#' + anchor;
+  if (shotMode) {
+    result.style.display = 'none';
+    iframe.style.height = '100vh';
+    document.body.style.background = '#fff';
+  }
+
+  function allImagesSettled(images) {
+    return Promise.all(images.map((image) => {
+      if (image.complete) return Promise.resolve();
+      return new Promise((resolve) => {
+        image.addEventListener('load', resolve, { once: true });
+        image.addEventListener('error', resolve, { once: true });
+      });
+    }));
+  }
+
+  async function audit() {
+    if (finished) return;
+    const doc = iframe.contentDocument;
+    if (!doc || !doc.documentElement) return;
+    const images = [...doc.querySelectorAll('figure.example-figure img')];
+    await allImagesSettled(images);
+    const figures = [...doc.querySelectorAll('figure.example-figure')];
+    const captions = figures.map((figure) => figure.querySelector('figcaption')?.textContent.trim() || '');
+    const sources = [...doc.querySelectorAll('blockquote')].map((node) => node.textContent.trim())
+      .filter((text) => text.startsWith('来源：'));
+    const stageHeadings = [...doc.querySelectorAll('h3')].map((node) => node.textContent.trim())
+      .filter((text) => /^13\.[123]/.test(text));
+    const ids = captions.map((caption) => (caption.match(/^([CEM][0-9]{2})/) || [])[1]).filter(Boolean);
+    const missingAlt = images.filter((image) => !image.getAttribute('alt')?.trim()).length;
+    const missingCaption = captions.filter((caption) => !caption).length;
+    const remoteImages = images.filter((image) => !image.currentSrc.startsWith('file:')).length;
+    const brokenImages = images.filter((image) => !image.complete || image.naturalWidth < 1).length;
+    const docRoot = doc.documentElement;
+    const overflowDocs = {
+      root: docRoot.scrollWidth - docRoot.clientWidth,
+      body: doc.body.scrollWidth - doc.body.clientWidth,
+    };
+    const overflow = Math.max(overflowDocs.root, overflowDocs.body) > 1;
+    const outsideColumn = figures.filter((figure) => {
+      const rect = figure.getBoundingClientRect();
+      return rect.left < -1 || rect.right > docRoot.clientWidth + 1;
+    }).length;
+    const report = {
+      viewport: window.innerWidth,
+      iframeWidth: iframe.getBoundingClientRect().width,
+      requestedWidth: requestedWidth || null,
+      figures: figures.length,
+      images: images.length,
+      brokenImages,
+      missingAlt,
+      missingCaption,
+      remoteImages,
+      captions: captions.length,
+      sources: sources.length,
+      stageHeadings,
+      uniqueIds: new Set(ids).size,
+      overflow,
+      overflowPixels: overflowDocs,
+      figuresOutsideColumn: outsideColumn,
+      documentWidth: docRoot.scrollWidth,
+      viewportWidth: docRoot.clientWidth,
+    };
+    const pass = report.figures === 24 && report.images === 24 && report.brokenImages === 0 &&
+      report.missingAlt === 0 && report.missingCaption === 0 && report.remoteImages === 0 &&
+      report.sources === 24 && report.stageHeadings.length === 3 && report.uniqueIds === 24 &&
+      !report.overflow && report.figuresOutsideColumn === 0;
+    document.body.dataset.audit = pass ? 'pass' : 'fail';
+    document.title = 'AUDIT ' + (pass ? 'PASS' : 'FAIL') + ' ' + report.viewport + 'px';
+    result.textContent = JSON.stringify(report, null, 2);
+    finished = true;
+    window.__MANUAL_AUDIT__ = report;
+  }
+
+  iframe.addEventListener('load', () => setTimeout(audit, 300));
+  setTimeout(() => {
+    if (finished) return;
+    document.body.dataset.audit = 'fail';
+    document.title = 'AUDIT TIMEOUT';
+    result.textContent = JSON.stringify({ error: 'manual audit timed out', viewport: window.innerWidth }, null, 2);
+  }, 12000);
+}());
+</script>
+</body>
+</html>
