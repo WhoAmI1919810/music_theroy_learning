@@ -310,7 +310,7 @@ hr{border:0;border-top:1px solid var(--line);margin:30px 0}
 <aside>
   <div class="brand"><span class="mark">C</span><b>复调音乐理论手册<small>Counterpoint Atlas · __GENERATED__</small></b></div>
   <nav aria-label="目录">__NAV__</nav>
-  <div class="side-links"><a href="../app/index.html">推演台</a><a href="books/">教材证据</a><a href="../">工作台</a></div>
+  <div class="side-links"><a href="../tutorial/index.html">教程</a><a href="../app/index.html">推演台</a><a href="books/">教材证据</a><a href="../">工作台</a></div>
 </aside>
 <main>
 __BODY__

@@ -125,7 +125,7 @@ def render_book(book, pages, claims_by_page, ocr, asset_root):
         )
 
     title = "%s · 教材原页" % book["title"]
-    body = html_head(title) + '<body><div class="layout"><aside><b>%s</b><div class="meta">%s · %d 个已引用页 · PDF 物理页码</div><div class="jump">%s</div><a class="back" href="../复调音乐手册.html#refs">返回理论手册</a><a class="back alt" href="../../app/index.html">返回推演台</a></aside><main><header class="book-head"><h1>%s</h1><p>%s</p><p class="hint">每页先给扫描原图，再给 OCR 与页面支持的论点。OCR 仅供检索，谱例、临时记号与连线以扫描图为准。</p></header>%s</main></div></body></html>' % (
+    body = html_head(title) + '<body><div class="layout"><aside><b>%s</b><div class="meta">%s · %d 个已引用页 · PDF 物理页码</div><div class="jump">%s</div><a class="back" href="../复调音乐手册.html#refs">返回理论手册</a><a class="back alt" href="../../tutorial/index.html">返回复调教程</a><a class="back alt" href="../../app/index.html">返回推演台</a></aside><main><header class="book-head"><h1>%s</h1><p>%s</p><p class="hint">每页先给扫描原图，再给 OCR 与页面支持的论点。OCR 仅供检索，谱例、临时记号与连线以扫描图为准。</p></header>%s</main></div></body></html>' % (
         html.escape(book["title"]), html.escape(book.get("author", "")), len(page_rows), jump,
         html.escape(book["title"]), html.escape(book.get("role", "")), "".join(articles)
     )
@@ -154,7 +154,7 @@ def build_index(books, cited_books, page_counts):
         link = book["id"] if used else ""
         title = '<a href="%s.html">%s</a>' % (link, html.escape(book["title"])) if used else html.escape(book["title"])
         rows.append("<tr><td>%s</td><td>%s</td><td>%d</td><td>%s</td></tr>" % (title, html.escape(book.get("author", "")), book["pdfPages"], "已引用 %d 页" % used if used else "已编目，未在手册中直接引用"))
-    body = html_head("复调教材证据索引") + """<body><div class="layout"><aside><b>教材证据</b><div class="meta">18 本独立教材 · 19 个 PDF 文件</div><a class="back" href="../复调音乐手册.html#refs">返回理论手册</a><a class="back alt" href="../../app/index.html">返回推演台</a></aside><main><header class="book-head"><h1>复调教材证据索引</h1><p>手册引用链接落到具体 PDF 物理页与论点锚点。公开版只保留被引用页。</p></header><div class="note">新增文件 2 个：希格斯《赋格曲》为独立教材；姚世泽《巴赫赋格曲的研究》的第二个文件与已有文件 SHA-256 相同，去重后仍为 18 本独立教材。</div><section class="index-grid">%s</section><h2 style="margin-top:28px">全部编目</h2><div style="overflow:auto"><table class="catalog"><thead><tr><th>教材</th><th>作者</th><th>PDF 页数</th><th>本站使用</th></tr></thead><tbody>%s</tbody></table></div></main></div></body></html>""" % ("".join(cards), "".join(rows))
+    body = html_head("复调教材证据索引") + """<body><div class="layout"><aside><b>教材证据</b><div class="meta">18 本独立教材 · 19 个 PDF 文件</div><a class="back" href="../复调音乐手册.html#refs">返回理论手册</a><a class="back alt" href="../../tutorial/index.html">返回复调教程</a><a class="back alt" href="../../app/index.html">返回推演台</a></aside><main><header class="book-head"><h1>复调教材证据索引</h1><p>手册引用链接落到具体 PDF 物理页与论点锚点。公开版只保留被引用页。</p></header><div class="note">新增文件 2 个：希格斯《赋格曲》为独立教材；姚世泽《巴赫赋格曲的研究》的第二个文件与已有文件 SHA-256 相同，去重后仍为 18 本独立教材。</div><section class="index-grid">%s</section><h2 style="margin-top:28px">全部编目</h2><div style="overflow:auto"><table class="catalog"><thead><tr><th>教材</th><th>作者</th><th>PDF 页数</th><th>本站使用</th></tr></thead><tbody>%s</tbody></table></div></main></div></body></html>""" % ("".join(cards), "".join(rows))
     with open(os.path.join(ROOT, "docs", "books", "index.html"), "w", encoding="utf-8") as handle:
         handle.write(body)
 

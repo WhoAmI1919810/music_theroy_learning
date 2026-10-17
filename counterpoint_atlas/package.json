@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "description": "Interactive counterpoint, canon and fugue planner with page-level textbook evidence",
   "scripts": {
-    "test": "node --test tests/engine.test.js tests/evidence.test.js",
+    "test": "node --test tests/engine.test.js tests/evidence.test.js tests/tutorial.test.js",
     "build:evidence": "python tools/build_evidence.py",
     "build:app-evidence": "python tools/build_app_evidence.py",
     "build:manual": "python tools/build_manual.py",

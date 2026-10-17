@@ -4,7 +4,7 @@
 
 - **和声推演台 Harmony Atlas**：和声进行、功能与声部连接、转调、和弦库、音级集合、理论地图，以及带教材页锚点的和声学手册。
 - **配器推演台 Orchestration Atlas**：结构分层、乐器音域、频谱与掩蔽、力度与密度校验、历史阶段、配器机制卡，以及带教材页锚点的配器法手册。
-- **复调推演台 Counterpoint Atlas**：五类对位、复对位、卡农、赋格结构骨架、声部检查器，以及按历史阶段组织、可回查 40 条论点的复调手册。
+- **复调教程与推演台 Counterpoint Atlas**：十课复调教程、五类对位、复对位、卡农、赋格结构骨架、声部检查器，以及按历史阶段组织、可回查 40 条论点的复调手册。
 
 ## 在线入口
 
@@ -15,6 +15,7 @@
 - 配器推演台：`/orchestration_atlas/app/`
 - 配器法手册：`/orchestration_atlas/docs/配器法手册.html`
 - 复调推演台：`/counterpoint_atlas/app/`
+- 复调教程：`/counterpoint_atlas/tutorial/`
 - 复调音乐手册：`/counterpoint_atlas/docs/复调音乐手册.html`
 - 复调教材证据：`/counterpoint_atlas/docs/books/`
 
@@ -37,6 +38,7 @@ orchestration_atlas/           配器系统
   docs/assets/                 影印局部、图表与示例
   evidence/ corpus/            结构化证据与 OCR
 counterpoint_atlas/            复调系统
+  tutorial/                    十课复调教程
   app/                         五类对位、卡农、赋格与声部检查器
   docs/复调音乐手册.html        按历史阶段组织的理论手册
   docs/books/                  40 条论点的教材页锚点与扫描页
