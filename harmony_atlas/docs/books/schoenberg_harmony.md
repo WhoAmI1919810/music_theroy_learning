@@ -1,0 +1,1124 @@
+# 勋伯格《和声学》
+
+> **PDF 文件**：`勋伯格《勋伯格和声学》.pdf`  
+> **物理页数**：264（从 PDF 第 1 页起计）  
+> **OCR 平均置信度**：0.93  
+> **字符数**：140345
+
+本文件收录**理论手册实际引用的 23 个 PDF 页**，每页采用整版影印 + OCR 文本。整页图保留谱例、图表、表格、边注和版面关系；OCR 只供检索与复制，具体音符、临时记号、连线和罗马数字以图像为准。被理论手册引用的条目列在图后，可直接回跳。
+
+页码一律使用 **PDF 物理页码**，可能与书内印刷页码不同。
+
+**快速跳页**：[p.14](#p0014) · [p.24](#p0024) · [p.25](#p0025) · [p.37](#p0037) · [p.45](#p0045) · [p.59](#p0059) · [p.79](#p0079) · [p.80](#p0080) · [p.81](#p0081) · [p.82](#p0082) · [p.100](#p0100) · [p.102](#p0102) · [p.107](#p0107) · [p.115](#p0115) · [p.146](#p0146) · [p.154](#p0154) · [p.155](#p0155) · [p.157](#p0157) · [p.202](#p0202) · [p.203](#p0203) · [p.218](#p0218) · [p.220](#p0220) · [p.247](#p0247)
+
+---
+
+<!-- PAGE:14 -->
+<a id="p0014"></a>
+## PDF p.14
+
+![勋伯格《和声学》 PDF p.14（整页影印）](../assets/books/schoenberg_harmony/p0014.jpg)
+
+<!-- MANUAL-REFS:p0014 -->
+<div class="manual-refs"><strong>手册使用本页</strong><ul><li id="ref-claim-triad-construction-p0014" class="manual-ref-item" data-kind="claim"><span class="ref-kind">论点</span><a href="../和声学手册.html#claim-triad-construction">三和弦与七和弦（前置速查） · triad.construction</a><br><span class="ref-text">手册提炼：三和弦由根音、三音、五音按三度叠置；三度与五度的性质决定大、小、减、增四类结构。</span></li><li id="ref-claim-diatonic-tonic-subdominant-dominant-p0014" class="manual-ref-item" data-kind="claim"><span class="ref-kind">论点</span><a href="../和声学手册.html#claim-diatonic-tonic-subdominant-dominant">自然音级功能：T–S–D · diatonic.tonic-subdominant-dominant</a><br><span class="ref-text">手册提炼：大调 I、IV、V 分别承担主、下属、属的核心功能，其他自然三和弦按共同音与倾向归入功能组。</span></li></ul></div>
+
+<div class="ocr-text">第一章大调音阶的自然音和弦<br>
+在C大调音阶中可用自然音阶的音构成下列三和弦：<br>
+【1】<br>
+8888088<br>
+VIVII<br>
+IV<br>
+11<br>
+I11<br>
+音阶的每个音都可以是一个三和弦的根音，亦即最低音，这叫做<br>
+级。因此三和弦c-e-g中的c为第I级，三和弦d-f-a中的d为第ⅡI级，<br>
+三和弦e-g-b中的e为第IⅡI级，余类推。三和弦的结构是不同的。从<br>
+下往上数，有的是大三度上面叠置一个小三度形成一个纯五度；有的<br>
+这种次序相反，一个小三度上面叠置一个大三度，这仍然形成一个纯<br>
+五度；还有一个三和弦是两个小三度形成一个减五度。这些三和弦的<br>
+第一种叫大三和弦，这在第I、IV和V级上构成；第二种叫小三和弦，<br>
+在第ⅡI、IⅡI和VI级上构成；第三种叫减三和弦，只有一个，在VⅡI<br>
+级上构成。在此，必须把三和弦重要的特点加以阐明。第I级上的三<br>
+和弦自然是一个大三和弦，因为大调调式或调就是根据这个三和弦来<br>
+命名的。另两个和这相同的三和弦，是在IV和V上，通常也叫大三<br>
+和弦，不过有时却把它叫做F大三和弦或G大三和弦，一一一种不<br>
+正确的并且混淆不清的名称。在C大调中只有一个和弦可以叫做大<br>
+三和弦，即第一级上那个和弦。第四和第五级上的和弦决不应称为F<br>
+大三和弦或G大三和弦，这样一来就会给人一个错误的印象，好像<br>
+那意味着调或调性似的，即意味着F大调或G大调似的。同样，把<br>
+II、III和VI上的三和弦称为D小三和弦、E小三和弦和A小三和弦<br>
+也不正确。最好还是用“第-一、第二或第三级”来表示各三和弦(或<br>
+用I、ⅡI、IⅡI等等来表示)，或者说“G(或A)上带大三度(或小三度)<br>
+的三和弦”。这就表明了某些三和弦含有大三度或小三度，某些三和<br>
+弦结构上是大调或小调。我们还可对I用“主”（Tonic)这个术语，对<br>
+V用“属"(Dominant)，对IV用“下属"(Sub-Dominant)，对IⅡI用“中1<br>
+音”(Mediant)，对VI用“下中音"(Sub-Mediant)，对VII用“减三和<br>
+弦”(Diminished Triad)。第二级在适当的时候再派给名称；这在需要<br>
+的时候就能见到。</div>
+
+---
+
+<!-- PAGE:24 -->
+<a id="p0024"></a>
+## PDF p.24
+
+![勋伯格《和声学》 PDF p.24（整页影印）](../assets/books/schoenberg_harmony/p0024.jpg)
+
+<!-- MANUAL-REFS:p0024 -->
+<div class="manual-refs"><strong>手册使用本页</strong><ul><li id="ref-claim-voice-leading-dissonance-preparation-p0024" class="manual-ref-item" data-kind="claim"><span class="ref-kind">论点</span><a href="../和声学手册.html#claim-voice-leading-dissonance-preparation">声部进行与不协和解决 · voice-leading.dissonance-preparation</a><br><span class="ref-text">手册提炼：不协和音应在前一和弦中作为协和音出现，并在同一人声部进入下一和弦的不协和位置，随后按倾向解决；这使不协和成为可追踪的声部事件。</span></li><li id="ref-profile-profile-schoenberg_harmony-p0024" class="manual-ref-item" data-kind="profile"><span class="ref-kind">代表页</span><a href="../和声学手册.html#book-profiles">教材代表页 · 勋伯格和声学</a><br><span class="ref-text">手册将本页列为《勋伯格和声学》代表页；该书定位：功能与表现性和声的理论解释，强调倾向、预备与解决、根音进行、转调的双重标记以及游移和弦的多义性。</span></li></ul></div>
+
+<div class="ocr-text">11<br>
+时，一有机会就回到原先的排列。<br>
+至于VII级三和弦中最好重复哪个音，可以这样说：当然最好首<br>
+先重复根音，道理与其他三和弦相同。其次则重复三度音和五度音。然<br>
+而在此更多考虑的却是三度音，因为VII既不是大三和弦也不是小三<br>
+和弦，而是减三和弦。三度音在此并非决定三和弦性质的音，因而就<br>
+较不突出了。反之，五度音作为一个不协和音，是VII中最突出的音，<br>
+因此就不宜重复了。此外，这个音作为一个不协和音还需要解决，即<br>
+满足其强烈向下的趋势。如果重复它，那么其他声部也将出现下行<br>
+（12f）。这样一来，便将出现一种以后还将更多地说明的不好的声部进<br>
+行。目前只需指出：两个声部不应作相同的旋律进行。这是多余的，因<br>
+为有一个这样的声部就够了。因此减五度音不要重复。<br>
+现在来谈预备。不协和音必须作为协和音出现在前一和弦中，而<br>
+且当它在下一和弦中变为不协和音时必须保持在前后和弦的同一声部。<br>
+音阶的每个音都出现在三个三和弦中，一一在一个和弦中作为根音，<br>
+其次在另一个和弦中作为三度音，再次作为为五度音。现在我们这个<br>
+不协和音，f，还是IV的根音，II的三度音。因此VII的前面便可用IV<br>
+或Ⅱ。我们曾经对协和和弦的连接提出了三个问题，现在可再加上一<br>
+个问题：<br>
+17<br>
+1．什么音是低音？<br>
+2．什么音是不协和音？(如果有，就预备和解决。)<br>
+3．什么音是共同音？(可能的话保持不动，不过并非必须如此。)<br>
+4．还缺少什么音？<br>
+例13举例说明几种情况的预备和解决；13a、b、c中，预备出现<br>
+在IV(因此此处的预备音是前一和弦的根音，这叫做根音预备）；在13d<br>
+和e中预备和弦是II(三度音预备)。<br>
+【13】<br>
+a)<br>
+b)<br>
+或d<br>
+e<br>
+或<br>
+8<br>
+8<br>
+B<br>
+IV VII IIIIVVII II<br>
+II VII III<br>
+IⅡI<br>
+VII II<br>
+IV<br>
+VIIIII<br>
+学生现在必须练习VII的预备和解决，并找出尽可能多的可能性<br>
+（再用其他的调来做!)。和弦列将是：IV一VII一IⅡ或II一VII一III。</div>
+
+---
+
+<!-- PAGE:25 -->
+<a id="p0025"></a>
+## PDF p.25
+
+![勋伯格《和声学》 PDF p.25（整页影印）](../assets/books/schoenberg_harmony/p0025.jpg)
+
+<!-- MANUAL-REFS:p0025 -->
+<div class="manual-refs"><strong>手册使用本页</strong><ul><li id="ref-claim-interval-inversion-p0025" class="manual-ref-item" data-kind="claim"><span class="ref-kind">论点</span><a href="../和声学手册.html#claim-interval-inversion">音程、音高集合与音名拼写 · interval.inversion</a><br><span class="ref-text">手册提炼：音程转位会改变度数，但保持两音的等音音高关系，是拼写、和弦转位与集合运算的共同前提。</span></li><li id="ref-claim-inversion-bass-function-p0025" class="manual-ref-item" data-kind="claim"><span class="ref-kind">论点</span><a href="../和声学手册.html#claim-inversion-bass-function">转位、低音与和声节奏 · inversion.bass-function</a><br><span class="ref-text">手册提炼：转位由低音是否为根音决定；低音改变会削弱根音支持，并改变和弦的连接与结构功能。</span></li></ul></div>
+
+<div class="ocr-text">12<br>
+目前在VII之后只能出现IⅡI，VII之前只能是IV或。在学生熟悉了<br>
+VIⅡI级三和弦的处理之后，便可尝试将其用在短句中。当然，在这里<br>
+VII的后面也必须是IⅡI，前面必须是IV或IⅡ。至于其他级的和弦，学<br>
+生可借助表的引导来做，但要记住，表中并未表示出用于VⅡI级三和<br>
+18弦的限制。<br>
+三和弦的转位<br>
+到现在为止的练习，上三声部的和弦音如何安排是无关紧要的，<br>
+只要满足一个条件，即根音总是在低音即可。然而在不同的情况下，却<br>
+要求一而且也允许一一-根音以外的其他和弦音置于低音声部。这种<br>
+要求和许可不仅是一种需要的而且也是一种有利条件。<br>
+根音以外的其他和弦音在低音无疑将产生一种不同的效果，也许<br>
+是一种较弱的效果，因为根音位置的和弦，其基本原型与泛音列的基<br>
+础音及其上部的分音极为相似。这就产生了在同一和弦发音时一次用<br>
+较强的音响效果另一次用较弱的音响效果的可能性，一这对艺术表<br>
+现显然有利！如果在一个较长的短句中，比如说这个短句有十个和弦，<br>
+这就需要反复一个和弦（因为只有七个和弦可用)，正如已经说过的那<br>
+样，这个和弦便在其他和弦中特别地被强调。如果需要这种强调，那<br>
+当然很好；否则最好考虑如何把这个反复和弦的效果减弱，使这个反<br>
+复和弦不致太突出。为了这个自的，我们便可让一个较强形式的和弦<br>
+以其较弱的形式来反复，这个较弱形式的和弦便不致有损于前面那个<br>
+和弦的效果了，而且同样道理，一个较弱形式的和弦也可用它的较强<br>
+19的形式来反复。<br>
+把根音以外的音置于低音不仅有利于一个和弦效果的变化；而且<br>
+还能在两个方面满足低音的需要。一方面，使用六和弦常常能使低音<br>
+的旋律线更好并且更有趣；另一方面，低音声部在音域上的限制常常<br>
+可选一个六和弦来应付。<br>
+音程或和弦的转位即最低音升高一个八度，或最高音降低一个八<br>
+度的意思，但不影响其他的音。在三和弦的转位中，原位（根音位置）的<br>
+最低音被转位，亦即升高一个八度。因此c便被置于g之上。于是三和<br>
+弦的三度音便成为最低音，这就是第一转位。严格地说这应称为6-3和<br>
+弦，但因为这是带六度的一系列和弦的第一个，所以通称六和弦(chord<br>
+ofthe sixth)。如果六和弦的最低音被转位，五度音便成为最低音，这</div>
+
+---
+
+<!-- PAGE:37 -->
+<a id="p0037"></a>
+## PDF p.37
+
+![勋伯格《和声学》 PDF p.37（整页影印）](../assets/books/schoenberg_harmony/p0037.jpg)
+
+<!-- MANUAL-REFS:p0037 -->
+<div class="manual-refs"><strong>手册使用本页</strong><ul><li id="ref-claim-dominant-v7-resolution-p0037" class="manual-ref-item" data-kind="claim"><span class="ref-kind">论点</span><a href="../和声学手册.html#claim-dominant-v7-resolution">属功能与属七解决 · dominant.v7-resolution</a><br><span class="ref-text">手册提炼：属七解决的基本声部规则是导音上行到主音、七音下行到三级；外声部导音尤其应上行。</span></li><li id="ref-claim-voice-leading-leading-tone-p0037" class="manual-ref-item" data-kind="claim"><span class="ref-kind">论点</span><a href="../和声学手册.html#claim-voice-leading-leading-tone">声部进行与不协和解决 · voice-leading.leading-tone</a><br><span class="ref-text">手册提炼：导音具有上行到主音的强烈倾向；当它位于外声部时，这一解决要求尤其严格。</span></li><li id="ref-claim-seventh-general-resolution-p0037" class="manual-ref-item" data-kind="claim"><span class="ref-kind">论点</span><a href="../和声学手册.html#claim-seventh-general-resolution">七和弦、九和弦与不协和等级 · seventh.general-resolution</a><br><span class="ref-text">手册提炼：七和弦是不协和和弦，需准备并按倾向解决；其七音通常下行级进，属七是最强的功能和声形态。</span></li></ul></div>
+
+<div class="ocr-text">24<br>
+[31】<br>
+a)<br>
+b)<br>
+C)<br>
+(P<br>
+X<br>
+米<br>
+IV<br>
+VI<br>
+III<br>
+VI<br>
+IV<br>
+VIII<br>
+IVVII<br>
+V<br>
+VII<br>
+h)<br>
+g<br>
+i)<br>
+B<br>
+导音<br>
+P<br>
+8<br>
+8<br>
+8<br>
+11<br>
+V<br>
+1<br>
+VI<br>
+I1<br>
+IV<br>
+VI1III<br>
+III<br>
+在此，将七和弦的预备和解决用根音位置做出(以后再用转位)。<br>
+36在解决中，如果要求完整的和弦，便必须使七和弦的三度音下行三度<br>
+到解决和弦的五度音，而不是到根音，尽管到根音最近（31a，β处的<br>
+e）这根据第四个问题“还缺少什么音”来看是明显的。<br>
+每当VII的出现都应特别注意，因其中含有一个不协和音。由于<br>
+31c 中的f必须下行到e，因此IIIz便不可能是-个完整的和弦。七度<br>
+音和根音当然不能省去，因这些音是形成特性音程的音。然而三度音<br>
+或五度音却可省去，因这两个音在此都不是形成特性音程的音。如果<br>
+这两个音中有一个是形成特性音程的音，那么另一个就可省去。31d<br>
+中，IV-不可能是完整的和弦，因为解决和弦VⅡI的f需要预备；因此<br>
+IV7的f便必须重复，于是便省去三度音或五度音(31e)。31i中是VII7<br>
+的处理，VI17的五度和七度音都需要预备和解决，因这二者都是不协<br>
+和音。31f中，次中音声部的b，为了已经指出的理由，必须进行到g。<br>
+但还有一条相反的规则，这要求b进行到c。由于b是音阶的第V1I级，<br>
+这叫导音，或者，更正确地说，叫上行导音；将这个音向上进行到第<br>
+八级以符合上行大调音阶的模式。然而，只有在它是一个实际旋律进<br>
+行的一部分时才有遵循旋律倾向性，亦即遵循导音倾向性的必要，也<br>
+就是说当它是V的三度音并且进行到I时。第VII级音只有在上行的<br>
+37大调音阶中才有导音的性质。在下行音阶中，就自然地进行到a，否<br>
+则Iz的解决便不可能。b进行到c这种旋律上的要求目前只用于最高<br>
+声部。即使在最高声部，这种要求也常常可以不管（特别是在有其他更<br>
+重要的要求和这矛盾时)；不过，特别是在结束中，当b在最高声部时，<br>
+我们还是将其上行到c，而不向下进行。</div>
+
+---
+
+<!-- PAGE:45 -->
+<a id="p0045"></a>
+## PDF p.45
+
+![勋伯格《和声学》 PDF p.45（整页影印）](../assets/books/schoenberg_harmony/p0045.jpg)
+
+<!-- MANUAL-REFS:p0045 -->
+<div class="manual-refs"><strong>手册使用本页</strong><ul><li id="ref-claim-sequence-transposition-p0045" class="manual-ref-item" data-kind="claim"><span class="ref-kind">论点</span><a href="../和声学手册.html#claim-sequence-transposition">模进与五度循环 · sequence.transposition</a><br><span class="ref-text">手册提炼：模进把同一和声单元整体移位，可保持局部连接语法，同时累积离开原调的压力。</span></li></ul></div>
+
+<div class="ocr-text">32<br>
+【401 】<br>
+8<br>
+8<br>
+8<br>
+8<br>
+8<br>
+等等<br>
+2<br>
+2<br>
+7<br>
+例401说明一连串的这种进行；自然，七和弦的位置(转位)由低音<br>
+来决定。将此种进行保持得如此长，是没有什么趣味的。将其引用在<br>
+这里是因为过去的作曲家常常用此种方式来构成模进中动机反复的和<br>
+声骨架。<br>
+【40m】<br>
+8<br>
+b<br>
+中<br>
+VI<br>
+IV<br>
+VIS<br>
+IV3<br>
+II3<br>
+V<br>
+在例40m中举出几个进行，当七度音被解决及一个协和音预备另<br>
+48一个七度音时，其中根音跳进。与此同时，另两个声部变换位置。</div>
+
+---
+
+<!-- PAGE:59 -->
+<a id="p0059"></a>
+## PDF p.59
+
+![勋伯格《和声学》 PDF p.59（整页影印）](../assets/books/schoenberg_harmony/p0059.jpg)
+
+<!-- MANUAL-REFS:p0059 -->
+<div class="manual-refs"><strong>手册使用本页</strong><ul><li id="ref-claim-root-motion-fourth-up-p0059" class="manual-ref-item" data-kind="claim"><span class="ref-kind">论点</span><a href="../和声学手册.html#claim-root-motion-fourth-up">自然音级功能：T–S–D · root-motion.fourth-up</a><br><span class="ref-text">手册提炼：根音向上四度的进行具有最强的功能推进力；新根音把前一和弦根音纳入自身结构，从听感上提升其功能等级。</span></li><li id="ref-profile-profile-schoenberg_harmony-p0059" class="manual-ref-item" data-kind="profile"><span class="ref-kind">代表页</span><a href="../和声学手册.html#book-profiles">教材代表页 · 勋伯格和声学</a><br><span class="ref-text">手册将本页列为《勋伯格和声学》代表页；该书定位：功能与表现性和声的理论解释，强调倾向、预备与解决、根音进行、转调的双重标记以及游移和弦的多义性。</span></li></ul></div>
+
+<div class="ocr-text">第四章关于获得较好和声进行的一<br>
+些提示；关于两个外声部旋律的处<br>
+理；关于结束、终止式、伪终<br>
+止式以及终止六四和弦<br>
+从现在开始，低音声部的设计变得更加困难了。如果说更多的可<br>
+能性提供了更多的有利条件，那么要利用这些可能性，就必须在和声<br>
+进行的设计中有一定的技巧，因为学生的确常常要处理一些特殊的问<br>
+题。这些例子的处理应达到这样的地步，即要求在构思上所费的心思<br>
+应获得比仅仅是正确的解决有更大的回报；我们应在形式感的发展上<br>
+有更大的满足。总而言之，因为手段更加丰富，短句就应更圆熟、平<br>
+顺。例如，只要学生坚持走最短的路这个原则就不可能避免例69中看<br>
+到的那个错误。女高音声部，这在中音区开始，不可能不继续往下掉<br>
+入低音区，这样至少就难以达到预期的力量了。其结果所导致的单调<br>
+便很容易损害即使在和声进行上并没有缺点的例子。为了这个理由，<br>
+而且也仅仅为了这样的理由，我们就必须关心旋律的问题。但例69还<br>
+是有某些困惑。结果在和声进行中的另-一个重要声部，低音声部，出<br>
+69现了太多的反复的音。以致这个和弦列也总是不可能产生真正良好的<br>
+和声效果。因此我们必须注意低音旋律并注意和弦连续。<br>
+首先是和弦连续。我们已经注意到最强的进行是根音向上四度进<br>
+行，这就像是满足根音的某种要求或倾向。在这种进行中一个音变换<br>
+了它的功能（例70）：<br>
+【70 】<br>
+88<br>
+8<br>
+第一个和弦的根音，亦即主要的音，在第二个和弦中变为从属的<br>
+音，五度音；从而第二个和弦的根音便是一个更高的品类，有更高的<br>
+权力，因为它把第一和弦的根音包含在它本身的和弦之内。在g上的</div>
+
+---
+
+<!-- PAGE:79 -->
+<a id="p0079"></a>
+## PDF p.79
+
+![勋伯格《和声学》 PDF p.79（整页影印）](../assets/books/schoenberg_harmony/p0079.jpg)
+
+<!-- MANUAL-REFS:p0079 -->
+<div class="manual-refs"><strong>手册使用本页</strong><ul><li id="ref-claim-modulation-confirmation-p0079" class="manual-ref-item" data-kind="claim"><span class="ref-kind">论点</span><a href="../和声学手册.html#claim-modulation-confirmation">转调体系：类型、距离与确认 · modulation.confirmation</a><br><span class="ref-text">手册提炼：转调必须由新调的和声进行与终止式确认；短促强调或单一副属和弦通常只是离调。</span></li></ul></div>
+
+<div class="ocr-text">第六章  转 调<br>
+我们已经看到，终止式是一种增强调性的手段；转调的目的则是<br>
+离开调。如果说在终止式中需要集中一些确定调的和弦，那么要完成<br>
+转调则恰好相反：即避免这些和弦，用一系列不能确定我们想要离开<br>
+的调的和弦，但却能确定另外某个调的和弦。如果通过省去表现旧调<br>
+的和弦使调性的束缚放松，于是便能通过和建立旧调相同的方法引进<br>
+新调，当然，这必须移位到适合于新调的高度。这种转调的方法既可<br>
+以直接地也可以多少间接地引向确定新调的终止式的地方。因此包含<br>
+转调的短句将分为三部分：<br>
+1.表现旧调并使用允许从旧调转开的（中立)和弦（不需要许多和<br>
+弦；用旧调的I就够了，因这个和弦往往在两个调中都有，所以对调<br>
+性来说是中立的)。<br>
+2.实际的转调：转调和弦以及任何将其带人时所需和弦。<br>
+3.确定新调的终止式。<br>
+我们要找出适合于把短句转换到转调和弦能完成调的变换的方<br>
+向，而又不越出调的范围的和弦，这可像我们考虑什么和弦适合于终<br>
+止式那样来考虑。如果说对这个问题我们所考虑的是在调中如何防止<br>
+100<br>
+太容易滑人关系非常近的那些调,这是由于音阶中某些和弦的倾向的<br>
+关系，那么现在却要求给予它这些倾向。根据这种情形，最简单的转<br>
+调便是：转到关系小调，转到高五度或低五度的调，以及转到这两个调<br>
+的关系小调。<br>
+因此从C大调：它的关系调，a小调；高五度调；G大调(及e小<br>
+调）；低五度调；F大调(及d小调)。只差一个升号或降号的大调，表现<br>
+在同旧调(高一个或低一个五度)的关系上，则是在五度循环中隔一个<br>
+五度。（我们已经看到，关系小调只不过是大调的一种特殊形式而已。<br>
+因此小调，连同它的关系大调，它们之间具有一种相同的五度关系。)<br>
+“五度循环图”中是将调名写在一个圆圈上，圈上等距离的相邻<br>
+两点相当于相邻关系调之间的五度音程。各调隔五度音程依次出现：<br>
+C、G、D、A等等，在五度系列回到起点时循环完成。朝一个方向进<br>
+行下去，C、G、D、A等等，便可得到“五度循环”，或者，我宁可<br>
+称之为“上五度循环”，因为它是向着上五度进行。向反方向进行，<br>
+C、F、B、E等等，形成某些人称之为“四度循环”的系列，这个</div>
+
+---
+
+<!-- PAGE:80 -->
+<a id="p0080"></a>
+## PDF p.80
+
+![勋伯格《和声学》 PDF p.80（整页影印）](../assets/books/schoenberg_harmony/p0080.jpg)
+
+<!-- MANUAL-REFS:p0080 -->
+<div class="manual-refs"><strong>手册使用本页</strong><ul><li id="ref-claim-modulation-distance-p0080" class="manual-ref-item" data-kind="claim"><span class="ref-kind">论点</span><a href="../和声学手册.html#claim-modulation-distance">转调体系：类型、距离与确认 · modulation.distance</a><br><span class="ref-text">手册提炼：调性远近应综合调号、共同和弦、主音距离与转调方法来判定，不能只看调号差。</span></li></ul></div>
+
+<div class="ocr-text">67<br>
+名称毫无意义，因为五度向一个方向进行便是向另一方向进行的四度，<br>
+所以我宁可称之为：“下五度循环”。<br>
+101<br>
+“五度循环”在某一点上表现出任何两个调之间的关系。但却并<br>
+不全面。很明显，两个调相互间在调号上只有一个升号或降号的差别<br>
+当然要比相互间有五个升号或降号的差别关系要密切。如B大调和E<br>
+大调的关系就比B大调和A大调的关系密切。但是，如果同样说C大<br>
+调和D大调的关系比C大调和A大调或E大调的关系密切，那就不正<br>
+确了。决定调与调的关系，调号并非唯一要考虑的因素；还有将在后<br>
+面说明的其他一些问题必须考虑。例如，我们即将看到，C大调和A<br>
+大调通过a小调的关系就比C大调和D大调的关系密切。因此，我们<br>
+并不是完全用五度循环来确定两调之间关系的程度，更多的还是用它<br>
+来测量两调之间的距离，以作为一种手段来帮助我们寻求适于某种特<br>
+殊情况的处理方法。<br>
+我们还可看到，在五度循环图中，如果从A大调开始顺时针方向<br>
+数到B大调，或从B大调开始逆时针方向数到A大调，这两个调之间<br>
+相隔九个五度；但如果从B大调开始顺时针方向数到A大调，或从A<br>
+大调开始逆时针方向数到B大调，那就只相隔三个五度了。一般说来，<br>
+我们总是选取较短的距离来进行转调，但有时也选取看来似乎较长，<br>
+但实际上却是较短的距离来进行。关于此点，如果我们想想前面所谈<br>
+第三循环的调比第二循环的调关系要密切便很容易理解了。在五度循<br>
+环图中便可看到f小调和F大调相隔三个五度，f小调和d小调也只相<br>
+隔三个五度，但f小调和D大调却相隔六个五度。<br>
+102<br>
+C</div>
+
+---
+
+<!-- PAGE:81 -->
+<a id="p0081"></a>
+## PDF p.81
+
+![勋伯格《和声学》 PDF p.81（整页影印）](../assets/books/schoenberg_harmony/p0081.jpg)
+
+<!-- MANUAL-REFS:p0081 -->
+<div class="manual-refs"><strong>手册使用本页</strong><ul><li id="ref-claim-pivot-common-chord-p0081" class="manual-ref-item" data-kind="claim"><span class="ref-kind">论点</span><a href="../和声学手册.html#claim-pivot-common-chord">中介和弦与转调 · pivot.common-chord</a><br><span class="ref-text">手册提炼：中介和弦转调以两调共有的和弦为连接点；同一音集从旧调功能重释为新调功能，再由新调的属—主或终止式确认。</span></li><li id="ref-claim-pivot-neutral-chord-double-label-p0081" class="manual-ref-item" data-kind="claim"><span class="ref-kind">论点</span><a href="../和声学手册.html#claim-pivot-neutral-chord-double-label">中介和弦与转调 · pivot.neutral-chord-double-label</a><br><span class="ref-text">手册提炼：转调初期以两调共同的中立和弦为媒介，并对其作双重功能标记；随后进入新调属和弦，再用终止式确认新调。</span></li><li id="ref-profile-profile-schoenberg_harmony-p0081" class="manual-ref-item" data-kind="profile"><span class="ref-kind">代表页</span><a href="../和声学手册.html#book-profiles">教材代表页 · 勋伯格和声学</a><br><span class="ref-text">手册将本页列为《勋伯格和声学》代表页；该书定位：功能与表现性和声的理论解释，强调倾向、预备与解决、根音进行、转调的双重标记以及游移和弦的多义性。</span></li></ul></div>
+
+<div class="ocr-text">68<br>
+【106】<br>
+C大调（a 小调)的五度循环表<br>
+相隔1个五度<br>
+G大调<br>
+e小调<br>
+F大调<br>
+d小调<br>
+B大调<br>
+g小调<br>
+D大调<br>
+b小调<br>
+相隔2个五度<br>
+E大调<br>
+相隔3个五度<br>
+A大调<br>
+f小调<br>
+c小调<br>
+A'大调<br>
+f小调<br>
+相隔 4个五度<br>
+E大调<br>
+c#小调<br>
+B大调<br>
+g小调<br>
+D大调<br>
+b小调<br>
+相隔5个五度<br>
+F大调<br>
+G大调<br>
+相隔6个五度<br>
+d小调<br>
+eb小调<br>
+相隔7个五度<br>
+C大调<br>
+a小调<br>
+C大调<br>
+a小调<br>
+例106列出C大调和a小调的“五度循环”表。学生必须确定其<br>
+他各调的这种关系。<br>
+稳固地建立C大调的和弦是含有b和f的和弦：IV、IⅡ、和VⅡI含<br>
+103’有f；V、IⅢI、和VⅡI含有b。显然，C大调中含有b的和弦将不会阻止<br>
+我们转向G大调，然而含有f的和弦却不适于这个目的。因此，如果<br>
+把ⅡI和V作为中立和弦，那就必须避免ⅡI、IV和VII。但除IⅡI和V<br>
+而外的关系中还有另外一些中立和弦；1和VI。或者，换句话说，由<br>
+于C大调和G大调的音阶十分相似，所以这两个调便有着-一大批二者<br>
+共有的和弦。这些和弦之一如果离开上下文单独出现，就不可能确定<br>
+它属于哪个调。说它是C大调或G大调都可以。它属于哪个调要靠它<br>
+前后的和弦来决定。三和弦c-e-g可以是C中的I或G中的IV；它后<br>
+面的和弦将确定它的归属。如果它后面接以f-a-c，那当然就不是G大<br>
+调了；它显然是C,但也可能是a小调、F大调或d小调。然而，如果<br>
+c-e-g 后面接以 d-f-a(G:V)，或f-a-c(G:VII)，那它就可能是 G 大调或<br>
+e小调，或至少是那个方向的调了。<br>
+从以上的论述中我们便可得出两个用于初步转调的主要方法。首<br>
+先是用中立和弦作为原调和新调之间的媒介；其次是两调共同和弦的<br>
+双重标记。这两个方法是同时使用的；因为只有在使用了中立和弦、<br>
+至少是只有避免了确定旧调的和弦才有可能做出双重标记。或者说，<br>
+双重标记迫使中立和弦转向新调。不论用了双重标记或中立和弦，我<br>
+们便将立即或稍后到达必定由某种有力的手段带到向新调转换的地方。<br>
+如果我们记住终止式，这意味着什么就明显了：首先是V，但任何包<br>
+104含新调导音的和弦也可以，因此也可以是IⅡI和VII。V显然通常是首</div>
+
+---
+
+<!-- PAGE:82 -->
+<a id="p0082"></a>
+## PDF p.82
+
+![勋伯格《和声学》 PDF p.82（整页影印）](../assets/books/schoenberg_harmony/p0082.jpg)
+
+<!-- MANUAL-REFS:p0082 -->
+<div class="manual-refs"><strong>手册使用本页</strong><ul><li id="ref-claim-pivot-neutral-chord-double-label-p0082" class="manual-ref-item" data-kind="claim"><span class="ref-kind">论点</span><a href="../和声学手册.html#claim-pivot-neutral-chord-double-label">中介和弦与转调 · pivot.neutral-chord-double-label</a><br><span class="ref-text">手册提炼：转调初期以两调共同的中立和弦为媒介，并对其作双重功能标记；随后进入新调属和弦，再用终止式确认新调。</span></li><li id="ref-profile-profile-schoenberg_harmony-p0082" class="manual-ref-item" data-kind="profile"><span class="ref-kind">代表页</span><a href="../和声学手册.html#book-profiles">教材代表页 · 勋伯格和声学</a><br><span class="ref-text">手册将本页列为《勋伯格和声学》代表页；该书定位：功能与表现性和声的理论解释，强调倾向、预备与解决、根音进行、转调的双重标记以及游移和弦的多义性。</span></li></ul></div>
+
+<div class="ocr-text">69<br>
+选，但另两个和弦也适于用来实现转调，特别是VⅡI。为了使新调的出<br>
+现清楚明确，于是再加一个终止式。终止式的长度自然视转调的长度<br>
+和难度而定。对于一个简单的转调，一个短短的终止式就够了。如果<br>
+用了更复杂的方法转调，终止式便不可能太短。然而，有时也会有这<br>
+样的情况，在一个长长的转调之后，由于其长度的关系转调非常确定，<br>
+只需一个短短的终止式便够了；或者，有时转调的构成太简短，以至<br>
+需要通过一个较长的终止式来较强地建立新调。<br>
+为了对转调方法做一个系统的概述，现从最简短的形式开始。<br>
+C大调转到G大调：<br>
+C调被理解成已经建立。C的I(中立和弦)即G的IV。双重标记便<br>
+从这个和弦开始。从这里开始，便可接以G大调的和弦，不论中立和<br>
+弦或专属新调的和弦都可以。为了使第一个例子简短，我们立即接以<br>
+G大调的V：转调和弦。这可最简单地进行到I，于是，除尚需一个终<br>
+止式外，转调即告完成(例107a)。终止式也可以短一些，因为转调是<br>
+简短而明确的。如果想避免G:I的反复这个小小的缺点，可接以G:V<br>
+到I6，或伪终止(例107b、c、d),或用转位的V( 、、或2),这就足够<br>
+可使终止式的V有变化了。<br>
+105<br>
+【107】<br>
+b)<br>
+a)<br>
+中<br>
+a<br>
+8<br>
+O.<br>
+0<br>
+C: 1<br>
+C: 1<br>
+G: IV V<br>
+G: IV<br>
+V<br>
+1<br>
+I16<br>
+I6<br>
+d)<br>
+C)<br>
+0..<br>
+10<br>
+中<br>
+8<br>
+8<br>
+8<br>
+e<br>
+e<br>
+B<br>
+7 G:VI<br>
+e<br>
+f<br>
+8<br>
+8<br>
+880<br>
+8<br>
+8<br>
+#8<br>
+8<br>
+中<br>
+43</div>
+
+---
+
+<!-- PAGE:100 -->
+<a id="p0100"></a>
+## PDF p.100
+
+![勋伯格《和声学》 PDF p.100（整页影印）](../assets/books/schoenberg_harmony/p0100.jpg)
+
+<!-- MANUAL-REFS:p0100 -->
+<div class="manual-refs"><strong>手册使用本页</strong><ul><li id="ref-claim-secondary-dominant-definition-p0100" class="manual-ref-item" data-kind="claim"><span class="ref-kind">论点</span><a href="../和声学手册.html#claim-secondary-dominant-definition">副属和弦与离调 · secondary-dominant.definition</a><br><span class="ref-text">手册提炼：副属和弦把调内某一大三或小三和弦临时当主，以 V/x 或 vii°/x 加强它而不改变全局主调。</span></li></ul></div>
+
+<div class="ocr-text">87<br>
+1)<br>
+0008880<br>
+88<br>
+#ooe<br>
+0000<br>
+eq<br>
+0.0<br>
+ay<br>
+d 1Ie<br>
+例131c中×处的一个副属和弦(F的第ⅡI级上；这里显然已经被<br>
+理解成F大调了）作伪解决（像在伪终止式中那样）。这个第Ⅱ级上的副<br>
+属和弦有个名称叫“重属和弦”（Wechseldominante)。我不知道这个名<br>
+称出自何处并且是什么意思＊，不过它的功能是在终止式中代替通常128<br>
+的ⅡI；——和弦系列常常采取这样的方式Ⅱ-—I一V-I；不过，这<br>
+个和弦常常直接接以V一I。<br>
+【132】<br>
+F大调<br>
+8<br>
+000<br>
+V<br>
+V<br>
+V<br>
+重属和弦最常用的位置是或3位置，但根音位置也常用。这里<br>
+唯一一点新的处理是用伪终止式的方式来解决副属和弦(Ⅱ一I)。这种<br>
+进行自然也可用于其他的副属和弦，不过学生最好尽量少用，因为这<br>
+样的进行虽然不是没有用处，但却会写出一些不常见的并且损害整体<br>
+风格的东西来。的确，一般来说，如果转调不是由伪终止引人，副属<br>
+和弦后面的伪终止的效果便将是平顺的。如果把这些进行用人未经预<br>
+备的转调，它们的音响便较生硬。这些伪终止虽然完全可用，但却应<br>
+小心从事：它们的音响往往不自然，并且它们常常把和声引得太远。例<br>
+133说明在构成这种进行时需要用什么样的手段来保持调性。<br>
+例 131a的第二个和弦(a 上的3)可看成重属和弦(C 上的第 ⅡI级)。<br>
+下一个g上的和弦是C:V。但这个和弦也可能是G:I；像这样便发生了<br>
+转调，并且前一个和弦是G:V，于是，这个和弦便是真正的属和弦而129<br>
+不是属和弦的属和弦了。这样一来，第四个和弦便是一个降低三音的<br>
+*Wechseldominante是第I级上的附属和弦的德文名称：Robert D.W.Adams的<br>
+英文节译本中译为“ChaningDominant”：RoyE.Carter 的英文全译本中未译。<br>
+本书在此按现在通行的说法译。（译注）</div>
+
+---
+
+<!-- PAGE:102 -->
+<a id="p0102"></a>
+## PDF p.102
+
+![勋伯格《和声学》 PDF p.102（整页影印）](../assets/books/schoenberg_harmony/p0102.jpg)
+
+<!-- MANUAL-REFS:p0102 -->
+<div class="manual-refs"><strong>手册使用本页</strong><ul><li id="ref-claim-secondary-dominant-targets-p0102" class="manual-ref-item" data-kind="claim"><span class="ref-kind">论点</span><a href="../和声学手册.html#claim-secondary-dominant-targets">副属和弦与离调 · secondary-dominant.targets</a><br><span class="ref-text">手册提炼：除主和弦外，调内自然大三、小三和弦都可成为副属或副属七的临时主和弦。</span></li></ul></div>
+
+<div class="ocr-text">89<br>
+B<br>
+8<br>
+a<br>
+I1I<br>
+VI<br>
+11<br>
+VII<br>
+I1I<br>
+VI<br>
+II<br>
+FIII<br>
+8<br>
+8<br>
+8<br>
+ppbb<br>
+#-0<br>
+在此，转调最好用简练的手法做得短一些。<br>
+副属和弦同样适用于小调，而且不需要增加什么新的规则。有-<br>
+点还必须加以解释，即大调的第IV级上为什么不能用副属和弦。副属<br>
+和弦的产生主要来自对终止式V一I这-纯四度上行的基本进行的模<br>
+仿。但从大调的IV（如C大调的f）向上四度却是一个增四度(f一b)，131<br>
+除非进行到b上的三和弦，但这却不在本调以内。在现阶段，我们还<br>
+不懂得b上的和弦如何处理，而进行到b却又不能遵守纯四度上行的<br>
+规则，所以目前就暂时不用IV级上的副属和弦。为了同样的理由，目<br>
+前，我们也不在小调的第VI级（如a小调的f)上构成副属和弦，因为需<br>
+要进行到b。小调中升高的第VI级和第VII级上也不能用副属和弦。<br>
+因为像f-a#-c-e（或g-b*-d-f）这样的和弦离开目前我们敢于到达的调<br>
+太远。<br>
+我还将继续警告学生不要过多地使用副属和弦。在我们还没有<br>
+足够的技巧时，副属和弦用得过多就很容易使和声进行不平顺。我<br>
+建议，通常在一个十到十五个和弦的练习中顶多只用三个或四个副<br>
+属和弦。<br>
+几个副属和弦可连在一起或同其他的非自然音和弦连接。只有一<br>
+点必须注意，即不要离开调太远。例135d的效果不好可能就因为这种<br>
+和弦用得太多的缘故。<br>
+这个练习中的所有七个和弦都可在C大调中构成；但从第三个和<br>
+弦开始（如果不是从开端开始的话)便很容易被看成G大调，或从第四<br>
+个和弦开始整个可定为D大调。这里有一个错误：1.这两个副属和弦<br>
+都用了到属和弦的进行(C大调的V和G大调的V)。2.这两个和弦本身<br>
+(第三个和弦以及第六个和弦)都是像属和弦那样引进的；第三个和弦</div>
+
+---
+
+<!-- PAGE:107 -->
+<a id="p0107"></a>
+## PDF p.107
+
+![勋伯格《和声学》 PDF p.107（整页影印）](../assets/books/schoenberg_harmony/p0107.jpg)
+
+<!-- MANUAL-REFS:p0107 -->
+<div class="manual-refs"><strong>手册使用本页</strong><ul><li id="ref-claim-secondary-dominant-usage-p0107" class="manual-ref-item" data-kind="claim"><span class="ref-kind">论点</span><a href="../和声学手册.html#claim-secondary-dominant-usage">副属和弦与离调 · secondary-dominant.usage</a><br><span class="ref-text">手册提炼：副属和弦可用于任何能被自然音级目标和弦接收的位置，但实际用法受根音进行与不协和音处理约束。</span></li><li id="ref-profile-profile-schoenberg_harmony-p0107" class="manual-ref-item" data-kind="profile"><span class="ref-kind">代表页</span><a href="../和声学手册.html#book-profiles">教材代表页 · 勋伯格和声学</a><br><span class="ref-text">手册将本页列为《勋伯格和声学》代表页；该书定位：功能与表现性和声的理论解释，强调倾向、预备与解决、根音进行、转调的双重标记以及游移和弦的多义性。</span></li></ul></div>
+
+<div class="ocr-text">94<br>
+指导规则<br>
+副属和弦用在可以用音阶自然音级的任何地方，如果根音进行<br>
+允许的话。当然用在和属功能相似的基本进行的地方最好；即是说和<br>
+V一I、V一VI与V一IV进行的模式相似。根音三度下行也常常使<br>
+用，不过却没有更多的意义。根音四度上行所产生的和弦，其功能和<br>
+经过和弦没什么两样(即旋律上的，仅具位置变换或转位的意义)。根<br>
+音三度上行几乎完全不用，特别因为它常常引向一些不好解释的和弦，<br>
+也是为了这个原因，前面提到的有些进行也不用，如说明七和弦处理<br>
+的有些例子(见例137A)。<br>
+副属七和弦凡是允许使用副属和弦并且不协和音能得到处理的<br>
+地方都可以使用副属七和弦。通常它还比副属三和弦能更好地完成此<br>
+种和弦的意图，因为七度音还能额外地增强向属和声所要求的进行方<br>
+向推进的趋势。<br>
+人为增三和弦是按照使用自然音增三和弦(小调中的III)的同一<br>
+方式使用的。诚然，后者的前后可用任何和弦，但其最重要的却是：<br>
+III-VI，III一I，ⅡⅡI-IV和III一ⅡI；不过最后一个很少使用，因为<br>
+138声部进行复杂。显然，能接在自然增三和弦后面的和弦都可接在人为<br>
+增三和弦后面。如这样一些和弦：副属和弦，人为小三和弦，人为减<br>
+三和弦，带人为减五度的七和弦，人为减七和弦。它们的主要意图是<br>
+通过人为的导音给进行以方向(见例137B)。<br>
+V级上的人为小三和弦如例中所示，特别适于用来引人下属领<br>
+域(IV与II)。它也能很好地引向 VI(不变化的)或 III(三度音升高)，如<br>
+例137C项中a)下的V—ⅡI等处，又如c)下的V一VII处所示。然而，<br>
+如果我们把V一I和V一-IV中的这个和弦看成是-个下属调(F调)中<br>
+的II，把V一VI中的这个和弦看成是一个小调(d小调)中的IV,那么<br>
+就将得到一种最常见的用法了。（见例137C项下的a)以及下例中和这相<br>
+当的地方)。<br>
+人为减三和弦像大调中的VII那样处理，或者，更好是像小调<br>
+中的ⅡI那样处理(几乎全用六和弦[例137D])。但几乎为每种目的而用<br>
+都加上七度音，<br>
+带人为减五度的七和弦用得更多，因为对于现代人的听觉来说，<br>
+七度音比减五度音有更强的方向性趋势。第IⅡI级上的那个，由于密切<br>
+联系于下属调(例137E1)，因此非常容易引向终止式。最常用的形式是</div>
+
+---
+
+<!-- PAGE:115 -->
+<a id="p0115"></a>
+## PDF p.115
+
+![勋伯格《和声学》 PDF p.115（整页影印）](../assets/books/schoenberg_harmony/p0115.jpg)
+
+<!-- MANUAL-REFS:p0115 -->
+<div class="manual-refs"><strong>手册使用本页</strong><ul><li id="ref-claim-function-network-wandering-chords-p0115" class="manual-ref-item" data-kind="claim"><span class="ref-kind">论点</span><a href="../和声学手册.html#claim-function-network-wandering-chords">功能网与功能转换 · function-network.wandering-chords</a><br><span class="ref-text">手册提炼：游移和弦不固定属于某一调，其功能由前后和弦决定，并可在多个方向与远关系调之间连接；同一和弦因此可被重新解释。</span></li><li id="ref-profile-profile-schoenberg_harmony-p0115" class="manual-ref-item" data-kind="profile"><span class="ref-kind">代表页</span><a href="../和声学手册.html#book-profiles">教材代表页 · 勋伯格和声学</a><br><span class="ref-text">手册将本页列为《勋伯格和声学》代表页；该书定位：功能与表现性和声的理论解释，强调倾向、预备与解决、根音进行、转调的双重标记以及游移和弦的多义性。</span></li></ul></div>
+
+<div class="ocr-text">102<br>
+小调<br>
+VII<br>
+C<br>
+c(db)<br>
+小调<br>
+I<br>
+III<br>
+小调<br>
+d<br>
+I1<br>
+(VI)<br>
+4<br>
+小调<br>
+VII<br>
+小调<br>
+1<br>
+III<br>
+e<br>
+小调<br>
+f<br>
+(VI)<br>
+I1<br>
+f*(g)<br>
+小调<br>
+VII<br>
+小调<br>
+111<br>
+g<br>
+1<br>
+小调<br>
+ab<br>
+I1<br>
+(VI)<br>
+小调<br>
+VII<br>
+a<br>
+bb<br>
+小调<br>
+I<br>
+I1I<br>
+小调<br>
+(VI)<br>
+b<br>
+11<br>
+以后还可以用d小调、f小调、a小调和b小调的VI(括弧中)，甚<br>
+至还可以用D、F、A和B大调与小调的IV。现在我们有44种意义可<br>
+考虑。以后我们还可看到这个和弦甚至还联系着更多的调，以至不能<br>
+明确地锁定在任何一个调中。它是一个在任何地方都可安家，但却没<br>
+有固定住所的，以四海为家的流浪汉。我把这种和弦称为游移和弦<br>
+(wandering chords*）。这种和弦不专属于某个调，并且不用变化（甚至<br>
+不需要转位，只需选一个新的根音即可便可属于许多调，事实上几乎<br>
+属于所有的调。<br>
+我们使用减七和弦，并不是为了构成到远关系的转调，而是使转<br>
+调更容易一些，并且使音响生硬的连接顺畅-一些。不过，必须注意一<br>
+点：减七和弦，虽然它的效果可能非常明确，但也可能在乐句中给人<br>
+造成某种贫弱的印象；因为它那影响它转调的力并非来自它本身向新<br>
+147调的推动，而是来自它的多义性。它本身是不确定的，有着许多倾向<br>
+性，因而它很容易适应各种关系。因此它有一种特殊的用途：做一个<br>
+调停人。调停人就不能专属于某一党某一派。节省地用，这个和弦是<br>
+有很好的效果的。<br>
+有一点必须切实注意：由于减七和弦到处都可通用，我们就不应<br>
+把它当能治百病的万应灵药。对我们来说，这个和弦只不过是音阶上<br>
+的一个特殊形式的和弦而已。这些和弦用在什么地方，仍然遵循过去<br>
+*或vagrant chord。—英译者注</div>
+
+---
+
+<!-- PAGE:146 -->
+<a id="p0146"></a>
+## PDF p.146
+
+![勋伯格《和声学》 PDF p.146（整页影印）](../assets/books/schoenberg_harmony/p0146.jpg)
+
+<!-- MANUAL-REFS:p0146 -->
+<div class="manual-refs"><strong>手册使用本页</strong><ul><li id="ref-claim-neapolitan-definition-p0146" class="manual-ref-item" data-kind="claim"><span class="ref-kind">论点</span><a href="../和声学手册.html#claim-neapolitan-definition">拿波里和弦（♭II） · neapolitan.definition</a><br><span class="ref-text">手册提炼：拿波里和弦是降低二级音上建立的大三和弦，常以第一转位出现并承担属前功能。</span></li><li id="ref-claim-neapolitan-resolution-p0146" class="manual-ref-item" data-kind="claim"><span class="ref-kind">论点</span><a href="../和声学手册.html#claim-neapolitan-resolution">拿波里和弦（♭II） · neapolitan.resolution</a><br><span class="ref-text">手册提炼：拿波里的 ♭2 通常下行到导音，再进入属；应避免在它后面接 iv 或 ii。</span></li></ul></div>
+
+<div class="ocr-text">133<br>
+和接受降低根音的理论相违背的，是那不勒斯六和弦使用的方式。<br>
+它通常立即出现在(例167a、b、c、d、e)I的后面(但也出现在其他一188<br>
+些适当的和弦的后面)。一般解决到I或V。<br>
+如果根音确系降低，那么常常就应像例167f和g中那样出现。这些<br>
+例子自然不是例外，但却是罕见的。而且它们的出现也并不能证明这来<br>
+自根音的降低，只不过说明任何事物只要出现在正确的地方都是好的。<br>
+【167】<br>
+b)<br>
+7b8<br>
+b<br>
+因此，最好把那不勒斯六和弦看成是终止式中Ⅱ的代替。就这个<br>
+意义而言，这个和弦也常常用六四和弦(例168a)，并且也用根音位置<br>
+(例168b)。不管这个和弦有没有典型的那不勒斯功能(在终止式中作为<br>
+代替和弦)，都仍然称之为那不勒斯(例168c)，这固然有问题，但却并<br>
+不重要。<br>
+【168 】<br>
+b)<br>
+8④<br>
+d)<br>
+等等</div>
+
+---
+
+<!-- PAGE:154 -->
+<a id="p0154"></a>
+## PDF p.154
+
+![勋伯格《和声学》 PDF p.154（整页影印）](../assets/books/schoenberg_harmony/p0154.jpg)
+
+<!-- MANUAL-REFS:p0154 -->
+<div class="manual-refs"><strong>手册使用本页</strong><ul><li id="ref-claim-enharmonic-same-sound-p0154" class="manual-ref-item" data-kind="claim"><span class="ref-kind">论点</span><a href="../和声学手册.html#claim-enharmonic-same-sound">等音转调 · enharmonic.same-sound</a><br><span class="ref-text">手册提炼：同一音响可用不同方式记谱；当同一和弦被等音重释为新调中的属、导或增六功能时，记谱改变对应功能归属。</span></li><li id="ref-profile-profile-schoenberg_harmony-p0154" class="manual-ref-item" data-kind="profile"><span class="ref-kind">代表页</span><a href="../和声学手册.html#book-profiles">教材代表页 · 勋伯格和声学</a><br><span class="ref-text">手册将本页列为《勋伯格和声学》代表页；该书定位：功能与表现性和声的理论解释，强调倾向、预备与解决、根音进行、转调的双重标记以及游移和弦的多义性。</span></li></ul></div>
+
+<div class="ocr-text">141<br>
+解决到大调，这对大调和小调的连接十分有利。学生可在转调中利用<br>
+这个特点。不过我并不提倡单靠这个和弦来转调(正像减七和弦那样)。<br>
+增三和弦还有两种另外的处理方法。这在和声上虽然并不重要，<br>
+但也不应排斥。降低其中任何一个音可得到三个新的大三和弦(例<br>
+(例180b)。<br>
+【180】<br>
+a)<br>
+这些解决听起来倒更像留音的解决，同时还由于这建立在下降的<br>
+根音进行上(三度上行)，因此是弱进行；不过，这可用来为紧接着的198<br>
+强进行作预备。<br>
+增六五、增四三、增二与增六和弦，<br>
+以及其他一些游移和弦<br>
+增六五和弦的来源通常用下列方式解释：在大调中，升高Ⅱ和<br>
+弦的根音和三度音，并降低五度音；在小调中，升高IV7的根音。这样<br>
+得到的两个和弦，不仅音响相同，而且功能也相似。<br>
+【181】<br>
+IVc小调<br>
+II C大调<br>
+二者都可解决到I4(例182a,b)或到V上的三和弦(例182c)。这两<br>
+个和弦虽然记谱不同，但音响是相同的。在后一解决中出现了平行五<br>
+度，因而常常采用例182d的排列。但另一方面，人们却称这为“莫扎<br>
+特五度”，也就是说这是允许的，不过，这倒并不是音响好，而是因为<br>
+莫扎特曾这样写过。我完全赞同对大师们的作品的尊重。因此，我想<br>
+理论至少应允许大师们所写的一切，他们并不在乎允许不允许。不过，<br>
+对学生来说，这种平行五度虽然也可自由使用，但在目前还是能避免<br>
+就尽量避免为好。</div>
+
+---
+
+<!-- PAGE:155 -->
+<a id="p0155"></a>
+## PDF p.155
+
+![勋伯格《和声学》 PDF p.155（整页影印）](../assets/books/schoenberg_harmony/p0155.jpg)
+
+<!-- MANUAL-REFS:p0155 -->
+<div class="manual-refs"><strong>手册使用本页</strong><ul><li id="ref-claim-diminished-seventh-enharmonic-p0155" class="manual-ref-item" data-kind="claim"><span class="ref-kind">论点</span><a href="../和声学手册.html#claim-diminished-seventh-enharmonic">减七和弦与等音网络 · diminished-seventh.enharmonic</a><br><span class="ref-text">手册提炼：减七和弦由等分小三度构成，只有三种不同音响；每个音响可等音重写为四个不同根音的减七。</span></li></ul></div>
+
+<div class="ocr-text">142<br>
+【182】<br>
+b)<br>
+(p<br>
+(#<br>
+f)<br>
+C<br>
+g<br>
+888888884<br>
+e<br>
+8<br>
+1<br>
+111<br>
+III<br>
+III<br>
+在前面所谈增六五和弦的来源中，我们又再次接触到了升高根音<br>
+的问题。我认为在以根音作测量单位的一个体系中这种说法是错误（因<br>
+为测量单位就应固定不变)。因此我觉得认为增六五和弦是从大调或小<br>
+调Ⅱ级、采取副属和弦形式的九和弦上派生的更为适当，即从减七和<br>
+弦而来。这样，大调和小调的增六五和弦便都同样由下列步骤产生：<br>
+大调或小调的Ⅱ级；副属和弦；副属七和弦；副属九和弦；省去根音，<br>
+199减七和弦；降低五度音。<br>
+【183 】<br>
+a)<br>
+在减七和弦中我们已接受了把e重新解释成d的观念；因此，来<br>
+自减七和弦的这个和弦也可采用这种等音变换。比探讨这个和弦的来<br>
+源更重要的问题是弄清在和声上，什么样的需要或可能性导致这个和<br>
+弦的产生。回答这个问题便解决了如何处理这个和弦的问题一—即，<br>
+如何引人这个和弦，以及这个和弦如何进行下去的问题。这个和弦通<br>
+常在ⅡI或IV的地方出现；即在终止式中，出现在I的六四和弦或属七<br>
+和弦(V)前面 (例182)。因此可把它看成是这些和弦，特别是ⅡI的代替<br>
+和弦之一，因为从ⅡI进行到V即正格终止的模式，从ⅡI进行到I即伪<br>
+终止的模式。它的使用也非常简单：在大调中，像小下属关系的和弦<br>
+那样引人；在小调中，像副属和弦或减七和弦那样引人。在终止式中，<br>
+它进行到V或I是显而易见的，或者，有时进行到IⅡI也仍然容易理解：<br>
+II—V、II—I、II—III(例 182e、f、g);<br>
+；一一即正格终止式模式（四度<br>
+上行)，两种最常见的伪终止式模式(二度上行或二度下行)。这也是三<br>
+种最重要的上升(强)进行。<br>
+增六五和弦在和声上有什么要求和可能性呢？事实上，对其他游<br>
+200移和弦我们也可提出同样的问题。总之，当它适合于前后和弦时便是</div>
+
+---
+
+<!-- PAGE:157 -->
+<a id="p0157"></a>
+## PDF p.157
+
+![勋伯格《和声学》 PDF p.157（整页影印）](../assets/books/schoenberg_harmony/p0157.jpg)
+
+<!-- MANUAL-REFS:p0157 -->
+<div class="manual-refs"><strong>手册使用本页</strong><ul><li id="ref-claim-augmented-sixth-definition-p0157" class="manual-ref-item" data-kind="claim"><span class="ref-kind">论点</span><a href="../和声学手册.html#claim-augmented-sixth-definition">增六和弦 · augmented-sixth.definition</a><br><span class="ref-text">手册提炼：增六和弦以增六度音程半音向外解决到属音，是强属前和弦，包含意大利、法国、德国三类常见形态。</span></li></ul></div>
+
+<div class="ocr-text">144<br>
+音),因此它与增六五和弦的关系就像VII上的减三和弦和Vz或者和它<br>
+本身的根音上的七和弦(VII&gt;)的关系一样。凡是可以使用增六五和弦<br>
+(或增四三、二和弦)的地方都可使用增六和弦，它的使用也可能是为<br>
+了避免平行五度的缘故(例184d；再参看例182c)。这个和弦的其他位<br>
+置(转位)当然也可以使用。增六五、四三、二及增六和弦不需要像其他<br>
+七和弦那样预备。在这个派生和弦中七度音实际上是减五度音，因根<br>
+音已被省去，并且九度音实际上是减七度音，这二者我们都已自由使<br>
+用了。另一方面，被省去的那个根音的三度音在音响上虽然像小七度<br>
+音，这由等音变换即可看出(例184c)，但在此作为三度音当然不需要<br>
+预备。这些和弦的音响与属七和弦是相同的(在ab上：a-c-e-g)，只<br>
+202是记谱不同。这种双重意义以后将加以利用。<br>
+【185】<br>
+大调<br>
+a)和弦<br>
+8<br>
+8<br>
+I8<br>
+18<br>
+8<br>
+II<br>
+IV<br>
+8<br>
+VI</div>
+
+---
+
+<!-- PAGE:202 -->
+<a id="p0202"></a>
+## PDF p.202
+
+![勋伯格《和声学》 PDF p.202（整页影印）](../assets/books/schoenberg_harmony/p0202.jpg)
+
+<!-- MANUAL-REFS:p0202 -->
+<div class="manual-refs"><strong>手册使用本页</strong><ul><li id="ref-claim-cadence-pac-iac-p0202" class="manual-ref-item" data-kind="claim"><span class="ref-kind">论点</span><a href="../和声学手册.html#claim-cadence-pac-iac">终止式 · cadence.pac-iac</a><br><span class="ref-text">手册提炼：完满正格终止由原位属到原位主、且主音位于最高声部构成；其余 V–I 多为不完满正格终止。</span></li></ul></div>
+
+<div class="ocr-text">189<br>
+学生应尽可能用不同的旋律做圣咏配和声的练习。我建议同一练<br>
+习至少用两种或三种不同的方法做出。当然，练习应尽可能努力做得<br>
+流畅。这些练习的价值仅仅在于材料的全面处理；像所有这类练习-一264<br>
+样，努力的目的并不在于个别练习的完美，而是发展某种能力。<br>
+终止式<br>
+例218中用了一个变格终止式。这常常是为圣咏配和声的需要，如<br>
+226a中，该处就必须用一个变格终止式，除非g是一个eb和弦上的三<br>
+度音。变格终止式是一个甚至能结束大作品的定式，不过在力量上比<br>
+起正格终止式来较不明确，较弱。最有确定性的结束是用完全终止式，<br>
+的终止式。而且有时为了某种理由完全用强的终止式(正格终止式)是<br>
+有害的，这样一来，句法(分句结构)就太确定，或者说常常太确定。当<br>
+旋律对句法的要求在一首乐曲的中部不需要出现一两次以上完全的结<br>
+束，而同时又需要保持分句的清晰，但又不要分开得太明显，这就需<br>
+要像半终止和伪终止式那样的不完全的结束了。如果说正格终止式用<br>
+的是上升进行，那么在此的变格终止式用的就是下降进行。<br>
+一、我们将把终止式分为两组：<br>
+A.其中最后三个和弦的系列是IV(II)一V一I(正格终止)。(和弦系<br>
+这归人此组是因为没有更合适的分组)。<br>
+265<br>
+N.B.终止式IV—I8—V--I被看成IV—V --I 的变化：IV--<br>
+(I4—)V- Io<br>
+B.不用这种和弦系列的结束。<br>
+二、在这两组中可采取下列办法来加以变化：<br>
+a)变换和弦音的排列(转位);<br>
+b)在同一级上用七和弦或九和弦；<br>
+c)用变化音(副属和弦、小下属关系，等等)。<br>
+三、当主要和弦(I、V、IV)被它们的代替和弦代替后出现的次级<br>
+形式；在这些形式中也可用第ⅡI项a、b、c中提到的变化。<br>
+四、将前面介绍的一些终止式系列移位到自然音阶的其他级可构<br>
+成另一些终止式系列；就扩张调性的意义而言，甚至可移位到半音阶<br>
+的任何一级。这些终止式可做下列移位：</div>
+
+---
+
+<!-- PAGE:203 -->
+<a id="p0203"></a>
+## PDF p.203
+
+![勋伯格《和声学》 PDF p.203（整页影印）](../assets/books/schoenberg_harmony/p0203.jpg)
+
+<!-- MANUAL-REFS:p0203 -->
+<div class="manual-refs"><strong>手册使用本页</strong><ul><li id="ref-claim-cadence-half-plagal-deceptive-p0203" class="manual-ref-item" data-kind="claim"><span class="ref-kind">论点</span><a href="../和声学手册.html#claim-cadence-half-plagal-deceptive">终止式 · cadence.half-plagal-deceptive</a><br><span class="ref-text">手册提炼：半终止停在属功能，变格终止为 IV–I，阻碍进行为 V–vi；三者收束强度与结构作用不同。</span></li></ul></div>
+
+<div class="ocr-text">190<br>
+1.不精确移位。<br>
+a)只用音阶音。<br>
+b)用一部分非音阶音。<br>
+2.精确移位（移到结束和弦的调）。<br>
+一、A组终止式(IV—V—I和ⅡI—V—I；ⅡI作为IV的代替)为<br>
+完全终止式(complet cadence),这只有：<br>
+1.当进行到主和弦时(不移位);<br>
+2.当V是只包含自然音的属和弦时；<br>
+3.当I和V都是根音位置时。<br>
+二、所有正格终止式移到其他音级的移位(不论自然音或其他调)<br>
+我们都称之为准完全终止式(quasi-completecadence)并且把它归人半<br>
+（b)—I—IV、I一II(#)—V等等(在属和弦形式之前)。<br>
+三、所有不是完全终止式的正格终止式(由于转位等），还有所有<br>
+由其他和弦系列结束，我们称之为半终止式(halfcadence)。下面是特<br>
+别重要的几种：<br>
+1.变格终止式(plagalcaedence)，其特点是在终止中完全没有V(属<br>
+和声)，而下属领域(IV、II)则是最常见的代表；重要的和弦系列是IV<br>
+(II)一I。这通常被视作完全终止式，由于这种似是而非的说法，便常<br>
+常用来作为最后的结束。然而，常常能见到这样的例子，许多毫无争<br>
+议的半终止式，如果用节奏、旋律、力度以及其他一些的作曲上的终<br>
+止技巧加以强调，便可构成一个非常圆满的最后的结束。因此，为了<br>
+保持完全终止式在观念上的一一致性，还是把变格终止式归人半终止式<br>
+一类为宜。<br>
+2. 伪终止式(decepyive czdence) (IV —-V-—VI、II—V—VI、VI<br>
+-V——IV等)。<br>
+四、其他一些结束在主和声上的半终止式我们分为：<br>
+1.用较不典型的正格模式和弦，例如IV一ⅡI一I、ⅡI一ⅢI一I、VI<br>
+IA ^I—A—HI^I—IIA—IA ^I—IIA—II 1—IA-IA^I—MI-<br>
+267—IⅡI—I等等,来代替典型的正格模式和弦，IV(II或VI)—V—I。<br>
+2.用下列一些来代替：<br>
+a)用不同的和弦系列，例如，V(b）一IV一I、V(b）一ⅡI一I、V<br>
+--VI—- I;<br>
+b）用较不典型的和弦系列来代替上面那些不同的和弦系列，例</div>
+
+---
+
+<!-- PAGE:218 -->
+<a id="p0218"></a>
+## PDF p.218
+
+![勋伯格《和声学》 PDF p.218（整页影印）](../assets/books/schoenberg_harmony/p0218.jpg)
+
+<!-- MANUAL-REFS:p0218 -->
+<div class="manual-refs"><strong>手册使用本页</strong><ul><li id="ref-claim-seventh-ninth-composite-p0218" class="manual-ref-item" data-kind="claim"><span class="ref-kind">论点</span><a href="../和声学手册.html#claim-seventh-ninth-composite">七和弦、九和弦与不协和等级 · seventh.ninth-composite</a><br><span class="ref-text">手册提炼：属九和弦在属功能上叠入下属功能因素，形成复合功能；九音通常不可省略并下行解决。</span></li></ul></div>
+
+<div class="ocr-text">205<br>
+们也可用跳进离开不协和音，但这却走得太远了。<br>
+【270 】<br>
+8<br>
+8<br>
+证明九和弦的存在，撇开作为留音出现这点不谈，只消说是属七<br>
+和弦加大九度音或小九度音便够了，这似乎是不会有人怀疑的。如果286<br>
+有人拒绝接受音阶中其他各级上的九和弦，但至少也应承认副属七和<br>
+弦上可以有大九度或小九度，即在每一级上构成副属九和弦，尽管不<br>
+把这些和弦作为音阶音和弦来用。<br>
+【271】<br>
+VI<br>
+VII<br>
+II<br>
+IV<br>
+III<br>
+九和弦的引人：只要是带小九度，就不会比引人从它而来的减七<br>
+和弦更难，而且带大九度的那些，也不会比相当于它的七和弦引人更<br>
+难。显然，所有能用于七和弦的变化都可用于九和弦，例如：<br>
+287<br>
+【272】<br>
+一#8<br>
+8<br>
+R<br>
+8<br>
+8<br>
+2o<br>
+ho<br>
+2C<br>
+当把这些和弦作为游移和弦，或把它们与游移和弦连接时，这些<br>
+和弦都非常有用。下例摘自我的《六重奏》：<br>
+【273】<br>
+a)<br>
+例273a的解决摘自A[gugst]Halm的《和声学》(Harmonielehre)，这是<br>
+一本非常好的书。书中充满了许多有价值的东西，虽然他把这些连接说</div>
+
+---
+
+<!-- PAGE:220 -->
+<a id="p0220"></a>
+## PDF p.220
+
+![勋伯格《和声学》 PDF p.220（整页影印）](../assets/books/schoenberg_harmony/p0220.jpg)
+
+<!-- MANUAL-REFS:p0220 -->
+<div class="manual-refs"><strong>手册使用本页</strong><ul><li id="ref-claim-color-harmony-late-tonal-p0220" class="manual-ref-item" data-kind="claim"><span class="ref-kind">论点</span><a href="../和声学手册.html#claim-color-harmony-late-tonal">色彩和声与调式色彩 · color-harmony.late-tonal</a><br><span class="ref-text">手册提炼：晚期调性和声通过六度替代属和弦、变化中音、功能九和弦、三度扩张与色彩性连续不断削弱传统功能边界。</span></li></ul></div>
+
+<div class="ocr-text">第十六章扩大这个体系的一些增补的观念<br>
+三和弦、七和弦及九和弦的变化<br>
+对三和弦所作半音变化已在关于副属和弦、小下属关系、那不勒<br>
+斯六和弦、增六五和弦等等的论述中向学生介绍过了。在此我们将对<br>
+整个问题做一概述，温习一些已经介绍过的，并补充一些重要的遗漏，<br>
+虽然并不想求全。<br>
+三和弦的每个音都可升高或降低。一个音、两个或三个音都可同<br>
+时加以变化。我并不赞同根音变化的观念，我宁可把这看成是新的或<br>
+代替的根音。我这个看法的理由已在关于那不勒斯六和弦的论述中谈<br>
+到过。<br>
+大三和弦的三度音降低和小三和弦的三度音升高我们得到我们已<br>
+经熟悉的形式。<br>
+【274】<br>
+通过大三和弦、小三和弦的五度音升高和降低：<br>
+【275】<br>
+通过大三和弦的三度音降低和五度音升高：<br>
+【276】<br>
+或<br>
+9888<br>
+289<br>
+大三和弦中降低三度和五度音，小三和弦中降低五度音：<br>
+【277】<br>
+带降低五度音和升高三度音的小三和弦：<br>
+【278】<br>
+唱幅</div>
+
+---
+
+<!-- PAGE:247 -->
+<a id="p0247"></a>
+## PDF p.247
+
+![勋伯格《和声学》 PDF p.247（整页影印）](../assets/books/schoenberg_harmony/p0247.jpg)
+
+<!-- MANUAL-REFS:p0247 -->
+<div class="manual-refs"><strong>手册使用本页</strong><ul><li id="ref-claim-symmetry-whole-tone-p0247" class="manual-ref-item" data-kind="claim"><span class="ref-kind">论点</span><a href="../和声学手册.html#claim-symmetry-whole-tone">对称音阶与有限移位 · symmetry.whole-tone</a><br><span class="ref-text">手册提炼：全音阶把八度等分为六个全音，只有两种不同组成音的移位，缺乏导音与纯五度，因而削弱功能调性。</span></li></ul></div>
+
+<div class="ocr-text">第十七章全音音阶及其五音和六音和弦<br>
+近年来，在现代作曲家的作品中，愈来愈多地出现一个等距离的<br>
+六音音阶：全音阶。<br>
+【317】<br>
+在现代作曲家（包括我本人）的作品中可找到两个有意识地运用全<br>
+音阶的来源。<br>
+其一：在增三和弦中，从和弦音进行到和弦音时，如在两音间加<br>
+一个经过音便将-个大三度分成两个全音。由于和弦中的每个音都能<br>
+构成此种进行(例318a、b、c)，结果便形成了全音阶(例318d)。<br>
+【318】<br>
+a)<br>
+b)<br>
+共#<br>
+其二：在升高五度音(例319a、b)或省去五度音(例319c)的属七和<br>
+323弦中，同样由经过音形成。<br>
+【319】<br>
+b</div>
+
+---

@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """Build the manual and page-level textbook archives from shared evidence data."""
+import argparse
 import html
 import json
 import os
@@ -9,7 +10,7 @@ import sys
 import time
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-SOURCE_DIR = os.path.dirname(ROOT)
+SOURCE_DIR = os.environ.get('ORCHESTRATION_PDF_DIR', os.path.dirname(ROOT))
 DOCS = os.path.join(ROOT, 'docs')
 BOOKS_DIR = os.path.join(DOCS, 'books')
 ASSETS_DIR = os.path.join(DOCS, 'assets', 'sources')
@@ -539,6 +540,12 @@ CLAIM_MAP = {claim['id']: claim for claim in SOURCE_DATA['CLAIMS']}
 
 
 def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--source-dir', default='', help='directory containing the source PDFs')
+    args = parser.parse_args()
+    if args.source_dir:
+        global SOURCE_DIR
+        SOURCE_DIR = args.source_dir
     started = time.time()
     build_manual()
     build_book_archives()

@@ -73,8 +73,11 @@ test('matches the published archive manifest without raw PDFs', () => {
   const manifest = JSON.parse(fs.readFileSync(path.join(root, 'evidence', 'public-deploy.json'), 'utf8'));
   assert.equal(manifest.mode, 'public-deploy');
   assert.equal(manifest.bookCount, 15);
-  assert.equal(manifest.pageCount, 194);
   assert.equal(manifest.books.length, manifest.bookCount);
+  assert.equal(manifest.pageCount,
+    manifest.books.reduce((sum, book) => sum + book.pageCount, 0));
+  assert.deepEqual(manifest.books.map((book) => book.pageCount),
+    manifest.books.map((book) => book.pages.length));
 
   const manual = fs.readFileSync(path.join(root, 'docs', '和声学手册.html'), 'utf8');
   const linkedPages = new Map();

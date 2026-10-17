@@ -8,7 +8,7 @@
     "build:evidence": "python tools/build_evidence.py",
     "build:app-evidence": "python tools/build_app_evidence.py",
     "build:manual": "python tools/build_manual.py",
-    "build": "python tools/build_evidence.py && python tools/build_app_evidence.py && python tools/build_manual.py",
+    "build": "python tools/build_evidence.py && python tools/build_app_evidence.py && python tools/build_manual.py && python ../tools/inject_site_nav.py",
     "serve": "python -m http.server 8765"
   }
 }

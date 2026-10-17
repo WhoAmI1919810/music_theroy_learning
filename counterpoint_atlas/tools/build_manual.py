@@ -52,16 +52,18 @@ def inline(text, claims, books):
         claim = claims.get(claim_id)
         if not claim or not claim["citations"]:
             return '<span class="missing-cite">[缺少证据：' + html.escape(claim_id) + "]</span>"
-        citation = claim["citations"][0]
-        book = books[citation["bookId"]]
-        href = "books/%s.html#claim-%s" % (book["id"], claim_id)
-        label = "《%s》PDF p.%s" % (book["title"], citation["pdfPage"])
-        title = citation.get("quote", "")
-        return '<a class="cite" href="%s" title="%s">%s</a>' % (
-            html.escape(href, quote=True),
-            html.escape(title, quote=True),
-            html.escape(label),
-        )
+        links = []
+        for citation in claim["citations"]:
+            book = books[citation["bookId"]]
+            href = "books/%s.html#claim-%s" % (book["id"], claim_id)
+            label = "《%s》PDF p.%s" % (book["title"], citation["pdfPage"])
+            title = citation.get("quote", "")
+            links.append('<a class="cite" href="%s" title="%s">%s</a>' % (
+                html.escape(href, quote=True),
+                html.escape(title, quote=True),
+                html.escape(label),
+            ))
+        return '<span class="cite-group">%s</span>' % '<span class="cite-sep"> · </span>'.join(links)
 
     return re.sub(r"\[\[claim:([a-z0-9.\-]+)\]\]", claim_link, value)
 
@@ -128,15 +130,19 @@ def evidence_index(claims, books):
                     html.escape(citation.get("chapter", "")),
                 )
             )
+        quotes = "<br>".join(
+            "<q>%s</q>" % html.escape(citation.get("quote", ""))
+            for citation in claim["citations"]
+        )
         parts.append(
-            "<tr><td>%s</td><td><a href=\"#%s\">%s</a><code>%s</code></td><td>%s</td><td><q>%s</q></td></tr>"
+            "<tr><td>%s</td><td><a href=\"#%s\">%s</a><code>%s</code></td><td>%s</td><td>%s</td></tr>"
             % (
                 html.escape(GROUP_NAMES.get(claim["group"], claim["group"])),
                 html.escape(claim["manualAnchor"], quote=True),
                 html.escape(claim["title"]),
                 html.escape(claim["id"]),
                 "".join(cites),
-                html.escape(claim["citations"][0].get("quote", "")),
+                quotes,
             )
         )
     parts.append("</tbody></table></div>")
@@ -310,7 +316,7 @@ hr{border:0;border-top:1px solid var(--line);margin:30px 0}
 <aside>
   <div class="brand"><span class="mark">C</span><b>复调音乐理论手册<small>Counterpoint Atlas · __GENERATED__</small></b></div>
   <nav aria-label="目录">__NAV__</nav>
-  <div class="side-links"><a href="../tutorial/index.html">教程</a><a href="../app/index.html">推演台</a><a href="books/">教材证据</a><a href="../">工作台</a></div>
+  <div class="side-links"><a href="../tutorial/index.html">教程</a><a href="../app/index.html">推演台</a><a href="books/">教材证据</a><a href="../../index.html">工作台</a></div>
 </aside>
 <main>
 __BODY__

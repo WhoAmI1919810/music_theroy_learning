@@ -5,6 +5,12 @@
     "line_start": 20,
     "line_end": 20
   },
+  "adler.string-core|shi_yongkang|8": {
+    "path": "assets/sources/snippets/adler.string-core-shi_yongkang-p0008.jpg",
+    "score": 0.862,
+    "line_start": 3,
+    "line_end": 4
+  },
   "adler.history-classical|adler_1|16": {
     "path": "assets/sources/snippets/adler.history-classical-adler_1-p0016.jpg",
     "score": 0.401,
@@ -29,11 +35,23 @@
     "line_start": 21,
     "line_end": 21
   },
+  "adler.inner-hearing|piston|99": {
+    "path": "assets/sources/snippets/adler.inner-hearing-piston-p0099.jpg",
+    "score": 0.848,
+    "line_start": 3,
+    "line_end": 3
+  },
   "adler.instrument-basics|adler_1|9": {
     "path": "assets/sources/snippets/adler.instrument-basics-adler_1-p0009.jpg",
     "score": 0.818,
     "line_start": 23,
     "line_end": 25
+  },
+  "adler.instrument-basics|yang_1|29": {
+    "path": "assets/sources/snippets/adler.instrument-basics-yang_1-p0029.jpg",
+    "score": 0.716,
+    "line_start": 2,
+    "line_end": 3
   },
   "adler.tutti-unison-octave|adler_2|9": {
     "path": "assets/sources/snippets/adler.tutti-unison-octave-adler_2-p0009.jpg",
@@ -41,17 +59,47 @@
     "line_start": 8,
     "line_end": 23
   },
+  "adler.tutti-unison-octave|piston|11": {
+    "path": "assets/sources/snippets/adler.tutti-unison-octave-piston-p0011.jpg",
+    "score": 0.756,
+    "line_start": 9,
+    "line_end": 9
+  },
   "adler.tutti-restraint|adler_2|8": {
     "path": "assets/sources/snippets/adler.tutti-restraint-adler_2-p0008.jpg",
     "score": 0.744,
     "line_start": 6,
     "line_end": 10
   },
+  "adler.tutti-restraint|shi_yongkang|542": {
+    "path": "assets/sources/snippets/adler.tutti-restraint-shi_yongkang-p0542.jpg",
+    "score": 0.857,
+    "line_start": 17,
+    "line_end": 18
+  },
   "adler.foreground-background|adler_2|19": {
     "path": "assets/sources/snippets/adler.foreground-background-adler_2-p0019.jpg",
     "score": 0.782,
     "line_start": 3,
     "line_end": 4
+  },
+  "adler.foreground-background|piston|7": {
+    "path": "assets/sources/snippets/adler.foreground-background-piston-p0007.jpg",
+    "score": 0.885,
+    "line_start": 17,
+    "line_end": 19
+  },
+  "adler.foreground-background|shi_yongkang|131": {
+    "path": "assets/sources/snippets/adler.foreground-background-shi_yongkang-p0131.jpg",
+    "score": 0.935,
+    "line_start": 2,
+    "line_end": 5
+  },
+  "adler.foreground-background|shi_yongkang|132": {
+    "path": "assets/sources/snippets/adler.foreground-background-shi_yongkang-p0132.jpg",
+    "score": 1.0,
+    "line_start": 20,
+    "line_end": 20
   },
   "adler.contemporary-repertoire|adler_1|9": {
     "path": "assets/sources/snippets/adler.contemporary-repertoire-adler_1-p0009.jpg",
@@ -71,11 +119,29 @@
     "line_start": 0,
     "line_end": 8
   },
+  "piston.analysis-protocol|adler_2|8": {
+    "path": "assets/sources/snippets/piston.analysis-protocol-adler_2-p0008.jpg",
+    "score": 0.596,
+    "line_start": 12,
+    "line_end": 12
+  },
+  "piston.analysis-protocol|shi_yongkang|131": {
+    "path": "assets/sources/snippets/piston.analysis-protocol-shi_yongkang-p0131.jpg",
+    "score": 0.929,
+    "line_start": 10,
+    "line_end": 12
+  },
   "piston.octave-not-new-factor|piston|14": {
     "path": "assets/sources/snippets/piston.octave-not-new-factor-piston-p0014.jpg",
     "score": 0.763,
     "line_start": 5,
     "line_end": 11
+  },
+  "piston.octave-not-new-factor|adler_2|30": {
+    "path": "assets/sources/snippets/piston.octave-not-new-factor-adler_2-p0030.jpg",
+    "score": 0.984,
+    "line_start": 23,
+    "line_end": 23
   },
   "piston.divisi-analysis|piston|34": {
     "path": "assets/sources/snippets/piston.divisi-analysis-piston-p0034.jpg",
@@ -89,11 +155,29 @@
     "line_start": 1,
     "line_end": 2
   },
+  "piston.divisi-analysis|adler_1|24": {
+    "path": "assets/sources/snippets/piston.divisi-analysis-adler_1-p0024.jpg",
+    "score": 0.865,
+    "line_start": 11,
+    "line_end": 12
+  },
+  "piston.divisi-analysis|adler_1|25": {
+    "path": "assets/sources/snippets/piston.divisi-analysis-adler_1-p0025.jpg",
+    "score": 1.0,
+    "line_start": 2,
+    "line_end": 2
+  },
   "piston.chord-arrangement|piston|97": {
     "path": "assets/sources/snippets/piston.chord-arrangement-piston-p0097.jpg",
     "score": 0.908,
     "line_start": 1,
     "line_end": 4
+  },
+  "piston.chord-arrangement|adler_2|25": {
+    "path": "assets/sources/snippets/piston.chord-arrangement-adler_2-p0025.jpg",
+    "score": 0.985,
+    "line_start": 6,
+    "line_end": 6
   },
   "yang.spectrum-basis|yang_1|29": {
     "path": "assets/sources/snippets/yang.spectrum-basis-yang_1-p0029.jpg",
@@ -101,11 +185,29 @@
     "line_start": 2,
     "line_end": 3
   },
+  "yang.spectrum-basis|adler_2|8": {
+    "path": "assets/sources/snippets/yang.spectrum-basis-adler_2-p0008.jpg",
+    "score": 0.831,
+    "line_start": 4,
+    "line_end": 4
+  },
   "yang.balance-definition|yang_2|4": {
     "path": "assets/sources/snippets/yang.balance-definition-yang_2-p0004.jpg",
     "score": 1.0,
     "line_start": 7,
     "line_end": 8
+  },
+  "yang.balance-definition|shi_yongkang|13": {
+    "path": "assets/sources/snippets/yang.balance-definition-shi_yongkang-p0013.jpg",
+    "score": 0.865,
+    "line_start": 3,
+    "line_end": 3
+  },
+  "yang.balance-definition|piston|7": {
+    "path": "assets/sources/snippets/yang.balance-definition-piston-p0007.jpg",
+    "score": 0.757,
+    "line_start": 13,
+    "line_end": 14
   },
   "yang.balance-register-example|yang_2|5": {
     "path": "assets/sources/snippets/yang.balance-register-example-yang_2-p0005.jpg",
@@ -118,6 +220,12 @@
     "score": 0.962,
     "line_start": 9,
     "line_end": 10
+  },
+  "yang.balance-transfer-example|shi_yongkang|448": {
+    "path": "assets/sources/snippets/yang.balance-transfer-example-shi_yongkang-p0448.jpg",
+    "score": 1.0,
+    "line_start": 17,
+    "line_end": 18
   },
   "yang.balance-relative|yang_2|7": {
     "path": "assets/sources/snippets/yang.balance-relative-yang_2-p0007.jpg",
@@ -137,11 +245,29 @@
     "line_start": 15,
     "line_end": 18
   },
+  "shi.percussion-role|piston|32": {
+    "path": "assets/sources/snippets/shi.percussion-role-piston-p0032.jpg",
+    "score": 0.524,
+    "line_start": 1,
+    "line_end": 1
+  },
+  "shi.percussion-role|adler_1|16": {
+    "path": "assets/sources/snippets/shi.percussion-role-adler_1-p0016.jpg",
+    "score": 0.707,
+    "line_start": 30,
+    "line_end": 31
+  },
   "shi.string-writing|shi_yongkang|9": {
     "path": "assets/sources/snippets/shi.string-writing-shi_yongkang-p0009.jpg",
     "score": 0.939,
     "line_start": 11,
     "line_end": 11
+  },
+  "shi.string-writing|piston|34": {
+    "path": "assets/sources/snippets/shi.string-writing-piston-p0034.jpg",
+    "score": 0.99,
+    "line_start": 0,
+    "line_end": 2
   },
   "shi.pedal-tone|shi_yongkang|246": {
     "path": "assets/sources/snippets/shi.pedal-tone-shi_yongkang-p0246.jpg",
@@ -149,11 +275,35 @@
     "line_start": 2,
     "line_end": 14
   },
+  "shi.pedal-tone|piston|32": {
+    "path": "assets/sources/snippets/shi.pedal-tone-piston-p0032.jpg",
+    "score": 1.0,
+    "line_start": 14,
+    "line_end": 14
+  },
+  "shi.pedal-tone|adler_2|23": {
+    "path": "assets/sources/snippets/shi.pedal-tone-adler_2-p0023.jpg",
+    "score": 0.772,
+    "line_start": 7,
+    "line_end": 7
+  },
   "shi.instrument-transfer|shi_yongkang|448": {
     "path": "assets/sources/snippets/shi.instrument-transfer-shi_yongkang-p0448.jpg",
     "score": 0.996,
     "line_start": 3,
     "line_end": 18
+  },
+  "shi.instrument-transfer|yang_3|319": {
+    "path": "assets/sources/snippets/shi.instrument-transfer-yang_3-p0319.jpg",
+    "score": 0.938,
+    "line_start": 3,
+    "line_end": 4
+  },
+  "shi.instrument-transfer|adler_2|61": {
+    "path": "assets/sources/snippets/shi.instrument-transfer-adler_2-p0061.jpg",
+    "score": 0.732,
+    "line_start": 23,
+    "line_end": 23
   },
   "shi.call-response|shi_yongkang|495": {
     "path": "assets/sources/snippets/shi.call-response-shi_yongkang-p0495.jpg",
@@ -161,10 +311,40 @@
     "line_start": 6,
     "line_end": 6
   },
+  "shi.call-response|yang_3|311": {
+    "path": "assets/sources/snippets/shi.call-response-yang_3-p0311.jpg",
+    "score": 0.61,
+    "line_start": 23,
+    "line_end": 23
+  },
+  "shi.call-response|yang_3|313": {
+    "path": "assets/sources/snippets/shi.call-response-yang_3-p0313.jpg",
+    "score": 0.839,
+    "line_start": 8,
+    "line_end": 9
+  },
   "shi.tutti|shi_yongkang|542": {
     "path": "assets/sources/snippets/shi.tutti-shi_yongkang-p0542.jpg",
     "score": 0.8,
     "line_start": 3,
     "line_end": 18
+  },
+  "shi.tutti|adler_2|9": {
+    "path": "assets/sources/snippets/shi.tutti-adler_2-p0009.jpg",
+    "score": 0.779,
+    "line_start": 2,
+    "line_end": 3
+  },
+  "shi.tutti|adler_2|8": {
+    "path": "assets/sources/snippets/shi.tutti-adler_2-p0008.jpg",
+    "score": 0.522,
+    "line_start": 9,
+    "line_end": 9
+  },
+  "shi.tutti|yang_3|342": {
+    "path": "assets/sources/snippets/shi.tutti-yang_3-p0342.jpg",
+    "score": 0.828,
+    "line_start": 9,
+    "line_end": 9
   }
 }

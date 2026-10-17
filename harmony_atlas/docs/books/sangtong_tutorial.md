@@ -1,0 +1,1655 @@
+# 桑桐《和声学教程》
+
+> **PDF 文件**：`桑桐《和声学教程》.pdf`  
+> **物理页数**：570（从 PDF 第 1 页起计）  
+> **OCR 平均置信度**：0.959  
+> **字符数**：206479
+
+本文件收录**理论手册实际引用的 38 个 PDF 页**，每页采用整版影印 + OCR 文本。整页图保留谱例、图表、表格、边注和版面关系；OCR 只供检索与复制，具体音符、临时记号、连线和罗马数字以图像为准。被理论手册引用的条目列在图后，可直接回跳。
+
+页码一律使用 **PDF 物理页码**，可能与书内印刷页码不同。
+
+**快速跳页**：[p.20](#p0020) · [p.22](#p0022) · [p.24](#p0024) · [p.26](#p0026) · [p.27](#p0027) · [p.32](#p0032) · [p.33](#p0033) · [p.34](#p0034) · [p.35](#p0035) · [p.60](#p0060) · [p.72](#p0072) · [p.103](#p0103) · [p.125](#p0125) · [p.131](#p0131) · [p.132](#p0132) · [p.171](#p0171) · [p.178](#p0178) · [p.179](#p0179) · [p.180](#p0180) · [p.181](#p0181) · [p.221](#p0221) · [p.222](#p0222) · [p.234](#p0234) · [p.268](#p0268) · [p.276](#p0276) · [p.293](#p0293) · [p.300](#p0300) · [p.301](#p0301) · [p.313](#p0313) · [p.352](#p0352) · [p.354](#p0354) · [p.382](#p0382) · [p.383](#p0383) · [p.410](#p0410) · [p.423](#p0423) · [p.498](#p0498) · [p.505](#p0505) · [p.563](#p0563)
+
+---
+
+<!-- PAGE:20 -->
+<a id="p0020"></a>
+## PDF p.20
+
+![桑桐《和声学教程》 PDF p.20（整页影印）](../assets/books/sangtong_tutorial/p0020.jpg)
+
+<!-- MANUAL-REFS:p0020 -->
+<div class="manual-refs"><strong>手册使用本页</strong><ul><li id="ref-prose-cite-sangtong_tutorial-p0020-1-p0020" class="manual-ref-item" data-kind="prose"><span class="ref-kind">正文引用</span><a href="../和声学手册.html#cite-sangtong_tutorial-p0020-1">手册正文引用</a><br><span class="ref-text">桑桐《和声学教程》PDF p.20 给出一个仍然适用于四部和声的基本层级：</span></li><li id="ref-profile-profile-sangtong_tutorial-p0020" class="manual-ref-item" data-kind="profile"><span class="ref-kind">代表页</span><a href="../和声学手册.html#book-profiles">教材代表页 · 桑桐教程</a><br><span class="ref-text">手册将本页列为《桑桐教程》代表页；该书定位：汉语功能体系和声的主干教材：写作规则、T–S–D、七/九和弦、离调、交替、转调、调式与近现代概览。</span></li></ul></div>
+
+<div class="ocr-text">4中国艺术教育大系/音乐卷和声学教程<br>
+或省略。<br>
+和弦的根音决定和弦的级数与功能属性，它的重用可增强根音的作用，故可首先重用根音：<br>
+它不能省略，否则将引起和弦级数与意义的变化。<br>
+三音具有确定三和弦性质的作用，使和弦音响丰满，一般不能省略。但其音响突出，一般不<br>
+重用，只在声部必需时方可重用。<br>
+五音可以重用，必要时亦可省略。五音为减五度或增五度时，一般不重用，亦不省略。<br>
+减三和弦或增三和弦，常重用三音(必需时可重用根音或五音）。为保持这两类和弦的特点，<br>
+一般不省略。<br>
+三、和弦音的排列位置<br>
+和声音响是否均衡，效果是否清晰，与和弦音的排列位置有重要关系。<br>
+通常的排列方法是下方声部之间音程较宽，上方声部之间音程较紧，如同泛音列现象。但和<br>
+声处理有各种不同的要求，因此，排列方式甚多。<br>
+和弦音的排列位置有两种基本方式：<br>
+（1）开放位置：上方三声部各声部之间的音程在五度以上，其间尚能再加进本和弦的音。<br>
+（2）密集位置：上方三声部各声部之间的音程在四度以内，其间不能再加进本和弦的音。<br>
+例1<br>
+b<br>
+d<br>
+8<br>
+开放<br>
+8密集<br>
+8<br>
+8<br>
+密集<br>
+开放<br>
+8<br>
+密集<br>
+开放<br>
+开放位置音响较亮，各声部进行时较清晰，整体分布较均衡。<br>
+密集位置音响较浓，声部之间较融合，但个别声部不突出。<br>
+不论在哪一种排列位置中，低音与次中音部之间的音程可自同度起直至超过八度，而不影响<br>
+声部音响的平衡。上方三声部相互之间的音程一般不超过八度，否则易造成声部音响的空隙与<br>
+不平衡的效果。<br>
+和声进行可以根据声部进行的需要，改变排列方式，从密集位置变为开放位置，或从开放位<br>
+置变为密集位置。有时，上方声部之间，开放位置与密集位置同时运用。（见例1,c、d)。<br>
+声部位置在写谱上有两种写法，一种是高音谱表写上方二声部，低音谱表写下方二声部（如<br>
+例1,b、c、d)。另一种写法是在上方声部较密集时,高音谱表写上方三声部,低音谱表写低音部<br>
+(如例1,a)。<br>
+四、声部组合方式<br>
+在和声进行中，各声部之间相互配合的关系称“声部组合方式”，是和声织体的一种方式。<br>
+四声部写作中，在一般情况下，每个声部是一个独立的声部层次。因此，四个声部的基本组</div>
+
+---
+
+<!-- PAGE:22 -->
+<a id="p0022"></a>
+## PDF p.22
+
+![桑桐《和声学教程》 PDF p.22（整页影印）](../assets/books/sangtong_tutorial/p0022.jpg)
+
+<!-- MANUAL-REFS:p0022 -->
+<div class="manual-refs"><strong>手册使用本页</strong><ul><li id="ref-claim-inversion-bass-function-p0022" class="manual-ref-item" data-kind="claim"><span class="ref-kind">论点</span><a href="../和声学手册.html#claim-inversion-bass-function">转位、低音与和声节奏 · inversion.bass-function</a><br><span class="ref-text">手册提炼：转位由低音是否为根音决定；低音改变会削弱根音支持，并改变和弦的连接与结构功能。</span></li></ul></div>
+
+<div class="ocr-text">中国艺术教育大系/音乐卷和声学教程<br>
+五、原位和弦与转位和弦<br>
+按度叠置结构原则构成的和弦，其根音在低音部者，称原位和弦。根音在上方声部者.称<br>
+转位和弦：三和弦的三度音在低音部者，称第-一转位，亦称六和弦。五度音在低音部者，称第二<br>
+转位、亦称四六和弦。七和弦的第一转位，称五六和弦。第二转位称三四和弦。七度音在低音部<br>
+者.称第转位，亦称__和弦。<br>
+原位和弦因根音在低音部，根音与低音基础相一致，效果较稳定。转位和弦因根音在上方声<br>
+部，并且音程关系较原位复杂，因而稳定性较差，不同的转位和弦亦有不同的效果：转位和弦的<br>
+和声紧张度较原位为强，但和声音响色彩与原位和弦基本相同。<br>
+转位和弦的作用可归纳为下列几点：<br>
+（1）使同--和弦产生和声位置上稳定与不稳定的变化、紧张度的变化与节奏上强弱作用的<br>
+变化，丰富了和声的效果。<br>
+（2）可以使低音的线条进行流畅而富于旋律性。<br>
+（3）由于转位和弦的不稳定效果，与原位的和声进行构成对比，使和声进行有继续发展下去<br>
+的要求.因此常用于段落内部经过性、辅助性的和声进行中<br>
+六、和弦标记<br>
+为了分析和理解和弦与和声进行，需应用和弦标记方法。本教程采用和弦级数标记法，以和<br>
+弦根产在调性音阶的位置而确定其级数标记。级数按习惯以罗马数字标记。减三和弦在罗马数<br>
+字右上方加--""号。增三和弦在罗马数字右上方加-“+"号。七和弦、九和弦转位和弦，则在<br>
+罗马数字存中下方标以与和弦音程特点相符的阿拉伯字母，调性则以英文字母标于谱表下方、<br>
+本调和弦标记之前，大调用大写字母，小调用小写字母。（见例7）<br>
+例7<br>
+88888<br>
+8<br>
+8<br>
+8<br>
+08<br>
+VI<br>
+111<br>
+IV<br>
+V<br>
+VI<br>
+VI3,<br>
+Va<br>
+V<br>
+Vg<br>
+88888<br>
+8°<br>
+IVV<br>
+VI<br>
+VI°<br>
+IV3<br>
+VIg<br>
+(3)<br>
+1表中括号内数字可省略。</div>
+
+---
+
+<!-- PAGE:24 -->
+<a id="p0024"></a>
+## PDF p.24
+
+![桑桐《和声学教程》 PDF p.24（整页影印）](../assets/books/sangtong_tutorial/p0024.jpg)
+
+<!-- MANUAL-REFS:p0024 -->
+<div class="manual-refs"><strong>手册使用本页</strong><ul><li id="ref-claim-voice-leading-parallels-p0024" class="manual-ref-item" data-kind="claim"><span class="ref-kind">论点</span><a href="../和声学手册.html#claim-voice-leading-parallels">声部进行与不协和解决 · voice-leading.parallels</a><br><span class="ref-text">手册提炼：平行纯五度、纯八度削弱声部独立性，因此传统调性写作把它们视为需要避免的进行。</span></li><li id="ref-profile-profile-sangtong_tutorial-p0024" class="manual-ref-item" data-kind="profile"><span class="ref-kind">代表页</span><a href="../和声学手册.html#book-profiles">教材代表页 · 桑桐教程</a><br><span class="ref-text">手册将本页列为《桑桐教程》代表页；该书定位：汉语功能体系和声的主干教材：写作规则、T–S–D、七/九和弦、离调、交替、转调、调式与近现代概览。</span></li></ul></div>
+
+<div class="ocr-text">中国艺术教育大系/音乐卷和声学教程<br>
+方面。<br>
+声部进行包括个别声部的进行与各声部之间的进行方式。<br>
+在个别声部的进行方面，有：保持、级进与跳进三种方式。保持、级进与三度跳进属于平稳<br>
+进行。四度以上的跳进属于跳跃进行。<br>
+各声部之间的进行方式，有以下三类：<br>
+（1）反向进行各声部向不同方向进行。反向进行的声部独立性强。<br>
+例11<br>
+（2）斜向进行有的声部保持不动，另外的声部作级进或跳进，即构成斜向进行。这种进行<br>
+使声部之间在节奏上有长短的不同,构成动静的对比。<br>
+例12<br>
+（3）同向进行不同声部向同一-方向级进或跳进，属于同向进行。声部在同向进行时保持<br>
+相同的音程，称为平行进行。同向进行中由于声部进行方向上的一致,声部的独立性较少。<br>
+例13<br>
+为了使和弦的连接具有良好丰满的和声效果、平衡通顺的声部关系，在声部进行上须注意下<br>
+列问题：<br>
+（1）避免声部之间平行同度、八度与五度。<br>
+平行同度与八度，实际上是减少了一个声部的进行，造成声部关系上的不平衡。<br>
+平行五度由于纯五度的过于协调的音响，使声部失去进行上的独立性,造成音响上的不平<br>
+衡。<br>
+例14<br>
+（2）避免两外声部同向跳进或高音部跳进、低音部级进、同向上行进入八度或五度，这类情</div>
+
+---
+
+<!-- PAGE:26 -->
+<a id="p0026"></a>
+## PDF p.26
+
+![桑桐《和声学教程》 PDF p.26（整页影印）](../assets/books/sangtong_tutorial/p0026.jpg)
+
+<!-- MANUAL-REFS:p0026 -->
+<div class="manual-refs"><strong>手册使用本页</strong><ul><li id="ref-claim-root-motion-fourth-up-p0026" class="manual-ref-item" data-kind="claim"><span class="ref-kind">论点</span><a href="../和声学手册.html#claim-root-motion-fourth-up">自然音级功能：T–S–D · root-motion.fourth-up</a><br><span class="ref-text">手册提炼：根音向上四度的进行具有最强的功能推进力；新根音把前一和弦根音纳入自身结构，从听感上提升其功能等级。</span></li></ul></div>
+
+<div class="ocr-text">10<br>
+）中国艺术教育大系/音乐卷和声学教程<br>
+人、小调自然音休系的各级三和弦根音之间的音程关系，总的可分为三类：<br>
+（1）平衡关系：两个和弦之间的根音是五度音程关系，1：五度或下五度（亦称上四度）都属<br>
+于这种五度根音关系<br>
+例19<br>
+8<br>
+8<br>
+后度音程是和声中重要的音程关系，具有相互支持的和声作用。这种作用也表现在具有五<br>
+度根音关系的和弦连接上<br>
+在具有五度根音关系的和弦之间有-一个共同音：一个和弦的根音是另一个和弦的五度音，<br>
+因素，因此，在五度根音关系的和弦之间，既有联系义有对比，两者兼俱，故称为平衡关系：<br>
+（2）融合关系。两个和弦之间的根音是三度音程关系，包括上方大、小三度或下方大、小<br>
+度<br>
+例20)<br>
+888<br>
+8-8<br>
+在具有三度根音关系的和弦之间有两个共同音：一个和弦的根音与三音是另一个和弦的三<br>
+音与h两个和弦之间只有-个非共同音。这使三度根音关系的和弦之间，联系的因素多，而<br>
+对比、新鲜的因素少，具有融合的和声作用：<br>
+（3）远邻关系：两个和弦之间的根音是二度音程关系，包括上方大、小二度或下方大、小<br>
+二度<br>
+度根音关系的和弦之间，无共同音，因此两者之间无联系的因素，而对比、新鲜的因素强：<br>
+例21<br>
+十、根音进行的强弱作用<br>
+从·个和弦进人另--个和弦，用和弦根音的级数表示，称根音进行。根音进行的类别、以根<br>
+音之间的音程关系进行区分，如：四度上行（五度下行），度上、下行等，不同的根音进行有不<br>
+同的力度，称根音进行的强弱作用<br>
+现将各种不同的根音进行与它们所起的强弱作用分别阐述如下：<br>
+（1）根音四度上行（或五度下行）属于强进行：</div>
+
+---
+
+<!-- PAGE:27 -->
+<a id="p0027"></a>
+## PDF p.27
+
+![桑桐《和声学教程》 PDF p.27（整页影印）](../assets/books/sangtong_tutorial/p0027.jpg)
+
+<!-- MANUAL-REFS:p0027 -->
+<div class="manual-refs"><strong>手册使用本页</strong><ul><li id="ref-claim-root-motion-fourth-up-p0027" class="manual-ref-item" data-kind="claim"><span class="ref-kind">论点</span><a href="../和声学手册.html#claim-root-motion-fourth-up">自然音级功能：T–S–D · root-motion.fourth-up</a><br><span class="ref-text">手册提炼：根音向上四度的进行具有最强的功能推进力；新根音把前一和弦根音纳入自身结构，从听感上提升其功能等级。</span></li></ul></div>
+
+<div class="ocr-text">第一章垦本写：正要求11<br>
+例22<br>
+8<br>
+由于根音之间的音程关系，后--和弦的根音得到前…-和弦根音的支持和强调。同时，后一和<br>
+弦的根音是前--和弦中未包含的新音，具有新鲜的效果。因此，这种和弦连接肯定有力，称之为<br>
+强进行<br>
+例23<br>
+韦柏：《自由射手》<br>
+（2）根音四度下行（或五度上行）属于弱进行。<br>
+例24<br>
+后--和弦的根音是前一和弦的五度音，缺少新鲜感。根音之间的音程关系也使后一和弦的<br>
+根音不能像四度上行那样得到肯定有力的支持。因此与四度上行的根音进行刚好相反，效果柔<br>
+和，属于弱进行。变格进行属于这种根音进行：<br>
+例25<br>
+沃尔夫：《春之歌》<br>
+（3）根音三度下行属于次强进行，</div>
+
+---
+
+<!-- PAGE:32 -->
+<a id="p0032"></a>
+## PDF p.32
+
+![桑桐《和声学教程》 PDF p.32（整页影印）](../assets/books/sangtong_tutorial/p0032.jpg)
+
+<!-- MANUAL-REFS:p0032 -->
+<div class="manual-refs"><strong>手册使用本页</strong><ul><li id="ref-claim-voice-leading-leading-tone-p0032" class="manual-ref-item" data-kind="claim"><span class="ref-kind">论点</span><a href="../和声学手册.html#claim-voice-leading-leading-tone">声部进行与不协和解决 · voice-leading.leading-tone</a><br><span class="ref-text">手册提炼：导音具有上行到主音的强烈倾向；当它位于外声部时，这一解决要求尤其严格。</span></li><li id="ref-prose-cite-sangtong_tutorial-p0032-1-p0032" class="manual-ref-item" data-kind="prose"><span class="ref-kind">正文引用</span><a href="../和声学手册.html#cite-sangtong_tutorial-p0032-1">手册正文引用</a><br><span class="ref-text">桑桐 PDF p.32–34 将调内三和弦按稳定/不稳定与倾向关系归入三类功能：</span></li><li id="ref-profile-profile-sangtong_tutorial-p0032" class="manual-ref-item" data-kind="profile"><span class="ref-kind">代表页</span><a href="../和声学手册.html#book-profiles">教材代表页 · 桑桐教程</a><br><span class="ref-text">手册将本页列为《桑桐教程》代表页；该书定位：汉语功能体系和声的主干教材：写作规则、T–S–D、七/九和弦、离调、交替、转调、调式与近现代概览。</span></li></ul></div>
+
+<div class="ocr-text">中国艺术教育大系/彦乐卷和声学教程<br>
+16<br>
+例33<br>
+8=<br>
+IⅢI1<br>
+IⅢI<br>
+VI<br>
+Ⅱ<br>
+IV<br>
+VI<br>
+C:V1<br>
+[<br>
+V<br>
+a:VI<br>
+1<br>
+III<br>
+IⅢI<br>
+V<br>
+VI<br>
+II<br>
+IV<br>
+VI<br>
+各级副三和弦的和弦结构有下列各种形式：<br>
+小三和弦(大调Ⅱ、Ⅲ、级)；<br>
+大三和弦(和声小调VI级)；<br>
+减三和弦（大调VI°级，和声小调Ⅱ°VI°级）；<br>
+增三和弦(和声小调Ⅲ级)。<br>
+副：和弦在和弦结构类型、音响效果和功能意义上都比正三和弦复杂而多样，具有下列特性<br>
+与作用：<br>
+（1）由于副三和弦在和弦结构类型上的多样性，在和声音响的色彩与紧张度方面，均与正三<br>
+和弦构成对比、变化。例如大调中，副三和弦的和弦结构有小三和弦、减三和弦，它们与正三和弦<br>
+的大-和弦结构形成对比与变化。和声小调中，副三和弦有减三和弦、增三和弦与大三和弦，在<br>
+音响的紧张性上更为强烈。因此，副三和弦具有丰富和声色彩的作用。<br>
+(2）正三和弦与同一功能组内的副三和弦、以及各副三和弦之间，在稳定与不稳定的程<br>
+度上有各种差别，因此，副三和弦的应用，可以构成不稳定性的增长或减弱的作用，并能避免<br>
+主和弦的频繁出现，避免和声运动上单调和停滞的效果，有利于发挥和声功能上的对比和变<br>
+化的作用<br>
+三、和声的功能<br>
+-个调性内的各级三和弦，根据它们在调式音级中的地位与特性，有的具有稳定的作用，有<br>
+的具有不稳定的作用，这种稳定与不稳定的作用，即称为和声的功能。<br>
+和弦的功能属性既由和弦的根音所处的音级地位确定，也包含了和弦构成音的倾向特性。<br>
+利声的功能分三种类型：主功能、属功能与下属功能。<br>
+（1）主功能具有稳定作用，代表主功能的和弦就是主和弦。它是调式的中心和弦，有吸引<br>
+力，其他各级和弦直接、间接倾向于它(大调主音或主和弦用T标记，小调用t标记)。<br>
+（2）属功能与下属功能都属于不稳定功能，对主和弦都有和声性倾向与旋律性倾向。但二<br>
+者在倾向上有不同的特性，因而形成两种不同类型的不稳定功能。<br>
+属功能具有直接倾向于主和弦的特性。其中包含了属音对于主音的和声性倾向与导音、上<br>
+主音对于主音、中音（主和弦的三度音)的旋律性倾向。而导音对于主音的倾向是属功能和声中<br>
+很重要的特性。<br>
+属功能和声以属和弦为代表（用I标记)。</div>
+
+---
+
+<!-- PAGE:33 -->
+<a id="p0033"></a>
+## PDF p.33
+
+![桑桐《和声学教程》 PDF p.33（整页影印）](../assets/books/sangtong_tutorial/p0033.jpg)
+
+<!-- MANUAL-REFS:p0033 -->
+<div class="manual-refs"><strong>手册使用本页</strong><ul><li id="ref-claim-diatonic-tonic-subdominant-dominant-p0033" class="manual-ref-item" data-kind="claim"><span class="ref-kind">论点</span><a href="../和声学手册.html#claim-diatonic-tonic-subdominant-dominant">自然音级功能：T–S–D · diatonic.tonic-subdominant-dominant</a><br><span class="ref-text">手册提炼：大调 I、IV、V 分别承担主、下属、属的核心功能，其他自然三和弦按共同音与倾向归入功能组。</span></li></ul></div>
+
+<div class="ocr-text">第二章三和弦17<br>
+功能的这种性质是由于旋律调式中下属音对于主音的和声性倾向与对于属音或中音的旋律性倾<br>
+向、下中音对于属音的旋律性倾向而产生。而下中音对于属音（即主和弦的五音)的倾向是下属<br>
+功能和声中具有普遍意义的特点。<br>
+下属功能和声以下属和弦为代表（用S或s标记）。<br>
+（4）其他各级三和弦根据根音在调式中的音级地位、和弦音的倾向特性以及与三个主要功<br>
+能和弦的关系而分别具有属功能与下属功能的作用。<br>
+\I级三和弦，建立在导音音级上，是减三和弦，具有解决到主音与它的三度音（Ⅲ级音）的强<br>
+烈倾向，与属和弦有两个共同音，是属功能性质的和弦（用DI标记）。<br>
+Ⅲ级三和弦，建立在中音上，它与主和弦或属和弦都有两个共同音，包含有属音与导音，但这<br>
+里，导音作为和弦的五度音，无强烈倾向于主音的要求，它可以倾向于主音，也可以倾向于1级<br>
+音，它的自然的和声性倾向是进人下中音和弦，也常进人下属和弦或直接进人主和弦，特别在第<br>
+一转位时。因此，它是介王主功能与属功能之间、但偏重于属功能的中音和弦（用M或m<br>
+标记）<br>
+Ⅱ级三和弦，建立在上主音上。与下属和弦有两个共同音：下属音与下中音。它与属和弦<br>
+是五度关系，具有进人属和弦的倾向。也可以直接倾向于主和弦。是下属功能性质的和弦（用<br>
+Su或sp标记）。<br>
+它的不稳定作用主要表现在下中音（VI级和弦的根音)对于属音(或主和弦的五音)的倾向上，因<br>
+此，不稳定作用较弱。它自然的和声性倾向是进入上主音和弦。它可以倾向于属和弦或有时直<br>
+接倾向于主和弦。因此，它是介于主功能与下属功能之间、但偏重于下属功能的下中音和弦（用<br>
+SM或sn标记）<br>
+下面的图例说明各级三和弦的功能关系。<br>
+例34<br>
+8<br>
+8<br>
+喜<br>
+8<br>
+回DV<br>
+SM<br>
+SP<br>
+S<br>
+从例34图例可以看到：以调性的三个主要和弦为中心，它们的上、下三度关系的和弦便与<br>
+中心和弦构成功能组。<br>
+属功能与下属功能是不稳定功能的两种类型，表现了从不同方面支持主和弦的特性，它们之<br>
+间的功能对比是全面呈示一个调性的主要因素。在这两个功能组之间，通过SⅡ与属和弦的五<br>
+度关系而使两者具有和声性的联系。<br>
+如上所述，和弦之间的功能关系是调性和声体系中和弦之间的主要关系。和弦之间功能关<br>
+系方面稳定与不稳定的矛盾统-一、不稳定功能之间的矛盾对比，是推动音乐中和声发展的动力、<br>
+因此，我们在处理和声进行时，除了注意和弦的根音进行与声部进行外，还必须考虑和弦之间的</div>
+
+---
+
+<!-- PAGE:34 -->
+<a id="p0034"></a>
+## PDF p.34
+
+![桑桐《和声学教程》 PDF p.34（整页影印）](../assets/books/sangtong_tutorial/p0034.jpg)
+
+<!-- MANUAL-REFS:p0034 -->
+<div class="manual-refs"><strong>手册使用本页</strong><ul><li id="ref-claim-diatonic-function-sequence-p0034" class="manual-ref-item" data-kind="claim"><span class="ref-kind">论点</span><a href="../和声学手册.html#claim-diatonic-function-sequence">自然音级功能：T–S–D · diatonic.function-sequence</a><br><span class="ref-text">手册提炼：功能和声的基本序列是稳定—不稳定—稳定，典型为 T–S–D–T；D–S 属特殊情况而非常规。</span></li><li id="ref-profile-profile-sangtong_tutorial-p0034" class="manual-ref-item" data-kind="profile"><span class="ref-kind">代表页</span><a href="../和声学手册.html#book-profiles">教材代表页 · 桑桐教程</a><br><span class="ref-text">手册将本页列为《桑桐教程》代表页；该书定位：汉语功能体系和声的主干教材：写作规则、T–S–D、七/九和弦、离调、交替、转调、调式与近现代概览。</span></li></ul></div>
+
+<div class="ocr-text">中世艺术教育大系音乐卷和声学教程<br>
+18<br>
+功能关系<br>
+四、和声进行的功能序列<br>
+和声进行中，除和弦之间的根音关系、根音进行的强弱作用外，尚存在着由音与和弦的倾向<br>
+性而形成的功能序列的规律，总的特点是：稳定—一不稳定——稳定，具体表现为：主一—下<br>
+属--属-一主的功能序列：它的完整的功能序列如下图所示：<br>
+这一-功能序列，表现了欧洲18、19世纪音乐作品中大小调和声进行的基本规律。在这一整<br>
+体的功能序列规律内，依据实际的和声进行，尚有各种简单或复杂的和声序列。在特殊情况下，<br>
+尚能形成下列功能序列：<br>
+T-—---D-S-~T<br>
+不论和声的功能序列如何多样，总的可区分为两种和声进行：<br>
+（1）开放性的和声进行。从主功能和声到不稳定功能和声的进行，是稳定状态的破坏，具有<br>
+发展的性质，属于开放性的和声进行。在不稳定功能范畴内的和声进行亦属于此类。<br>
+（2）收拢性的和声进行。从不稳定功能和声进向主功能，具有复归稳定状态的性质，属于收<br>
+拢性的和声进行。<br>
+下面是几种不同和弦序列的例子。<br>
+例35<br>
+柴科夫斯基：《杜鹃》作品54之8<br>
+G:DVI6<br>
+T<br>
+SM<br>
+S<br>
+Sp<br>
+D<br>
+M<br>
+T<br>
+例36<br>
+格里格：《秋之风暴》<br>
+SM<br>
+f:<br>
+SM</div>
+
+---
+
+<!-- PAGE:35 -->
+<a id="p0035"></a>
+## PDF p.35
+
+![桑桐《和声学教程》 PDF p.35（整页影印）](../assets/books/sangtong_tutorial/p0035.jpg)
+
+<!-- MANUAL-REFS:p0035 -->
+<div class="manual-refs"><strong>手册使用本页</strong><ul><li id="ref-claim-cadence-half-plagal-deceptive-p0035" class="manual-ref-item" data-kind="claim"><span class="ref-kind">论点</span><a href="../和声学手册.html#claim-cadence-half-plagal-deceptive">终止式 · cadence.half-plagal-deceptive</a><br><span class="ref-text">手册提炼：半终止停在属功能，变格终止为 IV–I，阻碍进行为 V–vi；三者收束强度与结构作用不同。</span></li></ul></div>
+
+<div class="ocr-text">第二章三和弦19<br>
+例37<br>
+瓦格纳：《女武神》<br>
+c:D（属音八度）<br>
+S<br>
+D<br>
+SM<br>
+Sp7<br>
+D<br>
+例38<br>
+西贝柳斯：《芬兰颂》<br>
+0<br>
+8<br>
+8<br>
+8<br>
+8<br>
+f:<br>
+S6<br>
+M6dVI3<br>
+M<br>
+SM<br>
+Sp,<br>
+D<br>
+五、各级和弦的连接<br>
+运用正三和弦的和声进行是作品中最基本的和声处理方法。在收拢性和声进行与开放性和<br>
+声进行中，各包括四种和声进行方式：<br>
+(D-T(t)<br>
+正格进行<br>
+S(s)--T(t)<br>
+变格进行<br>
+收拢性和声进行<br>
+S(s)—D---T(1)<br>
+复式正格进行<br>
+(D--S(s)--T(t)<br>
+复式变格进行<br>
+[T(1)-D)<br>
+正格半成进行<br>
+S(s)--I)<br>
+半成进行<br>
+开放性和声进行<br>
+T(t)--S(s)<br>
+变格半成进行<br>
+(D-S(s)<br>
+阻碍进行<br>
+上述各种和声进行当运用于乐句或段落的结束处时，即成为各种类型的终止式和声进行，<br>
+如：正格终止、变格终止、半终止与阻碍终止等。<br>
+（1）正格进行：V一I（I)--T或I）-t）<br>
+正格半成进行：I一V（T—I)或t一D)。</div>
+
+---
+
+<!-- PAGE:60 -->
+<a id="p0060"></a>
+## PDF p.60
+
+![桑桐《和声学教程》 PDF p.60（整页影印）](../assets/books/sangtong_tutorial/p0060.jpg)
+
+<!-- MANUAL-REFS:p0060 -->
+<div class="manual-refs"><strong>手册使用本页</strong><ul><li id="ref-claim-inversion-cadential-six-four-p0060" class="manual-ref-item" data-kind="claim"><span class="ref-kind">论点</span><a href="../和声学手册.html#claim-inversion-cadential-six-four">转位、低音与和声节奏 · inversion.cadential-six-four</a><br><span class="ref-text">手册提炼：终止四六和弦延迟 V 的到来，应处于比其后 V 更强的节奏位置，并以平稳声部进出。</span></li><li id="ref-claim-seventh-general-resolution-p0060" class="manual-ref-item" data-kind="claim"><span class="ref-kind">论点</span><a href="../和声学手册.html#claim-seventh-general-resolution">七和弦、九和弦与不协和等级 · seventh.general-resolution</a><br><span class="ref-text">手册提炼：七和弦是不协和和弦，需准备并按倾向解决；其七音通常下行级进，属七是最强的功能和声形态。</span></li><li id="ref-prose-cite-sangtong_tutorial-p0060-1-p0060" class="manual-ref-item" data-kind="prose"><span class="ref-kind">正文引用</span><a href="../和声学手册.html#cite-sangtong_tutorial-p0060-1">手册正文引用</a><br><span class="ref-text">七和弦常可省略五音，有时省略三音；省略后通常重复根音。属九和弦的九音通常不可省略，因为九音既增加张力，也常暗示调式性质（桑桐 PDF p.60、p.72）。</span></li><li id="ref-prose-cite-sangtong_tutorial-p0060-2-p0060" class="manual-ref-item" data-kind="prose"><span class="ref-kind">正文引用</span><a href="../和声学手册.html#cite-sangtong_tutorial-p0060-2">手册正文引用</a><br><span class="ref-text">桑桐 PDF p.60、p.72 与柴可夫斯基 PDF p.46 对七/九和弦的省略、重复、解决给出了可操作规则；程序的 tendencyWarnings() 会对未解决到目标音的导音、七音、增六音给出警告。</span></li><li id="ref-profile-profile-sangtong_tutorial-p0060" class="manual-ref-item" data-kind="profile"><span class="ref-kind">代表页</span><a href="../和声学手册.html#book-profiles">教材代表页 · 桑桐教程</a><br><span class="ref-text">手册将本页列为《桑桐教程》代表页；该书定位：汉语功能体系和声的主干教材：写作规则、T–S–D、七/九和弦、离调、交替、转调、调式与近现代概览。</span></li></ul></div>
+
+<div class="ocr-text">44中国艺术教育大系/音乐卷和声学教程<br>
+以上是大调各级七和弦处理方法的和弦连接图式。小调的各级七和弦处理方法基本相同，<br>
+不另举例。但小调工级七和弦的七音为导音，为避免增二度进行，不采取下行级进的方法，而用<br>
+半音上行或保持在同声部的方法。<br>
+例99<br>
+8<br>
+8<br>
+8<br>
+8<br>
+8<br>
+8<br>
+V<br>
+a:<br>
+V<br>
+IV<br>
+I<br>
+V<br>
+VI<br>
+I<br>
+IV,<br>
+（2）七和弦音的重复与省略<br>
+各级七和弦常用完整的形式。但在和声进行中，由于声部进行上的原因，有时需要省略<br>
+某音或重复某音。一般来说，七和弦的五音或三音有时可省略。省略后，一般重复根音。有<br>
+时也可重复三音或五音，根据声部进行情况而定。<br>
+有时为了避免发生平行五度，解决和弦可重用三度音。但导音不要重用。<br>
+各级七和弦中，最常用的为：属七和弦。<br>
+它进向I级，原位或转位。<br>
+进向V级或IV级（六和弦），为阻碍进行。<br>
+在终止式中，属七和弦之前，常有I级四六和弦在强拍位置。<br>
+例100<br>
+柴科夫斯基：《第五交响曲》<br>
+例101<br>
+西贝柳斯：《芬兰颂》<br>
+p</div>
+
+---
+
+<!-- PAGE:72 -->
+<a id="p0072"></a>
+## PDF p.72
+
+![桑桐《和声学教程》 PDF p.72（整页影印）](../assets/books/sangtong_tutorial/p0072.jpg)
+
+<!-- MANUAL-REFS:p0072 -->
+<div class="manual-refs"><strong>手册使用本页</strong><ul><li id="ref-claim-seventh-ninth-composite-p0072" class="manual-ref-item" data-kind="claim"><span class="ref-kind">论点</span><a href="../和声学手册.html#claim-seventh-ninth-composite">七和弦、九和弦与不协和等级 · seventh.ninth-composite</a><br><span class="ref-text">手册提炼：属九和弦在属功能上叠入下属功能因素，形成复合功能；九音通常不可省略并下行解决。</span></li><li id="ref-prose-cite-sangtong_tutorial-p0072-1-p0072" class="manual-ref-item" data-kind="prose"><span class="ref-kind">正文引用</span><a href="../和声学手册.html#cite-sangtong_tutorial-p0072-1">手册正文引用</a><br><span class="ref-text">七和弦常可省略五音，有时省略三音；省略后通常重复根音。属九和弦的九音通常不可省略，因为九音既增加张力，也常暗示调式性质（桑桐 PDF p.60、p.72）。</span></li><li id="ref-prose-cite-sangtong_tutorial-p0072-2-p0072" class="manual-ref-item" data-kind="prose"><span class="ref-kind">正文引用</span><a href="../和声学手册.html#cite-sangtong_tutorial-p0072-2">手册正文引用</a><br><span class="ref-text">桑桐 PDF p.60、p.72 与柴可夫斯基 PDF p.46 对七/九和弦的省略、重复、解决给出了可操作规则；程序的 tendencyWarnings() 会对未解决到目标音的导音、七音、增六音给出警告。</span></li><li id="ref-profile-profile-sangtong_tutorial-p0072" class="manual-ref-item" data-kind="profile"><span class="ref-kind">代表页</span><a href="../和声学手册.html#book-profiles">教材代表页 · 桑桐教程</a><br><span class="ref-text">手册将本页列为《桑桐教程》代表页；该书定位：汉语功能体系和声的主干教材：写作规则、T–S–D、七/九和弦、离调、交替、转调、调式与近现代概览。</span></li></ul></div>
+
+<div class="ocr-text">中国艺术教育大系/音乐卷和声学教程<br>
+56<br>
+六、九和弦<br>
+在七和弦的基础上再加置一个九度音，即构成九和弦，为五音和弦。九度音的增加使和弦的<br>
+组成因素更为复杂，具有明显的复合功能。例如属九和弦中，在属功能基础上包含了下属功能因<br>
+素。在转位后，和弦的功能意义将发生变化。<br>
+在四声部写作中，九和弦可省略三音或五音，或采用分解性、声部交换等方法构成。<br>
+各级九和弦中，较常用的是：属九和弦。<br>
+大调为大九和弦，小调为小九和弦。标记为：V9<br>
+例134<br>
+天九度<br>
+小九度<br>
+V9<br>
+V9<br>
+（1）属九和弦的特性<br>
+属九和弦属于高度叠置的和弦结构，由于音的叠置增加，在属和弦的基础上又产生了新的特<br>
+性，这些特性可分为三个方面：<br>
+①属九和弦的九度音是调式的下中音，属于下属功能范畴，它与五度音、七度音构成Ⅱ级结<br>
+构，因此在属九和弦中，下属功能的因素比属七和弦更有所增加，是属功能基础上具有复合功能<br>
+意义的和弦。<br>
+例135<br>
+D={P<br>
+②在属九和弦中，不协和的音程比属七和弦又有增多，其中包含了根音与七音的七度音程、根<br>
+音与九音的九度音程。另外还有三音与九音的七度音程、三音与七音的减五度音程，因此和声的紧<br>
+张度更为强烈。特别是小调的属九和弦，九音与根音是小九度音程，并且三音与九音是减七度音<br>
+程，还含有两个减五度（三音与七音、五音与九音)音程，它的紧张度比属大九和弦还要尖锐。<br>
+③属九和弦的九度音不能省略，在大调或小调中有大、小九度的差别，在目前自然音体系中有<br>
+暗示或区别大小调式的作用。九度音一般置于上方声部，避免九度音与根音相遇而成二度。<br>
+(2）属九和弦的应用方法<br>
+①属九和弦有五个音，在四声部写作中需省略一音，成为不完全的V（在实际作品中常用<br>
+完全的属九和弦），通常省略五音。有时也省略三音，省略三音后，构成属音与Ⅱ的结合。省略七<br>
+音后，九度音更多具有和弦外音的意义。</div>
+
+---
+
+<!-- PAGE:103 -->
+<a id="p0103"></a>
+## PDF p.103
+
+![桑桐《和声学教程》 PDF p.103（整页影印）](../assets/books/sangtong_tutorial/p0103.jpg)
+
+<!-- MANUAL-REFS:p0103 -->
+<div class="manual-refs"><strong>手册使用本页</strong><ul><li id="ref-prose-cite-sangtong_tutorial-p0103-1-p0103" class="manual-ref-item" data-kind="prose"><span class="ref-kind">正文引用</span><a href="../和声学手册.html#cite-sangtong_tutorial-p0103-1">手册正文引用</a><br><span class="ref-text">桑桐 PDF p.103–105 特别指出：除宫调式外，许多调式缺少导音，因此确立中心不能主要依赖属七，而要靠旋律终止感、结构位置与相应终止式。</span></li><li id="ref-profile-profile-sangtong_tutorial-p0103" class="manual-ref-item" data-kind="profile"><span class="ref-kind">代表页</span><a href="../和声学手册.html#book-profiles">教材代表页 · 桑桐教程</a><br><span class="ref-text">手册将本页列为《桑桐教程》代表页；该书定位：汉语功能体系和声的主干教材：写作规则、T–S–D、七/九和弦、离调、交替、转调、调式与近现代概览。</span></li></ul></div>
+
+<div class="ocr-text">第五章其他自然音调式和声<br>
+除人小调式外，尚有其他类型的自然调式。有些为各民族、民间音乐的调式，有些为欧洲古<br>
+代的调式<br>
+各类调式的区别，主要表现在两个方面其-一，在音列的数量方面，即根据它们在-一个八度<br>
+内所包含的调式音的数量而区分，如五声、六声、七声以及其他或多或少的音列等。其二，在音程<br>
+的结构方面，根据调式主音与其他各音之间、以及各相邻音之间的音程关系的不同而区分。例如<br>
+利底业调式与大调的差别为增四度音，多利亚调式与小调的差别为大六度音，与大调的差别为小<br>
+度音、小L度音。如果大调的六度为小六度，则称为“和声大调式”，小调的六度为大六度.上行<br>
+进人导音，则为“旋律小调式”，由于音程关系的不同而相互区别。<br>
+本教程所讲授的“其他自然音调式和声”，以三度叠置的和弦为基础，因而为七声自然音调式<br>
+体系范围主和弦有大三和弦或小三和弦两种，仍为大调与小调两类和声体系。但根据主音与<br>
+调式音列的不同音程关系特点而分六种调式，这六种调式根据不同的音乐风格而采用两类名称。<br>
+我国民族音乐风格的，称：宫、商、角、微、羽、变微音宫调式，欧洲音乐风格的，称：伊奥尼亚<br>
+（lonian）、多利亚（Ixorian）、弗里儿亚（Phrygian）、密克索-利底亚（Mixo－Lydian）、爱奥利亚<br>
+（Acolian）、利底业（Lydian)调式，这六类调式根据主和弦大小之不同而分为大调类三种与小调<br>
+类种<br>
+大调类：<br>
+（1）宫调式<br>
+伊奥尼亚<br>
+（和声材料与大调相同）<br>
+例224<br>
+喜<br>
+8<br>
+茗<br>
+8<br>
+8<br>
+8<br>
+8<br>
+VI°<br>
+C:1<br>
+I11<br>
+IV<br>
+V<br>
+VI<br>
+（2）微调式<br>
+密克索-利底亚<br>
+例225<br>
+8<br>
+8<br>
+8<br>
+8<br>
+8<br>
+8<br>
+8<br>
+IV<br>
+VI<br>
+VII<br>
+G:I<br>
+I<br>
+V<br>
+（3）变徽音宫调式<br>
+利底亚</div>
+
+---
+
+<!-- PAGE:125 -->
+<a id="p0125"></a>
+## PDF p.125
+
+![桑桐《和声学教程》 PDF p.125（整页影印）](../assets/books/sangtong_tutorial/p0125.jpg)
+
+<!-- MANUAL-REFS:p0125 -->
+<div class="manual-refs"><strong>手册使用本页</strong><ul><li id="ref-claim-scale-natural-modes-p0125" class="manual-ref-item" data-kind="claim"><span class="ref-kind">论点</span><a href="../和声学手册.html#claim-scale-natural-modes">调式、音阶与音级 · scale.natural-modes</a><br><span class="ref-text">手册提炼：自然七调式可由同一音列移位并更换中心音得到；中心音与调式名称共同决定音阶身份。</span></li></ul></div>
+
+<div class="ocr-text">第五章其他自然音调式和声109<br>
+复合调式的运用，可以进一步构成调式和声色彩的变化，使旋律与和声之间形成明暗不同的<br>
+色彩配合：并H由于旋律位置意义的变化，导致终止完满程度的不同效果。<br>
+下面是作品中应用复合调式的片断谱例：<br>
+例281<br>
+单姆斯基一柯萨科夫：《俄罗斯民歌100首》<br>
+上例的旋律为F大调，而和声用d羽调式，形成三度关系的结合。旋律的色彩明朗，而和声<br>
+背景的色彩却很柔和。<br>
+例282<br>
+J.瓦尔特（1496一1570)：《圣咏》<br>
+同音列调式交替是指在调式音列相同、宫音位置不变的情况下，调式的中心音改变。在下面<br>
+这一旋律中，前四小节的调式中心音很明显是g羽音，而后面四小节的调式中心音变为B宫音。<br>
+整个旋律的调式音列是同-一个六声调式，宫音位置没有变化。<br>
+例283<br>
+这-旋律属于羽—宫同音列交替调式。其调式音列为：<br>
+例284<br>
+羽<br>
+前主音<br>
+后主音<br>
+调式交替和声的基础<br>
+调式交替和声的基础是旋律调式中心音的交替变化。通过和声上终止式的处理，强调不同的调<br>
+式中心而构成调式交替和声，因此，不同调式中心的终止式和声进行是调式交替和声的主要特征，</div>
+
+---
+
+<!-- PAGE:131 -->
+<a id="p0131"></a>
+## PDF p.131
+
+![桑桐《和声学教程》 PDF p.131（整页影印）](../assets/books/sangtong_tutorial/p0131.jpg)
+
+<!-- MANUAL-REFS:p0131 -->
+<div class="manual-refs"><strong>手册使用本页</strong><ul><li id="ref-example-c04-p0131" class="manual-ref-item" data-kind="example"><span class="ref-kind">案例</span><a href="../和声学手册.html#example-c04">手册案例 C04 · 副属和弦：局部主音化</a><br><span class="ref-text">例290｜韦伯《自由射手》序曲<br>原书要点：副属和弦分别强化 III、V、VI，使局部像进入降E大调、g小调、降B大调的 V–I。<br>机制：副属和弦把目标和弦临时当作主音：它自身的导音或三全音指向目标和弦，目标出现后临时主音化结束。<br>读谱：从每个副属和弦看三全音或导音指向哪个目标和弦；目标一出现，临时主音化就结束。<br>用法：让某级和弦获得到达感时，在它前面写自己的 V(7)；目标出现后回到原调，避免临时中心持续过久。</span></li></ul></div>
+
+<div class="ocr-text">第二部分<br>
+离调与转调<br>
+第六章<br>
+离调一副属和弦与<br>
+副下属和弦(一)<br>
+一、概<br>
+東述<br>
+1.副属和弦与副下属和弦。<br>
+和弦、七和弦、九和弦、七-十三和弦与V级的三和弦、七和弦等结构）、各自的下属和弦（包括I级<br>
+三和弦，Ⅱ级三和弦、七和弦等结构）、或两者共同的支持，使这个和弦在一定时间内具有临时主<br>
+和弦的作用。而它们各自的属和弦与下属和弦，具有类似副调的属功能与下属功能意义，故称为<br>
+副属和弦与副下属和弦。下例中以副属和弦加强了调内(C小调)Ⅲ级、V级和VI级的和弦，类似<br>
+降E调、g小调和降B大调的属至主的进行。<br>
+例290<br>
+韦伯：《自由射于》序曲<br>
+VII<br>
+V/Vv<br>
+V/vIl<br>
+II1<br>
+V<br>
+VII<br>
+VI<br>
+(V/u)<br>
+I) (*B:VIV<br>
+V1<br>
+V<br>
+1) (g: VI<br>
+V<br>
+I)</div>
+
+---
+
+<!-- PAGE:132 -->
+<a id="p0132"></a>
+## PDF p.132
+
+![桑桐《和声学教程》 PDF p.132（整页影印）](../assets/books/sangtong_tutorial/p0132.jpg)
+
+<!-- MANUAL-REFS:p0132 -->
+<div class="manual-refs"><strong>手册使用本页</strong><ul><li id="ref-claim-secondary-dominant-definition-p0132" class="manual-ref-item" data-kind="claim"><span class="ref-kind">论点</span><a href="../和声学手册.html#claim-secondary-dominant-definition">副属和弦与离调 · secondary-dominant.definition</a><br><span class="ref-text">手册提炼：副属和弦把调内某一大三或小三和弦临时当主，以 V/x 或 vii°/x 加强它而不改变全局主调。</span></li><li id="ref-claim-secondary-dominant-targets-p0132" class="manual-ref-item" data-kind="claim"><span class="ref-kind">论点</span><a href="../和声学手册.html#claim-secondary-dominant-targets">副属和弦与离调 · secondary-dominant.targets</a><br><span class="ref-text">手册提炼：除主和弦外，调内自然大三、小三和弦都可成为副属或副属七的临时主和弦。</span></li><li id="ref-profile-profile-sangtong_tutorial-p0132" class="manual-ref-item" data-kind="profile"><span class="ref-kind">代表页</span><a href="../和声学手册.html#book-profiles">教材代表页 · 桑桐教程</a><br><span class="ref-text">手册将本页列为《桑桐教程》代表页；该书定位：汉语功能体系和声的主干教材：写作规则、T–S–D、七/九和弦、离调、交替、转调、调式与近现代概览。</span></li></ul></div>
+
+<div class="ocr-text">116中国艺术教育大系/音乐卷和声学教程<br>
+2.离调。<br>
+应用副属和弦与副下属和弦的和声进行后，得到加强的不是调内的主和弦而是其他各级和<br>
+弦，形成-种暂时进入另-一个调的现象，因而这种和声进行称之为“离调”。但实际上，所谓离调，<br>
+并没有真正离开原有的调，只是加强了调内其他各级和弦的作用。<br>
+在离调进行中，副属和弦或副下属和弦直接从属于它的临时主和弦，具有副属或副下属<br>
+的功能，但它又是原调某一级上含有变音的和弦；临时主和弦既是原调某一功能组的和弦.从<br>
+属于原调的功能体系，但它又为副属和弦或副下属和弦所支持而具有暂时的主和弦的作用，<br>
+这种情况构成了离调的和声进行在调性功能上的双重性。但它们的功能意义还是有主、次之<br>
+分，副属和弦与副下属和弦主要是临时主和弦的副属或副下属的功能，而临时主和弦主要是<br>
+原调的功能。<br>
+例291<br>
+门德尔松：《无言歌》作品14之4<br>
+Moderato<br>
+1例中第2小节第4拍，A大调Ⅲ级有导音化的三度音，成为其后V级和弦的属和弦。而第<br>
+2小节第3拍的VI级五六和弦，亦相应而具有V级和弦的下属Ⅱ级五六和弦的功能，成为副下属<br>
+和弦。级虽为其下属和弦与属和弦所支持，形成临时的升F小调和声进行，但由于和声进行<br>
+并未终结，而继续进人A大调的属七和弦至主和弦，因此它仍为A大调的V级，构成V一\一<br>
+1的终止式。但这--副属和弦的应用，增加了声部进行的倾向与和声色彩的变化，包括临时性调<br>
+性感觉的变化。<br>
+3.副属和弦的三个来源。<br>
+副属和弦的应用由于下列三种情况而产生。<br>
+（1）由于声部的半音进行而产生。<br>
+用时，即形成了副属和弦。如：<br>
+例292<br>
+（2）由于强调和声的调性功能，属和弦到主和弦成为一种确定调性的典型和声进行.在和声<br>
+处理中将这种和声进行扩展到调内其他各级和弦上去而形成了副属和弦。<br>
+（3）由于作品中调性发展的处理，应用到段落的内部，使段落的内部也具有某种调性发展的<br>
+意义，丰富和声的效果，因而产生了离调与副属和弦。</div>
+
+---
+
+<!-- PAGE:171 -->
+<a id="p0171"></a>
+## PDF p.171
+
+![桑桐《和声学教程》 PDF p.171（整页影印）](../assets/books/sangtong_tutorial/p0171.jpg)
+
+<!-- MANUAL-REFS:p0171 -->
+<div class="manual-refs"><strong>手册使用本页</strong><ul><li id="ref-claim-sequence-transposition-p0171" class="manual-ref-item" data-kind="claim"><span class="ref-kind">论点</span><a href="../和声学手册.html#claim-sequence-transposition">模进与五度循环 · sequence.transposition</a><br><span class="ref-text">手册提炼：模进把同一和声单元整体移位，可保持局部连接语法，同时累积离开原调的压力。</span></li></ul></div>
+
+<div class="ocr-text">第九章副属和弦与副下属和弦（四）155<br>
+例388<br>
+瓦格纳：《名歌手》<br>
+VV__+V/(V)<br>
+II<br>
+D:<br>
+V/4<br>
+例389<br>
+VI/V<br>
+VII,<br>
+VVI+V/(V）<br>
+1L/<br>
+(VVIl，<br>
+Vll )<br>
+VVIVVl+VI/V<br>
+2.离调模进（半音模进）<br>
+应用副属和弦和副下属和弦（包括副重属和弦）的模进，具有离调作用和声部半音化进行的<br>
+特征.故称为离调模进或半音模进，以区别于自然音体系范围的调内模进。离调模进仍为本调范<br>
+畴模进音组中各临时主和弦（不论出现与否），仍属于本调的功能<br>
+模进音组的和声进行有正格进行、完全正格进行、半成进行、变格进行、副重属和弦与副属和<br>
+弦相结合的正格或完全正格进行、属和弦的连续等。和自然音体系的模进相同，模进音组可采用<br>
+度、度、四度等各类音程的上、下移位<br>
+包含有临时主和弦的模进在离调的作用上比较明显，局部的中心和弦作用也比较清晰：不<br>
+包含临时主和弦的半成进行的模进.特别是在应用副下属Ⅱ级七和弦与副属\级七和弦的组合<br>
+时，其调性意义比较模糊，有时只具有暗示某些临时主和弦的作用。如果模进的和声组合由副属<br>
+和弦与它的阻1碍解决、不正规解决所构成，则亦能使调性模糊，因此，这些离调模进实际是使和<br>
+声的调性在·段时间内处于模糊状态的·-种手法，它主要是加强了半音进行与和声色彩变化的<br>
+作用，增加音乐发展过程中的紧张性，是音乐的一种展开性处理方法</div>
+
+---
+
+<!-- PAGE:178 -->
+<a id="p0178"></a>
+## PDF p.178
+
+![桑桐《和声学教程》 PDF p.178（整页影印）](../assets/books/sangtong_tutorial/p0178.jpg)
+
+<!-- MANUAL-REFS:p0178 -->
+<div class="manual-refs"><strong>手册使用本页</strong><ul><li id="ref-claim-tonicization-time-structure-p0178" class="manual-ref-item" data-kind="claim"><span class="ref-kind">论点</span><a href="../和声学手册.html#claim-tonicization-time-structure">临时主音化（离调） · tonicization.time-structure</a><br><span class="ref-text">手册提炼：离调与转调的界限主要取决于持续时间、结构位置与终止确认；单靠一个变化和弦不能判定转调。</span></li><li id="ref-prose-cite-sangtong_tutorial-p0178-1-p0178" class="manual-ref-item" data-kind="prose"><span class="ref-kind">正文引用</span><a href="../和声学手册.html#cite-sangtong_tutorial-p0178-1">手册正文引用</a><br><span class="ref-text">时间是最重要的因素之一（《概述》PDF p.313）；桑桐 PDF p.178 则把结构位置与终止确认作为区分离调、交替、转调的关键。实际作品中存在连续过渡，分析应说明证据强弱，而不是强行二选一。</span></li><li id="ref-profile-profile-sangtong_tutorial-p0178" class="manual-ref-item" data-kind="profile"><span class="ref-kind">代表页</span><a href="../和声学手册.html#book-profiles">教材代表页 · 桑桐教程</a><br><span class="ref-text">手册将本页列为《桑桐教程》代表页；该书定位：汉语功能体系和声的主干教材：写作规则、T–S–D、七/九和弦、离调、交替、转调、调式与近现代概览。</span></li></ul></div>
+
+<div class="ocr-text">第十章 近关系调的转调（一)<br>
+一、绪论<br>
+1.转调的概念。<br>
+从·个调性转入到另--个调性的和声进行称转调，它是音乐作品中调性发展的重要方式之<br>
+，也是构成曲式的一种手段。<br>
+音乐作品中调性发展的方式大致可分为三类：<br>
+离调一-这是在--个调性内部的局部的调性发展方式.它主要通过副属和弦、副下属和弦的<br>
+应用而造成和弦功能暂时的转换而构成，它处于结构内部，具有调性发展上的临时性、经过性与<br>
+未完成性的特点。<br>
+同主音大小调交替一一主音的音高不变，只改变调式结构，扩充调式音列，成为同一-调性中<br>
+心的不同调式色彩的对比变化<br>
+以1两种是调性内部调式音列与和声的扩充，也是调性范围的扩充，而未转换调性。<br>
+转调-一-改变调性中心，转换和声的功能意义，含有新调的变音为特征的调性变化方式.并<br>
+通过结构的条件使新调性中心得到肯定。这是作品中调性发展的主要形式<br>
+它与离调的差别，主要在于所处的结构地位而带来的新调性稳定程度上的差别。转调发生<br>
+于段落的结束部分或新段落的呈示部分，有完满的终止或明确的和声进行来确立或呈示新调性。<br>
+而离调则如上所述，发生在结构内部，临时主和弦缺乏肯定的新调性中心的作用<br>
+处于段落的结束部位，除了结构部位的差别外，和声进行上完满与不完满的处理也是相互区别<br>
+的因素之·、当然，这种区别并非是绝对的，但在应用时需要加以注意。<br>
+例398<br>
+海顿：《第交响曲》<br>
+Allegretto</div>
+
+---
+
+<!-- PAGE:179 -->
+<a id="p0179"></a>
+## PDF p.179
+
+![桑桐《和声学教程》 PDF p.179（整页影印）](../assets/books/sangtong_tutorial/p0179.jpg)
+
+<!-- MANUAL-REFS:p0179 -->
+<div class="manual-refs"><strong>手册使用本页</strong><ul><li id="ref-claim-modulation-confirmation-p0179" class="manual-ref-item" data-kind="claim"><span class="ref-kind">论点</span><a href="../和声学手册.html#claim-modulation-confirmation">转调体系：类型、距离与确认 · modulation.confirmation</a><br><span class="ref-text">手册提炼：转调必须由新调的和声进行与终止式确认；短促强调或单一副属和弦通常只是离调。</span></li></ul></div>
+
+<div class="ocr-text">第十章近关系调的转调（·）163<br>
+2.构成转调的条件。<br>
+转调是一种乐思发展上的艺术于段：因此，转调的构成、新调的建立要与乐思的发展相结<br>
+合，是乐思发展自然地引出的结果.它常用于一个乐思的结束处或一个新的乐思的呈示处：<br>
+转调，不仅是一种和声上的手法，它的构成还要与节奏、曲式结构与旋律进行等条件相结合，<br>
+才能形成-一种完满的转调作用。<br>
+现将构成转调的条件归纳如下：<br>
+（1）在结构方面，新调的和声出现在重要的结构位置，例如段落的结束部分或新的段落的开<br>
+始部分。<br>
+（2）在旋律方面表现出新调的旋律进行特性，或趋向停顿于新调的结束进行。旋律的落音<br>
+与和声内含的变化对于转调有重要的意义。<br>
+（3）在和声方面要在削弱原调性的和声功能意义的过程中加强新调的和声功能作用，采用<br>
+新调的明确、肯定的终止式，或者直接以新调的、明确肯定的和声加以呈示。和声方面的作用是<br>
+构成转调的重要条件。<br>
+例399<br>
+莫扎特：《钢琴奏鸣曲》作品330<br>
+22y<br>
+上例从F大调转向（大调，新调处于段落的结束位置：自第二乐句开始处即转向新调.在<br>
+段落结束处以完满的正格终止结束在新调。旋律也表现出鲜明的新调的特性。<br>
+以上项条件的结合构成了转调，但新调性的肯定程度与稳定程度还需要根据新调的时<br>
+值长短与和声处理上的明确程度与新调出现时主题材料的重要性和结构位置的价值而有所<br>
+区别。<br>
+3.转调在音乐作品中的作用。<br>
+转调是音乐创作中和声处理上的--种重要手法，它在作品中可以具有下列作用：<br>
+（1）通过转调，通过调性色彩的变化来表现音乐内容，塑造音乐形象。<br>
+（2）通过转调，通过调性的发展避免和声的单调与静止作用，推动音乐的发展，构成乐曲发<br>
+展的起伏与层次，形成乐曲各部分之间的对比与平衡。它是构成曲式的一个重要因素，曲式结构<br>
+的不同部分要求在调性发展上的统---、变化与对比。<br>
+（3）通过转调，通过调性的色彩变化与功能作用，可以使音乐作品中的和声具有丰富的色彩</div>
+
+---
+
+<!-- PAGE:180 -->
+<a id="p0180"></a>
+## PDF p.180
+
+![桑桐《和声学教程》 PDF p.180（整页影印）](../assets/books/sangtong_tutorial/p0180.jpg)
+
+<!-- MANUAL-REFS:p0180 -->
+<div class="manual-refs"><strong>手册使用本页</strong><ul><li id="ref-claim-modulation-distance-p0180" class="manual-ref-item" data-kind="claim"><span class="ref-kind">论点</span><a href="../和声学手册.html#claim-modulation-distance">转调体系：类型、距离与确认 · modulation.distance</a><br><span class="ref-text">手册提炼：调性远近应综合调号、共同和弦、主音距离与转调方法来判定，不能只看调号差。</span></li></ul></div>
+
+<div class="ocr-text">164中国艺术教育大系/音乐卷和声学教程<br>
+对比与动力作用。<br>
+以1是转调在音乐作品中的三项主要作用。这些作用，通过调性关系的对比、调性色彩的对<br>
+比、调式的对比、调性呈现方式的对比与转调方法的对比等等来达到。<br>
+4.调性的关系。<br>
+在·首音乐作品中，如果有转调，就会包含有两个以上调性，而其中主要主题呈示的调性一<br>
+般是支配整个作品的主要调性，其他的调性属于副调，从属于主要调性。主要调性与副调之间的<br>
+关系等方面，而调性之间的远近关系是调性关系中的首要问题。<br>
+调性的远近关系<br>
+--个调性犹如一-个家族，它包含有自然音体系的各级和弦，还包含有变音体系的各级和弦。<br>
+而严格的自然音体系是一个调性的基本范围，变音体系是一个调性的扩展范围。一个调性以主<br>
+和弦为代表，因此确定调性之间的远近关系首先是看新调的主和弦在原调中属于哪一种调式体<br>
+系范围，凡新调的主和弦是原调自然音体系的各级大、小三和弦者，是近关系（自然音体系关系）<br>
+调：凡新调的主和弦是原调变音体系各级大、小三和弦者，是远关系(变音体系关系)调。<br>
+以（大调为原调的近关系调有：（G大调、F大调、a小调、c小调、d小调。<br>
+以（大调为原调的远关系调有：<br>
+A大调、f小调、E大调、c小调;bA大调、f小调；bE大调、c小调;bB大调、g小调;D大调、b<br>
+小调;bI)大调、bb小调;B大调、g小调;G大调、be小调;"F大调、d小调。<br>
+可以用一个五度圆周表来说明调性之间的关系，这个表一般称之为“调性关系五度圈”。<br>
+降号方向<br>
+→升号方向<br>
+B<br>
+GF<br>
+外圈为大调，内圈为它们的关系小调(平行小调)。<br>
+从1述五度圆周表中可以看出，一个调性的上、下五度关系与它们的平行调属于近关系调：<br>
+例如：<br>
+上五度G大调<br>
+一—e小调<br>
+（大调(原调)<br>
+a小调<br>
+下i度F大调一一d小调<br>
+其他的属于远关系调，而在远关系调中，根据它们与原调主音的音程关系，按五度圆周的程</div>
+
+---
+
+<!-- PAGE:181 -->
+<a id="p0181"></a>
+## PDF p.181
+
+![桑桐《和声学教程》 PDF p.181（整页影印）](../assets/books/sangtong_tutorial/p0181.jpg)
+
+<!-- MANUAL-REFS:p0181 -->
+<div class="manual-refs"><strong>手册使用本页</strong><ul><li id="ref-claim-pivot-common-chord-p0181" class="manual-ref-item" data-kind="claim"><span class="ref-kind">论点</span><a href="../和声学手册.html#claim-pivot-common-chord">中介和弦与转调 · pivot.common-chord</a><br><span class="ref-text">手册提炼：中介和弦转调以两调共有的和弦为连接点；同一音集从旧调功能重释为新调功能，再由新调的属—主或终止式确认。</span></li></ul></div>
+
+<div class="ocr-text">第十章近关系调的转调（一）165<br>
+序，区分为：上、下大小三度关系及其平行调；上、下大二度关系及其平行调；上、下小二度关系及<br>
+其平行调；增四度(或减五度)关系及其平行调。<br>
+例如：<br>
+上、下大二度关系：D、b;bB、g<br>
+上、下大小三度关系：A、f;E、co<br>
+（大调(原调)<br>
+bE、c;bA、f.<br>
+上、下小二度关系：B、g；bI)、bb。<br>
+#F、d、<br>
+以上是调性远近关系的基本划分方法。另外，根据两调之间共同音、共同和弦的数量的多少<br>
+而区分调性之间相互联系的程度，凡主和弦与主和弦之间有共同音者说明在调性中心方面的联<br>
+系程度较密，凡其他共同和弦多的，说明两个调性在调式范围内的联系因素较多。<br>
+调性的功能关系<br>
+以主要调性为中心的各个调性（以主和弦为代表)之间，如同--个调性内以主和弦为中心的<br>
+各级三和弦-一样，具有各自的功能属性，构成调性的功能关系。<br>
+主要调性是主调（TonicKcy)，具有主功能，属于稳定的调性。<br>
+它的上方五度的调性，是属调，与属和弦具有相同的功能。<br>
+它的下方五度的调性，是下属调，与下属和弦具有相同的功能。<br>
+其他有中音调、下中音调、上主音调等。为了简化调性的功能属性的分类，可以将调性的功<br>
+能属性总的分为三类：主功能调、属功能系统调与下属功能系统调。调性的功能属性是和弦属<br>
+性的扩大，但是又有不同。和弦的功能属性是个别和弦本身的作用，而调性的功能属性则是以主<br>
+和弦为代表，包括了整个调式和声体系的范围。并且，副调的主和弦由于它的卫星和弦的支持而<br>
+具有相对稳定的功能，因此副调性的功能具有双重性，它既属于某一不稳定的功能，又具有相对<br>
+稳定的功能：<br>
+了解调性的功能关系是有助于在作品中设计好调性布局与掌握调性之间对比作用的一个<br>
+方面。<br>
+5.转调的方法。<br>
+从一个调性进人到另一个调性有各种方式与步骤，有时平顺地、逐渐地转入新的调性，有时<br>
+则突然的改变调性，这些都属于不同的转调方法。<br>
+转调的方法很多，总的原则是利用调性之间音的、旋律的与和声的各种联系的因素来作为调<br>
+性转换中的媒介。<br>
+下面是一些主要的转调方法。<br>
+共同和弦转调。<br>
+这是利用两调之间共同的和弦作为媒介进行转调的方法。通过这些共同和弦向新调转化、<br>
+转化的方法有下述四种：<br>
+（1）-个调的自然音和弦等于另一个调的自然音和弦<br>
+（2）--个调的自然音和弦等于另---个调的变音和弦。</div>
+
+---
+
+<!-- PAGE:221 -->
+<a id="p0221"></a>
+## PDF p.221
+
+![桑桐《和声学教程》 PDF p.221（整页影印）](../assets/books/sangtong_tutorial/p0221.jpg)
+
+<!-- MANUAL-REFS:p0221 -->
+<div class="manual-refs"><strong>手册使用本页</strong><ul><li id="ref-claim-modal-interchange-borrowed-p0221" class="manual-ref-item" data-kind="claim"><span class="ref-kind">论点</span><a href="../和声学手册.html#claim-modal-interchange-borrowed">同主音调式交替（借用和弦） · modal-interchange.borrowed</a><br><span class="ref-text">手册提炼：同主音交替以主音不变为前提，把另一调式的特性音级与和弦借入当前调式，是变化和弦的重要来源。</span></li><li id="ref-profile-profile-sangtong_tutorial-p0221" class="manual-ref-item" data-kind="profile"><span class="ref-kind">代表页</span><a href="../和声学手册.html#book-profiles">教材代表页 · 桑桐教程</a><br><span class="ref-text">手册将本页列为《桑桐教程》代表页；该书定位：汉语功能体系和声的主干教材：写作规则、T–S–D、七/九和弦、离调、交替、转调、调式与近现代概览。</span></li></ul></div>
+
+<div class="ocr-text">第三部分<br>
+同主音大小调交替和声体系<br>
+第十四章同主音大小调交替和声体系(一)<br>
+在音乐的历史发展过程中，形成了各种类型的调式，它们一方面具有相对稳定的特征，同时<br>
+也处于不断发展与相互渗透影响的状态，形成了调式的交替与混合。<br>
+大小调和声体系中，大调与小调虽然早已成为两类典型的和声调式，但在创作实践中，它们<br>
+仍然不断地相互渗透影响。这种影响表现在这类调式的特征音出现在另一类调式中，例如小调<br>
+中的导音、旋律小调式中的大六度音等，都具有大调式的特征。而和声大调式中的小六度音又具<br>
+有小调式的特征。到19世纪，由于和声色彩作用的强调，这种交替影响获得进一步的扩大，调式<br>
+特征音的交替包括了调式的Ⅲ级、\级、级等各音，由于这些交替变化是在同一调性-一主音<br>
+不变的情况下发生的，因此，称为同主音大小调交替。这种交替的结果使大调中出现了同主音小<br>
+调的和弦，而在小调中出现了同主音大调的和弦，都包含了变音。由于这些变音是由同主音调式<br>
+交替而产生，故称为同主音大小调交替变音体系。这些变音可以属于旋律性的，也可以属于和声<br>
+性的，构成同主音大小调交替和声。<br>
+同主音大小调交替是音乐中调式思维复杂化的一种表现，它是构成作品时代风格特征、扩人<br>
+和声语汇、丰富和声色彩变化的重要手法。它造成两类调式的合并，形成了扩大的调式体系。<br>
+在大调中运用同主音小调的和弦，称为交替大-小调。在小调中运用同主音大调的和弦，称<br>
+为交替小-大调<br>
+同主音大小调的交替还可以进一步的扩展，形成同主音调与平行调的相互混合交替，产生关<br>
+系更为复杂的变音和弦。<br>
+综括以上所述调式交替情况，同主音调式交替可分为以下三类：<br>
+（1）同主音、同类型的调式交替，即混合调式。这种调式交替发生在同类型的各自然调式之<br>
+间，或者在大、小调式内吸收同类型其他自然调式的特征音。<br>
+（2）同主音大小调的交替，属于两种不同类型的调式的相互交替。</div>
+
+---
+
+<!-- PAGE:222 -->
+<a id="p0222"></a>
+## PDF p.222
+
+![桑桐《和声学教程》 PDF p.222（整页影印）](../assets/books/sangtong_tutorial/p0222.jpg)
+
+<!-- MANUAL-REFS:p0222 -->
+<div class="manual-refs"><strong>手册使用本页</strong><ul><li id="ref-claim-modal-interchange-flat-degrees-p0222" class="manual-ref-item" data-kind="claim"><span class="ref-kind">论点</span><a href="../和声学手册.html#claim-modal-interchange-flat-degrees">同主音调式交替（借用和弦） · modal-interchange.flat-degrees</a><br><span class="ref-text">手册提炼：大调借用中最常见的是含 ♭6 的 iv、♭VI、iiø7、vii°7；♭3 与 ♭7 进一步扩展色彩。</span></li></ul></div>
+
+<div class="ocr-text">206中国艺术教育大系/音乐卷和声学教程<br>
+（3）同主音调与平行调的相互混合交替，是大调与它的平行大调（平行小调的同主音大调）、<br>
+小调与它的平行小调(平行大调的同名小调)的交替。<br>
+本章讲述第二类同主音大小调交替的和声应用方法。<br>
+一、同主音大小调交替<br>
+同主音自然大调与自然小调之间，I级、Ⅱ级、IV级与V级各音为共同音，Ⅲ级、VI级、I级有<br>
+大小之异：和声小调式的导音与大调一致。大调引人同主音小调后的调式音列如下，其中包含<br>
+有Ⅲ、bVI、I音：<br>
+例465<br>
+在这一音列上所构成的各级三和弦如下表：<br>
+例466<br>
+明<br>
+8<br>
+vI°'vI<br>
+C:1<br>
+I<br>
+II<br>
+I1°<br>
+IⅢ<br>
+IV<br>
+V<br>
+V<br>
+VI<br>
+bVI<br>
+大调中的这一和声系列称交替大小调和声：<br>
+小主和弦。<br>
+Ⅱ级减三和弦。<br>
+降Ⅲ级大三和弦。<br>
+小下属和弦。<br>
+小属和弦。<br>
+降\级大三和弦。<br>
+除И级大三和弦。<br>
+下例中，在A大调内引I用了A小调的IⅣV级、VI级与Ⅲ级的和声，开始与结束为A大调主和<br>
+弦。显示了大调内的交替和声特点。<br>
+例467<br>
+李斯特：《幻象》<br>
+交替大-小调和声处理方法。<br>
+在大调中运用同主音小调的和弦是从应用含有V音的下属功能组和弦开始，其中包括小</div>
+
+---
+
+<!-- PAGE:234 -->
+<a id="p0234"></a>
+## PDF p.234
+
+![桑桐《和声学教程》 PDF p.234（整页影印）](../assets/books/sangtong_tutorial/p0234.jpg)
+
+<!-- MANUAL-REFS:p0234 -->
+<div class="manual-refs"><strong>手册使用本页</strong><ul><li id="ref-prose-cite-sangtong_tutorial-p0234-1-p0234" class="manual-ref-item" data-kind="prose"><span class="ref-kind">正文引用</span><a href="../和声学手册.html#cite-sangtong_tutorial-p0234-1">手册正文引用</a><br><span class="ref-text">大调借用同主音小调资源，最常见的是含 ♭6 的 iv、♭VI、iiø7、vii°7；♭3 与 ♭7 进一步扩展为 ♭III、♭VII（《概述》PDF p.374–377）。小调借用大调常表现为升高三音、六音、七音，形成“交替小—大调”（桑桐 PDF p.234）。</span></li></ul></div>
+
+<div class="ocr-text">第十五章同主音大小调交替和声体系（二）<br>
+二、同主音小大调交替<br>
+在小调中吸收同主音大调的和声应用比较早，例如为了引用导音而将V级音升高半音，形成<br>
+了大的属和弦与VI级减三和弦，构成和声小调式。随着为了避免增二度进行而引进了大六度的<br>
+V级音，产生了旋律小调式，并形成了大的下属和弦。另外，在小调乐曲的段落结束处，为了获得<br>
+稳定的和声效果而应用大三度音。这些情况都说明了大调对于小调的影响，或者说是小调向大<br>
+调的发展。19世纪以后，小调中升高半音的Ⅲ级与V级音的应用，更超出了上述范围而作进一<br>
+步扩展，成为完全的交替小-大调和声体系。其中，Ⅲ级与*V级小三和弦是交替小-大调中具有<br>
+特征意义的和弦。它们都包含了升Ⅲ级音。这两个和弦都由原来的和弦变为小三和弦，因此，它<br>
+们的应用为小调带来更多暗淡的和声色彩。这与小调的属和弦与下属和弦由原来的小三和弦变<br>
+为大三和弦而增加明朗的和声色彩正好相反。<br>
+交替小-大调和声处理方法。<br>
+在交替小-大调和声的各级和弦中，属功能组的√、I，已在和声小调式中应用；下属和声组<br>
+的IV级大三和弦与Ⅱ级小三和弦已在商调式（多利亚调式)中应用，方法相同，不再另述。<br>
+下面讲述Ⅲ级与VI级小三和弦、主大三和弦的应用方法。<br>
+1.“Ⅲ级小三和弦<br>
+这个和弦包含了升Ⅲ级音与导音，导音的性质仍保持，因此，具有属功能的意义，特别在第一<br>
+转位时，起代替属和弦的作用。一般不重复导音。<br>
+2.V级小三和弦<br>
+这个和弦包含了V级与Ⅲ级音，同主音大调的下中音和声功能非常明显，因此主要起和声<br>
+色彩变化的作用，较少功能意义。重复根音或三度音。<br>
+这两个和弦有下列一些应用方法：<br>
+（1）作为正格进行或变格进行的变体或代替形式，进人主和弦。Ⅲ级和弦常用第一转位形<br>
+式以突出低音部属音的作用。这两个和弦亦用原位的形式。它们与主和弦连接时，Ⅲ音半音进<br>
+入自然Ⅲ级音。<br>
+例498<br>
+8</div>
+
+---
+
+<!-- PAGE:268 -->
+<a id="p0268"></a>
+## PDF p.268
+
+![桑桐《和声学教程》 PDF p.268（整页影印）](../assets/books/sangtong_tutorial/p0268.jpg)
+
+<!-- MANUAL-REFS:p0268 -->
+<div class="manual-refs"><strong>手册使用本页</strong><ul><li id="ref-claim-prolongation-sustained-dominant-p0268" class="manual-ref-item" data-kind="claim"><span class="ref-kind">论点</span><a href="../和声学手册.html#claim-prolongation-sustained-dominant">延长、层次与曲式 · prolongation.sustained-dominant</a><br><span class="ref-text">手册提炼：属持续音把属功能保持在同一低音上，常用于再现前的属准备，延迟并强化结构回归。</span></li></ul></div>
+
+<div class="ocr-text">252中国艺术教育大系/音乐卷和声学教程<br>
+2.属持续音。<br>
+属持续产具有属功能的意义.它使音乐保持不稳定与开放性的效果，并有倾向于主和弦的要<br>
+求，因此.属持续音主要应用于需要加强导向主和弦的出现以及延伸属功能的地位。<br>
+（1）应用于乐曲的引子部分，保持不稳定的作用，引出主题。<br>
+（2）应用于最后结束的主和弦之前，增长不稳定的倾向，延伸不稳定的和声，准备最后的结束。<br>
+（3）用于新的段落、新的主题出现之前，用新调的属持续音作为准备。<br>
+（4）用于主题再现前，在经过了调性与和声的发展后，进人主调的属持续音，准备回到原调性。<br>
+（5）在小型乐曲的中部，为了保持其不稳定性，用属持续音作为和声基础。<br>
+3.其他调式音级的持续音。<br>
+19世纪中叶以后，为了增加和声的色彩与紧张度，开始应用其他调式音级作为持续音：<br>
+有用主和弦的三音作持续音的，这类持续音有一定的稳定性，但又有较强的紧张度。<br>
+也有用下属产作持续音的，这类持续音属于不稳定作用。有时这一下属音是属七和弦的七<br>
+变音，这更增加和声的不稳定性与紧张性。<br>
+4.其他声部的持续音。<br>
+持续音除常用在低音部外，还可以应用在其他声部，较多用在高音部，也用在内声部。这些<br>
+称保持音．高音部的保持音起--种固着、静止的声部作用，真正的旋律声部是持续音下方的声<br>
+部，它也有--定的功能意义，并有将各个和弦联系起来的作用。<br>
+重要。<br>
+例583<br>
+普劳特<br>
+出<br>
+例583中有高音部的属保持音、低音部的属持续音与主持续音。</div>
+
+---
+
+<!-- PAGE:276 -->
+<a id="p0276"></a>
+## PDF p.276
+
+![桑桐《和声学教程》 PDF p.276（整页影印）](../assets/books/sangtong_tutorial/p0276.jpg)
+
+<!-- MANUAL-REFS:p0276 -->
+<div class="manual-refs"><strong>手册使用本页</strong><ul><li id="ref-claim-augmented-sixth-definition-p0276" class="manual-ref-item" data-kind="claim"><span class="ref-kind">论点</span><a href="../和声学手册.html#claim-augmented-sixth-definition">增六和弦 · augmented-sixth.definition</a><br><span class="ref-text">手册提炼：增六和弦以增六度音程半音向外解决到属音，是强属前和弦，包含意大利、法国、德国三类常见形态。</span></li></ul></div>
+
+<div class="ocr-text">260中国艺术教育大系/音乐卷和声学教程<br>
+一、重属变和弦<br>
+1.概述<br>
+在各类重属和弦（重属和弦、七和弦，重属I级三和弦、七和弦等)中、将调式的\级音（即<br>
+重属的h度音、重属I级的三度音)降低半音(在小调是将调式V级音还原），加强进人属音（主和<br>
+弦的五度音）的倾向，即构成重属变和弦。<br>
+重属变和弦有下列各种形式：<br>
+例596<br>
+b<br>
+8<br>
+（期）<br>
+#*8<br>
+()<br>
+V/v<br>
+bsV/N<br>
+bsv a/<br>
+MIA<br>
+bsV/v<br>
+bsvt/v<br>
+C大调：<br>
+c小调：<br>
+8）<br>
+（）<br>
+V/ybVI/v<br>
+b-/v<br>
+Vll/v<br>
+Vlx/vbVIl/v<br>
+3VI1/<br>
+VI7/v<br>
+其中的特性音程，在属和弦内为三音与五音之间的减三度、转位后为增六度。在I级和弦内<br>
+为根音与：音之间的减三度或增六度。由于这些和弦在应用中常排列为增六度形式，故通常总<br>
+称为：增六和弦<br>
+（1）"\/V.降Ⅱ音的重属和弦，第二转位为"增四六和弦，但应用较少。<br>
+（2）2V/\，降五音的重属七和弦，原位与第二转位均有应用，其第二转位称“增三四和<br>
+弦”、俗称"法学西增六和弦”<br>
+（3））：\I/V，降三音的重属\级三和弦，常用第-转位，称“增六和弦”，俗称“意大利六和<br>
+弦”<br>
+（4）”I--/\，降三音的重属\级减七和弦，常用第一转位，称“增五六和弦”，俗称“德意志<br>
+六利弦”<br>
+（5）？：VI/\，降音的重属I级半减七和弦，常用第--转位，称“倍增五六和弦"，因其中包<br>
+含有增五度音。<br>
+除(5)外，其他四种重属变和弦，在同主音大小调中都共同，只是在小调中，V级音为自然音：<br>
+2.应用方法<br>
+在重属变和弦的前面可应用下列各类和弦：<br>
+（1）下属功能组和弦（包括自然和弦与同主音大小调交替和弦）、重属和弦等。进人变音时，<br>
+采取同声部半音进行的方法。共同音保持。<br>
+（2）主和弦。！<br>
+进人变音，可采取级进或适当的跳进。<br>
+（3）属和弦。</div>
+
+---
+
+<!-- PAGE:293 -->
+<a id="p0293"></a>
+## PDF p.293
+
+![桑桐《和声学教程》 PDF p.293（整页影印）](../assets/books/sangtong_tutorial/p0293.jpg)
+
+<!-- MANUAL-REFS:p0293 -->
+<div class="manual-refs"><strong>手册使用本页</strong><ul><li id="ref-claim-augmented-sixth-resolution-p0293" class="manual-ref-item" data-kind="claim"><span class="ref-kind">论点</span><a href="../和声学手册.html#claim-augmented-sixth-resolution">增六和弦 · augmented-sixth.resolution</a><br><span class="ref-text">手册提炼：增六度的两个外音半音向外扩张到八度属音；上方音偶尔可下行成为 V7 的七音。</span></li></ul></div>
+
+<div class="ocr-text">第二十章变和弦（二）277<br>
+例643<br>
+#VI<br>
+#VI2<br>
+#5VI12<br>
+C:<br>
+它可以解决到主和弦。也可以解决到属和弦，五音与七音进入属音，具有重属变和弦的特点。<br>
+例644<br>
+8<br>
+8<br>
+8<br>
+8<br>
+8<br>
+8<br>
+由于瓦格纳作品中喜用这类变和弦，故人们亦称为“瓦格纳和弦”，上例中的第三种是典型的<br>
+处理方法，增六度解决至八度（属音），另两声部保持至属和弦，为属和弦之三音与五音。如解决<br>
+至属七和弦时，则IV级音还原至自然IV级音（属七和弦的七度音）。<br>
+例645<br>
+同时含有Ⅱ、Ⅱ级音的属变和弦<br>
+在属和弦中同时含有Ⅱ级与Ⅱ级音的变和弦，是在十九世纪后期开始应用的变和弦。在<br>
+大调中应用。<br>
+由于同时含有升、降Ⅱ级音，因此，三和弦中有四个组成音，七和弦有五个组成音，九和弦则<br>
+有六个组成音，这些组成音可构成全音阶。<br>
+双重变化的属和弦在音的排列上一般采取Ⅱ级音在高音部或上方声部，bⅡ级音在低音部<br>
+或下方声部。Ⅱ级音进人主和弦三音，bⅡ级音至主和弦根音。<br>
+双重变化的属和弦可为三和弦、七和弦或九和弦。它们解决至主和弦。原位或降五音在低<br>
+音位置应用较多。<br>
+在双重变化的属三和弦中包含有增六度(减三度)与增五度。双重变化的属七和弦中包含有<br>
+两个增六度(减三度)。在这类变和弦中,还包含有增二和弦，因此,声部半音化更多，音响效果紧<br>
+张度强，并有特殊的色彩。<br>
+例646</div>
+
+---
+
+<!-- PAGE:300 -->
+<a id="p0300"></a>
+## PDF p.300
+
+![桑桐《和声学教程》 PDF p.300（整页影印）](../assets/books/sangtong_tutorial/p0300.jpg)
+
+<!-- MANUAL-REFS:p0300 -->
+<div class="manual-refs"><strong>手册使用本页</strong><ul><li id="ref-claim-neapolitan-definition-p0300" class="manual-ref-item" data-kind="claim"><span class="ref-kind">论点</span><a href="../和声学手册.html#claim-neapolitan-definition">拿波里和弦（♭II） · neapolitan.definition</a><br><span class="ref-text">手册提炼：拿波里和弦是降低二级音上建立的大三和弦，常以第一转位出现并承担属前功能。</span></li></ul></div>
+
+<div class="ocr-text">第二十一章变和弦 (三)<br>
+四、下属变和弦<br>
+含有Ⅱ级音、Ⅱ级音的下属和弦为下属变和弦。在大调的下属变和弦常同时含有VI级<br>
+音。在小调中尚有含IV级音的下属变和弦。下属变和弦增加声部的半音倾向，丰富了下属组的<br>
+和声种类，但并不改变原有的功能属性。<br>
+Ⅱ级变和弦<br>
+1.概述<br>
+下属和声组中最常用并且应用最早的变和弦是Ⅱ级三和弦。由于最初常用六和弦，并在<br>
+17世纪那不勒斯乐派作曲家的作品中应用，因而称为“那不勒斯六和弦”。标记为N.S.<br>
+（Neapolitan Sixth）。大调的bⅡI级和弦包含有bVI级音。<br>
+例669<br>
+8<br>
+8<br>
+bIIN.s.b11 a<br>
+bIIN.s.bI1 4<br>
+C:<br>
+bⅡ级音在作品中的应用先从小调开始，这与避免Ⅱ级音和V级音之间的增四度（或减五<br>
+度)有关系。另外，从调式特性来说，bⅡ级音半音下行进人主音也是弗里几亚调式的影响。下<br>
+面二例为那不勒斯乐派二位作曲家的作品片断，从中可以看到这一和弦最早的应用方法。<br>
+例670<br>
+A·斯卡拉蒂（1660--1725）：《大合唱》</div>
+
+---
+
+<!-- PAGE:301 -->
+<a id="p0301"></a>
+## PDF p.301
+
+![桑桐《和声学教程》 PDF p.301（整页影印）](../assets/books/sangtong_tutorial/p0301.jpg)
+
+<!-- MANUAL-REFS:p0301 -->
+<div class="manual-refs"><strong>手册使用本页</strong><ul><li id="ref-claim-neapolitan-resolution-p0301" class="manual-ref-item" data-kind="claim"><span class="ref-kind">论点</span><a href="../和声学手册.html#claim-neapolitan-resolution">拿波里和弦（♭II） · neapolitan.resolution</a><br><span class="ref-text">手册提炼：拿波里的 ♭2 通常下行到导音，再进入属；应避免在它后面接 iv 或 ii。</span></li></ul></div>
+
+<div class="ocr-text">第二十一章变和弦（三）285<br>
+例671<br>
+A·斯特勒泰拉（1642一1682）：《弗罗莉杜罗》第三幕<br>
+18世纪后，这一和弦逐渐扩大到大调中应用，从贝多芬起开始使用原位的Ⅱ级和弦。19世<br>
+纪后期，并应用Ⅱ级小三和弦，使和声色彩更富于变化。<br>
+2.应用方法<br>
+（1）bⅡ级和弦常用第一转位，也用原位或第二转位。主要重复三音，即下属音，也可重复根<br>
+音或五音。<br>
+(2）bⅡ级和弦前面可接：I、V、IV、Ⅱ等。在大调中常用和声大调式的下属和声作为预备，<br>
+接以Ⅱ，更为自然。半音进行应用于同一声部。<br>
+（3）Ⅱ级和弦作为下属功能和弦，主要解决到各类属功能和弦：终止式四六、属和弦、I级、<br>
+Ⅲ级以及属变和弦等。<br>
+（4）解决到属和弦时，bⅡ级音到导音可应用减三度进行。Ⅱ级音与属和弦的自然五音可<br>
+发生对斜关系。原位Ⅱ级和弦低音可作减五度(或增四度)进人属音。<br>
+例672<br>
+（5）Ⅱ级和弦还可以先解决到重属和弦或下属和弦，再进人属和弦。这也是一种常用的方<br>
+法。如例673。<br>
+例673</div>
+
+---
+
+<!-- PAGE:313 -->
+<a id="p0313"></a>
+## PDF p.313
+
+![桑桐《和声学教程》 PDF p.313（整页影印）](../assets/books/sangtong_tutorial/p0313.jpg)
+
+<!-- MANUAL-REFS:p0313 -->
+<div class="manual-refs"><strong>手册使用本页</strong><ul><li id="ref-example-m01-p0313" class="manual-ref-item" data-kind="example"><span class="ref-kind">案例</span><a href="../和声学手册.html#example-m01">手册案例 M01 · 全音阶：缺少导音后的组织方式</a><br><span class="ref-text">例707｜德彪西《帆》<br>原书要点：建立在全音阶上的和声，其结构可追溯为升、降五音的属九和弦；实际相当于降E的降五音属九。<br>机制：全音阶没有半音导音，因此 V→I 的倾向被削弱；音高组织更多依赖音集、低音、音区与节奏的重复和变化。<br>读谱：先圈出是否只有全音阶六音，找有没有半音导音；再看低音是否提供唯一的方向感。<br>用法：需要弱化功能方向时，可选全音阶截段与属九变体，省略导音；用低音与音区变化组织段落。</span></li></ul></div>
+
+<div class="ocr-text">第二十二章变和弦（四）297<br>
+则应用更晚，约在19世纪末才较多使用。<br>
+在变和弦的结构中包含有增三和弦以及其他增四度、增五度、增六度等音程，作曲家们用此<br>
+来强调某些特殊的和声色彩，构成特殊的调式音阶，如增调式与全音阶等：正因变和弦的特殊结<br>
+构而成为引向近代和声的材料之一。如斯克里亚宾的所谓“神秘和弦”（见例705a)即来自降五<br>
+音的属变和弦。（见例705b)<br>
+例705<br>
+四度排列<br>
+b三度排列<br>
+D<br>
+属变和弦<br>
+b5v<br>
+F:<br>
+下例选自德彪西作品的片断，其和弦构成音与斯克里亚宾的四度和弦相同，亦为降五音的属<br>
+七一一九-一十三和弦。C音为D音的等音写法。<br>
+例706<br>
+德彪西：《舞姿婆娑的仙女》<br>
+pp<br>
+下例为德彪西作品中建立在全音阶上的和声，它的结构可以追溯为来自升、降五音的属九<br>
+和弦。<br>
+例707<br>
+实际相当于：<br>
+例708<br>
+德彪西：《帆》<br>
+8<br>
+89<br>
+bE:<br>
+PP<br>
+因此，变和弦是一种白传统和声向近代和声演变的和声材料。它在功能意义上的双重性或</div>
+
+---
+
+<!-- PAGE:352 -->
+<a id="p0352"></a>
+## PDF p.352
+
+![桑桐《和声学教程》 PDF p.352（整页影印）](../assets/books/sangtong_tutorial/p0352.jpg)
+
+<!-- MANUAL-REFS:p0352 -->
+<div class="manual-refs"><strong>手册使用本页</strong><ul><li id="ref-claim-enharmonic-modulation-definition-p0352" class="manual-ref-item" data-kind="claim"><span class="ref-kind">论点</span><a href="../和声学手册.html#claim-enharmonic-modulation-definition">等音转调 · enharmonic-modulation.definition</a><br><span class="ref-text">手册提炼：等和弦转调把两调共同的大小七或减七和弦作等音功能重释，再按新调倾向解决。</span></li><li id="ref-prose-cite-sangtong_tutorial-p0352-1-p0352" class="manual-ref-item" data-kind="prose"><span class="ref-kind">正文引用</span><a href="../和声学手册.html#cite-sangtong_tutorial-p0352-1">手册正文引用</a><br><span class="ref-text">减七由三个小三度叠置，完全对称；转位后小三度可写为增二度，用等音小三度替换即产生新减七。每个减七有三种等音写法（同一音响）和四个解决方向，可作为属功能、副属功能或导音和弦进入不同调（柴可夫斯基 PDF p.109；桑桐 PDF p.352–354）。</span></li><li id="ref-profile-profile-sangtong_tutorial-p0352" class="manual-ref-item" data-kind="profile"><span class="ref-kind">代表页</span><a href="../和声学手册.html#book-profiles">教材代表页 · 桑桐教程</a><br><span class="ref-text">手册将本页列为《桑桐教程》代表页；该书定位：汉语功能体系和声的主干教材：写作规则、T–S–D、七/九和弦、离调、交替、转调、调式与近现代概览。</span></li></ul></div>
+
+<div class="ocr-text">第二十七章等音转调（一）<br>
+一、概述<br>
+在十二平均律中，凡音名不同而实际音相同者称为等音。例如C与"B、F与"E、A与B等<br>
+都为等音。音程中的某一音或同时两个音采用等音的方法则称为等音程，两个等音程的度数可<br>
+能相同，如大三度在等音后仍为大三度，但也可在等音后使原有的音程发生变化，如由大三度变<br>
+为减四度，或由小三度变为增二度等。<br>
+和弦中的一个音或几个音作等音变化后，可以从一种和弦结构变为另一种和弦结构，称为等<br>
+和弦：在转调方法中，利用等和弦改变和弦的结构、级数、位置或功能，使其变为另一调性的某一<br>
+和弦而进行转调，即为等音转调，或称等和弦转调。<br>
+等音转调属于一种突然转调的方法。由于在应用中常有半音进行，故亦为半音转调方法<br>
+之…·<br>
+在等音转调中，常用的等音变化有：<br>
+小三度一增二度，<br>
+增四度一—减五度，<br>
+小六度-—增五度，<br>
+大六度—-减七度，<br>
+小七度—增六度。<br>
+常用作等和弦变化的和弦结构有：属七和弦、增六和弦、减七和弦和增三和弦。等音转调就<br>
+是通过这些和弦的等音变化作为媒介而转调。它们可用于离调，也可用于转调。下面分别阐述<br>
+不同和弦的等音转调方法。<br>
+二、减七和弦等音转调<br>
+1.减七和弦的特性。<br>
+减七和弦由小三度叠置构成，它在和声小调式或和声大调式内是I级七和弦的结构形式。<br>
+它的原位与转位，除低音位置不同外，音程关系从等音来看是相同的，其中增二度等于小三度，增<br>
+四度等于减五度。因此，一个减七和弦就有四种等音记谱方法。<br>
+例781</div>
+
+---
+
+<!-- PAGE:354 -->
+<a id="p0354"></a>
+## PDF p.354
+
+![桑桐《和声学教程》 PDF p.354（整页影印）](../assets/books/sangtong_tutorial/p0354.jpg)
+
+<!-- MANUAL-REFS:p0354 -->
+<div class="manual-refs"><strong>手册使用本页</strong><ul><li id="ref-claim-diminished-seventh-four-resolutions-p0354" class="manual-ref-item" data-kind="claim"><span class="ref-kind">论点</span><a href="../和声学手册.html#claim-diminished-seventh-four-resolutions">减七和弦与等音网络 · diminished-seventh.four-resolutions</a><br><span class="ref-text">手册提炼：同一减七音响可向四个方向解决，因而能通向二十四个调，是远关系转调的常用连接和弦。</span></li><li id="ref-claim-enharmonic-modulation-four-directions-p0354" class="manual-ref-item" data-kind="claim"><span class="ref-kind">论点</span><a href="../和声学手册.html#claim-enharmonic-modulation-four-directions">等音转调 · enharmonic-modulation.four-directions</a><br><span class="ref-text">手册提炼：减七和弦可向四个方向解决；大小七和弦因等音关系有两个解决方向，但实际路线受记谱与声部进行约束。</span></li><li id="ref-prose-cite-sangtong_tutorial-p0354-1-p0354" class="manual-ref-item" data-kind="prose"><span class="ref-kind">正文引用</span><a href="../和声学手册.html#cite-sangtong_tutorial-p0354-1">手册正文引用</a><br><span class="ref-text">减七和弦可等音重写为四个不同根音的减七，分别解决到四个方向；同一减七音响因此可通向 24 个调（柴可夫斯基 PDF p.109；桑桐 PDF p.354）。大小七和弦可等音为德国增六或另一调属七，形成两个主要解决方向（《概述》PDF p.433–434）。等音转调的关键不只是“音响相同”，而是：</span></li><li id="ref-profile-profile-sangtong_tutorial-p0354" class="manual-ref-item" data-kind="profile"><span class="ref-kind">代表页</span><a href="../和声学手册.html#book-profiles">教材代表页 · 桑桐教程</a><br><span class="ref-text">手册将本页列为《桑桐教程》代表页；该书定位：汉语功能体系和声的主干教材：写作规则、T–S–D、七/九和弦、离调、交替、转调、调式与近现代概览。</span></li></ul></div>
+
+<div class="ocr-text">338中国艺术教育大系/音乐卷和声学教程<br>
+因此，--个减七和弦可以通过等音变化，改变其位置与功能意义而属于二十四个不同的调。<br>
+这就是说，通过一个减七和弦，可以转向任何--个调性。<br>
+中音减七和弦而属于不同的调性，也可以属于任何-级副属级七和弦，但它们所属的调性都在<br>
+这二十四个调性的范围内，故不再另述。<br>
+利用减七和弦结构上的特性，通过本身的不同功能意义以及等和弦的变换，可以获得各种不<br>
+同的解决，引向不同的调性，这就是减七和弦等音转调的原理与依据。<br>
+3.应用减七和弦的等音转调方法。<br>
+（1）如前所述，同一个减七和弦可以从两个方面改变其意义：①改变其功能意义。例如可<br>
+作为属功能、又可作为重属功能或其他副属功能。②改变其位置。例如可作为原位、又可作为<br>
+第一转位、第二转位或第三转位。因此，运用减七和弦的等音转调，可以采用改变功能意义的方<br>
+法，或采用改变和弦位置的方法，或同时改变这两方面，然后按照新调的要求进行解决，继续和声<br>
+的进行。<br>
+（2）一-个作为媒介的减七和弦在转调时如果采取改变位置的方法，在写谱上则既可用前调<br>
+的写法，也可即采用后调的写法。或者在时值较长时，可同时采用前调与后调的写法，并用连线<br>
+连接，说明其等音的转换作用。<br>
+例784<br>
+C: I<br>
+VII=F:VIl2<br>
+1<br>
+（3）减七和弦的引人<br>
+作为转调媒介的减七和弦，它可为本调的VI级、I/V或其他副属VI级和弦。在声部进行确<br>
+当的情况下，它可以接在前调任何一个和弦后面。<br>
+（4）减七和弦的解决。<br>
+作为媒介的减七和弦，它可处理为新调的VI级，VI/V、VI/IV或其他副属VI级。但最常用的<br>
+是VI级与VI/V。<br>
+①作为新调的I级减七和弦，它可直接解决至主和弦，很快进人新调，但亦因此而新调性并<br>
+不巩固，比较突然，需再继续巩固。常用的是先解决到属和弦，再解决至主和弦，这样能使调性明<br>
+确一些。属和弦常为属七和弦，或者是属变和弦。<br>
+例785</div>
+
+---
+
+<!-- PAGE:382 -->
+<a id="p0382"></a>
+## PDF p.382
+
+![桑桐《和声学教程》 PDF p.382（整页影印）](../assets/books/sangtong_tutorial/p0382.jpg)
+
+<!-- MANUAL-REFS:p0382 -->
+<div class="manual-refs"><strong>手册使用本页</strong><ul><li id="ref-claim-atonal-chord-material-p0382" class="manual-ref-item" data-kind="claim"><span class="ref-kind">论点</span><a href="../和声学手册.html#claim-atonal-chord-material">无调性与自由音高组织 · atonal.chord-material</a><br><span class="ref-text">手册提炼：后调性和弦不再只按三度叠置；三度/六度、四度/五度、二度/七度都可作为构建和弦的音程材料。</span></li></ul></div>
+
+<div class="ocr-text">366中国艺术教育大系/音乐卷和声学教程<br>
+则：但它亦是一种不协和和弦的构成方法。和弦外音未予解决而形成的不协和和弦形态是传统<br>
+和弦结构基础上的另一种自由处理方法，这种不协和和弦的特点是其中除含有明确的传统和弦<br>
+形态外，不协和音则可解释为未获解决的某类和弦外音。<br>
+、打破传统和弦结构三度叠置原则的是“非三度叠置"和弦构成方法。这种非三度叠置的<br>
+构成了色彩化的和声素材，与以三和弦为基础的和声素材相对照。这类非三度叠置和弦结构方<br>
+法，包含有纯四度叠置、纯五度叠置和二度叠置，形成了四度和弦、五度和弦或二度和弦，或形成<br>
+上述和弦的混合形态。<br>
+、复合和弦。两个或两个以上不同和弦一一无论是三度结构或非三度结构一的同时纵<br>
+向结合，形成了复合和弦或复合的和声层次，这亦为近代和声复杂化的形态之一<br>
+四、自由构成的不协和和弦。除以上几种有一定构成方法的和弦形态外，尚有由于强调纵<br>
+向的音响效果，或由于声部的进行而形成无一定规律的不协和和弦形态，属于自由构成的不协和<br>
+和弦<br>
+五、由复调织体各声部（或声部层)在各自的运动过程中所构成的纵向复杂和声。这类织体<br>
+关注各声部的独立运行，而打破传统复调织体中各声部之间的纵向谐合关系，这是近代复调写作<br>
+的一个显著特点。<br>
+以上是近代和声和弦结构复杂化范围中几种主要的和弦构成方法与和弦形态。<br>
+和声进行的非功能化<br>
+和弦结构只是和声的素材，而对多声音乐发挥主要作用的是和声进行，亦即和声的运动、和<br>
+声进行在结构功能上能呈现或确定调性，形成相互联系的和声体系，组成曲式结构的和声布局。<br>
+因此，围绕调性中心，不同的和声进行具有不同的功能意义，组成由广及细的功能序列。和声的<br>
+音响色彩亦是在功能序列的基础上呈现。但随着和声表现作用的充分发挥，变音体系和声的广<br>
+泛应川，在和声进行上亦逐步打破以属七和弦一主和弦为核心的功能序列，引人了非功能性<br>
+的、以色彩性为主要目的的和声进行。这些近代和声中的新的和声运行状态，可称为和声进行的<br>
+非功能化或和声进行的色彩化：这类和声进行的方式非常丰富，有各种不同的状态。<br>
+·、调式化和声进行。重现古代调式和声的进行特点，减弱调性和声的功能意义，改变功能<br>
+序列的规律：<br>
+、强调三度、二度、半音或增四度关系的和声进行，突出了和声进行中的色彩性、远关系性<br>
+的和声关系，削弱了调性和声核心的四、五度关系。<br>
+、不协和和弦的连续。独立性的不协和和弦，其连续进行中，并无传统意义的解决要求。<br>
+四、平行进行。针对长期来传统和声写作中，禁止平行五、八度和低音与上方声部的平行四<br>
+度的规则.以及重现古代奥伽农风格，近代和声写作最早对传统和声的反叛的表现之一，就是采<br>
+用平行进行：各声部以相同的音程结构连续进行。平行进行在实际应用中有许多不同的方式，<br>
+如连续的和声音响式、平行声部层或“和弦流"等。<br>
+五、非和声进行。前后和声音响，无明确的相互关系，只是和声音响的点与点的连续，不形<br>
+成"进行"的意义。</div>
+
+---
+
+<!-- PAGE:383 -->
+<a id="p0383"></a>
+## PDF p.383
+
+![桑桐《和声学教程》 PDF p.383（整页影印）](../assets/books/sangtong_tutorial/p0383.jpg)
+
+<!-- MANUAL-REFS:p0383 -->
+<div class="manual-refs"><strong>手册使用本页</strong><ul><li id="ref-claim-atonal-tonal-continuum-p0383" class="manual-ref-item" data-kind="claim"><span class="ref-kind">论点</span><a href="../和声学手册.html#claim-atonal-tonal-continuum">无调性与自由音高组织 · atonal.tonal-continuum</a><br><span class="ref-text">手册提炼：调性与无调性可按调中心引力的强弱排成连续范围；局部无调性可在模糊、过渡或属准备中发挥作用。</span></li></ul></div>
+
+<div class="ocr-text">绪言367<br>
+调性观念的扩大化<br>
+近代音乐至为重要的一个问题，或者说是一个重要的特性，就是调性观念问题。有些音乐风<br>
+格即以其调性处理情况为名，如：无调性音乐、多调性音乐等。在近代音乐中，除某些仍保持传<br>
+统的调性观念外，大多数的音乐作品，由于和声材料的扩充，和声进行的复杂，半音体系的独立应<br>
+用，导致了调性范围的扩大和调性感觉的模糊，因此打破了传统的调性观念，引来了调性观念的<br>
+扩大、从保持调性到取消调性，表现了调性观念丰富变化的广阔天地，亦表现了缤纷多样的调性<br>
+呈现与处理方式。<br>
+调性观念之扩大，主要区分为两类调性观念。一类为保持调性的基本意义或中心作用，但扩<br>
+大或改变其内涵、范围、和声材料与调性呈现方式。这一类中包括了许多不同的调性处理方式，<br>
+从传统调性范围的扩展直至接近无调性的边缘。<br>
+这类调性观念，先由传统调性的频繁变换，不断流动开始，随之以终止式的淡化，主和弦的隐<br>
+蔽，调性的模糊，调性关系的复杂化等等手法，以后又不断有新的和声处理方法，扩大和改变了调<br>
+性的观念和意义、作用和形态。我们可从下列几个方面归纳调性观念扩大的方法。<br>
+先是打破大小调自然音阶的控制，打破自然音为主，变音为副的观念，发展为一个调性范围内各<br>
+个半音都有相互平等意义的半音阶基础。不仅一个调性内音阶的各个半音成员都能自由独立地<br>
+使用，并且半音阶每一个音上建立的调性可以自由地根据需要而相互转换，打破传统的调性关系<br>
+础的特殊音阶方面。<br>
+、从和声素材方面扩大调性观念。通过各种高叠的和非三度叠置的和弦与不协和和弦的<br>
+广泛而自由地运用，打破以大小三和弦为基础的传统调性观念，亦即和声性大小调调性观念，扩<br>
+大为单产的、旋律性的、非三和弦性的调性观念，甚至在某些情况下形成无调性和多调性。<br>
+：、从和声进行方面扩大调性观念。打破传统的终止式和声进行，打破功能序列基础上的<br>
+和声进行，在各类非功能性、关系疏远复杂、调性意义暖味的和声进行中，通过和声的节奏地位、<br>
+时值和频率、其他可能的和声支持、旋律性因素、和声根音进行的作用等方面，确定或表达调性的<br>
+意义<br>
+四、在织体层次方面，打破各层次间在同一时间内保持同一和声的纵向结合以及相互间在<br>
+-定时间内由同一调性控制的状况，扩大为多层次的和声复合或调性的复合，从纵向关系方面扩<br>
+大了调性观念。<br>
+以上所述从不同方面扩大、发展和改变了的调性观念，虽然保持了一定的调性意义，但不再<br>
+是由自然音为基础的调式音阶、大小三和弦为主和弦、属一-一主的功能性和声进行相结合的传统<br>
+调性形态，因此，随着各种不同方式的扩大、发展和变化，调性的感觉也有不同程度的区别，有的<br>
+是淡化的，有的是隐约的，有的是模糊的，有的是难以感觉的，形成了近代音乐中丰富多变的调性<br>
+形态，但可归纳为“新调性”和“多调性”<br>
+另·类为无调性观念。这种观念实际上并非调性观念之扩大，而是调性观念之否定。但这<br>
+种否定，又是调性观念扩大的进--步发展的结果，正如在实际音乐创作中，勋伯格从后期浪漫派<br>
+音乐风格的调性观念进人无调性音乐风格的调性观念，再进一步迈人意图消除任何可能存在调</div>
+
+---
+
+<!-- PAGE:410 -->
+<a id="p0410"></a>
+## PDF p.410
+
+![桑桐《和声学教程》 PDF p.410（整页影印）](../assets/books/sangtong_tutorial/p0410.jpg)
+
+<!-- MANUAL-REFS:p0410 -->
+<div class="manual-refs"><strong>手册使用本页</strong><ul><li id="ref-claim-symmetry-whole-tone-p0410" class="manual-ref-item" data-kind="claim"><span class="ref-kind">论点</span><a href="../和声学手册.html#claim-symmetry-whole-tone">对称音阶与有限移位 · symmetry.whole-tone</a><br><span class="ref-text">手册提炼：全音阶把八度等分为六个全音，只有两种不同组成音的移位，缺乏导音与纯五度，因而削弱功能调性。</span></li><li id="ref-prose-cite-sangtong_tutorial-p0410-1-p0410" class="manual-ref-item" data-kind="prose"><span class="ref-kind">正文引用</span><a href="../和声学手册.html#cite-sangtong_tutorial-p0410-1">手册正文引用</a><br><span class="ref-text">全音阶：八度等分为六个全音，只有两种不同组成音的移位，无导音、无纯五度，功能属—主进行被削弱。适合悬浮、梦境、紧张渐强与色彩块（桑桐 PDF p.410）。</span></li><li id="ref-profile-profile-sangtong_tutorial-p0410" class="manual-ref-item" data-kind="profile"><span class="ref-kind">代表页</span><a href="../和声学手册.html#book-profiles">教材代表页 · 桑桐教程</a><br><span class="ref-text">手册将本页列为《桑桐教程》代表页；该书定位：汉语功能体系和声的主干教材：写作规则、T–S–D、七/九和弦、离调、交替、转调、调式与近现代概览。</span></li></ul></div>
+
+<div class="ocr-text">第三十二章各类调式音阶的和声方法（三）<br>
+五、全音音阶<br>
+在近代音乐中，除各类七声音阶和调式交替、变化、混合的音阶外，最受注意的特殊音阶是全<br>
+音音阶．它在德彪西的作品中最早得到广泛应用，成为德彪西音乐风格特色之一。<br>
+全音音阶，每音之间相隔--个全音，一个八度内等分为六个全音，故全音音阶亦为六声音阶<br>
+之-一种：全音音阶由于各音之间为-一个全音，因此只有半音移位才有不同组成音的全音音阶，其<br>
+他移位均不超出这两种全音音阶组成音的范围，如例905即为两种不同组成音的全音音阶，音高<br>
+相差为半音。<br>
+例905<br>
+（)<br>
+有时在写谱时将全音写为等音的减三度音，或将减三度音写为全音，如例中所示。<br>
+这·音阶内相邻各音之间音程上无差别，它整体所包含的音程有：大二度（减三度）、大三度<br>
+（减四度）增四度（减五度）、增五度（小六度）增六度（小七度)几类。无纯四度、纯五度、小三度、<br>
+大六度、小：度、大七度等音程。因此在音阶内部不能构成类似下属一属一主的进行，亦无导音<br>
+性进行：对于传统的调性和声感觉而言，它是一种奇特的音阶基础，调性感觉是模糊的。如需明<br>
+确调性，无法通过属和声和导音的作用，而只能采用其它的处理方法。<br>
+全音音阶主要显示于旋律或声部进行中，即主要显示于横向进行中，因为只有在横向进行中<br>
+才能显示出全音音阶的特点，例906为德彪西钢琴曲《六首古代碑铭曲》之二：《为无名氏之墓》<br>
+的开始处，单声部旋律，全音音阶，以1)音为中心。这首乐曲的第一部分均以这一全音音阶为基<br>
+础.除单旋律部分外，后半的和声亦以这一全音音阶的材料组成。<br>
+例906<br>
+德彪西：《为无名氏之募》<br>
+慢悲哀地<br>
+“全音阶和声”是指以全音音阶的各音为素材所构成的和声结构，亦即全音音阶纵合化和<br>
+声结构，全音音阶各音之间，除构成二声部的大二度、大三度、增四度、增五度与增六度以及它们</div>
+
+---
+
+<!-- PAGE:423 -->
+<a id="p0423"></a>
+## PDF p.423
+
+![桑桐《和声学教程》 PDF p.423（整页影印）](../assets/books/sangtong_tutorial/p0423.jpg)
+
+<!-- MANUAL-REFS:p0423 -->
+<div class="manual-refs"><strong>手册使用本页</strong><ul><li id="ref-example-m02-p0423" class="manual-ref-item" data-kind="example"><span class="ref-kind">案例</span><a href="../和声学手册.html#example-m02">手册案例 M02 · 八声音阶：音程模式决定身份</a><br><span class="ref-text">例935｜巴托克钢琴组曲 III<br>原书要点：音阶式运动虽缺降D音，八声音阶特性仍鲜明；前两小节有降五度五声音列特点。<br>机制：八声音阶由半音与全音交替构成；判断身份看小二、增二、大三度的固定排列，缺一个音仍是省略。<br>读谱：把旋律音按半音整数排列，找小二—大三或全—半的交替模式；确认缺的是哪个音，而非误判成其他音阶。<br>用法：写八声色彩时先定 1–2–1–2 的对称结构，可省略一个音避免过密；让特征小二度落在句法重音上。</span></li></ul></div>
+
+<div class="ocr-text">第三十三章各类调式音阶的和声方法（四）<br>
+407<br>
+例934<br>
+巴托克：《小宇宙》作品108<br>
+ff<br>
+不列举<br>
+（6）八声音阶的和声方法<br>
+八声音阶的处理亦分旋律性与和声性两类方法。旋律性处理是在声部的横向运动中显示出<br>
+八声音阶音程结构的特点。它可以作音阶式连续进行，亦可以作非音阶式的旋律运动。在复调<br>
+化作品中，亦可在不同声部的横向运动中共同构成八声音阶的结构特点。例935是巴托克钢琴<br>
+组曲（作品14)第三乐章的下方声部开始四小节，音阶式运动，虽缺少了降D音，但八声音阶的特<br>
+性非常鲜明．前两小节有小调降五度音的五音音列特点。<br>
+例935<br>
+巴托克：钢琴组曲III<br>
+音阶<br>
+例936.梅西安的《享天福的圣身》则是跳跃起伏的旋律，但整个在八声音阶范围内，即梅西<br>
+安的第二类模式的第二移位。<br>
+例936<br>
+梅西安：《亨天福的圣身》<br>
+四度---小二度”，下方声部先开始，上方声部在小三度上模仿，相互构成了--个八声音阶：例<br>
+937</div>
+
+---
+
+<!-- PAGE:498 -->
+<a id="p0498"></a>
+## PDF p.498
+
+![桑桐《和声学教程》 PDF p.498（整页影印）](../assets/books/sangtong_tutorial/p0498.jpg)
+
+<!-- MANUAL-REFS:p0498 -->
+<div class="manual-refs"><strong>手册使用本页</strong><ul><li id="ref-example-m03-p0498" class="manual-ref-item" data-kind="example"><span class="ref-kind">案例</span><a href="../和声学手册.html#example-m03">手册案例 M03 · 复合和弦：两个完整和弦的叠置</a><br><span class="ref-text">例1106｜斯特拉文斯基《春之祭》<br>原书要点：下方为降F大三和弦（等音为 E），上方为降E属七第一转位，根音相差半音；两层结构明确、关系远，故是复合和弦。<br>机制：复合和弦由两个可分别命名的完整和弦同时构成；根音距离、音区分离与音色分工决定两层是否可辨。<br>读谱：分别给下方和上方写和弦名，确认两层各自完整；再看根音是否半音、音区是否拉开。<br>用法：写复合和弦时先分别写两个完整和弦，使根音相差半音或三全音，再用音区或节奏分开；避免随机堆音。</span></li></ul></div>
+
+<div class="ocr-text">第四十章和声材料与处理方法(五)<br>
+五、复合和声或复合和弦<br>
+在近代音乐中，和声纵向结构的一个新发展就是使用复合和弦，它由不同和弦同时作纵向结<br>
+合而构成、这种情况从古典时期起即已存在，但那时主要发生在持续音、和弦外音与七和弦、九<br>
+和弦的排列位置时，并且是有局限的，在一定时间内得到解决的，但它们启发了近代复合和声的<br>
+应用：近代产乐中的复合和弦是·种独立的、自由的、按照作品本身所需要的音响要求、织体层<br>
+次、和声语言的逻辑性和规律性而使用的和声处理方式。复合和弦的应用增加了和声的层次、扩<br>
+大了和声的空间，使和声的音响、色彩和紧张度得到变化和加强。<br>
+复合和弦是指个别和弦的复合状态，但在应用中，常不仅是个别的复合和弦，而是和声进行<br>
+中的复合和声层次，故可总称为复合和声。<br>
+复合和弦的每一组成和弦须有明确的结构，不论是三和弦、七和弦或四度、五度和弦等，都可<br>
+作为明确的和弦结构形态而成为复合和弦的---个组成部分。<br>
+复合和声的处理，在织体上需有不同的层次，各个层次需有各自的规律性进行。各层次的和<br>
+弦时值不同、节奏不同，可使织体层次更为清晰。每一层次的音区有相当距离者，亦能使不同层<br>
+次的作用更为明显。根音关系愈远者，亦愈能显示复合和声的作用。有时，复合和弦的节奏相<br>
+同.音区亦近.即依赖于和弦关系的远近来区分复合和弦。例如下例为著名的斯特拉文斯基《春<br>
+中两个和弦各自结构明确、关系较远，故仍具复合和弦的作用。在乐队曲中并可具有不同的音<br>
+色。例1106:<br>
+例1106<br>
+斯特拉文斯基：《春之祭》<br>
+2<br>
+上例下方为降F大三和弦（等音为F大三和弦），上方为降E属七和弦第一转位，根音相差<br>
+半音<br>
+复合和声的每一层次可有相同的和弦结构，亦可由不同的和弦结构所组成。复合的状态可<br>
+有旋律与和声作简单的复合以至多层次的、远关系的复杂结合，<br>
+复合和声可有以下一些常用的方式：<br>
+1.在持续音或持续和弦基础上的复合。这是最早发生的和声复合化方式。在近代音乐中，</div>
+
+---
+
+<!-- PAGE:505 -->
+<a id="p0505"></a>
+## PDF p.505
+
+![桑桐《和声学教程》 PDF p.505（整页影印）](../assets/books/sangtong_tutorial/p0505.jpg)
+
+<!-- MANUAL-REFS:p0505 -->
+<div class="manual-refs"><strong>手册使用本页</strong><ul><li id="ref-claim-serialism-row-p0505" class="manual-ref-item" data-kind="claim"><span class="ref-kind">论点</span><a href="../和声学手册.html#claim-serialism-row">十二音序列与序列和声 · serialism.row</a><br><span class="ref-text">手册提炼：十二音技法以预先设计的十二音级排序为全曲音高材料，并通过移位、逆行、倒影、逆行倒影组织 48 种形式。</span></li></ul></div>
+
+<div class="ocr-text">第四十一章和声材料与处理方法(六)<br>
+六、序列和声<br>
+序列音乐中，每首作品有自已特定的音列，这-音列是乐曲动机、主题、旋律、声部、和声以及<br>
+乐曲整体发展、构成的依据。序列本身是横向性的、按先后次序排列的单声音列，无论是原型、倒<br>
+影、逆行、逆行倒影以及它们的移位，都是横线形态。但在多声部写作中必然产生纵向的结合，形<br>
+成和音形态，亦即序列的纵合化形态。这类纵合和音，并无固定的和声结构，而是千变万化，是作<br>
+曲家根据自已创作的意愿与需要，在序列的范围内，进行各种可能的组合。在纵合成和声形态<br>
+时，序列的程序亦并不完全不变，因此，序列音乐的和弦形态，花色繁多，无法归纳，但它的和弦<br>
+结构方面观察，最常用的音程是小二度、增四度（减五度）、大七度、减八度、增八度、小九度等：有<br>
+时作曲家会特意应用某些单纯的和弦形态，如三和弦等，但亦常掺人其他音或和弦，或添加复合<br>
+层次，消除其导致调性作用的影响。用十二音序列在和声方面写作调性音乐并非不可能，但这有<br>
+背于最初创造十二音序列音乐是为了进一步消除调性遗迹之初衷。国内已有书籍详细介绍序列<br>
+音乐的写作方法，本书不再作专门介绍，此处只略举数例，以示序列和弦之一斑。前面例1089、<br>
+1118均为序列和弦形态范围。<br>
+例1123，序列以四音组和弦方式呈现，这是和弦式的进行，前三个和弦是序列原型分三个四<br>
+音组的纵合处理，其中包含有小二度（第1与第6和弦）、大七度或减八度（第1、3、4、6和弦）、增<br>
+四度或减五度（每一和弦)等音程。在和弦纵向的排列位置方面，第6个和弦是第1个和弦的倒<br>
+影音程关系，第5个和弦是第2个和弦的倒影位置，第4个和弦是第1个和弦倒影位置。其中第<br>
+2个和弦是半减七和弦的第二转位。第5个和弦是属七和弦的第二转位，传统的和弦形态。第<br>
+4、5、6三个和弦是序列原型的逆行倒影移位5。<br>
+例1123<br>
+勋伯格：《钢琴曲》作品33a</div>
+
+---
+
+<!-- PAGE:563 -->
+<a id="p0563"></a>
+## PDF p.563
+
+![桑桐《和声学教程》 PDF p.563（整页影印）](../assets/books/sangtong_tutorial/p0563.jpg)
+
+<!-- MANUAL-REFS:p0563 -->
+<div class="manual-refs"><strong>手册使用本页</strong><ul><li id="ref-claim-atonal-features-p0563" class="manual-ref-item" data-kind="claim"><span class="ref-kind">论点</span><a href="../和声学手册.html#claim-atonal-features">无调性与自由音高组织 · atonal.features</a><br><span class="ref-text">手册提炼：自由无调性常避免主和弦与大三、小三和弦，自由运用半音阶与不协和音，并让每首作品自定进行规则。</span></li><li id="ref-prose-cite-sangtong_tutorial-p0563-1-p0563" class="manual-ref-item" data-kind="prose"><span class="ref-kind">正文引用</span><a href="../和声学手册.html#cite-sangtong_tutorial-p0563-1">手册正文引用</a><br><span class="ref-text">无调性避免形成可辨认的调中心。桑桐 PDF p.563 列出其主要特征：无主和弦、半音阶自由运用、纵向不协和、避免功能进行、织体多层次等。《概述》PDF p.536 把无调性定义为“避免形成任何调中心或中心的作曲方法”。分析时应关注：</span></li><li id="ref-profile-profile-sangtong_tutorial-p0563" class="manual-ref-item" data-kind="profile"><span class="ref-kind">代表页</span><a href="../和声学手册.html#book-profiles">教材代表页 · 桑桐教程</a><br><span class="ref-text">手册将本页列为《桑桐教程》代表页；该书定位：汉语功能体系和声的主干教材：写作规则、T–S–D、七/九和弦、离调、交替、转调、调式与近现代概览。</span></li></ul></div>
+
+<div class="ocr-text">第四十七章调性的类型（三）<br>
+三、无调性<br>
+随着半音化的高度发展、不协和音的自由应用、单纯三和弦与三度叠置和弦的避免、和声进<br>
+行无特定规律以及有意识地排除中心音与主和弦等各种新的和声处理手法，冲破了大小调式和<br>
+各类调式音阶的局限，解脱了调性和声体系的制约，排除了调中心的控制，产生了被称为“无调<br>
+性"的音乐风格。<br>
+无调性音乐，最初出现于勋伯格在1908--1912年的作品中。这类无调性音乐，有的称为“自<br>
+由无调性”，以区别于十二音序列音乐。斯克里亚宾后期的音乐，亦常被归人于无调性范畴，但它<br>
+是一种特殊的新调性音乐，自成体系。十二音序列音乐，是勋伯格为了更彻底地消除调中心的作<br>
+用，消除各音之间的主次差异而创造的一种作曲方法。因为在无调性音乐中，有时尚存在着一定<br>
+的调性因素。关于序列音乐的写作方法，已有专著出版，本教程中不另作介绍，现只就一般无调<br>
+性音乐的和声处理方法与有关问题作概括介绍。<br>
+1.无调性音乐和声方面的特点<br>
+无调性音乐，包括旋律、和声、对位、织体、节奏、曲式结构等多方面的因素，这里只着重介绍<br>
+和声方面的-一些特点，也涉及--些旋律方面的特点。<br>
+（1）无主和弦，亦可说是无大、小三和弦，特别是在结构的重要部位，如段落或乐曲的结束处，<br>
+无具有主和弦作用的大、小三和弦。乐曲最后的结束和弦，并不具有调性主和弦的功能与意义。<br>
+（2）半音阶各音的自由运用。在旋律或和声中，无任何可辨认的、熟知的音阶。旋律的进行亦<br>
+避免自然的、习见的音程关系，不协和音程、大的跳跃、无旋律性中心音出现，则是常见的旋律形态。<br>
+（3）在半音阶基础上，纵向自由地构成各类不协和声。不以三度叠置的和弦结构为基础，有<br>
+（4）乐曲整体应用不协和声。大七度、小二度、小九度、增四度等是旋律与和声中最为常用<br>
+的音程。<br>
+（5）无和声进行的规则可供遵循，随每首乐曲的音乐特性而定。但避免功能性和声进行则<br>
+是必须注意的问题。<br>
+（6）织体上的多层次性，是常见的形态。无论是旋律性、线条性的多层次，或是线条性与和<br>
+声性相结合的多层，或是和声性与和声性相结合的多层次，都是音乐思维和纵向音响复杂化的常<br>
+用手段，也是必然结果。<br>
+2.调性音乐中的无调性<br>
+无调性音乐的形成是由上述各项旋律与和声的处理而产生的，如果在调性音乐中出现了上<br>
+述旋律与和声特点的段落，那么这些段落亦属于无调性音乐的特点。特别在新调性音乐中，它的<br>
+基础亦为半音阶，其和声的主体亦大都为不协和声，因此很容易出现无调性的段落。但它在乐曲</div>
+
+---

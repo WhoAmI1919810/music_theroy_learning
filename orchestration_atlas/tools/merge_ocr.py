@@ -13,6 +13,16 @@ index = []
 for b in meta['books']:
     bid = b['id']
     pages = {}
+    existing = os.path.join(OCR, bid + '.jsonl')
+    if os.path.exists(existing):
+        try:
+            for line in open(existing, encoding='utf-8'):
+                if not line.strip(): continue
+                row = json.loads(line)
+                if row.get('type') == 'page' and row.get('page') is not None:
+                    pages[row['page']] = row
+        except Exception as e:
+            print('WARN existing', existing, e)
     for fn in sorted(glob.glob(os.path.join(PARTS, bid + '__*.jsonl'))):
         try:
             for line in open(fn, encoding='utf-8'):

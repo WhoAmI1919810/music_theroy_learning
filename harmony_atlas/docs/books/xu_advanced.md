@@ -1,0 +1,1535 @@
+# 徐平力《高级和声学教程》
+
+> **PDF 文件**：`徐平力《高级和声学教程》.pdf`  
+> **物理页数**：490（从 PDF 第 1 页起计）  
+> **OCR 平均置信度**：0.968  
+> **字符数**：216129
+
+本文件收录**理论手册实际引用的 39 个 PDF 页**，每页采用整版影印 + OCR 文本。整页图保留谱例、图表、表格、边注和版面关系；OCR 只供检索与复制，具体音符、临时记号、连线和罗马数字以图像为准。被理论手册引用的条目列在图后，可直接回跳。
+
+页码一律使用 **PDF 物理页码**，可能与书内印刷页码不同。
+
+**快速跳页**：[p.12](#p0012) · [p.16](#p0016) · [p.18](#p0018) · [p.24](#p0024) · [p.25](#p0025) · [p.33](#p0033) · [p.46](#p0046) · [p.49](#p0049) · [p.54](#p0054) · [p.60](#p0060) · [p.74](#p0074) · [p.75](#p0075) · [p.81](#p0081) · [p.83](#p0083) · [p.94](#p0094) · [p.96](#p0096) · [p.103](#p0103) · [p.107](#p0107) · [p.121](#p0121) · [p.145](#p0145) · [p.151](#p0151) · [p.172](#p0172) · [p.186](#p0186) · [p.206](#p0206) · [p.247](#p0247) · [p.257](#p0257) · [p.273](#p0273) · [p.278](#p0278) · [p.345](#p0345) · [p.347](#p0347) · [p.364](#p0364) · [p.379](#p0379) · [p.380](#p0380) · [p.389](#p0389) · [p.429](#p0429) · [p.434](#p0434) · [p.469](#p0469) · [p.474](#p0474) · [p.485](#p0485)
+
+---
+
+<!-- PAGE:12 -->
+<a id="p0012"></a>
+## PDF p.12
+
+![徐平力《高级和声学教程》 PDF p.12（整页影印）](../assets/books/xu_advanced/p0012.jpg)
+
+<!-- MANUAL-REFS:p0012 -->
+<div class="manual-refs"><strong>手册使用本页</strong><ul><li id="ref-claim-chromaticism-four-sources-p0012" class="manual-ref-item" data-kind="claim"><span class="ref-kind">论点</span><a href="../和声学手册.html#claim-chromaticism-four-sources">半音化与变化和弦 · chromaticism.four-sources</a><br><span class="ref-text">手册提炼：变化音需区分四类来源：离调、调式交替、变和弦、装饰性外音；四者的调性与功能含义不同。</span></li><li id="ref-prose-cite-xu_advanced-p0012-1-p0012" class="manual-ref-item" data-kind="prose"><span class="ref-kind">正文引用</span><a href="../和声学手册.html#cite-xu_advanced-p0012-1">手册正文引用</a><br><span class="ref-text">徐平力 PDF p.12 把变化音分为四类，这一分类对分析极有用：</span></li><li id="ref-profile-profile-xu_advanced-p0012" class="manual-ref-item" data-kind="profile"><span class="ref-kind">代表页</span><a href="../和声学手册.html#book-profiles">教材代表页 · 徐平力高级</a><br><span class="ref-text">手册将本页列为《徐平力高级》代表页；该书定位：高级功能和声：变和弦、持续音、调性远近、交替转调、线性与平行进行。</span></li></ul></div>
+
+<div class="ocr-text">第一章<br>
+属组变和弦<br>
+一、概述<br>
+大小调功能性和声体系的主要特征在各种不同类型的和声学教科书中都有所介<br>
+绍，以斯波索宾等四人合著的教程为例，其上册为自然音体系，下册为变化音体系。<br>
+在下册（变化音体系）中，还可以细分为四种不同变化音类型，它们是离调变化音、<br>
+调式交替变化音、变和弦变化音、装饰性（外音）变化音。<br>
+1.离调变化音：副调自然和弦与主调自然和弦交替使用而产生的变化音，在调性<br>
+上形成主、副调之间的对比。如：在C大调中DD和弦的使用，意味着基本功能关系（D-T）<br>
+将在副调（属调）上进行，其变化音为*IV（属调的临时导音）。<br>
+2.调式交替变化音：同主音不同调式音阶所形成的带有变化音的和弦与主调自然<br>
+和弦的交替使用而形成的变化音，在调式上形成大小调式的对比。如：在C大调中，<br>
+由于c小三和弦（t）的使用而产生的变化音E（Ⅲ），意味着调式音列的改变一一由<br>
+大调式变为小调式。<br>
+3.变和弦变化音：如果说，前面两种变化音是以改变调式、调性为前提条件的话，<br>
+这里的变化音则是不改变调性、调式，只是为了增加自然音（大二度）之间的倾向性，<br>
+含有这种变化音的和弦称为“真正的变音和弦”。如：在C大调中"D和弦的使用，意<br>
+味着属和弦的五音升高，其变化音Ⅱ（变属和弦的五音）是以不改变调式（大调式）<br>
+调性（C调）为前提，只是为了增加Ⅱ-Ⅲ的倾向性而已。<br>
+4.装饰性变化音：如果说，前三种变化音都是以和弦音的面目出现的话，这种变<br>
+化音则是由和弦外音在运用过程中所形成的变化音现象（装饰性变化音现象）。<br>
+上述内容中的第三点一—变和弦变化音，是本章所要讲的内容。从以往我们所接</div>
+
+---
+
+<!-- PAGE:16 -->
+<a id="p0016"></a>
+## PDF p.16
+
+![徐平力《高级和声学教程》 PDF p.16（整页影印）](../assets/books/xu_advanced/p0016.jpg)
+
+<!-- MANUAL-REFS:p0016 -->
+<div class="manual-refs"><strong>手册使用本页</strong><ul><li id="ref-example-e04-p0016" class="manual-ref-item" data-kind="example"><span class="ref-kind">案例</span><a href="../和声学手册.html#example-e04">手册案例 E04 · 同一和弦的功能重释</a><br><span class="ref-text">例1-6｜瓦格纳《特里斯坦与伊索尔德》序曲<br>原书要点：同一“特里斯坦和弦”在降E、a小调、C大调等语境中被重释为不同功能，音高关系不变而调性归属改变。<br>机制：同一组音在和弦结构上可以不变，但前后和弦、低音与解决目标会指定不同的临时主音，从而改变其功能与张力方向。<br>读谱：找反复出现的同一音集或同一和弦，比较它每次前后的功能标记与低音；不要急着重算音名。<br>用法：写模糊调性时，固定一个音集，改变它的前后文、低音或解决目标；功能多义由上下文建立，无需增加音高。</span></li></ul></div>
+
+<div class="ocr-text">第一章属组变和弦5<br>
+例1-6<br>
+瓦格纳《特里斯坦与伊索尔德》序曲<br>
+第五部分<br>
+（同第一部分）<br>
+高潮<br>
+渴望主题<br>
+挣扎主题<br>
+派生音调<br>
+痛苦音调<br>
+渴望主题<br>
+E大调：Siin<br>
+渴望主题重叠进人<br>
+Dg<br>
+DVIl<br>
+渴望主题<br>
+ff<br>
+molto<br>
+dim.<br>
+espress.<br>
+D<br>
+trem.<br>
+Sii7<br>
+特里斯坦和弦<br>
+a小调：DD<br>
+a小调：D7<br>
+渴望主题<br>
+模式<br>
+模进<br>
+dim.<br>
+爱情主题<br>
+爱情主题<br>
+p<br>
+p<br>
+痛苦音调<br>
+痛苦音调<br>
+C大调：DVII12<br>
+D7</div>
+
+---
+
+<!-- PAGE:18 -->
+<a id="p0018"></a>
+## PDF p.18
+
+![徐平力《高级和声学教程》 PDF p.18（整页影印）](../assets/books/xu_advanced/p0018.jpg)
+
+<!-- MANUAL-REFS:p0018 -->
+<div class="manual-refs"><strong>手册使用本页</strong><ul><li id="ref-claim-augmented-sixth-resolution-p0018" class="manual-ref-item" data-kind="claim"><span class="ref-kind">论点</span><a href="../和声学手册.html#claim-augmented-sixth-resolution">增六和弦 · augmented-sixth.resolution</a><br><span class="ref-text">手册提炼：增六度的两个外音半音向外扩张到八度属音；上方音偶尔可下行成为 V7 的七音。</span></li></ul></div>
+
+<div class="ocr-text">第一章属组变和弦7<br>
+（四）D变和弦的预备与解决<br>
+1.预备：在变和弦的预备方面，我们曾介绍过，一般的情况是带变化音的和弦用<br>
+不带变化音的和弦作预备。离调和弦如此，调式交替和弦如此，变和弦也是如此。［注<br>
+意变化音与同级的自然音放在同一声部，如果有重复音（指自然音），要与上述进行（指自然音级－变化音级）<br>
+呈反向，即构成“反向对斜关系”处理。]<br>
+2.解决：同DD变和弦的解决一样，其声部进行是增六度解决到纯八度，减十度<br>
+解决到纯八度。下面介绍三种不同终止中的变D和弦：<br>
+正格终止：D与D—T。<br>
+变格终止：3DVI—T、3DVII—T。<br>
+阻碍终止：D—TSvi或tsVI。<br>
+（注意没有D一TSvi，否则和声进行会形成平行五度。）<br>
+三、属组变和弦的实际应用<br>
+1."DVI一t在和声大调中，由于其音响结构与大小七和弦性质一样，因此在转<br>
+调中常通过等音关系来达到转调的目的。见肖邦《e小调钢琴协奏曲》（例1-22）。<br>
+2.DVI在自然大调中，其结构、音响与"DD“法兰西增六和弦”一样；在和声<br>
+大调中，其结构为半减七和弦性质，常在变格进行（终止）中使用。具体和声图示为：<br>
+3D VII——T。<br>
+例1-9<br>
+格里格《奥塞之死》<br>
+3DVI13 -T<br>
+假全音音阶<br>
+dim.<br>
+P<br>
+3.在大调中，由于Ⅱ级的同时升降，形成二重变五音的D和弦。在音响上，变属<br>
+三和弦为四个音的和弦，变属七和弦有五个音，变属九和弦则为六个音的和弦等。具<br>
+体图示为：55D—T或5D—T（其中*55D需要五个声部），也可能是D—T6。</div>
+
+---
+
+<!-- PAGE:24 -->
+<a id="p0024"></a>
+## PDF p.24
+
+![徐平力《高级和声学教程》 PDF p.24（整页影印）](../assets/books/xu_advanced/p0024.jpg)
+
+<!-- MANUAL-REFS:p0024 -->
+<div class="manual-refs"><strong>手册使用本页</strong><ul><li id="ref-claim-augmented-sixth-definition-p0024" class="manual-ref-item" data-kind="claim"><span class="ref-kind">论点</span><a href="../和声学手册.html#claim-augmented-sixth-definition">增六和弦 · augmented-sixth.definition</a><br><span class="ref-text">手册提炼：增六和弦以增六度音程半音向外解决到属音，是强属前和弦，包含意大利、法国、德国三类常见形态。</span></li></ul></div>
+
+<div class="ocr-text">第一章属组变和弦13<br>
+下面介绍一些常见的副属组变和弦：<br>
+（一）重属组变和弦（复习以前所学过的知识）<br>
+建立在向属方向离调的基础上，形成的各种变和弦，由于DD组变和弦含有增六度，<br>
+因此整个DD组变和弦有一个统称一DD增六和弦（A）。常见的有“意大利”、“法<br>
+兰西”、“德意志”。<br>
+1.意大利式增六和弦：这种标记为DDVI。的增六和弦，是个三和弦结构。由于<br>
+两头（两个外声部）都是变化音，呈现出增六度音程现象，因此称为增六和弦。在重<br>
+复音上只能是重复唯一的自然音（五音一一自然音I级）。在音响效果上，如同省略<br>
+五音的大小七和弦，其解决到K或D。在预备上以S、Sii等下属功能组为常见，可<br>
+以采用DDVI。预备，这样直接将真正的变音加人（变和弦以不带变音的和弦做预备<br>
+为佳）。其他以T、TSvi等也可以，在预备上除了K与D之外的任何和弦都可以（只<br>
+要声部进行允许）<br>
+2.法兰西式增六和弦：这是标记为DD的增六和弦。其结构是自然音中所没有的<br>
+音响效果。由于是七和弦，因此在重复音与省略音上没有特别的情况，不存在省略某<br>
+音重复某音的现象。一般是四个音，分布在四个声部中。在预备与解决方面同德意志<br>
+式增六和弦一样。<br>
+3.德意志式增六和弦：这是标记为"DDVI的和弦，是个七和弦形式。与自然音<br>
+和弦中的大小七和弦音响一样，也被广泛运用。其解决到K为终止中DD和弦用法<br>
+的继续。而其解决到D三和弦或D和弦所形成的典型的四部同向进行、平行五度等“违<br>
+规”现象，则需要学习者们深刻领会，其中以著名的莫扎特平行五度而被大多数人所<br>
+认同。<br>
+以上是DD增六和弦（A。）三种常见的和弦的用法，大小调通用。<br>
+下面介绍的是两个大调专用的DD增六和弦。倍增五六和弦（DDVI）：这个和<br>
+弦同德意志式增六和弦在标记上一样，但音响效果不同，加上大小调不通用，因此用<br>
+得很少。由于该和弦含有两个增音程而称为倍增五六和弦。另一个DD增六和弦<br>
+倍增三四和弦（DDVII）：它与德意志式增六和弦在音响、标记等方面完全一样，但<br>
+记谱方面不同。这是个大调专用的一种记谱形式（用级来替代Ⅲ级的一种记谱方<br>
+式），由于该和弦含有一个倍增音程而成为倍增三四和弦。<br>
+（二）副属组变和弦<br>
+在副属变和弦中，以向下属方向离调的基础上建立的变和弦最为常见。</div>
+
+---
+
+<!-- PAGE:25 -->
+<a id="p0025"></a>
+## PDF p.25
+
+![徐平力《高级和声学教程》 PDF p.25（整页影印）](../assets/books/xu_advanced/p0025.jpg)
+
+<!-- MANUAL-REFS:p0025 -->
+<div class="manual-refs"><strong>手册使用本页</strong><ul><li id="ref-example-e08-p0025" class="manual-ref-item" data-kind="example"><span class="ref-kind">案例</span><a href="../和声学手册.html#example-e08">手册案例 E08 · 变副属：按解决目标命名</a><br><span class="ref-text">例1-23｜舒曼《幻想曲集》Op.12 No.6<br>原书要点：升五音副属变和弦到下属的用法与升五音属到主的用法相同；此例为舒曼《幻想曲集》片段。<br>机制：变副属的结构可能与另一调的导七相同；判断功能应看它解决到哪个和弦，以及升高三音或五音形成的半音方向。<br>读谱：先确认目标和弦是否为下属，再检查所谓“属”的三音或五音是否升高；命名以解决目标为准。<br>用法：为下属和弦加强导向时，可写升五音副属到下属；命名依据是解决目标与声部方向，和弦外形只是线索。</span></li></ul></div>
+
+<div class="ocr-text">14高级和声学教程<br>
+1."Dg/S—S较常见，在和弦结构、声部进行等方面用法同"D—T一样。前面曾<br>
+列举过贝多芬《悲怆奏鸣曲》第三乐章结束部的例子，下例是舒曼《幻想曲集》（0p.12，<br>
+No.6）片段。<br>
+例1-23<br>
+舒曼《幻想曲集》Op.12，No.6<br>
+2."D/S—S较常见，在和弦结构、声部进行等方面与"D—T一样。前面曾列举过<br>
+勃拉姆斯《第二钢琴协奏曲》（乐队部分）的例子，下例是穆索尔斯基《鲍里斯·戈<br>
+都诺夫》片段。<br>
+例1-24<br>
+穆索尔斯基《鲍里斯·戈都诺夫》<br>
+3.55D/S一S。下例在和弦结构上很容易误认为是DDVI，但从功能序进及声部<br>
+进行等方面来看，是D/S（副属变和弦）。</div>
+
+---
+
+<!-- PAGE:33 -->
+<a id="p0033"></a>
+## PDF p.33
+
+![徐平力《高级和声学教程》 PDF p.33（整页影印）](../assets/books/xu_advanced/p0033.jpg)
+
+<!-- MANUAL-REFS:p0033 -->
+<div class="manual-refs"><strong>手册使用本页</strong><ul><li id="ref-claim-neapolitan-definition-p0033" class="manual-ref-item" data-kind="claim"><span class="ref-kind">论点</span><a href="../和声学手册.html#claim-neapolitan-definition">拿波里和弦（♭II） · neapolitan.definition</a><br><span class="ref-text">手册提炼：拿波里和弦是降低二级音上建立的大三和弦，常以第一转位出现并承担属前功能。</span></li></ul></div>
+
+<div class="ocr-text">22高级和声学教程<br>
+性质）这种只有小调专用的变和弦。此外，在格里格《致春天》（例2-49）中还有<br>
+"sii等变和弦的应用（全曲倒数第二个和弦）等。<br>
+例2-31<br>
+米亚斯科夫斯基《第15交响曲》<br>
+[注：19世纪末在小调中应用的小拿波里和弦（bib3si。），早在舒伯特的《弦乐五重奏》（例2-47）、《d小<br>
+调四重奏》（例2-32）等作品中就有出现。]<br>
+例2-32<br>
+舒伯特《d小调四重奏》第一乐章<br>
+二、下属变和弦（拿波里）介绍<br>
+（一）定义及基本特征<br>
+1.定义：建立在Ⅱ级上的大三和弦，最初在17世纪，因那不勒斯乐派的作曲家<br>
+应用而得名，被称为拿波里和弦。”SⅡ。这样的标记，实际上是把调式交替和弦当作<br>
+变和弦来标记了。<br>
+2.基本特征：最初"SⅡ。（拿波里）和弦只是用于小调，以后逐渐扩展到大调来使<br>
+用，在旋律上以减三度音程进行为特征。</div>
+
+---
+
+<!-- PAGE:46 -->
+<a id="p0046"></a>
+## PDF p.46
+
+![徐平力《高级和声学教程》 PDF p.46（整页影印）](../assets/books/xu_advanced/p0046.jpg)
+
+<!-- MANUAL-REFS:p0046 -->
+<div class="manual-refs"><strong>手册使用本页</strong><ul><li id="ref-profile-profile-xu_advanced-p0046" class="manual-ref-item" data-kind="profile"><span class="ref-kind">代表页</span><a href="../和声学手册.html#book-profiles">教材代表页 · 徐平力高级</a><br><span class="ref-text">手册将本页列为《徐平力高级》代表页；该书定位：高级功能和声：变和弦、持续音、调性远近、交替转调、线性与平行进行。</span></li></ul></div>
+
+<div class="ocr-text">第三章<br>
+持续音与持续音型<br>
+一、概  述<br>
+在多声部音乐发展中，不协和现象的出现与解决方式形成了传统和声中的典型序<br>
+进逻辑与典型风格进行。在大小调和声中存在着三种不协和音程构成形态与解决方式。<br>
+（一）三种不协和音程构成形态与解决方式<br>
+1.复功能和弦。这是由高度叠置造成的复功能和弦，如（D,的最初标记），解<br>
+决方式：解决到第三功能T。<br>
+2.和弦外音（造成的不协和音程）。这是由非结构音造成的不协和音程现象。解<br>
+决方式：将外音解决到和弦内（少数服从多数），如果单声部外音只需动一个声部。<br>
+3.持续音（造成的不协和音程）。由下方持续音与上面的和弦发生冲突时，形成复功<br>
+能现象（不协和音程）。解决方式：持续音不动，上面的和弦音动（多数服从少数）。①<br>
+（二）持续音的起源与作用<br>
+1.起源：持续音起源于多声部音乐萌芽时期的风笛演奏。另一种说法是起源于17<br>
+世纪的管风琴演奏，管风琴的踏板音常为长时值音。由于当时乐器的条件所限，古钢<br>
+琴还没有踏板装置时，人为的音响要求，使得持续音的用法相当普遍。<br>
+①关于少数服从多数或多数服从少数，只是一个比喻而已。在外音的运用上，特别是在多重外音的使用上，更<br>
+多的却是多数服从少数的现象出现。能够决定一个和弦的性质关键要看低音的情况，如：和弦低音是和弦音，<br>
+而上面的和弦处于外音状态，因此这是多数服从少数的现象。持续音一般就在低声部，所以上面的和弦要服<br>
+从低音的功能。从这点来看，和弦外音与持续音也是有共同之处的。</div>
+
+---
+
+<!-- PAGE:49 -->
+<a id="p0049"></a>
+## PDF p.49
+
+![徐平力《高级和声学教程》 PDF p.49（整页影印）](../assets/books/xu_advanced/p0049.jpg)
+
+<!-- MANUAL-REFS:p0049 -->
+<div class="manual-refs"><strong>手册使用本页</strong><ul><li id="ref-claim-atonal-compound-chord-precursor-p0049" class="manual-ref-item" data-kind="claim"><span class="ref-kind">论点</span><a href="../和声学手册.html#claim-atonal-compound-chord-precursor">无调性与自由音高组织 · atonal.compound-chord-precursor</a><br><span class="ref-text">手册提炼：复合和弦把不同根音/结构的和弦同时叠合，可产生复合调性与高密度音响；贝多芬的复调化写法已显示其先声。</span></li></ul></div>
+
+<div class="ocr-text">38高级和声学教程<br>
+同各种外音一样，持续音也是带有典型风格特征的一种用法，也会形成典型的音<br>
+乐主题形象。例如鲍罗丁《中亚细亚草原》（例11-286）开始的高声部持续音，描绘<br>
+了空旷、一望无际的草原景象。<br>
+由于持续音的分层现象，导致近现代和弦的构成方式的改变。如：复合和弦、复<br>
+功能和弦等。<br>
+例3-58<br>
+普罗科菲耶夫《瞬间幻想》Op.22，No.5<br>
+上例我们可以看到一系列和弦的“复合”形成的复合和声进行。<br>
+（四）持续音的标记<br>
+”，该持续<br>
+1.第一种标记方式：例如在T或D的持续音的基础上“T（D）.P<br>
+音上面的和弦只需标注出原位形式即可。<br>
+例3-59<br>
+和声题例（选自吴式错《和声学教程》）<br>
+F大调：T<br>
+DVII/S<br>
+DVIl7<br>
+T<br>
+Dii<br>
+Sii7<br>
+T<br>
+T.P<br>
+D7/s</div>
+
+---
+
+<!-- PAGE:54 -->
+<a id="p0054"></a>
+## PDF p.54
+
+![徐平力《高级和声学教程》 PDF p.54（整页影印）](../assets/books/xu_advanced/p0054.jpg)
+
+<!-- MANUAL-REFS:p0054 -->
+<div class="manual-refs"><strong>手册使用本页</strong><ul><li id="ref-claim-prolongation-sustained-dominant-p0054" class="manual-ref-item" data-kind="claim"><span class="ref-kind">论点</span><a href="../和声学手册.html#claim-prolongation-sustained-dominant">延长、层次与曲式 · prolongation.sustained-dominant</a><br><span class="ref-text">手册提炼：属持续音把属功能保持在同一低音上，常用于再现前的属准备，延迟并强化结构回归。</span></li><li id="ref-profile-profile-xu_advanced-p0054" class="manual-ref-item" data-kind="profile"><span class="ref-kind">代表页</span><a href="../和声学手册.html#book-profiles">教材代表页 · 徐平力高级</a><br><span class="ref-text">手册将本页列为《徐平力高级》代表页；该书定位：高级功能和声：变和弦、持续音、调性远近、交替转调、线性与平行进行。</span></li></ul></div>
+
+<div class="ocr-text">第三章持续音与持续音型43<br>
+另外在再现前的属准备中采用属持续音，特别是奏鸣曲式展开部前的返回阶段。<br>
+例3-68<br>
+托梅《庄严的行板》<br>
+例3-69<br>
+门德尔松《无词歌》第三十首（春之歌）<br>
+上两例都是在展开段完了以后，在再现前属准备段上出现的D持续音用法。<br>
+此外在K终止时引人属持续音，目的是延长这种不稳定的状态。例如里姆斯基一<br>
+科萨科夫《天方夜谭》第二乐章（例3-62）。<br>
+3.下属持续音的应用：这种持续音的运用较前两种要少，下属持续音在拉赫玛尼<br>
+诺夫《第二钢琴协奏曲》的开头有所体现。①<br>
+例3-70<br>
+拉赫玛尼诺夫《第二钢琴协奏曲》<br>
+atempo<br>
+Moderato(=66)<br>
+conpassionc<br>
+rit.<br>
+84<br>
+poco<br>
+apoco<br>
+pp<br>
+cresc.<br>
+8<br>
+0<br>
+Di持续音（或dⅢ）一通常替代D持续音，例如柴科夫斯基《第六交响曲》<br>
+第二乐章（例3-64）。<br>
+①这里从整体调性上（c小调）来看是下属持续音，从局部调性上（f小调）来看则为主持续音。</div>
+
+---
+
+<!-- PAGE:60 -->
+<a id="p0060"></a>
+## PDF p.60
+
+![徐平力《高级和声学教程》 PDF p.60（整页影印）](../assets/books/xu_advanced/p0060.jpg)
+
+<!-- MANUAL-REFS:p0060 -->
+<div class="manual-refs"><strong>手册使用本页</strong><ul><li id="ref-claim-prolongation-fixed-bass-p0060" class="manual-ref-item" data-kind="claim"><span class="ref-kind">论点</span><a href="../和声学手册.html#claim-prolongation-fixed-bass">延长、层次与曲式 · prolongation.fixed-bass</a><br><span class="ref-text">手册提炼：固定低音反复同一短小低音模式，上方声部作连续发展与变奏；这种重复把局部和声组织成可延长的结构层。</span></li></ul></div>
+
+<div class="ocr-text">第三章持续音与持续音型49<br>
+例3-81<br>
+鲍罗丁《伊戈尔王子》<br>
+上例为b弗里几亚调式。在浪漫主义后期，这种仿中古调式的做法比较流行，如<br>
+李斯特、比才、拉赫玛尼诺夫、格里格等人的作品。下面分析拉赫玛尼诺夫《第二钢<br>
+琴协奏曲》（例3-70）。该例是该曲的开头，在下属（S）持续音的基础上，上方有三<br>
+个音区的主（T）持续音同时出现。在和弦序进方面，通过半音化线性和声的手法，<br>
+从"sⅡI—si—s—S—s—si—sII形成一种集中对称性和声序进逻辑。<br>
+（二）持续音型中的固定低音现象<br>
+在主属（T、D）双持续音的基础上，通过加人经过音的做法，形成带有级进旋律特<br>
+征的下行固定音调一一形成固定低音，这种现象很常见。如肖邦《波兰舞曲》（Op.53）<br>
+钢琴协奏曲《黄河》第四乐章等。<br>
+例3-82<br>
+肖邦《波兰舞曲》Op.53<br>
+上述各例的固定音型重复时，上面的旋律进行的重音可以与固定低音的重音形成<br>
+同步，也可自成一体与固定低音不同步，如阿连斯基《固定低音》。该例主题是六个音，<br>
+而拍子则采用拍，这样，除第1小节之外，每个小节都不同步（见下例）。<br>
+变奏曲中的固定低音，可看作是某种意义的持续音型。例如阿连斯基《固定低音》：<br>
+例3-83<br>
+阿连斯基《固定低音》<br>
+Andante sostenuto</div>
+
+---
+
+<!-- PAGE:74 -->
+<a id="p0074"></a>
+## PDF p.74
+
+![徐平力《高级和声学教程》 PDF p.74（整页影印）](../assets/books/xu_advanced/p0074.jpg)
+
+<!-- MANUAL-REFS:p0074 -->
+<div class="manual-refs"><strong>手册使用本页</strong><ul><li id="ref-claim-color-harmony-chromatic-mediants-p0074" class="manual-ref-item" data-kind="claim"><span class="ref-kind">论点</span><a href="../和声学手册.html#claim-color-harmony-chromatic-mediants">色彩和声与调式色彩 · color-harmony.chromatic-mediants</a><br><span class="ref-text">手册提炼：色彩性和弦连续常通过变化中音关系连接非本调和弦，以意外根音进行制造色彩而不必立即转调。</span></li></ul></div>
+
+<div class="ocr-text">第四章同主音交替与平行交替63<br>
+上例的四个和弦中，两头为主和弦，中间两个为变化中音和弦，分别来自同主音<br>
+交替关系与平行交替关系。这种T—VI（变化中音和弦）－Ⅲ（变化中音和弦）—T<br>
+的“大三度循环”现象，是中音关系进行（色彩性）取代四五度功能关系进行的具体体现。<br>
+（五）有关调式和声现象的补充说明<br>
+1.为什么DD组离调和弦与调式自然音和弦一样常用？这是因为里底亚调式的特<br>
+征音IV所导致的DD组和弦是大小调中的常用和弦，在终止中及结构内部都非常好<br>
+用。因此，这里的调式特征音基本上已被大小调中的离调特征音所同化。<br>
+2.为什么弗里几亚终止可用在转调乐段中的结尾？这是因为弗里几亚终止从弗里<br>
+几亚的角度来看，就是它的主和弦，而从大小调的角度来看则是高其上方四度小调的<br>
+D和弦。如下例的结尾落在d小调的D上，而从a弗里几亚调式的角度来看，则是它<br>
+的主和弦。<br>
+例4-96<br>
+里姆斯基一科萨科夫《五月之夜》第二幕<br>
+B大调：T<br>
+D<br>
+S<br>
+D<br>
+D6TSVIDD<br>
+T.P<br>
+B大调：T<br>
+D<br>
+S<br>
+D<br>
+D6<br>
+T<br>
+d小调：dIlS<br>
+T.P<br>
+D<br>
+从某种意义上讲，我们需要重新认识一下以前所学过的和弦，如DD，（里Ⅱ，）<br>
+DDVIl（洛tsVI,）、弗里几亚半终止t—dⅢI—s—D、弗里几亚终止S—tsVI—3dVII一<br>
+T（辟卡迪三度）等。<br>
+①见斯波索宾等《和声学教程》之第二十八章“终止中重属和弦”、第二十九章“结构内的重属和弦”。</div>
+
+---
+
+<!-- PAGE:75 -->
+<a id="p0075"></a>
+## PDF p.75
+
+![徐平力《高级和声学教程》 PDF p.75（整页影印）](../assets/books/xu_advanced/p0075.jpg)
+
+<!-- MANUAL-REFS:p0075 -->
+<div class="manual-refs"><strong>手册使用本页</strong><ul><li id="ref-claim-cadence-pac-iac-p0075" class="manual-ref-item" data-kind="claim"><span class="ref-kind">论点</span><a href="../和声学手册.html#claim-cadence-pac-iac">终止式 · cadence.pac-iac</a><br><span class="ref-text">手册提炼：完满正格终止由原位属到原位主、且主音位于最高声部构成；其余 V–I 多为不完满正格终止。</span></li><li id="ref-claim-cadence-half-plagal-deceptive-p0075" class="manual-ref-item" data-kind="claim"><span class="ref-kind">论点</span><a href="../和声学手册.html#claim-cadence-half-plagal-deceptive">终止式 · cadence.half-plagal-deceptive</a><br><span class="ref-text">手册提炼：半终止停在属功能，变格终止为 IV–I，阻碍进行为 V–vi；三者收束强度与结构作用不同。</span></li></ul></div>
+
+<div class="ocr-text">64高级和声学教程<br>
+每个调式中能够代表本调式特征的和声语言，与传统大小调和声中类型相似的和<br>
+声语汇相区别。这样代表自已本调式特征的和声语言被保留下来，如弗里几亚半终止<br>
+（t—dⅢI—s—D）、弗里几亚终止（S—tsVdVI—T）、多利亚S—t等。有关交替和<br>
+弦的用法还得看具体的典型进行来掌握。<br>
+二、调式交替的用法<br>
+（一）终止中的交替用法<br>
+在传统大小调和声中，终止式是用来结束乐段、乐句，甚至一种乐思的重要标志。<br>
+它不仅能表明乐曲的调式、调性，还可以体现出乐段本身的结构性质。如收拢结构与<br>
+开放结构、扩充与补充等等。终止式的进行是带有典型功能进行意义的具有风格性特<br>
+征的和声语言。欣德米特曾说：“终止式是一种有强烈终止效果的和声进行，并且它<br>
+在许多风格中都是实际终止公式，这个公式是由节奏、旋律、和声等成分构成的。”<br>
+终止中的交替用法，体现在原有的正格终止、变格终止、完全终止、阻碍终止等<br>
+典型的终止式中加人调式和声特征因素。如大调交替正格终止中采用T一dtⅢ。（自然<br>
+小调）一T。例如德彪西《月光》的结尾：<br>
+例4-97<br>
+德彪西《月光》<br>
+D大调：<br>
+dtIIl6<br>
+上例是德彪西《月光》的结尾，以采用交替性正格终止（dtⅢ。一T）而闻名。<br>
+①弗里几亚终止与半终止实际上是同样的和声进行。在交替过程中，凡采用主音相同音列不同的调式交替，如<br>
+C大调与c弗里几亚交替所形成的终止为弗里几亚终止。凡采用主音不同、音列相同的调式交替，如a小调<br>
+与e弗里几亚交替所形成的终止为弗里几亚半终止。</div>
+
+---
+
+<!-- PAGE:81 -->
+<a id="p0081"></a>
+## PDF p.81
+
+![徐平力《高级和声学教程》 PDF p.81（整页影印）](../assets/books/xu_advanced/p0081.jpg)
+
+<!-- MANUAL-REFS:p0081 -->
+<div class="manual-refs"><strong>手册使用本页</strong><ul><li id="ref-claim-secondary-dominant-usage-p0081" class="manual-ref-item" data-kind="claim"><span class="ref-kind">论点</span><a href="../和声学手册.html#claim-secondary-dominant-usage">副属和弦与离调 · secondary-dominant.usage</a><br><span class="ref-text">手册提炼：副属和弦可用于任何能被自然音级目标和弦接收的位置，但实际用法受根音进行与不协和音处理约束。</span></li></ul></div>
+
+<div class="ocr-text">70高级和声学教程<br>
+由于某种特定的组合方式所形成的其他调式的典型进行）。<br>
+例4-106<br>
+柴科夫斯基《罗密欧与朱丽叶》<br>
+Moderatoassal<br>
+pp<br>
+pP<br>
+B大调：<br>
+tsVI<br>
+dVIl<br>
+dIll<br>
+D大调：<br>
+S<br>
+D<br>
+T<br>
+（五）交替和弦的引入与进行—以tsVI、b1sⅡ为例，可以：<br>
+1.直接引I入，如：T—tsVI、S—sII。<br>
+2.离调引入，如：T—D/tsVI—tsVI、S—D/sIⅡI—sⅡ。<br>
+3.阻碍引入，如：D—tsVI、Dz/S—sⅡ等。<br>
+在交替和弦引人之后，根据同级替代的原则来看，凡是所替代的和弦能够进行到<br>
+的和弦，交替和弦也同样可以（只要声部进行允许）。<br>
+三、交替和弦与副属、副下属和弦的区别<br>
+在构成方式上有时很难区别，主要是看走向。勋伯格曾说过：一个单个和弦几乎<br>
+不能说明什么，只有两个和弦以上的和弦连接，才能够形成调式、调性等有关广义上<br>
+的和声上的问题。不要以单个和弦的好听与否来论对错，而是要以整体的逻辑关系来<br>
+衡量，这就是要“客观解释和声序进逻辑”的意思。<br>
+一般离调的副下属通常进行到D或T，而副属和弦总是要解决的，其特征是半音<br>
+向上。（临时导音）解决的和弦不是临时T就是TSVI。<br>
+而交替和弦一般也是半音倾向进行，但不是向上而是向下（一般是先大后小，如S一<br>
+s、T—t）。例如舒伯特《孤居》：</div>
+
+---
+
+<!-- PAGE:83 -->
+<a id="p0083"></a>
+## PDF p.83
+
+![徐平力《高级和声学教程》 PDF p.83（整页影印）](../assets/books/xu_advanced/p0083.jpg)
+
+<!-- MANUAL-REFS:p0083 -->
+<div class="manual-refs"><strong>手册使用本页</strong><ul><li id="ref-claim-scale-natural-modes-p0083" class="manual-ref-item" data-kind="claim"><span class="ref-kind">论点</span><a href="../和声学手册.html#claim-scale-natural-modes">调式、音阶与音级 · scale.natural-modes</a><br><span class="ref-text">手册提炼：自然七调式可由同一音列移位并更换中心音得到；中心音与调式名称共同决定音阶身份。</span></li><li id="ref-claim-form-sonata-conflict-p0083" class="manual-ref-item" data-kind="claim"><span class="ref-kind">论点</span><a href="../和声学手册.html#claim-form-sonata-conflict">曲式中的和声策略 · form.sonata-conflict</a><br><span class="ref-text">手册提炼：奏鸣曲呈示部建立主调与副调的主题/调性冲突，展开部扩大不稳定，再现部把副调主题带回主调解决冲突。</span></li></ul></div>
+
+<div class="ocr-text">72高级和声学教程<br>
+调式、调性思维的发展过程中，从音乐发展史的角度来看，古典大小调时期更注重调<br>
+性的发展变化，如奏鸣曲式，在再现部中副部的调性服从，不一定要调式服从，只要<br>
+主音回来就可以。从巴赫的《十二平均律》到肖邦的《24首前奏曲》，再到拉赫玛尼<br>
+诺夫的《前奏曲》，几乎都是以调性为特征命名的24首前奏曲。）<br>
+大小调之间的复杂化（调式交替）除前面谈到的在同主音的各种调式之间之外，<br>
+还存在于平行关系的大小调之间（C大一a小）。这种现象比同主音大小调之间的交替<br>
+还要早，而且自然。在民间音乐中，可以看到这样的例子比比皆是。例如俄罗斯民歌《田<br>
+野里的小路》：<br>
+例4-109<br>
+俄罗斯民歌《田野里的小路》<br>
+g小调<br>
+B大调<br>
+g小调<br>
+上例是同音列（平行）关系的大小调平行交替的例子。在调式思维发展的过程中，<br>
+同主音之间与同音列（平行）关系之间的调式交替，是调式思维发展的主要两条途径，<br>
+两者相辅相成，推动着和声的发展，使和声语汇更加丰富，手法更加多样。在平行交<br>
+替形式中，又分为两种形式：自然调式的平行交替（C自然大调与a自然小调）与和<br>
+声调式的平行交替（C和声大调与a和声小调，这里不包括同音列之间的其他各种教<br>
+会调式之间的交替）。<br>
+①自然调式的平行交替<br>
+例4-110<br>
+柴科夫斯基《夜莺》<br>
+我们知道平行调之间的相互交替是自然调式和声中常见的现象。上例是b小调与<br>
+D大调之间的交替现象。下面我们看一下李斯特《旅行家的画册》：</div>
+
+---
+
+<!-- PAGE:94 -->
+<a id="p0094"></a>
+## PDF p.94
+
+![徐平力《高级和声学教程》 PDF p.94（整页影印）](../assets/books/xu_advanced/p0094.jpg)
+
+<!-- MANUAL-REFS:p0094 -->
+<div class="manual-refs"><strong>手册使用本页</strong><ul><li id="ref-claim-modulation-distance-p0094" class="manual-ref-item" data-kind="claim"><span class="ref-kind">论点</span><a href="../和声学手册.html#claim-modulation-distance">转调体系：类型、距离与确认 · modulation.distance</a><br><span class="ref-text">手册提炼：调性远近应综合调号、共同和弦、主音距离与转调方法来判定，不能只看调号差。</span></li><li id="ref-prose-cite-xu_advanced-p0094-1-p0094" class="manual-ref-item" data-kind="prose"><span class="ref-kind">正文引用</span><a href="../和声学手册.html#cite-xu_advanced-p0094-1">手册正文引用</a><br><span class="ref-text">徐平力 PDF p.94 给出四个标准：</span></li><li id="ref-profile-profile-xu_advanced-p0094" class="manual-ref-item" data-kind="profile"><span class="ref-kind">代表页</span><a href="../和声学手册.html#book-profiles">教材代表页 · 徐平力高级</a><br><span class="ref-text">手册将本页列为《徐平力高级》代表页；该书定位：高级功能和声：变和弦、持续音、调性远近、交替转调、线性与平行进行。</span></li></ul></div>
+
+<div class="ocr-text">第五章调性关系远近划分与二级关系转调83<br>
+对置（横向）来进行结构的调性处理（这方面内容在第十六章“极音对置与极音复合”<br>
+有叙述）。<br>
+二、调性的远近划分<br>
+（一）调性的远近划分标准<br>
+有关调性的远近划分，一直有各种各样的不同划分标准。可以说，它是与不同时<br>
+期的和声现象及不同时期的和声体系直接相关。一般调性远近的划分标准有四种方法：<br>
+1.看调号相差多少；2.看共同和弦有多少；3.看主音之间的距离；4.看转调方法（这<br>
+一点很重要）。<br>
+1.看调号一—这是一种表面现象，一般调号相差少，两调之间的关系就近，反之<br>
+就远。<br>
+2.看共同音、共同和弦的多少一一一般来讲，共同音多了，共同和弦就多，两个<br>
+调性之间的关系就近了。<br>
+3.看主音之间的距离一例如C大调与f小调，从调号的角度来看，相差4个降号。<br>
+由于主音之间的四五度解决关系，使得两调的关系很近。<br>
+下面我们做一个实验：从C自然大调音阶与f自然小调音阶比较来看，是相差4<br>
+个调号（音），没有一个共同和弦。如果从C和声大调音阶与f和声小调音阶来看，<br>
+则是相差两个音（有两个共同和弦）。如果从C旋律大调的下行音阶与f旋律小调的<br>
+上行音阶来看，则两调的音阶完全一致。这说明主音之间关系的重要性。<br>
+4.看转调方法一一斯波索宾在划分一级与三级关系时，主要是参照所采用的转调<br>
+方法，如通过.D、s作为中介和弦，来决定三级关系调的划分（只要通过D、s能够作<br>
+为中介和弦转得到的调，统统归为三级关系调）。由于D、s和弦的特殊作用，因此在<br>
+对待这两个和弦时，把它（小调的D、大调的s）等同于离调中的其他自然关系和弦<br>
+中的和弦（如大调的Ⅱ、Ⅲ、IⅣ、V、VI）一样来看待。这样，一级关系调的建立是在<br>
+其他五个自然关系和弦的基础上，加上s或D调，在这里，我们把s调或D调作为象<br>
+征自然关系和弦的近关系调来看待。<br>
+（二）古典主义时期的调性远近划分情况<br>
+第一种：这种方法主要是看调号相差多少，来决定调性之间的远近关系的。如，<br>
+相差一个调号为一级关系，相差两个调号为二级关系等。这是一种较原始的划分方法，<br>
+是建立在自然调式的基础上，没有考虑其他调式的因素（如和声调式、旋律调式等），</div>
+
+---
+
+<!-- PAGE:96 -->
+<a id="p0096"></a>
+## PDF p.96
+
+![徐平力《高级和声学教程》 PDF p.96（整页影印）](../assets/books/xu_advanced/p0096.jpg)
+
+<!-- MANUAL-REFS:p0096 -->
+<div class="manual-refs"><strong>手册使用本页</strong><ul><li id="ref-profile-profile-xu_advanced-p0096" class="manual-ref-item" data-kind="profile"><span class="ref-kind">代表页</span><a href="../和声学手册.html#book-profiles">教材代表页 · 徐平力高级</a><br><span class="ref-text">手册将本页列为《徐平力高级》代表页；该书定位：高级功能和声：变和弦、持续音、调性远近、交替转调、线性与平行进行。</span></li></ul></div>
+
+<div class="ocr-text">第五章调性关系远近划分与二级关系转调85<br>
+在转调过程中，采用的方法决定了转调的性质。如：①通过自然和弦的转调，每<br>
+次只增加一个升（降）记号，称为逐渐转调。②通过交替和弦的转调，则每次增加三<br>
+至五个调号不等，称为加速转调。如通过同主音转调，增加三个；通过s或tsVI则增<br>
+加四个；通过”sⅡ（拿波里）转调则增加五个。③通过等音转调，则可能性更多。如<br>
+DD组变和弦、S组变和弦，所增加或缩减的调号数量不等。这种转调的特点是关系<br>
+越远越方便，称为突然转调。<br>
+（三）近现代时期的调性远近划分<br>
+1.平行关系。（1个，a）<br>
+2.近关系调。（4个，包括相差一个升降记号的调，G、e、F、d）<br>
+3.次近关系调。（4个，包括相差两个升降记号的调，D、b、B、g）<br>
+4.同主音关系调。（1个，c）<br>
+5.同中音关系调。（1个，c）<br>
+6.中音关系调。（8个，包括主音上下方大小三度的大小三和弦）<br>
+7.极音关系调或重中音关系调。（2个，包括极音关系的大小三和弦的调一F<br>
+大调与#f小调）<br>
+8.重同名关系调。（2个，包括上下方小二度关系的大三和弦的调—D大调与<br>
+B大调）<br>
+本书主要采用斯波索宾的调性远近关系划分。<br>
+综上所述，调性远近关系的划分不是一成不变的，它随着音乐时代的发展而变化。<br>
+这点，从上述的三种调性远近划分的变化中可见一斑。<br>
+三、近关系与二级关系转调<br>
+（一）一级关系（近关系）<br>
+从大调出发建立在自然音级上的Ⅱ、ⅢI、V、V、VI及小s调。<br>
+近关系调：6个。包括平行关系调、相差一个升降记号的调、和声调式的s或D调（这<br>
+点与其他和声体系不同）。<br>
+共同和弦：分为三个层次一一①平行关系调：共同和弦7个。②相差一个升降<br>
+记号的调：共同和弦4个（两调主和弦及其平行）。③和声调式的s或D调：共同和<br>
+弦2个（两调主和弦）。</div>
+
+---
+
+<!-- PAGE:103 -->
+<a id="p0103"></a>
+## PDF p.103
+
+![徐平力《高级和声学教程》 PDF p.103（整页影印）](../assets/books/xu_advanced/p0103.jpg)
+
+<!-- MANUAL-REFS:p0103 -->
+<div class="manual-refs"><strong>手册使用本页</strong><ul><li id="ref-claim-tonicization-time-structure-p0103" class="manual-ref-item" data-kind="claim"><span class="ref-kind">论点</span><a href="../和声学手册.html#claim-tonicization-time-structure">临时主音化（离调） · tonicization.time-structure</a><br><span class="ref-text">手册提炼：离调与转调的界限主要取决于持续时间、结构位置与终止确认；单靠一个变化和弦不能判定转调。</span></li></ul></div>
+
+<div class="ocr-text">92高级和声学教程<br>
+1.通过中介和弦的转调。<br>
+2.通过离调到中介和弦的转调。<br>
+3.通过中介调的转调。<br>
+4.通过半音和弦的转调。（原来是作为一种半音式平滑进行而存在于各种近关系<br>
+的转调中，如：前调T=后调S一s这样的半音进行，后来独立成为一种转调方法。）<br>
+例5-137<br>
+圣-桑《天鹅》<br>
+5.通过弗里几亚进行的转调，见里姆斯基-科萨科夫《五月之夜》第二幕（例4-96）。<br>
+该例是很少见的一种转调半终止的现象。与离调半终止的区别，是处在结构（乐<br>
+段）的尾部。同时从调式和声的角度来看，结尾是典型的a弗里几亚终止"d一T。这<br>
+样a弗里几亚与d小调是平行交替关系。<br>
+6.模进转调或通过离调和弦的转调<br>
+转调有时是没有通过自然和弦作为中介和弦来进行转调的。这种情况一般为模进<br>
+转调或通过离调和弦的转调，如下例。<br>
+例5-138<br>
+贝多芬《第二钢琴奏鸣曲》第三乐章<br>
+g小调：t<br>
+D3<br>
+DA大调：D<br>
+D大调：D<br>
+t6<br>
+E大调：Dii6</div>
+
+---
+
+<!-- PAGE:107 -->
+<a id="p0107"></a>
+## PDF p.107
+
+![徐平力《高级和声学教程》 PDF p.107（整页影印）](../assets/books/xu_advanced/p0107.jpg)
+
+<!-- MANUAL-REFS:p0107 -->
+<div class="manual-refs"><strong>手册使用本页</strong><ul><li id="ref-claim-modal-interchange-flat-degrees-p0107" class="manual-ref-item" data-kind="claim"><span class="ref-kind">论点</span><a href="../和声学手册.html#claim-modal-interchange-flat-degrees">同主音调式交替（借用和弦） · modal-interchange.flat-degrees</a><br><span class="ref-text">手册提炼：大调借用中最常见的是含 ♭6 的 iv、♭VI、iiø7、vii°7；♭3 与 ♭7 进一步扩展色彩。</span></li></ul></div>
+
+<div class="ocr-text">96高级和声学教程<br>
+该例是一首再现单三部曲式结构，主调为C大调。呈示段（A）为两句结构的乐<br>
+段（9小节），其中前面有一小节的引子。在转调方面采用逐渐转调的方式一—第一句<br>
+C大调一e小调。第二句e小调一D大调。上下句为同一材料。<br>
+在第二段（B）中，从D大调的同主音小调开始，首先形成调式对比。在写法上，<br>
+则采用模进展开手法。其模进模式本身含有转调过程，如d小调一a小调。模进则为<br>
+c小调一G大调，然后通过一系列的半音向上离调引出再现。<br>
+再现段（A'）在C大调上进行，因为再现段的守调处理，在上句的尾部及下句都<br>
+作了相应的调整，具体调性布局见下面结构图示。<br>
+Coda为向下属方向离调构成。<br>
+其结构图式：<br>
+再现单三部曲式<br>
+引子<br>
+A（乐段）<br>
+B（乐段）<br>
+A（乐段）Coda<br>
+材料：<br>
+a+a'<br>
+b<br>
+小节：1<br>
+4+ 4<br>
+2.5+2.5+2<br>
+4<br>
+4<br>
+3<br>
+调性：CC-ee—D<br>
+d—-acGC:D准备C—Fd—C<br>
+C<br>
+练习五<br>
+一、完成下列旋律的四部和声写作<br>
+要求：首先进行四部和声骨架的写作，然后进行对位化处理。</div>
+
+---
+
+<!-- PAGE:121 -->
+<a id="p0121"></a>
+## PDF p.121
+
+![徐平力《高级和声学教程》 PDF p.121（整页影印）](../assets/books/xu_advanced/p0121.jpg)
+
+<!-- MANUAL-REFS:p0121 -->
+<div class="manual-refs"><strong>手册使用本页</strong><ul><li id="ref-claim-modulation-confirmation-p0121" class="manual-ref-item" data-kind="claim"><span class="ref-kind">论点</span><a href="../和声学手册.html#claim-modulation-confirmation">转调体系：类型、距离与确认 · modulation.confirmation</a><br><span class="ref-text">手册提炼：转调必须由新调的和声进行与终止式确认；短促强调或单一副属和弦通常只是离调。</span></li></ul></div>
+
+<div class="ocr-text">110高级和声学教程<br>
+同呈示段终止式一样<br>
+Coda<br>
+D(7)6<br>
+K4<br>
+D2<br>
+T6Sii6D(7)+6<br>
+TD2/STSviD2/Si6<br>
+TD2/STSviD2/Sii<br>
+bd<br>
+Sii6<br>
+D<br>
+T<br>
+D2/S8<br>
+T<br>
+（弗）<br>
+这是一首再现单三部曲式结构，在呈示段（A）中（第1一10小节），以四部和声<br>
+为基础，在写法上分为上下句，上句4小节，下句6小节。<br>
+上句是典型的半终止写法，落在D上，下句开始转调——通过前调的TSvi等于<br>
+后调的s，最后以新调（"A）的终止式进行巩固。需要说明的是在转调记谱上，采用<br>
+等音记谱的手法，将实际为三级关系的调性E一（#G）记成A。<br>
+在展开段（B）中（第10一18小节），采用模进手法进行音乐的展开发展，在记<br>
+谱上又回到升记号的记谱方式，通过模进进行展开，前后经过#f—A一#e，最后落到<br>
+E大调上作准备。这里采用的是引伸对比式的写法及典型的展开型陈述，2+2+2+2，<br>
+材料上来自A段中的主题终止音调。在和声上有等音转调手法处理（前调的DDVI<br>
+等于后调的D），通过这样的模进模式处理，逐级上移，一直推向高潮，然后再现。<br>
+再现段（A'）（第19一27小节）同呈示段（A）一样，由于调性需要守调处理，<br>
+在下句的音高上与呈示段（A）有所不同，属于变化再现的处理方式。<br>
+在Coda的处理上，又将展开段（B）基本材料拿出来进行发展，这种方法在实际<br>
+作品中也非常多见。但这里基本上只有一句结构（两个乐节）。在和声上最后的处理<br>
+是调式和声中弗里几亚终止的典型进行，很有特色。<br>
+其结构图式：</div>
+
+---
+
+<!-- PAGE:145 -->
+<a id="p0145"></a>
+## PDF p.145
+
+![徐平力《高级和声学教程》 PDF p.145（整页影印）](../assets/books/xu_advanced/p0145.jpg)
+
+<!-- MANUAL-REFS:p0145 -->
+<div class="manual-refs"><strong>手册使用本页</strong><ul><li id="ref-claim-modal-interchange-parallel-key-modulation-p0145" class="manual-ref-item" data-kind="claim"><span class="ref-kind">论点</span><a href="../和声学手册.html#claim-modal-interchange-parallel-key-modulation">同主音调式交替（借用和弦） · modal-interchange.parallel-key-modulation</a><br><span class="ref-text">手册提炼：以同主音交替和弦转调需检查前后调关系、交替和弦的引入、音级计算与新调终止式四个要点。</span></li></ul></div>
+
+<div class="ocr-text">134高级和声学教程<br>
+特征：先转调后并置。<br>
+f小调<br>
+tsVI<br>
+a小调<br>
+dtIII<br>
+作为同主音和弦（T)<br>
+c小调<br>
+g小调<br>
+dVII<br>
+大S<br>
+d小调<br>
+上面所列举的图示比较少见，现举例如下：<br>
+例8-193<br>
+贝多芬《月光鸣奏曲》第一乐章<br>
+#<br>
+团团市团南团团团团团团团微团团司<br>
+上例是前调（#c）通过其dtⅢ（E）等于后调（e）的大主（T）来完成的转调，c一<br>
+E-e。<br>
+三、通过同主音交替和弦转调的四个要点<br>
+从前面所讲述的内容中，我们可以将通过同主音交替和弦转调的要点归纳为如下<br>
+四点：前后调关系、同主音和弦的引人、计算、后调终止式。</div>
+
+---
+
+<!-- PAGE:151 -->
+<a id="p0151"></a>
+## PDF p.151
+
+![徐平力《高级和声学教程》 PDF p.151（整页影印）](../assets/books/xu_advanced/p0151.jpg)
+
+<!-- MANUAL-REFS:p0151 -->
+<div class="manual-refs"><strong>手册使用本页</strong><ul><li id="ref-claim-tonicization-opening-chord-p0151" class="manual-ref-item" data-kind="claim"><span class="ref-kind">论点</span><a href="../和声学手册.html#claim-tonicization-opening-chord">临时主音化（离调） · tonicization.opening-chord</a><br><span class="ref-text">手册提炼：段落开头的和弦会被听觉暂时赋予主和弦权重；判断离调或转调时应结合开头、持续与终止，而不只看单个和弦的调性归属。</span></li></ul></div>
+
+<div class="ocr-text">140高级和声学教程<br>
+上例如果将前调是f小调的t和弦作为中介，等于后调D大调的Di，通过（大小调）<br>
+共同的D引I人同主音和弦（t），它等于C大调的SiSi。一D#—T。随后又通过C<br>
+大调的T等于G大调的S，转到G大调结束。<br>
+该例同样也有两种解释，如果将中介和弦往后推一个，即第二行第一小节第一个<br>
+和弦，则形成通过平行类和弦的转调。具体计算如下：f小调s等于C大调的Si一<br>
+Sii。一D#—T，这样可以省去一个辅助调性（D大调—一为了方便计算）。<br>
+六、关于“先入为主”的调性现象分析<br>
+在前面章节中，我们曾谈到和声性调性的特点，它是通过两个以上的和弦序进来<br>
+完成的。<br>
+“先人为主”的调性现象指的是：如果只有一个和弦，或其他和弦已经明显不属<br>
+于这个和弦（调）的情况下，调性能否成立？这就是“先人为主”的调性分析理论。<br>
+一个段落一开始出现的和弦往往给人以主和弦的感觉，因此，在只有一个和弦的<br>
+状态下，其调性的确立，可称之为“先人为主”的调性现象。<br>
+例8-201<br>
+肖邦《前奏曲》Op.28，No.2<br>
+e小调：t<br>
+G大调：TS<br>
+K<br>
+上例是肖邦于1838年创作的《24首前奏曲》（0p.28）中的第二首，标题为“a<br>
+小调前奏曲”。由于采用省略主调（a小调）这一关键环节的作法，使我们在调性的认<br>
+定上带来一定的困难。<br>
+根据“先人为主”的调性分析方法，我们可以认定其开始部分的调性为e小调（局<br>
+部调性）。类似的情况还有贝多芬《月光奏鸣曲》第二乐章开头（例8-202）、柴科夫<br>
+斯基《十一月》（雪撬）的中部开始（由于篇幅所限，没有列出）等。</div>
+
+---
+
+<!-- PAGE:172 -->
+<a id="p0172"></a>
+## PDF p.172
+
+![徐平力《高级和声学教程》 PDF p.172（整页影印）](../assets/books/xu_advanced/p0172.jpg)
+
+<!-- MANUAL-REFS:p0172 -->
+<div class="manual-refs"><strong>手册使用本页</strong><ul><li id="ref-claim-sequence-transposition-p0172" class="manual-ref-item" data-kind="claim"><span class="ref-kind">论点</span><a href="../和声学手册.html#claim-sequence-transposition">模进与五度循环 · sequence.transposition</a><br><span class="ref-text">手册提炼：模进把同一和声单元整体移位，可保持局部连接语法，同时累积离开原调的压力。</span></li></ul></div>
+
+<div class="ocr-text">第九章模进现象综述161<br>
+2.模进音组（动机）移位一—按全音向上或向下移位。音程：上下方大二度。风<br>
+格特征以古典、浪漫主义时期为主。前面列举过的贝多芬《黎明奏鸣曲》开头（例<br>
+14-351）、里姆斯基-科萨科夫《天方夜谭》第一乐章主题（例9-226）、肖邦《f小<br>
+调幻想曲》（例5-136）等。<br>
+3.模进音组（动机）移位一按半音向上或向下移位。音程：上下方小二度。浪<br>
+漫主义时期风格特征。<br>
+例9-236<br>
+肖邦《前奏曲》Op.28，No.17<br>
+980<br>
+E大调：D<br>
+D大调：D<br>
+D/S<br>
+D/S<br>
+D/Sii<br>
+小调：DDVIIDDVII<br>
+bE大调：DDVII<br>
+E大调：K<br>
+DVII/Sii<br>
+D7<br>
+4.模进音组（动机）移位一按小三度向上或向下移位。音程：上下方小三度。<br>
+浪漫主义时期风格特征。见肖邦《夜曲》0p.37，No.2（例6-158）。<br>
+5.模进音组（动机）移位一按大三度向上或向下移位。音程：上下方大三度。<br>
+浪漫主义风格特征。如前面列举过的李斯特《爱之梦》第三首（例9-222）里姆斯基-<br>
+科萨科夫《安塔尔》（例9-231）等。此外，还有里姆斯基－科萨科夫《沙皇的未婚妻》<br>
+（例14-355）。<br>
+该例的前一行是大三度连锁的模进，其内部调性安排呈示出混合交替的形态（先<br>
+平行调后同中音调的交替方法）。<br>
+6.模进音组（动机）移位一按增四度向上或向下移位。音程：上下方增四度、<br>
+减五度。浪漫主义后期风格特征。如李斯特《奥别尔曼平原》（例14-354）。</div>
+
+---
+
+<!-- PAGE:186 -->
+<a id="p0186"></a>
+## PDF p.186
+
+![徐平力《高级和声学教程》 PDF p.186（整页影印）](../assets/books/xu_advanced/p0186.jpg)
+
+<!-- MANUAL-REFS:p0186 -->
+<div class="manual-refs"><strong>手册使用本页</strong><ul><li id="ref-claim-seventh-general-resolution-p0186" class="manual-ref-item" data-kind="claim"><span class="ref-kind">论点</span><a href="../和声学手册.html#claim-seventh-general-resolution">七和弦、九和弦与不协和等级 · seventh.general-resolution</a><br><span class="ref-text">手册提炼：七和弦是不协和和弦，需准备并按倾向解决；其七音通常下行级进，属七是最强的功能和声形态。</span></li></ul></div>
+
+<div class="ocr-text">第十章换调与意外进行175<br>
+例10-248<br>
+瓦格纳《名歌手》<br>
+G大调：D<br>
+DVIt/Sii<br>
+iD<br>
+上例第2小节第三拍旋律声部的E音为自由音的处理方式。<br>
+③传统和声中的意外进行一般在功能序进上意外，声部进行上不意外，不协和音<br>
+（如七和弦的七音）还是要解决的。<br>
+例10-249<br>
+三、意外进行的范围与手法<br>
+（一）意外进行的范围<br>
+我们知道，意外进行的最终目的是将两个没有直接功能关系的和弦形成对置状态，<br>
+及由此形成的“落空”效果，叫意外进行。<br>
+意外进行的范围，可以通过各种期待现象的落空（如和弦、调性、调式等）来加<br>
+以统计的。如1.期待的和弦的落空（例如D,期待的是T但进行到TSvi或tsV等）。2.期<br>
+待的和声组的落空（例如D,期待的是T，但进行到了S。）。3.期待的协和性的落空（例<br>
+如D一D/S一D/dVI，这里在功能序进逻辑上没有意外，但期待的协和程度有些意<br>
+外）。4.期待的调式的落空（例如D一tsVI，这里有两点意外功能上采用非主功能、调<br>
+式上采用同名小调的交替和弦）。5.期待的调性的落空（例如平行交替中的a：D一C：<br>
+T）等。<br>
+凡符合以上五项条件中的任何一项都属于意外进行。有时，一个意外进行在好几<br>
+个方面都符合上述条件，如D一tsVIo</div>
+
+---
+
+<!-- PAGE:206 -->
+<a id="p0206"></a>
+## PDF p.206
+
+![徐平力《高级和声学教程》 PDF p.206（整页影印）](../assets/books/xu_advanced/p0206.jpg)
+
+<!-- MANUAL-REFS:p0206 -->
+<div class="manual-refs"><strong>手册使用本页</strong><ul><li id="ref-claim-function-network-wandering-chords-p0206" class="manual-ref-item" data-kind="claim"><span class="ref-kind">论点</span><a href="../和声学手册.html#claim-function-network-wandering-chords">功能网与功能转换 · function-network.wandering-chords</a><br><span class="ref-text">手册提炼：游移和弦不固定属于某一调，其功能由前后和弦决定，并可在多个方向与远关系调之间连接；同一和弦因此可被重新解释。</span></li></ul></div>
+
+<div class="ocr-text">第十一章等音转调（一）195<br>
+之间的联系是通过增四等于减五的等音关系（F与B等于F与C）来进行过渡的，<br>
+见上图。<br>
+③通过等和弦的转调，这是本章内容。常见的有通过减七和弦、属七和弦、增三<br>
+和弦的转调，不常见的有通过平行交替和弦、混合交替和弦及其他变和弦的转调等等。<br>
+例如：里姆斯基-科萨科夫《沙皇的未婚妻》（见例1-19）。<br>
+该例是通过平行交替和弦sii》（平行调的小si和弦）等于后调的变和弦""D2<br>
+的转调。<br>
+（三）等音转调的范畴<br>
+1.“狭义”的理解：等音转调的三个要点：①具有不同音级意义，②不同功能意义，<br>
+③不同记谱但音响相同、色彩相同的单音、双音、和弦。在十二平均律中：通过倾向<br>
+音的改变所形成的转调，叫等音转调。具体图式如下：<br>
+单音<br>
+等音<br>
+实际音高、音响、色彩相同<br>
+双音<br>
+通过记谱法不同形成<br>
+音程<br>
+统称等音转调<br>
+和弦<br>
+等和弦<br>
+2.“广义”的理解：凡采用等音转调方法（典型的，如通过减七、属七、增三和<br>
+弦的转调），但在实际记谱上却不含有等音变换现象的转调，都可以看作是“广义”<br>
+的等音转调。例如C大调的DVI,等于F大调的DVI/D。<br>
+具体理由：主要是由于记谱的随意性及由于等音常常按后调记谱，这样在前调和<br>
+弦功能的认定上，有一定的主观性和多种可能性（游移和弦的特征）。例如马斯卡尼《乡<br>
+村骑士》之《你知道吗？好妈妈！》<br>
+例11-284<br>
+马斯卡尼《你知道吗？好妈妈！》（选自歌剧《乡村骑士》）<br>
+rit.<br>
+爱<br>
+情，<br>
+抢走我<br>
+爱<br>
+抢走我<br>
+ffrit.</div>
+
+---
+
+<!-- PAGE:247 -->
+<a id="p0247"></a>
+## PDF p.247
+
+![徐平力《高级和声学教程》 PDF p.247（整页影印）](../assets/books/xu_advanced/p0247.jpg)
+
+<!-- MANUAL-REFS:p0247 -->
+<div class="manual-refs"><strong>手册使用本页</strong><ul><li id="ref-profile-profile-xu_advanced-p0247" class="manual-ref-item" data-kind="profile"><span class="ref-kind">代表页</span><a href="../和声学手册.html#book-profiles">教材代表页 · 徐平力高级</a><br><span class="ref-text">手册将本页列为《徐平力高级》代表页；该书定位：高级功能和声：变和弦、持续音、调性远近、交替转调、线性与平行进行。</span></li></ul></div>
+
+<div class="ocr-text">236高级和声学教程<br>
+C大调：TsVI(+)<br>
+ba小调：K<br>
+A大调：Tsvr(+)<br>
+上例在下方声部采用同一增三和弦的基础上，上方旋律采用连续大三度的下行模<br>
+进，其和声是同一和弦（由于增三和弦的三种结构位置一原位与第一转位、第二转位，<br>
+所形成的相距大三度的三个调性），这种相距大三度之间的调性对置关系，是浪漫主<br>
+义时期作品的色彩性调性布局的典型特征。<br>
+等音转调是从18世纪古典主义时期开始兴起，并在浪漫主义时期逐渐广泛应用<br>
+于各种不同风格的作品中的一种转调方式。<br>
+二、平行交替与混合交替中的等音转调现象<br>
+（一）平行交替类<br>
+1.小调的平行大调的小s与小sii及转位。<br>
+例13-337<br>
+里姆斯基一科萨科夫《不死的卡昔伊》<br>
+c小调：siDE大调:s<br>
+D7<br>
+a小调：DVIl2Dc小调：DvIl12<br>
+D<br>
+上例有两个和弦是这类现象。第一个是通过c小调的si等于混合交替调式a小调<br>
+的（+4DVII2进行到a小调D，等音现象为A=#G（等音变换）。第二个和弦是通过E大<br>
+调的si等于平行交替调式c小调的（+4）DVI2进行到a小调D，等音现象为B=bC（等<br>
+音变换)。</div>
+
+---
+
+<!-- PAGE:257 -->
+<a id="p0257"></a>
+## PDF p.257
+
+![徐平力《高级和声学教程》 PDF p.257（整页影印）](../assets/books/xu_advanced/p0257.jpg)
+
+<!-- MANUAL-REFS:p0257 -->
+<div class="manual-refs"><strong>手册使用本页</strong><ul><li id="ref-claim-modal-interchange-mixed-alternation-p0257" class="manual-ref-item" data-kind="claim"><span class="ref-kind">论点</span><a href="../和声学手册.html#claim-modal-interchange-mixed-alternation">同主音调式交替（借用和弦） · modal-interchange.mixed-alternation</a><br><span class="ref-text">手册提炼：通过平行调关系引入的同主音交替变音构成混合交替，把关系调与同主音调的色彩叠合在同一主音上。</span></li><li id="ref-profile-profile-xu_advanced-p0257" class="manual-ref-item" data-kind="profile"><span class="ref-kind">代表页</span><a href="../和声学手册.html#book-profiles">教材代表页 · 徐平力高级</a><br><span class="ref-text">手册将本页列为《徐平力高级》代表页；该书定位：高级功能和声：变和弦、持续音、调性远近、交替转调、线性与平行进行。</span></li></ul></div>
+
+<div class="ocr-text">246高级和声学教程<br>
+已经不是当初16世纪以前的教会调式和声了，它是建立在大小调基础之上的一种新<br>
+形成了可以与离调半音体系相抗衡的调式半音体系。<br>
+其次，是各种民间的调式被挖掘。我们知道浪漫主义后期的一个重要分支，就是<br>
+民族乐派。早期的民族乐派的作曲家如格林卡、斯美塔那、德沃夏克、格里格等都是<br>
+在西欧受到浪漫主义思潮的影响和艺术的熏陶后，走上发展本民族音乐文化的道路。<br>
+他们对于本民族民间的各种调式素材进行挖掘、整理与加工之后，再通过他们的创作<br>
+实践，将不同地区、不同民族、不同调式风格特征的带有个性化的音乐语言呈现出来，<br>
+成为浪漫主义后期作品中的一种风格特征。<br>
+二、混合交替<br>
+常见的调式交替一般有三种类型一一同主音交替（主音相同，音列不同）、平行<br>
+交替（主音不同，音列相同）、混合交替（主音不同，音列不同）。前两种我们前面已<br>
+有所介绍，现在谈的是第三种类型一一混合交替。混合交替是在同主音交替及平行交<br>
+替的基础上产生的。<br>
+如果说，前两种调式交替无论在音列上还是主音位置上，都有一个指标是相同的<br>
+话（同音列或同主音，这是直接交替的特征），混合交替则两个指标（音列及主音位<br>
+置）都不相同，可以称之为间接交替。两调之间既包含了平行关系，同时又包含了同<br>
+主音关系。如C大调一E大调，其包含C一c（同主音交替）与c一E（平行关系交替）<br>
+两个环节的调性对置。因此，含有两种交替关系的交替，叫混合交替。<br>
+混合交替的方法：可以采用先同主音关系，后平行关系的对置或反之。<br>
+例如C一（c）一E，这是先同主音关系，后平行关系的对置。也可以采用先平<br>
+行关系，后同主音关系的对置，如：C一（a）一A等。<br>
+1.省略一个调性环节的混合交替。上述两种（C一E与C一A）都是混合交替的<br>
+典型图示。从图示中我们可以看出，这种C一A或C一E调性之间的对置，实质包含<br>
+了两种交替关系，或包含了两种调式交替关系的调性对置，这种调式交替方法称之为<br>
+混合交替（在有的书上称之为跨越交替?），其特征：省略（跨越）一个中间调性环节。<br>
+见李斯特《奥别尔曼平原》（例10-262）。<br>
+该例的两个调性e与g是典型的混合交替的调性对置现象，省略的调性环节为G<br>
+①黎英海：《汉族调式及其和声》，上海音乐出版社，2001年，第242页。</div>
+
+---
+
+<!-- PAGE:273 -->
+<a id="p0273"></a>
+## PDF p.273
+
+![徐平力《高级和声学教程》 PDF p.273（整页影印）](../assets/books/xu_advanced/p0273.jpg)
+
+<!-- MANUAL-REFS:p0273 -->
+<div class="manual-refs"><strong>手册使用本页</strong><ul><li id="ref-claim-scale-brightness-order-p0273" class="manual-ref-item" data-kind="claim"><span class="ref-kind">论点</span><a href="../和声学手册.html#claim-scale-brightness-order">调式、音阶与音级 · scale.brightness-order</a><br><span class="ref-text">手册提炼：调式色彩可按主音上方大音程、增音程的数量排序，形成从利底亚到洛克里亚的明亮度序列。</span></li></ul></div>
+
+<div class="ocr-text">262高级和声学教程<br>
+新理念是近现代作曲家所追求的有别于传统的创作手法之一。它既联系着过去，又代<br>
+表着现代，具有“承前启后”、“承上启下”的作用，这也是“过渡时期”和声思维的<br>
+一个重要特点。<br>
+调式综合半音体系给我们提供了一个新的半音体系，它与大小调以调性为主的半<br>
+音体系和声相区别，为近现代音乐的发展起到了积极的推动作用。有关调式综合的内<br>
+容我们将在后面的章节中加以叙述。<br>
+六、实践指示与配和声举例<br>
+调式交替的发展等方面的内容包括：混合交替、同中音交替及调式综合等方面的<br>
+内容。它包含了从横向到纵向上的转变，为20世纪音乐的发展起到一定的推动作用。<br>
+美国当代作曲家罗伊·哈里斯（RoyHarrris，1889一1979）的音乐的思维就是基<br>
+于调式化的。他通过不同调式音阶明亮度不一样的原理，列出从明到暗或从暗到明的<br>
+七种教会调式音阶，其特征为：凡音阶中包含的增、大音程越多，其明亮度越高；反之，<br>
+包含的增、大音程越少，其明亮度越少。这样排列出的调式明亮度（由明到暗）依次为：<br>
+里底亚、伊奥尼亚、多利亚、混合里底亚、爱奥尼亚、弗里几亚、洛克利亚。这种调<br>
+式排序对于我们整体把握调式交替的特征是非常有益的。<br>
+童忠良在其所著的《近现代和声的功能网》一书中提出将各种调式的终止式纳人<br>
+一个较完整的系统之中，就可以很自然地得出大小调式的十种基本终止式。<br>
+调式渗透之十种基本终止式<br>
+调式名称<br>
+基本终止式<br>
+调式渗透情况<br>
+（1）自然大调（伊奥尼亚）<br>
+大调3/3<br>
+T—S-D-T<br>
+（2）和声大调<br>
+T—s-D-T<br>
+大调2/3小调1/3<br>
+（3）旋律大调<br>
+T-s-d-T<br>
+大调1/3小调2/3<br>
+（4）混合利底亚<br>
+T—S-d-T<br>
+大调2/3小调1/3<br>
+T—“ⅡI（D/D）—D—T<br>
+（5）里底亚<br>
+大调4/3（强化大调）<br>
+（6）自然小调（爱奥尼亚）<br>
+t—s-d—i<br>
+小调3/3<br>
+（7）和声小调<br>
+t—s-Dt<br>
+小调2/3大调1/3<br>
+（8）旋律小调<br>
+t—S-D—t<br>
+小调2/3大调1/3<br>
+（9）多利亚<br>
+t-S-dt<br>
+大调1/3小调2/3<br>
+10）弗里几亚<br>
+-s—3dvii (（s/s）—t<br>
+小调4/3（强化小调）</div>
+
+---
+
+<!-- PAGE:278 -->
+<a id="p0278"></a>
+## PDF p.278
+
+![徐平力《高级和声学教程》 PDF p.278（整页影印）](../assets/books/xu_advanced/p0278.jpg)
+
+<!-- MANUAL-REFS:p0278 -->
+<div class="manual-refs"><strong>手册使用本页</strong><ul><li id="ref-claim-color-harmony-late-tonal-p0278" class="manual-ref-item" data-kind="claim"><span class="ref-kind">论点</span><a href="../和声学手册.html#claim-color-harmony-late-tonal">色彩和声与调式色彩 · color-harmony.late-tonal</a><br><span class="ref-text">手册提炼：晚期调性和声通过六度替代属和弦、变化中音、功能九和弦、三度扩张与色彩性连续不断削弱传统功能边界。</span></li></ul></div>
+
+<div class="ocr-text">第十五章<br>
+中音对置与三度循环<br>
+一、概述<br>
+19世纪后半叶（浪漫主义后期），作曲家为了摆脱古典主义时期大小调和声体系<br>
+的束缚，开始有目的地尝试各种不同风格的创作手法，从中古调式开始，至后来的各<br>
+种人工音阶的采用，进行了各种多元化风格的创作尝试。这时期体现在和声方面的现<br>
+象就是大量的调式交替进行，而现象的背后体现的是音乐价值取向在发生改变。<br>
+古典主义时期的和声特征是功能性大于色彩性，采用四五度关系的和弦连接多于<br>
+三六度和弦连接，而浪漫主义后期的作法则恰恰相反，强调色彩性和声进行，三六度关<br>
+系的和弦连接多于四五度和弦连接，变格进行多于正格进行。内容虽然与古典传统大小<br>
+调和声是一脉相承，但所突出、所强调表达的东西，有时与古典主义时期相比较而言，<br>
+常常是反其道而行之。如：古典主义时期强调正格进行（D一T）强调骨架音级（I、IⅣ、<br>
+V）；浪漫主义时期强调变格进行（S—T）、强调色彩音级（Ⅲ、VI、VII）等。<br>
+有的书将此种现象称之为“改良主义”或“宫廷政变”①，它并未从根本上动摇<br>
+大小调和声的统治基础。这时期产生了各种各样的和声手法，如：调性游移与等音转调、<br>
+中音对置与三度循环、极音对置与重中音循环、线性和声与平行进行、复合调式与复<br>
+合调性等等。<br>
+关于中音的概念很早就有，指介乎于主音与属音或主音与下属音之间的音。而变<br>
+化中音的概念则是在浪漫主义后期才出现。<br>
+本章内容是以下四方面内容的继续：1.转调模进的继续。2.意外进行的继续。3.调<br>
+式交替的继续（平行交替、混合交替）。4.转调方式的继续（通过交替和弦的转调）。<br>
+①高为杰：《音乐名作赏析》，吉林音像出版社，2002年，第136页。</div>
+
+---
+
+<!-- PAGE:345 -->
+<a id="p0345"></a>
+## PDF p.345
+
+![徐平力《高级和声学教程》 PDF p.345（整页影印）](../assets/books/xu_advanced/p0345.jpg)
+
+<!-- MANUAL-REFS:p0345 -->
+<div class="manual-refs"><strong>手册使用本页</strong><ul><li id="ref-profile-profile-xu_advanced-p0345" class="manual-ref-item" data-kind="profile"><span class="ref-kind">代表页</span><a href="../和声学手册.html#book-profiles">教材代表页 · 徐平力高级</a><br><span class="ref-text">手册将本页列为《徐平力高级》代表页；该书定位：高级功能和声：变和弦、持续音、调性远近、交替转调、线性与平行进行。</span></li></ul></div>
+
+<div class="ocr-text">334高级和声学教程<br>
+例18-432<br>
+德彪西《沉没的教堂》<br>
+PP<br>
+283<br>
+：<br>
+在上例所采用的平行和声进行中，和弦的写法几乎一样，都是采用左右手两层，<br>
+再加上最高层的八度音与最低层的八度而形成的仿佛具有一种空洞、飘渺的特殊<br>
+色彩。<br>
+二、线性和声<br>
+（一）基本特征<br>
+从大小调传统和声时期的和声连接四环节（材料、序进逻辑、声部进行、结构位置?）<br>
+等方面来看，常见的多声部处理方式是以纵向序进逻辑（T-S-D-T）为主，横向声部<br>
+进行为辅（功能性思维方式）。而线性和声与传统大小调和声的功能性思维方式正好<br>
+相反，将序进逻辑与声部进行两个环节颠倒过来，是以横向声部进行为主，序进逻辑<br>
+方面则顺其自然，在纵向方面所构成的音响则带有一定的偶然性，形成各种纵向的偶<br>
+然结合，如：外音和弦、外音和音等。<br>
+①和声连接四环节：是指和弦的纵向结构及这种结构与结构之间的序进逻辑关系，通过横向的声部进行将它具<br>
+体的体现出来，还要根据整体的曲式结构位置的安排来考虑上述的各种和弦与和弦的连接。</div>
+
+---
+
+<!-- PAGE:347 -->
+<a id="p0347"></a>
+## PDF p.347
+
+![徐平力《高级和声学教程》 PDF p.347（整页影印）](../assets/books/xu_advanced/p0347.jpg)
+
+<!-- MANUAL-REFS:p0347 -->
+<div class="manual-refs"><strong>手册使用本页</strong><ul><li id="ref-profile-profile-xu_advanced-p0347" class="manual-ref-item" data-kind="profile"><span class="ref-kind">代表页</span><a href="../和声学手册.html#book-profiles">教材代表页 · 徐平力高级</a><br><span class="ref-text">手册将本页列为《徐平力高级》代表页；该书定位：高级功能和声：变和弦、持续音、调性远近、交替转调、线性与平行进行。</span></li></ul></div>
+
+<div class="ocr-text">336高级和声学教程<br>
+例18-435<br>
+德彪西《亚麻色头发的少女》<br>
+五声性纵合化和声手法<br>
+PP<br>
+上例采用了五声性旋律音调与非功能性线性和声连续进行，主要通过五声性纵合<br>
+化和声手法形成的各种纵向结合，使得和弦的组成音与五声性旋律音调在整体上保<br>
+持一致。<br>
+其低声部为全音阶进行，类似的现象还有鲍罗丁《伊戈尔王》（例9-240）等。<br>
+采用了八声音阶音调的作品片段，如李斯特《音乐会练习曲》之三（“叹息”）（例<br>
+9-243），其低音进行已构成八声音阶，具体音列为1：2结构。<br>
+在运用线性和声手法时，极容易产生两种概念上的混淆。如七声音阶的线性和声<br>
+与泛自然音手法的相混淆。五声音阶的线性和声手法与五声纵合化手法相混淆。六声<br>
+音阶（全音阶）的线性和声与六声音阶（全音阶）的纵合化手法相混淆。八声音阶的<br>
+线性和声与八声音阶的纵合化手法相混淆等等。其主要区别是以和弦为中心的写法，<br>
+为中心的和声手法。<br>
+（二）不同时期的线性和声手法<br>
+从多声部诞生之日起，横行与纵向多声部写作之间的平衡问题就已经存在，和声<br>
+在其发展的各个历史阶段中，始终涉及纵横之间的对立统一问题。<br>
+1.对位化和声时期。早在复调初期阶段的奥尔加农时期起，一直到巴赫（巴洛克<br>
+音乐）为止，可以说多声部音乐都是横向方面占主导地位。从1600年主调音乐的产生，<br>
+结构（纵向结合）直接受横向旋律因素的制约，是线性和声思维的另一个分支。这类和声手法的范围较广，<br>
+涉及三度叠置与非三度叠置，各种传统的与非传统的、特殊与复杂的应用方法等。</div>
+
+---
+
+<!-- PAGE:364 -->
+<a id="p0364"></a>
+## PDF p.364
+
+![徐平力《高级和声学教程》 PDF p.364（整页影印）](../assets/books/xu_advanced/p0364.jpg)
+
+<!-- MANUAL-REFS:p0364 -->
+<div class="manual-refs"><strong>手册使用本页</strong><ul><li id="ref-claim-seventh-ninth-composite-p0364" class="manual-ref-item" data-kind="claim"><span class="ref-kind">论点</span><a href="../和声学手册.html#claim-seventh-ninth-composite">七和弦、九和弦与不协和等级 · seventh.ninth-composite</a><br><span class="ref-text">手册提炼：属九和弦在属功能上叠入下属功能因素，形成复合功能；九音通常不可省略并下行解决。</span></li></ul></div>
+
+<div class="ocr-text">第十八章线性和声与平行进行353<br>
+上例是平行九和弦的例子，这里采用线性和声的方式，所进行的半音级进下行。<br>
+而旋律则向上形成反向进行。这里的九和弦不具有功能性特征，这是色彩性写法。对<br>
+于不协和音程的七音、九音是不需要加以解决的。<br>
+关于平行进行的现象，也可称为“带状结构”现象。从和声的角度来讲，它是平<br>
+行的和声进行。从旋律的角度来讲，它是一种“和弦”式的旋律。<br>
+平行九和弦之三：变化音级式移位（自由式）。<br>
+例18-466<br>
+德彪西《夜曲》之一《云》<br>
+E:DsD:DgbC:DsbA:DgF:DgbE:Dg<br>
+上例的平行九和弦是采用“严格”的音程移位关系。其旋律是作为九和弦的五音<br>
+来处理的。它们只是一些结构上的属九和弦，实际上并不具有功能关系。在这样的平<br>
+行进行织体中，平行移动的和弦在音程上完全一致。它给人的听觉印象是，一系列的<br>
+音响色块的连续出现，显得非常虚幻、飘渺。这是德彪西的风格特征之一。类似的例<br>
+子见施万春《送上心头的思念》。<br>
+例18-467<br>
+施万春《送上心头的思念》<br>
+bb<br>
+rit<br>
+第二种类型——非三度叠置的平行和弦。<br>
+1.四五度和弦之一：自然音级式移位（守调）。在本章概述中，曾列举过德彪西<br>
+前奏曲《沉没的教堂》。下面还是这个例子：</div>
+
+---
+
+<!-- PAGE:379 -->
+<a id="p0379"></a>
+## PDF p.379
+
+![徐平力《高级和声学教程》 PDF p.379（整页影印）](../assets/books/xu_advanced/p0379.jpg)
+
+<!-- MANUAL-REFS:p0379 -->
+<div class="manual-refs"><strong>手册使用本页</strong><ul><li id="ref-claim-voice-leading-parallels-p0379" class="manual-ref-item" data-kind="claim"><span class="ref-kind">论点</span><a href="../和声学手册.html#claim-voice-leading-parallels">声部进行与不协和解决 · voice-leading.parallels</a><br><span class="ref-text">手册提炼：平行纯五度、纯八度削弱声部独立性，因此传统调性写作把它们视为需要避免的进行。</span></li></ul></div>
+
+<div class="ocr-text">第十九章<br>
+和声演变的几个问题<br>
+一、概、述<br>
+莫·卡纳（英）在《当代和声》一书中，谈到和声演变的三个主要问题：协和与<br>
+不协和的关系问题、横行与纵向多声部的平衡问题、调性的建立与瓦解问题。<br>
+自从多声部音乐诞生之日起，这三个问题就始终存在，只是不同时期所表现出的<br>
+特征有所不同而已。<br>
+二、协和与不协和的关系问题<br>
+在协和与不协和的关系上，音乐发展的历史主要是从协和到不协和的发展渐变过<br>
+程。不同时期对于协和的标准是有不同的。如早期的平行八度、五度、四度到后来的<br>
+平行三度、六度都说明音乐中协和与不协和的标准是相对的，是随着时间的推移可以<br>
+改变的。如果说在辟卡迪三度时期，人们对于小三和弦的协和程度还存有疑问的话，<br>
+那么到了近现代人们对于三全音这样的不协和音程已经完全接受。这说明在音乐风格<br>
+改变的同时，其现象的背后主要体现在其审美标准、价值取向的改变。<br>
+在第十六章“极音对置与极音复合”一章中，我们曾就三全音的历史地位问题作<br>
+过介绍，如中世纪的“魔鬼”音程、大小调时期的不协和音程（需要解决）、近现代<br>
+瓦解调性的手段等。<br>
+勋伯格在其《和声研究》一书中谈到近现代音乐的性质时，曾提出“不协和音的<br>
+解放”这样的概念，它不仅是无调性音乐的理论基础，也准确地指出了近现代和声语<br>
+言中最主要的特征之一。<br>
+“不协和音”，指的是那种为和声音响带来不协和的结构因素。在传统的和声语言<br>
+中，不协和音响不仅与完全（或者不完全）协和的音响相对立，并且永远服从于后者。</div>
+
+---
+
+<!-- PAGE:380 -->
+<a id="p0380"></a>
+## PDF p.380
+
+![徐平力《高级和声学教程》 PDF p.380（整页影印）](../assets/books/xu_advanced/p0380.jpg)
+
+<!-- MANUAL-REFS:p0380 -->
+<div class="manual-refs"><strong>手册使用本页</strong><ul><li id="ref-claim-atonal-features-p0380" class="manual-ref-item" data-kind="claim"><span class="ref-kind">论点</span><a href="../和声学手册.html#claim-atonal-features">无调性与自由音高组织 · atonal.features</a><br><span class="ref-text">手册提炼：自由无调性常避免主和弦与大三、小三和弦，自由运用半音阶与不协和音，并让每首作品自定进行规则。</span></li></ul></div>
+
+<div class="ocr-text">第十九章和声演变的几个问题369<br>
+所谓“解放”就是要使它们获得与和弦音平等的地位。<br>
+和弦音与和弦外音是在同一条泛音列上的不同的音，它们之间的区别只是在于它<br>
+与基础音之间的距离一一距离近则协和，距离远则不协和。<br>
+随着时间的推移、音乐在不断发展演变，人们对于协和的观念也在逐渐发生变化。<br>
+这点从三全音在不同时期音乐中的地位和作用就可以看出。从这个角度来看，传统<br>
+大小调和声所赖以生存的基础一一以协和的三和弦为中心，以四五度关系为基础<br>
+的和声体系也在发生改变。例如里姆斯基－科萨科夫《天方夜谭》第二乐章（例<br>
+11-283)。<br>
+这是一个通过三全音等音转调的例子，其调式的主和弦D与G做三全音关系的<br>
+对置进行，两个和弦同为不协和的大小七和弦，而且也不是四五度解决关系，他们之<br>
+间的联系是通过增四等于减五的等音关系（F与B等于F与C）来进行过渡的。<br>
+此例在以下三方面对于传统和声而言，均有不同程度的突破。<br>
+首先在中心（主和弦）的构成上采用不协和的七和弦，打破了以协和三和弦为中<br>
+心的传统大小调功能体系和声。<br>
+其次在序进逻辑上，采用了增四、减五度的和弦对置，打破了以四五度关系为基<br>
+础的传统大小调功能体系和声。<br>
+另外在不协和音的解决上，由于等音关系使其原有倾向音的改变而形成不协和音<br>
+的自由处理。<br>
+对于上述三点的变化，如为什么在主和弦的构造上采用不协和的方式？为什么在<br>
+序进逻辑上采用了增四、减五度的和弦对置？为什么在不协和音的解决上可以自由处<br>
+理等问题，我们从主和弦协和观念的历史转变谈起。<br>
+在古典太小调和声时期，主和弦（中心成分）是指建立在调式主音上的三和弦，<br>
+大调为大三和弦，小调为小三和弦。主和弦的结构关系影响到和弦与和弦之间的纵向<br>
+及横向关系。例如贝多芬《钢琴奏鸣曲》Op.2，No.1第二乐章开头（由于篇幅所限，<br>
+本书没有例举）。<br>
+这是一段典型的古典大小调和声时期的典型风格作品。其主和弦是建立在自然音<br>
+级的1级上，为协和的大三和弦。这种协和的大三和弦，在纵向排列上采用自然音级<br>
+的三度叠置一一其根音与三音之间为三度关系，与五音之间为四度或五度关系，从而<br>
+使该和弦处于非常协和的状态。<br>
+然后通过在主和弦上下方五度关系复制出（或派生出）IV级上的三和弦及V级<br>
+①刘聪：《从三全音地位的变化看20世纪和声音响的重要特征》，《乐府新声》，2002年第2期。</div>
+
+---
+
+<!-- PAGE:389 -->
+<a id="p0389"></a>
+## PDF p.389
+
+![徐平力《高级和声学教程》 PDF p.389（整页影印）](../assets/books/xu_advanced/p0389.jpg)
+
+<!-- MANUAL-REFS:p0389 -->
+<div class="manual-refs"><strong>手册使用本页</strong><ul><li id="ref-claim-diatonic-function-sequence-p0389" class="manual-ref-item" data-kind="claim"><span class="ref-kind">论点</span><a href="../和声学手册.html#claim-diatonic-function-sequence">自然音级功能：T–S–D · diatonic.function-sequence</a><br><span class="ref-text">手册提炼：功能和声的基本序列是稳定—不稳定—稳定，典型为 T–S–D–T；D–S 属特殊情况而非常规。</span></li></ul></div>
+
+<div class="ocr-text">378高级和声学教程<br>
+四、调性的建立与瓦解问题<br>
+调性的主要因素是一个基音（调中心音），建立在这个基音上的各种调式音阶，<br>
+形成了不同的调式结构，如传统大小调和声的主要特征就是建立在这个基音上的两种<br>
+主要音阶（大小调音阶）。在这两种音阶的基础上，音与音之间，及每个音与主音之<br>
+间所包含的相互关系及作用，统称为大小调功能性和声体系。<br>
+调性的本质在于对主音的肯定。主音是一个具有引力的中心，是一个静止点，音<br>
+乐的运动，从它开始，经过展开并向它返回。大量的音乐作品及其调性就是依靠这种<br>
+循环而产生建立起来的。<br>
+从稳定与不稳定的角度来看，主和弦经历了稳定与不稳定再回到稳定这种循环<br>
+现象，就是以调为中心（出发点）进行的调性扩张与调性回归的过程。如果用简单的<br>
+和声图式来表示，就是T—D—T（稳定一—不稳定一—稳定）。在申克的分析理论中，<br>
+称之为“基本结构”①。<br>
+古典音乐中调性特权统治的象征一一主音，发挥着它的直接与间接的影响作用。<br>
+小到乐段，大到乐章，甚至整个套曲的曲式结构，都是以调性为中心组织并建立起来的。<br>
+1.四五度功能关系的瓦解。古典传统音乐的T如同一块“音乐的根据地”，音乐的<br>
+运动从它开始并向它回归。这种方式可简单概括为T一D一T的运动规律。例如：贝多芬<br>
+《钢琴奏鸣曲》0p.14，No.1第二乐章。<br>
+例19-502<br>
+贝多芬《钢琴奏鸣曲》Op.14，No.1第二乐章<br>
+Allegretto<br>
+①参见于苏贤《申克音乐分析理论概要》相关叙述。</div>
+
+---
+
+<!-- PAGE:429 -->
+<a id="p0429"></a>
+## PDF p.429
+
+![徐平力《高级和声学教程》 PDF p.429（整页影印）](../assets/books/xu_advanced/p0429.jpg)
+
+<!-- MANUAL-REFS:p0429 -->
+<div class="manual-refs"><strong>手册使用本页</strong><ul><li id="ref-claim-diatonic-tonic-subdominant-dominant-p0429" class="manual-ref-item" data-kind="claim"><span class="ref-kind">论点</span><a href="../和声学手册.html#claim-diatonic-tonic-subdominant-dominant">自然音级功能：T–S–D · diatonic.tonic-subdominant-dominant</a><br><span class="ref-text">手册提炼：大调 I、IV、V 分别承担主、下属、属的核心功能，其他自然三和弦按共同音与倾向归入功能组。</span></li></ul></div>
+
+<div class="ocr-text">418高级和声学教程<br>
+属七连锁式的<br>
+意外进行<br>
+意外进行<br>
+上例是被贝多芬誉为“和声始创者”的复调音乐大师巴赫的《众赞歌371首》中<br>
+的一首，它的和声手法就是我们现在所讲的浪漫主义时期经常采用的和声手法一一意<br>
+外进行。<br>
+1.古典主义时期的主要和声语汇。古典主义时期的和声语汇中正格进行多于变格<br>
+进行、功能性进行多于色彩性进行，这点从它们的名称就可见一斑。如：主和弦，<br>
+简写为T（Tonic，调主音和弦）。属和弦，简写为D（Dominant，占统治地位的和弦）。<br>
+下属和弦，简写为S（Subdominant，次占统治地位的和弦）。如果变格进行（次占统<br>
+治地位的和弦）大于（多于）正格进行（占统治地位的和弦），就意味着风格的改变（如<br>
+拉赫玛尼诺夫《帕格尼尼主题狂想曲》第十八变奏，例21-563）<br>
+古典主义时期的功能性和声进行大都是以主和弦（协和的三和弦）为中心，四五<br>
+度关系为基础，通过正格、变格、完全等和声语汇（进行）建立起来的具有稳定、协和、<br>
+向心力等特征的调性功能体系和声。<br>
+2.浪漫主义时期的主要和声语汇。浪漫主义时期的和声被缪天瑞誉为“富于感情、<br>
+善于描绘的和声语言”②。浪漫主义音乐家把音乐的内容看得高于一切，其和声上也<br>
+必然服从于内容的表现需要，尽可能大胆创新。<br>
+和声是表现浪漫主义音乐色彩的一个重要工具。浪漫主义时期虽然主要采用的是<br>
+古典大小调时期的调性和声，但从和声语汇方面来看，已经有了一定程度的变化，对<br>
+和声材料、和声进行等方面已经有了较大的改观。如：大量采用变格进行等色彩性和<br>
+声进行，对中音对置、极音对置（重中音对置）重同名调对置等远距离和声和调性<br>
+还是将传统和声的两个基本属性一功能性与色彩性作为探讨古典主义与浪漫主义和声理论的基础。<br>
+②缪天瑞：《欧洲音乐和声发展述要》，《中国音乐学》，2001年第4期。</div>
+
+---
+
+<!-- PAGE:434 -->
+<a id="p0434"></a>
+## PDF p.434
+
+![徐平力《高级和声学教程》 PDF p.434（整页影印）](../assets/books/xu_advanced/p0434.jpg)
+
+<!-- MANUAL-REFS:p0434 -->
+<div class="manual-refs"><strong>手册使用本页</strong><ul><li id="ref-claim-modal-interchange-borrowed-p0434" class="manual-ref-item" data-kind="claim"><span class="ref-kind">论点</span><a href="../和声学手册.html#claim-modal-interchange-borrowed">同主音调式交替（借用和弦） · modal-interchange.borrowed</a><br><span class="ref-text">手册提炼：同主音交替以主音不变为前提，把另一调式的特性音级与和弦借入当前调式，是变化和弦的重要来源。</span></li></ul></div>
+
+<div class="ocr-text">第二十一章浪漫主义和声的理论与实践423<br>
+确切地说，同主音调式交替与同主音调式交替有所不同。同主音调式交替属于主<br>
+音相同、音列不同的调式交替范畴，而同中音调式交替则属于主音不同、音列也不同<br>
+的调式交替范畴。但两者也有其共同之处，即交替的大小调式是相反的。不同的是，<br>
+一个是主音相同，另一个是三音相同。<br>
+例21-568<br>
+和声习题（选自沈一鸣《和声学》）<br>
+第一大句<br>
+第一句<br>
+第二句<br>
+上行<br>
+下行<br>
+主题音调<br>
+D大调<br>
+弗里几亚进行<br>
+d小调<br>
+半终止<br>
+同主音关系<br>
+同主音关系<br>
+D大调：T（DDVII2）T6<br>
+D<br>
+T<br>
+t<br>
+d小调：t<br>
+(2） tsVI sii<br>
+DtsVIS6<br>
+D<br>
+(6)<br>
+第二大句<br>
+第三句<br>
+第四句<br>
+主题音调<br>
+上行<br>
+下行<br>
+D大调<br>
+d小调<br>
+半终止<br>
+同中音关系<br>
+重同名调关系<br>
+D大调:T(D/SSiDDVII2)T6TsD/1sII<br>
+d小调：<br>
+D<br>
+t(2)SiidIlsSii6*DDVID<br>
+(2）<br>
+d小调：DDVII7</div>
+
+---
+
+<!-- PAGE:469 -->
+<a id="p0469"></a>
+## PDF p.469
+
+![徐平力《高级和声学教程》 PDF p.469（整页影印）](../assets/books/xu_advanced/p0469.jpg)
+
+<!-- MANUAL-REFS:p0469 -->
+<div class="manual-refs"><strong>手册使用本页</strong><ul><li id="ref-claim-symmetry-whole-tone-p0469" class="manual-ref-item" data-kind="claim"><span class="ref-kind">论点</span><a href="../和声学手册.html#claim-symmetry-whole-tone">对称音阶与有限移位 · symmetry.whole-tone</a><br><span class="ref-text">手册提炼：全音阶把八度等分为六个全音，只有两种不同组成音的移位，缺乏导音与纯五度，因而削弱功能调性。</span></li><li id="ref-claim-scale-twentieth-century-materials-p0469" class="manual-ref-item" data-kind="claim"><span class="ref-kind">论点</span><a href="../和声学手册.html#claim-scale-twentieth-century-materials">调式、音阶与音级 · scale.twentieth-century-materials</a><br><span class="ref-text">手册提炼：二十世纪音阶材料扩展到多种人工音阶、五声/六声、全音与半音音阶；七种自然调式仍可使用，但中心与用法不再受共同实践语法约束。</span></li></ul></div>
+
+<div class="ocr-text">458高级和声学教程<br>
+将不同地区、不同民族、不同调式风格特征的带有个性化的音乐语言呈现出来，成为<br>
+浪漫派后期作品中的一种风格特征。<br>
+例23-592<br>
+格里格《牧童》<br>
+上例在旋律上采用了挪威民间特有的*IV小调音阶，具有浓郁的北欧民间乡土气<br>
+息。这种民间特殊音阶与吉卜赛小音阶很相似。<br>
+另外是各种人工调式音阶的产生。在19世纪后半叶，即浪漫主义后期的某些作<br>
+品中，大量引人各种中古调式及各种民间调式已成为一种趋势。显而易见，这种新的<br>
+不同于以往大小调的调式音阶，给当时的欧洲音乐带来了一定的活力。这种趋势的进<br>
+一步发展，形成了各种人工调式音阶的产生，如全音阶、各种循环音阶及各种中古合<br>
+成音阶的产生，使音乐又呈现出一种多样化发展的局面。如德彪西前奏曲《帆》就是<br>
+采用了全部由大二度音程组成的全音音阶，这也是能够代表德彪西创作风格特征之一<br>
+的一种音列。<br>
+例23-593<br>
+Coda<br>
+“风”<br>
+德彪西前奏曲《帆》<br>
+piupp<br>
+E大调：D9<br>
+上例是该曲的结尾部分，该曲的三个主题在此处有机结合在一起。“风”的主题<br>
+在右手的下方再现，“帆”的主题在左手的上方以和弦的形式出现，持续的固定低音<br>
+在左手的下方断断续续出现。这种对位化的立体思维，使得结尾部分显得非常完美、<br>
+统一。在这里，全音音阶作为以音列为主的写作方式，可以做任何形式的结合。</div>
+
+---
+
+<!-- PAGE:474 -->
+<a id="p0474"></a>
+## PDF p.474
+
+![徐平力《高级和声学教程》 PDF p.474（整页影印）](../assets/books/xu_advanced/p0474.jpg)
+
+<!-- MANUAL-REFS:p0474 -->
+<div class="manual-refs"><strong>手册使用本页</strong><ul><li id="ref-claim-chromaticism-nineteenth-century-complexity-p0474" class="manual-ref-item" data-kind="claim"><span class="ref-kind">论点</span><a href="../和声学手册.html#claim-chromaticism-nineteenth-century-complexity">半音化与变化和弦 · chromaticism.nineteenth-century-complexity</a><br><span class="ref-text">手册提炼：19 世纪后期起，表现需求推动和弦结构复杂化：高度叠置、附加音、非三度叠置与复合和弦共同扩大色彩与紧张度。</span></li></ul></div>
+
+<div class="ocr-text">第二十三章和声教学中的近现代和声理论463<br>
+成的小品。<br>
+教学中可根据具体情况，从离调开始，通过对转调、调性对置（包括中音对置、<br>
+极音对置、同中音调对置、重同名调对置等一系列调性对置）现象的论述，来展示调<br>
+性思维的发展、变化过程。<br>
+四、近现代和声的纵向结构与横向进行<br>
+和声在其发展的各个历史阶段中，始终涉及纵、横之间的对立统一问题。<br>
+在18一19世纪大小调功能体系和声中，大多采用三度叠置和弦作为主要和声材料。<br>
+在实际创作中，和声以纵向三度叠置结构和弦与横向的含有多种和弦外音的声部进行<br>
+运用相结合，所形成的功能性和声与线性和声融合在一起，让简单的和声材料隐藏在<br>
+复杂的各种音响织体的结构中。<br>
+在“过渡时期”的音乐作品中，有意识、有目的地采用各种中古调式、五声调式<br>
+及各种人工调式音阶、人造和弦等已成为一种必然趋势。由于各种不同于传统技法<br>
+的使用，形成了各种不同于传统大小调和声时期的材料，如采用高叠和弦、复合和弦、<br>
+非三度叠置和弦、附加音和弦、五声音调纵合化和弦及线性和声造成的偶然结合和<br>
+弦等。<br>
+近现代和声的纵向结构种类繁多，在教学中还是立足于以三度叠置的基础上，来<br>
+看待上述这些纵向结合的多音和弦的。这点从标题上就可以看出，如高叠和弦（三度<br>
+叠置）、非三度叠置和弦、附加音和弦等。<br>
+1.高叠和弦，如九、十一、十三和弦等，这些和弦的使用完全作为一个独立的实<br>
+体在发挥作用，并不受传统不协和音的解决的限制。<br>
+2.复合和弦，如将不同功能性质的和弦加以复合，形成纵向音响的复杂化。<br>
+3.非三度叠置和弦，如四度、五度、二度叠置和弦等。<br>
+4.附加音和弦，指在三度叠置和弦的基础上，附加二度、四度、六度音等。<br>
+5.偶成和弦，指在多声部音乐结构中，以横向思维为基础，纵向上的结合处于偶<br>
+然结合状态，如线性和声、纵合化和声手法等形成的各种偶然结合。<br>
+上述所介绍的各种纵向结构是与近现代和声中的横向进行紧密相连的，如非传统<br>
+①纵合化和声手法指在多声部音乐结构中，用横向进行的旋律作纵向上的结合，使之转化为和声形态，于是便<br>
+形成了纵合化和声手法。这是一种有别于三度叠置及非三度叠置结构的一种近现代多声部纵向结构组织方法<br>
+之一。它的和弦结构直接受旋律因素的制约。严格地说，它是线性和声思维的另一个分支。这类和声手法的<br>
+范围较广，涉及三度叠置与非三度叠置和声、各种传统的与非传统的、特殊的与复杂的应用方法等。</div>
+
+---
+
+<!-- PAGE:485 -->
+<a id="p0485"></a>
+## PDF p.485
+
+![徐平力《高级和声学教程》 PDF p.485（整页影印）](../assets/books/xu_advanced/p0485.jpg)
+
+<!-- MANUAL-REFS:p0485 -->
+<div class="manual-refs"><strong>手册使用本页</strong><ul><li id="ref-claim-atonal-definition-p0485" class="manual-ref-item" data-kind="claim"><span class="ref-kind">论点</span><a href="../和声学手册.html#claim-atonal-definition">无调性与自由音高组织 · atonal.definition</a><br><span class="ref-text">手册提炼：无调性避免形成任何调中心；音高、音程、和弦与节奏关系仍需组织，只是功能进行不再承担调性结构。</span></li><li id="ref-claim-atonal-definition-persichetti-p0485" class="manual-ref-item" data-kind="claim"><span class="ref-kind">论点</span><a href="../和声学手册.html#claim-atonal-definition-persichetti">无调性与自由音高组织 · atonal.definition-persichetti</a><br><span class="ref-text">手册提炼：无调性指明确调性感觉的削弱或消失，以及音乐中不存在调引力；无调性写作仍通过音程、音区、旋律与排列组织音响。</span></li><li id="ref-claim-atonal-expanded-tonality-overlap-p0485" class="manual-ref-item" data-kind="claim"><span class="ref-kind">论点</span><a href="../和声学手册.html#claim-atonal-expanded-tonality-overlap">无调性与自由音高组织 · atonal.expanded-tonality-overlap</a><br><span class="ref-text">手册提炼：扩展调性、自由无调性与十二音在同一时期并存；各流派都以不同方式控制纵向和声事件，年代上并无截然断裂。</span></li></ul></div>
+
+<div class="ocr-text">474高级和声学教程<br>
+无调性是指没有调性中心，音响组织缺乏调性感觉的创作手法与音乐类型。所谓<br>
+自由无调性则是指非十二音序列原则写作的无调性音乐。<br>
+自由无调性音乐始于20世纪初期，是调性扩张的必然结果。在音乐发展的历史<br>
+过程中，音乐技法的每一次变革，都与当时的社会背景相关。无调性大致界定了一个<br>
+宽泛的创作实践领域，其共有的特征是缺乏调性音乐的那种规范的相互联系的发展程<br>
+序，也没有序列主义的那种基础概念。无调性音乐是19世纪末20世纪初以来音乐作<br>
+品在创作上摆脱了古典调性之后的一种比较重要的创作方法。<br>
+19世纪后半叶以来，大部分音乐作品是以半音阶为基础的。由于半音化的高度发<br>
+展，调性控制范围的不断扩大，带来和声功能的削弱与调性的模糊不清，调性思维呈<br>
+现出明显的多样化，产生了新的调性处理方式（如前面介绍的各种实验调性与实验和<br>
+声手法）。<br>
+体现在调性的主体结构一一调式音阶方面，就是采用各种非自然音的人工音阶。<br>
+如各种循环音阶及各种大小调以外的各种音阶：泛音音阶、全音阶、五声音阶、八声<br>
+音阶、西班牙音阶、布鲁斯音阶等。这些音阶在德彪西、拉威尔、斯特拉文斯基、格<br>
+什温等人的作品中都有所体现。<br>
+人工音阶是与自然音阶相对应而言的一种音阶形态。它与自然音阶的主要区别是<br>
+在构成方式方面。自然音阶一般可以通过五度相生的原理来加以产生，而人工音阶则<br>
+需要各种人为的方式来加以产生，如等分方式（循环音阶）与综合方式（合成音阶）。<br>
+等分方式（循环音阶）是以八度等值划分为基础的结构循环的音高模式，即将<br>
+十二个半音平均分成若干份，每份的结构是一样的。这样，在十二个半音中，可以被<br>
+均分的数字有6、4、3、2，在此基础上可形成六分音阶（全音阶）、四分音阶（减调<br>
+式）、三分音阶（增调式）、二分音阶（三全音调式）等各种音阶结构。如梅西安的有<br>
+限移位调式，都是建立在等分方式的基础上形成的，共有七种：2：2结构（全音阶）1：2<br>
+结构（减调式）、2:1:1结构（增调式）、1:1:3：1结构（三全音调式）、1:4：1结构（三<br>
+全音调式）、2:2：1：1结构（三全音调式）、1：1:1:2：1（三全音调式）。<br>
+综合方式（合成音阶）是将两个以上的不同音阶（或局部音阶）混合在一起，所<br>
+形成的一种新的音阶。如巴托克可以通过“轴心调性”的方式一实际上就是调式综<br>
+合的方式形成许多新的音阶，如：巴托克《小宇宙》No.110（“撞击之声”）。<br>
+八、结束语<br>
+19世纪末至20世纪初，音乐创作进人至流派繁多、手法多样的创作时期，和声</div>
+
+---

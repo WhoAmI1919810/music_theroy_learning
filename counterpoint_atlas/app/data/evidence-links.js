@@ -15,6 +15,46 @@
         "chapter": "前言：对位法教学发展回顾与本书要点",
         "quote": "任何一个时期的对位风格都基于该时期的调式与和声语言。",
         "href": "../docs/books/yang_species.html#claim-hist.style-system"
+      },
+      {
+        "bookId": "duan_upper",
+        "bookTitle": "复调音乐（上册）",
+        "author": "段平泰",
+        "pdfPage": 13,
+        "printedPage": null,
+        "chapter": "第三篇 第三章 对比二声部辅助教材",
+        "quote": "所谓严格和自由的区分并不是指规则的繁难与宽松，而是全面的表示不同历史时期的不同风格。",
+        "href": "../docs/books/duan_upper.html#claim-hist.style-system"
+      },
+      {
+        "bookId": "chen_hong",
+        "bookTitle": "对位化和声学",
+        "author": "陈洪",
+        "pdfPage": 13,
+        "printedPage": null,
+        "chapter": "导言",
+        "quote": "对位法可以是欧洲中世纪的作曲技，經过帕勒斯特利那到享德尔和巴赫的时代，它的發展可完全停止了",
+        "href": "../docs/books/chen_hong.html#claim-hist.style-system"
+      },
+      {
+        "bookId": "skrebkov",
+        "bookTitle": "复调音乐",
+        "author": "斯克列勃科夫",
+        "pdfPage": 16,
+        "printedPage": null,
+        "chapter": "序论：复调音乐的历史阶段",
+        "quote": "对比式和模仿式复調音乐作为一种独立的音乐形式在西欧的专业音乐中直到15-16世紀",
+        "href": "../docs/books/skrebkov.html#claim-hist.style-system"
+      },
+      {
+        "bookId": "suxia",
+        "bookTitle": "实用对位法",
+        "author": "苏夏",
+        "pdfPage": 3,
+        "printedPage": null,
+        "chapter": "序",
+        "quote": "近代對位和古典对位在表現上有着题明的不同，但在雨者之本上业無過大的差巽。",
+        "href": "../docs/books/suxia.html#claim-hist.style-system"
       }
     ]
   },
@@ -31,6 +71,26 @@
         "chapter": "序",
         "quote": "对于实际作曲中所应用的复对位而言，这只能算作一种基本的入门技术；然而，严格对位的基本原则，还是要遵的。",
         "href": "../docs/books/prout.html#claim-hist.strict-training"
+      },
+      {
+        "bookId": "kirkpatrick",
+        "bookTitle": "对位法概要",
+        "author": "柯克兰",
+        "pdfPage": 5,
+        "printedPage": null,
+        "chapter": "第一章 定义和一般规则",
+        "quote": "严格对位的练习是应用已指定好的不同节奏型，写出包含有一个或儿个不同的曲调声部去伴随固定调。",
+        "href": "../docs/books/kirkpatrick.html#claim-hist.strict-training"
+      },
+      {
+        "bookId": "suxia",
+        "bookTitle": "实用对位法",
+        "author": "苏夏",
+        "pdfPage": 8,
+        "printedPage": null,
+        "chapter": "第一章 绪论：严格训练与自由写作",
+        "quote": "因要發得作的自由，需先受格而苛刻的約束",
+        "href": "../docs/books/suxia.html#claim-hist.strict-training"
       }
     ]
   },
@@ -47,6 +107,16 @@
         "chapter": "第二十一课 赋格曲整体布局",
         "quote": "上述特征几乎代表了从巴洛克时期到浪漫主义时期所有的调性关系，赋格曲的调性关系同样如此。",
         "href": "../docs/books/yang_free.html#claim-hist.tonal-basis"
+      },
+      {
+        "bookId": "chen_hong",
+        "bookTitle": "对位化和声学",
+        "author": "陈洪",
+        "pdfPage": 14,
+        "printedPage": null,
+        "chapter": "导言",
+        "quote": "以近世的和声学为基磅，加進了有用的对位技",
+        "href": "../docs/books/chen_hong.html#claim-hist.tonal-basis"
       }
     ]
   },
@@ -63,6 +133,36 @@
         "chapter": "第三课 二声部第一类：一音对一音",
         "quote": "每道习题的头尾小节必须使用原位的、最好是省略三音的主和弦……在二声部织体中，连续两个完全协和音程是没有问题的，但三个或更多则需要避免。",
         "href": "../docs/books/yang_species.html#claim-species.first-boundaries"
+      },
+      {
+        "bookId": "duan_upper",
+        "bookTitle": "复调音乐（上册）",
+        "author": "段平泰",
+        "pdfPage": 53,
+        "printedPage": null,
+        "chapter": "第三篇 第三章 分类对位：第一种方式",
+        "quote": "以上各种音程均可以自由采用，但象同、五（十二）、八度这样的完全协和音程不宜多用，尤忌经常连续出现以致音响空洞。",
+        "href": "../docs/books/duan_upper.html#claim-species.first-boundaries"
+      },
+      {
+        "bookId": "wenfeng",
+        "bookTitle": "复调音乐分析与写作",
+        "author": "文锋",
+        "pdfPage": 34,
+        "printedPage": null,
+        "chapter": "第二章 福克斯五种基本对位法：第一类",
+        "quote": "在第一类对位中，只能采用协和音程，不协和音程不得使用",
+        "href": "../docs/books/wenfeng.html#claim-species.first-boundaries"
+      },
+      {
+        "bookId": "miao",
+        "bookTitle": "对位法概论",
+        "author": "缪天瑞",
+        "pdfPage": 16,
+        "printedPage": null,
+        "chapter": "二声部对位：第一类",
+        "quote": "二聲部对位法的原则是通樣：對主题旋律的各音符附以完全協和或不完全協和的和普，原來是很簡單的。",
+        "href": "../docs/books/miao.html#claim-species.first-boundaries"
       }
     ]
   },
@@ -79,6 +179,26 @@
         "chapter": "第四课 二声部第二类：一音对二音",
         "quote": "经过音和辅助音……只出现在弱拍，前后必须级进。……如果跳进到弱拍，则必须跳进到同一和弦的和弦音。",
         "href": "../docs/books/yang_species.html#claim-species.second-passing"
+      },
+      {
+        "bookId": "duan_upper",
+        "bookTitle": "复调音乐（上册）",
+        "author": "段平泰",
+        "pdfPage": 57,
+        "printedPage": null,
+        "chapter": "第三篇 第三章 分类对位：全音符对二分音符",
+        "quote": "二、四、七、九度等音程，可以作为经过音或辅助音，在次强拍上自由运用",
+        "href": "../docs/books/duan_upper.html#claim-species.second-passing"
+      },
+      {
+        "bookId": "wenfeng",
+        "bookTitle": "复调音乐分析与写作",
+        "author": "文锋",
+        "pdfPage": 36,
+        "printedPage": null,
+        "chapter": "第二章 第二类对位：二音对一音",
+        "quote": "第二个二分音符如果是不协和音，现阶段只能是经过音。",
+        "href": "../docs/books/wenfeng.html#claim-species.second-passing"
       }
     ]
   },
@@ -95,6 +215,36 @@
         "chapter": "第五课 二声部第三类：一音对四音",
         "quote": "总的原则是尽量不让这些平行出现在四个四分音符之内。如果出现，就将其中的音置于较弱的节拍位置。",
         "href": "../docs/books/yang_species.html#claim-species.third-parallels"
+      },
+      {
+        "bookId": "duan_upper",
+        "bookTitle": "复调音乐（上册）",
+        "author": "段平泰",
+        "pdfPage": 54,
+        "printedPage": null,
+        "chapter": "第三篇 第三章 分类对位：第一种方式",
+        "quote": "平行八度和同度使两声部成为同一旋律，故绝对禁止。平行五度，一方面使两声部溶成同类的旋律线，音响空洞，一方面易于产生两个调性，故也不许应用。",
+        "href": "../docs/books/duan_upper.html#claim-species.third-parallels"
+      },
+      {
+        "bookId": "kirkpatrick",
+        "bookTitle": "对位法概要",
+        "author": "柯克兰",
+        "pdfPage": 9,
+        "printedPage": null,
+        "chapter": "第一章 定义和一般规则：五、八度",
+        "quote": "两个声部都是以跳进进到同向的五度或八度，不论在内声部或在外声部都一样要禁止",
+        "href": "../docs/books/kirkpatrick.html#claim-species.third-parallels"
+      },
+      {
+        "bookId": "wenfeng",
+        "bookTitle": "复调音乐分析与写作",
+        "author": "文锋",
+        "pdfPage": 37,
+        "printedPage": null,
+        "chapter": "第二章 第三类对位：四音对一音",
+        "quote": "相邻的平行五、八度都要禁止",
+        "href": "../docs/books/wenfeng.html#claim-species.third-parallels"
       }
     ]
   },
@@ -111,6 +261,26 @@
         "chapter": "第六课 二声部第四类：切分音",
         "quote": "延留音从出现到解决的过程包括：预备音……延留音……解决音……在分类对位中，延留音必须二度下行级进解决，没有例外。",
         "href": "../docs/books/yang_species.html#claim-species.fourth-suspension"
+      },
+      {
+        "bookId": "duan_upper",
+        "bookTitle": "复调音乐（上册）",
+        "author": "段平泰",
+        "pdfPage": 55,
+        "printedPage": null,
+        "chapter": "第三篇 第三章 分类对位：全音符对切分音",
+        "quote": "留音一律下行二度级进解决一真正的二度级进",
+        "href": "../docs/books/duan_upper.html#claim-species.fourth-suspension"
+      },
+      {
+        "bookId": "wenfeng",
+        "bookTitle": "复调音乐分析与写作",
+        "author": "文锋",
+        "pdfPage": 38,
+        "printedPage": null,
+        "chapter": "第二章 第四类对位：切分音",
+        "quote": "如果是延留音，必须有准备、延留、解决三个阶段。",
+        "href": "../docs/books/wenfeng.html#claim-species.fourth-suspension"
       }
     ]
   },
@@ -127,6 +297,16 @@
         "chapter": "第五章 第五类对位：混合节奏",
         "quote": "复调旋律的写作应当尽可能地使节奏组合时产生的自然强势……与节拍的周期性强势不一致。",
         "href": "../docs/books/lin.html#claim-species.fifth-rhythm"
+      },
+      {
+        "bookId": "wenfeng",
+        "bookTitle": "复调音乐分析与写作",
+        "author": "文锋",
+        "pdfPage": 40,
+        "printedPage": null,
+        "chapter": "第二章 第五类对位：混合节奏",
+        "quote": "第五类对位是指在全音符的固定曲调之上或之下，运用混合节奏写作对位旋律。",
+        "href": "../docs/books/wenfeng.html#claim-species.fifth-rhythm"
       }
     ]
   },
@@ -287,6 +467,16 @@
         "chapter": "第十章 赋格概述",
         "quote": "卡农曲……都须从头到尾保持精确的模仿；而赋格曲……比较自由的脱离了精确的模仿。",
         "href": "../docs/books/duan_lower.html#claim-fugue.definition"
+      },
+      {
+        "bookId": "chen_write",
+        "bookTitle": "赋格曲写作",
+        "author": "陈铭志",
+        "pdfPage": 4,
+        "printedPage": null,
+        "chapter": "绪论",
+        "quote": "赋格曲是一种独立体裁的乐曲，它建立在模仿复调音乐的基础上。乐曲一开始，主题（一个或两个）就在各个声部依次进入",
+        "href": "../docs/books/chen_write.html#claim-fugue.definition"
       }
     ]
   },
@@ -313,6 +503,16 @@
         "chapter": "第二章 主题：提要",
         "quote": "主题应当宜于处理为密接和应及插句。",
         "href": "../docs/books/higgs.html#claim-fugue.subject-identity"
+      },
+      {
+        "bookId": "chen_write",
+        "bookTitle": "赋格曲写作",
+        "author": "陈铭志",
+        "pdfPage": 18,
+        "printedPage": null,
+        "chapter": "第一章 主题",
+        "quote": "一首赋格曲的主题应当有鲜明的风格、突出的个性、明确的调式、调性和比较适中的长度与宽度",
+        "href": "../docs/books/chen_write.html#claim-fugue.subject-identity"
       }
     ]
   },
@@ -339,6 +539,16 @@
         "chapter": "第十一章 赋格的呈示部分：主题",
         "quote": "由于主题的音乐内容比较集中，加上还要适于各声部轮流模仿，一般不宜过长。",
         "href": "../docs/books/duan_lower.html#claim-fugue.subject-properties"
+      },
+      {
+        "bookId": "chen_write",
+        "bookTitle": "赋格曲写作",
+        "author": "陈铭志",
+        "pdfPage": 8,
+        "printedPage": null,
+        "chapter": "第一章 主题",
+        "quote": "主题的音域也不宜过分宽广，一般在八度左右",
+        "href": "../docs/books/chen_write.html#claim-fugue.subject-properties"
       }
     ]
   },
@@ -355,6 +565,16 @@
         "chapter": "第二章 答题的意义",
         "quote": "当主题在一个声部出现后，接着又在另一声部上作模仿，通常都是在移高五度或移低四度的调上出现。这个在新调上重新出现的主题，称为答题。",
         "href": "../docs/books/chen_new.html#claim-fugue.answer-dominant"
+      },
+      {
+        "bookId": "chen_write",
+        "bookTitle": "赋格曲写作",
+        "author": "陈铭志",
+        "pdfPage": 23,
+        "printedPage": null,
+        "chapter": "第二章 答题",
+        "quote": "答题在属调上(主题的上方五度，或下方四度)回答主题，是在实际作品中最常见的一种。",
+        "href": "../docs/books/chen_write.html#claim-fugue.answer-dominant"
       }
     ]
   },
@@ -381,6 +601,16 @@
         "chapter": "第二章 答题：§46",
         "quote": "主题如果从属音开始，则答题就是守调的；这时一般只要把第一个音加以调整即可。",
         "href": "../docs/books/higgs.html#claim-fugue.tonal-answer"
+      },
+      {
+        "bookId": "chen_write",
+        "bookTitle": "赋格曲写作",
+        "author": "陈铭志",
+        "pdfPage": 25,
+        "printedPage": null,
+        "chapter": "第二章 答题：守调答题",
+        "quote": "此时也可采用守调答题（比较少见）。",
+        "href": "../docs/books/chen_write.html#claim-fugue.tonal-answer"
       }
     ]
   },
@@ -399,14 +629,14 @@
         "href": "../docs/books/chen_new.html#claim-fugue.countersubject"
       },
       {
-        "bookId": "chen_new",
-        "bookTitle": "赋格学新论",
+        "bookId": "chen_write",
+        "bookTitle": "赋格曲写作",
         "author": "陈铭志",
-        "pdfPage": 69,
-        "printedPage": 50,
-        "chapter": "第四章 呈示部的组合",
-        "quote": "若为固定对题则需要按照二重对位的处理方法写作。",
-        "href": "../docs/books/chen_new.html#claim-fugue.countersubject"
+        "pdfPage": 32,
+        "printedPage": null,
+        "chapter": "第三章 对题",
+        "quote": "当对题伴随着主题进入时，应服从主题的调性，当对题伴随着答题进入时，则应服从答题的调性。",
+        "href": "../docs/books/chen_write.html#claim-fugue.countersubject"
       }
     ]
   },
@@ -423,6 +653,16 @@
         "chapter": "第四章 呈示部的组合",
         "quote": "二声部赋格曲的呈示部进入两次，主题—答题。三声部进入三次，主题—答题—主题。四声部进入四次，主题—答题—主题—答题。",
         "href": "../docs/books/chen_new.html#claim-fugue.exposition-order"
+      },
+      {
+        "bookId": "chen_write",
+        "bookTitle": "赋格曲写作",
+        "author": "陈铭志",
+        "pdfPage": 38,
+        "printedPage": null,
+        "chapter": "第四章 呈示部",
+        "quote": "呈示部中的主题与答题常是交替进入的，进入的次数根据声部的数目而定。",
+        "href": "../docs/books/chen_write.html#claim-fugue.exposition-order"
       }
     ]
   },
@@ -439,6 +679,16 @@
         "chapter": "第十一章 赋格的呈示部分：布局",
         "quote": "所有的声部在呈示部中必须全部出现……它们一般是按主调（主题）、属调（答题）交替的顺序排列。",
         "href": "../docs/books/duan_lower.html#claim-fugue.exposition-principles"
+      },
+      {
+        "bookId": "chen_write",
+        "bookTitle": "赋格曲写作",
+        "author": "陈铭志",
+        "pdfPage": 38,
+        "printedPage": null,
+        "chapter": "第四章 呈示部",
+        "quote": "呈示部是赋格曲的开始部分。主题（包括答题))依次在各声部作最初的陈述",
+        "href": "../docs/books/chen_write.html#claim-fugue.exposition-principles"
       }
     ]
   },
@@ -455,6 +705,16 @@
         "chapter": "第五章 间插段的功能",
         "quote": "在呈示部以后，主题每次重新进入之前出现的音乐段落，称为间插段。",
         "href": "../docs/books/chen_new.html#claim-fugue.episode-definition"
+      },
+      {
+        "bookId": "chen_write",
+        "bookTitle": "赋格曲写作",
+        "author": "陈铭志",
+        "pdfPage": 46,
+        "printedPage": null,
+        "chapter": "第五章 间插部",
+        "quote": "主题每次重新进入之前出现的音乐段落，称为间插段。",
+        "href": "../docs/books/chen_write.html#claim-fugue.episode-definition"
       }
     ]
   },
@@ -481,6 +741,16 @@
         "chapter": "第二十课 展开与再现、间插段",
         "quote": "间插段……本身游移、不稳定的和声进行以及导入功能是我们要了解和掌握的。",
         "href": "../docs/books/yang_free.html#claim-fugue.episode-function"
+      },
+      {
+        "bookId": "chen_write",
+        "bookTitle": "赋格曲写作",
+        "author": "陈铭志",
+        "pdfPage": 47,
+        "printedPage": null,
+        "chapter": "第五章 间插部：作用",
+        "quote": "间插段大多用呈示部中的材料作为基础，采用主题或对题等部分动机来加以展开。",
+        "href": "../docs/books/chen_write.html#claim-fugue.episode-function"
       }
     ]
   },
@@ -497,6 +767,16 @@
         "chapter": "第二十二章 中间部结构",
         "quote": "赋格曲的中间部指主要乐思完成呈示程序之后，至乐曲进入再现之前的段落。在这个部分中两种织体间隔交替地出现，一是主要乐思在主属调以外的调性上作完整陈述，一是在这些完整陈述之间出现间插段。",
         "href": "../docs/books/lin.html#claim-fugue.middle"
+      },
+      {
+        "bookId": "chen_write",
+        "bookTitle": "赋格曲写作",
+        "author": "陈铭志",
+        "pdfPage": 64,
+        "printedPage": null,
+        "chapter": "第六章 中间部",
+        "quote": "中间部的调性布局保持在近关系调的范围内属于一般规律。",
+        "href": "../docs/books/chen_write.html#claim-fugue.middle"
       }
     ]
   },
@@ -523,6 +803,16 @@
         "chapter": "密接和应",
         "quote": "每一声部的进入距离一定都是相等的，而且在通常的音程中，以“属”回答“主”的关系。",
         "href": "../docs/books/higgs.html#claim-fugue.stretto-definition"
+      },
+      {
+        "bookId": "chen_write",
+        "bookTitle": "赋格曲写作",
+        "author": "陈铭志",
+        "pdfPage": 74,
+        "printedPage": null,
+        "chapter": "第七章 紧接模仿",
+        "quote": "紧接模仿只是在另一声部重复主题的结构，紧接模仿结束后即转入自由发展的段落",
+        "href": "../docs/books/chen_write.html#claim-fugue.stretto-definition"
       }
     ]
   },
@@ -539,6 +829,16 @@
         "chapter": "第七章 紧接模仿的特性",
         "quote": "紧接模仿只是在另一声部重复主题的结构，紧接模仿结束后即转入自由发展的段落。",
         "href": "../docs/books/chen_new.html#claim-fugue.stretto-difference"
+      },
+      {
+        "bookId": "chen_write",
+        "bookTitle": "赋格曲写作",
+        "author": "陈铭志",
+        "pdfPage": 74,
+        "printedPage": null,
+        "chapter": "第七章 紧接模仿",
+        "quote": "紧接模仿与一般的卡农写作有所区别。",
+        "href": "../docs/books/chen_write.html#claim-fugue.stretto-difference"
       }
     ]
   },
@@ -555,6 +855,16 @@
         "chapter": "第八章 再现部的回归",
         "quote": "原封不动地重复呈示部分几乎是没有的，常常是带有变化性的、富有动力性的再现。",
         "href": "../docs/books/chen_new.html#claim-fugue.recap"
+      },
+      {
+        "bookId": "chen_write",
+        "bookTitle": "赋格曲写作",
+        "author": "陈铭志",
+        "pdfPage": 84,
+        "printedPage": null,
+        "chapter": "第八章 再现部与尾声",
+        "quote": "主题在主调上重新出现，这是比较常见的处理方法。",
+        "href": "../docs/books/chen_write.html#claim-fugue.recap"
       }
     ]
   },
@@ -571,6 +881,16 @@
         "chapter": "第八章 再现部的回归：持续音",
         "quote": "持续音应从一个和弦内音上开始，而常常又是在一个和弦内音上结束……最常见的是在属音与主音上形成的持续音。",
         "href": "../docs/books/chen_new.html#claim-fugue.pedal"
+      },
+      {
+        "bookId": "chen_write",
+        "bookTitle": "赋格曲写作",
+        "author": "陈铭志",
+        "pdfPage": 90,
+        "printedPage": null,
+        "chapter": "第八章 再现部与尾声：持续音",
+        "quote": "属音持续音，常用在再现部开始的部分来加强乐曲将趋向于结束的作用。",
+        "href": "../docs/books/chen_write.html#claim-fugue.pedal"
       }
     ]
   },
@@ -597,6 +917,16 @@
         "chapter": "第十章 赋格概述：一般结构",
         "quote": "呈示部……是所有（三个）声部都轮流参加的主题陈述段落……中间部分……开始脱离了以前的两个基本调（主和属），引进其它的调式或移入新的调性。",
         "href": "../docs/books/duan_lower.html#claim-fugue.overall"
+      },
+      {
+        "bookId": "chen_write",
+        "bookTitle": "赋格曲写作",
+        "author": "陈铭志",
+        "pdfPage": 93,
+        "printedPage": null,
+        "chapter": "第九章 赋格曲的整体布局",
+        "quote": "两端（指开始与结束部分)的调性是稳定的，中间是不稳定的。",
+        "href": "../docs/books/chen_write.html#claim-fugue.overall"
       }
     ]
   },
@@ -615,14 +945,14 @@
         "href": "../docs/books/chen_new.html#claim-fugue.multiple"
       },
       {
-        "bookId": "chen_new",
-        "bookTitle": "赋格学新论",
+        "bookId": "chen_write",
+        "bookTitle": "赋格曲写作",
         "author": "陈铭志",
-        "pdfPage": 212,
-        "printedPage": 193,
-        "chapter": "第十章 多主题赋格曲",
-        "quote": "在二重、三重赋格曲的写作中，主题应事先写成二重或三重对位（大多是八度的音程关系）。",
-        "href": "../docs/books/chen_new.html#claim-fugue.multiple"
+        "pdfPage": 104,
+        "printedPage": null,
+        "chapter": "第十章 二重、三重赋格曲",
+        "quote": "根据两个或三个主题写作的赋格曲，则称为二重赋格曲或三重赋格曲。",
+        "href": "../docs/books/chen_write.html#claim-fugue.multiple"
       }
     ]
   },
@@ -641,14 +971,14 @@
         "href": "../docs/books/yao.html#claim-fugue.bach-structure"
       },
       {
-        "bookId": "yao",
-        "bookTitle": "巴赫赋格曲的研究",
-        "author": "姚世泽",
-        "pdfPage": 50,
-        "printedPage": 42,
-        "chapter": "第四章 巴赫赋格曲的结构与类别",
-        "quote": "中段：在起段之后，采用已出现的入句。与主题的再陈述轮流交替出现。且主题的原有形式可以被用在主调或属调上及转位中。",
-        "href": "../docs/books/yao.html#claim-fugue.bach-structure"
+        "bookId": "chen_write",
+        "bookTitle": "赋格曲写作",
+        "author": "陈铭志",
+        "pdfPage": 93,
+        "printedPage": null,
+        "chapter": "第九章 赋格曲的整体布局",
+        "quote": "赋格曲总是以主题为中心，并通过主题的各种变形和调式、调性以及音区等方面的变化，将各个部分紧密地联系在一起",
+        "href": "../docs/books/chen_write.html#claim-fugue.bach-structure"
       }
     ]
   },
@@ -665,6 +995,16 @@
         "chapter": "第三章 赋格曲的重要题材：主题",
         "quote": "具有适度的长度，以便易于记忆。如过于长，则对答句的模仿性将失其效果；如过短，则对主题的印象不深。",
         "href": "../docs/books/yao.html#claim-fugue.subject-memory"
+      },
+      {
+        "bookId": "chen_write",
+        "bookTitle": "赋格曲写作",
+        "author": "陈铭志",
+        "pdfPage": 8,
+        "printedPage": null,
+        "chapter": "第一章 主题",
+        "quote": "为了使主题更加集中、概括地表达一个完整的乐思，主题不宜太长。",
+        "href": "../docs/books/chen_write.html#claim-fugue.subject-memory"
       }
     ]
   },

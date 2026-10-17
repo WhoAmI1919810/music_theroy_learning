@@ -18,6 +18,10 @@ PDF_ROOT = r"E:\音乐学习笔记\复调"
 OCR_SOURCES = [
     r"E:\codex\_counterpoint_work\content_ocr.jsonl",
     r"E:\codex\_counterpoint_work\content_ocr_extra.jsonl",
+    r"E:\codex\_counterpoint_work\toc_ocr.jsonl",
+    r"E:\codex\_counterpoint_work\ocr_wenfeng.jsonl",
+    r"E:\codex\_counterpoint_work\ocr_duan_upper.jsonl",
+    r"E:\codex\_counterpoint_work\ocr_miao.jsonl",
 ]
 ASSET_WIDTH = 1020
 JPEG_QUALITY = 74

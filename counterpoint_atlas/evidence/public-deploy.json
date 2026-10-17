@@ -13,11 +13,25 @@
   ],
   "citedBooks": [
     {
+      "id": "chen_write",
+      "title": "赋格曲写作",
+      "html": "docs/books/chen_write.html",
+      "markdown": "docs/books/chen_write.md",
+      "pageCount": 15
+    },
+    {
       "id": "chen_new",
       "title": "赋格学新论",
       "html": "docs/books/chen_new.html",
       "markdown": "docs/books/chen_new.md",
-      "pageCount": 14
+      "pageCount": 12
+    },
+    {
+      "id": "duan_upper",
+      "title": "复调音乐（上册）",
+      "html": "docs/books/duan_upper.html",
+      "markdown": "docs/books/duan_upper.md",
+      "pageCount": 5
     },
     {
       "id": "duan_lower",
@@ -25,6 +39,13 @@
       "html": "docs/books/duan_lower.html",
       "markdown": "docs/books/duan_lower.md",
       "pageCount": 4
+    },
+    {
+      "id": "chen_hong",
+      "title": "对位化和声学",
+      "html": "docs/books/chen_hong.html",
+      "markdown": "docs/books/chen_hong.md",
+      "pageCount": 2
     },
     {
       "id": "lin",
@@ -41,6 +62,13 @@
       "pageCount": 3
     },
     {
+      "id": "kirkpatrick",
+      "title": "对位法概要",
+      "html": "docs/books/kirkpatrick.html",
+      "markdown": "docs/books/kirkpatrick.md",
+      "pageCount": 2
+    },
+    {
       "id": "middleton",
       "title": "现代对位及其和声",
       "html": "docs/books/middleton.html",
@@ -48,11 +76,39 @@
       "pageCount": 3
     },
     {
+      "id": "miao",
+      "title": "对位法概论",
+      "html": "docs/books/miao.html",
+      "markdown": "docs/books/miao.md",
+      "pageCount": 1
+    },
+    {
       "id": "prout",
       "title": "复对位法与卡农",
       "html": "docs/books/prout.html",
       "markdown": "docs/books/prout.md",
       "pageCount": 4
+    },
+    {
+      "id": "skrebkov",
+      "title": "复调音乐",
+      "html": "docs/books/skrebkov.html",
+      "markdown": "docs/books/skrebkov.md",
+      "pageCount": 1
+    },
+    {
+      "id": "suxia",
+      "title": "实用对位法",
+      "html": "docs/books/suxia.html",
+      "markdown": "docs/books/suxia.md",
+      "pageCount": 2
+    },
+    {
+      "id": "wenfeng",
+      "title": "复调音乐分析与写作",
+      "html": "docs/books/wenfeng.html",
+      "markdown": "docs/books/wenfeng.md",
+      "pageCount": 5
     },
     {
       "id": "higgs",
@@ -80,9 +136,9 @@
       "title": "巴赫赋格曲的研究",
       "html": "docs/books/yao.html",
       "markdown": "docs/books/yao.md",
-      "pageCount": 3
+      "pageCount": 2
     }
   ],
-  "citedPageCount": 46,
+  "citedPageCount": 76,
   "claimCount": 40
 }

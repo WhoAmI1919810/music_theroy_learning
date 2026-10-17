@@ -5,6 +5,9 @@
   "description": "Interactive harmony theory atlas and progression planner",
   "scripts": {
     "test": "node --test tests/catalog.test.js tests/evidence-graph.test.js tests/pitch-modes.test.js tests/sets-midi.test.js tests/voice-modulation.test.js",
+    "build:docs": "python tools/build_docs.py",
+    "build:books": "python tools/build_book_archives.py --annotations-only",
+    "build": "python tools/build_docs.py && python tools/build_book_archives.py --annotations-only && python ../tools/inject_site_nav.py",
     "serve": "python -m http.server 8765"
   }
 }

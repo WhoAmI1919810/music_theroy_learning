@@ -1,0 +1,504 @@
+# 桑桐《和声学专题六讲》
+
+> **PDF 文件**：`桑桐 - 和声学专题六讲 - 人民音乐出版社.pdf`  
+> **物理页数**：366（从 PDF 第 1 页起计）  
+> **OCR 平均置信度**：0.963  
+> **字符数**：125103
+
+本文件收录**理论手册实际引用的 14 个 PDF 页**，每页采用整版影印 + OCR 文本。整页图保留谱例、图表、表格、边注和版面关系；OCR 只供检索与复制，具体音符、临时记号、连线和罗马数字以图像为准。被理论手册引用的条目列在图后，可直接回跳。
+
+页码一律使用 **PDF 物理页码**，可能与书内印刷页码不同。
+
+**快速跳页**：[p.3](#p0003) · [p.5](#p0005) · [p.76](#p0076) · [p.104](#p0104) · [p.123](#p0123) · [p.185](#p0185) · [p.225](#p0225) · [p.236](#p0236) · [p.245](#p0245) · [p.253](#p0253) · [p.265](#p0265) · [p.281](#p0281) · [p.310](#p0310) · [p.334](#p0334)
+
+---
+
+<!-- PAGE:3 -->
+<a id="p0003"></a>
+## PDF p.3
+
+![桑桐《和声学专题六讲》 PDF p.3（整页影印）](../assets/books/sangtong_six/p0003.jpg)
+
+<!-- MANUAL-REFS:p0003 -->
+<div class="manual-refs"><strong>手册使用本页</strong><ul><li id="ref-profile-profile-sangtong_six-p0003" class="manual-ref-item" data-kind="profile"><span class="ref-kind">代表页</span><a href="../和声学手册.html#book-profiles">教材代表页 · 桑桐六讲</a><br><span class="ref-text">手册将本页列为《桑桐六讲》代表页；该书定位：从创作写法出发的专题研究：衬托声部、低音十型、和声变奏、复合和弦、贝多芬对比处理，以及稳定/紧张度/节奏/功能—色彩四种关系。</span></li></ul></div>
+
+<div class="ocr-text">前<br>
+言<br>
+本书是根据我在1976年冬到1977年夏为作曲系高班学生举办<br>
+的和声讲座整理成文的。举办这一讲座是为了帮助已经学过一些<br>
+和声基础课程的学生掌握实际创作中和声运用的方法，同时帮助<br>
+他们扩大一些眼界。<br>
+本书中第一、第二两篇（《和声衬托声部的写作概论》与《低<br>
+音部的写作与它的十种形式》），是关于和声在实际创作中的<br>
+一些基本写法。第三篇（《和声的变奏性写作&gt;）是关于创作中的<br>
+一种重要的和声手法一一和声的变奏写作的介绍，并涉及到在和<br>
+声教学中如何应用这种方法的问题。第四篇《复合和弦的运用》，<br>
+是介绍近代和声手法之一的复合和弦的应用，这一内容在基础和<br>
+声课程中是不包括的，但对于创作中扩大和声的运用范围、增加<br>
+和声的表现作用是有意义的。第五篇《贝多芬的和声手法及其对<br>
+比性处理》，概括地分析了贝多芬和声手法的基本特征与作品中<br>
+如何运用和声的对比性及其处理的方法。第六篇《和声运用中的<br>
+四种关系》，归纳分析了和声运用中所包含的四种关系，从这四<br>
+种关系的处理来看和声在创作中运用的一般规律与和声布局的总<br>
+的特点。<br>
+这六篇文稿，，陆续在学校内部油印发表后，虽然内容尚很粗<br>
+糙、浅陋，但得到了校内、外许多同志的支持和鼓励。人民音乐<br>
+出版社也热情地支持它的出版，并为此付出了辛勤的劳动，使这<br>
+·I·</div>
+
+---
+
+<!-- PAGE:5 -->
+<a id="p0005"></a>
+## PDF p.5
+
+![桑桐《和声学专题六讲》 PDF p.5（整页影印）](../assets/books/sangtong_six/p0005.jpg)
+
+<!-- MANUAL-REFS:p0005 -->
+<div class="manual-refs"><strong>手册使用本页</strong><ul><li id="ref-profile-profile-sangtong_six-p0005" class="manual-ref-item" data-kind="profile"><span class="ref-kind">代表页</span><a href="../和声学手册.html#book-profiles">教材代表页 · 桑桐六讲</a><br><span class="ref-text">手册将本页列为《桑桐六讲》代表页；该书定位：从创作写法出发的专题研究：衬托声部、低音十型、和声变奏、复合和弦、贝多芬对比处理，以及稳定/紧张度/节奏/功能—色彩四种关系。</span></li></ul></div>
+
+<div class="ocr-text">目<br>
+录<br>
+第一讲和声衬托声部的写作概述<br>
+引言·<br>
+一、音乐的织体层次<br>
+（一）多声部音乐的织体层次·<br>
+（二）衬托声部的概念·…·<br>
+（三）衬托声部的三种主要类型··<br>
+二、依附性衬托声部的写作<br>
+（一）基本特点····<br>
+（二）依附性衬托声部的作用···<br>
+（三）依附性衬托声部的写作方法··<br>
+（四）其它层次的依附性衬托声部···<br>
+.(15)<br>
+三、和声性衬托声部的写作<br>
+...(18)<br>
+（一）和声性衬托声部的特性···<br>
+...(18)<br>
+（二）和声性衬托声部的四种主要形式··<br>
+··(19)<br>
+（三）和声性衬托声部的声部进行处理方法·····<br>
+.·.·.·(27)<br>
+（四）同向（或平行)进行的和声衬托声部层·…·（31）<br>
+（五）和声性衬托声部的织体层次··<br>
+....(32)<br>
+（六）和声性衬托声部写作中的一些其它问题....（33）<br>
+四、旋律性衬托声部的写作····<br>
+.(34)<br>
+（一）旋律性衬托声部的基本特性···<br>
+··（35)</div>
+
+---
+
+<!-- PAGE:76 -->
+<a id="p0076"></a>
+## PDF p.76
+
+![桑桐《和声学专题六讲》 PDF p.76（整页影印）](../assets/books/sangtong_six/p0076.jpg)
+
+<!-- MANUAL-REFS:p0076 -->
+<div class="manual-refs"><strong>手册使用本页</strong><ul><li id="ref-claim-inversion-bass-role-p0076" class="manual-ref-item" data-kind="claim"><span class="ref-kind">论点</span><a href="../和声学手册.html#claim-inversion-bass-role">转位、低音与和声节奏 · inversion.bass-role</a><br><span class="ref-text">手册提炼：低音部不仅是和弦的最低音，还决定原位/转位、功能属性、织体基础与结构位置；分析低音线是判断和声句法的入口。</span></li><li id="ref-profile-profile-sangtong_six-p0076" class="manual-ref-item" data-kind="profile"><span class="ref-kind">代表页</span><a href="../和声学手册.html#book-profiles">教材代表页 · 桑桐六讲</a><br><span class="ref-text">手册将本页列为《桑桐六讲》代表页；该书定位：从创作写法出发的专题研究：衬托声部、低音十型、和声变奏、复合和弦、贝多芬对比处理，以及稳定/紧张度/节奏/功能—色彩四种关系。</span></li></ul></div>
+
+<div class="ocr-text">第二讲低音部的写作与它的<br>
+十种形式<br>
+低音部，是指多声部音乐中处于最底下的声部，并非指处于<br>
+低音区的声部。有时，整个音乐在高音区，其中最底下的声部也<br>
+是低音部。因此，低音部最确切的名称应当是“底声部”。<br>
+低音部是音乐织体的一个声部层次。对主旋律来说，低音部<br>
+实际上也属于衬托声部范畴，但由于低音部是整个音乐织体的基<br>
+础声部，对于和声的位置、和声的进行、音乐的展开与曲式结构<br>
+等都有重要的意义，因此需要把它作为织体的一个层次来单独的<br>
+进行研究。<br>
+低音部在多声部音乐中的作用是很重要的，我们可以从三个<br>
+方面来说明它的作用。<br>
+（1）低音部是和声的基础声部，它确定和声的位置与功能<br>
+属性。在写作多声部音乐时，和声采用原位还是转位？低音部采<br>
+用跳进还是级进？强调那一种调式功能？这些问题对乐曲的结<br>
+构，对音乐内容的表现等都有重要的意义。<br>
+（2）低音部属于衬托声部的范畴，因此，它对主旋律的配<br>
+合与衬托、与其它衬托声部的结合，在完满地表现整个音乐的效<br>
+果方面，也具有重要的作用。<br>
+（3）低音部作为音乐织体的一个声部层次，作为处于外声<br>
+部的声部层次，它不仅是每个和弦的低音部，起“点”的作用；<br>
+66</div>
+
+---
+
+<!-- PAGE:104 -->
+<a id="p0104"></a>
+## PDF p.104
+
+![桑桐《和声学专题六讲》 PDF p.104（整页影印）](../assets/books/sangtong_six/p0104.jpg)
+
+<!-- MANUAL-REFS:p0104 -->
+<div class="manual-refs"><strong>手册使用本页</strong><ul><li id="ref-claim-prolongation-fixed-bass-p0104" class="manual-ref-item" data-kind="claim"><span class="ref-kind">论点</span><a href="../和声学手册.html#claim-prolongation-fixed-bass">延长、层次与曲式 · prolongation.fixed-bass</a><br><span class="ref-text">手册提炼：固定低音反复同一短小低音模式，上方声部作连续发展与变奏；这种重复把局部和声组织成可延长的结构层。</span></li><li id="ref-profile-profile-sangtong_six-p0104" class="manual-ref-item" data-kind="profile"><span class="ref-kind">代表页</span><a href="../和声学手册.html#book-profiles">教材代表页 · 桑桐六讲</a><br><span class="ref-text">手册将本页列为《桑桐六讲》代表页；该书定位：从创作写法出发的专题研究：衬托声部、低音十型、和声变奏、复合和弦、贝多芬对比处理，以及稳定/紧张度/节奏/功能—色彩四种关系。</span></li></ul></div>
+
+<div class="ocr-text">舞剧《红色娘子军》<br>
+例19（三）<br>
+例19（一）的低音（包括和声声部）在强拍上以及在弱拍处<br>
+衬托主旋律。例19（二）低音（八度与五度）在强拍与弱拍作规<br>
+律性的衬托，构成切分的效果。例19（三)，衬托声部（包括低<br>
+音一起）在旋律的长音停顿处作重音的节奏强调衬托。<br>
+（七）固定低音<br>
+一个短小的乐汇，一个乐句或一个乐段结构的低音旋律在低<br>
+音部多次重复的形式称固定低音。在这个固定低音上方，其它声<br>
+部作连贯性的发展或进行各种变奏。这是很早就运用的一种变奏<br>
+形式。固定低音是一个总称，其中包括：固定音型（或固定动<br>
+机)、固定低音、巴萨卡里亚舞曲与恰空舞曲。<br>
+固定低音的长度可从一、二小节到八小节。固定低音的旋律<br>
+94</div>
+
+---
+
+<!-- PAGE:123 -->
+<a id="p0123"></a>
+## PDF p.123
+
+![桑桐《和声学专题六讲》 PDF p.123（整页影印）](../assets/books/sangtong_six/p0123.jpg)
+
+<!-- MANUAL-REFS:p0123 -->
+<div class="manual-refs"><strong>手册使用本页</strong><ul><li id="ref-claim-voice-leading-multiple-solutions-p0123" class="manual-ref-item" data-kind="claim"><span class="ref-kind">论点</span><a href="../和声学手册.html#claim-voice-leading-multiple-solutions">声部进行与不协和解决 · voice-leading.multiple-solutions</a><br><span class="ref-text">手册提炼：同一旋律与低音可有多条合格的四部写法；语法约束限定可行域，并不产生唯一正确答案。</span></li><li id="ref-profile-profile-sangtong_six-p0123" class="manual-ref-item" data-kind="profile"><span class="ref-kind">代表页</span><a href="../和声学手册.html#book-profiles">教材代表页 · 桑桐六讲</a><br><span class="ref-text">手册将本页列为《桑桐六讲》代表页；该书定位：从创作写法出发的专题研究：衬托声部、低音十型、和声变奏、复合和弦、贝多芬对比处理，以及稳定/紧张度/节奏/功能—色彩四种关系。</span></li></ul></div>
+
+<div class="ocr-text">学生的对位技巧。这种方法也适用于和声的教学，在和声的写作<br>
+实习中，进行变奏性写作的练习也可以具有下述两方面的作用：<br>
+（1）通过为同一旋律作各种不同的和声处理，可以发展学<br>
+生的和声构思的思考能力，锻炼和声处理多样化的技巧。<br>
+和声的写作练习，不仅要为各种不同风格、不同体裁、不同<br>
+类型的旋律进行恰当的和声配置，而且也要能为同一旋律作各种<br>
+不同的和声配置。一个旋律并不只有一种配置方法。如何根据音<br>
+乐表现的需要，根据旋律所内含的多种和声因素，选择各种可能<br>
+的和声配置，需要通过和声的内在感觉、细致的思考、整体的设<br>
+计、实际的写作锻炼与音响的听觉感受；而和声的变奏性写作，<br>
+可以在教学过程中帮助学生发展这些方面的能力。<br>
+（2）根据一个基本的和声进行原型作各种声部的装饰性变<br>
+奏与织体变奏，可以发展声部的装饰性写作与织体音型写作的能<br>
+力。<br>
+在一个良好的和声进行的基础上，为各声部写作出装饰性<br>
+的、流畅的、有特性的声部以及各种类型的织体写法，是创作中<br>
+变奏写作的又一种重要技巧，而和声的变奏性练习也可以培养学<br>
+生在这些方面的写作能力。<br>
+当然，由于和声基本理论与技术的学习存在着多方面的限<br>
+制，因此创作中的变奏技巧，不可能在和声基础课程中获得满意<br>
+的解决，而需要在创作实习课与不断的创作实践中，才能逐步提<br>
+高，但和声教学中的变奏性练习，可以帮助和培养学生在这方面<br>
+的写作能力，所以，这是一种在和声教学中需要予以重视的写作<br>
+练习。不少和声教科书中，在学完了各种和声材料后，有专门的<br>
+和声的变奏性练习。在这里我们准备就和声的变奏性练习的各种<br>
+·113·</div>
+
+---
+
+<!-- PAGE:185 -->
+<a id="p0185"></a>
+## PDF p.185
+
+![桑桐《和声学专题六讲》 PDF p.185（整页影印）](../assets/books/sangtong_six/p0185.jpg)
+
+<!-- MANUAL-REFS:p0185 -->
+<div class="manual-refs"><strong>手册使用本页</strong><ul><li id="ref-claim-chromaticism-nineteenth-century-complexity-p0185" class="manual-ref-item" data-kind="claim"><span class="ref-kind">论点</span><a href="../和声学手册.html#claim-chromaticism-nineteenth-century-complexity">半音化与变化和弦 · chromaticism.nineteenth-century-complexity</a><br><span class="ref-text">手册提炼：19 世纪后期起，表现需求推动和弦结构复杂化：高度叠置、附加音、非三度叠置与复合和弦共同扩大色彩与紧张度。</span></li><li id="ref-claim-atonal-chord-material-p0185" class="manual-ref-item" data-kind="claim"><span class="ref-kind">论点</span><a href="../和声学手册.html#claim-atonal-chord-material">无调性与自由音高组织 · atonal.chord-material</a><br><span class="ref-text">手册提炼：后调性和弦不再只按三度叠置；三度/六度、四度/五度、二度/七度都可作为构建和弦的音程材料。</span></li><li id="ref-profile-profile-sangtong_six-p0185" class="manual-ref-item" data-kind="profile"><span class="ref-kind">代表页</span><a href="../和声学手册.html#book-profiles">教材代表页 · 桑桐六讲</a><br><span class="ref-text">手册将本页列为《桑桐六讲》代表页；该书定位：从创作写法出发的专题研究：衬托声部、低音十型、和声变奏、复合和弦、贝多芬对比处理，以及稳定/紧张度/节奏/功能—色彩四种关系。</span></li></ul></div>
+
+<div class="ocr-text">第四讲复合和弦的运用<br>
+从十九世纪后期起，在外国音乐创作中，由于题材范围的扩<br>
+大，风格创新的要求，引起了音乐表现手段的发展，在和声的运<br>
+用中也产生了许多新的手法。其中，和弦结构的复杂化是重要的<br>
+手法之一。<br>
+和弦结构的复杂化，根据结构的特点可分为三种类型。一种<br>
+是在三度叠置基础上的复杂化，如：高度的三度叠置，象各类九<br>
+和弦、十一和弦、十三和弦等。其它还有在三度叠置基础上的附<br>
+加音和弦等。另一种则打破了三度叠置的和弦构成方法，采用<br>
+四、五度叠置的方法或各类音程自由结合的方法而形成的复杂的<br>
+和弦结构。除上述两种外，还有一种是复合和弦，这是由不同和<br>
+弦的同时结合而构成的复杂化的和弦结构形式。和弦结构的复杂<br>
+化，使和声音响在色彩与紧张度方面，产生了许多新的效果，丰<br>
+富了和声的表现力。这种方法，在我国音乐作品中，根据内容表<br>
+现与音乐风格的需要，也为不少作曲者所运用。因此，为了扩大<br>
+我们作品中的和声表现手法，有必要对近代音乐中和弦结构复杂<br>
+化的处理方法进行研究和归纳，分析实际作品中这种手法的运用<br>
+情况，作为借鉴。本文不预备全面地论述和弦结构复杂化的问<br>
+题，只是就有关复合和弦的运用方法进行一些探讨。<br>
+·175·</div>
+
+---
+
+<!-- PAGE:225 -->
+<a id="p0225"></a>
+## PDF p.225
+
+![桑桐《和声学专题六讲》 PDF p.225（整页影印）](../assets/books/sangtong_six/p0225.jpg)
+
+<!-- MANUAL-REFS:p0225 -->
+<div class="manual-refs"><strong>手册使用本页</strong><ul><li id="ref-claim-atonal-compound-chord-precursor-p0225" class="manual-ref-item" data-kind="claim"><span class="ref-kind">论点</span><a href="../和声学手册.html#claim-atonal-compound-chord-precursor">无调性与自由音高组织 · atonal.compound-chord-precursor</a><br><span class="ref-text">手册提炼：复合和弦把不同根音/结构的和弦同时叠合，可产生复合调性与高密度音响；贝多芬的复调化写法已显示其先声。</span></li><li id="ref-profile-profile-sangtong_six-p0225" class="manual-ref-item" data-kind="profile"><span class="ref-kind">代表页</span><a href="../和声学手册.html#book-profiles">教材代表页 · 桑桐六讲</a><br><span class="ref-text">手册将本页列为《桑桐六讲》代表页；该书定位：从创作写法出发的专题研究：衬托声部、低音十型、和声变奏、复合和弦、贝多芬对比处理，以及稳定/紧张度/节奏/功能—色彩四种关系。</span></li></ul></div>
+
+<div class="ocr-text">格里格《抒情曲》<br>
+例39<br>
+上例也说明了这种复合和弦构成的方式，可以产生复合调性。<br>
+（五）各声部层作复调化的处理时所构成的复合和弦<br>
+当音乐的各个层次由声部和声层所构成，并且各自按照自己<br>
+的声部进行的要求作复调化的结合时，在纵的关系中常构成许多<br>
+复合的和声结构。这种类型属于复调化的复合和声。贝多芬在他<br>
+的《钢琴奏鸣曲》作品八十一号（a）第一乐章中，用“再见吧”<br>
+这个二声部的动机，作轮唱式的处理，从例40的第四小节起，即<br>
+产生了和声上的复合：V与I的交替结合。这是贝多芬为了特定<br>
+的表现目的而作的和声上的大胆创造。开了近代音乐中复合和弦<br>
+的先声。<br>
+贝多芬：《钢琴奏鸣曲》作品八十一号（a）<br>
+例40<br>
+（再<br>
+见<br>
+吧！<br>
+在前面的例6中，实际上是以二声部旋律化的进行为基础：<br>
+旋律声部和与它相适应的低音线条。但这两个声部都有依附性的<br>
+和声声部，构成小三和弦连续的八度声部层。二者相结合，即在<br>
+·215·</div>
+
+---
+
+<!-- PAGE:236 -->
+<a id="p0236"></a>
+## PDF p.236
+
+![桑桐《和声学专题六讲》 PDF p.236（整页影印）](../assets/books/sangtong_six/p0236.jpg)
+
+<!-- MANUAL-REFS:p0236 -->
+<div class="manual-refs"><strong>手册使用本页</strong><ul><li id="ref-claim-form-beethoven-functional-base-p0236" class="manual-ref-item" data-kind="claim"><span class="ref-kind">论点</span><a href="../和声学手册.html#claim-form-beethoven-functional-base">曲式中的和声策略 · form.beethoven-functional-base</a><br><span class="ref-text">手册提炼：贝多芬的和声建立在大小调功能体系上；其结构作用来自扩大对比、延迟与调性布局，同时保留调性中心。</span></li><li id="ref-profile-profile-sangtong_six-p0236" class="manual-ref-item" data-kind="profile"><span class="ref-kind">代表页</span><a href="../和声学手册.html#book-profiles">教材代表页 · 桑桐六讲</a><br><span class="ref-text">手册将本页列为《桑桐六讲》代表页；该书定位：从创作写法出发的专题研究：衬托声部、低音十型、和声变奏、复合和弦、贝多芬对比处理，以及稳定/紧张度/节奏/功能—色彩四种关系。</span></li></ul></div>
+
+<div class="ocr-text">第五讲贝多芬的和声手法<br>
+及其对比性处理<br>
+一、和声语言的特征<br>
+贝多芬的作品，体现了法国资产阶级大革命时期的思想和生<br>
+活，具有广泛的、深刻的、充满着矛盾斗争的内容。在他的作品<br>
+中，既有戏剧性的、紧张的、激烈的斗争情景，又有充满了无限<br>
+温暖、富有哲理性的抒情音诗，还有那些贯注了机智、诙谐和豪<br>
+放情绪的乐观篇章。在这些不同内容的乐曲中，和声都是重要的<br>
+表现手段之一。它时而发挥它的暴风雨般的、排山倒海似的巨大<br>
+力量，时而表现出它的宁静、沉思或田园式的意境。时而是大块<br>
+的、震撼空间的和声音响，时而又是流畅的、旋律性的声部交<br>
+织。和声，在贝多芬的作品中，既简朴而又富于表现力。特别在<br>
+发挥和声在大型作品中结构功能、发展层次以及表现作用方面，<br>
+创造了丰富的经验，在音乐的发展史上具有重大的意义。<br>
+贝多芬在和声方面继承了巴赫、亨德尔、海顿、莫扎特等人<br>
+的成就与影响，并进一步予以创造性地发展。<br>
+总的说来，贝多芬的和声语言的基本特征与他的前人相同，<br>
+仍然是以大小调功能体系和声为基础。贝多芬的自然音体系的和<br>
+声语言，最集中地体现在大部分作品的主题呈示部分以及大部分<br>
+的终止式和声方面。在这些部分，如同海顿、莫扎特的作品中一<br>
+·226·</div>
+
+---
+
+<!-- PAGE:245 -->
+<a id="p0245"></a>
+## PDF p.245
+
+![桑桐《和声学专题六讲》 PDF p.245（整页影印）](../assets/books/sangtong_six/p0245.jpg)
+
+<!-- MANUAL-REFS:p0245 -->
+<div class="manual-refs"><strong>手册使用本页</strong><ul><li id="ref-claim-form-sonata-conflict-p0245" class="manual-ref-item" data-kind="claim"><span class="ref-kind">论点</span><a href="../和声学手册.html#claim-form-sonata-conflict">曲式中的和声策略 · form.sonata-conflict</a><br><span class="ref-text">手册提炼：奏鸣曲呈示部建立主调与副调的主题/调性冲突，展开部扩大不稳定，再现部把副调主题带回主调解决冲突。</span></li></ul></div>
+
+<div class="ocr-text">同的音乐形象。没有对比性的和声处理，也就没有戏剧性的发<br>
+展。戏剧性的和声效果，弹力性的和声节奏也都是以对比性的和<br>
+声处理为基础。下面就贝多芬作品中和声的对比性处理方法来进<br>
+行专题分析。<br>
+二、和声对比性处理的基础与方法<br>
+和声，具有形象意义，它的各种材料具有不同的音响效果，<br>
+可以体现不同的思想、感情与意境，在音乐创作的发展过程中，<br>
+和声的这种作用为人们所认识、所创造，用来表现作品的内容，<br>
+塑造各种音乐形象。和声的这种作用，在贝多芬之前，无论在歌<br>
+剧、戏剧性的声乐作品或器乐作品中，已创造和积累了不少经<br>
+验。例如在巴赫的作品中，他以单纯的、自然音体系的、大调的<br>
+和声来表现欢快的、赞颂的、田园的、幸福的、宁静的等等音乐<br>
+形象；用复杂的、半音体系的、小调的和声来表现幻想的、戏剧<br>
+性的、苦难的、哀伤的、悲痛的等等音乐形象。由此可见，作品<br>
+中不同的和声可以塑造不同的音乐形象，因此对比性的和声处理<br>
+方法就是由于音乐形象表现的需要而产生的。<br>
+和声手法中对比性的处理，还来自音乐结构发展上的需要。<br>
+曲式，是音乐内容的发展在乐曲结构上的体现，它的不同部分是<br>
+由音乐形象的呈示、对比、变化与展开构成的，因此，它的不同<br>
+部分也需要用不同的和声手法来处理。例如，奏鸣曲式就是由音<br>
+乐内容的辩证发展所构成的曲式结构之一。它的主部、副部与它<br>
+们的展开等各个部分，都需要用不同的和声手法来处理。<br>
+如上所述，音乐内容的表现需要与乐曲结构的发展要求是和<br>
+·235·</div>
+
+---
+
+<!-- PAGE:253 -->
+<a id="p0253"></a>
+## PDF p.253
+
+![桑桐《和声学专题六讲》 PDF p.253（整页影印）](../assets/books/sangtong_six/p0253.jpg)
+
+<!-- MANUAL-REFS:p0253 -->
+<div class="manual-refs"><strong>手册使用本页</strong><ul><li id="ref-claim-diatonic-function-sequence-p0253" class="manual-ref-item" data-kind="claim"><span class="ref-kind">论点</span><a href="../和声学手册.html#claim-diatonic-function-sequence">自然音级功能：T–S–D · diatonic.function-sequence</a><br><span class="ref-text">手册提炼：功能和声的基本序列是稳定—不稳定—稳定，典型为 T–S–D–T；D–S 属特殊情况而非常规。</span></li></ul></div>
+
+<div class="ocr-text">弦的分解所构成的音调，在第十小节内声部的“叹息”音调，使<br>
+和声从V，进入到V。（见例13的第九、第十小节）。在第九小<br>
+节，这个动机是从升F音开始的，比前面的F音又升高了小二<br>
+度，形成了逐步的上升。在第十小节后，一小节的静止没有了，<br>
+不安的情绪加紧，在第十一小节继续向上发展，延留在A音上，<br>
+不安的呼应移在大提琴声部。在整个这四小节中，贝多芬运用了<br>
+减七和弦来造成和声上的对比，来表现惊惶不安的情绪。这种惊<br>
+惶不安还由于在演奏上贝多芬要求在第三个、第六个八分音符处<br>
+作特强演奏而更有所突出（第九、第十一小节）。接下去，是这<br>
+个主题的一个全新的动机，旋律具有悲伤的性质。第十四小节是<br>
+十三小节的变化重复。和声转为é小调：I一V一I 的进行。<br>
+织体与声部写作的对比较大，低音是属音保持，上方三声部采用<br>
+旋律化的声部处理，加强了歌唱性与抒情性。根据上面的分析，<br>
+我们可以看到贝多芬在这个主题中通过和声材料的不同（I级减<br>
+七和弦与I、V的对比）与织体写法的不同（分解性、和弦式与<br>
+旋律化声部写作的对比）来表现不同的情绪。但是这个主题的整<br>
+个和声的统一、连贯程度比前面讲到的钢琴奏鸣曲更要强。它的<br>
+和声进行图式可以用下列方式标记出来：<br>
+e:I<br>
+bI<br>
+V -—V<br>
+(IV. I) (F:I V, I)<br>
+(14 )<br>
+从上述图式可以看出这个主题第一部分的和声骨架是e小<br>
+调：t—*SⅡ--D一t 的功能序列。和声处理上的对比就是在这个<br>
+和声骨架的基础上进行的。<br>
+·243·</div>
+
+---
+
+<!-- PAGE:265 -->
+<a id="p0265"></a>
+## PDF p.265
+
+![桑桐《和声学专题六讲》 PDF p.265（整页影印）](../assets/books/sangtong_six/p0265.jpg)
+
+<!-- MANUAL-REFS:p0265 -->
+<div class="manual-refs"><strong>手册使用本页</strong><ul><li id="ref-claim-form-development-tonal-plan-p0265" class="manual-ref-item" data-kind="claim"><span class="ref-kind">论点</span><a href="../和声学手册.html#claim-form-development-tonal-plan">曲式中的和声策略 · form.development-tonal-plan</a><br><span class="ref-text">手册提炼：奏鸣曲式展开部的调性布局同时影响主题发展与结构分段；调性变化参与大型结构的成立。</span></li><li id="ref-claim-form-development-conflict-p0265" class="manual-ref-item" data-kind="claim"><span class="ref-kind">论点</span><a href="../和声学手册.html#claim-form-development-conflict">曲式中的和声策略 · form.development-conflict</a><br><span class="ref-text">手册提炼：贝多芬把展开部扩展为奏鸣曲式的戏剧重心：其规模、矛盾、动力与调性不稳定性共同形成结构张力。</span></li></ul></div>
+
+<div class="ocr-text">的大致情况与中部的三种不同的调性处理方法的介绍。<br>
+在作品内一个部分与另一个部分之间的和声对比性处理方面<br>
+没有比奏鸣曲式中呈示部与展开部之间的和声对比更为鲜明、更<br>
+为强烈了。在展开性部分，贝多芬运用了各种具有积极动力作用<br>
+的和声手段，使它与前后的呈示部分、再现部分构成对比。在展<br>
+开部分的和声对比手段大致有以下一些特点：（1）调性功能与<br>
+调性关系的对比，例如接触到下属的调性以及各类远关系的调<br>
+性；（2）调性时值的对比，运用了时值较短的、经过性的调性<br>
+发展方法；（3）转调方法的对比，用突然的转调、移调、调性<br>
+对置等；（4）调性稳定度的对比，例如避免明确的终止和声<br>
+等；（5）模进式的发展等等。其它如调式色彩的对比、织体、<br>
+音区的对比等也常常作为对比的手段运用。总之，在这一部分<br>
+中，贝多芬力求加强和声上的紧张性与不稳定性，来表现音乐内<br>
+容上的矛盾冲突，并为后面的再现创造条件，好象一个具有强烈<br>
+倾向性的和弦引导出它的解决和弦，和声上的紧张性与不稳定性<br>
+的作用愈强烈，愈发挥得充分，那么主题与调性的再现的要求也<br>
+就更迫切，它的出现也就具有逻辑上的必然性，对比也就得到了<br>
+平衡。上述展开部分中的和声对比手段不仅在奏鸣曲式的展开部<br>
+分，而且也运用在其它展开性的段落。当然，并非在所有作品的<br>
+展开部分中，和声的对比程度都同样地强烈，这是根据音乐内容<br>
+矛盾冲突的性质与规模而确定的。在一些戏剧性冲突强烈、规模<br>
+巨大的作品中，展开部和声手法的对比就比较强烈，例如《第三<br>
+交响曲》第一乐章的展开部。<br>
+展开部是从呈示部的主题材料的基础上展开的，因此，它与．<br>
+呈示部的和声处理上有共同的因素，有统一的方面。另一方面，<br>
+·255。</div>
+
+---
+
+<!-- PAGE:281 -->
+<a id="p0281"></a>
+## PDF p.281
+
+![桑桐《和声学专题六讲》 PDF p.281（整页影印）](../assets/books/sangtong_six/p0281.jpg)
+
+<!-- MANUAL-REFS:p0281 -->
+<div class="manual-refs"><strong>手册使用本页</strong><ul><li id="ref-profile-profile-sangtong_six-p0281" class="manual-ref-item" data-kind="profile"><span class="ref-kind">代表页</span><a href="../和声学手册.html#book-profiles">教材代表页 · 桑桐六讲</a><br><span class="ref-text">手册将本页列为《桑桐六讲》代表页；该书定位：从创作写法出发的专题研究：衬托声部、低音十型、和声变奏、复合和弦、贝多芬对比处理，以及稳定/紧张度/节奏/功能—色彩四种关系。</span></li></ul></div>
+
+<div class="ocr-text">创作中如何运用和声的不同方面来为音乐内容的表现、艺术形式<br>
+的完整这些要求服务，是我们学习和声写作中要充分加以研究的<br>
+问题。本文就和声运用中的四种重要的关系进行一些分析讨论，<br>
+这四种关系是：（1）和声进行的稳定与不稳定的关系；（2）和<br>
+声紧张度的强与弱的关系；（3）和声节奏的轻与重、宽与紧的<br>
+关系；（4）和声处理的功能与色彩的关系。当然还存在着其它<br>
+的关系，但这四种是和声运用中比较重要的关系，也是和声表现<br>
+作用的重要方面。下面我们分别加以阐述。<br>
+一、和声进行的稳定与不稳定的关系<br>
+和声进行的稳定与不稳定的关系是多声部音乐中不可缺少的<br>
+因素，没有这两者的结合，音乐就没有发展的动力，就没有发展<br>
+的层次与高潮，就没有曲式的结构。在一个乐曲内部来说，不稳<br>
+定是绝对的，从乐曲的第一个音符起，就处于不稳定的状态之<br>
+中，一直到最后的结束和弦(或结束音)为止。所以和声运用中一<br>
+个重要的艺术手段，就是处理稳定与不稳定的关系问题。举一个<br>
+大家熟知的情况为例，在传统和声中的和声进行的功能序列，就<br>
+是和声进行中稳定与不稳定关系的处理方法之一。因此，要处理好<br>
+和声发展的问题，就要掌握好和声进行中稳定与不稳定的关系。<br>
+（一）各种稳定性较强与不稳定性较强的和声因素<br>
+和声的稳定与不稳定的关系，从局部的、个别的和弦到较大<br>
+范围的音乐段落都是存在的。一般在提到和声的稳定与不稳定的<br>
+性能时，常只指和声调式的功能上的稳定与不稳定的问题，实际<br>
+·271</div>
+
+---
+
+<!-- PAGE:310 -->
+<a id="p0310"></a>
+## PDF p.310
+
+![桑桐《和声学专题六讲》 PDF p.310（整页影印）](../assets/books/sangtong_six/p0310.jpg)
+
+<!-- MANUAL-REFS:p0310 -->
+<div class="manual-refs"><strong>手册使用本页</strong><ul><li id="ref-claim-cadence-phrase-pair-p0310" class="manual-ref-item" data-kind="claim"><span class="ref-kind">论点</span><a href="../和声学手册.html#claim-cadence-phrase-pair">终止式 · cadence.phrase-pair</a><br><span class="ref-text">手册提炼：典型乐段由两个终止强度不同的乐句构成，常见布局为 HC→PAC/IAC 或 IAC→PAC。</span></li></ul></div>
+
+<div class="ocr-text">例19是一个平行乐段，前后两个乐句之间采用侵入终止的处<br>
+理方法。和声进行根据音乐的分句结构，也分为许多小的组合。<br>
+在第一乐句中有三个组合：<br>
+第一个组合是G：I<br>
+丨V-一，一小节一个重音和弦，<br>
+重<br>
+重<br>
+构成：重一一重的组合。<br>
+第二个组合是：Ⅱ（2）V？V丨I-一<br>
+重轻<br>
+重<br>
+第三个组合是第一乐句的后半部分，它的和声进行是：<br>
+」I～一Ⅱ」（I），由于这一乐句的结束与<br>
+重轻<br>
+一重<br>
+下一乐句的开始是相互衔接的，所以它的节奏是重～一轻一<br>
+重。在非重音和声部分，都属于过程性和声作用。<br>
+第二乐句也有三个组合：<br>
+第一组合与第一乐句的开始相同：I——|IV——Ⅱ。<br>
+重<br>
+重<br>
+·300·</div>
+
+---
+
+<!-- PAGE:334 -->
+<a id="p0334"></a>
+## PDF p.334
+
+![桑桐《和声学专题六讲》 PDF p.334（整页影印）](../assets/books/sangtong_six/p0334.jpg)
+
+<!-- MANUAL-REFS:p0334 -->
+<div class="manual-refs"><strong>手册使用本页</strong><ul><li id="ref-claim-color-harmony-function-color-history-p0334" class="manual-ref-item" data-kind="claim"><span class="ref-kind">论点</span><a href="../和声学手册.html#claim-color-harmony-function-color-history">色彩和声与调式色彩 · color-harmony.function-color-history</a><br><span class="ref-text">手册提炼：功能和色彩是同一和弦的两种作用；历史上色彩作用增强，会相对削弱功能联系，两类作用仍可并存。</span></li><li id="ref-profile-profile-sangtong_six-p0334" class="manual-ref-item" data-kind="profile"><span class="ref-kind">代表页</span><a href="../和声学手册.html#book-profiles">教材代表页 · 桑桐六讲</a><br><span class="ref-text">手册将本页列为《桑桐六讲》代表页；该书定位：从创作写法出发的专题研究：衬托声部、低音十型、和声变奏、复合和弦、贝多芬对比处理，以及稳定/紧张度/节奏/功能—色彩四种关系。</span></li></ul></div>
+
+<div class="ocr-text">四、和声作用的功能性与色彩性的关系<br>
+和声的功能与色彩是和声的两种不同的作用，它们是大小调<br>
+体系和声中任何一个和弦所同时具有的作用，并不矛盾。但是，<br>
+在音乐创作的历史发展过程中，随着内容表现范围的扩大，和声<br>
+表现手段的发展，愈来愈强调和声的色彩作用。这样，在和声的<br>
+功能与色彩之间便产生了矛盾，因为和声色彩作用的发展，造成<br>
+了功能作用的削弱，在我们创作中也就产生了如何处理和声的功<br>
+能与色彩的关系问题。这个问题既很重要，又难于得出一种固定<br>
+的结论，因为，和声语言的风格现在是这样的多样，不可能定出<br>
+一种普遍适用的和声功能与色彩关系的具体处理方法，这里只是<br>
+就有关和声的功能与色彩的关系方面的问题，谈谈自己的一些看<br>
+法。<br>
+下面分几个问题来阐述。<br>
+（一）关于和声的功能与色彩的特性<br>
+1.关于和声的功能<br>
+一个调性中的每一个和弦，根据它在调式音阶中的音级地位<br>
+而具有稳定或不稳定的作用，这种作用就是和弦的调式功能，通<br>
+常即称谓和声的功能。<br>
+主和弦具有稳定的作用，是调性的中心和弦，有吸引力。其<br>
+它各级和弦属于不稳定的作用，具有直接或间接倾向于主和弦的<br>
+向心力，根据它们与主音的音程关系以及它们的倾向特性而区分<br>
+为属功能与下属功能。这些问题在和声理论教程中早已为理论家<br>
+·324·</div>
+
+---

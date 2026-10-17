@@ -1,0 +1,1035 @@
+# 柴可夫斯基《和声学指南》
+
+> **PDF 文件**：`柴可夫斯基《和声学指南》.pdf`  
+> **物理页数**：202（从 PDF 第 1 页起计）  
+> **OCR 平均置信度**：0.956  
+> **字符数**：53243
+
+本文件收录**理论手册实际引用的 26 个 PDF 页**，每页采用整版影印 + OCR 文本。整页图保留谱例、图表、表格、边注和版面关系；OCR 只供检索与复制，具体音符、临时记号、连线和罗马数字以图像为准。被理论手册引用的条目列在图后，可直接回跳。
+
+页码一律使用 **PDF 物理页码**，可能与书内印刷页码不同。
+
+**快速跳页**：[p.8](#p0008) · [p.12](#p0012) · [p.14](#p0014) · [p.15](#p0015) · [p.21](#p0021) · [p.25](#p0025) · [p.26](#p0026) · [p.36](#p0036) · [p.46](#p0046) · [p.47](#p0047) · [p.48](#p0048) · [p.68](#p0068) · [p.81](#p0081) · [p.93](#p0093) · [p.94](#p0094) · [p.98](#p0098) · [p.100](#p0100) · [p.102](#p0102) · [p.109](#p0109) · [p.113](#p0113) · [p.120](#p0120) · [p.154](#p0154) · [p.157](#p0157) · [p.183](#p0183) · [p.196](#p0196) · [p.197](#p0197)
+
+---
+
+<!-- PAGE:8 -->
+<a id="p0008"></a>
+## PDF p.8
+
+![柴可夫斯基《和声学指南》 PDF p.8（整页影印）](../assets/books/tchaikovsky_guide/p0008.jpg)
+
+<!-- MANUAL-REFS:p0008 -->
+<div class="manual-refs"><strong>手册使用本页</strong><ul><li id="ref-claim-interval-inversion-p0008" class="manual-ref-item" data-kind="claim"><span class="ref-kind">论点</span><a href="../和声学手册.html#claim-interval-inversion">音程、音高集合与音名拼写 · interval.inversion</a><br><span class="ref-text">手册提炼：音程转位会改变度数，但保持两音的等音音高关系，是拼写、和弦转位与集合运算的共同前提。</span></li><li id="ref-prose-cite-tchaikovsky_guide-p0008-1-p0008" class="manual-ref-item" data-kind="prose"><span class="ref-kind">正文引用</span><a href="../和声学手册.html#cite-tchaikovsky_guide-p0008-1">手册正文引用</a><br><span class="ref-text">因此程序同时保存 pitch class 与 拼写音名。同一个音响可以有多个分析，但具体作品中的记谱与声部进行通常只支持其中一个。音程转位的定义见柴可夫斯基《和声学指南》PDF p.8。</span></li><li id="ref-profile-profile-tchaikovsky_guide-p0008" class="manual-ref-item" data-kind="profile"><span class="ref-kind">代表页</span><a href="../和声学手册.html#book-profiles">教材代表页 · 柴可夫斯基指南</a><br><span class="ref-text">手册将本页列为《柴可夫斯基指南》代表页；该书定位：以实践写作为中心的简明教程：连接法、平行五八、属七解决、模进、转调、和弦外音与增六。</span></li></ul></div>
+
+<div class="ocr-text">前言音程<br>
+六度<br>
+七度<br>
+八度<br>
+由此可知，要将大音程和纯音程转变为小音程、减音程或<br>
+增音程，可降低或升高冠音，或者冠音不变，升高或降低根音。<br>
+例如：<br>
+大六度<br>
+小六度<br>
+增六度<br>
+减六度<br>
+大于八度的音程只是八度内音程的重复。唯有“九度”在<br>
+和声中具有独立意义。<br>
+九度十度十一度十二度十三度十四度十五度<br>
+音程的“转位”是指将冠音移低八度，或将根音移高八度。<br>
+因此，会出现下列数字关系：<br>
+23<br>
+5<br>
+6<br>
+7<br>
+8<br>
+8<br>
+7<br>
+6<br>
+5<br>
+4<br>
+3<br>
+2<br>
+1<br>
+一度转位后变为八度，二度转位后变为七度，三度转位后变<br>
+为六度，四度转位后变为五度，五度转位后变为四度，六度转位<br>
+后变为三度，七度转位后变为二度，八度转位后变为一度。<br>
+IⅢ</div>
+
+---
+
+<!-- PAGE:12 -->
+<a id="p0012"></a>
+## PDF p.12
+
+![柴可夫斯基《和声学指南》 PDF p.12（整页影印）](../assets/books/tchaikovsky_guide/p0012.jpg)
+
+<!-- MANUAL-REFS:p0012 -->
+<div class="manual-refs"><strong>手册使用本页</strong><ul><li id="ref-claim-voice-leading-dissonance-preparation-p0012" class="manual-ref-item" data-kind="claim"><span class="ref-kind">论点</span><a href="../和声学手册.html#claim-voice-leading-dissonance-preparation">声部进行与不协和解决 · voice-leading.dissonance-preparation</a><br><span class="ref-text">手册提炼：不协和音应在前一和弦中作为协和音出现，并在同一人声部进入下一和弦的不协和位置，随后按倾向解决；这使不协和成为可追踪的声部事件。</span></li></ul></div>
+
+<div class="ocr-text">实用和声·学·指·南<br>
+第一部分<br>
+S1.音乐中的音有两种组合方式：一种是先后发声，另一种<br>
+是同时发声。前者被称为“旋律”，后者被称为“和声”。<br>
+这两个要素再加上节奏（以一定的节拍和时值加以有规<br>
+律地组合）便构成音乐的材料。本文将探讨同时发声的音，即<br>
+和声。<br>
+82.三个、四个或五个音同时发声，而且每两个音按三度叠<br>
+置，被称为“和弦”。最简单最重要的和弦是三和弦。顾名思<br>
+义，三和弦由三个音组成。由于大小三和弦内部包含两个协和<br>
+的音程（三度和五度），因此听起来悦耳。相比之下，四个或五<br>
+个音组成的和弦，往往都包含不协和音程，因此都不是独立出<br>
+现，必须要有准备并解决到一个大三或小三和弦上。</div>
+
+---
+
+<!-- PAGE:14 -->
+<a id="p0014"></a>
+## PDF p.14
+
+![柴可夫斯基《和声学指南》 PDF p.14（整页影印）](../assets/books/tchaikovsky_guide/p0014.jpg)
+
+<!-- MANUAL-REFS:p0014 -->
+<div class="manual-refs"><strong>手册使用本页</strong><ul><li id="ref-claim-triad-construction-p0014" class="manual-ref-item" data-kind="claim"><span class="ref-kind">论点</span><a href="../和声学手册.html#claim-triad-construction">三和弦与七和弦（前置速查） · triad.construction</a><br><span class="ref-text">手册提炼：三和弦由根音、三音、五音按三度叠置；三度与五度的性质决定大、小、减、增四类结构。</span></li><li id="ref-profile-profile-tchaikovsky_guide-p0014" class="manual-ref-item" data-kind="profile"><span class="ref-kind">代表页</span><a href="../和声学手册.html#book-profiles">教材代表页 · 柴可夫斯基指南</a><br><span class="ref-text">手册将本页列为《柴可夫斯基指南》代表页；该书定位：以实践写作为中心的简明教程：连接法、平行五八、属七解决、模进、转调、和弦外音与增六。</span></li></ul></div>
+
+<div class="ocr-text">第一篇协和和弦<br>
+一三和弦<br>
+S3.三和弦或通常而言的和弦由三个音组成，并按三度关<br>
+系叠置。<br>
+b)<br>
+a<br>
+c)<br>
+8<br>
+8<br>
+最低音被称为“根音”，中间的音被称为“三音”，最上方的音<br>
+被称为“五音”。根据三和弦中三度和五度的性质进行分类。大三<br>
+和弦由大三度和纯五度构成，如a)。小三和弦由小三度和纯五度<br>
+构成，如b)。减三和弦由小三度和减五度构成，如c)。<br>
+第一章大调式三和弦<br>
+S4.在自然大调音阶各级上建立三和弦，会获得下列和弦：<br>
+2.<br>
+3.<br>
+4.<br>
+5.<br>
+6.<br>
+7.<br>
+8<br>
+80<br>
+8<br>
+8<br>
+其中，I级、IV级和V级为大三和弦。<br>
+1.<br>
+2.<br>
+3.<br>
+8<br>
+这三个和弦代表大调式中最基本的和声材料。其名称根据</div>
+
+---
+
+<!-- PAGE:15 -->
+<a id="p0015"></a>
+## PDF p.15
+
+![柴可夫斯基《和声学指南》 PDF p.15（整页影印）](../assets/books/tchaikovsky_guide/p0015.jpg)
+
+<!-- MANUAL-REFS:p0015 -->
+<div class="manual-refs"><strong>手册使用本页</strong><ul><li id="ref-claim-diatonic-tonic-subdominant-dominant-p0015" class="manual-ref-item" data-kind="claim"><span class="ref-kind">论点</span><a href="../和声学手册.html#claim-diatonic-tonic-subdominant-dominant">自然音级功能：T–S–D · diatonic.tonic-subdominant-dominant</a><br><span class="ref-text">手册提炼：大调 I、IV、V 分别承担主、下属、属的核心功能，其他自然三和弦按共同音与倾向归入功能组。</span></li></ul></div>
+
+<div class="ocr-text">实用和声学指南<br>
+Guide to the Practical Study of Harmony<br>
+所建立的音级名称予以命名：<br>
+I级上建立的三和弦为主和弦。<br>
+IV上建立的三和弦为下属和弦。<br>
+V上建立的三和弦为属和弦。<br>
+S5.前面已谈及，这三个大三和弦构成大调式中最基本的<br>
+和声材料。它们包含了自然调式中的所有音级，而且相互之间<br>
+关系密切。它们有着明确的调性，而且基本满足了调内旋律的<br>
+和声伴奏。这些和弦内包含共同音也证实它们关系亲密。Ⅳ级<br>
+和V级上建立的三和弦，分别为该调的下属和弦和属和弦，但在<br>
+“五度循环圈”内它们是与主和弦关系最近的和弦。这三个和<br>
+弦在调式音阶中的内在关系与五度循环圈内这三个连续的调性<br>
+直接相关。<br>
+S6.大调音阶上也有小三和弦，即Ⅱ级、Ⅲ级和VI级。这些<br>
+小三和弦音响轻柔，因而其重要性比不上大三和弦。但它们展<br>
+现了一种不同于大三和弦那般富有力量性的美。与大三和弦一<br>
+样，这些小三和弦内部关系也同样紧密，它们同样在“五度循环<br>
+圈”内。<br>
+8<br>
+10<br>
+可以说，大调式中这些三和弦之间的相互关系同样存在于<br>
+关系小调中。I级和VI级上建立的三和弦、V级和Ⅲ级上建立<br>
+的三和弦，IV级和Ⅱ级上建立的三和弦都相差小三度。<br>
+1.<br>
+6.<br>
+5.3.<br>
+4.2.<br>
+11<br>
+88<br>
+所有这些大、小三和弦可以分成三大类，每一类包含两个：</div>
+
+---
+
+<!-- PAGE:21 -->
+<a id="p0021"></a>
+## PDF p.21
+
+![柴可夫斯基《和声学指南》 PDF p.21（整页影印）](../assets/books/tchaikovsky_guide/p0021.jpg)
+
+<!-- MANUAL-REFS:p0021 -->
+<div class="manual-refs"><strong>手册使用本页</strong><ul><li id="ref-claim-voice-leading-parallels-p0021" class="manual-ref-item" data-kind="claim"><span class="ref-kind">论点</span><a href="../和声学手册.html#claim-voice-leading-parallels">声部进行与不协和解决 · voice-leading.parallels</a><br><span class="ref-text">手册提炼：平行纯五度、纯八度削弱声部独立性，因此传统调性写作把它们视为需要避免的进行。</span></li><li id="ref-prose-cite-tchaikovsky_guide-p0021-1-p0021" class="manual-ref-item" data-kind="prose"><span class="ref-kind">正文引用</span><a href="../和声学手册.html#cite-tchaikovsky_guide-p0021-1">手册正文引用</a><br><span class="ref-text">平行纯五度、纯八度：两个声部以相同纯音程同向移动到新的纯音程，会削弱独立性，传统写作中避免（柴可夫斯基 PDF p.21；《概述》PDF p.103）。</span></li><li id="ref-profile-profile-tchaikovsky_guide-p0021" class="manual-ref-item" data-kind="profile"><span class="ref-kind">代表页</span><a href="../和声学手册.html#book-profiles">教材代表页 · 柴可夫斯基指南</a><br><span class="ref-text">手册将本页列为《柴可夫斯基指南》代表页；该书定位：以实践写作为中心的简明教程：连接法、平行五八、属七解决、模进、转调、和弦外音与增六。</span></li></ul></div>
+
+<div class="ocr-text">实用和声学指南<br>
+Guide to thePractical Study of Harmony<br>
+88<br>
+有些平行进行的确非常悦耳。因此，跟其他进行一样，完<br>
+全允许。但有些要避免，部分原因在于它们不能让人愉悦，而<br>
+且不利于声部的独立进行。不允许的平行进行有平行五度和<br>
+平行八度。<br>
+注：要完全明白禁止平行五度和八度的原因，必须要先知<br>
+道我们不是给管弦乐队或钢琴作品写和声，而是给独立的四声<br>
+部配和声。四声部和声不允许大量重复。这会带来一个问题，<br>
+是否只是平行八度和平行五度是不允许的，而其他不协和音程<br>
+的平行都是允许的？补充一点，目前我们只了解音与音的组<br>
+合，还没有探讨过它们的连接。那么，首先要说的是在和声进行<br>
+中，平行五度和平行八度是禁止的。<br>
+现在我们回答本章一开始提出的问题。<br>
+两个没有共同音的和弦进行连接时，不能所有的声部都作<br>
+二度上行或下行，这样可能会出现平行五度或平行八度。<br>
+88<br>
+88<br>
+④<br>
+22<br>
+为避免这种错误，必须使用反向进行，但不能大跳。<br>
+如果只是将二度进行改为反向七度进行，这种错误还是不<br>
+能得到更正，因为平行五度和八度仍然存在。而且，低音声部出<br>
+10</div>
+
+---
+
+<!-- PAGE:25 -->
+<a id="p0025"></a>
+## PDF p.25
+
+![柴可夫斯基《和声学指南》 PDF p.25（整页影印）](../assets/books/tchaikovsky_guide/p0025.jpg)
+
+<!-- MANUAL-REFS:p0025 -->
+<div class="manual-refs"><strong>手册使用本页</strong><ul><li id="ref-claim-voice-leading-leading-tone-p0025" class="manual-ref-item" data-kind="claim"><span class="ref-kind">论点</span><a href="../和声学手册.html#claim-voice-leading-leading-tone">声部进行与不协和解决 · voice-leading.leading-tone</a><br><span class="ref-text">手册提炼：导音具有上行到主音的强烈倾向；当它位于外声部时，这一解决要求尤其严格。</span></li><li id="ref-profile-profile-tchaikovsky_guide-p0025" class="manual-ref-item" data-kind="profile"><span class="ref-kind">代表页</span><a href="../和声学手册.html#book-profiles">教材代表页 · 柴可夫斯基指南</a><br><span class="ref-text">手册将本页列为《柴可夫斯基指南》代表页；该书定位：以实践写作为中心的简明教程：连接法、平行五八、属七解决、模进、转调、和弦外音与增六。</span></li></ul></div>
+
+<div class="ocr-text">实用和声学指南<br>
+Guide to the Practical Study of Harmony<br>
+直接使用反向进行，去除了这些隐伏进行，相同的和声连接<br>
+令人愉悦。<br>
+8<br>
+18<br>
+8<br>
+8<br>
+8<br>
+8<br>
+8<br>
+31<br>
+因此，下列谱例中，如果低声部作反向进行，是可以打破规<br>
+则的。<br>
+如属和弦进行到主和弦，导音即属和弦的三音，为女高<br>
+声部，那么就不允许违背规则，因为导音带有倾向性，要上行<br>
+半音解决到主音。但如果导音在内声部，那就可作下行三度<br>
+进行。<br>
+不好<br>
+好<br>
+好<br>
+88<br>
+8<br>
+8<br>
+8<br>
+32<br>
+这些做法同样适用于主和弦到下属和弦的进行。这种情况<br>
+中，主和弦的三音类似导音，因为这两个和弦的关系相当于属和<br>
+弦到主和弦。<br>
+不好<br>
+好<br>
+好<br>
+18<br>
+8<br>
+8<br>
+33<br>
+14</div>
+
+---
+
+<!-- PAGE:26 -->
+<a id="p0026"></a>
+## PDF p.26
+
+![柴可夫斯基《和声学指南》 PDF p.26（整页影印）](../assets/books/tchaikovsky_guide/p0026.jpg)
+
+<!-- MANUAL-REFS:p0026 -->
+<div class="manual-refs"><strong>手册使用本页</strong><ul><li id="ref-claim-sequence-modulating-p0026" class="manual-ref-item" data-kind="claim"><span class="ref-kind">论点</span><a href="../和声学手册.html#claim-sequence-modulating">模进与五度循环 · sequence.modulating</a><br><span class="ref-text">手册提炼：模进可以把同一旋律或和声模式移到不同音高或调上；连续模进既推进音乐，也可作为转调或转调模进的基础。</span></li></ul></div>
+
+<div class="ocr-text">第一篇办和和弦——三和弦<br>
+习<br>
+题<br>
+342C<br>
+28<br>
+第五章和声模进<br>
+S15.和声模进是指将一组和声进行（包括两个或两个以上<br>
+的和弦构成一个动机）在不同的音级上予以重复，获得连续上<br>
+行或下行。<br>
+重复时，模进动机保持相同的声部排列位置。（m表示<br>
+动机）<br>
+15</div>
+
+---
+
+<!-- PAGE:36 -->
+<a id="p0036"></a>
+## PDF p.36
+
+![柴可夫斯基《和声学指南》 PDF p.36（整页影印）](../assets/books/tchaikovsky_guide/p0036.jpg)
+
+<!-- MANUAL-REFS:p0036 -->
+<div class="manual-refs"><strong>手册使用本页</strong><ul><li id="ref-claim-inversion-bass-function-p0036" class="manual-ref-item" data-kind="claim"><span class="ref-kind">论点</span><a href="../和声学手册.html#claim-inversion-bass-function">转位、低音与和声节奏 · inversion.bass-function</a><br><span class="ref-text">手册提炼：转位由低音是否为根音决定；低音改变会削弱根音支持，并改变和弦的连接与结构功能。</span></li><li id="ref-claim-inversion-bass-role-p0036" class="manual-ref-item" data-kind="claim"><span class="ref-kind">论点</span><a href="../和声学手册.html#claim-inversion-bass-role">转位、低音与和声节奏 · inversion.bass-role</a><br><span class="ref-text">手册提炼：低音部不仅是和弦的最低音，还决定原位/转位、功能属性、织体基础与结构位置；分析低音线是判断和声句法的入口。</span></li><li id="ref-prose-cite-tchaikovsky_guide-p0036-1-p0036" class="manual-ref-item" data-kind="prose"><span class="ref-kind">正文引用</span><a href="../和声学手册.html#cite-tchaikovsky_guide-p0036-1">手册正文引用</a><br><span class="ref-text">终止四六应出现在比其后 V 更强的节奏位置，并尽量平稳进出（《概述》PDF p.173）。柴可夫斯基 PDF p.36 则强调原位与转位的“和声精神”不同：转位缺少纯五度支撑，更具前进动力。</span></li><li id="ref-profile-profile-tchaikovsky_guide-p0036" class="manual-ref-item" data-kind="profile"><span class="ref-kind">代表页</span><a href="../和声学手册.html#book-profiles">教材代表页 · 柴可夫斯基指南</a><br><span class="ref-text">手册将本页列为《柴可夫斯基指南》代表页；该书定位：以实践写作为中心的简明教程：连接法、平行五八、属七解决、模进、转调、和弦外音与增六。</span></li></ul></div>
+
+<div class="ocr-text">第一篇协和和弦—三和弦<br>
+能被三和弦的三音或五音所替代。<br>
+将根音转移到上方其他声部，低声部不是根音的三和弦，被<br>
+称为和弦的转位。<br>
+每一个三和弦都有两个转位三和弦：<br>
+2.<br>
+1.<br>
+55每0<br>
+8<br>
+8<br>
+第一转位被称为三六和弦，因为低音与上方两个声部分别<br>
+构成三度和六度音程。这个和弦简称为六和弦。<br>
+第二转位被称为四六和弦。<br>
+原位三和弦和转位三和弦除了外在形式不同外，其内在，或<br>
+者可以说，“精神”也不同。所谓“精神”不同是指这三个三和<br>
+弦有着不同的和声意义以及听觉感受。<br>
+原位三和弦包含协和的纯音程一纯五度，这使得原位和<br>
+弦带有绝对平静、完满的特性。这个和弦是完美的，法文称之为<br>
+“完全协和”（accordparfait）。但转位三和弦中不包含完全协和<br>
+音程，它们相对不太宁静，也更具前进的动力。因此，转位三和<br>
+弦通常用在音乐作品的中间部分，较少用在作品的开头部分，也<br>
+不会用在结束部分。<br>
+熟练运用三和弦转位对学生来说有一定难度，本书将在后<br>
+面“给旋律配和声”章节中详细介绍这些规则。<br>
+S24.到目前为止，我们所讲的三和弦只重复根音。要记<br>
+住，这是最常见的，也是最好的方式，符合三和弦的本质和使用<br>
+要求。如果重复三和弦上方两个音，会获得以下这些和弦形式：<br>
+六和弦重复三音，四六和弦重复五音。然而，从听觉来讲，<br>
+重复三音不够自然，而且让人不舒服，所以最好重复根音和五<br>
+音。重复三音仅用在一些特殊位置。<br>
+25</div>
+
+---
+
+<!-- PAGE:46 -->
+<a id="p0046"></a>
+## PDF p.46
+
+![柴可夫斯基《和声学指南》 PDF p.46（整页影印）](../assets/books/tchaikovsky_guide/p0046.jpg)
+
+<!-- MANUAL-REFS:p0046 -->
+<div class="manual-refs"><strong>手册使用本页</strong><ul><li id="ref-claim-dominant-v7-resolution-p0046" class="manual-ref-item" data-kind="claim"><span class="ref-kind">论点</span><a href="../和声学手册.html#claim-dominant-v7-resolution">属功能与属七解决 · dominant.v7-resolution</a><br><span class="ref-text">手册提炼：属七解决的基本声部规则是导音上行到主音、七音下行到三级；外声部导音尤其应上行。</span></li><li id="ref-claim-seventh-general-resolution-p0046" class="manual-ref-item" data-kind="claim"><span class="ref-kind">论点</span><a href="../和声学手册.html#claim-seventh-general-resolution">七和弦、九和弦与不协和等级 · seventh.general-resolution</a><br><span class="ref-text">手册提炼：七和弦是不协和和弦，需准备并按倾向解决；其七音通常下行级进，属七是最强的功能和声形态。</span></li><li id="ref-prose-cite-tchaikovsky_guide-p0046-1-p0046" class="manual-ref-item" data-kind="prose"><span class="ref-kind">正文引用</span><a href="../和声学手册.html#cite-tchaikovsky_guide-p0046-1">手册正文引用</a><br><span class="ref-text">这些规则分别见《调性和声及20世纪音乐概述》PDF p.229–230、p.402–403，以及柴可夫斯基 PDF p.46。</span></li><li id="ref-prose-cite-tchaikovsky_guide-p0046-2-p0046" class="manual-ref-item" data-kind="prose"><span class="ref-kind">正文引用</span><a href="../和声学手册.html#cite-tchaikovsky_guide-p0046-2">手册正文引用</a><br><span class="ref-text">桑桐 PDF p.60、p.72 与柴可夫斯基 PDF p.46 对七/九和弦的省略、重复、解决给出了可操作规则；程序的 tendencyWarnings() 会对未解决到目标音的导音、七音、增六音给出警告。</span></li><li id="ref-profile-profile-tchaikovsky_guide-p0046" class="manual-ref-item" data-kind="profile"><span class="ref-kind">代表页</span><a href="../和声学手册.html#book-profiles">教材代表页 · 柴可夫斯基指南</a><br><span class="ref-text">手册将本页列为《柴可夫斯基指南》代表页；该书定位：以实践写作为中心的简明教程：连接法、平行五八、属七解决、模进、转调、和弦外音与增六。</span></li></ul></div>
+
+<div class="ocr-text">第二篇不协和和弦<br>
+七和弦和九和弦<br>
+所有由四个或五个音组成的和弦都属于不协和和弦，因为<br>
+它们的根音与最上方音构成七度或九度音程。这些和弦都不是<br>
+独立的和弦，都需要有准备，并要合理地进行到后面的和弦。不<br>
+协和和弦进行到协和和弦，被称为“解决”。每一个七和弦都必<br>
+须要解决到三和弦上。<br>
+第十章属七和弦<br>
+S29.在自然音阶内，每个三和弦的上方再叠加一个三度，<br>
+就可获得七和弦。<br>
+大调<br>
+75<br>
+小调<br>
+9<br>
+所有七和弦中，最重要、最常用的是V级上的七和弦，即属<br>
+七和弦。属七和弦解决到主和弦。<br>
+属七和弦的解决方式：七音（与所有不协和和弦一样）级进<br>
+下行，也就是解决到主和弦的三音。五音级进上行，或级进下行<br>
+到主和弦的三音或根音，更多解决到根音。三音（这里即导音）<br>
+35</div>
+
+---
+
+<!-- PAGE:47 -->
+<a id="p0047"></a>
+## PDF p.47
+
+![柴可夫斯基《和声学指南》 PDF p.47（整页影印）](../assets/books/tchaikovsky_guide/p0047.jpg)
+
+<!-- MANUAL-REFS:p0047 -->
+<div class="manual-refs"><strong>手册使用本页</strong><ul><li id="ref-claim-root-motion-fourth-up-p0047" class="manual-ref-item" data-kind="claim"><span class="ref-kind">论点</span><a href="../和声学手册.html#claim-root-motion-fourth-up">自然音级功能：T–S–D · root-motion.fourth-up</a><br><span class="ref-text">手册提炼：根音向上四度的进行具有最强的功能推进力；新根音把前一和弦根音纳入自身结构，从听感上提升其功能等级。</span></li></ul></div>
+
+<div class="ocr-text">实用和声学指南<br>
+Guide to thePractical Study of Harmony<br>
+级进上行到主音，根音四度上行跳进或五度下行跳进到主和弦<br>
+的根音。<br>
+属七和弦<br>
+76<br>
+主和弦<br>
+属七和弦的解决会产生缺五音的不完全主和弦。谱例如下：<br>
+三音位置<br>
+五音位置<br>
+七音位置<br>
+88<br>
+80888<br>
+00<br>
+00<br>
+8.0.0<br>
+88<br>
+8-00<br>
+77<br>
+旋律音为根音的属七和弦，必须省略一个音，因为重复根<br>
+音后，另外两个声部只能使用三个音（三音、五音、七音）中的<br>
+两个。大多情况省略五音，因为缺五音最不容易被察觉，偶尔<br>
+也可以省略三音。<br>
+常见<br>
+少见<br>
+00<br>
+80<br>
+78<br>
+以上这些谱例中，低声部的根音得到正确解决。最上方声<br>
+部中的根音不能采用同样的方式来解决，以免形成平行八度。<br>
+因此最上方声部中的根音要保留，即解决到主和弦的五音。这<br>
+36</div>
+
+---
+
+<!-- PAGE:48 -->
+<a id="p0048"></a>
+## PDF p.48
+
+![柴可夫斯基《和声学指南》 PDF p.48（整页影印）](../assets/books/tchaikovsky_guide/p0048.jpg)
+
+<!-- MANUAL-REFS:p0048 -->
+<div class="manual-refs"><strong>手册使用本页</strong><ul><li id="ref-claim-inversion-bass-function-p0048" class="manual-ref-item" data-kind="claim"><span class="ref-kind">论点</span><a href="../和声学手册.html#claim-inversion-bass-function">转位、低音与和声节奏 · inversion.bass-function</a><br><span class="ref-text">手册提炼：转位由低音是否为根音决定；低音改变会削弱根音支持，并改变和弦的连接与结构功能。</span></li></ul></div>
+
+<div class="ocr-text">第二篇不协和和弦—七和弦和九和弦<br>
+样一来，属七和弦与主和弦的连接更平顺。同样，属七和弦旋律<br>
+在三音或七音位置时，五音可省略，重复根音。<br>
+8<br>
+8<br>
+8<br>
+79<br>
+S30.属七和弦的三种转位：<br>
+I<br>
+ⅡI<br>
+Ⅲ<br>
+80<br>
+属七和弦的转位名称是根据低音与七音和根音之间构成的<br>
+音程度数来命名的。<br>
+第一转位：五六和弦，<br>
+第二转位：三四和弦，<br>
+第三转位：二和弦。<br>
+这些转位和弦的解决见本章最后一段。另外，根音若在最<br>
+上方声部或内声部时，往往要保留，这样才能解决到完全的主<br>
+和弦。<br>
+五六和弦<br>
+三四和弦<br>
+88<br>
+88<br>
+008<br>
+08008<br>
+81<br>
+37</div>
+
+---
+
+<!-- PAGE:68 -->
+<a id="p0068"></a>
+## PDF p.68
+
+![柴可夫斯基《和声学指南》 PDF p.68（整页影印）](../assets/books/tchaikovsky_guide/p0068.jpg)
+
+<!-- MANUAL-REFS:p0068 -->
+<div class="manual-refs"><strong>手册使用本页</strong><ul><li id="ref-claim-sequence-transposition-p0068" class="manual-ref-item" data-kind="claim"><span class="ref-kind">论点</span><a href="../和声学手册.html#claim-sequence-transposition">模进与五度循环 · sequence.transposition</a><br><span class="ref-text">手册提炼：模进把同一和声单元整体移位，可保持局部连接语法，同时累积离开原调的压力。</span></li><li id="ref-claim-secondary-dominant-targets-p0068" class="manual-ref-item" data-kind="claim"><span class="ref-kind">论点</span><a href="../和声学手册.html#claim-secondary-dominant-targets">副属和弦与离调 · secondary-dominant.targets</a><br><span class="ref-text">手册提炼：除主和弦外，调内自然大三、小三和弦都可成为副属或副属七的临时主和弦。</span></li><li id="ref-profile-profile-tchaikovsky_guide-p0068" class="manual-ref-item" data-kind="profile"><span class="ref-kind">代表页</span><a href="../和声学手册.html#book-profiles">教材代表页 · 柴可夫斯基指南</a><br><span class="ref-text">手册将本页列为《柴可夫斯基指南》代表页；该书定位：以实践写作为中心的简明教程：连接法、平行五八、属七解决、模进、转调、和弦外音与增六。</span></li></ul></div>
+
+<div class="ocr-text">第二篇不协和和弦—七和弦和九和弦<br>
+第十五章和声模进<br>
+$41.如果将属七和弦到主和弦这一进行重复多次，而且每<br>
+次重复下行二度，会出现一系列和弦的模进。每一组模进都是<br>
+属七和弦解决到高四度或低五度的主和弦上。这些和弦主要以<br>
+模进的形式呈现，被称为“和声模进”。*<br>
+0888888088888888<br>
+119<br>
+等<br>
+B<br>
+7<br>
+7<br>
+7<br>
+7<br>
+7<br>
+7<br>
+8<br>
+0.0<br>
+8<br>
+8<br>
+00<br>
+8<br>
+8<br>
+中<br>
+O<br>
+等<br>
+8<br>
+7<br>
+7<br>
+7<br>
+7<br>
+7<br>
+8<br>
+80<br>
+leo<br>
+8<br>
+00<br>
+0<br>
+中<br>
+等<br>
+等<br>
+7<br>
+7<br>
+7<br>
+7<br>
+7<br>
+7<br>
+这些模进也可以由和弦转位构成。<br>
+也称为副属七和弦（auxiliarychordsoftheseventh）。<br>
+57</div>
+
+---
+
+<!-- PAGE:81 -->
+<a id="p0081"></a>
+## PDF p.81
+
+![柴可夫斯基《和声学指南》 PDF p.81（整页影印）](../assets/books/tchaikovsky_guide/p0081.jpg)
+
+<!-- MANUAL-REFS:p0081 -->
+<div class="manual-refs"><strong>手册使用本页</strong><ul><li id="ref-claim-inversion-cadential-six-four-p0081" class="manual-ref-item" data-kind="claim"><span class="ref-kind">论点</span><a href="../和声学手册.html#claim-inversion-cadential-six-four">转位、低音与和声节奏 · inversion.cadential-six-four</a><br><span class="ref-text">手册提炼：终止四六和弦延迟 V 的到来，应处于比其后 V 更强的节奏位置，并以平稳声部进出。</span></li></ul></div>
+
+<div class="ocr-text">实用和声学指南<br>
+Guide to the Practical Study of Harmony<br>
+8<br>
+8<br>
+148<br>
+0<br>
+0<br>
+46<br>
+46<br>
+6<br>
+这种情况时，四六和弦应该出现在弱拍位置。<br>
+3）当四六和弦位于两个和弦间，低音作级进进行时，四六<br>
+和弦的根音是四六和弦与另一个和弦的连接纽带。比如，当<br>
+四六和弦位于原位三和弦和它的转位六和弦之间时，就会出现<br>
+这种情况。<br>
+8<br>
+8<br>
+149<br>
+0<br>
+46<br>
+6<br>
+46<br>
+6<br>
+任何情况下，四六和弦都必须通过根音与两边和弦相连接。<br>
+四六和弦进入和解决到其他和弦时，根音必须作级进进行。<br>
+8<br>
+00<br>
+8<br>
+150<br>
+B<br>
+6<br>
+46<br>
+6<br>
+6<br>
+46<br>
+6<br>
+4）四六和弦在强拍位置时，直接连接在原位三和弦之后，<br>
+70</div>
+
+---
+
+<!-- PAGE:93 -->
+<a id="p0093"></a>
+## PDF p.93
+
+![柴可夫斯基《和声学指南》 PDF p.93（整页影印）](../assets/books/tchaikovsky_guide/p0093.jpg)
+
+<!-- MANUAL-REFS:p0093 -->
+<div class="manual-refs"><strong>手册使用本页</strong><ul><li id="ref-claim-pivot-common-chord-p0093" class="manual-ref-item" data-kind="claim"><span class="ref-kind">论点</span><a href="../和声学手册.html#claim-pivot-common-chord">中介和弦与转调 · pivot.common-chord</a><br><span class="ref-text">手册提炼：中介和弦转调以两调共有的和弦为连接点；同一音集从旧调功能重释为新调功能，再由新调的属—主或终止式确认。</span></li></ul></div>
+
+<div class="ocr-text">实用和声学指南<br>
+Guide to the Practical Study of Harmony<br>
+8<br>
+?<br>
+#8<br>
+162<br>
+要使这三个和弦平稳连接，需注意声部进行的两个规则。<br>
+I.属七和弦与前面的和弦至少要有一个共同音，这个音<br>
+必须在同一声部内保留。<br>
+bA<br>
+C<br>
+D<br>
+90<br>
+8<br>
+8<br>
+8<br>
+68<br>
+8<br>
+8<br>
+163<br>
+be<br>
+20<br>
+be<br>
+如果第一个三和弦与后面的转调和弦没有共同音，必须要<br>
+使用一个中介和弦。这个和弦既是原调内的和弦，又是能进入<br>
+新调的。这个三和弦必须与前面的三和弦做好连接。<br>
+bG<br>
+E<br>
+C<br>
+E<br>
+C<br>
+E<br>
+808888004848<br>
+9848488<br>
+164<br>
+有时以共同音作为和弦等音。<br>
+D<br>
+C<br>
+58<br>
+8h<br>
+8<br>
+$8<br>
+28<br>
+O<br>
+90<br>
+165<br>
+82</div>
+
+---
+
+<!-- PAGE:94 -->
+<a id="p0094"></a>
+## PDF p.94
+
+![柴可夫斯基《和声学指南》 PDF p.94（整页影印）](../assets/books/tchaikovsky_guide/p0094.jpg)
+
+<!-- MANUAL-REFS:p0094 -->
+<div class="manual-refs"><strong>手册使用本页</strong><ul><li id="ref-example-c05-p0094" class="manual-ref-item" data-kind="example"><span class="ref-kind">案例</span><a href="../和声学手册.html#example-c05">手册案例 C05 · 对斜：变化音保持同一声部</a><br><span class="ref-text">转调示例｜教材转调示例<br>原书要点：同一音级的变化音应保留在同一声部，否则形成对斜；低声部跳进优于上方声部跳进。<br>机制：对斜来自同一音级的变化音在相邻和弦间换了声部。把变化音保留在同一声部，可让音级身份与进行方向连续。<br>读谱：找变化音前后两次出现，确认是否沿同一声部横向移动；若跨声部跳走，即形成对斜。<br>用法：转调或变和弦前先标出变化音轨迹；可由低音跳进承担换位，但不要让变化音跨声部。</span></li></ul></div>
+
+<div class="ocr-text">第三篇转调<br>
+Ⅱ．同一音级上的不同音，也就是说一个音与它的变化音，<br>
+必须要保留在同一声部中。<br>
+166<br>
+如果不遵守这一规则，两个声部的关系会有问题，即出现对<br>
+斜，应加以避免。<br>
+囍<br>
+167<br>
+0<br>
+be<br>
+下例转调中，出现了对斜。<br>
+8<br>
+0<br>
+84<br>
+8<br>
+中<br>
+168<br>
+出现两个变化音时，关注一个声部进行的规则就完全能处<br>
+理好声部对斜现象。低声部作跳进比上方声部跳进要好。<br>
+好<br>
+不好<br>
+888<br>
+169<br>
+小调与大调的属七和弦相同，不管是转到大调还是小调，转<br>
+调都是一样的。但小调转调更难，因为共同和弦更少。通过半<br>
+音下行进行转调是完全需要的。<br>
+83</div>
+
+---
+
+<!-- PAGE:98 -->
+<a id="p0098"></a>
+## PDF p.98
+
+![柴可夫斯基《和声学指南》 PDF p.98（整页影印）](../assets/books/tchaikovsky_guide/p0098.jpg)
+
+<!-- MANUAL-REFS:p0098 -->
+<div class="manual-refs"><strong>手册使用本页</strong><ul><li id="ref-claim-modulation-confirmation-p0098" class="manual-ref-item" data-kind="claim"><span class="ref-kind">论点</span><a href="../和声学手册.html#claim-modulation-confirmation">转调体系：类型、距离与确认 · modulation.confirmation</a><br><span class="ref-text">手册提炼：转调必须由新调的和声进行与终止式确认；短促强调或单一副属和弦通常只是离调。</span></li></ul></div>
+
+<div class="ocr-text">第三篇转调<br>
+为真正确立新调性并完成转调，常使用终止式。<br>
+180<br>
+b3<br>
+5<br>
+b6<br>
+b5<br>
+b7<br>
+b5<br>
+b4<br>
+#6<br>
+#6<br>
+25<br>
+24<br>
+#<br>
+#<br>
+#87<br>
+#5<br>
+#5<br>
+#5<br>
+87</div>
+
+---
+
+<!-- PAGE:100 -->
+<a id="p0100"></a>
+## PDF p.100
+
+![柴可夫斯基《和声学指南》 PDF p.100（整页影印）](../assets/books/tchaikovsky_guide/p0100.jpg)
+
+<!-- MANUAL-REFS:p0100 -->
+<div class="manual-refs"><strong>手册使用本页</strong><ul><li id="ref-claim-modulation-confirmation-p0100" class="manual-ref-item" data-kind="claim"><span class="ref-kind">论点</span><a href="../和声学手册.html#claim-modulation-confirmation">转调体系：类型、距离与确认 · modulation.confirmation</a><br><span class="ref-text">手册提炼：转调必须由新调的和声进行与终止式确认；短促强调或单一副属和弦通常只是离调。</span></li><li id="ref-profile-profile-tchaikovsky_guide-p0100" class="manual-ref-item" data-kind="profile"><span class="ref-kind">代表页</span><a href="../和声学手册.html#book-profiles">教材代表页 · 柴可夫斯基指南</a><br><span class="ref-text">手册将本页列为《柴可夫斯基指南》代表页；该书定位：以实践写作为中心的简明教程：连接法、平行五八、属七解决、模进、转调、和弦外音与增六。</span></li></ul></div>
+
+<div class="ocr-text">第三篇转·调<br>
+第十九章间接转调<br>
+S57.除直接转调外，还有间接转调。所谓间接转调是指<br>
+不直接进人要转入的调，而是先转人一个或多个其他经过性的<br>
+调。要对这类转调作出明确的规定是不太可能的。通常来讲，<br>
+如果不是到最近的关系调上，那也不能离原调太远。假如违背<br>
+了规则，没有走“正常轨道”*，那必须要结束转调，回到原调。<br>
+要精确规定转入任何一个近关系调上所要保留的时值长度<br>
+更不太可能了。这完全取决于学习者个人的音乐感觉。<br>
+最后一次转调之后，要用终止式来结束全曲。<br>
+下方为经过转调谱例：<br>
+183<br>
+所谓“正常轨道”是指相差两个调号以内的转调。<br>
+89</div>
+
+---
+
+<!-- PAGE:102 -->
+<a id="p0102"></a>
+## PDF p.102
+
+![柴可夫斯基《和声学指南》 PDF p.102（整页影印）](../assets/books/tchaikovsky_guide/p0102.jpg)
+
+<!-- MANUAL-REFS:p0102 -->
+<div class="manual-refs"><strong>手册使用本页</strong><ul><li id="ref-example-c06-p0102" class="manual-ref-item" data-kind="example"><span class="ref-kind">案例</span><a href="../和声学手册.html#example-c06">手册案例 C06 · 转调模进：局部属—主链</a><br><span class="ref-text">转调模进示例｜教材转调模进示例<br>原书要点：前四小节各调的 II7→V 造成调性模糊，直到第 5 小节才明确感到转调。<br>机制：模进以同一音型连续移位，每次 ii7–V 指向不同临时主音；目标主和弦出现并稳定后，转调才被确认。<br>读谱：标出每小节 II7→V 的局部目标和低音落点；数真正的新主和弦到第几小节才出现。<br>用法：写转调模进时连续使用 ii7–V 保留多个出口，最后用一个目标主和弦和终止式确认新调。</span></li></ul></div>
+
+<div class="ocr-text">第三篇转调<br>
+8<br>
+8<br>
+8<br>
+00<br>
+8<br>
+下列为转调模进。<br>
+185<br>
+上面最后一个谱例中，直到第5小节才明确感到转调。在<br>
+前面四小节中，a、F、d调上的Ⅱ级七和弦分别解决到各自的属<br>
+三和弦，造成调性的模糊。<br>
+S59.还有一种模进，每个和弦都构成一个新调。如属七<br>
+91</div>
+
+---
+
+<!-- PAGE:109 -->
+<a id="p0109"></a>
+## PDF p.109
+
+![柴可夫斯基《和声学指南》 PDF p.109（整页影印）](../assets/books/tchaikovsky_guide/p0109.jpg)
+
+<!-- MANUAL-REFS:p0109 -->
+<div class="manual-refs"><strong>手册使用本页</strong><ul><li id="ref-claim-diminished-seventh-enharmonic-p0109" class="manual-ref-item" data-kind="claim"><span class="ref-kind">论点</span><a href="../和声学手册.html#claim-diminished-seventh-enharmonic">减七和弦与等音网络 · diminished-seventh.enharmonic</a><br><span class="ref-text">手册提炼：减七和弦由等分小三度构成，只有三种不同音响；每个音响可等音重写为四个不同根音的减七。</span></li><li id="ref-claim-diminished-seventh-four-resolutions-p0109" class="manual-ref-item" data-kind="claim"><span class="ref-kind">论点</span><a href="../和声学手册.html#claim-diminished-seventh-four-resolutions">减七和弦与等音网络 · diminished-seventh.four-resolutions</a><br><span class="ref-text">手册提炼：同一减七音响可向四个方向解决，因而能通向二十四个调，是远关系转调的常用连接和弦。</span></li><li id="ref-claim-enharmonic-modulation-four-directions-p0109" class="manual-ref-item" data-kind="claim"><span class="ref-kind">论点</span><a href="../和声学手册.html#claim-enharmonic-modulation-four-directions">等音转调 · enharmonic-modulation.four-directions</a><br><span class="ref-text">手册提炼：减七和弦可向四个方向解决；大小七和弦因等音关系有两个解决方向，但实际路线受记谱与声部进行约束。</span></li><li id="ref-prose-cite-tchaikovsky_guide-p0109-1-p0109" class="manual-ref-item" data-kind="prose"><span class="ref-kind">正文引用</span><a href="../和声学手册.html#cite-tchaikovsky_guide-p0109-1">手册正文引用</a><br><span class="ref-text">减七和弦可等音重写为四个不同根音的减七，分别解决到四个方向；同一减七音响因此可通向 24 个调（柴可夫斯基 PDF p.109；桑桐 PDF p.354）。大小七和弦可等音为德国增六或另一调属七，形成两个主要解决方向（《概述》PDF p.433–434）。等音转调的关键不只是“音响相同”，而是：</span></li><li id="ref-prose-cite-tchaikovsky_guide-p0109-2-p0109" class="manual-ref-item" data-kind="prose"><span class="ref-kind">正文引用</span><a href="../和声学手册.html#cite-tchaikovsky_guide-p0109-2">手册正文引用</a><br><span class="ref-text">减七由三个小三度叠置，完全对称；转位后小三度可写为增二度，用等音小三度替换即产生新减七。每个减七有三种等音写法（同一音响）和四个解决方向，可作为属功能、副属功能或导音和弦进入不同调（柴可夫斯基 PDF p.109；桑桐 PDF p.352–354）。</span></li><li id="ref-profile-profile-tchaikovsky_guide-p0109" class="manual-ref-item" data-kind="profile"><span class="ref-kind">代表页</span><a href="../和声学手册.html#book-profiles">教材代表页 · 柴可夫斯基指南</a><br><span class="ref-text">手册将本页列为《柴可夫斯基指南》代表页；该书定位：以实践写作为中心的简明教程：连接法、平行五八、属七解决、模进、转调、和弦外音与增六。</span></li></ul></div>
+
+<div class="ocr-text">实用和声学指南<br>
+Guide to thePractical Study of Harmony<br>
+第二十一章减七和弦作为等和弦<br>
+S61.减七和弦由三个小三度叠置而成。减七和弦转位后，<br>
+小三度变为增二度。用相应的小三度来代替这些增二度，会产<br>
+生一个新的减七等和弦。<br>
+a小调c小调be小调<br>
+bg小调<br>
+197<br>
+因此，每个减七和弦都有三个等和弦。我们总共知道12个<br>
+调。但从实际音响效果而言，只有三个减七和弦。<br>
+1.<br>
+2.<br>
+3.<br>
+2.<br>
+3.<br>
+198<br>
+#<br>
+1.<br>
+2.<br>
+3.<br>
+2<br>
+每一个减七和弦通过等音程转换，可解决到四个不同的三<br>
+和弦上。<br>
+80H<br>
+8<br>
+08<br>
+199<br>
+8<br>
+b8<br>
+5<br>
+#6<br>
+b6<br>
+64<br>
+2<br>
+反之，由于减七和弦的每一个音都可以作为七音，因而可以<br>
+进行到四个不同的属七和弦上。<br>
+98</div>
+
+---
+
+<!-- PAGE:113 -->
+<a id="p0113"></a>
+## PDF p.113
+
+![柴可夫斯基《和声学指南》 PDF p.113（整页影印）](../assets/books/tchaikovsky_guide/p0113.jpg)
+
+<!-- MANUAL-REFS:p0113 -->
+<div class="manual-refs"><strong>手册使用本页</strong><ul><li id="ref-claim-prolongation-sustained-dominant-p0113" class="manual-ref-item" data-kind="claim"><span class="ref-kind">论点</span><a href="../和声学手册.html#claim-prolongation-sustained-dominant">延长、层次与曲式 · prolongation.sustained-dominant</a><br><span class="ref-text">手册提炼：属持续音把属功能保持在同一低音上，常用于再现前的属准备，延迟并强化结构回归。</span></li></ul></div>
+
+<div class="ocr-text">实用和声学指南<br>
+Guide to thePractical Study of Harmony<br>
+持续音声部静止，因而四声部便剩下三声部和声。但<br>
+男高声部不能带有低声部特点，必须要保持内声部的平稳<br>
+流动。<br>
+上方三声部和弦中最好省略五音。<br>
+S64.在主持续音保持的时间内，可转到属调（大多为小调）、<br>
+下属调或下属的下属调（即主音下行大二度调，I级调)。<br>
+204<br>
+小调中，上方声部除通常转向下属调外，其他也与大调相同。<br>
+168<br>
+205<br>
+属持续音后通常进人主持续音。<br>
+102</div>
+
+---
+
+<!-- PAGE:120 -->
+<a id="p0120"></a>
+## PDF p.120
+
+![柴可夫斯基《和声学指南》 PDF p.120（整页影印）](../assets/books/tchaikovsky_guide/p0120.jpg)
+
+<!-- MANUAL-REFS:p0120 -->
+<div class="manual-refs"><strong>手册使用本页</strong><ul><li id="ref-claim-voice-leading-dissonance-preparation-p0120" class="manual-ref-item" data-kind="claim"><span class="ref-kind">论点</span><a href="../和声学手册.html#claim-voice-leading-dissonance-preparation">声部进行与不协和解决 · voice-leading.dissonance-preparation</a><br><span class="ref-text">手册提炼：不协和音应在前一和弦中作为协和音出现，并在同一人声部进入下一和弦的不协和位置，随后按倾向解决；这使不协和成为可追踪的声部事件。</span></li></ul></div>
+
+<div class="ocr-text">第一篇和弦外音<br>
+第二十三章延留音<br>
+869.延留音是一种和声性和弦外音结构形式，当所有的<br>
+声部不是同时进人时便出现了延留音。一个或两个声部推迟<br>
+进人（被延留），造成不协和的和弦音响效果。延留音解决到它<br>
+本身要进人的和弦音上。<br>
+任何四声部中作级进上行或级进下行处，都可能看到延<br>
+留音：<br>
+I．下行延留音，<br>
+Ⅱ．上行延留音。<br>
+$70.下行延留音出现在级进下行的声部中。级进下行可<br>
+以是大二度或小二度。延留音要有预备和解决。延留音的预备<br>
+是指前一和弦同一声部要包含延留音。延留音的解决（因为它<br>
+是不协和的）作级进下行。<br>
+因此，延留音总是在强拍上，解决到弱拍上。<br>
+8<br>
+211<br>
+三拍子中，延留音解决到第二个弱拍上，除非这一拍上有新<br>
+109</div>
+
+---
+
+<!-- PAGE:154 -->
+<a id="p0154"></a>
+## PDF p.154
+
+![柴可夫斯基《和声学指南》 PDF p.154（整页影印）](../assets/books/tchaikovsky_guide/p0154.jpg)
+
+<!-- MANUAL-REFS:p0154 -->
+<div class="manual-refs"><strong>手册使用本页</strong><ul><li id="ref-claim-augmented-sixth-definition-p0154" class="manual-ref-item" data-kind="claim"><span class="ref-kind">论点</span><a href="../和声学手册.html#claim-augmented-sixth-definition">增六和弦 · augmented-sixth.definition</a><br><span class="ref-text">手册提炼：增六和弦以增六度音程半音向外解决到属音，是强属前和弦，包含意大利、法国、德国三类常见形态。</span></li><li id="ref-prose-cite-tchaikovsky_guide-p0154-1-p0154" class="manual-ref-item" data-kind="prose"><span class="ref-kind">正文引用</span><a href="../和声学手册.html#cite-tchaikovsky_guide-p0154-1">手册正文引用</a><br><span class="ref-text">增六的“强”来自双半音向外解决；若声部方向被破坏，它只剩怪异音响。柴可夫斯基 PDF p.154–157 还提醒：增六解决到小三和弦较少见，转调时若没有较长终止，听感可能只是离调。</span></li><li id="ref-profile-profile-tchaikovsky_guide-p0154" class="manual-ref-item" data-kind="profile"><span class="ref-kind">代表页</span><a href="../和声学手册.html#book-profiles">教材代表页 · 柴可夫斯基指南</a><br><span class="ref-text">手册将本页列为《柴可夫斯基指南》代表页；该书定位：以实践写作为中心的简明教程：连接法、平行五八、属七解决、模进、转调、和弦外音与增六。</span></li></ul></div>
+
+<div class="ocr-text">第一篇和弦外音<br>
+第二十七章包含增六度的和弦<br>
+S98.IV.包含降Ⅱ级音的和弦解决到主和弦，除以下几种<br>
+外，并无更多结构样态。<br>
+它们是：<br>
+a）六和弦（来自减三和弦的第一转位）。<br>
+b）三四和弦（来自属七和弦的第二转位）<br>
+c）五六和弦（来自减七和弦的第一转位）。<br>
+S99.a）包含增六度的和弦要解决到主和弦。它通常用相<br>
+同排列位置的原始和弦或主三和弦作预备。Ⅳ级三和弦和Ⅱ级<br>
+三和弦（重复三音）也可以作预备。<br>
+2.<br>
+3.<br>
+8<br>
+8<br>
+8<br>
+8<br>
+8<br>
+-0<br>
+18<br>
+00.8<br>
+283<br>
+6<br>
+6<br>
+这个和弦只能重复五音(这样五音与低音构成三度音程）。<br>
+143</div>
+
+---
+
+<!-- PAGE:157 -->
+<a id="p0157"></a>
+## PDF p.157
+
+![柴可夫斯基《和声学指南》 PDF p.157（整页影印）](../assets/books/tchaikovsky_guide/p0157.jpg)
+
+<!-- MANUAL-REFS:p0157 -->
+<div class="manual-refs"><strong>手册使用本页</strong><ul><li id="ref-claim-tonicization-time-structure-p0157" class="manual-ref-item" data-kind="claim"><span class="ref-kind">论点</span><a href="../和声学手册.html#claim-tonicization-time-structure">临时主音化（离调） · tonicization.time-structure</a><br><span class="ref-text">手册提炼：离调与转调的界限主要取决于持续时间、结构位置与终止确认；单靠一个变化和弦不能判定转调。</span></li></ul></div>
+
+<div class="ocr-text">实用和声学指南<br>
+Guide to the Practical Study of Harmony<br>
+些理论家将它们解决到属和弦，而不是主和弦。视它们为大调<br>
+中包含降VI级变音的（增六度）和弦，或小调中的包含自然VI级<br>
+音的（增六度）和弦，而不是包含降Ⅱ级音的和弦。按照这个观<br>
+点，我们将前面谱例中出现的和弦既可以视作C大调，也可以视<br>
+作F大调或f小调的和弦吗？这是错的。V级上的增六和弦只<br>
+能转到属调上。这种进行的确不太引人注目，如果没有较长的<br>
+终止式，很难感觉到其转调。只有在较长的终止式中将这个和<br>
+弦解决到属三和弦，才会感受到这个和弦起到的转调功能。<br>
+离调<br>
+完整转调<br>
+290<br>
+$104.还有一个包含增六度的和弦，常运用在结尾中。这<br>
+个和弦没有建立在Ⅱ级音上，而是建立在VI级音上。该和弦的<br>
+三四和弦包含倍增四度。它由Ⅱ级七和弦的第二转位变化而<br>
+来，放在I级四六和弦之前（形成终止式），三个声部作半音经过<br>
+进行。*<br>
+291<br>
+3<br>
+64<br>
+64<br>
+4<br>
+这个和弦常与它的等和弦五六和弦混淆。<br>
+146</div>
+
+---
+
+<!-- PAGE:183 -->
+<a id="p0183"></a>
+## PDF p.183
+
+![柴可夫斯基《和声学指南》 PDF p.183（整页影印）](../assets/books/tchaikovsky_guide/p0183.jpg)
+
+<!-- MANUAL-REFS:p0183 -->
+<div class="manual-refs"><strong>手册使用本页</strong><ul><li id="ref-claim-dominant-tritone-resolution-p0183" class="manual-ref-item" data-kind="claim"><span class="ref-kind">论点</span><a href="../和声学手册.html#claim-dominant-tritone-resolution">属功能与属七解决 · dominant.tritone-resolution</a><br><span class="ref-text">手册提炼：属七中的三全音按增四度向外、减五度向内收缩，分别解决到主和弦的六度或三度。</span></li></ul></div>
+
+<div class="ocr-text">实用和声学指南<br>
+Guide to the Practical Study of Harmon<br>
+续几拍、一小节，甚至好几个小节。<br>
+经过音和辅助音并不是独立的和弦，但有利于旋律和节奏<br>
+的多样化。<br>
+126.严格写作中禁止的跳进，在自由形式中允许使用。<br>
+所有八度内的跳进中，只有大七度不够旋律化。我们已经学过，<br>
+增音程的跳进总是用它们的转位，即减音程来替代。可以使用<br>
+增一度进行，但不常用。<br>
+8127.三声部写作中，可以使用减三和弦及其第二转位。<br>
+334<br>
+8<br>
+8<br>
+8<br>
+福<br>
+增四度或其转位在二声部写作中，可以出现在强拍上。但<br>
+只有当导音上行解决到主音，IV级音作二度下行时才可以。<br>
+335<br>
+对当代音乐家而言，增四度并不具有不协和音程的尖锐效<br>
+果，因为它包含在属七和弦内，带有属七和弦的特性。同样，二<br>
+声部中，小七度及其转位如果能合理解决，也是可以使用的。<br>
+336<br>
+008<br>
+总的来讲，所有属于属七和弦和减七和弦范畴的这些不协<br>
+和和弦都较为常用。但是这些和弦必须直接解决到主和弦，或<br>
+是插入一个或一个以上的不协和和弦转位。<br>
+337<br>
+8<br>
+8<br>
+0.00<br>
+0-0<br>
+172</div>
+
+---
+
+<!-- PAGE:196 -->
+<a id="p0196"></a>
+## PDF p.196
+
+![柴可夫斯基《和声学指南》 PDF p.196（整页影印）](../assets/books/tchaikovsky_guide/p0196.jpg)
+
+<!-- MANUAL-REFS:p0196 -->
+<div class="manual-refs"><strong>手册使用本页</strong><ul><li id="ref-claim-cadence-pac-iac-p0196" class="manual-ref-item" data-kind="claim"><span class="ref-kind">论点</span><a href="../和声学手册.html#claim-cadence-pac-iac">终止式 · cadence.pac-iac</a><br><span class="ref-text">手册提炼：完满正格终止由原位属到原位主、且主音位于最高声部构成；其余 V–I 多为不完满正格终止。</span></li><li id="ref-profile-profile-tchaikovsky_guide-p0196" class="manual-ref-item" data-kind="profile"><span class="ref-kind">代表页</span><a href="../和声学手册.html#book-profiles">教材代表页 · 柴可夫斯基指南</a><br><span class="ref-text">手册将本页列为《柴可夫斯基指南》代表页；该书定位：以实践写作为中心的简明教程：连接法、平行五八、属七解决、模进、转调、和弦外音与增六。</span></li></ul></div>
+
+<div class="ocr-text">第二篇声部的旋律性发展<br>
+有着良好的声部进行的前提下，属七和弦甚至可以解决到<br>
+不协和和弦上。<br>
+bo<br>
+8<br>
+福<br>
+8<br>
+351<br>
+同样，有着良好的声部进行的前提下，或为了更高的表现意<br>
+图，每个不协和和弦都不一定非要解决到所规定要解决的和弦上。<br>
+这些不协和和弦的不规则解决被称为中断（终止）进行<br>
+（interruptedcadences）或意外（终止）进行（deceptivecadences）。<br>
+第三十四章终止（收束）<br>
+S136.结束本书前，让我们一起来总结和归纳一下各种终<br>
+止式，因为到目前为止，我们有关终止式的了解还不够。<br>
+前面探讨过：完全终止、半终止和意外（终止)进行。<br>
+完全终止由属和弦和主和弦构成。如果这两个和弦为原位<br>
+形式，而且主和弦的旋律音为根音时，这种终止被称为完满终<br>
+止。其余则称为不完满终止。<br>
+完满终止<br>
+不完满终止<br>
+88<br>
+8.00<br>
+8<br>
+88<br>
+00<br>
+8<br>
+008<br>
+352<br>
+185</div>
+
+---
+
+<!-- PAGE:197 -->
+<a id="p0197"></a>
+## PDF p.197
+
+![柴可夫斯基《和声学指南》 PDF p.197（整页影印）](../assets/books/tchaikovsky_guide/p0197.jpg)
+
+<!-- MANUAL-REFS:p0197 -->
+<div class="manual-refs"><strong>手册使用本页</strong><ul><li id="ref-claim-cadence-half-plagal-deceptive-p0197" class="manual-ref-item" data-kind="claim"><span class="ref-kind">论点</span><a href="../和声学手册.html#claim-cadence-half-plagal-deceptive">终止式 · cadence.half-plagal-deceptive</a><br><span class="ref-text">手册提炼：半终止停在属功能，变格终止为 IV–I，阻碍进行为 V–vi；三者收束强度与结构作用不同。</span></li></ul></div>
+
+<div class="ocr-text">实用和声学指南<br>
+Guide to the Practical Study of Harmony<br>
+原位属七和弦不解决到主和弦，便构成阻碍终止或意外<br>
+（终止)进行。<br>
+8<br>
+8<br>
+8<br>
+8<br>
+353<br>
+半终止是不完全终止。半终止的第一个和弦是主和弦或下<br>
+属功能组的和弦，后一个和弦为属三和弦。<br>
+8<br>
+8<br>
+8<br>
+88<br>
+0<br>
+354<br>
+0<br>
+除这些终止式外，还有变格终止（Plagalcadence）或教会终<br>
+止（Church close）。前面一些章节中已提到。<br>
+有关终止式的更多知识可在有关音乐结构的著述中找到。<br>
+186</div>
+
+---

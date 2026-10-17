@@ -9,6 +9,6 @@
     "build:figures": "python tools/build_figures.py",
     "build:docs": "python tools/build_docs.py",
     "build:snippets": "python tools/build_snippets.py",
-    "build": "node tools/export_data.js && python tools/build_figures.py && python tools/build_docs.py && python tools/build_snippets.py"
+    "build": "node tools/export_data.js && python tools/build_figures.py && python tools/build_docs.py && python tools/build_snippets.py && python ../tools/inject_site_nav.py"
   }
 }

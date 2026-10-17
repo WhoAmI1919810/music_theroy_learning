@@ -26,6 +26,7 @@ DOCS = os.path.join(ROOT, 'docs')
 BOOKS_DIR = os.path.join(DOCS, 'books')
 ASSETS_DIR = os.path.join(DOCS, 'assets', 'books')
 ARCHIVE_JSON = os.path.join(ROOT, 'evidence', 'book-archives.json')
+PUBLIC_DEPLOY = os.path.join(ROOT, 'evidence', 'public-deploy.json')
 BOOK_ANNOTATIONS = os.path.join(ROOT, 'evidence', 'book-annotations.json')
 MANUAL_HTML = os.path.join(DOCS, '和声学手册.html')
 
@@ -168,13 +169,11 @@ def manual_refs_html(page, items):
 
 
 def page_links(pages):
-    picks = list(range(1, pages + 1, 50))
-    if pages not in picks:
-        picks.append(pages)
+    picks = sorted({int(page) for page in pages})
     return ' · '.join('[p.%d](#p%04d)' % (page, page) for page in picks)
 
 
-def book_header(book, index_row, duplicate_of=None, canonical_title=None):
+def book_header(book, index_row, archive_pages, duplicate_of=None, canonical_title=None):
     title = book['title']
     lines = ['# ' + title, '']
     lines.append('> **PDF 文件**：`%s`  ' % book['file'])
@@ -187,11 +186,11 @@ def book_header(book, index_row, duplicate_of=None, canonical_title=None):
         ))
     lines.extend([
         '',
-        '本文件采用**逐页整版影印 + OCR 文本**。整页图保留所有谱例、图表、表格、边注和版面关系；OCR 只供检索与复制，具体音符、临时记号、连线和罗马数字以图像为准。点击图片可打开原尺寸图。被理论手册引用的页面会在图后列出“手册使用本页”，其中包括论点提炼、案例的原书要点与机制、阶段依据和正文引用，可直接回跳。',
+        '本文件收录**理论手册实际引用的 %d 个 PDF 页**，每页采用整版影印 + OCR 文本。整页图保留谱例、图表、表格、边注和版面关系；OCR 只供检索与复制，具体音符、临时记号、连线和罗马数字以图像为准。被理论手册引用的条目列在图后，可直接回跳。' % len(archive_pages),
         '',
         '页码一律使用 **PDF 物理页码**，可能与书内印刷页码不同。',
         '',
-        '**快速跳页**：' + page_links(book['pages']),
+        '**快速跳页**：' + page_links(archive_pages),
         '',
         '---',
         '',
@@ -234,9 +233,9 @@ def page_html(book, page, image_rel, ocr_row, image_size, manual_refs=None):
 
 
 def book_html(book, index_row, ocr_pages, image_prefix, image_sizes,
-              duplicate_of=None, canonical_title=None, page_annotations=None):
+              archive_pages, duplicate_of=None, canonical_title=None, page_annotations=None):
     jump = ' · '.join('<a href="#p%04d">p.%d</a>' % (page, page)
-                       for page in list(range(1, book['pages'] + 1, 50)) + [book['pages']])
+                       for page in archive_pages)
     title = html.escape(book['title'])
     source = html.escape(book['file'])
     duplicate = ''
@@ -247,15 +246,15 @@ def book_html(book, index_row, ocr_pages, image_prefix, image_sizes,
                          ocr_pages[page], image_sizes[page],
                          (page_annotations or {}).get(str(page), [])
                      )
-                     for page in range(1, book['pages'] + 1))
+                     for page in archive_pages)
     return '''<!doctype html>
 <html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>%s</title><style>%s</style></head>
 <body><div class="layout"><aside><b>%s</b><div class="meta">PDF %d 页 · OCR %s</div><div class="jump">%s</div><a class="back" href="index.html">← 返回十六册总索引</a><br><a class="back" href="../和声学手册.html">← 返回理论手册</a></aside>
-<main><header class="book-head"><h1>%s</h1><p><b>PDF 文件：</b>%s</p><p><b>页数：</b>%d（PDF 物理页码）　<b>OCR 平均置信度：</b>%s　<b>字符数：</b>%s</p>%s<p class="hint">每页先显示整页影印图，后附 OCR 文本。OCR 供检索与复制；谱例、临时记号、罗马数字与连线以图像为准。点击图片可打开原尺寸。</p></header>
+<main><header class="book-head"><h1>%s</h1><p><b>PDF 文件：</b>%s</p><p><b>总页数：</b>%d（PDF 物理页码）　<b>已发布引用页：</b>%d　<b>OCR 平均置信度：</b>%s　<b>字符数：</b>%s</p>%s<p class="hint">公开部署版仅保留理论手册实际引用并建立锚点的教材页；每页先显示整页影印图，后附 OCR 文本。OCR 供检索与复制；谱例、临时记号、罗马数字与连线以图像为准。点击图片可打开原尺寸。</p></header>
 %s<section class="back"><a href="index.html">返回总索引</a> · <a href="../和声学手册.html">返回理论手册</a></section></main></div></body></html>''' % (
         title, BOOK_CSS, title, book['pages'], index_row.get('mean_conf', '—'), jump,
-        title, source, book['pages'], index_row.get('mean_conf', '—'), index_row.get('chars', '—'),
+        title, source, book['pages'], len(archive_pages), index_row.get('mean_conf', '—'), index_row.get('chars', '—'),
         duplicate, body
     )
 
@@ -284,12 +283,13 @@ def image_size(path):
 
 
 def build_one(book, index_row, ocr_pages, duplicate_of=None, canonical=None,
-              force=False, page_annotations=None, annotations_only=False):
+              force=False, page_annotations=None, annotations_only=False,
+              source_dir=None):
     canonical_id = duplicate_of or book['id']
     image_dir = os.path.join(ASSETS_DIR, canonical_id)
     markdown_path = os.path.join(BOOKS_DIR, book['id'] + '.md')
     html_path = os.path.join(BOOKS_DIR, book['id'] + '.html')
-    pdf_path = os.path.join(SOURCE_DIR, book['file'])
+    pdf_path = os.path.join(source_dir or SOURCE_DIR, book['file'])
     if not os.path.exists(pdf_path):
         raise RuntimeError('missing PDF: ' + pdf_path)
     if set(ocr_pages) != set(range(1, book['pages'] + 1)):
@@ -297,9 +297,11 @@ def build_one(book, index_row, ocr_pages, duplicate_of=None, canonical=None,
         extra = sorted(set(ocr_pages) - set(range(1, book['pages'] + 1)))
         raise RuntimeError('%s OCR page mismatch: missing=%s extra=%s' % (book['id'], missing[:8], extra[:8]))
 
+    annotation_pages = sorted({int(page) for page in (page_annotations or {})})
+    archive_pages = annotation_pages or list(range(1, book['pages'] + 1))
     if not duplicate_of:
         if annotations_only:
-            missing = [page for page in range(1, book['pages'] + 1)
+            missing = [page for page in archive_pages
                        if not os.path.exists(os.path.join(image_dir, page_image_name(page)))]
             if missing:
                 raise RuntimeError('%s missing page images: %s' % (book['id'], missing[:8]))
@@ -310,12 +312,12 @@ def build_one(book, index_row, ocr_pages, duplicate_of=None, canonical=None,
                 if doc.page_count != book['pages']:
                     raise RuntimeError('%s PDF page count changed: %s != %s' % (book['id'], doc.page_count, book['pages']))
                 rendered = 0
-                for page in range(1, book['pages'] + 1):
+                for page in archive_pages:
                     output_path = os.path.join(image_dir, page_image_name(page))
                     if render_page(doc, page, output_path, force=force):
                         rendered += 1
-                    if page % 100 == 0 or page == book['pages']:
-                        print('[%s] %d/%d pages (rendered %d)' % (book['id'], page, book['pages'], rendered), flush=True)
+                    if page == archive_pages[-1]:
+                        print('[%s] %d cited pages (rendered %d)' % (book['id'], len(archive_pages), rendered), flush=True)
             finally:
                 doc.close()
     else:
@@ -325,8 +327,8 @@ def build_one(book, index_row, ocr_pages, duplicate_of=None, canonical=None,
             raise RuntimeError('duplicate %s missing canonical images: %s' % (book['id'], missing[:8]))
 
     title = canonical['title'] if canonical else book['title']
-    parts = [book_header(book, index_row, duplicate_of=duplicate_of, canonical_title=title)]
-    for page in range(1, book['pages'] + 1):
+    parts = [book_header(book, index_row, archive_pages, duplicate_of=duplicate_of, canonical_title=title)]
+    for page in archive_pages:
         image_rel = '../assets/books/%s/%s' % (canonical_id, page_image_name(page))
         parts.append(page_section(
             book, page, image_rel, ocr_pages[page],
@@ -336,23 +338,26 @@ def build_one(book, index_row, ocr_pages, duplicate_of=None, canonical=None,
     image_prefix = '../assets/books/%s/' % canonical_id
     image_sizes = {
         page: image_size(os.path.join(image_dir, page_image_name(page)))
-        for page in range(1, book['pages'] + 1)
+        for page in archive_pages
     }
     write_text(html_path, book_html(
         book, index_row, ocr_pages, image_prefix, image_sizes,
+        archive_pages,
         duplicate_of=duplicate_of, canonical_title=title,
         page_annotations=page_annotations
     ))
 
     image_bytes = sum(
         os.path.getsize(os.path.join(image_dir, page_image_name(page)))
-        for page in range(1, book['pages'] + 1)
+        for page in archive_pages
     )
     return {
         'id': book['id'],
         'title': book['title'],
         'file': book['file'],
         'pages': book['pages'],
+        'archivePages': len(archive_pages),
+        'citedPages': archive_pages,
         'priority': book.get('priority', 999),
         'markdown': 'books/' + book['id'] + '.md',
         'html': 'books/' + book['id'] + '.html',
@@ -386,62 +391,92 @@ def build_plan(books_meta):
 
 
 def build_index(results, books_meta):
-    total_pages = sum(item['pages'] for item in results)
-    unique_pages = sum(item['pages'] for item in results if not item['duplicateOf'])
-    unique_images = sum(item['pages'] for item in results if not item['duplicateOf'])
+    total_cited = sum(item['archivePages'] for item in results)
+    total_source_pages = sum(item['pages'] for item in results)
     lines = [
-        '# 十六本和声学教材 · 逐页影印与 OCR 文本',
+        '# 和声学教材 · 引用页影印与 OCR 文本',
         '',
-        '> 共 16 个 PDF 文件，其中 15 种独立教材、1 个基泽勒重复扫描本。为避免裁切漏图，每页都保留整版影印图，并在图后附 OCR 文本。所有页码均为 PDF 物理页码。',
+        '> 共 %d 种独立教材，公开部署 %d 个被理论手册实际引用的 PDF 页。每页保留整版影印图，并在图后附 OCR 文本与手册回跳链接。所有页码均为 PDF 物理页码。' % (len(results), total_cited),
         '',
         '## 使用说明',
         '',
-        '- 每册 Markdown 的每一页先给整页图，再给 OCR 文本；点击图片可打开原尺寸。',
+        '- 每册 Markdown 的每个被引用页先给整页图，再给 OCR 文本；点击图片可打开原尺寸。',
         '- OCR 用于检索、复制和定位，谱例、临时记号、罗马数字与连线以整页图为准。',
         '- 被理论手册引用的页面在图后列出“手册使用本页”，其中包括论点提炼、案例的原书要点与机制、阶段依据和正文引用，并可回跳到手册中的对应条目。',
-        '- 快速跳页在每册开头，每 50 页一个锚点；每页也有 `p0001` 形式的锚点。',
-        '- 重复扫描本复用同一种教材的页面图，不重复占用磁盘空间。',
+        '- 快速跳页在每册开头列出全部已发布引用页；每页也有 `p0001` 形式的锚点。',
         '',
         '## 总览',
         '',
-        '| # | 教材 | PDF 页数 | OCR 置信度 | Markdown | 版本 |',
-        '| --- | --- | ---: | ---: | --- | --- |',
+        '| # | 教材 | 总页数 | 已引用页 | OCR 置信度 | Markdown |',
+        '| --- | --- | ---: | ---: | ---: | --- |',
     ]
     for number, item in enumerate(results, 1):
-        version = '重复扫描本' if item['duplicateOf'] else '独立教材'
-        lines.append('| %d | %s | %d | %s | [打开](%s) | %s |' % (
-            number, item['title'], item['pages'], item['ocrMeanConfidence'],
-            item['id'] + '.md', version
+        lines.append('| %d | %s | %d | %d | %s | [打开](%s) |' % (
+            number, item['title'], item['pages'], item['archivePages'],
+            item['ocrMeanConfidence'], item['id'] + '.md'
         ))
     lines.extend([
         '',
         '## 归档统计',
         '',
-        '- PDF 文件：16',
-        '- 独立教材：15 种',
-        '- 独立页面：%d' % unique_pages,
-        '- 含重复本的 Markdown 页面条目：%d' % total_pages,
-        '- 独立整页影印图：%d' % unique_images,
+        '- 独立教材：%d 种' % len(results),
+        '- 教材总页数：%d' % total_source_pages,
+        '- 公开引用页：%d' % total_cited,
         '',
         '机器可读清单见 [`../evidence/book-archives.json`](../evidence/book-archives.json)。',
         '',
     ])
     write_text(os.path.join(BOOKS_DIR, 'README.md'), '\n'.join(lines))
-    index_rows = []
-    for number, item in enumerate(results, 1):
-        version = '重复扫描本' if item['duplicateOf'] else '独立教材'
-        index_rows.append('<tr><td>%d</td><td><a href="%s.html">%s</a><br><a class="index-note" href="%s.md">Markdown</a></td><td>%d</td><td>%s</td><td>%s</td></tr>' % (
-            number, item['id'], html.escape(item['title']), item['id'], item['pages'],
-            item['ocrMeanConfidence'], version
-        ))
-    index_html = '''<!doctype html><html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>十六本和声学教材 · 逐页影印</title><style>%s</style></head>
-<body><div class="layout"><aside><b>十六册教材库</b><div class="meta">16 个 PDF · 15 种独立版本</div><a class="back" href="../和声学手册.html">← 返回理论手册</a></aside><main><header class="book-head"><h1>十六本和声学教材 · 逐页影印与 OCR 文本</h1><p>共 16 个 PDF，其中 15 种独立教材、1 个基泽勒重复扫描本。每页保留整版影印图，并附 OCR 文本；所有页码均为 PDF 物理页码。</p><p class="hint">优先打开 HTML 阅读；需要引用或二次处理时使用 Markdown。重复本复用同一套页面图。</p></header><table class="index-table"><thead><tr><th>#</th><th>教材</th><th>页数</th><th>OCR</th><th>版本</th></tr></thead><tbody>%s</tbody></table><p class="index-note">独立页面 %d；含重复本页面条目 %d；独立整页影印图 %d。</p></main></div></body></html>''' % (
-        BOOK_CSS, ''.join(index_rows),
-        sum(item['pages'] for item in results if not item['duplicateOf']),
-        sum(item['pages'] for item in results),
-        sum(item['pages'] for item in results if not item['duplicateOf'])
+    index_css = r'''
+:root{--bg:#0d131c;--panel:#141d29;--text:#e8edf4;--muted:#9aabc0;--gold:#efb45b;--teal:#61c7bd;--line:#2a394b}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 12% -10%,#2b2632 0,transparent 32%),var(--bg);color:var(--text);font:15px/1.7 ui-sans-serif,"Noto Sans SC","Microsoft YaHei",sans-serif}
+a{color:var(--gold);text-decoration:none}a:hover{text-decoration:underline}.wrap{width:min(calc(100% - 28px),1080px);margin:0 auto;padding:34px 0 60px}
+.top{display:flex;justify-content:space-between;gap:16px;align-items:flex-start;margin-bottom:28px}.brand{display:flex;align-items:center;gap:11px}.mark{width:38px;height:38px;border-radius:10px;display:grid;place-items:center;background:linear-gradient(135deg,#f0bd6c,#8d6230);color:#20180f;font-weight:800}.brand b{display:block;font-size:14px}.brand small{display:block;color:var(--muted);font-size:11px}.back{font-size:12px;color:var(--teal);white-space:nowrap;border:1px solid var(--line);border-radius:999px;padding:7px 11px}
+h1{margin:0 0 9px;font-size:clamp(28px,5vw,44px);line-height:1.2;letter-spacing:-.035em}.lead{margin:0 0 28px;color:var(--muted);max-width:760px}.lead strong{color:var(--text)}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.book{border:1px solid var(--line);border-radius:14px;background:rgba(20,29,41,.86);padding:18px;min-width:0}.book-head{display:flex;align-items:flex-start;justify-content:space-between;gap:10px}.book h2{font-size:15px;line-height:1.45;margin:0;color:#f1d3a1}.book-head span{font:11px ui-monospace,Consolas,monospace;color:var(--teal);white-space:nowrap}.book-note{margin:8px 0 12px;color:var(--muted);font-size:11px}.pages{display:flex;flex-wrap:wrap;gap:5px}.pages a{display:inline-flex;align-items:center;justify-content:center;min-width:42px;min-height:30px;padding:2px 7px;border:1px solid var(--line);border-radius:6px;background:#101924;color:#c6d3e0;font:11px ui-monospace,Consolas,monospace}.pages a:hover{border-color:#5a7189;color:#fff;text-decoration:none}
+footer{margin-top:26px;padding-top:20px;border-top:1px solid var(--line);color:var(--muted);font-size:11px}
+@media(max-width:720px){.wrap{width:min(calc(100% - 20px),1080px);padding-top:22px}.grid{grid-template-columns:1fr}.top{margin-bottom:22px}.back{font-size:11px}.book{padding:15px}.pages a{min-height:32px}.lead{font-size:13px}}
+'''
+    cards = []
+    for item in results:
+        pages = ''.join('<a href="%s.html#p%04d">p.%d</a>' % (item['id'], page, page)
+                        for page in item['citedPages'])
+        cards.append(
+            '<article class="book"><div class="book-head"><h2>%s</h2>'
+            '<span>%d 页</span></div><p class="book-note">公开引用页；总页数 %d。</p>'
+            '<div class="pages">%s</div></article>' % (
+                html.escape(item['title']), item['archivePages'], item['pages'], pages
+            )
+        )
+    index_html = '''<!doctype html><html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#0d131c"><title>和声教材证据索引 · Harmony Atlas</title><style>%s</style></head>
+<body><main class="wrap"><div class="top"><div class="brand"><span class="mark">H</span><span><b>和声教材证据索引</b><small>Harmony Atlas · Source Anchors</small></span></div><a class="back" href="../和声学手册.html">← 返回理论手册</a></div>
+<h1>教材页与论点锚点</h1><p class="lead">共 <strong>%d</strong> 个被理论手册实际引用的页面，覆盖 <strong>%d</strong> 种教材。点击页码可直达对应页的影印、OCR 和页内论点位置。公开部署版不包含未引用扫描页。</p>
+<section class="grid">%s</section><footer>共 %d 种教材，教材总页数 %d。页码均为 PDF 物理页码，可能与书内印刷页码不同。</footer></main></body></html>''' % (
+        index_css, total_cited, len(results), ''.join(cards), len(results), total_source_pages
     )
     write_text(os.path.join(BOOKS_DIR, 'index.html'), index_html)
+
+
+def build_public_manifest(results):
+    books = [
+        {
+            'id': item['id'],
+            'html': 'docs/' + item['html'],
+            'pages': item['citedPages'],
+            'pageCount': item['archivePages'],
+        }
+        for item in results
+    ]
+    payload = {
+        'mode': 'public-deploy',
+        'generatedAt': datetime.date.today().isoformat(),
+        'source': 'docs/和声学手册.html citation anchors',
+        'bookCount': len(books),
+        'pageCount': sum(book['pageCount'] for book in books),
+        'books': books,
+    }
+    write_json(PUBLIC_DEPLOY, payload)
+    return payload
 
 
 def load_book_annotations():
@@ -454,8 +489,8 @@ def load_book_annotations():
 
 
 def build_all(books_meta, index_rows, selected=None, workers=4, force=False,
-              annotations_only=False):
-    plan = build_plan(books_meta)
+              annotations_only=False, source_dir=None):
+    plan = [item for item in build_plan(books_meta) if not item[1]]
     index_by_id = {row['id']: row for row in index_rows}
     if selected:
         plan = [item for item in plan if item[0]['id'] in selected]
@@ -472,15 +507,15 @@ def build_all(books_meta, index_rows, selected=None, workers=4, force=False,
             ocr_cache[canonical_id] = load_ocr(canonical_id)
     results = []
     started = time.time()
-    unique_plan = [item for item in plan if not item[1]]
-    duplicate_plan = [item for item in plan if item[1]]
+    unique_plan = plan
+    duplicate_plan = []
     if workers <= 1 or len(unique_plan) <= 1:
         for book, duplicate_of, canonical in unique_plan:
             ocr = ocr_cache[book['id']]
             results.append(build_one(
                 book, index_by_id[book['id']], ocr, force=force,
                 page_annotations=annotations.get(book['id'], {}),
-                annotations_only=annotations_only
+                annotations_only=annotations_only, source_dir=source_dir
             ))
     else:
         with concurrent.futures.ProcessPoolExecutor(max_workers=workers) as pool:
@@ -489,7 +524,7 @@ def build_all(books_meta, index_rows, selected=None, workers=4, force=False,
                 future = pool.submit(
                     build_one, book, index_by_id[book['id']], ocr_cache[book['id']],
                     force=force, page_annotations=annotations.get(book['id'], {}),
-                    annotations_only=annotations_only
+                    annotations_only=annotations_only, source_dir=source_dir
                 )
                 future_map[future] = book['id']
             for future in concurrent.futures.as_completed(future_map):
@@ -508,7 +543,7 @@ def build_all(books_meta, index_rows, selected=None, workers=4, force=False,
 
 
 def check_all(books_meta):
-    plan = build_plan(books_meta)
+    plan = [item for item in build_plan(books_meta) if not item[1]]
     problems = []
     total_pages = 0
     total_images = 0
@@ -540,25 +575,28 @@ def check_all(books_meta):
         if not os.path.exists(html_path):
             problems.append('missing html ' + html_path)
         text = open(md_path, encoding='utf-8').read()
+        page_annotations = annotations.get(canonical_id, {})
+        expected_pages = sorted(int(page) for page in page_annotations)
         markers = [int(x) for x in re.findall(r'<!-- PAGE:(\d+) -->', text)]
-        if markers != list(range(1, book['pages'] + 1)):
+        if markers != expected_pages:
             problems.append('%s page markers mismatch' % book['id'])
         image_refs = re.findall(r'!\[[^\]]*\]\((\.\./assets/books/[^)]+)\)', text)
-        if len(image_refs) != book['pages']:
-            problems.append('%s image refs %d != %d' % (book['id'], len(image_refs), book['pages']))
+        if len(image_refs) != len(expected_pages):
+            problems.append('%s image refs %d != %d' % (
+                book['id'], len(image_refs), len(expected_pages)))
         html_text = ''
         if os.path.exists(html_path):
             html_text = open(html_path, encoding='utf-8').read()
-            if len(re.findall(r'<section class="book-page" id="p[0-9]{4}">', html_text)) != book['pages']:
+            if len(re.findall(r'<section class="book-page" id="p[0-9]{4}">', html_text)) != len(expected_pages):
                 problems.append('%s html page sections mismatch' % book['id'])
             if 'html{scroll-behavior:auto}' not in html_text:
                 problems.append('%s html does not use immediate page jumps' % book['id'])
             dimensioned = len(re.findall(
                 r'<img loading="lazy" decoding="async" width="\d+" height="\d+"', html_text
             ))
-            if dimensioned != book['pages']:
+            if dimensioned != len(expected_pages):
                 problems.append('%s html image dimensions %d != %d' % (
-                    book['id'], dimensioned, book['pages']
+                    book['id'], dimensioned, len(expected_pages)
                 ))
             if '.manual-refs{' not in html_text:
                 problems.append('%s html is missing manual-reference styles' % book['id'])
@@ -579,7 +617,6 @@ def check_all(books_meta):
                 html_text, re.S
             )
         }
-        page_annotations = annotations.get(canonical_id, {})
         for page_key, items in page_annotations.items():
             try:
                 page = int(page_key)
@@ -645,6 +682,7 @@ def main():
     parser.add_argument('--force', action='store_true', help='re-render existing page images')
     parser.add_argument('--annotations-only', action='store_true',
                         help='rebuild Markdown/HTML from existing images and OCR; no PyMuPDF needed')
+    parser.add_argument('--source-dir', default='', help='directory containing the source PDFs')
     parser.add_argument('--check', action='store_true', help='verify Markdown and images without building')
     args = parser.parse_args()
     books_meta = read_json(BOOKS_JSON)
@@ -654,11 +692,13 @@ def main():
         return
     selected = {item.strip() for item in args.book.split(',') if item.strip()} or None
     results = build_all(books_meta, index_rows, selected=selected, workers=args.workers,
-                        force=args.force, annotations_only=args.annotations_only)
+                        force=args.force, annotations_only=args.annotations_only,
+                        source_dir=args.source_dir or None)
     if selected:
         print('built %d selected book(s)' % len(results))
         return
     build_index(results, books_meta)
+    public_manifest = build_public_manifest(results)
     payload = {
         'version': 1,
         'generatedAt': datetime.datetime.now(datetime.timezone.utc).isoformat(timespec='seconds'),
@@ -672,14 +712,14 @@ def main():
         'totals': {
             'pdfs': len(results),
             'uniqueBooks': sum(1 for item in results if not item['duplicateOf']),
-            'uniquePages': sum(item['pages'] for item in results if not item['duplicateOf']),
-            'archivePages': sum(item['pages'] for item in results),
-            'uniquePageImages': sum(item['pages'] for item in results if not item['duplicateOf']),
+            'uniquePages': sum(item['pages'] for item in results),
+            'archivePages': sum(item['archivePages'] for item in results),
+            'uniquePageImages': sum(item['archivePages'] for item in results),
         },
         'books': results,
     }
     write_json(ARCHIVE_JSON, payload)
-    print('books:', len(results), 'pages:', payload['totals']['archivePages'],
+    print('books:', len(results), 'cited pages:', public_manifest['pageCount'],
           'images:', payload['totals']['uniquePageImages'])
 
 

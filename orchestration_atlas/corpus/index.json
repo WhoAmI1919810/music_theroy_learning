@@ -63,9 +63,9 @@
     "id": "yang_3",
     "title": "杨立青《管弦乐配器教程》下册",
     "pages_total": 536,
-    "pages_ocr": 20,
-    "chars": 8618,
-    "mean_conf": 0.945,
+    "pages_ocr": 72,
+    "chars": 31330,
+    "mean_conf": 0.925,
     "complete": false,
     "kind": "advanced_course"
   }

@@ -118,11 +118,12 @@ def process_part(task):
             'chars': sum(len(r.get('text', '')) for r in rows),
             'elapsed': round(sum(r.get('elapsed', 0) for r in rows), 1)}
 
-def build_tasks(books, chunk, scale, limit_pages, ranges=None):
+def build_tasks(books, chunk, scale, limit_pages, ranges=None, pdf_dir=None):
     ranges = ranges or {}
+    base_dir = pdf_dir or os.path.dirname(ROOT)
     tasks = []
     for b in books:
-        pdf = os.path.join(os.path.dirname(ROOT), b['file'])
+        pdf = os.path.join(base_dir, b['file'])
         spans = ranges.get(b['id'])
         if not spans:
             n = b['pages'] if not limit_pages else min(b['pages'], limit_pages)
@@ -167,6 +168,7 @@ def main():
     ap.add_argument('--scale', type=float, default=2.0)
     ap.add_argument('--limit-pages', type=int, default=0)
     ap.add_argument('--ranges', default='', help='book:start-end (1-based), comma separated')
+    ap.add_argument('--pdf-dir', default='', help='directory containing the source PDFs')
     ap.add_argument('--dry-run', action='store_true', help='print task ranges without OCR')
     args = ap.parse_args()
     with open(os.path.join(ROOT, 'corpus', 'books.json'), encoding='utf-8-sig') as fh:
@@ -201,7 +203,8 @@ def main():
         print('WARNING full corpus selected; use --ranges or --limit-pages for targeted work', file=sys.stderr)
     if args.workers > 2:
         print('WARNING workers >2 may raise CPU contention; default is 1', file=sys.stderr)
-    tasks = build_tasks(books, args.chunk, args.scale, args.limit_pages, ranges)
+    tasks = build_tasks(books, args.chunk, args.scale, args.limit_pages, ranges,
+                        pdf_dir=args.pdf_dir or None)
     total_pages = sum(t['end'] - t['start'] for t in tasks)
     print('books=%d tasks=%d pages=%d workers=%d scale=%s' % (len(books), len(tasks), total_pages, args.workers, args.scale), flush=True)
     if args.dry_run:
