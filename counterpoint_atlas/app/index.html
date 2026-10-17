@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0c1218">
+<meta name="description" content="复调写作推演台：分类对位、卡农、赋格骨架、声部检查与教材页证据。">
+<title>复调推演台 · Counterpoint Atlas</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2032%2032'%3E%3Crect%20width='32'%20height='32'%20rx='8'%20fill='%23eeb15b'/%3E%3Ctext%20x='16'%20y='23'%20text-anchor='middle'%20font-size='20'%20font-family='serif'%20fill='%2320170c'%3EC%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip" href="#main">跳到主要内容</a>
+<header class="topbar">
+  <div class="wrap topbar-inner">
+    <a class="brand" href="../../" aria-label="返回音乐理论工作台">
+      <span class="brand-mark">C</span>
+      <span class="brand-copy"><b>复调推演台</b><small>Counterpoint Atlas</small></span>
+    </a>
+    <nav class="top-links" aria-label="站内链接">
+      <a href="../docs/复调音乐手册.html">理论手册</a>
+      <a href="../docs/books/">教材证据</a>
+      <a href="../../">工作台</a>
+    </nav>
+  </div>
+</header>
+
+<div class="app-shell wrap">
+  <section class="hero" aria-labelledby="hero-title">
+    <p class="eyebrow">规则 · 生成 · 检查 · 可回查</p>
+    <h1 id="hero-title">把复调写作拆成可检查的条件</h1>
+    <p class="lead">从五类对位的强拍与不协和处理，到卡农的进入关系、赋格的调性布局。生成器只给规则合格的骨架，检查器指出具体声部、拍点与冲突。</p>
+    <div class="hero-notes">
+      <span><b>46</b> 个教材页锚点</span>
+      <span><b>40</b> 条直接论点</span>
+      <span><b>18</b> 本独立教材</span>
+      <span>浏览器本地计算</span>
+    </div>
+  </section>
+
+  <nav class="tabs" id="tabs" aria-label="功能页">
+    <button class="tab active" type="button" data-tab="periods">历史阶段</button>
+    <button class="tab" type="button" data-tab="species">五类对位</button>
+    <button class="tab" type="button" data-tab="canon">卡农</button>
+    <button class="tab" type="button" data-tab="fugue">赋格</button>
+    <button class="tab" type="button" data-tab="checker">声部检查器</button>
+  </nav>
+
+  <main id="main">
+    <section class="tab-panel active" id="panel-periods">
+      <div class="section-head">
+        <div><p class="eyebrow">先换问题，再换规则</p><h2>四个阶段，四种约束系统</h2></div>
+        <p class="section-note">每张卡只回答：当时的写作问题是什么、规则为什么变化、哪些手法成为结构手段。</p>
+      </div>
+      <div class="timeline" id="periodTabs" role="tablist" aria-label="历史阶段"></div>
+      <div class="period-layout">
+        <article class="panel period-detail" id="periodDetail" aria-live="polite"></article>
+        <aside class="panel side-stack">
+          <div class="panel-head"><h3>本阶段的判断顺序</h3></div>
+          <ol class="compact-list" id="periodSteps"></ol>
+          <div class="evidence-note" id="periodEvidence"></div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="tab-panel" id="panel-species">
+      <div class="section-head">
+        <div><p class="eyebrow">严格对位的约束实验</p><h2>五种节奏型，五种不协和位置</h2></div>
+        <p class="section-note">固定调在低音。生成器先锁定强拍和声骨架，再填入经过、辅助、延留或混合节奏。</p>
+      </div>
+      <div class="tool-grid">
+        <section class="panel controls">
+          <div class="panel-head"><h3>生成条件</h3><span class="status-pill" id="speciesStatus">待生成</span></div>
+          <label class="field"><span>固定调</span><select id="cfSelect"></select></label>
+          <div class="field"><span>对位类型</span><div class="segmented" id="speciesButtons"></div></div>
+          <div class="button-row"><button class="button primary" id="btnGenerateSpecies" type="button">生成对位骨架</button><button class="button" id="btnPlaySpecies" type="button" disabled>▶ 试听</button></div>
+          <div class="mini-note">试听为简单正弦波，只用于核对节奏和音高，不代表音乐表现。</div>
+        </section>
+        <section class="panel principle-card" id="speciesPrinciple"></section>
+      </div>
+      <section class="panel output-panel">
+        <div class="panel-head"><h3>声部网格</h3><span class="muted">每格一拍；CF 为全音符，对位声部按所选类型展开</span></div>
+        <div class="score-scroll" id="speciesScore"><div class="empty-state">选择固定调与类型后生成。</div></div>
+        <div class="diagnostic-summary" id="speciesSummary"></div>
+        <div class="issue-list" id="speciesIssues"></div>
+      </section>
+    </section>
+
+    <section class="tab-panel" id="panel-canon">
+      <div class="section-head">
+        <div><p class="eyebrow">时间差 + 音程 + 变形</p><h2>卡农不是重复，是可预测的复制</h2></div>
+        <p class="section-note">先写应句进入前的主句片段，再按音程抄写，最后续写主句与已出现应句相对的部分。生成器按这一顺序模拟。</p>
+      </div>
+      <div class="tool-grid canon-tools">
+        <section class="panel controls">
+          <label class="field"><span>主句预设</span><select id="subjectPreset"></select></label>
+          <label class="field"><span>主句音高（可编辑）</span><textarea id="canonSubject" rows="3" spellcheck="false"></textarea></label>
+          <div class="control-row">
+            <label class="field"><span>进入延迟（拍）</span><select id="canonDelay"><option value="2">2 拍</option><option value="4" selected>4 拍（1 小节）</option><option value="6">6 拍</option><option value="8">8 拍（2 小节）</option></select></label>
+            <label class="field"><span>音程</span><select id="canonInterval"><option value="12" selected>上八度</option><option value="7">上五度</option><option value="-5">下四度</option><option value="9">上六度</option><option value="16">上十度</option><option value="0">同度</option></select></label>
+          </div>
+          <label class="field"><span>变形</span><select id="canonTransform"><option value="none" selected>原形</option><option value="inversion">倒影</option><option value="retrograde">逆行</option><option value="augmentation">扩大时值</option></select></label>
+          <div class="button-row"><button class="button primary" id="btnGenerateCanon" type="button">生成卡农关系</button><button class="button" id="btnPlayCanon" type="button" disabled>▶ 试听</button></div>
+        </section>
+        <section class="panel principle-card">
+          <p class="eyebrow">两个必须同时成立的平面</p><h3>横向：应句复制主句；纵向：重叠处仍能对位</h3>
+          <p>进入延迟决定重叠密度；音程决定应句的音区与调性后果；变形改变旋律轮廓或时值，但不取消这两个平面。</p>
+          <div class="rule-pair"><div><b>非八度卡农</b><span>精确移位可能产生临时升降号；为保持调性，应句常需改动个别音。</span></div><div><b>紧接进入</b><span>时间差越小，声部越容易交错；同度/二度卡农常改写为八度/十度。</span></div></div>
+          <div class="source-links" id="canonSources"></div>
+        </section>
+      </div>
+      <section class="panel output-panel">
+        <div class="panel-head"><h3>两声部时间网格</h3><span class="muted" id="canonMeta"></span></div>
+        <div class="score-scroll" id="canonScore"><div class="empty-state">生成后显示主句与应句。</div></div>
+        <div class="diagnostic-summary" id="canonSummary"></div>
+        <div class="issue-list" id="canonIssues"></div>
+      </section>
+    </section>
+
+    <section class="tab-panel" id="panel-fugue">
+      <div class="section-head">
+        <div><p class="eyebrow">主题进入 × 调性运动</p><h2>先搭结构，再写具体对位</h2></div>
+        <p class="section-note">赋格骨架只决定：谁在什么时候、什么调、以主题还是答题进入，以及间插、紧接、持续音和再现的位置。</p>
+      </div>
+      <div class="tool-grid">
+        <section class="panel controls fugue-controls">
+          <div class="control-row three">
+            <label class="field"><span>主音</span><select id="fugueKey"></select></label>
+            <label class="field"><span>调式</span><select id="fugueMode"><option value="major">大调</option><option value="minor">小调</option></select></label>
+            <label class="field"><span>声部</span><select id="fugueVoices"><option value="2">2</option><option value="3" selected>3</option><option value="4">4</option><option value="5">5</option></select></label>
+          </div>
+          <div class="control-row">
+            <label class="field"><span>答题</span><select id="fugueAnswer"><option value="tonal" selected>守调答题</option><option value="real">真实答题</option></select></label>
+            <label class="field"><span>主题轮廓</span><select id="fugueSubject"><option value="classic" selected>级进拱形</option><option value="leaping">跳进型</option><option value="compact">短小型</option><option value="chromatic">半音型</option></select></label>
+          </div>
+          <label class="field"><span>结构规模</span><select id="fugueLayout"><option value="standard" selected>标准：中间部 + 紧接 + 持续音</option><option value="compact">紧凑：呈示 + 紧接 + 再现</option></select></label>
+          <div class="button-row"><button class="button primary" id="btnPlanFugue" type="button">生成赋格结构计划</button></div>
+        </section>
+        <section class="panel principle-card" id="fuguePrinciple"></section>
+      </div>
+      <section class="panel output-panel">
+        <div class="panel-head"><h3>主题与答题</h3><span class="muted" id="fugueMeta"></span></div>
+        <div class="subject-strip" id="fugueSubjectLine"></div>
+        <div class="chart-wrap"><div class="structure-chart" id="fugueChart"></div></div>
+        <div class="table-wrap"><table class="plan-table" id="fugueTable"></table></div>
+        <div class="diagnostic-summary" id="fugueSummary"></div>
+        <div class="issue-list" id="fugueIssues"></div>
+      </section>
+    </section>
+
+    <section class="tab-panel" id="panel-checker">
+      <div class="section-head">
+        <div><p class="eyebrow">逐拍、逐声部、逐音程</p><h2>把“听着不对”变成具体位置</h2></div>
+        <p class="section-note">每行一个声部，从高到低排列。每格一拍，用音名或 MIDI 数字。休止写 -。要检查延留，请在下一拍重复同一个音名。</p>
+      </div>
+      <div class="checker-grid">
+        <section class="panel controls">
+          <label class="field"><span>声部（从高到低）</span><textarea id="checkerInput" rows="8" spellcheck="false"></textarea></label>
+          <div class="control-row">
+            <label class="field"><span>每小节拍数</span><select id="checkerMeter"><option value="2">2</option><option value="3">3</option><option value="4" selected>4</option><option value="6">6</option></select></label>
+            <label class="field"><span>风格</span><select id="checkerStyle"><option value="strict" selected>严格对位</option><option value="free">自由/现代</option></select></label>
+          </div>
+          <div class="button-row"><button class="button primary" id="btnCheck" type="button">检查声部</button><button class="button" id="btnLoadExample" type="button">载入示例</button></div>
+          <div class="mini-note">严格模式检查强拍不协和、经过/辅助、延留解决、平行五八度、声部交叉与大跳补偿。自由模式只保留结构性冲突提示。</div>
+        </section>
+        <section class="panel result-panel">
+          <div class="panel-head"><h3>结果</h3><span class="status-pill" id="checkerStatus">未检查</span></div>
+          <div class="summary-bars" id="checkerSummary"></div>
+          <div class="issue-list" id="checkerIssues"><div class="empty-state">输入两个或更多声部，或点击“载入示例”。</div></div>
+        </section>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>复调推演台 · 规则筛选器，不冒充完整作曲</span>
+    <span><a href="../../">工作台</a> · <a href="../docs/复调音乐手册.html">理论手册</a> · <a href="../../README.md">项目说明</a></span>
+  </footer>
+</div>
+
+<script src="data/theory-data.js"></script>
+<script src="data/evidence-links.js"></script>
+<script src="js/engine.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

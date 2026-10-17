@@ -1,0 +1,699 @@
+{
+  "generatedAt": "2026-10-18",
+  "pageConvention": "pdf",
+  "note": "页码均为 PDF 物理页；影印图与 OCR 只用于核验手册论点。",
+  "claims": [
+    {
+      "id": "hist.style-system",
+      "group": "history",
+      "title": "对位规则依附于当时的调式与和声语言",
+      "principle": "分类对位不是超历史的自然法。文艺复兴调式、巴洛克大小调与二十世纪音高组织，会改变什么算协和、什么算必须解决的 dissonance。",
+      "manualAnchor": "periods",
+      "citations": [
+        {
+          "bookId": "yang_species",
+          "pdfPage": 12,
+          "printedPage": 3,
+          "chapter": "前言：对位法教学发展回顾与本书要点",
+          "quote": "任何一个时期的对位风格都基于该时期的调式与和声语言。"
+        }
+      ]
+    },
+    {
+      "id": "hist.strict-training",
+      "group": "history",
+      "title": "严格复对位是进入自由写作的训练，不是创作禁令",
+      "principle": "复对位的严格练习把可转位性、协和框架与声部独立压缩成可控条件；实际作品仍按风格放松细节。",
+      "manualAnchor": "periods",
+      "citations": [
+        {
+          "bookId": "prout",
+          "pdfPage": 16,
+          "chapter": "序",
+          "quote": "对于实际作曲中所应用的复对位而言，这只能算作一种基本的入门技术；然而，严格对位的基本原则，还是要遵的。"
+        }
+      ]
+    },
+    {
+      "id": "hist.tonal-basis",
+      "group": "history",
+      "title": "巴洛克赋格以大小调功能和声为底层",
+      "principle": "主题、答题、对题与间插段不只是旋律模仿；它们同时承担主属关系、离调、终止与低音持续。",
+      "manualAnchor": "periods",
+      "citations": [
+        {
+          "bookId": "yang_free",
+          "pdfPage": 165,
+          "printedPage": 155,
+          "chapter": "第二十一课 赋格曲整体布局",
+          "quote": "上述特征几乎代表了从巴洛克时期到浪漫主义时期所有的调性关系，赋格曲的调性关系同样如此。"
+        }
+      ]
+    },
+    {
+      "id": "species.first-boundaries",
+      "group": "species",
+      "title": "第一类：首尾用完全协和，内部避免连续完全协和",
+      "principle": "二声部一音对一音以协和音程为全部骨架；首尾用同度、五度或八度确认调性，中段连续三个以上完全协和会失去声部独立与音响支撑。",
+      "manualAnchor": "species-1",
+      "citations": [
+        {
+          "bookId": "yang_species",
+          "pdfPage": 20,
+          "printedPage": 11,
+          "chapter": "第三课 二声部第一类：一音对一音",
+          "quote": "每道习题的头尾小节必须使用原位的、最好是省略三音的主和弦……在二声部织体中，连续两个完全协和音程是没有问题的，但三个或更多则需要避免。"
+        }
+      ]
+    },
+    {
+      "id": "species.second-passing",
+      "group": "species",
+      "title": "第二类：强拍协和，弱拍才容纳经过音与辅助音",
+      "principle": "二音对一音把每小节前半拍当作和声骨架。弱拍 dissonance 必须由级进产生并级进离开；跳到弱拍时，落点应仍是同一和弦的和弦音。",
+      "manualAnchor": "species-2",
+      "citations": [
+        {
+          "bookId": "yang_species",
+          "pdfPage": 25,
+          "printedPage": 16,
+          "chapter": "第四课 二声部第二类：一音对二音",
+          "quote": "经过音和辅助音……只出现在弱拍，前后必须级进。……如果跳进到弱拍，则必须跳进到同一和弦的和弦音。"
+        }
+      ]
+    },
+    {
+      "id": "species.third-parallels",
+      "group": "species",
+      "title": "第三类：平行五、八度按实际发声音程判断",
+      "principle": "四音对一音不因节奏变快而放宽平行完全音程。要检查相邻发声音符形成的五度/八度，而不只看每拍第一个音。",
+      "manualAnchor": "species-3",
+      "citations": [
+        {
+          "bookId": "yang_species",
+          "pdfPage": 30,
+          "printedPage": 21,
+          "chapter": "第五课 二声部第三类：一音对四音",
+          "quote": "总的原则是尽量不让这些平行出现在四个四分音符之内。如果出现，就将其中的音置于较弱的节拍位置。"
+        }
+      ]
+    },
+    {
+      "id": "species.fourth-suspension",
+      "group": "species",
+      "title": "第四类：延留音要经过预备、强拍不协和、下行级进解决",
+      "principle": "切分音把前一弱拍的和弦音带入下一强拍。若该音在新和声上不协和，它就必须在强拍承担张力，并向下级进解决。严格对位中不接受上行或跳进解决。",
+      "manualAnchor": "species-4",
+      "citations": [
+        {
+          "bookId": "yang_species",
+          "pdfPage": 39,
+          "printedPage": 30,
+          "chapter": "第六课 二声部第四类：切分音",
+          "quote": "延留音从出现到解决的过程包括：预备音……延留音……解决音……在分类对位中，延留音必须二度下行级进解决，没有例外。"
+        }
+      ]
+    },
+    {
+      "id": "species.fifth-rhythm",
+      "group": "species",
+      "title": "第五类：混合节奏仍服从强拍和声，但不能机械重复",
+      "principle": "第五类把前四类的音型合并。判断标准不是音符越多越自由，而是每个结构强拍仍能读出和声，同时各声部的节奏重音错开。",
+      "manualAnchor": "species-5",
+      "citations": [
+        {
+          "bookId": "lin",
+          "pdfPage": 47,
+          "chapter": "第五章 第五类对位：混合节奏",
+          "quote": "复调旋律的写作应当尽可能地使节奏组合时产生的自然强势……与节拍的周期性强势不一致。"
+        }
+      ]
+    },
+    {
+      "id": "invert.definition",
+      "group": "invertible",
+      "title": "复对位：交换声部后和声仍然成立",
+      "principle": "复对位的核心不是“写两条好旋律”，而是同一对音高关系在上下交换后仍满足纵向规则。写作时必须同时检查原位与转位。",
+      "manualAnchor": "invertible",
+      "citations": [
+        {
+          "bookId": "prout",
+          "pdfPage": 15,
+          "printedPage": 1,
+          "chapter": "第一章 绪论",
+          "quote": "要是有两个同时演奏的曲调写成能转位的，即任何一声部能上下掉换的，而和声仍保持正确的，为复对位。"
+        }
+      ]
+    },
+    {
+      "id": "invert.formula",
+      "group": "invertible",
+      "title": "转位音程的公式：转位度数加一，再减原音程度数",
+      "principle": "八度转位用 9 减原音程；十度用 11 减；十二度用 13 减。这个公式直接决定哪些音程会在转位后变成不协和。",
+      "manualAnchor": "invertible",
+      "citations": [
+        {
+          "bookId": "prout",
+          "pdfPage": 17,
+          "chapter": "第一章 绪论：转位音程的计算",
+          "quote": "要找出任何度数转位后的音程，只要转位音程加一，再减去原有音程数即得。"
+        }
+      ]
+    },
+    {
+      "id": "invert.fifth",
+      "group": "invertible",
+      "title": "八度复对位中，纯五度转位后成为四度",
+      "principle": "因此在八度复对位原位写作时，五度不能像在单对位中那样无条件当作稳定协和；它要预先作为经过音、辅助音或延留音处理。",
+      "manualAnchor": "invertible",
+      "citations": [
+        {
+          "bookId": "lin",
+          "pdfPage": 59,
+          "chapter": "第七章 第二节 八度纵向复对位",
+          "quote": "在八度的移幅中，不完全协和与不协和音程性质不变，唯完全协和音程纯五度，转位后成为不稳定的四度。"
+        }
+      ]
+    },
+    {
+      "id": "invert.multiple",
+      "group": "invertible",
+      "title": "同一对声部可以同时为多种转位写作",
+      "principle": "八度、十度、十二度转位可以叠加。能同时在多个位置成立，意味着同一素材可用于呈示、中间部与再现的声部交换。",
+      "manualAnchor": "invertible",
+      "citations": [
+        {
+          "bookId": "cannan",
+          "pdfPage": 131,
+          "printedPage": 117,
+          "chapter": "第九章 复对位",
+          "quote": "一些成对的声部只做八度复对位，有些则运用八度以外音程的复对位，少数运用两种不同的音程转位。"
+        }
+      ]
+    },
+    {
+      "id": "canon.definition",
+      "group": "canon",
+      "title": "卡农是完全模仿；应句持续追随主句",
+      "principle": "卡农不是“听起来像模仿”，而是应句按确定的时间差和音程关系复制主句。局部停止模仿后转入自由对位的，不再构成完整卡农。",
+      "manualAnchor": "canon",
+      "citations": [
+        {
+          "bookId": "lin",
+          "pdfPage": 66,
+          "printedPage": 55,
+          "chapter": "第八章 声乐化旋律的模仿",
+          "quote": "应句若自始至终追随主句者，谓完全模仿，以此方式构成的独立乐曲，谓卡农曲。"
+        }
+      ]
+    },
+    {
+      "id": "canon.interval-adjust",
+      "group": "canon",
+      "title": "非八度卡农要作调性调整",
+      "principle": "精确移位可能把旋律带入临时升降号或远关系。为了留在原调，常须在应句中改动个别音；这种调整不破坏卡农关系。",
+      "manualAnchor": "canon",
+      "citations": [
+        {
+          "bookId": "cannan",
+          "pdfPage": 107,
+          "printedPage": 93,
+          "chapter": "第八章 卡农",
+          "quote": "在其他音程度数的卡农中，通常有必要在应句中相应地改变某些音，以获得调性的统一。"
+        }
+      ]
+    },
+    {
+      "id": "canon.process",
+      "group": "canon",
+      "title": "卡农按“先写露出部分，再抄写，再续写”推进",
+      "principle": "不要先写完主句再硬配应句。先写应句进入前的主句片段，按音程抄入应句，再写主句与已出现的应句相对的部分，逐段推进。",
+      "manualAnchor": "canon",
+      "citations": [
+        {
+          "bookId": "cannan",
+          "pdfPage": 108,
+          "printedPage": 94,
+          "chapter": "第八章 卡农：二声部卡农写作",
+          "quote": "不要一开始就把起句完全写好，再试图在此基础之上写作卡农。应先将应句出现前的起句写好，然后将这些材料按照所使用的音程距离抄到应句中，再以符合良好对位的方式继续写作起句声部。"
+        }
+      ]
+    },
+    {
+      "id": "canon.delay",
+      "group": "canon",
+      "title": "进入距离通常一到三小节",
+      "principle": "进入太晚，主题的对应关系难被记住；进入太早，声部容易交错。常见做法是一个小节左右，具体由主题长度和音程决定。",
+      "manualAnchor": "canon",
+      "citations": [
+        {
+          "bookId": "prout",
+          "pdfPage": 194,
+          "chapter": "第十二章 二部卡农",
+          "quote": "普通相距二小节，至多三小节就够，多数优良的卡农曲都为相距一小节，甚至更少。"
+        }
+      ]
+    },
+    {
+      "id": "canon.overlap",
+      "group": "canon",
+      "title": "紧接进入会压缩声部空间",
+      "principle": "同度或二度卡农常因声部交错难以辨认，于是改写为八度或十度卡农；这不是规避规则，而是在保持卡农关系的同时保留声部辨识度。",
+      "manualAnchor": "canon",
+      "citations": [
+        {
+          "bookId": "prout",
+          "pdfPage": 194,
+          "chapter": "第十二章 二部卡农：音程选择",
+          "quote": "同度及二度卡农常写成八度及九度卡农；甚至三度卡农也常代之以十度卡农。"
+        }
+      ]
+    },
+    {
+      "id": "fugue.definition",
+      "group": "fugue",
+      "title": "赋格用模仿与对比展开一个固定主题，不等于通篇卡农",
+      "principle": "卡农要求从头到尾精确模仿；赋格只把模仿作为结构手段，并加入调性布局、对题、间插段、紧接和再现。",
+      "manualAnchor": "fugue-overall",
+      "citations": [
+        {
+          "bookId": "duan_lower",
+          "pdfPage": 4,
+          "printedPage": 2,
+          "chapter": "第十章 赋格概述",
+          "quote": "卡农曲……都须从头到尾保持精确的模仿；而赋格曲……比较自由的脱离了精确的模仿。"
+        }
+      ]
+    },
+    {
+      "id": "fugue.subject-identity",
+      "group": "fugue",
+      "title": "主题必须可辨认、可重复、可发展",
+      "principle": "主题不是随便一句旋律。首部要有清楚的动机与节奏标记，使它在转调、扩大、倒影或密接中仍能被听出；同时要能承载答题、对题和间插段。",
+      "manualAnchor": "fugue-subject",
+      "citations": [
+        {
+          "bookId": "chen_new",
+          "pdfPage": 20,
+          "printedPage": 1,
+          "chapter": "第一章 主题的构成",
+          "quote": "赋格曲的主题，应具有鲜明的形象和突出的个性，它的旋律型必须有明显的特征。"
+        },
+        {
+          "bookId": "higgs",
+          "pdfPage": 17,
+          "chapter": "第二章 主题：提要",
+          "quote": "主题应当宜于处理为密接和应及插句。"
+        }
+      ]
+    },
+    {
+      "id": "fugue.subject-properties",
+      "group": "fugue",
+      "title": "主题的调性、长度、音域与收束位置",
+      "principle": "多数主题留在主调或只触及属调；声乐赋格常不超过一个八度；主题通常结束在强拍，长度要足以成为完整乐思，又不能长到妨碍多声部进入。",
+      "manualAnchor": "fugue-subject",
+      "citations": [
+        {
+          "bookId": "higgs",
+          "pdfPage": 17,
+          "chapter": "第二章 主题：§17-19 提要",
+          "quote": "主题不应当有太宽的音域，声乐赋格曲的主题很少超过一个八度……主题可从小节中的任何节奏位置上开始，但通常结束在强拍上。"
+        },
+        {
+          "bookId": "duan_lower",
+          "pdfPage": 14,
+          "printedPage": 12,
+          "chapter": "第十一章 赋格的呈示部分：主题",
+          "quote": "由于主题的音乐内容比较集中，加上还要适于各声部轮流模仿，一般不宜过长。"
+        }
+      ]
+    },
+    {
+      "id": "fugue.answer-dominant",
+      "group": "fugue",
+      "title": "答题是主题在属方向的回答",
+      "principle": "答题不是新主题。它通常把主题移高五度或移低四度，使呈示部的主、属两极建立起来；答题的尾部若回主调，就完成一次调性往返。",
+      "manualAnchor": "fugue-answer",
+      "citations": [
+        {
+          "bookId": "chen_new",
+          "pdfPage": 38,
+          "printedPage": 19,
+          "chapter": "第二章 答题的意义",
+          "quote": "当主题在一个声部出现后，接着又在另一声部上作模仿，通常都是在移高五度或移低四度的调上出现。这个在新调上重新出现的主题，称为答题。"
+        }
+      ]
+    },
+    {
+      "id": "fugue.tonal-answer",
+      "group": "fugue",
+      "title": "守调答题只改动会破坏主属边界的位置",
+      "principle": "主题从属音开始，或主音后立即跳到属音时，完全移调会让答题一开始就离开主属范围。守调答题把首次出现的属音改为主音；没有这种主属冲突时，仍可用真实答题。",
+      "manualAnchor": "fugue-answer",
+      "citations": [
+        {
+          "bookId": "lin",
+          "pdfPage": 218,
+          "printedPage": 207,
+          "chapter": "第二十章 答题和对题",
+          "quote": "主题以属音开始者。作答题时把主要乐思移至属调，但其中的属音须改为主音。"
+        },
+        {
+          "bookId": "higgs",
+          "pdfPage": 24,
+          "chapter": "第二章 答题：§46",
+          "quote": "主题如果从属音开始，则答题就是守调的；这时一般只要把第一个音加以调整即可。"
+        }
+      ]
+    },
+    {
+      "id": "fugue.countersubject",
+      "group": "fugue",
+      "title": "对题在答题进入时形成，固定对题要与主题构成可转位关系",
+      "principle": "对题不是伴奏。它在答题出现时与主题的声部继续对位，常以节奏和音调的对比补足主题；若每次随主题出现，就须按二重对位写作，使上下交换仍成立。",
+      "manualAnchor": "fugue-countersubject",
+      "citations": [
+        {
+          "bookId": "chen_new",
+          "pdfPage": 53,
+          "printedPage": 34,
+          "chapter": "第三章 对题的作用",
+          "quote": "伴随主题或答题的对位旋律，称为对题。第一次出现的对题是伴随着答题进入的。"
+        },
+        {
+          "bookId": "chen_new",
+          "pdfPage": 69,
+          "printedPage": 50,
+          "chapter": "第四章 呈示部的组合",
+          "quote": "若为固定对题则需要按照二重对位的处理方法写作。"
+        }
+      ]
+    },
+    {
+      "id": "fugue.exposition-order",
+      "group": "fugue",
+      "title": "呈示部按声部数完成主题与答题的交替",
+      "principle": "二声部是主题—答题；三声部是主题—答题—主题；四声部是主题—答题—主题—答题。每次进入都应有清楚的音区与声部定位。",
+      "manualAnchor": "fugue-exposition",
+      "citations": [
+        {
+          "bookId": "chen_new",
+          "pdfPage": 68,
+          "printedPage": 49,
+          "chapter": "第四章 呈示部的组合",
+          "quote": "二声部赋格曲的呈示部进入两次，主题—答题。三声部进入三次，主题—答题—主题。四声部进入四次，主题—答题—主题—答题。"
+        }
+      ]
+    },
+    {
+      "id": "fugue.exposition-principles",
+      "group": "fugue",
+      "title": "呈示部要求所有声部出场，并建立主属调性",
+      "principle": "呈示部不是“主题第一次出现”的同义词，而是所有声部依次陈述主题或答题的段落。它通常停在主调，随后才进入中间部。",
+      "manualAnchor": "fugue-exposition",
+      "citations": [
+        {
+          "bookId": "duan_lower",
+          "pdfPage": 40,
+          "printedPage": 38,
+          "chapter": "第十一章 赋格的呈示部分：布局",
+          "quote": "所有的声部在呈示部中必须全部出现……它们一般是按主调（主题）、属调（答题）交替的顺序排列。"
+        }
+      ]
+    },
+    {
+      "id": "fugue.episode-definition",
+      "group": "fugue",
+      "title": "间插段位于主题再次进入之前",
+      "principle": "间插段不是主题陈述，而是连接。它通常从主题或对题抽取动机，以模进、模仿或转位推进和声，并把音乐送到下一调的入口。",
+      "manualAnchor": "fugue-episode",
+      "citations": [
+        {
+          "bookId": "chen_new",
+          "pdfPage": 96,
+          "printedPage": 77,
+          "chapter": "第五章 间插段的功能",
+          "quote": "在呈示部以后，主题每次重新进入之前出现的音乐段落，称为间插段。"
+        }
+      ]
+    },
+    {
+      "id": "fugue.episode-function",
+      "group": "fugue",
+      "title": "间插段的核心功能是转调与动力",
+      "principle": "间插段可以短暂离调，也可以完成到新调的过渡；它的材料通常来自主题或对题，但处理更流动、更模进化。",
+      "manualAnchor": "fugue-episode",
+      "citations": [
+        {
+          "bookId": "chen_new",
+          "pdfPage": 98,
+          "printedPage": 79,
+          "chapter": "第五章 间插段的功能",
+          "quote": "在间插段的调性发展方面，不仅本身可作离调或移调的处理，而且当主题在新的调性上进入时，也要通过间插段逐步过渡到新的调性上去。"
+        },
+        {
+          "bookId": "yang_free",
+          "pdfPage": 158,
+          "printedPage": 148,
+          "chapter": "第二十课 展开与再现、间插段",
+          "quote": "间插段……本身游移、不稳定的和声进行以及导入功能是我们要了解和掌握的。"
+        }
+      ]
+    },
+    {
+      "id": "fugue.middle",
+      "group": "fugue",
+      "title": "中间部是完整主题进入与间插段的交替",
+      "principle": "主题在中间部通常离开主属轴心，进入关系调、下属方向或更远调性；它保持主题的完整轮廓，同时以音区、配器、和声与对题变化展开。",
+      "manualAnchor": "fugue-middle",
+      "citations": [
+        {
+          "bookId": "lin",
+          "pdfPage": 237,
+          "chapter": "第二十二章 中间部结构",
+          "quote": "赋格曲的中间部指主要乐思完成呈示程序之后，至乐曲进入再现之前的段落。在这个部分中两种织体间隔交替地出现，一是主要乐思在主属调以外的调性上作完整陈述，一是在这些完整陈述之间出现间插段。"
+        }
+      ]
+    },
+    {
+      "id": "fugue.stretto-definition",
+      "group": "fugue",
+      "title": "密接和应：主题尚未结束就再次进入",
+      "principle": "紧接进入的条件是时间重叠。它增加和声密度与调性张力，并要求主题在音程、音区和可结合性上预先设计。",
+      "manualAnchor": "fugue-stretto",
+      "citations": [
+        {
+          "bookId": "chen_new",
+          "pdfPage": 136,
+          "printedPage": 117,
+          "chapter": "第七章 紧接模仿的特性",
+          "quote": "主题在一声部进入尚未结束时，又在另一声部紧接着出现，称为紧接模仿（或称为密接和应）。"
+        },
+        {
+          "bookId": "higgs",
+          "pdfPage": 61,
+          "chapter": "密接和应",
+          "quote": "每一声部的进入距离一定都是相等的，而且在通常的音程中，以“属”回答“主”的关系。"
+        }
+      ]
+    },
+    {
+      "id": "fugue.stretto-difference",
+      "group": "fugue",
+      "title": "密接和应不是整首卡农",
+      "principle": "它只在局部让主题重叠；重叠结束后仍回到自由对位、间插或下一次主题进入。",
+      "manualAnchor": "fugue-stretto",
+      "citations": [
+        {
+          "bookId": "chen_new",
+          "pdfPage": 138,
+          "printedPage": 119,
+          "chapter": "第七章 紧接模仿的特性",
+          "quote": "紧接模仿只是在另一声部重复主题的结构，紧接模仿结束后即转入自由发展的段落。"
+        }
+      ]
+    },
+    {
+      "id": "fugue.recap",
+      "group": "fugue",
+      "title": "再现以主调回归为骨架，常带变化",
+      "principle": "再现不是把呈示部抄一遍。它通常回到主调，并改变声部顺序、对题、紧接、织体或主题变形，使前面材料获得总结。",
+      "manualAnchor": "fugue-recap",
+      "citations": [
+        {
+          "bookId": "chen_new",
+          "pdfPage": 154,
+          "printedPage": 135,
+          "chapter": "第八章 再现部的回归",
+          "quote": "原封不动地重复呈示部分几乎是没有的，常常是带有变化性的、富有动力性的再现。"
+        }
+      ]
+    },
+    {
+      "id": "fugue.pedal",
+      "group": "fugue",
+      "title": "持续音加强属到主的结构支点",
+      "principle": "属持续常放在再现开始前或紧接段下方，主持续常放在结尾确认主调。持续音必须从和弦音开始，并在和弦音上结束。",
+      "manualAnchor": "fugue-recap",
+      "citations": [
+        {
+          "bookId": "chen_new",
+          "pdfPage": 165,
+          "printedPage": 146,
+          "chapter": "第八章 再现部的回归：持续音",
+          "quote": "持续音应从一个和弦内音上开始，而常常又是在一个和弦内音上结束……最常见的是在属音与主音上形成的持续音。"
+        }
+      ]
+    },
+    {
+      "id": "fugue.overall",
+      "group": "fugue",
+      "title": "整体布局把主题进入与调性运动对齐",
+      "principle": "呈示部建立主属；中间部用关系调与下属方向扩展，并以间插段连接；再现回到主调，最后用紧接、持续音与尾声收束。",
+      "manualAnchor": "fugue-overall",
+      "citations": [
+        {
+          "bookId": "chen_new",
+          "pdfPage": 172,
+          "printedPage": 153,
+          "chapter": "第九章 单一主题赋格曲的整体布局",
+          "quote": "单一主题赋格曲是以一个主题为中心，通过主题的各种变形和调式、调性以及音区等方面的转换，将各个部分紧密地联系在一起，形成连贯性的发展。"
+        },
+        {
+          "bookId": "duan_lower",
+          "pdfPage": 5,
+          "printedPage": 3,
+          "chapter": "第十章 赋格概述：一般结构",
+          "quote": "呈示部……是所有（三个）声部都轮流参加的主题陈述段落……中间部分……开始脱离了以前的两个基本调（主和属），引进其它的调式或移入新的调性。"
+        }
+      ]
+    },
+    {
+      "id": "fugue.multiple",
+      "group": "fugue",
+      "title": "二重/三重赋格：每个主题都有独立呈示与发展",
+      "principle": "多主题赋格不是把两个动机硬叠在一起。每个主题要能独立成为完整乐思，并预先写成可转位的组合，才能在再现中交换声部。",
+      "manualAnchor": "fugue-multiple",
+      "citations": [
+        {
+          "bookId": "chen_new",
+          "pdfPage": 211,
+          "printedPage": 192,
+          "chapter": "第十章 多主题赋格曲",
+          "quote": "根据两个或三个主题写作的赋格曲，则称为二重赋格曲或三重赋格曲，即多主题赋格曲。"
+        },
+        {
+          "bookId": "chen_new",
+          "pdfPage": 212,
+          "printedPage": 193,
+          "chapter": "第十章 多主题赋格曲",
+          "quote": "在二重、三重赋格曲的写作中，主题应事先写成二重或三重对位（大多是八度的音程关系）。"
+        }
+      ]
+    },
+    {
+      "id": "fugue.bach-structure",
+      "group": "fugue",
+      "title": "巴赫式近代赋格：起段、中段、结段",
+      "principle": "起段完整呈示；中段以间插与主题再陈述交替并作调性扩展；结段回到主调并完成收束。三段功能比“固定小节数”更重要。",
+      "manualAnchor": "fugue-overall",
+      "citations": [
+        {
+          "bookId": "yao",
+          "pdfPage": 49,
+          "printedPage": 41,
+          "chapter": "第四章 巴赫赋格曲的结构与类别",
+          "quote": "近代赋格曲将全曲分三段：①「起段」、②「中段」、③「结段」。"
+        },
+        {
+          "bookId": "yao",
+          "pdfPage": 50,
+          "printedPage": 42,
+          "chapter": "第四章 巴赫赋格曲的结构与类别",
+          "quote": "中段：在起段之后，采用已出现的入句。与主题的再陈述轮流交替出现。且主题的原有形式可以被用在主调或属调上及转位中。"
+        }
+      ]
+    },
+    {
+      "id": "fugue.subject-memory",
+      "group": "fugue",
+      "title": "主题的长度由“可记忆”与“可处理”共同决定",
+      "principle": "过短难以形成印象，过长会削弱答题的模仿效果；判断标准是主题能否在若干声部与变形中保持统一。",
+      "manualAnchor": "fugue-subject",
+      "citations": [
+        {
+          "bookId": "yao",
+          "pdfPage": 34,
+          "printedPage": 26,
+          "chapter": "第三章 赋格曲的重要题材：主题",
+          "quote": "具有适度的长度，以便易于记忆。如过于长，则对答句的模仿性将失其效果；如过短，则对主题的印象不深。"
+        }
+      ]
+    },
+    {
+      "id": "modern.parallels",
+      "group": "modern",
+      "title": "现代对位可以允许平行五度",
+      "principle": "当纵向音响不再由传统三和弦功能主导时，平行完全音程可以成为有控制的线条结果。米德尔顿的规则同时保留了纯八度的限制；这不是“所有现代作品都如此”。",
+      "manualAnchor": "modern",
+      "citations": [
+        {
+          "bookId": "middleton",
+          "pdfPage": 59,
+          "printedPage": 57,
+          "chapter": "第八章 二部对位运动",
+          "quote": "各种类型的平行运动都是允许的，包括平行五度。由于纯八度的应用本来已有所限制，故这里不必担心会发生同向八度与平行八度。"
+        }
+      ]
+    },
+    {
+      "id": "modern.intervals",
+      "group": "modern",
+      "title": "现代对位中的音程选择服从音阶与语境",
+      "principle": "一音对一音可以使用除纯八度、同度外的多数和声音程；增减音程仍要按所选音阶模式处理。判断依据从“固定和弦功能”转为“音阶集合与旋律解决”。",
+      "manualAnchor": "modern",
+      "citations": [
+        {
+          "bookId": "middleton",
+          "pdfPage": 60,
+          "printedPage": 58,
+          "chapter": "第八章 二部对位运动：一音对一音",
+          "quote": "在一音对一音的对位中，所有的和声音程都可自由应用（纯八度与纯同度除外）。增、减音程……必须按……方法进行解决。"
+        }
+      ]
+    },
+    {
+      "id": "modern.scale",
+      "group": "modern",
+      "title": "调性材料可以扩张到十七声音阶",
+      "principle": "把更多变化音纳入同一调性中心后，旋律可在更大的音高集合内运动；这解释了为什么现代对位既能保持中心，又能使用高度半音化的线条。",
+      "manualAnchor": "modern",
+      "citations": [
+        {
+          "bookId": "middleton",
+          "pdfPage": 142,
+          "printedPage": 140,
+          "chapter": "第十五章 调性扩展的极限",
+          "quote": "这两个音的加入，产生一个综合的、理论上的十七声音阶。……旋律运动可在十七声音阶范围内自由地进行。"
+        }
+      ]
+    },
+    {
+      "id": "modern.linear",
+      "group": "modern",
+      "title": "现代线条优先考虑旋律形态与声部独立",
+      "principle": "每个对位声部仍要有清楚的旋律形态；交错与超越会破坏辨识度。和声可以自由，但线条的方向、临界音与跳进补偿仍要控制。",
+      "manualAnchor": "modern",
+      "citations": [
+        {
+          "bookId": "middleton",
+          "pdfPage": 59,
+          "printedPage": 57,
+          "chapter": "第八章 二部对位运动",
+          "quote": "每个对位声部必须具有清晰的旋律形态……旋律形态的清晰性不应被声部的交错或超越所破坏。"
+        }
+      ]
+    }
+  ]
+}

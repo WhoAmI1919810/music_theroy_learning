@@ -1,0 +1,14 @@
+{
+  "name": "counterpoint-atlas",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Interactive counterpoint, canon and fugue planner with page-level textbook evidence",
+  "scripts": {
+    "test": "node --test tests/engine.test.js tests/evidence.test.js",
+    "build:evidence": "python tools/build_evidence.py",
+    "build:app-evidence": "python tools/build_app_evidence.py",
+    "build:manual": "python tools/build_manual.py",
+    "build": "python tools/build_evidence.py && python tools/build_app_evidence.py && python tools/build_manual.py",
+    "serve": "python -m http.server 8765"
+  }
+}

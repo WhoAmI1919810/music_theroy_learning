@@ -1,0 +1,205 @@
+{
+  "generatedAt": "2026-10-18",
+  "sourceDirectory": "E:/音乐学习笔记/复调",
+  "fileCount": 19,
+  "independentBookCount": 18,
+  "localLecture": {
+    "file": "复调音乐教程.docx",
+    "characters": 14389,
+    "nonEmptyParagraphs": 254,
+    "coverage": "绪论、二声部基本对位、五类对位、单对位、复对位、八度/十二度/十度二重对位、横向与纵横可动对位、倒影对位",
+    "limit": "讲义末尾停在倒影对位；完整卡农与赋格由本系统的教材证据补足。"
+  },
+  "books": [
+    {
+      "id": "chen_write",
+      "title": "赋格曲写作",
+      "author": "陈铭志",
+      "file": "陈铭志 赋格曲写作.PDF",
+      "pdfPages": 117,
+      "kind": "fugue",
+      "priority": 1,
+      "role": "赋格写作的简明教程；主题、答题、对题、呈示、间插、中间、紧接、再现与多重赋格。"
+    },
+    {
+      "id": "chen_new",
+      "title": "赋格学新论",
+      "author": "陈铭志",
+      "file": "陈铭志 赋格学新论.pdf",
+      "pdfPages": 362,
+      "kind": "fugue",
+      "priority": 2,
+      "role": "赋格结构的专题研究；本系统引用主题、答题、对题、呈示部、间插段、紧接模仿、再现部与多重赋格。"
+    },
+    {
+      "id": "duan_upper",
+      "title": "复调音乐（上册）",
+      "author": "段平泰",
+      "file": "段平泰 - 复调音乐  上册 - 人民音乐出版社.pdf",
+      "pdfPages": 288,
+      "kind": "counterpoint",
+      "priority": 3,
+      "role": "对比与模仿二至五声部、分类对位与复调写作基础。"
+    },
+    {
+      "id": "duan_lower",
+      "title": "复调音乐（下册）",
+      "author": "段平泰",
+      "file": "段平泰 - 复调音乐  下册 - 人民音乐出版社.pdf",
+      "pdfPages": 142,
+      "kind": "fugue",
+      "priority": 4,
+      "role": "赋格概述、呈示、中间与再现、调布局、其他类型及赋格应用；本系统用于赋格总结构与呈示部原则。"
+    },
+    {
+      "id": "chen_hong",
+      "title": "对位化和声学",
+      "author": "陈洪",
+      "file": "对位化和声学（陈洪）.pdf",
+      "pdfPages": 253,
+      "kind": "counterpoint",
+      "priority": 5,
+      "role": "把纵向和声与横向对位结合起来的技术训练。"
+    },
+    {
+      "id": "lin",
+      "title": "复调音乐简明教程",
+      "author": "林华",
+      "file": "复调音乐简明教程 (林华著) (Z-Library).pdf",
+      "pdfPages": 302,
+      "kind": "counterpoint",
+      "priority": 6,
+      "role": "覆盖分类对位、复对位、模仿、卡农与赋格；本系统用于第五类、复对位、模仿、答题和赋格布局。"
+    },
+    {
+      "id": "cannan",
+      "title": "对位法",
+      "author": "肯特·坎南",
+      "file": "坎南：对位法（上海音乐出版社）P1-P141.pdf",
+      "pdfPages": 155,
+      "kind": "counterpoint",
+      "priority": 7,
+      "role": "分类对位、二声部作品、卡农与复对位；本系统用于卡农的音程调整和分阶段写法。"
+    },
+    {
+      "id": "kirkpatrick",
+      "title": "对位法概要",
+      "author": "柯克兰",
+      "file": "柯克兰 对位法概要.pdf",
+      "pdfPages": 191,
+      "kind": "counterpoint",
+      "priority": 8,
+      "role": "五类严格对位的系统练习，覆盖二、三、四声部组合。"
+    },
+    {
+      "id": "middleton",
+      "title": "现代对位及其和声",
+      "author": "罗伯特·米德尔顿",
+      "file": "罗伯特·米德尔顿 - 现代对位及其和声 - 上海文艺出版社.pdf",
+      "pdfPages": 160,
+      "kind": "modern",
+      "priority": 9,
+      "role": "现代对位的旋律、音程、和声与调性扩展；本系统用于说明平行五度解禁与音阶材料扩张。"
+    },
+    {
+      "id": "miao",
+      "title": "对位法概论",
+      "author": "缪天瑞",
+      "file": "缪天瑞 对位法概论.PDF",
+      "pdfPages": 56,
+      "kind": "counterpoint",
+      "priority": 10,
+      "role": "对位法基本概念与写作规则的传统概论。"
+    },
+    {
+      "id": "prout",
+      "title": "复对位法与卡农",
+      "author": "伊·普劳特",
+      "file": "普劳特 复对位法与卡农.PDF",
+      "pdfPages": 310,
+      "kind": "counterpoint",
+      "priority": 11,
+      "role": "复对位转位音程、各音程复对位、卡农与多重卡农；本系统用于转位公式和卡农延迟。"
+    },
+    {
+      "id": "skrebkov",
+      "title": "复调音乐",
+      "author": "斯克列勃科夫",
+      "file": "斯克列勃科夫 复调音乐.pdf",
+      "pdfPages": 306,
+      "kind": "counterpoint",
+      "priority": 12,
+      "role": "严格写作与自由写作复调、模仿式复调与赋格曲的系统论述。"
+    },
+    {
+      "id": "suxia",
+      "title": "实用对位法",
+      "author": "苏夏",
+      "file": "苏夏 实用对位法.PDF",
+      "pdfPages": 178,
+      "kind": "counterpoint",
+      "priority": 13,
+      "role": "面向写作实践的对位法教程。"
+    },
+    {
+      "id": "wenfeng",
+      "title": "复调音乐分析与写作",
+      "author": "文锋",
+      "file": "文锋《复调音乐分析与写作》.pdf",
+      "pdfPages": 230,
+      "kind": "counterpoint",
+      "priority": 14,
+      "role": "复调作品分析与写作训练。"
+    },
+    {
+      "id": "higgs",
+      "title": "赋格曲",
+      "author": "希格斯",
+      "file": "希格斯 赋格曲.PDF",
+      "pdfPages": 103,
+      "kind": "fugue",
+      "priority": 15,
+      "role": "新增赋格教材；主题、答题、对题、插句、密接和应、调性与整体结构。",
+      "added": true
+    },
+    {
+      "id": "yang_species",
+      "title": "对位法（第一册）·分类对位法",
+      "author": "杨勇",
+      "file": "杨勇 对位法第1册 分类对位法.pdf",
+      "pdfPages": 151,
+      "kind": "counterpoint",
+      "priority": 16,
+      "role": "五类分类对位的完整写作训练；本系统用于各类对位的硬规则。"
+    },
+    {
+      "id": "yang_free",
+      "title": "对位法（第二册）·自由对位法",
+      "author": "杨勇",
+      "file": "杨勇 对位法  第2册  自由对位法.pdf",
+      "pdfPages": 207,
+      "kind": "counterpoint",
+      "priority": 17,
+      "role": "巴赫作品中的自由对位、卡农、复对位与赋格；本系统用于自由写作和赋格布局。"
+    },
+    {
+      "id": "yao",
+      "title": "巴赫赋格曲的研究",
+      "author": "姚世泽",
+      "file": "姚世泽 巴赫赋格曲的研究.pdf",
+      "pdfPages": 158,
+      "kind": "fugue",
+      "priority": 18,
+      "role": "巴赫赋格的题材、结构与分析；本系统用于主题要素与三部分结构。"
+    }
+  ],
+  "duplicates": [
+    {
+      "file": "姚世泽 巴赫赋格曲的研究(1).pdf",
+      "sameAs": "yao",
+      "sha256": "F6D29DB848768D61C83E03D05BA19D2D34447D9D89F675BA850340ADBDCBCA6B",
+      "note": "与《姚世泽 巴赫赋格曲的研究.pdf》逐字节相同，不重复计入独立教材。"
+    }
+  ],
+  "coverageNote": "本系统只公开手册实际引用的扫描页、短引文和对应 OCR；完整 PDF 不上传。"
+}

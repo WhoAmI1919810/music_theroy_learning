@@ -1,0 +1,88 @@
+{
+  "generatedAt": "2026-10-18",
+  "pageConvention": "pdf",
+  "independentBookCount": 18,
+  "fileCount": 19,
+  "duplicates": [
+    {
+      "file": "姚世泽 巴赫赋格曲的研究(1).pdf",
+      "sameAs": "yao",
+      "sha256": "F6D29DB848768D61C83E03D05BA19D2D34447D9D89F675BA850340ADBDCBCA6B",
+      "note": "与《姚世泽 巴赫赋格曲的研究.pdf》逐字节相同，不重复计入独立教材。"
+    }
+  ],
+  "citedBooks": [
+    {
+      "id": "chen_new",
+      "title": "赋格学新论",
+      "html": "docs/books/chen_new.html",
+      "markdown": "docs/books/chen_new.md",
+      "pageCount": 14
+    },
+    {
+      "id": "duan_lower",
+      "title": "复调音乐（下册）",
+      "html": "docs/books/duan_lower.html",
+      "markdown": "docs/books/duan_lower.md",
+      "pageCount": 4
+    },
+    {
+      "id": "lin",
+      "title": "复调音乐简明教程",
+      "html": "docs/books/lin.html",
+      "markdown": "docs/books/lin.md",
+      "pageCount": 5
+    },
+    {
+      "id": "cannan",
+      "title": "对位法",
+      "html": "docs/books/cannan.html",
+      "markdown": "docs/books/cannan.md",
+      "pageCount": 3
+    },
+    {
+      "id": "middleton",
+      "title": "现代对位及其和声",
+      "html": "docs/books/middleton.html",
+      "markdown": "docs/books/middleton.md",
+      "pageCount": 3
+    },
+    {
+      "id": "prout",
+      "title": "复对位法与卡农",
+      "html": "docs/books/prout.html",
+      "markdown": "docs/books/prout.md",
+      "pageCount": 4
+    },
+    {
+      "id": "higgs",
+      "title": "赋格曲",
+      "html": "docs/books/higgs.html",
+      "markdown": "docs/books/higgs.md",
+      "pageCount": 3
+    },
+    {
+      "id": "yang_species",
+      "title": "对位法（第一册）·分类对位法",
+      "html": "docs/books/yang_species.html",
+      "markdown": "docs/books/yang_species.md",
+      "pageCount": 5
+    },
+    {
+      "id": "yang_free",
+      "title": "对位法（第二册）·自由对位法",
+      "html": "docs/books/yang_free.html",
+      "markdown": "docs/books/yang_free.md",
+      "pageCount": 2
+    },
+    {
+      "id": "yao",
+      "title": "巴赫赋格曲的研究",
+      "html": "docs/books/yao.html",
+      "markdown": "docs/books/yao.md",
+      "pageCount": 3
+    }
+  ],
+  "citedPageCount": 46,
+  "claimCount": 40
+}
