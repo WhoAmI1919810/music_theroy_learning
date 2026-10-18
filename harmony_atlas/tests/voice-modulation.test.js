@@ -21,6 +21,77 @@ test('rewards V7 to I and flags unresolved tendency tones', () => {
   assert.ok(next[0].score > 0.9);
 });
 
+test('filters candidates by required chord tones and reports their chord roles', () => {
+  const next = E.nextCandidates([], 'C', 'major', { requiredPcs: ['C', 'E'], limit: 100 });
+  assert.ok(next.length > 0);
+  assert.ok(next.every((item) => item.chord.pcs.includes(0) && item.chord.pcs.includes(4)));
+  assert.deepEqual(next[0].constraintRoles.map((entry) => entry.pc), [0, 4]);
+  assert.ok(next[0].constraintRoles.every((entry) => entry.role));
+  const triad = E.makeChord({ rootName: 'C', quality: 'maj' });
+  assert.equal(E.chordToneRole(triad, 'C'), '根音');
+  assert.equal(E.chordToneRole(triad, 'E'), '三音');
+  assert.equal(E.chordToneRole(triad, 'G'), '五音');
+});
+
+test('returns an explicit empty result when required tones have no match', () => {
+  const grouped = E.nextCandidates([], 'C', 'major', {
+    requiredPcs: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11], grouped: true
+  });
+  assert.equal(grouped.candidateCount, 0);
+  assert.deepEqual(grouped.functional, []);
+  assert.ok(grouped.emptyReason.includes('指定音'));
+});
+
+test('filters recommendation categories by historical period', () => {
+  const allowed = {
+    commonPractice: new Set(['diatonic', 'secondary', 'neapolitan', 'aug6']),
+    expandedTonality: new Set(['diatonic', 'secondary', 'borrowed', 'neapolitan', 'aug6', 'chromaticMediant'])
+  };
+  for (const style of Object.keys(allowed)) {
+    const next = E.nextCandidates([], 'C', 'major', { periodStyle: style, limit: 200 });
+    assert.ok(next.length > 0);
+    assert.ok(next.every((item) => allowed[style].has(item.chord.category)));
+  }
+  const common = E.nextCandidates([], 'C', 'major', { periodStyle: 'commonPractice', limit: 200 });
+  assert.ok(!common.some((item) => ['borrowed', 'chromaticMediant', 'tritoneSub', 'modal'].includes(item.chord.category)));
+  const expanded = E.nextCandidates([], 'C', 'major', { periodStyle: 'expandedTonality', limit: 200 });
+  assert.ok(expanded.some((item) => item.chord.category === 'borrowed'));
+  assert.ok(expanded.some((item) => item.chord.category === 'chromaticMediant'));
+  assert.ok(!expanded.some((item) => ['tritoneSub', 'modal'].includes(item.chord.category)));
+  const locked = E.nextCandidates([], 'C', 'major', {
+    periodStyle: 'commonPractice', requiredPcs: ['C', 'E'], limit: 200
+  });
+  assert.ok(locked.every((item) => allowed.commonPractice.has(item.chord.category)));
+  assert.ok(locked.every((item) => item.chord.pcs.includes(0) && item.chord.pcs.includes(4)));
+});
+
+test('builds a distinct period showcase for each historical syntax', () => {
+  const common = E.nextCandidates([], 'C', 'major', { periodStyle: 'commonPractice', grouped: true, limit: 80 });
+  const expanded = E.nextCandidates([], 'C', 'major', { periodStyle: 'expandedTonality', grouped: true, limit: 80 });
+  const modern = E.nextCandidates([], 'C', 'major', { periodStyle: 'modernPostTonal', grouped: true, limit: 80 });
+  assert.ok(common.period.every((item) => ['diatonic', 'secondary', 'neapolitan', 'aug6'].includes(item.chord.category)));
+  assert.ok(expanded.period.some((item) => ['borrowed', 'chromaticMediant'].includes(item.chord.category)));
+  assert.ok(modern.period.some((item) => ['tritoneSub', 'chromaticMediant', 'borrowed'].includes(item.chord.category)));
+  assert.notDeepEqual(common.period.map((item) => item.chord.roman), expanded.period.map((item) => item.chord.roman));
+  assert.notDeepEqual(expanded.period.map((item) => item.chord.roman), modern.period.map((item) => item.chord.roman));
+});
+
+test('labels each chord with applicable historical syntax', () => {
+  const catalog = E.buildCatalog('C', 'major', { sevenths: false, secondary: false, borrowed: true, chromatic: true });
+  const diatonic = catalog.find((item) => item.category === 'diatonic');
+  const borrowed = catalog.find((item) => item.category === 'borrowed');
+  const tritone = catalog.find((item) => item.category === 'tritoneSub');
+  assert.deepEqual(E.chordPeriodFits(diatonic).map((item) => item.id), ['commonPractice', 'expandedTonality', 'modernPostTonal']);
+  const borrowedAssessment = E.periodAssessment(borrowed);
+  assert.equal(borrowedAssessment.find((item) => item.id === 'commonPractice').applicable, false);
+  assert.equal(borrowedAssessment.find((item) => item.id === 'expandedTonality').applicable, true);
+  assert.equal(borrowedAssessment.find((item) => item.id === 'modernPostTonal').applicable, true);
+  const tritoneAssessment = E.periodAssessment(tritone);
+  assert.equal(tritoneAssessment.find((item) => item.id === 'commonPractice').applicable, false);
+  assert.equal(tritoneAssessment.find((item) => item.id === 'expandedTonality').applicable, false);
+  assert.equal(tritoneAssessment.find((item) => item.id === 'modernPostTonal').applicable, true);
+});
+
 test('finds shared pivots between C major and G major', () => {
   const pivots = E.commonPivots('C', 'major', 'G', 'major', { limit: 12 });
   assert.ok(pivots.length >= 4);

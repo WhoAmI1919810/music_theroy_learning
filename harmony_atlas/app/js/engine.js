@@ -12,6 +12,76 @@
   const pcSet = P.uniquePcs;
   const setKey = P.pcSetKey;
   const clamp = (x,a,b) => Math.max(a, Math.min(b,x));
+  const PERIOD_ORDER = ['commonPractice', 'expandedTonality', 'modernPostTonal'];
+  const PERIOD_META = Object.fromEntries((D.PERIODS || []).map(period => [period.id, period]));
+  const PERIOD_STYLE_CATEGORIES = {
+    commonPractice: ['diatonic', 'secondary', 'neapolitan', 'aug6'],
+    expandedTonality: ['diatonic', 'secondary', 'borrowed', 'neapolitan', 'aug6', 'chromaticMediant'],
+    modernPostTonal: null
+  };
+  const DEFAULT_SCORE_WEIGHTS = { flow:0.34, root:0.20, voice:0.20, common:0.10, stability:0.06 };
+  const PERIOD_SCORE_WEIGHTS = {
+    commonPractice: { flow:0.46, root:0.18, voice:0.16, common:0.07, stability:0.05 },
+    expandedTonality: { flow:0.31, root:0.18, voice:0.22, common:0.11, stability:0.06 },
+    modernPostTonal: { flow:0.16, root:0.12, voice:0.28, common:0.21, stability:0.10 }
+  };
+  const PERIOD_SHOWCASE_ORDER = {
+    commonPractice: ['diatonic', 'secondary', 'neapolitan', 'aug6'],
+    expandedTonality: ['borrowed', 'chromaticMediant', 'neapolitan', 'aug6', 'secondary', 'diatonic'],
+    modernPostTonal: ['modal', 'tritoneSub', 'chromaticMediant', 'borrowed', 'neapolitan', 'aug6', 'secondary', 'diatonic']
+  };
+  const PERIOD_CATEGORY_REASONS = {
+    diatonic: {
+      commonPractice: '调内三/七和弦是 T–S–D 功能与终止式的基本材料',
+      expandedTonality: '仍作为调性骨架，外围可接交替和弦、变和弦和更远的根音关系',
+      modernPostTonal: '可保留为调性/调式段落，也可只作为音高材料使用'
+    },
+    secondary: {
+      commonPractice: '副属/副导把目标和弦临时主音化，是共同实践中的局部离调',
+      expandedTonality: '局部主音化可推向更远的级数，并可推迟或弱化解决',
+      modernPostTonal: '可作为有调性片段中的局部张力，也可被色彩连接吸收'
+    },
+    borrowed: {
+      expandedTonality: '同主音调式交替用特征音改变调式色彩，同时保留主音中心',
+      modernPostTonal: '调式交替可与调式音阶、非功能连接和持续音结合'
+    },
+    neapolitan: {
+      commonPractice: '拿波里和弦以 ♭II 取代常规下属，半音下行到属，属共同实践变和弦',
+      expandedTonality: '拿波里可脱离标准终止，作为色彩和弦或远关系枢纽',
+      modernPostTonal: '可作为半音色彩、调式特征或音高集合的一部分'
+    },
+    aug6: {
+      commonPractice: '增六和弦以 ♭6 与 ♯4 向外扩张到属，是共同实践的属前变和弦',
+      expandedTonality: '增六可等音重释、连接远调，并与其他变和弦形成网络',
+      modernPostTonal: '可作为半音张力或等音关系材料，但不必按传统方向解决'
+    },
+    chromaticMediant: {
+      expandedTonality: '三度关系的色彩中介弱化功能流，用共同音和声部平滑维持联系',
+      modernPostTonal: '三度关系可进一步脱离调性功能，成为独立的和弦色彩组织'
+    },
+    tritoneSub: {
+      modernPostTonal: '三全音替代用 ♭II7 共享 V7 的三全音，属于 20 世纪爵士/流行语法'
+    },
+    modal: {
+      modernPostTonal: '调式/对称音阶用音阶本身限定可用和弦，功能中心可保留、悬置或取消'
+    }
+  };
+  const PERIOD_EXCLUSION_REASONS = {
+    borrowed: {
+      commonPractice: '本台的“古典”档不收同主音调式交替库存；交替和弦放在“扩张”档。'
+    },
+    chromaticMediant: {
+      commonPractice: '色彩中介主要按三度关系和色彩组织，本台归入“扩张”与“现代”档。'
+    },
+    tritoneSub: {
+      commonPractice: '三全音替代来自 20 世纪爵士/流行和声，不属于共同实践核心。',
+      expandedTonality: '本台把爵士三全音替代归入“现代”档。'
+    },
+    modal: {
+      commonPractice: '调式/对称材料不在共同实践的功能库存中。',
+      expandedTonality: '本台把调式/对称库存归入“现代”档。'
+    }
+  };
 
   function getMode(modeId) {
     const m = MODES[modeId];
@@ -22,6 +92,57 @@
     const q = QUALITIES[id];
     if (!q) throw new Error('unknown quality: ' + id);
     return q;
+  }
+  function normalizePcs(values) {
+    return pcSet((values || []).map(value => typeof value === 'string' ? P.pcOf(value) : mod(Number(value), 12)));
+  }
+  function chordToneRole(chord, pc) {
+    if (!chord || !chord.quality) return null;
+    pc = typeof pc === 'string' ? P.pcOf(pc) : mod(Number(pc), 12);
+    const intervals = chord.quality.intervals || [];
+    const index = intervals.findIndex(interval => mod(chord.rootPc + interval, 12) === pc);
+    if (index < 0) return null;
+    const letterStep = chord.quality.steps && chord.quality.steps[index] != null ? chord.quality.steps[index] : index * 2;
+    const degree = letterStep + 1;
+    const names = {
+      1:'根音', 2:'二音', 3:'三音', 4:'四音', 5:'五音', 6:'六音', 7:'七音',
+      8:'八音', 9:'九音', 10:'十音', 11:'十一音', 12:'十二音', 13:'十三音'
+    };
+    return names[degree] || ('第 ' + degree + ' 音');
+  }
+  function chordToneRoles(chord, requiredPcs) {
+    return normalizePcs(requiredPcs).map(pc => ({ pc, role:chordToneRole(chord, pc) }));
+  }
+  function periodAssessment(chord) {
+    const category = chord && chord.category ? chord.category : 'chromatic';
+    return PERIOD_ORDER.map(id => {
+      const allowed = PERIOD_STYLE_CATEGORIES[id];
+      const applicable = !allowed || allowed.includes(category);
+      const period = PERIOD_META[id] || {};
+      const categoryReasons = PERIOD_CATEGORY_REASONS[category] || {};
+      const exclusions = PERIOD_EXCLUSION_REASONS[category] || {};
+      return {
+        id,
+        short: period.short || id,
+        name: period.name || id,
+        span: period.span || '',
+        applicable,
+        reason: applicable
+          ? (categoryReasons[id] || '该和弦材料可用于这一时期的和声语法')
+          : (exclusions[id] || '该类别不在本档的可选和弦库存中')
+      };
+    });
+  }
+  function chordPeriodFits(chord) {
+    return periodAssessment(chord).filter(item => item.applicable);
+  }
+  function periodAllowsChord(periodId, chord) {
+    const allowed = PERIOD_STYLE_CATEGORIES[periodId];
+    return !allowed || (!!chord && allowed.includes(chord.category));
+  }
+  function chordIncludesPcs(chord, requiredPcs) {
+    const required = normalizePcs(requiredPcs);
+    return required.every(pc => chord.pcs.includes(pc));
   }
   function scale(tonicName, modeId) {
     const mode = getMode(modeId);
@@ -883,12 +1004,20 @@
   }
   function nextCandidates(progression, tonicName, modeId, opts) {
     opts = opts || {};
+    const requiredPcs = normalizePcs(opts.requiredPcs);
+    const styleId = Object.prototype.hasOwnProperty.call(PERIOD_STYLE_CATEGORIES, opts.periodStyle)
+      ? opts.periodStyle : null;
+    const weights = PERIOD_SCORE_WEIGHTS[styleId] || DEFAULT_SCORE_WEIGHTS;
+    const accepts = chord => (!styleId || periodAllowsChord(styleId, chord)) && chordIncludesPcs(chord, requiredPcs);
     const cat = buildCatalog(tonicName, modeId, { sevenths:opts.sevenths !== false, secondary:opts.secondary !== false, borrowed:opts.borrowed !== false, chromatic:opts.chromatic !== false });
     const last = progression[progression.length - 1] || null;
     const target = opts.targetKey ? { key:opts.targetKey, mode:opts.targetMode || 'major' } : null;
-    const pivots = target ? commonPivots(tonicName, modeId, target.key, target.mode, { limit:20 }) : [];
+    const pivots = target
+      ? commonPivots(tonicName, modeId, target.key, target.mode, { limit:20 }).filter(p => accepts(p.sourceChord))
+      : [];
     const candidates = [];
     for (const c of cat) {
+      if (!accepts(c)) continue;
       if (last && c.id === last.id) continue;
       let score = 0;
       const reasons = [], warnings = [];
@@ -897,7 +1026,8 @@
         const rootScore = rootMotionScore(last.rootPc, c.rootPc);
         const vl = voiceLeading(last, c);
         const commonScore = vl.common.length / Math.max(1, Math.min(last.pcs.length, c.pcs.length));
-        score = 0.34 * flow + 0.20 * rootScore + 0.20 * (1 - vl.cost) + 0.10 * commonScore + 0.06 * (c.stability || 0.5);
+        score = weights.flow * flow + weights.root * rootScore + weights.voice * (1 - vl.cost) +
+          weights.common * commonScore + weights.stability * (c.stability || 0.5);
         if (flow >= 0.9) reasons.push('功能进行 ' + last.function + '→' + c.function);
         if (rootScore >= 0.9) reasons.push('根音下行五度');
         else if (rootScore >= 0.65) reasons.push('根音三度关系');
@@ -927,28 +1057,76 @@
       else if (c.category === 'aug6' || c.category === 'neapolitan' || c.category === 'tritoneSub') score -= 0.04;
       if (c.roman === 'V' || c.roman === 'V7') { score += 0.055; reasons.push('直接确认主调'); }
       if (c.roman === 'vi' || c.roman === 'vi7') score += 0.02;
-      if (c.seventh && opts.style !== 'jazz') score -= 0.018;
+      if (c.seventh && styleId !== 'modernPostTonal') score -= 0.018;
       if (c.category === 'borrowed' && c.function === 'T') score -= 0.02;
-      if (c.category === 'secondary') reasons.push('局部离调：' + c.roman);
       if (c.category === 'aug6' || c.category === 'neapolitan' || c.category === 'tritoneSub') reasons.push(c.functionLabel);
-      candidates.push({ chord:c, score:clamp(score,0,1), reasons:[...new Set(reasons)], warnings });
+      if (styleId === 'commonPractice') {
+        if (c.category === 'diatonic') score += 0.035;
+        else if (c.category === 'secondary') score += 0.015;
+        else if (c.category === 'neapolitan' || c.category === 'aug6') score += 0.025;
+      } else if (styleId === 'expandedTonality') {
+        if (c.category === 'borrowed') score += 0.04;
+        else if (c.category === 'chromaticMediant') score += 0.05;
+        else if (c.category === 'neapolitan' || c.category === 'aug6') score += 0.035;
+      } else if (styleId === 'modernPostTonal') {
+        if (c.category === 'modal') score += 0.08;
+        else if (c.category === 'tritoneSub') score += 0.06;
+        else if (c.category === 'chromaticMediant') score += 0.045;
+        else if (c.category === 'borrowed') score += 0.03;
+      }
+      candidates.push({
+        chord:c, score:clamp(score,0,1), reasons:[...new Set(reasons)], warnings,
+        periodFits:chordPeriodFits(c), constraintRoles:chordToneRoles(c, requiredPcs)
+      });
     }
     candidates.sort((a,b)=>b.score-a.score);
     const diverse = [], seenGroups = new Set();
     for (const x of candidates) {
-      const group = x.chord.rootPc + ':' + x.chord.function + ':' + (x.chord.category === 'diatonic' ? 'd' : (x.chord.category === 'borrowed' ? 'b' : 'x'));
+      const group = x.chord.rootPc + ':' + x.chord.function + ':' + x.chord.category;
       if (seenGroups.has(group)) continue;
       seenGroups.add(group); diverse.push(x);
       if (diverse.length >= (opts.limit || 18)) break;
     }
     const result = diverse;
     if (opts.grouped) {
-      const anchor = last || result[0].chord;
+      const anchor = last || (result[0] && result[0].chord) || null;
+      const showcase = [];
+      if (styleId) {
+        const seen = new Set();
+        for (const category of PERIOD_SHOWCASE_ORDER[styleId] || []) {
+          const item = result.find(candidate => candidate.chord.category === category && !seen.has(candidate.chord.key));
+          if (!item) continue;
+          seen.add(item.chord.key);
+          showcase.push(item);
+          if (showcase.length >= 6) break;
+        }
+        for (const item of result) {
+          if (showcase.length >= 6) break;
+          if (seen.has(item.chord.key)) continue;
+          seen.add(item.chord.key);
+          showcase.push(item);
+        }
+      } else {
+        showcase.push(...result.slice(0, 6));
+      }
+      const modulation = pivots.slice(0,6).map(p => ({
+        chord:p.sourceChord, score:p.score, reasons:[p.explanation], warnings:[], targetRoman:p.targetRoman,
+        periodFits:chordPeriodFits(p.sourceChord), constraintRoles:chordToneRoles(p.sourceChord, requiredPcs)
+      }));
+      const emptyReason = result.length ? null
+        : (requiredPcs.length
+          ? '当前时期库存中没有同时包含指定音的和弦；减少必含音或切换到其他时期。'
+          : (styleId ? '当前调式与所选时期没有可用和弦；请切换调式或时期。' : '当前设置没有可用的下一步。'));
       return {
+        period: showcase,
         functional: result.filter(x => ['T','S','D'].includes(x.chord.function) && x.chord.category === 'diatonic').slice(0,6),
-        smooth: result.slice().sort((a,b)=>voiceLeading(anchor,a.chord).cost - voiceLeading(anchor,b.chord).cost).slice(0,6),
+        smooth: anchor ? result.slice().sort((a,b)=>voiceLeading(anchor,a.chord).cost - voiceLeading(anchor,b.chord).cost).slice(0,6) : [],
         color: result.filter(x => ['borrowed','chromaticMediant','neapolitan','aug6','tritoneSub','modal'].includes(x.chord.category)).slice(0,6),
-        modulation: pivots.slice(0,6).map(p => ({ chord:p.sourceChord, score:p.score, reasons:[p.explanation], warnings:[], targetRoman:p.targetRoman }))
+        modulation,
+        periodStyle: styleId || 'any',
+        requiredPcs,
+        candidateCount: result.length,
+        emptyReason
       };
     }
     return result;
@@ -1036,6 +1214,8 @@
     voiceLeading, tendencyWarnings, rootMotionScore, nextCandidates, analyzeProgression,
     identifyChord, commonPivots, keyRelation, chordInterpretations, modulationRoutes,
     modulationTargets, catalogForRole,
+    normalizePcs, chordToneRole, chordToneRoles, chordIncludesPcs, periodAssessment,
+    chordPeriodFits, periodAllowsChord, PERIOD_STYLE_CATEGORIES,
     normalForm, primeForm, intervalVector, complement, transposeSet, invertSet, setClassInfo,
     scalesContaining, chordsContaining, twelveToneMatrix, neoRiemannian, neoRiemann: neoRiemannian, transformPath,
     pcSet, setKey

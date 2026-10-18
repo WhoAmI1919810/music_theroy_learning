@@ -14,6 +14,12 @@
     diatonic: '调内', secondary: '副属/离调', borrowed: '借用/交替', neapolitan: '拿波里',
     aug6: '增六', tritoneSub: '三全音替代', chromaticMediant: '色彩中介', modal: '调式/对称'
   };
+  const PERIOD_STYLE_HINTS = {
+    any: '不限制时期；每条推荐仍会标出适用的历史语法。',
+    commonPractice: '共同实践：T–S–D 与终止式权重最高；纳入副属/副导、拿波里与增六，排除色彩中介、爵士三全音替代和调式/对称库存。',
+    expandedTonality: '调性扩张：保留调性中心，提高同主音交替、拿波里、增六与色彩中介的权重；排除爵士三全音替代和调式/对称库存。',
+    modernPostTonal: '现代与后调性：降低功能流权重，提高共同音、声部距离与调式/对称色彩；库存上限仍是本台的和弦材料，不等同于完整的无调性或十二音生成。'
+  };
   const $ = (sel, node) => (node || document).querySelector(sel);
   const $$ = (sel, node) => Array.from((node || document).querySelectorAll(sel));
   const esc = (value) => String(value == null ? '' : value).replace(/[&<>"']/g, (ch) => ({
@@ -32,7 +38,8 @@
     targetTonic: 'G', targetMode: 'major', librarySevenths: true, libraryCategory: 'all', librarySearch: '',
     radarScope: 'near',
     setPcs: [0, 4, 7], neo: { rootPc: 0, quality: 'maj', ops: [] }, activeTab: 'studio',
-    theoryNode: null, periodFilter: null, playing: false, preferFlats: false, setPreferFlats: false
+    theoryNode: null, periodFilter: null, playing: false, preferFlats: false, setPreferFlats: false,
+    requiredPcs: [], periodStyle: 'any'
   };
   const setNoteLabel = (pc) => noteLabel(pc, state.setPreferFlats || state.preferFlats);
   let catalog = [];
@@ -53,6 +60,101 @@
       borrowed: state.includeChromatic,
       chromatic: state.includeChromatic
     };
+  }
+
+  function harmonizationOptions() {
+    return Object.assign(catalogOptions(), {
+      requiredPcs: state.requiredPcs.slice(),
+      periodStyle: state.periodStyle
+    });
+  }
+
+  function periodById(periodId) {
+    return (D.PERIODS || []).find((period) => period.id === periodId) || null;
+  }
+
+  function periodBasisLinks(periodId) {
+    const period = periodById(periodId);
+    if (!period || !period.basis) return '';
+    const profiles = {};
+    ((S && S.bookProfiles) || []).forEach((profile) => { profiles[profile.book] = profile; });
+    return period.basis.map((ref, index) => {
+      const profile = profiles[ref.book] || {};
+      const label = profile.short || ref.book;
+      const href = '../docs/books/' + ref.book + '.html#' +
+        refAnchor('period', period.id + '-' + (index + 1), ref.page);
+      return '<a href="' + esc(href) + '" target="_blank" rel="noopener" title="' + esc(ref.quote) + '">' +
+        esc(label) + ' · PDF p.' + ref.page + '</a>';
+    }).join('');
+  }
+
+  function periodBadgeHtml(period) {
+    const cls = period.id === 'commonPractice' ? 'p-common' : (period.id === 'expandedTonality' ? 'p-expanded' : 'p-modern');
+    const title = period.name + (period.span ? '（' + period.span + '）' : '') + '：' + period.reason;
+    return '<span class="period-badge ' + cls + '" title="' + esc(title) + '">' + esc(period.short) + '</span>';
+  }
+
+  function periodBadgesForChord(chord, limit) {
+    const fits = E.chordPeriodFits(chord);
+    return fits.slice(0, limit == null ? fits.length : limit).map(periodBadgeHtml).join('');
+  }
+
+  function constraintRoleText(chord) {
+    if (!state.requiredPcs.length) return '';
+    return state.requiredPcs.map((pc) => {
+      const role = E.chordToneRole(chord, pc);
+      return noteLabel(pc, state.preferFlats) + (role ? '＝' + role : '（缺）');
+    }).join(' · ');
+  }
+
+  function renderMelodyPcs() {
+    const host = $('#melodyPcs');
+    if (!host) return;
+    host.innerHTML = Array.from({ length: 12 }, (_, pc) => {
+      const active = state.requiredPcs.includes(pc);
+      return '<button type="button" class="melody-pc' + (active ? ' active' : '') + '" data-melody-pc="' + pc +
+        '" aria-pressed="' + active + '" title="' + esc(active ? '移除必含音 ' + noteLabel(pc, state.preferFlats) : '要求候选和弦包含 ' + noteLabel(pc, state.preferFlats)) + '">' +
+        esc(noteLabel(pc, state.preferFlats)) + '</button>';
+    }).join('');
+    $$('#melodyPcs [data-melody-pc]').forEach((btn) => btn.addEventListener('click', () => {
+      const pc = Number(btn.dataset.melodyPc);
+      state.requiredPcs = state.requiredPcs.includes(pc)
+        ? state.requiredPcs.filter((item) => item !== pc)
+        : state.requiredPcs.concat(pc).sort((a, b) => a - b);
+      updateHarmonizationFilters();
+    }));
+  }
+
+  function renderHarmonyControls() {
+    if (!$('#melodyPcs')) return;
+    renderMelodyPcs();
+    $$('#periodStyle [data-period-style]').forEach((btn) => {
+      const active = btn.dataset.periodStyle === state.periodStyle;
+      btn.classList.toggle('active', active);
+      btn.setAttribute('aria-pressed', String(active));
+    });
+    $('#periodStyleHint').textContent = PERIOD_STYLE_HINTS[state.periodStyle] || PERIOD_STYLE_HINTS.any;
+    const period = periodById(state.periodStyle);
+    const links = period ? periodBasisLinks(period.id) : '';
+    $('#periodStyleBasis').innerHTML = period
+      ? '<span>教材依据</span>' + links + '<a href="../docs/和声学手册.html#h-9" target="_blank" rel="noopener">历史阶段总览</a>'
+      : '';
+    const matches = catalog.filter((chord) =>
+      E.periodAllowsChord(state.periodStyle, chord) && E.chordIncludesPcs(chord, state.requiredPcs)).length;
+    const notes = state.requiredPcs.map((pc) => noteLabel(pc, state.preferFlats)).join('、');
+    $('#harmonizeStatus').innerHTML = state.requiredPcs.length
+      ? '<span class="' + (matches ? 'ok' : 'warn') + '">必含 ' + esc(notes) + '</span><span>当前设置匹配 ' + matches + ' 个和弦</span>' +
+        (matches ? '' : '<span class="warn">没有和弦能同时满足这些音；移除一个必含音或切换时期。</span>')
+      : (matches ? '<span>未指定必含音；当前显示 ' + matches + ' 个符合时期语法的和弦。</span>'
+        : '<span class="warn">当前调式与所选时期没有共享的和弦库存；请切换调式或时期。</span>');
+  }
+
+  function updateHarmonizationFilters() {
+    renderHarmonyControls();
+    renderPalette();
+    renderNext();
+    renderDetail();
+    renderPianoHighlight();
   }
 
   function keyLabel() {
@@ -95,6 +197,7 @@
   function refreshAll() {
     catalog = E.buildCatalog(state.tonic, state.mode, catalogOptions());
     $('#keyReadout').textContent = keyLabel();
+    renderHarmonyControls();
     renderPalette();
     renderProgression();
     renderNext();
@@ -119,17 +222,22 @@
   }
 
   function filteredCatalog() {
-    if (state.catalogFilter === 'all') return catalog;
-    if (state.catalogFilter === 'chromatic') return catalog.filter((c) => ['neapolitan','aug6','tritoneSub','chromaticMediant'].includes(c.category));
-    if (state.catalogFilter === 'modal') return catalog.filter((c) => c.category === 'modal');
-    return catalog.filter((c) => c.category === state.catalogFilter);
+    let items = catalog.filter((chord) =>
+      E.periodAllowsChord(state.periodStyle, chord) && E.chordIncludesPcs(chord, state.requiredPcs));
+    if (state.catalogFilter === 'all') return items;
+    if (state.catalogFilter === 'chromatic') return items.filter((c) => ['neapolitan','aug6','tritoneSub','chromaticMediant'].includes(c.category));
+    if (state.catalogFilter === 'modal') return items.filter((c) => c.category === 'modal');
+    return items.filter((c) => c.category === state.catalogFilter);
   }
 
   function renderPalette() {
     const items = filteredCatalog();
-    $('#catalogCount').textContent = items.length + ' 个和弦';
+    $('#catalogCount').textContent = items.length + ' 个匹配';
     if (!items.length) {
-      $('#palette').innerHTML = '<div class="next-empty">当前筛选下没有和弦。可打开“变化和弦”或切换筛选。</div>';
+      const reason = state.requiredPcs.length
+        ? '没有和弦同时包含全部指定音。移除一个必含音，或切换时期/类别。'
+        : '当前时期与调式没有符合条件的和弦。可切换时期、调式或打开“变化和弦”。';
+      $('#palette').innerHTML = '<div class="next-empty">' + reason + '</div>';
       return;
     }
     const groups = {};
@@ -205,6 +313,7 @@
             '<span class="prog-index">' + String(i + 1).padStart(2, '0') + '</span>' +
             '<span class="prog-roman">' + esc(pretty(chord.roman)) + '</span>' +
             '<span class="prog-notes">' + esc(chord.noteNames.map(pretty).join(' · ')) + '</span>' +
+            '<span class="prog-periods">' + periodBadgesForChord(chord) + '</span>' +
           '</button>' +
           '<button class="prog-remove" data-remove-prog="' + i + '" aria-label="移除">×</button>' +
         '</div>';
@@ -236,22 +345,34 @@
       const cad = cadenceAt.get(i);
       return '<span class="analysis-item' + (cad ? ' cadence' : '') + '"><strong>' + esc(pretty(row.roman)) + '</strong> ' + esc(row.function) +
         (cad ? ' · ' + esc(cad.join(' / ')) : '') + '</span>';
-    }).join('') + '<span class="analysis-item">功能链 ' + esc(result.rows.map((r) => r.function).join(' → ')) + '</span>';
+    }).join('') + '<span class="analysis-item">功能链 ' + esc(result.rows.map((r) => r.function).join(' → ')) + '</span>' +
+      (() => {
+        const usage = {};
+        result.rows.forEach((row) => E.chordPeriodFits(row.chord).forEach((period) => { usage[period.id] = period; }));
+        const labels = (D.PERIODS || []).filter((period) => usage[period.id]).map((period) => period.short);
+        const selected = periodById(state.periodStyle);
+        return '<span class="analysis-item period-summary" title="标签表示和弦可适用的历史语法；同一和弦可以跨阶段存在。">' +
+          esc(selected ? selected.short + '语法 · 进行覆盖' : '时期覆盖') + '：' + esc(labels.join(' / ')) + '</span>';
+      })();
     const lastCadence = result.cadences[result.cadences.length - 1];
     $('#progressionHint').textContent = lastCadence ? '检测到：' + lastCadence.name + '（第 ' + (lastCadence.at + 1) + ' 个和弦）' : '继续扩展，或回到主功能形成收束。';
   }
 
   function renderNext() {
-    const opts = catalogOptions();
+    const opts = harmonizationOptions();
     opts.grouped = true;
     opts.targetKey = state.targetTonic;
     opts.targetMode = state.targetMode;
     const grouped = E.nextCandidates(state.progression, state.tonic, state.mode, opts);
     nextItems = (grouped[state.nextFilter] || []).slice(0, 12);
     const last = state.progression[state.progression.length - 1];
-    $('#nextHint').textContent = last ? '从 ' + pretty(last.roman) + ' 出发' : '建立初始中心';
+    const selectedPeriod = periodById(state.periodStyle);
+    const noteHint = state.requiredPcs.length ? ' · 必含 ' + state.requiredPcs.map((pc) => noteLabel(pc, state.preferFlats)).join('＋') : '';
+    $('#nextHint').textContent = (last ? '从 ' + pretty(last.roman) + ' 出发' : '建立初始中心') +
+      (selectedPeriod ? ' · ' + selectedPeriod.short : '') + noteHint;
     if (!nextItems.length) {
-      $('#nextList').innerHTML = '<div class="next-empty">此分类暂无推荐。换个筛选，或先在中心页添加和弦。</div>';
+      const reason = grouped.emptyReason || '此分类暂无推荐。换成“平滑”或“色彩”，或减少约束。';
+      $('#nextList').innerHTML = '<div class="next-empty">' + esc(reason) + '</div>';
       return;
     }
     $('#nextList').innerHTML = nextItems.map((item, i) => {
@@ -260,9 +381,13 @@
       const targetRoman = item.targetRoman && state.nextFilter === 'modulation' ? ' → ' + pretty(item.targetRoman) : '';
       const reasons = (item.reasons || []).slice(0, 2).join(' · ');
       const warning = (item.warnings || [])[0] || '';
+      const periods = (item.periodFits || E.chordPeriodFits(chord)).map(periodBadgeHtml).join('');
+      const roles = (item.constraintRoles || []).filter((entry) => entry.role)
+        .map((entry) => noteLabel(entry.pc, state.preferFlats) + '＝' + entry.role).join(' · ');
       return '<button class="next-item" data-next="' + i + '" title="' + esc(chordTitle(chord)) + '">' +
         '<span class="next-top"><span class="next-roman">' + esc(pretty(chord.roman)) + targetRoman + '</span><span class="next-chord">' + esc(chord.noteNames.map(pretty).join(' · ')) + '</span><span class="next-score"><i style="width:' + Math.round(score * 100) + '%"></i></span></span>' +
         '<span class="next-reason">' + esc(reasons || chord.functionLabel || '可用连接') + '</span>' +
+        '<span class="next-periods">' + periods + (roles ? '<span class="next-constraint">含 ' + esc(roles) + '</span>' : '') + '</span>' +
         (warning ? '<span class="next-warning">⚠ ' + esc(warning) + '</span>' : '') +
       '</button>';
     }).join('');
@@ -289,7 +414,25 @@
       return '<li>' + esc(t.label) + '：' + esc(from) + ' → ' + esc(to) + '</li>';
     }).join('');
     const tagClass = chord.category === 'secondary' ? 'violet' : (chord.category === 'diatonic' ? 'gold' : 'teal');
-    const connOpts = catalogOptions();
+    const periodRows = E.periodAssessment(chord);
+    const periodRow = periodRows.filter((period) => period.applicable).map(periodBadgeHtml).join('');
+    const periodUsage = periodRows.map((period) => {
+      const current = state.periodStyle === period.id;
+      return '<div class="period-usage ' + (period.applicable ? 'is-available' : 'is-outside') + (current ? ' is-current' : '') + '">' +
+        '<div class="period-usage-head">' + periodBadgeHtml(period) + '<b>' + esc(period.name) + '</b><small>' + esc(period.span) + '</small>' +
+          '<span class="period-usage-state">' + (period.applicable ? '适用' : '非本档库存') + '</span></div>' +
+        '<p>' + esc(period.reason) + '</p>' +
+      '</div>';
+    }).join('');
+    const selectedPeriod = periodById(state.periodStyle);
+    const periodBasis = selectedPeriod
+      ? '<div class="detail-period-basis"><b>本档教材依据</b>' + periodBasisLinks(selectedPeriod.id) + '</div>'
+      : '<div class="detail-period-basis">标签表示和弦可适用的历史语法，不是年代归属；同一和弦可以在多个阶段出现。</div>';
+    const constraintInfo = state.requiredPcs.length
+      ? '<div class="info-line"><b>指定音</b><span>' + esc(constraintRoleText(chord)) + ' · ' +
+        (E.chordIncludesPcs(chord, state.requiredPcs) ? '已满足' : '未满足') + '</span></div>'
+      : '';
+    const connOpts = harmonizationOptions();
     connOpts.limit = 16;
     detailConnections = E.nextCandidates([chord], state.tonic, state.mode, connOpts).slice(0, 7);
     detailInterpretations = E.chordInterpretations(chord, state.tonic, state.mode, {
@@ -314,9 +457,11 @@
         '<h4>原理与应用</h4><p>' + esc(chord.description || chord.functionLabel || '和弦的功能由当前调域与上下文决定。') + '</p>' +
         '<div class="info-list"><div class="info-line"><b>当前功能</b><span>' + esc(chord.function) + ' · ' + esc(chord.functionLabel || '') + '</span></div>' +
         '<div class="info-line"><b>音集</b><span>[' + chord.pcs.join(', ') + '] · ' + chord.pcs.length + ' 音</span></div>' +
-        '<div class="info-line"><b>稳定度</b><span>' + Math.round((chord.stability || 0) * 100) + '% · 色彩度 ' + Math.round((chord.color || 0) * 100) + '%</span></div></div>' +
+        '<div class="info-line"><b>稳定度</b><span>' + Math.round((chord.stability || 0) * 100) + '% · 色彩度 ' + Math.round((chord.color || 0) * 100) + '%</span></div>' + constraintInfo + '</div>' +
         '<div class="tag-row"><span class="tag ' + tagClass + '">' + esc(chord.functionLabel || chord.function) + '</span>' +
         uniq((chord.tags || []).concat(chord.seventh ? ['七和弦'] : [])).slice(0, 7).map((tag) => '<span class="tag">' + esc(tag) + '</span>').join('') + '</div>' +
+        '<h4 class="detail-period-heading">时期语法 <span class="muted">适用 ≠ 年代归属</span></h4>' +
+        '<div class="period-usage-list">' + periodUsage + '</div>' + periodBasis +
       '</div><div>' +
         '<h4>倾向音与解决</h4>' + (tendency ? '<ul class="tendency-list">' + tendency + '</ul>' : '<p>没有必须解决的强倾向音；可用共同音、级进或色彩关系连接。</p>') +
         '<h4>在此调中的其他解释</h4><div class="tag-row">' + replacements.map((r) => '<span class="tag gold">' + esc(pretty(r.roman)) + ' · ' + esc(r.function) + '</span>').join('') + '</div>' +
@@ -389,9 +534,14 @@
     $$('#piano .piano-key').forEach((key) => {
       const midi = Number(key.dataset.midi);
       key.classList.toggle('highlight', pcs.includes(midi % 12));
+      key.classList.toggle('required-note', state.requiredPcs.includes(midi % 12));
     });
+    const requiredReadout = state.requiredPcs.length
+      ? '｜必含 ' + state.requiredPcs.map((pc) => noteLabel(pc, state.preferFlats)).join('、') : '';
     if (chord) {
-      $('#keyboardReadout').textContent = chord.roman + '：' + chord.noteNames.map(pretty).join(' · ') + '｜点击琴键可单独试听';
+      $('#keyboardReadout').textContent = chord.roman + '：' + chord.noteNames.map(pretty).join(' · ') + requiredReadout + '｜点击琴键可单独试听';
+    } else if (requiredReadout) {
+      $('#keyboardReadout').textContent = '必含音高亮' + requiredReadout + '｜点击琴键可单独试听';
     }
   }
 
@@ -972,6 +1122,25 @@
     }));
     $('#includeSevenths').addEventListener('change', (e) => { state.includeSevenths = e.target.checked; refreshAll(); });
     $('#includeChromatic').addEventListener('change', (e) => { state.includeChromatic = e.target.checked; refreshAll(); });
+    $$('#periodStyle [data-period-style]').forEach((btn) => btn.addEventListener('click', () => {
+      state.periodStyle = btn.dataset.periodStyle || 'any';
+      if (state.periodStyle === 'any') {
+        if (state.nextFilter === 'period') state.nextFilter = 'functional';
+      } else {
+        state.nextFilter = 'period';
+      }
+      $$('#nextFilter button').forEach((item) => item.classList.toggle('active', item.dataset.next === state.nextFilter));
+      updateHarmonizationFilters();
+    }));
+    $('#btnClearMelodyPcs').addEventListener('click', () => {
+      if (!state.requiredPcs.length) {
+        toast('当前没有指定必含音。');
+        return;
+      }
+      state.requiredPcs = [];
+      updateHarmonizationFilters();
+      toast('已清空必含音约束。');
+    });
     $$('#nextFilter button').forEach((btn) => btn.addEventListener('click', () => {
       state.nextFilter = btn.dataset.next;
       $$('#nextFilter button').forEach((b) => b.classList.toggle('active', b === btn));
@@ -1058,6 +1227,7 @@
     renderPiano();
     renderPcPicker();
     catalog = E.buildCatalog(state.tonic, state.mode, catalogOptions());
+    renderHarmonyControls();
     renderPalette();
     renderProgression();
     renderNext();

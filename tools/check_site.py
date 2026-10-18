@@ -9,7 +9,7 @@ from urllib.parse import unquote, urlsplit
 
 
 ROOT = Path(__file__).resolve().parents[1]
-SKIP_PARTS = {".git", "_work", "node_modules"}
+SKIP_PARTS = {".git", "_work", "node_modules", "tests"}
 HTML_FILES = [
     path
     for path in ROOT.rglob("*.html")
@@ -41,12 +41,18 @@ def ids_in(path):
 def main():
     failures = []
     id_cache = {}
+    if not (ROOT / "site-theme.css").is_file():
+        failures.append("missing shared theme stylesheet: site-theme.css")
     for page in HTML_FILES:
         text = page.read_text(encoding="utf-8")
         if "data-site-nav" not in text:
             failures.append("missing shared nav: %s" % page.relative_to(ROOT))
         if "site-nav.js" not in text:
             failures.append("missing nav script: %s" % page.relative_to(ROOT))
+        if "data-site-theme-css" not in text:
+            failures.append("missing theme stylesheet: %s" % page.relative_to(ROOT))
+        if "data-site-theme-init" not in text:
+            failures.append("missing theme bootstrap: %s" % page.relative_to(ROOT))
 
         for href in re.findall(r'\b(?:href|src)="([^"#]+(?:#[^"]*)?)"', text):
             if href.startswith(("data:", "mailto:", "javascript:")):
@@ -73,7 +79,7 @@ def main():
         for failure in failures[:80]:
             print("  " + failure, file=sys.stderr)
         return 1
-    print("site check ok: %d HTML pages, shared nav, local links and fragments" % len(HTML_FILES))
+    print("site check ok: %d HTML pages, shared nav/theme, local links and fragments" % len(HTML_FILES))
     return 0
 
 

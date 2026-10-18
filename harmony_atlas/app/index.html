@@ -5,6 +5,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>和声推演台 · Harmony Atlas</title>
 <link rel="stylesheet" href="css/style.css">
+
+
+
+<script data-site-theme-init>(function(){var d=document.documentElement;var t='light';try{var s=localStorage.getItem('music-site-theme');if(s==='dark'||s==='light')t=s;}catch(e){}d.setAttribute('data-theme',t);d.style.colorScheme=t;var p=location.pathname;var section='home';if(p.indexOf('/harmony_atlas/docs/books/')>=0)section='harmony-books';else if(p.indexOf('/harmony_atlas/docs/')>=0)section='harmony-manual';else if(p.indexOf('/harmony_atlas/app/')>=0)section='harmony-app';else if(p.indexOf('/counterpoint_atlas/docs/books/')>=0)section='counterpoint-books';else if(p.indexOf('/counterpoint_atlas/docs/')>=0)section='counterpoint-manual';else if(p.indexOf('/counterpoint_atlas/tutorial/')>=0)section='counterpoint-tutorial';else if(p.indexOf('/counterpoint_atlas/app/')>=0)section='counterpoint-app';else if(p.indexOf('/orchestration_atlas/docs/books/')>=0)section='orchestration-books';else if(p.indexOf('/orchestration_atlas/docs/')>=0)section='orchestration-manual';else if(p.indexOf('/orchestration_atlas/app/')>=0)section='orchestration-app';d.setAttribute('data-site-section',section);var m=document.querySelector('meta[name="theme-color"]');if(m)m.setAttribute('content',t==='dark'?'#0b1119':'#f5efe4');})();</script>
+<link rel="stylesheet" href="../../site-theme.css" data-site-theme-css>
 </head>
 <body>
 <div class="app-shell">
@@ -52,6 +57,35 @@
         </div>
       </div>
 
+      <section class="panel harmonize-panel" aria-labelledby="harmonizeTitle">
+        <div class="harmonize-block melody-block">
+          <div class="harmonize-head">
+            <div>
+              <h2 id="harmonizeTitle">为旋律配和声</h2>
+              <p>点选旋律中必须被和弦覆盖的音；候选和弦必须同时包含全部所选音。约束按音名/音级工作，不锁定八度与声部排列。</p>
+            </div>
+            <button class="small" id="btnClearMelodyPcs" type="button">清空必含音</button>
+          </div>
+          <div class="melody-pcs" id="melodyPcs" role="group" aria-label="指定和弦必含音"></div>
+          <div class="harmonize-status" id="harmonizeStatus" aria-live="polite"></div>
+        </div>
+        <div class="harmonize-block period-block">
+          <div class="harmonize-head">
+            <div>
+              <h2>时期语法</h2>
+              <p id="periodStyleHint">不限制时期；每条推荐仍会标出适用的历史语法。</p>
+            </div>
+          </div>
+          <div class="segmented small period-style" id="periodStyle" role="group" aria-label="和声时期风格">
+            <button class="active" type="button" data-period-style="any" aria-pressed="true">不限</button>
+            <button type="button" data-period-style="commonPractice" aria-pressed="false">古典</button>
+            <button type="button" data-period-style="expandedTonality" aria-pressed="false">扩张</button>
+            <button type="button" data-period-style="modernPostTonal" aria-pressed="false">现代</button>
+          </div>
+          <div class="period-style-basis" id="periodStyleBasis"></div>
+        </div>
+      </section>
+
       <div class="studio-grid">
         <aside class="panel palette-panel">
           <div class="panel-head">
@@ -87,6 +121,7 @@
           </div>
           <div class="segmented small" id="nextFilter" role="group" aria-label="推荐类型">
             <button class="active" data-next="functional">功能</button>
+            <button data-next="period">时期</button>
             <button data-next="smooth">平滑</button>
             <button data-next="color">色彩</button>
             <button data-next="modulation">转调</button>
@@ -222,7 +257,8 @@
   <div class="modal-card">
     <div class="modal-head"><h2 id="helpTitle">使用说明</h2><button class="icon-btn" id="btnCloseHelp" aria-label="关闭">×</button></div>
     <div class="modal-body">
-      <p><strong>推演台</strong>：选择主音与调式，左侧是当前调式可用的和弦库存。点击和弦加入进行，右侧会按“功能语法、根音进行、声部平滑、共同音、倾向音解决”给出下一步建议。</p>
+      <p><strong>推演台</strong>：选择主音与调式，左侧是当前调式可用的和弦库存。点击和弦加入进行，右侧会按“功能语法、根音进行、声部平滑、共同音、倾向音解决”给出下一步建议。上方“为旋律配和声”可指定一个或多个必含音，系统只保留同时包含这些音的和弦，并标出它们分别是根音、三音、五音或七音；约束按音级工作，不锁定八度与声部排列。</p>
+      <p><strong>时期语法</strong>：“古典”优先 T–S–D、副属、拿波里与增六；“扩张”加入同主音交替、色彩中介与远关系连接；“现代”降低功能流权重，开放调式/对称与爵士替代材料。当前台仍以调性/调式和弦为库存，不把“现代”等同于完整的无调性或十二音生成。</p>
       <p><strong>跨调式用途</strong>：选中和弦后，详情区会列出同一音集在其他调与调式中的级数和功能。标有“可作中介”的条目可充当转调枢纽；点击条目会把它设为目标调并跳到转调页。</p>
       <p><strong>转调</strong>：选择目标主音/调式，系统会计算共同音、共同和弦（中介）与调性距离，并生成中介、直接、拿波里、增六、色彩中介等路线。左侧“目标调式雷达”可从当前进行的最后一个和弦反查候选目标；范围可选“近关系 / 同主音 / 全部”。点击雷达条目即可切换目标，路线也会从当前末和弦开始。</p>
       <p><strong>和弦库</strong>：查看当前调式全部和弦的级数、音名、功能、类别与解决方向；可搜索、筛选、切换调式。</p>
