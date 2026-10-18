@@ -232,6 +232,38 @@
 .manual-table-source:not([open])>*:not(summary){display:none}
 .manual-table-source .table-wrap{margin:10px 0 0}
 
+/* 6.3 key network */
+.mv-network-controls{margin:0 0 10px;padding:10px;border:1px solid var(--mv-line);border-radius:11px;background:rgba(255,255,255,.022)}
+.mv-network-filters{display:flex;flex-wrap:wrap;gap:6px}
+.mv-network-filter{display:inline-flex;align-items:center;gap:7px;padding:5px 8px;border:1px solid color-mix(in srgb,var(--mv-relation-color) 36%,var(--mv-line));border-radius:999px;background:color-mix(in srgb,var(--mv-relation-color) 7%,transparent);color:#aab9c9;font:10px/1.3 "Segoe UI","Microsoft YaHei",sans-serif;cursor:pointer;transition:.15s ease}
+.mv-network-filter span{color:#c7d3df}.mv-network-filter b{min-width:17px;padding:1px 4px;border-radius:999px;background:color-mix(in srgb,var(--mv-relation-color) 15%,transparent);color:var(--mv-relation-color);font:700 9px/1.35 ui-monospace,Consolas,monospace;text-align:center}
+.mv-network-filter:hover,.mv-network-filter:focus-visible,.mv-network-filter.is-active{border-color:var(--mv-relation-color);color:#fff;outline:0;background:color-mix(in srgb,var(--mv-relation-color) 13%,transparent)}
+.mv-network-legend{display:flex;flex-wrap:wrap;gap:5px 14px;margin-top:8px;color:#7f93a8;font-size:9.5px;line-height:1.5}
+.mv-network-legend-item{display:inline-flex;align-items:center;gap:5px}.mv-network-legend-item i{display:inline-block;width:7px;height:7px;border-radius:50%}
+.mv-network-pan-hint{display:none;margin:7px 0 0;color:#7f93a8;font-size:9px}
+.mv-network-scroll{overflow-x:auto;overflow-y:hidden;border:1px solid rgba(152,171,192,.16);border-radius:13px;background:radial-gradient(circle at 50% 50%,rgba(239,180,91,.055),transparent 42%),rgba(4,11,18,.28);scrollbar-width:thin}
+.mv-network-stage{position:relative;min-width:780px;height:720px}
+.mv-network-svg{position:absolute;inset:0;z-index:0;width:100%;height:100%;pointer-events:none;overflow:visible}
+.mv-network-source{position:absolute;z-index:3;width:132px;padding:11px 12px;border:1px solid rgba(239,180,91,.72);border-radius:14px;background:linear-gradient(145deg,rgba(239,180,91,.22),rgba(18,31,46,.98));box-shadow:0 0 0 4px rgba(239,180,91,.07),0 10px 32px rgba(0,0,0,.28);text-align:center;pointer-events:none}
+.mv-network-source b{display:block;color:#fff;font:700 15px/1.3 "Noto Sans SC","Microsoft YaHei",sans-serif}.mv-network-source span{display:block;margin-top:2px;color:var(--mv-gold);font-size:9px;letter-spacing:.08em}.mv-network-source small{display:block;margin-top:5px;color:#8fa2b7;font-size:8.5px;line-height:1.4}
+.mv-network-node{position:absolute;z-index:2;display:flex;flex-direction:column;align-items:flex-start;justify-content:center;gap:1px;padding:5px 7px;border:1px solid color-mix(in srgb,var(--mv-relation-color) 38%,var(--mv-line));border-radius:9px;background:rgba(15,28,42,.96);color:#d9e4ef;text-align:left;cursor:pointer;transition:opacity .15s ease,border-color .15s ease,transform .15s ease,background .15s ease;box-shadow:0 4px 16px rgba(0,0,0,.18)}
+.mv-network-node:before{content:"";position:absolute;left:0;top:7px;bottom:7px;width:2px;border-radius:2px;background:var(--mv-relation-color)}
+.mv-network-node:hover,.mv-network-node:focus-visible,.mv-network-node.is-selected{border-color:var(--mv-relation-color);background:rgba(23,41,60,.99);outline:0;transform:translateY(-1px);box-shadow:0 0 0 2px color-mix(in srgb,var(--mv-relation-color) 16%,transparent),0 8px 20px rgba(0,0,0,.24)}
+.mv-network-node.is-muted{opacity:.16}
+.mv-network-node.is-inner{width:88px}.mv-network-node.is-middle{width:104px}.mv-network-node.is-outer{width:112px}
+.mv-network-label{display:block;max-width:100%;color:#f3f6f9;font:650 9.5px/1.25 "Noto Sans SC","Microsoft YaHei",sans-serif;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.mv-network-relation{display:block;color:var(--mv-relation-color);font-size:8px;line-height:1.35}.mv-network-count{display:block;color:#8296aa;font-size:7.5px;line-height:1.3}
+.mv-network-detail{margin-top:12px;padding:12px;border:1px solid var(--mv-line);border-radius:12px;background:rgba(255,255,255,.025)}
+.mv-network-detail-head{display:flex;flex-wrap:wrap;align-items:flex-start;justify-content:space-between;gap:8px;margin-bottom:9px}.mv-network-detail h4{margin:0;color:#fff;font:700 15px/1.35 "Noto Sans SC","Microsoft YaHei",sans-serif}.mv-network-detail-head p{margin:2px 0 0;color:#8fa2b7;font-size:10px}
+.mv-route-tabs{display:flex;flex-wrap:wrap;gap:5px;margin-bottom:9px}
+.mv-route-tab{padding:6px 8px;border:1px solid var(--mv-line);border-radius:7px;background:#0f1c2a;color:#9fb0c1;text-align:left;cursor:pointer;transition:.15s ease}
+.mv-route-tab b{display:block;color:#dce6ef;font-size:9.5px}.mv-route-tab span{display:block;margin-top:2px;color:#7f93a8;font:8.5px ui-monospace,Consolas,monospace}
+.mv-route-tab:hover,.mv-route-tab:focus-visible,.mv-route-tab.is-active{border-color:var(--mv-gold);background:rgba(239,180,91,.09);outline:0}.mv-route-tab.is-active b{color:var(--mv-gold)}
+.mv-route-graph{display:flex;align-items:stretch;gap:0;overflow-x:auto;padding:4px 1px 8px;scrollbar-width:thin}
+.mv-route-step{flex:0 0 auto;min-width:104px;max-width:150px;padding:8px;border:1px solid var(--mv-line);border-radius:8px;background:#142233}
+.mv-route-step b{display:block;color:var(--mv-gold);font:700 10px/1.3 ui-monospace,Consolas,monospace}.mv-route-step span{display:block;margin-top:2px;color:#c6d3df;font:8.5px/1.35 ui-monospace,Consolas,monospace}.mv-route-step small{display:block;margin-top:3px;color:#7f93a8;font-size:7.5px;line-height:1.35}
+.mv-route-step.is-source{border-color:rgba(239,180,91,.55)}.mv-route-step.is-target{border-color:rgba(131,153,212,.58);background:rgba(131,153,212,.09)}.mv-route-step.is-pivot{border-color:rgba(97,199,189,.58);background:rgba(97,199,189,.08)}.mv-route-step.is-pivot b{color:var(--mv-teal)}.mv-route-pivot-label{color:#8fe0d7!important}
+
 @media(max-width:900px){
   .mv-grid-3,.mv-books,.mv-evidence-groups{grid-template-columns:repeat(2,minmax(0,1fr))}
   .mv-node-grid.targets{grid-template-columns:repeat(2,minmax(0,1fr))}
@@ -259,6 +291,12 @@
   .mv-graph-node.is-current{min-width:0;width:100%;max-width:none}
   .mv-graph-stage{padding:11px 5px 6px}
   .mv-books,.mv-evidence-groups,.mv-grid-3{grid-template-columns:1fr}
+  .mv-network-stage{height:680px}
+  .mv-network-controls{padding:8px}
+  .mv-network-legend{font-size:9px}
+  .mv-network-pan-hint{display:block}
+  .mv-network-detail{padding:10px}
+  .mv-route-step{min-width:96px}
 }
 @media(max-width:380px){
   .mv-controls{align-items:stretch}

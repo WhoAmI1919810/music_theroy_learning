@@ -116,20 +116,56 @@ const modes = D.MODES.map((mode) => {
   };
 });
 
-const routes = [
-  ['C', 'major', 'G', 'major'],
-  ['C', 'major', 'E', 'major'],
-  ['C', 'major', 'F#', 'major'],
-  ['C', 'major', 'C', 'naturalMinor'],
-  ['A', 'naturalMinor', 'C', 'major']
-].map(([sourceTonic, sourceMode, targetTonic, targetMode]) => {
+const routeTargets = [
+  ['G', 'major', 'key'],
+  ['F', 'major', 'key'],
+  ['D', 'major', 'key'],
+  ['Bb', 'major', 'key'],
+  ['A', 'major', 'key'],
+  ['Eb', 'major', 'key'],
+  ['E', 'major', 'key'],
+  ['Ab', 'major', 'key'],
+  ['B', 'major', 'key'],
+  ['Db', 'major', 'key'],
+  ['F#', 'major', 'key'],
+  ['C#', 'major', 'key'],
+  ['A', 'naturalMinor', 'key'],
+  ['E', 'naturalMinor', 'key'],
+  ['B', 'naturalMinor', 'key'],
+  ['D', 'naturalMinor', 'key'],
+  ['F#', 'naturalMinor', 'key'],
+  ['C', 'naturalMinor', 'mode'],
+  ['C', 'harmonicMinor', 'mode'],
+  ['C', 'melodicMinor', 'mode'],
+  ['C', 'dorian', 'mode'],
+  ['C', 'phrygian', 'mode'],
+  ['C', 'lydian', 'mode'],
+  ['C', 'mixolydian', 'mode'],
+  ['C', 'locrian', 'mode'],
+  ['C', 'harmonicMajor', 'mode'],
+  ['C', 'doubleHarmonic', 'mode'],
+  ['C', 'wholeTone', 'mode'],
+  ['C', 'octatonicHW', 'mode'],
+  ['C', 'octatonicWH', 'mode'],
+  ['C', 'majorPentatonic', 'mode'],
+  ['C', 'minorPentatonic', 'mode']
+];
+
+const sourceTonic = 'C';
+const sourceMode = 'major';
+const sourceLabel = sourceTonic + ' ' + D.MODES.find((mode) => mode.id === sourceMode).short;
+const routes = routeTargets.map(([targetTonic, targetMode, ring]) => {
   const relation = E.keyRelation(sourceTonic, sourceMode, targetTonic, targetMode);
-  const found = E.modulationRoutes(sourceTonic, sourceMode, targetTonic, targetMode, { limit: 4 });
+  const found = E.modulationRoutes(sourceTonic, sourceMode, targetTonic, targetMode, { limit: 6 });
+  const targetLabel = targetTonic + ' ' + D.MODES.find((mode) => mode.id === targetMode).short;
   return {
     sourceTonic,
     sourceMode,
+    sourceLabel,
     targetTonic,
     targetMode,
+    targetLabel,
+    ring,
     relation,
     routes: found.map((route) => ({
       recipe: route.recipe,

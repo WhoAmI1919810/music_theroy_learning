@@ -329,11 +329,18 @@ def mode_action_rows(data):
 
 def route_rows(data):
     rows = []
+    mode_labels = {mode['id']: mode.get('short', mode['id']) for mode in data['modes']}
     for item in data['routes']:
         for index, route in enumerate(item['routes'][:2], 1):
             path = ' → '.join('%s(%s)' % (x['roman'], '·'.join(x['notes'])) for x in route['steps'])
+            source_label = item.get('sourceLabel') or '%s %s' % (
+                item['sourceTonic'], mode_labels.get(item['sourceMode'], item['sourceMode'])
+            )
+            target_label = item.get('targetLabel') or '%s %s' % (
+                item['targetTonic'], mode_labels.get(item['targetMode'], item['targetMode'])
+            )
             rows.append([
-                '%s %s → %s %s' % (item['sourceTonic'], item['sourceMode'], item['targetTonic'], item['targetMode']),
+                '%s → %s' % (source_label, target_label),
                 item['relation']['label'],
                 '#%d %s' % (index, route['recipe']),
                 path,

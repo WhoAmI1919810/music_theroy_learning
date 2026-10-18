@@ -335,10 +335,10 @@ def build_manual():
     toc_html = ''.join('<a href="#%s">%s</a>' % (anchor, html.escape(title)) for anchor, title in toc)
     page = '''<!DOCTYPE html>
 <html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>配器法理论体系与推演手册</title><style>%s</style></head><body>
+<title>配器法理论体系与推演手册</title><style>%s</style><link rel="stylesheet" href="../../manual-visuals/manual-visuals.css"></head><body class="mtv-light" data-manual="orchestration">
 <div class="manual-layout"><aside class="manual-nav"><b>配器法手册</b><div class="meta">7 册 / 4 部教材 · 关键页证据链 · 24 条机制</div>%s<a class="app-link" href="../app/index.html">打开配器推演台</a></aside>
 <main>%s<footer class="callout"><b>使用提醒</b><br>教材页码一律为 PDF 物理页。点击页内依据链接可查看扫描图与 OCR；原 PDF 链接需要本地服务运行。程序推演不代替试奏。</footer></main></div>
-</body></html>''' % (MANUAL_CSS, toc_html, body)
+<script src="../../manual-visuals/manual-visuals.js"></script></body></html>''' % (MANUAL_CSS, toc_html, body)
     with open(MANUAL_HTML, 'w', encoding='utf-8', newline='\n') as handle:
         handle.write(page)
     print('manual:', MANUAL_HTML)

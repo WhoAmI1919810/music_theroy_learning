@@ -310,8 +310,9 @@ hr{border:0;border-top:1px solid var(--line);margin:30px 0}
 @media(max-width:520px){main{padding:22px 13px 48px}.table-wrap{margin-left:-4px;margin-right:-4px}body{font-size:15px}.lead{font-size:14px}}
 @media print{aside{display:none}.layout{display:block;max-width:none;padding:0}main{padding:0;border:0;box-shadow:none;background:#fff;color:#111}h1,h2,h3,h4{color:#111;-webkit-text-fill-color:#111}.note{color:#111}.table-wrap{overflow:visible}table{min-width:0;font-size:9pt}.cite-entry span{color:#555}}
 </style>
+<link rel="stylesheet" href="../../manual-visuals/manual-visuals.css">
 </head>
-<body>
+<body data-manual="counterpoint">
 <div class="layout">
 <aside>
   <div class="brand"><span class="mark">C</span><b>复调音乐理论手册<small>Counterpoint Atlas · __GENERATED__</small></b></div>
@@ -322,6 +323,7 @@ hr{border:0;border-top:1px solid var(--line);margin:30px 0}
 __BODY__
 </main>
 </div>
+<script src="../../manual-visuals/manual-visuals.js"></script>
 </body>
 </html>
 """

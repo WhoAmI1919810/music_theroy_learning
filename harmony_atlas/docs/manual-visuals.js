@@ -843,71 +843,315 @@
     placeVisual('visual-cadences', visual.section, '展开终止式原始表格');
   }
 
-  function modeLabel(id) {
-    var found = (DATA.modes || []).find(function (mode) { return mode.id === id; });
-    return found ? found.short : id;
+  var RELATION_META = {
+    near: { short: '近关系', color: '#61c7bd', note: '调号与功能都接近' },
+    relative: { short: '关系调', color: '#8399d4', note: '共享同一音阶集合' },
+    parallel: { short: '同主音', color: '#efb45b', note: '主音不变，改变调式' },
+    medium: { short: '中关系', color: '#df8c7b', note: '调号较远，但仍有共同和弦' },
+    common: { short: '共同音多', color: '#9fc47a', note: '音阶重叠多，但功能关系较松' },
+    chromatic: { short: '色彩关系', color: '#b8a6ff', note: '三度或半音色彩，中介较少' },
+    distant: { short: '远关系', color: '#9aa8b8', note: '共同音和共同和弦都很少' }
+  };
+
+  function relationMeta(type) {
+    return RELATION_META[type] || { short: type || '关系待定', color: '#9aa8b8', note: '按音集与调号计算' };
   }
 
   function renderRoutes() {
     var groups = Array.isArray(DATA.routes) ? DATA.routes : [];
     if (!groups.length) return;
-    var visual = makeVisual('路线图', '6.3 程序路线：源调、重释节点与新调确认',
-      '按“源调 → 目标调”分组。每行是一条完整和弦链；青色节点表示同一音集在两个调中的不同级数解释。');
-    var legend = element('div', 'mv-legend');
-    append(legend,
-      append(element('span'), element('i', 'mv-route-key source'), document.createTextNode('源调主和弦')),
-      append(element('span'), element('i', 'mv-route-key pivot'), document.createTextNode('中介/重释')),
-      append(element('span'), element('i', 'mv-route-key target'), document.createTextNode('目标主和弦')));
-    visual.body.appendChild(legend);
-    var list = element('div', 'mv-route-list');
-    groups.forEach(function (group) {
-      var card = element('article', 'mv-route-card');
-      var head = element('div', 'mv-route-head');
-      var title = element('strong', '', group.sourceTonic + ' ' + modeLabel(group.sourceMode) + ' → ' +
-        group.targetTonic + ' ' + modeLabel(group.targetMode));
-      append(head, title, badge(group.relation && group.relation.label ? group.relation.label : '关系待判定', 'gold'));
-      card.appendChild(head);
-      (group.routes || []).slice(0, 2).forEach(function (route, routeIndex) {
-        var branch = element('div', 'mv-route-branch');
-        var branchHead = element('div', 'mv-route-branch-head');
-        var branchTitle = element('div', 'mv-route-branch-title');
-        append(branchTitle, element('b', '', route.recipe || ('方案 ' + (routeIndex + 1))),
-          element('span', '', '启发式得分 ' + Number(route.score || 0).toFixed(3)));
-        var score = element('div', 'mv-score');
-        var scoreFill = element('i');
-        scoreFill.style.width = Math.max(4, Math.min(100, Number(route.score || 0) * 100)) + '%';
-        score.appendChild(scoreFill);
-        append(branchHead, branchTitle, score);
-        branch.appendChild(branchHead);
-        var path = element('div', 'mv-route-path');
-        path.setAttribute('role', 'list');
-        path.setAttribute('aria-label', '和弦路线 ' + (routeIndex + 1));
-        var steps = route.steps || [];
-        steps.forEach(function (step, stepIndex) {
-          if (stepIndex > 0) path.appendChild(element('span', 'mv-route-arrow', '→'));
-          var isPivot = step.category === 'pivot' || String(step.roman || '').indexOf('=') >= 0;
-          var node = element('div', 'mv-route-node' +
-            (stepIndex === 0 ? ' is-source' : '') +
-            (stepIndex === steps.length - 1 ? ' is-target' : '') +
-            (isPivot ? ' is-pivot' : ''));
-          node.setAttribute('role', 'listitem');
-          append(node, element('b', '', step.roman || '—'), element('span', '', (step.notes || []).join(' · ')));
-          if (isPivot && step.sourceRoman && step.targetRoman) {
-            node.appendChild(element('span', '', step.sourceRoman + ' → ' + step.targetRoman));
-          } else if (step.function) {
-            node.appendChild(element('span', '', step.function));
-          }
-          path.appendChild(node);
-        });
-        branch.appendChild(path);
-        branch.appendChild(element('p', 'mv-route-explain', route.explanation || ''));
-        card.appendChild(branch);
-      });
-      list.appendChild(card);
+
+    var coreModes = {
+      naturalMinor: true, harmonicMinor: true, melodicMinor: true, dorian: true,
+      phrygian: true, lydian: true, mixolydian: true, locrian: true
+    };
+    var metaOrder = ['near', 'relative', 'parallel', 'medium', 'common', 'chromatic', 'distant'];
+    var counts = {};
+    groups.forEach(function (target) {
+      var type = target.relation && target.relation.type ? target.relation.type : 'distant';
+      counts[type] = (counts[type] || 0) + 1;
     });
-    visual.body.appendChild(list);
-    visual.body.appendChild(note('得分来自功能、共同音、声部平滑与目标确认的启发式排序，不是历史作品的唯一答案。', '#claim-modulation-confirmation', '查看确认依据'));
-    placeVisual('visual-routes', visual.section, '展开 6.3 路线原始表格');
+
+    var visual = makeVisual('转调网络', '6.3 从 C 大调出发：' + groups.length + ' 个目标调',
+      '外环是大小调中心，中环是七声调式，内环是对称音阶与五声材料。箭头从源调指向目标调；选择节点后可切换完整和弦路线。');
+
+    var filterBar = element('div', 'mv-network-filters');
+    filterBar.setAttribute('role', 'group');
+    filterBar.setAttribute('aria-label', '按调性关系筛选目标');
+    var controls = element('div', 'mv-network-controls');
+    var legend = element('div', 'mv-network-legend');
+    append(controls, filterBar, legend);
+    visual.body.appendChild(controls);
+
+    var scroll = element('div', 'mv-network-scroll');
+    var stage = element('div', 'mv-network-stage');
+    stage.setAttribute('role', 'group');
+    stage.setAttribute('aria-label', 'C 大调转调目标有向图');
+    var svg = svgElement('svg', { class: 'mv-network-svg', 'aria-hidden': 'true' });
+    stage.appendChild(svg);
+
+    var sourceNode = element('div', 'mv-network-source');
+    append(sourceNode,
+      element('b', '', 'C 大调'),
+      element('span', '', '源调中心'),
+      element('small', '', '选择目标调查看路线'));
+    stage.appendChild(sourceNode);
+
+    var nodeRecords = [];
+    groups.forEach(function (target, index) {
+      var type = target.relation && target.relation.type ? target.relation.type : 'distant';
+      var meta = relationMeta(type);
+      var ring = target.ring === 'key' ? 'outer' : (coreModes[target.targetMode] ? 'middle' : 'inner');
+      var node = element('button', 'mv-network-node is-' + ring);
+      node.type = 'button';
+      node.setAttribute('aria-pressed', 'false');
+      node.setAttribute('aria-label', target.targetLabel + '，' + meta.short + '，' + (target.routes || []).length + ' 条路线');
+      node.style.setProperty('--mv-relation-color', meta.color);
+      append(node,
+        element('span', 'mv-network-label', target.targetLabel),
+        element('span', 'mv-network-relation', meta.short),
+        element('span', 'mv-network-count', (target.routes || []).length + ' 条路线'));
+      node.addEventListener('click', function () { selectTarget(index, true); });
+      node.addEventListener('mouseenter', function () { highlightEdge(index, true); });
+      node.addEventListener('mouseleave', function () { highlightEdge(index, false); });
+      node.addEventListener('focus', function () { highlightEdge(index, true); });
+      node.addEventListener('blur', function () { highlightEdge(index, false); });
+      stage.appendChild(node);
+      nodeRecords.push({ node: node, target: target, type: type, ring: ring, index: index, edge: null });
+    });
+    scroll.appendChild(stage);
+    visual.body.appendChild(scroll);
+
+    var detail = element('div', 'mv-network-detail');
+    detail.setAttribute('aria-live', 'polite');
+    visual.body.appendChild(detail);
+    visual.body.appendChild(note('箭头只表示“可以从源调转向目标调”，不表示历史作品已经这样转调。每条路线仍需由新调 V–I、终止式、持续音或结构位置确认。得分是功能、共同音、声部平滑与确认强度的启发式排序。',
+      '#claim-modulation-confirmation', '查看转调确认依据'));
+
+    var filterButtons = [];
+    function makeFilter(type, label, count) {
+      var button = element('button', 'mv-network-filter');
+      button.type = 'button';
+      button.setAttribute('aria-pressed', type === 'all' ? 'true' : 'false');
+      append(button, element('span', '', label), element('b', '', count));
+      button.style.setProperty('--mv-relation-color', type === 'all' ? '#efb45b' : relationMeta(type).color);
+      button.addEventListener('click', function () { applyFilter(type); });
+      filterButtons.push({ type: type, node: button });
+      filterBar.appendChild(button);
+      return button;
+    }
+    makeFilter('all', '全部', groups.length);
+    metaOrder.forEach(function (type) {
+      if (counts[type]) makeFilter(type, relationMeta(type).short, counts[type]);
+    });
+
+    metaOrder.forEach(function (type) {
+      if (!counts[type]) return;
+      var meta = relationMeta(type);
+      var item = element('span', 'mv-network-legend-item');
+      var swatch = element('i');
+      swatch.style.background = meta.color;
+      append(item, swatch, document.createTextNode(meta.short + '：' + meta.note + '（' + counts[type] + '）'));
+      legend.appendChild(item);
+    });
+    controls.appendChild(element('p', 'mv-network-pan-hint', '图较宽：左右滑动浏览，中心节点是 C 大调。'));
+
+    var activeType = 'all';
+    var activeIndex = 0;
+    var markerPrefix = 'mv-network-' + (++arrowId);
+    var colors = {};
+    metaOrder.forEach(function (type) { colors[type] = relationMeta(type).color; });
+    var markers = arrowMarkers(markerPrefix, colors);
+    svg.appendChild(markers.defs);
+
+    function boundaryPoint(rect, towardX, towardY) {
+      var cx = rect.left + rect.width / 2;
+      var cy = rect.top + rect.height / 2;
+      var dx = towardX - cx;
+      var dy = towardY - cy;
+      if (!dx && !dy) return { x: cx, y: cy };
+      var sx = dx ? (rect.width / 2) / Math.abs(dx) : Infinity;
+      var sy = dy ? (rect.height / 2) / Math.abs(dy) : Infinity;
+      var scale = Math.min(sx, sy);
+      return { x: cx + dx * scale, y: cy + dy * scale };
+    }
+
+    function layoutNetwork() {
+      var width = stage.clientWidth;
+      var height = stage.clientHeight;
+      if (!width || !height) return;
+      svg.setAttribute('viewBox', '0 0 ' + width + ' ' + height);
+      svg.setAttribute('width', width);
+      svg.setAttribute('height', height);
+      var cx = width / 2;
+      var cy = height / 2;
+      sourceNode.style.left = (cx - sourceNode.offsetWidth / 2) + 'px';
+      sourceNode.style.top = (cy - sourceNode.offsetHeight / 2) + 'px';
+
+      var rings = {
+        inner: { rx: Math.min(width * 0.135, 112), ry: Math.min(height * 0.135, 108), offset: Math.PI / 7 },
+        middle: { rx: Math.min(width * 0.255, 208), ry: Math.min(height * 0.25, 190), offset: Math.PI / 8 },
+        outer: { rx: Math.min(width * 0.41, 335), ry: Math.min(height * 0.40, 300), offset: -Math.PI / 2 }
+      };
+      ['inner', 'middle', 'outer'].forEach(function (ringName) {
+        var records = nodeRecords.filter(function (record) { return record.ring === ringName; });
+        var ring = rings[ringName];
+        records.forEach(function (record, index) {
+          var angle = ring.offset + (Math.PI * 2 * index / Math.max(1, records.length));
+          var x = cx + Math.cos(angle) * ring.rx;
+          var y = cy + Math.sin(angle) * ring.ry;
+          record.node.style.left = (x - record.node.offsetWidth / 2) + 'px';
+          record.node.style.top = (y - record.node.offsetHeight / 2) + 'px';
+        });
+      });
+
+      Array.prototype.slice.call(svg.querySelectorAll('.mv-network-edge')).forEach(function (edge) { edge.remove(); });
+      var stageRect = stage.getBoundingClientRect();
+      var sourceRect = sourceNode.getBoundingClientRect();
+      var sourceCx = sourceRect.left - stageRect.left + sourceRect.width / 2;
+      var sourceCy = sourceRect.top - stageRect.top + sourceRect.height / 2;
+      nodeRecords.forEach(function (record) {
+        var targetRect = record.node.getBoundingClientRect();
+        var targetCx = targetRect.left - stageRect.left + targetRect.width / 2;
+        var targetCy = targetRect.top - stageRect.top + targetRect.height / 2;
+        var from = boundaryPoint({
+          left: sourceRect.left - stageRect.left, top: sourceRect.top - stageRect.top,
+          width: sourceRect.width, height: sourceRect.height
+        }, targetCx, targetCy);
+        var to = boundaryPoint({
+          left: targetRect.left - stageRect.left, top: targetRect.top - stageRect.top,
+          width: targetRect.width, height: targetRect.height
+        }, sourceCx, sourceCy);
+        var path = svgElement('path', {
+          class: 'mv-network-edge',
+          d: 'M ' + from.x.toFixed(1) + ' ' + from.y.toFixed(1) + ' L ' + to.x.toFixed(1) + ' ' + to.y.toFixed(1),
+          fill: 'none',
+          stroke: relationMeta(record.type).color,
+          'stroke-width': record.index === activeIndex ? 1.8 : 0.9,
+          'stroke-opacity': activeType === 'all' || activeType === record.type ? (record.index === activeIndex ? 0.95 : 0.38) : 0.06,
+          'marker-end': 'url(#' + (markers.ids[record.type] || markers.ids.distant) + ')'
+        });
+        record.edge = path;
+        svg.appendChild(path);
+      });
+      if (!scroll.dataset.centered && scroll.scrollWidth > scroll.clientWidth + 4) {
+        scroll.scrollLeft = (scroll.scrollWidth - scroll.clientWidth) / 2;
+        scroll.dataset.centered = '1';
+      }
+    }
+
+    function highlightEdge(index, active) {
+      var record = nodeRecords[index];
+      if (!record || !record.edge) return;
+      record.edge.setAttribute('stroke-width', active ? '2.4' : (index === activeIndex ? '1.8' : '0.9'));
+      record.edge.setAttribute('stroke-opacity', active ? '1' : (activeType === 'all' || activeType === record.type ? (index === activeIndex ? '0.95' : '0.38') : '0.06'));
+    }
+
+    function showRoute(target, routeIndex, view, tabs) {
+      var route = target.routes[routeIndex];
+      if (!route) return;
+      Array.prototype.forEach.call(tabs.children, function (tab, index) {
+        tab.classList.toggle('is-active', index === routeIndex);
+        tab.setAttribute('aria-pressed', index === routeIndex ? 'true' : 'false');
+      });
+      view.replaceChildren();
+      var path = element('div', 'mv-route-graph');
+      path.setAttribute('role', 'list');
+      path.setAttribute('aria-label', target.targetLabel + ' 的和弦路线');
+      (route.steps || []).forEach(function (step, stepIndex, steps) {
+        if (stepIndex > 0) path.appendChild(element('span', 'mv-route-arrow', '→'));
+        var isPivot = step.category === 'pivot' || String(step.roman || '').indexOf('=') >= 0;
+        var node = element('div', 'mv-route-step' +
+          (stepIndex === 0 ? ' is-source' : '') +
+          (stepIndex === steps.length - 1 ? ' is-target' : '') +
+          (isPivot ? ' is-pivot' : ''));
+        node.setAttribute('role', 'listitem');
+        append(node,
+          element('b', '', step.roman || '—'),
+          element('span', 'mv-route-step-notes', (step.notes || []).join(' · ')),
+          element('small', '', step.key || step.function || ''));
+        if (isPivot && step.sourceRoman && step.targetRoman) {
+          node.appendChild(element('small', 'mv-route-pivot-label', step.sourceRoman + ' → ' + step.targetRoman));
+        }
+        path.appendChild(node);
+      });
+      view.appendChild(path);
+      view.appendChild(element('p', 'mv-route-explain', route.explanation || ''));
+    }
+
+    function selectTarget(index, userInitiated) {
+      activeIndex = index;
+      var target = groups[index];
+      var meta = relationMeta(target.relation && target.relation.type);
+      nodeRecords.forEach(function (record, nodeIndex) {
+        var selected = nodeIndex === index;
+        record.node.classList.toggle('is-selected', selected);
+        record.node.setAttribute('aria-pressed', selected ? 'true' : 'false');
+        if (record.edge) {
+          record.edge.setAttribute('stroke-width', selected ? '1.8' : '0.9');
+          var dim = activeType !== 'all' && activeType !== record.type;
+          record.edge.setAttribute('stroke-opacity', dim ? '0.06' : (selected ? '0.95' : '0.38'));
+        }
+      });
+      detail.replaceChildren();
+      var head = element('div', 'mv-network-detail-head');
+      var title = element('div');
+      append(title, element('h4', '', target.targetLabel), element('p', '', meta.note + '；从 C 大调出发。'));
+      append(head, title, badge(target.relation && target.relation.label ? target.relation.label : meta.short, 'gold'));
+      detail.appendChild(head);
+
+      var tabs = element('div', 'mv-route-tabs');
+      tabs.setAttribute('role', 'group');
+      tabs.setAttribute('aria-label', '选择转调方案');
+      var view = element('div', 'mv-route-view');
+      (target.routes || []).forEach(function (route, routeIndex) {
+        var tab = element('button', 'mv-route-tab');
+        tab.type = 'button';
+        tab.setAttribute('aria-pressed', routeIndex === 0 ? 'true' : 'false');
+        append(tab,
+          element('b', '', route.recipe || ('方案 ' + (routeIndex + 1))),
+          element('span', '', '得分 ' + Number(route.score || 0).toFixed(3)));
+        tab.addEventListener('click', function () { showRoute(target, routeIndex, view, tabs); });
+        tabs.appendChild(tab);
+      });
+      detail.appendChild(tabs);
+      detail.appendChild(view);
+      showRoute(target, 0, view, tabs);
+      if (userInitiated && detail.scrollIntoView && detail.getBoundingClientRect().top > window.innerHeight) {
+        detail.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+      }
+    }
+
+    function applyFilter(type) {
+      activeType = type;
+      filterButtons.forEach(function (button) {
+        button.node.setAttribute('aria-pressed', button.type === type ? 'true' : 'false');
+        button.node.classList.toggle('is-active', button.type === type);
+      });
+      var hasVisible = false;
+      nodeRecords.forEach(function (record, index) {
+        var visible = type === 'all' || record.type === type;
+        record.node.classList.toggle('is-muted', !visible);
+        if (visible && !hasVisible) hasVisible = true;
+        if (record.edge) {
+          record.edge.setAttribute('stroke-opacity', visible ? (index === activeIndex ? '0.95' : '0.38') : '0.06');
+          record.edge.setAttribute('stroke-width', index === activeIndex ? '1.8' : '0.9');
+        }
+      });
+      var firstVisible = nodeRecords.findIndex(function (record) { return type === 'all' || record.type === type; });
+      if (firstVisible >= 0) selectTarget(firstVisible);
+    }
+
+    placeVisual('visual-routes', visual.section, '展开 6.3 全部路线原始表格');
+    if (typeof ResizeObserver === 'function') {
+      new ResizeObserver(layoutNetwork).observe(stage);
+    } else {
+      window.addEventListener('resize', layoutNetwork);
+    }
+    window.requestAnimationFrame(function () {
+      layoutNetwork();
+      applyFilter('all');
+    });
   }
 
   function renderModulationTypes() {
