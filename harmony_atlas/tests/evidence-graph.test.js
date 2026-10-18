@@ -140,6 +140,8 @@ test('keeps the theory graph a valid acyclic node network', () => {
 test('classifies the corpus into three overlapping historical periods', () => {
   assert.deepEqual(D.PERIODS.map((period) => period.id),
     ['commonPractice', 'expandedTonality', 'modernPostTonal']);
+  assert.deepEqual(D.PERIODS.map((period) => period.short),
+    ['古典', '浪漫', '现代']);
   const nodeIds = new Set(D.THEORY_MAP.map((node) => node.id));
   const bookIds = new Set(D.TEXTBOOKS.map((book) => book.id));
   const profiles = new Map(sourceMap.bookProfiles.map((profile) => [profile.book, profile]));
@@ -329,7 +331,7 @@ test('renders twenty-four local figure cards with captions into the manual', () 
     assert.ok(!ids.has(id), 'duplicate figure ' + id);
     ids.add(id);
   }
-  for (const stage of ['13.1 古典与共同实践', '13.2 调性扩张与半音化', '13.3 现代与后调性']) {
+  for (const stage of ['13.1 古典与共同实践', '13.2 浪漫主义与调性扩张', '13.3 现代与后调性']) {
     assert.ok(manual.includes(stage), 'manual is missing ' + stage);
   }
   for (const id of gallery.examples.map((item) => item.id)) {
