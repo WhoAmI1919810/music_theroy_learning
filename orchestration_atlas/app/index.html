@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="css/style.css">
 
 
+
 <script data-site-theme-init>(function(){var d=document.documentElement;var t='light';try{var s=localStorage.getItem('music-site-theme');if(s==='dark'||s==='light')t=s;}catch(e){}d.setAttribute('data-theme',t);d.style.colorScheme=t;var p=location.pathname;var section='home';if(p.indexOf('/harmony_atlas/docs/books/')>=0)section='harmony-books';else if(p.indexOf('/harmony_atlas/docs/')>=0)section='harmony-manual';else if(p.indexOf('/harmony_atlas/app/')>=0)section='harmony-app';else if(p.indexOf('/counterpoint_atlas/docs/books/')>=0)section='counterpoint-books';else if(p.indexOf('/counterpoint_atlas/docs/')>=0)section='counterpoint-manual';else if(p.indexOf('/counterpoint_atlas/tutorial/')>=0)section='counterpoint-tutorial';else if(p.indexOf('/counterpoint_atlas/app/')>=0)section='counterpoint-app';else if(p.indexOf('/orchestration_atlas/docs/books/')>=0)section='orchestration-books';else if(p.indexOf('/orchestration_atlas/docs/')>=0)section='orchestration-manual';else if(p.indexOf('/orchestration_atlas/app/')>=0)section='orchestration-app';d.setAttribute('data-site-section',section);var m=document.querySelector('meta[name="theme-color"]');if(m)m.setAttribute('content',t==='dark'?'#0b1119':'#f5efe4');})();</script>
 <link rel="stylesheet" href="../../site-theme.css" data-site-theme-css>
 </head>
@@ -98,7 +99,7 @@
             <button class="secondary small" type="button" id="addLayerButton">增加层</button>
             <button class="secondary small" type="button" id="resetLayersButton">恢复预设</button>
           </div>
-          <p class="footnote">音高范围用 MIDI 编号表示；界面同时显示实际音名。所有推演在本地浏览器完成。</p>
+          <p class="footnote">每层可自动推荐，也可手选多件乐器并分别设置同度或八度。所有推演在本地浏览器完成。</p>
         </aside>
 
         <section class="output-area">
@@ -175,7 +176,8 @@
     <div class="modal-card">
       <div class="modal-head"><h2 id="helpTitle">使用说明</h2><button class="icon-button" id="closeHelpButton" type="button" aria-label="关闭">×</button></div>
       <div class="modal-body">
-        <p><b>推演台</b>把一段音乐压成若干结构层。为每层设置音高范围、力度、事件密度和优先级，系统会给出三套方案。</p>
+        <p><b>推演台</b>把一段音乐压成若干结构层。为每层设置音高范围、力度、事件密度和优先级，系统会给出三套方案。每层可选“自动推荐”，或选“手选组合”一次指定多件乐器；手选层在三套方案中保持不变，其余自动层仍按三套权重变化。</p>
+        <p><b>手选组合</b>中，勾选乐器后可用右侧下拉框为它单独设置低八度、同度或高八度。手选乐器即使超出当前编制或乐器音域也不会被静默替换，而会保留在方案中并进入警告栏，便于明确判断代价。</p>
         <p><b>清晰优先</b>减少同音区叠加；<b>标准平衡</b>使用常规加倍；<b>扩展全奏</b>增加八度与混合音色。三套方案都是规则推演，不代替试奏。</p>
         <p><b>评分</b>只在同一结构层的候选乐器之间比较，不是作品质量分。展开“评分与备选”可以看到舒适音区、角色适配、力度余量、敏捷度、持续力、掩蔽惩罚和落选候选。</p>
         <p><b>理论地图</b>箭头表示先修关系。点击节点只高亮与它直接相连的箭头；历史阶段筛选压暗该阶段次要节点，突出当时最需要处理的编制与结构问题，不删除通用声学原理。</p>

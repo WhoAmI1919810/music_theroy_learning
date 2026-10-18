@@ -150,6 +150,67 @@ test("same-register foreground and harmony triggers a masking warning", () => {
   assert.equal(warning.severity, "warn");
 });
 
+test("manual multi-instrument layers stay fixed across all plan styles", () => {
+  const result = engine.analyze({
+    goal: "blended",
+    ensemble: "romantic",
+    layers: [
+      {
+        id: "melody", role: "melody", mode: "manual",
+        manualVoices: [
+          { instrumentId: "violin", octaveShift: 0 },
+          { instrumentId: "flute", octaveShift: 12 },
+          { instrumentId: "oboe", octaveShift: 0 }
+        ],
+        lo: 67, hi: 79, dynamic: 6, duration: 10, density: 2, priority: 1
+      },
+      { id: "bass", role: "bass", lo: 40, hi: 52, dynamic: 5, duration: 10, density: 1, priority: 2 }
+    ]
+  });
+  const expected = [
+    ["violin", 0, 67, 79],
+    ["flute", 12, 79, 91],
+    ["oboe", 0, 67, 79]
+  ];
+  for (const plan of result.plans) {
+    const melody = plan.layers.find((layer) => layer.layerId === "melody");
+    assert.equal(melody.mode, "manual");
+    assert.match(melody.doubling, /手选 3 件/);
+    assert.deepEqual(
+      melody.instruments.map((item) => [item.instrumentId, item.octaveShift, item.soundingLow, item.soundingHigh]),
+      expected
+    );
+    assert.ok(melody.instruments.every((item) => item.manual));
+    assert.equal(plan.manualLayerCount, 1);
+  }
+});
+
+test("manual selections outside the ensemble or instrument range are preserved with warnings", () => {
+  const result = engine.analyze({
+    goal: "transparent",
+    ensemble: "chamber",
+    layers: [{
+      id: "manual-check", role: "melody", mode: "manual",
+      manualVoices: [
+        { instrumentId: "trumpet", octaveShift: 0 },
+        { instrumentId: "flute", octaveShift: -12 }
+      ],
+      lo: 60, hi: 72, dynamic: 5, duration: 8, density: 2, priority: 1
+    }]
+  });
+  for (const plan of result.plans) {
+    const layer = plan.layers.find((item) => item.layerId === "manual-check");
+    const trumpet = layer.instruments.find((item) => item.instrumentId === "trumpet");
+    const flute = layer.instruments.find((item) => item.instrumentId === "flute");
+    assert.ok(trumpet && flute, "manual selections must not be silently dropped");
+    assert.equal(trumpet.inEnsemble, false);
+    assert.equal(flute.inRange, false);
+    assert.equal(flute.soundingLow, 48);
+    assert.ok(plan.diagnostics.some((item) => item.title === "编制外乐器" && item.detail.includes("小号")));
+    assert.ok(plan.diagnostics.some((item) => item.title === "超出实际音域" && item.detail.includes("长笛")));
+  }
+});
+
 test("markdown export contains the selected plan and a practical caveat", () => {
   const result = engine.analyze(theory.PRESETS[1]);
   const markdown = engine.planToMarkdown({ input: result.input, plans: [result.plans[2]] });

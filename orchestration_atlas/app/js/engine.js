@@ -8,6 +8,7 @@
   const { GOALS, PRESETS } = theoryData;
 
   const NOTE_NAMES = ["C", "C#", "D", "D#", "E", "F", "F#", "G", "G#", "A", "A#", "B"];
+  const MANUAL_SHIFTS = [-12, 0, 12];
 
   const PLAN_STYLES = [
     {
@@ -48,6 +49,23 @@
     return DYNAMIC_NAMES[index];
   }
 
+  function normalizeManualVoices(value) {
+    const voices = [];
+    const seen = new Set();
+    if (!Array.isArray(value)) return voices;
+    for (const item of value) {
+      const instrumentId = item && typeof item.instrumentId === "string" ? item.instrumentId : "";
+      if (!INSTRUMENT_MAP[instrumentId] || seen.has(instrumentId)) continue;
+      const shift = Number(item.octaveShift);
+      seen.add(instrumentId);
+      voices.push({
+        instrumentId,
+        octaveShift: MANUAL_SHIFTS.includes(shift) ? shift : 0
+      });
+    }
+    return voices;
+  }
+
   function normalizeLayer(layer, index) {
     const low = Number(layer.lo);
     const high = Number(layer.hi);
@@ -59,7 +77,9 @@
       dynamic: clamp(Number(layer.dynamic) || 4, 1, 8),
       duration: clamp(Number(layer.duration) || 8, 0.5, 120),
       density: clamp(Number(layer.density) || 1, 0, 5),
-      priority: clamp(Number(layer.priority) || 3, 1, 5)
+      priority: clamp(Number(layer.priority) || 3, 1, 5),
+      mode: layer.mode === "manual" ? "manual" : "auto",
+      manualVoices: normalizeManualVoices(layer.manualVoices)
     };
   }
 
@@ -196,73 +216,125 @@
     return [layer.lo + shift, layer.hi + shift];
   }
 
-  function planLayer(layer, available, context, style, goal, assignedIds) {
-    const wanted = style.voices[layer.role] || 1;
+  function manualAssignment(layer, voice, availableIds, context, style, goal) {
+    const instrument = INSTRUMENT_MAP[voice.instrumentId];
+    if (!instrument) return null;
+    const hasPitch = instrument.id !== "percussion";
+    const octaveShift = hasPitch ? voice.octaveShift : 0;
+    const soundingLow = hasPitch ? layer.lo + octaveShift : null;
+    const soundingHigh = hasPitch ? layer.hi + octaveShift : null;
+    const inEnsemble = availableIds.has(instrument.id);
+    const inRange = !hasPitch || (soundingLow >= instrument.midiLow && soundingHigh <= instrument.midiHigh);
+    const features = candidateFeatures(
+      instrument, layer, hasPitch ? soundingLow : layer.lo, hasPitch ? soundingHigh : layer.hi,
+      context, style, goal
+    );
+    const details = ["手选"];
+    if (hasPitch) {
+      details.push("实际发声 " + midiToName(soundingLow) + "–" + midiToName(soundingHigh));
+      details.push(inRange ? "在乐器音域内" : "超出乐器音域");
+    } else {
+      details.push("无固定音高");
+    }
+    details.push(inEnsemble ? "属于当前编制" : "不在当前编制");
+    if (features.roleFit >= 0.8) details.push("符合" + ROLE_LABELS[layer.role] + "角色");
+    else if (features.roleFit < 0.4) details.push("角色适配较低");
+
+    return {
+      layerId: layer.id,
+      role: layer.role,
+      instrumentId: instrument.id,
+      instrument: instrument.name,
+      family: instrument.family,
+      familyLabel: instrument.familyLabel,
+      octaveShift,
+      soundingLow,
+      soundingHigh,
+      score: Math.round(features.total * 1000) / 1000,
+      reason: details.join("；"),
+      alternatives: [],
+      features,
+      manual: true,
+      inEnsemble,
+      inRange
+    };
+  }
+
+  function autoAssignment(layer, candidate, shift, low, high, goal) {
+    return {
+      layerId: layer.id,
+      role: layer.role,
+      instrumentId: candidate.instrument.id,
+      instrument: candidate.instrument.name,
+      family: candidate.instrument.family,
+      familyLabel: candidate.instrument.familyLabel,
+      octaveShift: shift,
+      soundingLow: low,
+      soundingHigh: high,
+      score: Math.round(candidate.features.total * 1000) / 1000,
+      reason: reasonFor(candidate.instrument, candidate.features, layer, goal),
+      alternatives: alternativesFor(candidate, layer, goal),
+      features: candidate.features,
+      manual: false,
+      inEnsemble: true,
+      inRange: true
+    };
+  }
+
+  function planLayer(layer, available, availableIds, context, style, goal, assignedIds) {
     const instruments = [];
-    const shiftChoices = [0];
-    if (style.id === "thick" && (layer.role === "melody" || layer.role === "bass")) {
-      shiftChoices.push(layer.role === "melody" ? -12 : -12);
-    }
-    if (style.id === "balanced" && layer.role === "bass") shiftChoices.push(-12);
+    if (layer.mode === "manual") {
+      for (const voice of layer.manualVoices) {
+        const assignment = manualAssignment(layer, voice, availableIds, context, style, goal);
+        if (!assignment) continue;
+        assignedIds.add(assignment.instrumentId);
+        instruments.push(assignment);
+        context.assignments.push(assignment);
+        if (layer.role === "melody" && !context.melodyFamily) context.melodyFamily = assignment.family;
+      }
+    } else {
+      const wanted = style.voices[layer.role] || 1;
+      const shiftChoices = [0];
+      if (style.id === "thick" && (layer.role === "melody" || layer.role === "bass")) {
+        shiftChoices.push(-12);
+      }
+      if (style.id === "balanced" && layer.role === "bass") shiftChoices.push(-12);
 
-    for (const shift of shiftChoices) {
-      const [low, high] = shiftedRange(layer, shift);
-      const candidate = chooseCandidate(layer, low, high, available, context, style, goal, assignedIds);
-      if (!candidate) continue;
-      const id = candidate.instrument.id;
-      assignedIds.add(id);
-      const assignment = {
-        layerId: layer.id,
-        role: layer.role,
-        instrumentId: id,
-        instrument: candidate.instrument.name,
-        family: candidate.instrument.family,
-        familyLabel: candidate.instrument.familyLabel,
-        octaveShift: shift,
-        soundingLow: low,
-        soundingHigh: high,
-        score: Math.round(candidate.features.total * 1000) / 1000,
-        reason: reasonFor(candidate.instrument, candidate.features, layer, goal),
-        alternatives: alternativesFor(candidate, layer, goal),
-        features: candidate.features
-      };
-      instruments.push(assignment);
-      context.assignments.push(assignment);
-      if (layer.role === "melody" && !context.melodyFamily) context.melodyFamily = candidate.instrument.family;
-    }
+      for (const shift of shiftChoices) {
+        const [low, high] = shiftedRange(layer, shift);
+        const candidate = chooseCandidate(layer, low, high, available, context, style, goal, assignedIds);
+        if (!candidate) continue;
+        assignedIds.add(candidate.instrument.id);
+        const assignment = autoAssignment(layer, candidate, shift, low, high, goal);
+        instruments.push(assignment);
+        context.assignments.push(assignment);
+        if (layer.role === "melody" && !context.melodyFamily) context.melodyFamily = candidate.instrument.family;
+      }
 
-    if (!instruments.length && layer.role === "rhythm") {
-      const percussion = INSTRUMENT_MAP.percussion;
-      assignedIds.add(percussion.id);
-      const assignment = {
-        layerId: layer.id, role: layer.role, instrumentId: percussion.id,
-        instrument: percussion.name, family: percussion.family, familyLabel: percussion.familyLabel,
-        octaveShift: 0, soundingLow: null, soundingHigh: null, score: 0.35,
-        reason: "节奏层需要明确的起音与时间边界", alternatives: [],
-        features: { comfort: 0, roleFit: 1, maskingPenalty: 0 }
-      };
-      instruments.push(assignment);
-      context.assignments.push(assignment);
-    }
+      if (!instruments.length && layer.role === "rhythm") {
+        const percussion = INSTRUMENT_MAP.percussion;
+        assignedIds.add(percussion.id);
+        const assignment = {
+          layerId: layer.id, role: layer.role, instrumentId: percussion.id,
+          instrument: percussion.name, family: percussion.family, familyLabel: percussion.familyLabel,
+          octaveShift: 0, soundingLow: null, soundingHigh: null, score: 0.35,
+          reason: "节奏层需要明确的起音与时间边界", alternatives: [],
+          features: { comfort: 0, roleFit: 1, maskingPenalty: 0 },
+          manual: false, inEnsemble: true, inRange: true
+        };
+        instruments.push(assignment);
+        context.assignments.push(assignment);
+      }
 
-    const extraTarget = Math.max(wanted, instruments.length);
-    while (instruments.length < extraTarget) {
-      const candidate = chooseCandidate(layer, layer.lo, layer.hi, available, context, style, goal, assignedIds);
-      if (!candidate) break;
-      const id = candidate.instrument.id;
-      assignedIds.add(id);
-      const assignment = {
-        layerId: layer.id, role: layer.role, instrumentId: id,
-        instrument: candidate.instrument.name, family: candidate.instrument.family,
-        familyLabel: candidate.instrument.familyLabel, octaveShift: 0,
-        soundingLow: layer.lo, soundingHigh: layer.hi,
-        score: Math.round(candidate.features.total * 1000) / 1000,
-        reason: reasonFor(candidate.instrument, candidate.features, layer, goal),
-        alternatives: alternativesFor(candidate, layer, goal),
-        features: candidate.features
-      };
-      instruments.push(assignment);
-      context.assignments.push(assignment);
+      const extraTarget = Math.max(wanted, instruments.length);
+      while (instruments.length < extraTarget) {
+        const candidate = chooseCandidate(layer, layer.lo, layer.hi, available, context, style, goal, assignedIds);
+        if (!candidate) break;
+        assignedIds.add(candidate.instrument.id);
+        const assignment = autoAssignment(layer, candidate, 0, layer.lo, layer.hi, goal);
+        instruments.push(assignment);
+        context.assignments.push(assignment);
+      }
     }
 
     return {
@@ -270,11 +342,20 @@
       priority: layer.priority, range: [layer.lo, layer.hi],
       rangeLabel: midiToName(layer.lo) + "–" + midiToName(layer.hi),
       dynamic: dynamicName(layer.dynamic), density: layer.density,
+      mode: layer.mode, manualCount: layer.manualVoices.length,
       doubling: doublingLabel(layer, instruments), instruments
     };
   }
 
   function doublingLabel(layer, assignments) {
+    if (layer.mode === "manual") {
+      if (!assignments.length) return "手选组合为空";
+      const shifts = new Set(assignments.map((item) => item.octaveShift));
+      const hasSamePitch = shifts.has(0);
+      const hasOctave = [...shifts].some((shift) => shift !== 0);
+      const kind = hasSamePitch && hasOctave ? "同度＋八度叠置" : hasOctave ? "八度叠置" : "同度叠置";
+      return "手选 " + assignments.length + " 件 · " + kind;
+    }
     if (!assignments.length) return "未分配";
     if (assignments.length === 1) return "单件/单组";
     if (layer.role === "harmony") return "多声部和弦分配";
@@ -288,26 +369,30 @@
     const goal = GOALS[input.goal] || GOALS.blended;
     const ensemble = ENSEMBLES[input.ensemble] || ENSEMBLES.classical;
     const available = ensemble.ids.map((id) => INSTRUMENT_MAP[id]).filter(Boolean);
+    const availableIds = new Set(available.map((instrument) => instrument.id));
     const layers = input.layers.map(normalizeLayer);
     const layersById = Object.fromEntries(layers.map((layer) => [layer.id, layer]));
     const context = { assignments: [], layersById, melodyFamily: null };
     const assignedIds = new Set();
     const ordered = [...layers].sort((a, b) => a.priority - b.priority || a.lo - b.lo);
-    const layerPlans = ordered.map((layer) => planLayer(layer, available, context, style, goal, assignedIds));
+    const layerPlans = ordered.map((layer) => planLayer(layer, available, availableIds, context, style, goal, assignedIds));
     const diagnostics = diagnose(layers, layerPlans, goal, ensemble, style);
     const totalVoices = layerPlans.reduce((sum, item) => sum + item.instruments.length, 0);
     const families = [...new Set(layerPlans.flatMap((item) => item.instruments.map((entry) => entry.family)))];
     const assignedLayers = layerPlans.filter((plan) => plan.instruments.length);
+    const soundingRanges = assignedLayers.flatMap((plan) => plan.instruments)
+      .filter((assignment) => assignment.soundingLow != null);
     return {
       id: style.id, label: style.label, description: style.description,
       goal: input.goal, ensemble: input.ensemble, ensembleLabel: ensemble.label,
       layers: layerPlans, diagnostics,
+      manualLayerCount: layers.filter((layer) => layer.mode === "manual").length,
       metrics: {
         independentLayers: layers.length,
         assignedInstruments: totalVoices,
         families: families.length,
-        registerLow: assignedLayers.length ? Math.min(...assignedLayers.map((p) => p.range[0])) : 24,
-        registerHigh: assignedLayers.length ? Math.max(...assignedLayers.map((p) => p.range[1])) : 108,
+        registerLow: soundingRanges.length ? Math.min(...soundingRanges.map((item) => item.soundingLow)) : 24,
+        registerHigh: soundingRanges.length ? Math.max(...soundingRanges.map((item) => item.soundingHigh)) : 108,
         warningCount: diagnostics.filter((item) => item.severity !== "info").length
       }
     };
@@ -341,14 +426,27 @@
 
     for (const plan of layerPlans) {
       if (!plan.instruments.length) {
-        diagnostics.push({ severity: "warn", layerIds: [plan.layerId], title: "没有可用乐器", detail: plan.roleLabel + "在当前编制中没有找到合适音区；需要换八度或扩大编制。" });
+        if (plan.mode === "manual") {
+          diagnostics.push({ severity: "warn", layerIds: [plan.layerId], title: "手选组合为空", detail: plan.roleLabel + "已设为手选组合，但没有勾选乐器；请选择至少一件乐器，或切回自动推荐。" });
+        } else {
+          diagnostics.push({ severity: "warn", layerIds: [plan.layerId], title: "没有可用乐器", detail: plan.roleLabel + "在当前编制中没有找到合适音区；需要换八度或扩大编制。" });
+        }
         continue;
       }
       for (const assignment of plan.instruments) {
         const instrument = INSTRUMENT_MAP[assignment.instrumentId];
+        if (assignment.manual && !assignment.inEnsemble) {
+          diagnostics.push({ severity: "warn", layerIds: [plan.layerId], title: "编制外乐器", detail: assignment.instrument + "被手选进入" + plan.roleLabel + "，但不在当前编制“" + ensemble.label + "”中；保留该选择，请确认可调用的人员或改用编制内乐器。" });
+        }
+        if (assignment.manual && !assignment.inRange) {
+          diagnostics.push({ severity: "warn", layerIds: [plan.layerId], title: "超出实际音域", detail: assignment.instrument + "在" + (assignment.octaveShift === 0 ? "同度" : assignment.octaveShift > 0 ? "高八度" : "低八度") + "设定下发声音域为 " + midiToName(assignment.soundingLow) + "–" + midiToName(assignment.soundingHigh) + "，超出乐器实际音域；保留该选择，请改写或更换乐器。" });
+        }
         if (!instrument || instrument.id === "percussion") continue;
+        if (assignment.manual && (instrument.roles[plan.role] || 0) < 2) {
+          diagnostics.push({ severity: "info", layerIds: [plan.layerId], title: "角色适配较低", detail: assignment.instrument + "通常不承担" + plan.roleLabel + "；手选仍然有效，但需要按具体写法核对音区、力度与演奏负担。" });
+        }
         const comfort = comfortableRatio(assignment.soundingLow, assignment.soundingHigh, instrument);
-        if (comfort < 0.45) {
+        if ((!assignment.manual || assignment.inRange) && comfort < 0.45) {
           diagnostics.push({ severity: "warn", layerIds: [plan.layerId], title: "音区边缘", detail: assignment.instrument + "承担" + plan.roleLabel + "时仅 " + Math.round(comfort * 100) + "% 位于舒适音区；核对力度与音准。" });
         }
         if (plan.density >= 4 && instrument.agility <= 2) {
@@ -398,6 +496,7 @@
       lines.push("");
       for (const layer of plan.layers) {
         lines.push("### " + layer.roleLabel + "（" + layer.rangeLabel + "，" + layer.dynamic + "）");
+        if (layer.mode === "manual") lines.push("- 模式： 手选组合（三套方案保持一致）");
         lines.push("- 写法： " + layer.doubling);
         for (const assignment of layer.instruments) {
           const shift = assignment.octaveShift === 0 ? "" : "，移 " + (assignment.octaveShift > 0 ? "+" : "") + assignment.octaveShift + " 半音";
@@ -416,7 +515,7 @@
   }
 
   const exports = {
-    PLAN_STYLES, midiToName, midiToFrequency, dynamicName, overlapRatio, comfortableRatio,
+    PLAN_STYLES, MANUAL_SHIFTS, midiToName, midiToFrequency, dynamicName, overlapRatio, comfortableRatio,
     analyze, planToMarkdown
   };
   if (typeof module !== "undefined" && module.exports) module.exports = exports;

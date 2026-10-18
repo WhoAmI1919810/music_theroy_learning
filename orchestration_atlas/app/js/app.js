@@ -15,6 +15,11 @@
   const FAMILY_COLORS = {
     string: "#2c6c68", woodwind: "#b36b32", brass: "#9b5a24", percussion: "#8b7d49", key: "#6f6292"
   };
+  const FAMILY_ORDER = ["string", "woodwind", "brass", "percussion", "key"];
+  const FAMILY_LABELS = {
+    string: "弦乐", woodwind: "木管", brass: "铜管", percussion: "打击乐", key: "竖琴/键盘"
+  };
+  const MANUAL_SHIFT_LABELS = { "-12": "低八度", "0": "同度", "12": "高八度" };
 
   const state = {
     activeTab: "overview",
@@ -123,6 +128,7 @@
     ensembleSelect.value = state.ensemble;
     ensembleSelect.addEventListener("change", () => {
       state.ensemble = ensembleSelect.value;
+      renderLayerEditor();
       analyzeNow();
     });
 
@@ -219,6 +225,12 @@
       input.addEventListener("input", () => updateLayer(input));
       input.addEventListener("change", () => updateLayer(input));
     });
+    editor.querySelectorAll("[data-manual-instrument]").forEach((input) => {
+      input.addEventListener("change", () => updateManualVoice(input));
+    });
+    editor.querySelectorAll("[data-manual-octave]").forEach((select) => {
+      select.addEventListener("change", () => updateManualOctave(select));
+    });
     editor.querySelectorAll("[data-remove-layer]").forEach((button) => {
       button.addEventListener("click", () => {
         if (state.layers.length <= 1) return;
@@ -233,17 +245,54 @@
 
   function layerEditorCard(layer, index) {
     const roleOptions = Object.entries(ROLE_LABELS).map(([id, label]) => '<option value="' + id + '"' + (layer.role === id ? " selected" : "") + ">" + escapeHTML(label) + "</option>").join("");
+    const mode = layer.mode === "manual" ? "manual" : "auto";
     return '<div class="layer-card" data-layer-index="' + index + '">' +
       '<div class="layer-card-head"><span class="role-tag"><i class="role-dot"></i>' + escapeHTML(ROLE_LABELS[layer.role]) + '</span><button class="remove-layer" type="button" data-remove-layer="' + index + '" aria-label="删除此层">×</button></div>' +
       '<div class="field-grid"><label class="mini-field">角色<select data-layer-field="role" data-index="' + index + '">' + roleOptions + '</select></label>' +
       '<label class="mini-field">优先级<select data-layer-field="priority" data-index="' + index + '">' + [1,2,3,4,5].map((n) => '<option value="' + n + '"' + (Number(layer.priority) === n ? " selected" : "") + ">P" + n + "</option>").join("") + "</select></label></div>" +
+      '<label class="mini-field mode-field">分配方式<select data-layer-field="mode" data-index="' + index + '"><option value="auto"' + (mode === "auto" ? " selected" : "") + '>自动推荐</option><option value="manual"' + (mode === "manual" ? " selected" : "") + '>手选组合</option></select></label>' +
       '<div class="range-line"><span class="range-label">低</span><input type="range" min="24" max="108" step="1" value="' + layer.lo + '" data-layer-field="lo" data-index="' + index + '" aria-label="最低音"><span>' + engine.midiToName(layer.lo) + '</span></div>' +
       '<div class="range-line"><span class="range-label">高</span><input type="range" min="24" max="108" step="1" value="' + layer.hi + '" data-layer-field="hi" data-index="' + index + '" aria-label="最高音"><span>' + engine.midiToName(layer.hi) + '</span></div>' +
       '<div class="layer-sliders">' +
         sliderField("力度", "dynamic", layer.dynamic, 1, 8, index, DYNAMIC_NAMES[Math.max(0, Math.min(7, layer.dynamic - 1))]) +
         sliderField("密度", "density", layer.density, 0, 5, index, layer.density) +
         sliderField("时长", "duration", layer.duration, 1, 24, index, layer.duration + "s") +
-      '</div></div>';
+      '</div>' +
+      (mode === "manual"
+        ? manualPickerHTML(layer, index)
+        : '<p class="mode-hint">按角色、音区与目标自动分配；切到手选组合可固定多件乐器。</p>') +
+      '</div>';
+  }
+
+  function manualPickerHTML(layer, index) {
+    const voices = Array.isArray(layer.manualVoices) ? layer.manualVoices : [];
+    const selected = new Map(voices.map((voice) => [voice.instrumentId, voice]));
+    const ensemble = ENSEMBLES[state.ensemble] || ENSEMBLES.classical;
+    const ensembleIds = new Set(ensemble.ids);
+    const groups = FAMILY_ORDER.map((family) => {
+      const familyInstruments = INSTRUMENTS.filter((instrument) => instrument.family === family);
+      if (!familyInstruments.length) return "";
+      return '<div class="manual-family"><div class="manual-family-head">' + escapeHTML(FAMILY_LABELS[family] || family) + '</div>' +
+        familyInstruments.map((instrument) => manualOptionHTML(instrument, index, selected.get(instrument.id), ensembleIds)).join("") +
+        '</div>';
+    }).join("");
+    return '<div class="manual-picker"><div class="manual-picker-head"><b>手选乐器与八度</b><span class="manual-count" data-manual-count="' + index + '">' + voices.length + ' 件</span></div>' +
+      '<p class="manual-help">勾选即采用，不再自动补声部；这些选择在三套方案中保持不变。编制外或超出音域的乐器会保留并给出警告。</p>' +
+      '<div class="manual-options">' + groups + '</div></div>';
+  }
+
+  function manualOptionHTML(instrument, index, voice, ensembleIds) {
+    const checked = Boolean(voice);
+    const shift = voice ? voice.octaveShift : 0;
+    const outside = !ensembleIds.has(instrument.id);
+    const shiftMarkup = instrument.id === "percussion"
+      ? '<select class="manual-octave" disabled aria-label="' + escapeHTML(instrument.name + "无固定音高") + '"><option>无音高</option></select>'
+      : '<select class="manual-octave" data-manual-octave="' + instrument.id + '" data-index="' + index + '" aria-label="' + escapeHTML(instrument.name + "八度") + '"' + (checked ? "" : " disabled") + '>' +
+        (engine.MANUAL_SHIFTS || [-12, 0, 12]).map((value) => '<option value="' + value + '"' + (Number(shift) === value ? " selected" : "") + '>' + MANUAL_SHIFT_LABELS[String(value)] + '</option>').join("") +
+        '</select>';
+    return '<div class="manual-option' + (outside ? " outside-ensemble" : "") + '">' +
+      '<label class="manual-check"><input type="checkbox" data-manual-instrument="' + instrument.id + '" data-index="' + index + '"' + (checked ? " checked" : "") + '><span>' + escapeHTML(instrument.name) + (outside ? '<small>编制外</small>' : '') + '</span></label>' +
+      shiftMarkup + '</div>';
   }
 
   function sliderField(label, field, value, min, max, index, display) {
@@ -255,7 +304,11 @@
     const field = input.dataset.layerField;
     const layer = state.layers[index];
     if (!layer) return;
-    if (field === "role") layer.role = input.value;
+    if (field === "mode") {
+      const mode = input.value === "manual" ? "manual" : "auto";
+      if (mode === "manual" && !Array.isArray(layer.manualVoices)) layer.manualVoices = seedManualVoices(index);
+      layer.mode = mode;
+    } else if (field === "role") layer.role = input.value;
     else if (field === "priority") layer.priority = Number(input.value);
     else if (field === "dynamic" || field === "density" || field === "duration" || field === "lo" || field === "hi") layer[field] = Number(input.value);
     if (layer.hi < layer.lo) layer.hi = layer.lo;
@@ -266,11 +319,65 @@
     analyzeTimer = setTimeout(analyzeNow, 120);
   }
 
+  function seedManualVoices(index) {
+    const layer = state.layers[index];
+    const plan = currentPlan();
+    const planLayer = plan?.layers.find((item) => item.layerId === layer.id);
+    if (!planLayer) return [];
+    return planLayer.instruments.map((assignment) => ({
+      instrumentId: assignment.instrumentId,
+      octaveShift: Number(assignment.octaveShift) || 0
+    }));
+  }
+
+  function updateManualVoice(input) {
+    const index = Number(input.dataset.index);
+    const instrumentId = input.dataset.manualInstrument;
+    const layer = state.layers[index];
+    if (!layer || !instrumentId) return;
+    if (!Array.isArray(layer.manualVoices)) layer.manualVoices = [];
+    const existing = layer.manualVoices.findIndex((voice) => voice.instrumentId === instrumentId);
+    const octaveSelect = input.closest(".manual-option")?.querySelector("[data-manual-octave]");
+    if (input.checked && existing < 0) {
+      const shift = Number(octaveSelect?.value);
+      layer.manualVoices.push({ instrumentId, octaveShift: [-12, 0, 12].includes(shift) ? shift : 0 });
+    } else if (!input.checked && existing >= 0) {
+      layer.manualVoices.splice(existing, 1);
+    }
+    if (octaveSelect) octaveSelect.disabled = !input.checked;
+    updateManualCount(index);
+    markCustomAndAnalyze();
+  }
+
+  function updateManualOctave(select) {
+    const index = Number(select.dataset.index);
+    const instrumentId = select.dataset.manualOctave;
+    const layer = state.layers[index];
+    const voice = layer?.manualVoices?.find((item) => item.instrumentId === instrumentId);
+    if (!voice) return;
+    const shift = Number(select.value);
+    voice.octaveShift = [-12, 0, 12].includes(shift) ? shift : 0;
+    markCustomAndAnalyze();
+  }
+
+  function updateManualCount(index) {
+    const output = document.querySelector('[data-manual-count="' + index + '"]');
+    if (output) output.textContent = (state.layers[index]?.manualVoices?.length || 0) + " 件";
+  }
+
+  function markCustomAndAnalyze() {
+    state.presetId = "custom";
+    document.querySelectorAll(".preset-button").forEach((button) => button.classList.remove("active"));
+    clearTimeout(analyzeTimer);
+    analyzeTimer = setTimeout(analyzeNow, 120);
+  }
+
   function addLayer() {
     const base = state.layers[state.layers.length - 1] || { lo: 55, hi: 67 };
     state.layers.push({
       id: "layer-" + Date.now(), role: "harmony", lo: Math.max(24, base.lo - 7), hi: Math.max(24, base.hi - 7),
-      dynamic: 3, duration: 8, density: 1, priority: Math.min(5, state.layers.length + 1)
+      dynamic: 3, duration: 8, density: 1, priority: Math.min(5, state.layers.length + 1),
+      mode: "auto", manualVoices: []
     });
     state.presetId = "custom";
     renderPresetRow();
@@ -286,21 +393,21 @@
   function renderResult() {
     if (!analysis) return;
     document.getElementById("planTabs").innerHTML = analysis.plans.map((plan) =>
-      '<button class="plan-tab' + (plan.id === state.selectedPlan ? " active" : "") + '" type="button" data-plan="' + plan.id + '"><b>' + escapeHTML(plan.label) + "</b><small>" + plan.metrics.assignedInstruments + " 声部 · " + plan.metrics.warningCount + " 项警告</small></button>"
+      '<button class="plan-tab' + (plan.id === state.selectedPlan ? " active" : "") + '" type="button" data-plan="' + plan.id + '"><b>' + escapeHTML(plan.label) + "</b><small>" + plan.metrics.assignedInstruments + " 件乐器 · " + plan.metrics.warningCount + " 项警告</small></button>"
     ).join("");
     const plan = analysis.plans.find((item) => item.id === state.selectedPlan) || analysis.plans[0];
     renderMetrics(plan);
     renderRegisterMap(plan);
     renderDiagnostics(plan);
     renderAssignments(plan);
-    document.getElementById("planDescription").textContent = plan.description;
+    document.getElementById("planDescription").textContent = plan.description + (plan.manualLayerCount ? " · 手选层固定 " + plan.manualLayerCount + " 层" : "");
   }
 
   function renderMetrics(plan) {
     const metrics = plan.metrics;
     document.getElementById("resultSummary").innerHTML = [
       ["独立结构层", metrics.independentLayers],
-      ["分配声部", metrics.assignedInstruments],
+      ["已分配乐器", metrics.assignedInstruments],
       ["使用组别", metrics.families],
       ["音区跨度", engine.midiToName(metrics.registerLow || 24) + "–" + engine.midiToName(metrics.registerHigh || 108)]
     ].map(([label, value]) => '<div class="metric"><b>' + escapeHTML(value) + '</b><span>' + escapeHTML(label) + "</span></div>").join("");
@@ -331,7 +438,7 @@
       parts.push('<rect x="' + lowX + '" y="' + (center - 8) + '" width="' + Math.max(5, highX - lowX) + '" height="17" rx="7" fill="#e8dfd1" opacity=".9"/>');
       layer.instruments.forEach((assignment, assignmentIndex) => {
         if (assignment.soundingLow == null) return;
-        const middle = (assignment.soundingLow + assignment.soundingHigh) / 2;
+        const middle = Math.max(pitchLow, Math.min(pitchHigh, (assignment.soundingLow + assignment.soundingHigh) / 2));
         const x = xForMidi(middle);
         const color = FAMILY_COLORS[assignment.family] || "#777";
         parts.push('<circle cx="' + x + '" cy="' + center + '" r="5.5" fill="' + color + '" stroke="#fffdf7" stroke-width="1.6"><title>' + escapeHTML(assignment.instrument + " · " + assignment.familyLabel) + "</title></circle>");
@@ -368,14 +475,14 @@
     return '<details class="candidate-details"><summary>评分与备选</summary>' +
       '<div class="feature-grid"><span>舒适音区<b>' + pct(features.comfort) + '</b></span><span>角色适配<b>' + pct(features.roleFit) + '</b></span><span>力度余量<b>' + pct(features.dynamicFit) + '</b></span><span>敏捷度<b>' + pct(features.agilityFit) + '</b></span><span>持续力<b>' + pct(features.sustainFit) + '</b></span><span>掩蔽惩罚<b>' + pct(features.maskingPenalty) + '</b></span></div>' +
       (alternatives ? '<div class="candidate-list"><b>同层备选</b><ol>' + alternatives + '</ol></div>' : '') +
-      '<p class="score-note">相对分只用于同一结构层的候选比较，不是作品质量分。</p></details>';
+      '<p class="score-note">' + (assignment.manual ? "手选乐器不参与自动排名；这些指标只用于核对音区、角色与持续能力。" : "相对分只用于同一结构层的候选比较，不是作品质量分。") + '</p></details>';
   }
 
   function renderAssignments(plan) {
     document.getElementById("assignments").innerHTML = plan.layers.map((layer) => {
       const chips = layer.instruments.map((assignment) => {
         const shift = assignment.octaveShift ? " · " + (assignment.octaveShift > 0 ? "+" : "") + assignment.octaveShift + " 半音" : "";
-        return '<div class="instrument-chip ' + layer.role + '"><b>' + escapeHTML(assignment.instrument) + "</b><span>" + escapeHTML(assignment.familyLabel + shift) + "</span><span>" + escapeHTML(assignment.reason) + "</span>" + assignmentDetails(assignment) + "</div>";
+        return '<div class="instrument-chip ' + layer.role + (assignment.manual ? " manual" : "") + '"><b>' + escapeHTML(assignment.instrument) + "</b><span>" + escapeHTML(assignment.familyLabel + shift) + "</span><span>" + escapeHTML(assignment.reason) + "</span>" + assignmentDetails(assignment) + "</div>";
       }).join("") || '<span class="muted">没有可用乐器</span>';
       return '<div class="assignment-row"><div class="assignment-label"><b>' + escapeHTML(layer.roleLabel) + "</b><span>" + escapeHTML(layer.rangeLabel + " · " + layer.dynamic + " · P" + layer.priority) + "</span><span>" + escapeHTML(layer.doubling) + "</span></div><div class=\"assignment-instruments\">" + chips + "</div></div>";
     }).join("");
