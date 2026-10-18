@@ -599,6 +599,14 @@
           "label": "声部进行与不协和解决 · voice-leading.parallels",
           "text": "手册提炼：平行纯五度、纯八度削弱声部独立性，因此传统调性写作把它们视为需要避免的进行。",
           "href": "../和声学手册.html#claim-voice-leading-parallels"
+        },
+        {
+          "kind": "prose",
+          "id": "cite-kizler_20c-p0056-1",
+          "anchor": "ref-prose-cite-kizler_20c-p0056-1-p0056",
+          "label": "手册正文引用",
+          "text": "平行纯五度、纯八度：两个声部以相同纯音程同向移动到新的纯音程，会削弱独立性，传统写作中避免。桑桐教程 PDF p.24、柴可夫斯基 PDF p.21、《概述》PDF p.103、斯波索宾上册答案 PDF p.20、徐平力 PDF p.379、桑桐《半音化的历史演进》PDF p.114、佩尔西采蒂 PDF p.68、基泽勒 PDF p.56。",
+          "href": "../和声学手册.html#cite-kizler_20c-p0056-1"
         }
       ],
       "113": [
@@ -725,6 +733,14 @@
           "label": "转位、低音与和声节奏 · inversion.cadential-six-four",
           "text": "手册提炼：终止四六和弦延迟 V 的到来，应处于比其后 V 更强的节奏位置，并以平稳声部进出。",
           "href": "../和声学手册.html#claim-inversion-cadential-six-four"
+        },
+        {
+          "kind": "prose",
+          "id": "cite-persichetti_20c-p0068-1",
+          "anchor": "ref-prose-cite-persichetti_20c-p0068-1-p0068",
+          "label": "手册正文引用",
+          "text": "平行纯五度、纯八度：两个声部以相同纯音程同向移动到新的纯音程，会削弱独立性，传统写作中避免。桑桐教程 PDF p.24、柴可夫斯基 PDF p.21、《概述》PDF p.103、斯波索宾上册答案 PDF p.20、徐平力 PDF p.379、桑桐《半音化的历史演进》PDF p.114、佩尔西采蒂 PDF p.68、基泽勒 PDF p.56。",
+          "href": "../和声学手册.html#cite-persichetti_20c-p0068-1"
         }
       ],
       "81": [
@@ -1009,6 +1025,14 @@
           "label": "声部进行与不协和解决 · voice-leading.parallels",
           "text": "手册提炼：平行纯五度、纯八度削弱声部独立性，因此传统调性写作把它们视为需要避免的进行。",
           "href": "../和声学手册.html#claim-voice-leading-parallels"
+        },
+        {
+          "kind": "prose",
+          "id": "cite-sangtong_chromatic-p0114-1",
+          "anchor": "ref-prose-cite-sangtong_chromatic-p0114-1-p0114",
+          "label": "手册正文引用",
+          "text": "平行纯五度、纯八度：两个声部以相同纯音程同向移动到新的纯音程，会削弱独立性，传统写作中避免。桑桐教程 PDF p.24、柴可夫斯基 PDF p.21、《概述》PDF p.103、斯波索宾上册答案 PDF p.20、徐平力 PDF p.379、桑桐《半音化的历史演进》PDF p.114、佩尔西采蒂 PDF p.68、基泽勒 PDF p.56。",
+          "href": "../和声学手册.html#cite-sangtong_chromatic-p0114-1"
         }
       ],
       "128": [
@@ -1163,6 +1187,14 @@
           "label": "声部进行与不协和解决 · voice-leading.multiple-solutions",
           "text": "手册提炼：同一旋律与低音可有多条合格的四部写法；语法约束限定可行域，并不产生唯一正确答案。",
           "href": "../和声学手册.html#claim-voice-leading-multiple-solutions"
+        },
+        {
+          "kind": "prose",
+          "id": "cite-sangtong_six-p0123-1",
+          "anchor": "ref-prose-cite-sangtong_six-p0123-1-p0123",
+          "label": "手册正文引用",
+          "text": "同一旋律与低音通常存在多条合格四部写法；语法约束限定可行域，而不是产生唯一答案（桑桐《和声学专题六讲》PDF p.123、斯波索宾上册答案 PDF p.2、《概述》PDF p.600）。",
+          "href": "../和声学手册.html#cite-sangtong_six-p0123-1"
         },
         {
           "kind": "profile",
@@ -1349,6 +1381,14 @@
           "label": "声部进行与不协和解决 · voice-leading.parallels",
           "text": "手册提炼：平行纯五度、纯八度削弱声部独立性，因此传统调性写作把它们视为需要避免的进行。",
           "href": "../和声学手册.html#claim-voice-leading-parallels"
+        },
+        {
+          "kind": "prose",
+          "id": "cite-sangtong_tutorial-p0024-1",
+          "anchor": "ref-prose-cite-sangtong_tutorial-p0024-1-p0024",
+          "label": "手册正文引用",
+          "text": "平行纯五度、纯八度：两个声部以相同纯音程同向移动到新的纯音程，会削弱独立性，传统写作中避免。桑桐教程 PDF p.24、柴可夫斯基 PDF p.21、《概述》PDF p.103、斯波索宾上册答案 PDF p.20、徐平力 PDF p.379、桑桐《半音化的历史演进》PDF p.114、佩尔西采蒂 PDF p.68、基泽勒 PDF p.56。",
+          "href": "../和声学手册.html#cite-sangtong_tutorial-p0024-1"
         },
         {
           "kind": "profile",
@@ -2255,6 +2295,14 @@
           "label": "声部进行与不协和解决 · voice-leading.multiple-solutions",
           "text": "手册提炼：同一旋律与低音可有多条合格的四部写法；语法约束限定可行域，并不产生唯一正确答案。",
           "href": "../和声学手册.html#claim-voice-leading-multiple-solutions"
+        },
+        {
+          "kind": "prose",
+          "id": "cite-spossbin_answers_1-p0002-1",
+          "anchor": "ref-prose-cite-spossbin_answers_1-p0002-1-p0002",
+          "label": "手册正文引用",
+          "text": "同一旋律与低音通常存在多条合格四部写法；语法约束限定可行域，而不是产生唯一答案（桑桐《和声学专题六讲》PDF p.123、斯波索宾上册答案 PDF p.2、《概述》PDF p.600）。",
+          "href": "../和声学手册.html#cite-spossbin_answers_1-p0002-1"
         }
       ],
       "13": [
@@ -2283,6 +2331,14 @@
           "label": "声部进行与不协和解决 · voice-leading.parallels",
           "text": "手册提炼：平行纯五度、纯八度削弱声部独立性，因此传统调性写作把它们视为需要避免的进行。",
           "href": "../和声学手册.html#claim-voice-leading-parallels"
+        },
+        {
+          "kind": "prose",
+          "id": "cite-spossbin_answers_1-p0020-1",
+          "anchor": "ref-prose-cite-spossbin_answers_1-p0020-1-p0020",
+          "label": "手册正文引用",
+          "text": "平行纯五度、纯八度：两个声部以相同纯音程同向移动到新的纯音程，会削弱独立性，传统写作中避免。桑桐教程 PDF p.24、柴可夫斯基 PDF p.21、《概述》PDF p.103、斯波索宾上册答案 PDF p.20、徐平力 PDF p.379、桑桐《半音化的历史演进》PDF p.114、佩尔西采蒂 PDF p.68、基泽勒 PDF p.56。",
+          "href": "../和声学手册.html#cite-spossbin_answers_1-p0020-1"
         }
       ],
       "45": [
@@ -2527,6 +2583,14 @@
           "href": "../和声学手册.html#claim-voice-leading-phrase-boundary-exception"
         },
         {
+          "kind": "prose",
+          "id": "cite-spossbin_answers_2-p0205-1",
+          "anchor": "ref-prose-cite-spossbin_answers_2-p0205-1-p0205",
+          "label": "手册正文引用",
+          "text": "平行规则以同一连续声部进行为前提；乐句断开处的相同音程不必按连续平行处理（斯波索宾下册答案 PDF p.205）。",
+          "href": "../和声学手册.html#cite-spossbin_answers_2-p0205-1"
+        },
+        {
           "kind": "profile",
           "id": "profile-spossbin_answers_2-p0205",
           "anchor": "ref-profile-profile-spossbin_answers_2-p0205",
@@ -2635,7 +2699,7 @@
           "id": "cite-tchaikovsky_guide-p0021-1",
           "anchor": "ref-prose-cite-tchaikovsky_guide-p0021-1-p0021",
           "label": "手册正文引用",
-          "text": "平行纯五度、纯八度：两个声部以相同纯音程同向移动到新的纯音程，会削弱独立性，传统写作中避免（柴可夫斯基 PDF p.21；《概述》PDF p.103）。",
+          "text": "平行纯五度、纯八度：两个声部以相同纯音程同向移动到新的纯音程，会削弱独立性，传统写作中避免。桑桐教程 PDF p.24、柴可夫斯基 PDF p.21、《概述》PDF p.103、斯波索宾上册答案 PDF p.20、徐平力 PDF p.379、桑桐《半音化的历史演进》PDF p.114、佩尔西采蒂 PDF p.68、基泽勒 PDF p.56。",
           "href": "../和声学手册.html#cite-tchaikovsky_guide-p0021-1"
         },
         {
@@ -3065,7 +3129,7 @@
           "id": "cite-tonal_20c_overview-p0103-1",
           "anchor": "ref-prose-cite-tonal_20c_overview-p0103-1-p0103",
           "label": "手册正文引用",
-          "text": "平行纯五度、纯八度：两个声部以相同纯音程同向移动到新的纯音程，会削弱独立性，传统写作中避免（柴可夫斯基 PDF p.21；《概述》PDF p.103）。",
+          "text": "平行纯五度、纯八度：两个声部以相同纯音程同向移动到新的纯音程，会削弱独立性，传统写作中避免。桑桐教程 PDF p.24、柴可夫斯基 PDF p.21、《概述》PDF p.103、斯波索宾上册答案 PDF p.20、徐平力 PDF p.379、桑桐《半音化的历史演进》PDF p.114、佩尔西采蒂 PDF p.68、基泽勒 PDF p.56。",
           "href": "../和声学手册.html#cite-tonal_20c_overview-p0103-1"
         },
         {
@@ -3897,6 +3961,14 @@
           "label": "声部进行与不协和解决 · voice-leading.multiple-solutions",
           "text": "手册提炼：同一旋律与低音可有多条合格的四部写法；语法约束限定可行域，并不产生唯一正确答案。",
           "href": "../和声学手册.html#claim-voice-leading-multiple-solutions"
+        },
+        {
+          "kind": "prose",
+          "id": "cite-tonal_20c_overview-p0600-1",
+          "anchor": "ref-prose-cite-tonal_20c_overview-p0600-1-p0600",
+          "label": "手册正文引用",
+          "text": "同一旋律与低音通常存在多条合格四部写法；语法约束限定可行域，而不是产生唯一答案（桑桐《和声学专题六讲》PDF p.123、斯波索宾上册答案 PDF p.2、《概述》PDF p.600）。",
+          "href": "../和声学手册.html#cite-tonal_20c_overview-p0600-1"
         }
       ]
     },
@@ -4447,6 +4519,14 @@
           "label": "声部进行与不协和解决 · voice-leading.parallels",
           "text": "手册提炼：平行纯五度、纯八度削弱声部独立性，因此传统调性写作把它们视为需要避免的进行。",
           "href": "../和声学手册.html#claim-voice-leading-parallels"
+        },
+        {
+          "kind": "prose",
+          "id": "cite-xu_advanced-p0379-1",
+          "anchor": "ref-prose-cite-xu_advanced-p0379-1-p0379",
+          "label": "手册正文引用",
+          "text": "平行纯五度、纯八度：两个声部以相同纯音程同向移动到新的纯音程，会削弱独立性，传统写作中避免。桑桐教程 PDF p.24、柴可夫斯基 PDF p.21、《概述》PDF p.103、斯波索宾上册答案 PDF p.20、徐平力 PDF p.379、桑桐《半音化的历史演进》PDF p.114、佩尔西采蒂 PDF p.68、基泽勒 PDF p.56。",
+          "href": "../和声学手册.html#cite-xu_advanced-p0379-1"
         }
       ],
       "380": [

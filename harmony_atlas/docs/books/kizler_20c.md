@@ -176,7 +176,7 @@ Thomas）谈话时说：一个艺术家所能采取的最值得赞赏的定位�
 ![基泽勒《二十世纪音乐的和声技法》 PDF p.56（整页影印）](../assets/books/kizler_20c/p0056.jpg)
 
 <!-- MANUAL-REFS:p0056 -->
-<div class="manual-refs"><strong>手册使用本页</strong><ul><li id="ref-claim-voice-leading-parallels-p0056" class="manual-ref-item" data-kind="claim"><span class="ref-kind">论点</span><a href="../和声学手册.html#claim-voice-leading-parallels">声部进行与不协和解决 · voice-leading.parallels</a><br><span class="ref-text">手册提炼：平行纯五度、纯八度削弱声部独立性，因此传统调性写作把它们视为需要避免的进行。</span></li></ul></div>
+<div class="manual-refs"><strong>手册使用本页</strong><ul><li id="ref-claim-voice-leading-parallels-p0056" class="manual-ref-item" data-kind="claim"><span class="ref-kind">论点</span><a href="../和声学手册.html#claim-voice-leading-parallels">声部进行与不协和解决 · voice-leading.parallels</a><br><span class="ref-text">手册提炼：平行纯五度、纯八度削弱声部独立性，因此传统调性写作把它们视为需要避免的进行。</span></li><li id="ref-prose-cite-kizler_20c-p0056-1-p0056" class="manual-ref-item" data-kind="prose"><span class="ref-kind">正文引用</span><a href="../和声学手册.html#cite-kizler_20c-p0056-1">手册正文引用</a><br><span class="ref-text">平行纯五度、纯八度：两个声部以相同纯音程同向移动到新的纯音程，会削弱独立性，传统写作中避免。桑桐教程 PDF p.24、柴可夫斯基 PDF p.21、《概述》PDF p.103、斯波索宾上册答案 PDF p.20、徐平力 PDF p.379、桑桐《半音化的历史演进》PDF p.114、佩尔西采蒂 PDF p.68、基泽勒 PDF p.56。</span></li></ul></div>
 
 <div class="ocr-text">48二十世纪音乐的和声技法<br>
 克劳德·德彪西：《前奏曲》第一册（1910)，《雪地足迹》，第24页<br>

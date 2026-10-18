@@ -429,7 +429,7 @@ E.Grieg:Eros Op.70No.1<br>
 ![桑桐《半音化的历史演进》 PDF p.114（整页影印）](../assets/books/sangtong_chromatic/p0114.jpg)
 
 <!-- MANUAL-REFS:p0114 -->
-<div class="manual-refs"><strong>手册使用本页</strong><ul><li id="ref-claim-voice-leading-parallels-p0114" class="manual-ref-item" data-kind="claim"><span class="ref-kind">论点</span><a href="../和声学手册.html#claim-voice-leading-parallels">声部进行与不协和解决 · voice-leading.parallels</a><br><span class="ref-text">手册提炼：平行纯五度、纯八度削弱声部独立性，因此传统调性写作把它们视为需要避免的进行。</span></li></ul></div>
+<div class="manual-refs"><strong>手册使用本页</strong><ul><li id="ref-claim-voice-leading-parallels-p0114" class="manual-ref-item" data-kind="claim"><span class="ref-kind">论点</span><a href="../和声学手册.html#claim-voice-leading-parallels">声部进行与不协和解决 · voice-leading.parallels</a><br><span class="ref-text">手册提炼：平行纯五度、纯八度削弱声部独立性，因此传统调性写作把它们视为需要避免的进行。</span></li><li id="ref-prose-cite-sangtong_chromatic-p0114-1-p0114" class="manual-ref-item" data-kind="prose"><span class="ref-kind">正文引用</span><a href="../和声学手册.html#cite-sangtong_chromatic-p0114-1">手册正文引用</a><br><span class="ref-text">平行纯五度、纯八度：两个声部以相同纯音程同向移动到新的纯音程，会削弱独立性，传统写作中避免。桑桐教程 PDF p.24、柴可夫斯基 PDF p.21、《概述》PDF p.103、斯波索宾上册答案 PDF p.20、徐平力 PDF p.379、桑桐《半音化的历史演进》PDF p.114、佩尔西采蒂 PDF p.68、基泽勒 PDF p.56。</span></li></ul></div>
 
 <div class="ocr-text">和弦）、那不勒斯六和弦和减七和弦，这些和弦，除增三四和弦外，早在巴<br>
 洛克时期即已形成和应用。减七和弦由于其特殊的音响色彩，较早用于表<br>

@@ -14,6 +14,17 @@
   const clamp = (x,a,b) => Math.max(a, Math.min(b,x));
   const PERIOD_ORDER = ['commonPractice', 'expandedTonality', 'modernPostTonal'];
   const PERIOD_META = Object.fromEntries((D.PERIODS || []).map(period => [period.id, period]));
+  const SATB_VOICES = ['bass', 'tenor', 'alto', 'soprano'];
+  const SATB_VOICE_LABELS = { bass:'B', tenor:'T', alto:'A', soprano:'S' };
+  const SATB_RANGES = {
+    bass: [40, 60],
+    tenor: [48, 67],
+    alto: [55, 74],
+    soprano: [60, 84]
+  };
+  const SATB_CENTERS = { bass:48, tenor:57, alto:64, soprano:72 };
+  const SATB_MAX_GAPS = { bass:Infinity, tenor:19, alto:12, soprano:12 };
+  const INVERSION_LABELS = ['原位', '第一转位', '第二转位', '第三转位'];
   const PERIOD_STYLE_CATEGORIES = {
     commonPractice: ['diatonic', 'secondary', 'neapolitan', 'aug6'],
     expandedTonality: ['diatonic', 'secondary', 'borrowed', 'neapolitan', 'aug6', 'chromaticMediant'],
@@ -100,7 +111,8 @@
     if (!chord || !chord.quality) return null;
     pc = typeof pc === 'string' ? P.pcOf(pc) : mod(Number(pc), 12);
     const intervals = chord.quality.intervals || [];
-    const index = intervals.findIndex(interval => mod(chord.rootPc + interval, 12) === pc);
+    const noteIndex = chord.notes ? chord.notes.findIndex(note => mod(note.pc, 12) === pc) : -1;
+    const index = noteIndex >= 0 ? noteIndex : intervals.findIndex(interval => mod(chord.rootPc + interval, 12) === pc);
     if (index < 0) return null;
     const letterStep = chord.quality.steps && chord.quality.steps[index] != null ? chord.quality.steps[index] : index * 2;
     const degree = letterStep + 1;
@@ -607,9 +619,313 @@
     if (up === 6) return 0.28;
     return 0.45;
   }
+  function midiLabel(midi) {
+    return P.prettyAccidental(P.enharmonicName(mod(midi, 12), false)) + (Math.floor(midi / 12) - 1);
+  }
+  function signedMotion(fromMidi, toMidi) {
+    return Number(toMidi) - Number(fromMidi);
+  }
+  function midiOptionsInRange(pc, range) {
+    const out = [];
+    for (let midi = range[0]; midi <= range[1]; midi++) if (mod(midi, 12) === mod(pc, 12)) out.push(midi);
+    return out;
+  }
+  function chordToneEntries(chord) {
+    if (!chord || !chord.quality) return [];
+    const intervals = chord.quality.intervals || [];
+    const steps = chord.quality.steps || [];
+    if (chord.notes && chord.notes.length) {
+      return chord.notes.map((note, i) => {
+        const pc = mod(note.pc, 12);
+        const degree = (steps[i] == null ? i * 2 : steps[i]) + 1;
+        const priority = degree === 1 ? 100 : degree === 3 ? 92 : degree === 7 ? 88 :
+          degree === 9 ? 80 : degree === 13 ? 74 : degree === 11 ? 72 : degree === 5 ? 62 : 55;
+        return { pc, interval:mod(pc - chord.rootPc, 12), degree, priority, role:chordToneRole(chord, pc) };
+      });
+    }
+    return intervals.map((interval, i) => {
+      const pc = mod(chord.rootPc + interval, 12);
+      const degree = (steps[i] == null ? i * 2 : steps[i]) + 1;
+      const priority = degree === 1 ? 100 : degree === 3 ? 92 : degree === 7 ? 88 :
+        degree === 9 ? 80 : degree === 13 ? 74 : degree === 11 ? 72 : degree === 5 ? 62 : 55;
+      return { pc, interval, degree, priority, role:chordToneRole(chord, pc) };
+    });
+  }
+  function essentialVoicingPcs(chord, bassPc, requiredPcs) {
+    const entries = chordToneEntries(chord);
+    const all = pcSet(entries.map(entry => entry.pc));
+    if (all.length <= 4) return all;
+    const chosen = new Set([mod(bassPc, 12)]);
+    (requiredPcs || []).forEach(pc => {
+      const normalized = mod(pc, 12);
+      if (chosen.size < 4 && all.includes(normalized)) chosen.add(normalized);
+    });
+    entries.slice().sort((a, b) => b.priority - a.priority || a.pc - b.pc).forEach(entry => {
+      if (chosen.size < 4) chosen.add(entry.pc);
+    });
+    return pcSet(Array.from(chosen));
+  }
+  function inversionBassPc(chord, inversion) {
+    if (chord && chord.notes && chord.notes[inversion]) return mod(chord.notes[inversion].pc, 12);
+    const intervals = chord && chord.quality && chord.quality.intervals || [];
+    const interval = intervals[inversion];
+    return interval == null ? null : mod(chord.rootPc + interval, 12);
+  }
+  function allowedInversionsFor(chord, opts) {
+    if (!chord || !chord.pcs || !chord.pcs.length) return [];
+    const maxInversion = Math.min(3, chord.pcs.length - 1);
+    if (opts && opts.inversion != null && opts.inversion !== '' && opts.inversion !== 'auto') {
+      const inversion = Number(opts.inversion);
+      return Number.isInteger(inversion) && inversion >= 0 && inversion <= maxInversion ? [inversion] : [];
+    }
+    if (chord.inversion > 0 && chord.inversion <= maxInversion) return [chord.inversion];
+    return Array.from({ length:maxInversion + 1 }, (_, i) => i);
+  }
+  function voicePcAssignments(voicePcs, bassPc) {
+    const required = pcSet(voicePcs);
+    const out = [];
+    const upperPcs = voicePcs.slice();
+    function rec(index, chosen) {
+      if (index === 3) {
+        const full = pcSet([bassPc].concat(chosen));
+        if (required.every(pc => full.includes(pc))) out.push(chosen.slice());
+        return;
+      }
+      upperPcs.forEach(pc => {
+        chosen.push(pc);
+        rec(index + 1, chosen);
+        chosen.pop();
+      });
+    }
+    rec(0, []);
+    return out;
+  }
+  function voicingFromChord(chord) {
+    if (!chord) return null;
+    const raw = chord.voicing || chord;
+    let midis = raw && Array.isArray(raw.midis) ? raw.midis.slice(0, 4) : null;
+    if (!midis && raw && ['bass', 'tenor', 'alto', 'soprano'].every(name => Number.isFinite(Number(raw[name])))) {
+      midis = [raw.bass, raw.tenor, raw.alto, raw.soprano].map(Number);
+    }
+    if (!midis || midis.length !== 4 || midis.some(midi => !Number.isFinite(Number(midi)))) return null;
+    midis = midis.map(Number);
+    const inversion = Number.isInteger(raw.inversion) ? raw.inversion : (Number.isInteger(chord.inversion) ? chord.inversion : 0);
+    return {
+      bass:midis[0], tenor:midis[1], alto:midis[2], soprano:midis[3], midis,
+      inversion, bassPc:mod(midis[0], 12), sopranoPc:mod(midis[3], 12),
+      label:INVERSION_LABELS[inversion] || ('第 ' + (inversion + 1) + ' 转位')
+    };
+  }
+  function materializeVoicing(chord, voicing) {
+    if (!chord || !voicing) return chord;
+    return Object.assign({}, chord, {
+      voicing:voicing,
+      inversion:voicing.inversion == null ? chord.inversion : voicing.inversion,
+      bassPc:voicing.bassPc == null ? chord.bassPc : voicing.bassPc
+    });
+  }
+  function voicingPenalty(chord, midis) {
+    let penalty = 0;
+    const labels = [];
+    const counts = {};
+    midis.forEach(midi => { const pc = mod(midi, 12); counts[pc] = (counts[pc] || 0) + 1; });
+    const leadingPcs = uniqTendencyPcs(chord, 'leadingTone');
+    const seventhPcs = uniqTendencyPcs(chord, 'seventh');
+    leadingPcs.forEach(pc => { if ((counts[pc] || 0) > 1) { penalty += 9; labels.push('导音被重复'); } });
+    seventhPcs.forEach(pc => { if ((counts[pc] || 0) > 1) { penalty += 4; labels.push('七音被重复'); } });
+    const third = chordToneEntries(chord).find(entry => entry.degree === 3);
+    if (third && !midis.some(midi => mod(midi, 12) === third.pc)) { penalty += 10; labels.push('缺少三音'); }
+    for (let i = 0; i < midis.length; i++) {
+      penalty += Math.abs(midis[i] - SATB_CENTERS[SATB_VOICES[i]]) * 0.035;
+      if (i && midis[i] === midis[i - 1]) { penalty += 7; labels.push('相邻声部同度'); }
+    }
+    return { penalty, labels:[...new Set(labels)], counts };
+  }
+  function uniqTendencyPcs(chord, type) {
+    return pcSet((chord && chord.tendency || []).filter(item => item.type === type).map(item => item.pc));
+  }
+  function listVoicings(chord, opts) {
+    opts = opts || {};
+    if (!chord || !chord.pcs || !chord.pcs.length) return [];
+    const sopranoMidi = opts.sopranoMidi == null || opts.sopranoMidi === '' ? null : Number(opts.sopranoMidi);
+    if (sopranoMidi != null && (!Number.isInteger(sopranoMidi) || sopranoMidi < SATB_RANGES.soprano[0] || sopranoMidi > SATB_RANGES.soprano[1])) return [];
+    const inversions = allowedInversionsFor(chord, opts);
+    const found = new Map();
+    inversions.forEach(inversion => {
+      const bassPc = inversionBassPc(chord, inversion);
+      if (bassPc == null || !chord.pcs.includes(bassPc)) return;
+      const voicePcs = essentialVoicingPcs(chord, bassPc, sopranoMidi == null ? [] : [mod(sopranoMidi, 12)]);
+      const bassOptions = midiOptionsInRange(bassPc, SATB_RANGES.bass);
+      const assignments = voicePcAssignments(voicePcs, bassPc);
+      bassOptions.forEach(bassMidi => {
+        assignments.forEach(upper => {
+          const pcs = [bassPc].concat(upper);
+          const midis = [bassMidi, 0, 0, 0];
+          function place(index, previous) {
+            if (index === 4) {
+              if (sopranoMidi != null && midis[3] !== sopranoMidi) return;
+              const key = midis.join(',');
+              if (found.has(key)) return;
+              const intrinsic = voicingPenalty(chord, midis);
+              found.set(key, {
+                bass:midis[0], tenor:midis[1], alto:midis[2], soprano:midis[3], midis:midis.slice(),
+                inversion, bassPc, sopranoPc:mod(midis[3], 12),
+                label:INVERSION_LABELS[inversion] || ('第 ' + (inversion + 1) + ' 转位'),
+                doubled:intrinsic.counts, penalty:intrinsic.penalty, flags:intrinsic.labels
+              });
+              return;
+            }
+            const voice = SATB_VOICES[index];
+            let choices = midiOptionsInRange(pcs[index], SATB_RANGES[voice]);
+            if (sopranoMidi != null && index === 3) choices = choices.filter(midi => midi === sopranoMidi);
+            choices.forEach(midi => {
+              if (index > 0 && midi <= previous) return;
+              if (index > 0 && midi - previous > SATB_MAX_GAPS[voice]) return;
+              midis[index] = midi;
+              place(index + 1, midi);
+            });
+          }
+          place(1, bassMidi);
+        });
+      });
+    });
+    return Array.from(found.values()).sort((a, b) => a.penalty - b.penalty || a.inversion - b.inversion || a.soprano - b.soprano);
+  }
+  function voicingFailureReason(chord, opts) {
+    opts = opts || {};
+    const sopranoMidi = opts.sopranoMidi == null || opts.sopranoMidi === '' ? null : Number(opts.sopranoMidi);
+    if (sopranoMidi != null && (sopranoMidi < SATB_RANGES.soprano[0] || sopranoMidi > SATB_RANGES.soprano[1])) {
+      return '固定高音必须在 C4–C6（MIDI 60–84）之间。';
+    }
+    if (sopranoMidi != null && !chord.pcs.includes(mod(sopranoMidi, 12))) {
+      return '固定高音 ' + midiLabel(sopranoMidi) + ' 不是该和弦音；请选择和弦内的旋律音。';
+    }
+    if (opts.inversion != null && opts.inversion !== '' && opts.inversion !== 'auto') {
+      const inversion = Number(opts.inversion);
+      const maxInversion = Math.min(3, chord.pcs.length - 1);
+      if (!Number.isInteger(inversion) || inversion < 0 || inversion > maxInversion) {
+        return inversion === 3
+          ? '第三转位需要至少四个不同的和弦音；该和弦不足四音。'
+          : '该和弦没有第 ' + (inversion + 1) + ' 转位。';
+      }
+    }
+    return '没有能在 SATB 音域、声部顺序与间距约束内安放的四声部排列。';
+  }
+  function voicingMessage(type, voices, fromMidi, toMidi) {
+    const names = voices.map(index => SATB_VOICE_LABELS[SATB_VOICES[index]]).join('–');
+    return names + '：' + fromMidi.map(midiLabel).join('/') + ' → ' + toMidi.map(midiLabel).join('/') + '（' + type + '）';
+  }
+  function analyzeVoicings(fromVoicing, toVoicing, fromChord, toChord) {
+    if (!fromVoicing || !toVoicing) return null;
+    const a = fromVoicing.midis ? fromVoicing : voicingFromChord(fromVoicing);
+    const b = toVoicing.midis ? toVoicing : voicingFromChord(toVoicing);
+    if (!a || !b) return null;
+    const voices = SATB_VOICES.map((voice, index) => {
+      const from = a.midis[index], to = b.midis[index];
+      return {
+        voice, label:SATB_VOICE_LABELS[voice], from, to,
+        fromName:midiLabel(from), toName:midiLabel(to),
+        semitones:signedMotion(from, to), direction:Math.sign(to - from)
+      };
+    });
+    const parallels = [], hidden = [], overlaps = [], crossing = [], spacing = [];
+    for (let i = 0; i < 4; i++) for (let j = i + 1; j < 4; j++) {
+      const fromInterval = Math.abs(a.midis[j] - a.midis[i]);
+      const toInterval = Math.abs(b.midis[j] - b.midis[i]);
+      const fromClass = fromInterval % 12, toClass = toInterval % 12;
+      const di = Math.sign(b.midis[i] - a.midis[i]);
+      const dj = Math.sign(b.midis[j] - a.midis[j]);
+      const sameDirection = di !== 0 && di === dj;
+      if (sameDirection && fromClass === toClass && (toClass === 0 || toClass === 7)) {
+        const type = toClass === 0 ? (fromInterval === 0 && toInterval === 0 ? '平行同度' : '平行八度') : '平行五度';
+        parallels.push({ type, voices:[i, j], fromInterval, toInterval,
+          message:voicingMessage(type, [i, j], [a.midis[i], a.midis[j]], [b.midis[i], b.midis[j]]) });
+      }
+    }
+    const outerFrom = Math.abs(a.midis[3] - a.midis[0]);
+    const outerTo = Math.abs(b.midis[3] - b.midis[0]);
+    const outerClass = outerTo % 12;
+    const outerDirection = Math.sign(b.midis[0] - a.midis[0]);
+    if (outerDirection !== 0 && outerDirection === Math.sign(b.midis[3] - a.midis[3]) &&
+        (outerClass === 0 || outerClass === 7) && outerFrom % 12 !== outerClass && Math.abs(b.midis[3] - a.midis[3]) > 2) {
+      const type = outerClass === 0 ? '隐伏八度/同度' : '隐伏五度';
+      hidden.push({ type, voices:[0, 3], fromInterval:outerFrom, toInterval:outerTo,
+        message:voicingMessage(type, [0, 3], [a.midis[0], a.midis[3]], [b.midis[0], b.midis[3]]) });
+    }
+    for (let i = 0; i < 3; i++) {
+      if (b.midis[i] > b.midis[i + 1]) crossing.push({ voices:[i, i + 1], message:'目标和弦中 ' + SATB_VOICES[i] + ' 高于 ' + SATB_VOICES[i + 1] });
+      if (b.midis[i] > a.midis[i + 1]) overlaps.push({ voices:[i, i + 1], message:SATB_VOICES[i] + ' 越过前一和弦的 ' + SATB_VOICES[i + 1] });
+      if (b.midis[i + 1] < a.midis[i]) overlaps.push({ voices:[i, i + 1], message:SATB_VOICES[i + 1] + ' 落到前一和弦 ' + SATB_VOICES[i] + ' 的下方' });
+      const gap = b.midis[i + 1] - b.midis[i];
+      const limit = SATB_MAX_GAPS[SATB_VOICES[i + 1]];
+      if (gap > limit) spacing.push({ voices:[i, i + 1], gap, limit,
+        message:'目标和弦 ' + SATB_VOICES[i] + '–' + SATB_VOICES[i + 1] + ' 间距 ' + gap + ' 半音，超过上限 ' + limit });
+    }
+    const tendency = [];
+    (fromChord && fromChord.tendency || []).forEach(item => {
+      const sourceIndices = a.midis.map((midi, index) => mod(midi, 12) === mod(item.pc, 12) ? index : -1).filter(index => index >= 0);
+      if (!sourceIndices.length) return;
+      const resolved = sourceIndices.filter(index => {
+        const delta = signedMotion(a.midis[index], b.midis[index]);
+        const targetPc = mod(b.midis[index], 12);
+        const directionOk = item.direction === 'down' ? delta < 0 : delta > 0;
+        return targetPc === mod(item.resolveTo, 12) && directionOk && Math.abs(delta) <= 2;
+      });
+      if (!resolved.length) {
+        tendency.push({ pc:item.pc, resolveTo:item.resolveTo, type:item.type,
+          message:'倾向音 ' + P.prettyAccidental(P.enharmonicName(item.pc, true)) + ' 未在实际声部按“' + item.label + '”解决' });
+      } else if (resolved.length < sourceIndices.length && item.type === 'leadingTone') {
+        tendency.push({ pc:item.pc, resolveTo:item.resolveTo, type:item.type,
+          message:'导音在 ' + (sourceIndices.length - resolved.length) + ' 个声部中未上行解决' });
+      }
+    });
+    const largeLeaps = voices.filter(voice => Math.abs(voice.semitones) > 12).map(voice =>
+      ({ voice:voice.voice, semitones:voice.semitones, message:voice.label + ' 声部跳进 ' + Math.abs(voice.semitones) + ' 半音' }));
+    const issues = [];
+    parallels.forEach(item => issues.push(item.message));
+    hidden.forEach(item => issues.push(item.message));
+    crossing.forEach(item => issues.push(item.message));
+    overlaps.forEach(item => issues.push(item.message));
+    spacing.forEach(item => issues.push(item.message));
+    tendency.forEach(item => issues.push(item.message));
+    largeLeaps.forEach(item => issues.push(item.message));
+    const totalMotion = voices.reduce((sum, voice) => sum + Math.abs(voice.semitones), 0);
+    const commonTones = voices.filter(voice => voice.from === voice.to).length;
+    const penalty = parallels.length * 20 + hidden.length * 9 + crossing.length * 18 + overlaps.length * 7 +
+      spacing.length * 6 + tendency.length * 7 + largeLeaps.length * 2;
+    return {
+      voices, motion:voices, parallels, hidden, overlaps, crossing, spacing, tendency, largeLeaps,
+      issues:[...new Set(issues)], totalMotion, commonTones, penalty,
+      cost:clamp(totalMotion / 40 + penalty / 120, 0, 1),
+      from:midiLabel(a.midis[0]) + '/' + midiLabel(a.midis[1]) + '/' + midiLabel(a.midis[2]) + '/' + midiLabel(a.midis[3]),
+      to:midiLabel(b.midis[0]) + '/' + midiLabel(b.midis[1]) + '/' + midiLabel(b.midis[2]) + '/' + midiLabel(b.midis[3])
+    };
+  }
+  function analyzeVoiceLeading(fromChord, toChord) {
+    const fromVoicing = voicingFromChord(fromChord);
+    const toVoicing = voicingFromChord(toChord);
+    return fromVoicing && toVoicing ? analyzeVoicings(fromVoicing, toVoicing, fromChord, toChord) : null;
+  }
+  function bestVoicingForChord(chord, opts, previousChord) {
+    const options = listVoicings(chord, opts);
+    if (!options.length) return null;
+    const previousVoicing = previousChord && previousChord.midis ? previousChord : voicingFromChord(previousChord);
+    const previousChordObject = previousChord && previousChord.midis ? null : previousChord;
+    let best = null;
+    options.forEach(voicing => {
+      const transition = previousVoicing
+        ? analyzeVoicings(previousVoicing, voicing, previousChordObject, chord)
+        : null;
+      const score = voicing.penalty + (transition ? transition.penalty * 1.25 + transition.totalMotion * 0.08 : 0);
+      if (!best || score < best.transitionCost) best = { voicing, transition, transitionCost:score };
+    });
+    if (!best) return null;
+    return Object.assign({}, best.voicing, { transition:best.transition, transitionCost:best.transitionCost });
+  }
   function voiceLeading(fromChord, toChord) {
     const a = pcSet(fromChord.pcs), b = pcSet(toChord.pcs);
     if (!a.length || !b.length) return { cost:0, common:[], motion:[], parallels:[], total:0 };
+    const actual = analyzeVoiceLeading(fromChord, toChord);
     const common = a.filter(pc => b.includes(pc));
     const aSmall = a.length <= b.length;
     const smaller = aSmall ? a : b;
@@ -642,8 +958,10 @@
     rec(0, Array(larger.length).fill(false), 0, []);
     const maxNotes = Math.max(a.length, b.length);
     const total = best ? best.total : 0;
-    return { cost: clamp(total / (maxNotes * 6), 0, 1), total: Math.round(total * 10) / 10,
-      common, motion: best ? best.motion : [], parallels: [] };
+    return { cost: actual ? actual.cost : clamp(total / (maxNotes * 6), 0, 1),
+      total: actual ? actual.totalMotion : Math.round(total * 10) / 10,
+      common, motion: best ? best.motion : [], parallels: actual ? actual.parallels : [],
+      actual };
   }
   function tendencyWarnings(fromChord, toChord) {
     const warnings = [];
@@ -1005,10 +1323,15 @@
   function nextCandidates(progression, tonicName, modeId, opts) {
     opts = opts || {};
     const requiredPcs = normalizePcs(opts.requiredPcs);
+    const sopranoMidi = opts.sopranoMidi == null || opts.sopranoMidi === '' ? null : Number(opts.sopranoMidi);
+    const sopranoPc = sopranoMidi == null ? null : mod(sopranoMidi, 12);
+    const sopranoInvalid = sopranoMidi != null &&
+      (!Number.isInteger(sopranoMidi) || sopranoMidi < SATB_RANGES.soprano[0] || sopranoMidi > SATB_RANGES.soprano[1]);
     const styleId = Object.prototype.hasOwnProperty.call(PERIOD_STYLE_CATEGORIES, opts.periodStyle)
       ? opts.periodStyle : null;
     const weights = PERIOD_SCORE_WEIGHTS[styleId] || DEFAULT_SCORE_WEIGHTS;
-    const accepts = chord => (!styleId || periodAllowsChord(styleId, chord)) && chordIncludesPcs(chord, requiredPcs);
+    const accepts = chord => !sopranoInvalid && (!styleId || periodAllowsChord(styleId, chord)) &&
+      chordIncludesPcs(chord, requiredPcs) && (sopranoPc == null || chord.pcs.includes(sopranoPc));
     const cat = buildCatalog(tonicName, modeId, { sevenths:opts.sevenths !== false, secondary:opts.secondary !== false, borrowed:opts.borrowed !== false, chromatic:opts.chromatic !== false });
     const last = progression[progression.length - 1] || null;
     const target = opts.targetKey ? { key:opts.targetKey, mode:opts.targetMode || 'major' } : null;
@@ -1016,9 +1339,15 @@
       ? commonPivots(tonicName, modeId, target.key, target.mode, { limit:20 }).filter(p => accepts(p.sourceChord))
       : [];
     const candidates = [];
+    const voicingFailures = [];
     for (const c of cat) {
       if (!accepts(c)) continue;
       if (last && c.id === last.id) continue;
+      const voicing = bestVoicingForChord(c, opts, last);
+      if (!voicing) {
+        voicingFailures.push(voicingFailureReason(c, opts));
+        continue;
+      }
       let score = 0;
       const reasons = [], warnings = [];
       if (last) {
@@ -1031,9 +1360,17 @@
         if (flow >= 0.9) reasons.push('功能进行 ' + last.function + '→' + c.function);
         if (rootScore >= 0.9) reasons.push('根音下行五度');
         else if (rootScore >= 0.65) reasons.push('根音三度关系');
-        if (vl.common.length) reasons.push('共同音 ' + vl.common.length + ' 个');
-        if (vl.total <= 4) reasons.push('声部总移动仅 ' + vl.total + ' 半音');
-        warnings.push(...tendencyWarnings(last, c));
+        if (voicing.transition) {
+          if (voicing.transition.commonTones) reasons.push('实际保持共同音 ' + voicing.transition.commonTones + ' 个');
+          if (voicing.transition.totalMotion <= 8) reasons.push('SATB 实际移动 ' + voicing.transition.totalMotion + ' 半音');
+          if (!voicing.transition.penalty) reasons.push('SATB 连接通过平行五/八度检查');
+          warnings.push(...voicing.transition.issues);
+          score -= Math.min(0.32, voicing.transition.penalty * 0.012);
+        } else {
+          if (vl.common.length) reasons.push('共同音 ' + vl.common.length + ' 个');
+          if (vl.total <= 4) reasons.push('声部总移动仅 ' + vl.total + ' 半音');
+          warnings.push(...tendencyWarnings(last, c));
+        }
         if (last.function === 'D' && c.function === 'T') {
           const strongTonic = c.category === 'diatonic' && ['I','i','I6','i6'].includes(c.roman);
           const strength = strongTonic ? 1 : (['vi','VI'].includes(c.roman) ? 0.55 : (['iii','III'].includes(c.roman) ? 0.3 : 0.35));
@@ -1076,6 +1413,7 @@
       }
       candidates.push({
         chord:c, score:clamp(score,0,1), reasons:[...new Set(reasons)], warnings,
+        voicing, inversion:voicing.inversion, voiceLeading:voicing.transition,
         periodFits:chordPeriodFits(c), constraintRoles:chordToneRoles(c, requiredPcs)
       });
     }
@@ -1109,22 +1447,34 @@
       } else {
         showcase.push(...result.slice(0, 6));
       }
-      const modulation = pivots.slice(0,6).map(p => ({
-        chord:p.sourceChord, score:p.score, reasons:[p.explanation], warnings:[], targetRoman:p.targetRoman,
-        periodFits:chordPeriodFits(p.sourceChord), constraintRoles:chordToneRoles(p.sourceChord, requiredPcs)
-      }));
+      const modulation = pivots.slice(0,12).map(p => {
+        const voicing = bestVoicingForChord(p.sourceChord, opts, last);
+        return voicing ? {
+          chord:p.sourceChord, voicing, inversion:voicing.inversion, voiceLeading:voicing.transition,
+          score:p.score, reasons:[p.explanation], warnings:voicing.transition ? voicing.transition.issues : [],
+          targetRoman:p.targetRoman, periodFits:chordPeriodFits(p.sourceChord),
+          constraintRoles:chordToneRoles(p.sourceChord, requiredPcs)
+        } : null;
+      }).filter(Boolean).slice(0,6);
       const emptyReason = result.length ? null
-        : (requiredPcs.length
+        : (sopranoInvalid
+          ? '固定高音超过 C4–C6 的可写音域。'
+          : (sopranoPc != null && voicingFailures.length
+            ? voicingFailures[0]
+            : (requiredPcs.length
           ? '当前时期库存中没有同时包含指定音的和弦；减少必含音或切换到其他时期。'
-          : (styleId ? '当前调式与所选时期没有可用和弦；请切换调式或时期。' : '当前设置没有可用的下一步。'));
+          : (styleId ? '当前调式与所选时期没有可用和弦；请切换调式或时期。' : '当前设置没有可用的下一步。'))));
       return {
         period: showcase,
         functional: result.filter(x => ['T','S','D'].includes(x.chord.function) && x.chord.category === 'diatonic').slice(0,6),
-        smooth: anchor ? result.slice().sort((a,b)=>voiceLeading(anchor,a.chord).cost - voiceLeading(anchor,b.chord).cost).slice(0,6) : [],
+        smooth: anchor ? result.slice().sort((a,b)=>(a.voiceLeading ? a.voiceLeading.penalty + a.voiceLeading.totalMotion * 0.1 : 1e6) -
+          (b.voiceLeading ? b.voiceLeading.penalty + b.voiceLeading.totalMotion * 0.1 : 1e6)).slice(0,6) : [],
         color: result.filter(x => ['borrowed','chromaticMediant','neapolitan','aug6','tritoneSub','modal'].includes(x.chord.category)).slice(0,6),
         modulation,
         periodStyle: styleId || 'any',
         requiredPcs,
+        sopranoMidi,
+        inversion: opts.inversion == null || opts.inversion === '' ? 'auto' : Number(opts.inversion),
         candidateCount: result.length,
         emptyReason
       };
@@ -1212,6 +1562,9 @@
     diatonicChords, buildCatalog, secondaryDominants, borrowedChords, neapolitanChords,
     augmentedSixths, tritoneSubs, chromaticMediants, modalColorChords, scaleSubsetChords,
     voiceLeading, tendencyWarnings, rootMotionScore, nextCandidates, analyzeProgression,
+    SATB_VOICES, SATB_VOICE_LABELS, SATB_RANGES, INVERSION_LABELS,
+    chordToneEntries, listVoicings, bestVoicingForChord, voicingFromChord, materializeVoicing,
+    analyzeVoiceLeading, analyzeVoicings, voicingFailureReason, midiLabel,
     identifyChord, commonPivots, keyRelation, chordInterpretations, modulationRoutes,
     modulationTargets, catalogForRole,
     normalizePcs, chordToneRole, chordToneRoles, chordIncludesPcs, periodAssessment,

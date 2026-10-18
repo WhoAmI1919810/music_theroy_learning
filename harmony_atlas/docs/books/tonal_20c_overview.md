@@ -204,7 +204,7 @@ Mm7的三音<br>
 ![《调性和声及20世纪音乐概述》 PDF p.103（整页影印）](../assets/books/tonal_20c_overview/p0103.jpg)
 
 <!-- MANUAL-REFS:p0103 -->
-<div class="manual-refs"><strong>手册使用本页</strong><ul><li id="ref-claim-voice-leading-parallels-p0103" class="manual-ref-item" data-kind="claim"><span class="ref-kind">论点</span><a href="../和声学手册.html#claim-voice-leading-parallels">声部进行与不协和解决 · voice-leading.parallels</a><br><span class="ref-text">手册提炼：平行纯五度、纯八度削弱声部独立性，因此传统调性写作把它们视为需要避免的进行。</span></li><li id="ref-prose-cite-tonal_20c_overview-p0103-1-p0103" class="manual-ref-item" data-kind="prose"><span class="ref-kind">正文引用</span><a href="../和声学手册.html#cite-tonal_20c_overview-p0103-1">手册正文引用</a><br><span class="ref-text">平行纯五度、纯八度：两个声部以相同纯音程同向移动到新的纯音程，会削弱独立性，传统写作中避免（柴可夫斯基 PDF p.21；《概述》PDF p.103）。</span></li><li id="ref-profile-profile-tonal_20c_overview-p0103" class="manual-ref-item" data-kind="profile"><span class="ref-kind">代表页</span><a href="../和声学手册.html#book-profiles">教材代表页 · 调性和声概述</a><br><span class="ref-text">手册将本页列为《调性和声概述》代表页；该书定位：从四部和声基础到 20 世纪后调性技法的完整课程，是本项目最系统的结构参照。</span></li></ul></div>
+<div class="manual-refs"><strong>手册使用本页</strong><ul><li id="ref-claim-voice-leading-parallels-p0103" class="manual-ref-item" data-kind="claim"><span class="ref-kind">论点</span><a href="../和声学手册.html#claim-voice-leading-parallels">声部进行与不协和解决 · voice-leading.parallels</a><br><span class="ref-text">手册提炼：平行纯五度、纯八度削弱声部独立性，因此传统调性写作把它们视为需要避免的进行。</span></li><li id="ref-prose-cite-tonal_20c_overview-p0103-1-p0103" class="manual-ref-item" data-kind="prose"><span class="ref-kind">正文引用</span><a href="../和声学手册.html#cite-tonal_20c_overview-p0103-1">手册正文引用</a><br><span class="ref-text">平行纯五度、纯八度：两个声部以相同纯音程同向移动到新的纯音程，会削弱独立性，传统写作中避免。桑桐教程 PDF p.24、柴可夫斯基 PDF p.21、《概述》PDF p.103、斯波索宾上册答案 PDF p.20、徐平力 PDF p.379、桑桐《半音化的历史演进》PDF p.114、佩尔西采蒂 PDF p.68、基泽勒 PDF p.56。</span></li><li id="ref-profile-profile-tonal_20c_overview-p0103" class="manual-ref-item" data-kind="profile"><span class="ref-kind">代表页</span><a href="../和声学手册.html#book-profiles">教材代表页 · 调性和声概述</a><br><span class="ref-text">手册将本页列为《调性和声概述》代表页；该书定位：从四部和声基础到 20 世纪后调性技法的完整课程，是本项目最系统的结构参照。</span></li></ul></div>
 
 <div class="ocr-text">80<br>
 调性和声及20世纪音乐概述（第六版）<br>
@@ -2280,7 +2280,7 @@ A.<br>
 ![《调性和声及20世纪音乐概述》 PDF p.600（整页影印）](../assets/books/tonal_20c_overview/p0600.jpg)
 
 <!-- MANUAL-REFS:p0600 -->
-<div class="manual-refs"><strong>手册使用本页</strong><ul><li id="ref-claim-voice-leading-multiple-solutions-p0600" class="manual-ref-item" data-kind="claim"><span class="ref-kind">论点</span><a href="../和声学手册.html#claim-voice-leading-multiple-solutions">声部进行与不协和解决 · voice-leading.multiple-solutions</a><br><span class="ref-text">手册提炼：同一旋律与低音可有多条合格的四部写法；语法约束限定可行域，并不产生唯一正确答案。</span></li></ul></div>
+<div class="manual-refs"><strong>手册使用本页</strong><ul><li id="ref-claim-voice-leading-multiple-solutions-p0600" class="manual-ref-item" data-kind="claim"><span class="ref-kind">论点</span><a href="../和声学手册.html#claim-voice-leading-multiple-solutions">声部进行与不协和解决 · voice-leading.multiple-solutions</a><br><span class="ref-text">手册提炼：同一旋律与低音可有多条合格的四部写法；语法约束限定可行域，并不产生唯一正确答案。</span></li><li id="ref-prose-cite-tonal_20c_overview-p0600-1-p0600" class="manual-ref-item" data-kind="prose"><span class="ref-kind">正文引用</span><a href="../和声学手册.html#cite-tonal_20c_overview-p0600-1">手册正文引用</a><br><span class="ref-text">同一旋律与低音通常存在多条合格四部写法；语法约束限定可行域，而不是产生唯一答案（桑桐《和声学专题六讲》PDF p.123、斯波索宾上册答案 PDF p.2、《概述》PDF p.600）。</span></li></ul></div>
 
 <div class="ocr-text">附录D<br>
 自测答案<br>

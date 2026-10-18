@@ -20,7 +20,7 @@
 ![斯波索宾和声学上册答案 PDF p.2（整页影印）](../assets/books/spossbin_answers_1/p0002.jpg)
 
 <!-- MANUAL-REFS:p0002 -->
-<div class="manual-refs"><strong>手册使用本页</strong><ul><li id="ref-claim-voice-leading-multiple-solutions-p0002" class="manual-ref-item" data-kind="claim"><span class="ref-kind">论点</span><a href="../和声学手册.html#claim-voice-leading-multiple-solutions">声部进行与不协和解决 · voice-leading.multiple-solutions</a><br><span class="ref-text">手册提炼：同一旋律与低音可有多条合格的四部写法；语法约束限定可行域，并不产生唯一正确答案。</span></li></ul></div>
+<div class="manual-refs"><strong>手册使用本页</strong><ul><li id="ref-claim-voice-leading-multiple-solutions-p0002" class="manual-ref-item" data-kind="claim"><span class="ref-kind">论点</span><a href="../和声学手册.html#claim-voice-leading-multiple-solutions">声部进行与不协和解决 · voice-leading.multiple-solutions</a><br><span class="ref-text">手册提炼：同一旋律与低音可有多条合格的四部写法；语法约束限定可行域，并不产生唯一正确答案。</span></li><li id="ref-prose-cite-spossbin_answers_1-p0002-1-p0002" class="manual-ref-item" data-kind="prose"><span class="ref-kind">正文引用</span><a href="../和声学手册.html#cite-spossbin_answers_1-p0002-1">手册正文引用</a><br><span class="ref-text">同一旋律与低音通常存在多条合格四部写法；语法约束限定可行域，而不是产生唯一答案（桑桐《和声学专题六讲》PDF p.123、斯波索宾上册答案 PDF p.2、《概述》PDF p.600）。</span></li></ul></div>
 
 <div class="ocr-text">作为教程的结束。这些测试题具有总结的意义，要解答它们，就必须综合运用教程已进过的<br>
 各种和声手法。它们大都有一定的难度，有的地方甚至相当难；但其练习目的明确，针对性<br>
@@ -90,7 +90,7 @@ E大调</div>
 ![斯波索宾和声学上册答案 PDF p.20（整页影印）](../assets/books/spossbin_answers_1/p0020.jpg)
 
 <!-- MANUAL-REFS:p0020 -->
-<div class="manual-refs"><strong>手册使用本页</strong><ul><li id="ref-claim-voice-leading-parallels-p0020" class="manual-ref-item" data-kind="claim"><span class="ref-kind">论点</span><a href="../和声学手册.html#claim-voice-leading-parallels">声部进行与不协和解决 · voice-leading.parallels</a><br><span class="ref-text">手册提炼：平行纯五度、纯八度削弱声部独立性，因此传统调性写作把它们视为需要避免的进行。</span></li></ul></div>
+<div class="manual-refs"><strong>手册使用本页</strong><ul><li id="ref-claim-voice-leading-parallels-p0020" class="manual-ref-item" data-kind="claim"><span class="ref-kind">论点</span><a href="../和声学手册.html#claim-voice-leading-parallels">声部进行与不协和解决 · voice-leading.parallels</a><br><span class="ref-text">手册提炼：平行纯五度、纯八度削弱声部独立性，因此传统调性写作把它们视为需要避免的进行。</span></li><li id="ref-prose-cite-spossbin_answers_1-p0020-1-p0020" class="manual-ref-item" data-kind="prose"><span class="ref-kind">正文引用</span><a href="../和声学手册.html#cite-spossbin_answers_1-p0020-1">手册正文引用</a><br><span class="ref-text">平行纯五度、纯八度：两个声部以相同纯音程同向移动到新的纯音程，会削弱独立性，传统写作中避免。桑桐教程 PDF p.24、柴可夫斯基 PDF p.21、《概述》PDF p.103、斯波索宾上册答案 PDF p.20、徐平力 PDF p.379、桑桐《半音化的历史演进》PDF p.114、佩尔西采蒂 PDF p.68、基泽勒 PDF p.56。</span></li></ul></div>
 
 <div class="ocr-text">第4小节的D与TSv之间，以及TSv与D之间都是二度关系，没有共同音，只能采用<br>
 旋律连接法，即低音二度级进，上方三声部与低音反向平稳进行。最后两个和弦之间的连接<br>

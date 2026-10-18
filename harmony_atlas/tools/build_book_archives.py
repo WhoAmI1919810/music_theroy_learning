@@ -290,8 +290,6 @@ def build_one(book, index_row, ocr_pages, duplicate_of=None, canonical=None,
     markdown_path = os.path.join(BOOKS_DIR, book['id'] + '.md')
     html_path = os.path.join(BOOKS_DIR, book['id'] + '.html')
     pdf_path = os.path.join(source_dir or SOURCE_DIR, book['file'])
-    if not os.path.exists(pdf_path):
-        raise RuntimeError('missing PDF: ' + pdf_path)
     if set(ocr_pages) != set(range(1, book['pages'] + 1)):
         missing = sorted(set(range(1, book['pages'] + 1)) - set(ocr_pages))
         extra = sorted(set(ocr_pages) - set(range(1, book['pages'] + 1)))
@@ -307,6 +305,8 @@ def build_one(book, index_row, ocr_pages, duplicate_of=None, canonical=None,
                 raise RuntimeError('%s missing page images: %s' % (book['id'], missing[:8]))
         else:
             import fitz
+            if not os.path.exists(pdf_path):
+                raise RuntimeError('missing PDF: ' + pdf_path)
             doc = fitz.open(pdf_path)
             try:
                 if doc.page_count != book['pages']:

@@ -31,9 +31,14 @@
     String(id).toLowerCase().replace(/[^0-9a-z_-]+/g, '-').replace(/^-+|-+$/g, '') +
     '-p' + String(page).padStart(4, '0');
   const noteLabel = (pc, flat) => pretty(P.enharmonicName(pc, flat == null ? state.preferFlats : flat));
+  const midiNoteLabel = (midi, flat) => {
+    const value = Number(midi);
+    return pretty(P.enharmonicName(((value % 12) + 12) % 12, flat == null ? state.preferFlats : flat)) + (Math.floor(value / 12) - 1);
+  };
 
   const state = {
     tonic: 'C', mode: 'major', progression: [], selectedKey: null,
+    selectedChord: null, sopranoMidi: null, inversionChoice: 'auto',
     catalogFilter: 'all', includeSevenths: true, includeChromatic: true, nextFilter: 'functional',
     targetTonic: 'G', targetMode: 'major', librarySevenths: true, libraryCategory: 'all', librarySearch: '',
     radarScope: 'near',
@@ -65,7 +70,9 @@
   function harmonizationOptions() {
     return Object.assign(catalogOptions(), {
       requiredPcs: state.requiredPcs.slice(),
-      periodStyle: state.periodStyle
+      periodStyle: state.periodStyle,
+      sopranoMidi: state.sopranoMidi,
+      inversion: state.inversionChoice === 'auto' ? null : Number(state.inversionChoice)
     });
   }
 
@@ -107,6 +114,45 @@
     }).join(' · ');
   }
 
+  function inversionText(inversion) {
+    return E.INVERSION_LABELS[inversion] || ('第 ' + (Number(inversion) + 1) + ' 转位');
+  }
+
+  function satbNotesHtml(voicing, className) {
+    if (!voicing) return '';
+    const rows = [['S', voicing.soprano], ['A', voicing.alto], ['T', voicing.tenor], ['B', voicing.bass]];
+    return '<span class="satb-notes' + (className ? ' ' + className : '') + '">' +
+      rows.map(([label, midi]) => '<span><b>' + label + '</b>' + esc(midiNoteLabel(midi)) + '</span>').join('') +
+    '</span>';
+  }
+
+  function resolvedVoicing(chord, previous) {
+    if (!chord) return null;
+    return E.voicingFromChord(chord) || E.bestVoicingForChord(chord, harmonizationOptions(), previous || null);
+  }
+
+  function chordWithVoicing(chord, previous) {
+    if (!chord) return null;
+    if (E.voicingFromChord(chord)) return chord;
+    const voicing = resolvedVoicing(chord, previous);
+    return voicing ? E.materializeVoicing(chord, voicing) : chord;
+  }
+
+  function progressionWithVoicings(chords) {
+    let previous = null;
+    return (chords || []).map((chord) => {
+      const entry = chordWithVoicing(chord, previous);
+      previous = entry;
+      return entry;
+    });
+  }
+
+  function voiceConstraintSummary() {
+    const soprano = state.sopranoMidi == null ? '高音不限' : '固定高音 ' + midiNoteLabel(state.sopranoMidi);
+    const inversion = state.inversionChoice === 'auto' ? '转位自动' : inversionText(Number(state.inversionChoice));
+    return soprano + ' · ' + inversion + '（SATB）';
+  }
+
   function renderMelodyPcs() {
     const host = $('#melodyPcs');
     if (!host) return;
@@ -128,6 +174,20 @@
   function renderHarmonyControls() {
     if (!$('#melodyPcs')) return;
     renderMelodyPcs();
+    const sopranoOptions = [{ value:'', label:'不限' }];
+    for (let midi = E.SATB_RANGES.soprano[0]; midi <= E.SATB_RANGES.soprano[1]; midi++) {
+      sopranoOptions.push({ value:String(midi), label:midiNoteLabel(midi) });
+    }
+    populateSelect($('#sopranoNote'), sopranoOptions, state.sopranoMidi == null ? '' : String(state.sopranoMidi));
+    populateSelect($('#inversionChoice'), [
+      { value:'auto', label:'自动选择' },
+      { value:'0', label:'原位' },
+      { value:'1', label:'第一转位' },
+      { value:'2', label:'第二转位' },
+      { value:'3', label:'第三转位' }
+    ], state.inversionChoice);
+    $('#voiceConstraintNote').textContent = voiceConstraintSummary() +
+      (state.inversionChoice === '3' ? ' · 第三转位只用于四音及以上和弦' : '') + '。';
     $$('#periodStyle [data-period-style]').forEach((btn) => {
       const active = btn.dataset.periodStyle === state.periodStyle;
       btn.classList.toggle('active', active);
@@ -139,13 +199,18 @@
     $('#periodStyleBasis').innerHTML = period
       ? '<span>教材依据</span>' + links + '<a href="../docs/和声学手册.html#h-9" target="_blank" rel="noopener">历史阶段总览</a>'
       : '';
-    const matches = catalog.filter((chord) =>
-      E.periodAllowsChord(state.periodStyle, chord) && E.chordIncludesPcs(chord, state.requiredPcs)).length;
+    const sopranoPc = state.sopranoMidi == null ? null : ((state.sopranoMidi % 12) + 12) % 12;
+    const matches = catalog.filter((chord) => E.periodAllowsChord(state.periodStyle, chord) &&
+      E.chordIncludesPcs(chord, state.requiredPcs) && (sopranoPc == null || chord.pcs.includes(sopranoPc))).length;
     const notes = state.requiredPcs.map((pc) => noteLabel(pc, state.preferFlats)).join('、');
-    $('#harmonizeStatus').innerHTML = state.requiredPcs.length
-      ? '<span class="' + (matches ? 'ok' : 'warn') + '">必含 ' + esc(notes) + '</span><span>当前设置匹配 ' + matches + ' 个和弦</span>' +
-        (matches ? '' : '<span class="warn">没有和弦能同时满足这些音；移除一个必含音或切换时期。</span>')
-      : (matches ? '<span>未指定必含音；当前显示 ' + matches + ' 个符合时期语法的和弦。</span>'
+    const constraints = [];
+    if (notes) constraints.push('必含 ' + notes);
+    if (state.sopranoMidi != null) constraints.push('高音 ' + midiNoteLabel(state.sopranoMidi));
+    if (state.inversionChoice !== 'auto') constraints.push(inversionText(Number(state.inversionChoice)));
+    $('#harmonizeStatus').innerHTML = constraints.length
+      ? '<span class="' + (matches ? 'ok' : 'warn') + '">' + esc(constraints.join(' · ')) + '</span><span>当前匹配 ' + matches + ' 个和弦</span>' +
+        (matches ? '' : '<span class="warn">没有和弦能同时满足音级、高音与时期条件；请放宽一项。</span>')
+      : (matches ? '<span>未固定旋律音；当前显示 ' + matches + ' 个符合时期语法的和弦。</span>'
         : '<span class="warn">当前调式与所选时期没有共享的和弦库存；请切换调式或时期。</span>');
   }
 
@@ -273,21 +338,34 @@
   }
 
   function findChordByKey(key) {
-    return catalog.find((c) => c.key === key) || libraryCatalog.find((c) => c.key === key) ||
+    return (state.selectedChord && state.selectedChord.key === key ? state.selectedChord : null) ||
+      catalog.find((c) => c.key === key) || libraryCatalog.find((c) => c.key === key) ||
       detailConnections.find((c) => c.key === key) || state.progression.find((c) => c.key === key) || null;
   }
 
   function selectChord(chord) {
     state.selectedKey = chord ? chord.key : null;
+    state.selectedChord = chord || null;
     $$('#palette .chord-card').forEach((el) => el.classList.toggle('is-selected', !!chord && el.dataset.chordKey === chord.key));
     renderDetail();
     renderPianoHighlight();
   }
 
-  function addToProgression(chord) {
+  function addToProgression(chord, item) {
     if (!chord) return;
-    state.progression.push(chord);
-    state.selectedKey = chord.key;
+    let entry = item && item.voicing ? E.materializeVoicing(chord, item.voicing) : chord;
+    if (!E.voicingFromChord(entry)) {
+      const previous = state.progression[state.progression.length - 1] || null;
+      const voicing = resolvedVoicing(chord, previous);
+      if (!voicing) {
+        toast(E.voicingFailureReason(chord, harmonizationOptions()));
+        return;
+      }
+      entry = E.materializeVoicing(chord, voicing);
+    }
+    state.progression.push(entry);
+    state.selectedKey = entry.key;
+    state.selectedChord = entry;
     renderProgression();
     renderNext();
     renderPianoHighlight();
@@ -308,11 +386,16 @@
       box.innerHTML = '<div class="progression-empty"><div><div style="font-family:var(--serif);font-size:30px;color:var(--gold)">♩</div>从左侧点选和弦，或使用右侧推荐<br><span class="muted">系统会实时给功能、声部与解决理由</span></div></div>';
     } else {
       box.innerHTML = state.progression.map((chord, i) => {
+        const voicing = E.voicingFromChord(chord);
+        const inversion = voicing ? voicing.inversion : (chord.inversion || 0);
+        const voicingTitle = voicing ? ' · ' + satbNotesHtml(voicing).replace(/<[^>]+>/g, ' ') : '';
         return '<div class="prog-item" data-prog="' + i + '">' +
-          '<button class="prog-main" data-select-prog="' + i + '" title="选择并查看 ' + esc(chordTitle(chord)) + '">' +
-            '<span class="prog-index">' + String(i + 1).padStart(2, '0') + '</span>' +
+          '<button class="prog-main" data-select-prog="' + i + '" title="选择并查看 ' + esc(chordTitle(chord) + voicingTitle) + '">' +
+            '<span class="prog-head"><span class="prog-index">' + String(i + 1).padStart(2, '0') + '</span>' +
+              '<span class="prog-inversion">' + esc(inversionText(inversion)) + '</span></span>' +
             '<span class="prog-roman">' + esc(pretty(chord.roman)) + '</span>' +
             '<span class="prog-notes">' + esc(chord.noteNames.map(pretty).join(' · ')) + '</span>' +
+            satbNotesHtml(voicing, 'prog-satb') +
             '<span class="prog-periods">' + periodBadgesForChord(chord) + '</span>' +
           '</button>' +
           '<button class="prog-remove" data-remove-prog="' + i + '" aria-label="移除">×</button>' +
@@ -353,9 +436,34 @@
         const selected = periodById(state.periodStyle);
         return '<span class="analysis-item period-summary" title="标签表示和弦可适用的历史语法；同一和弦可以跨阶段存在。">' +
           esc(selected ? selected.short + '语法 · 进行覆盖' : '时期覆盖') + '：' + esc(labels.join(' / ')) + '</span>';
+      })() + (() => {
+        const cards = [];
+        for (let i = 1; i < state.progression.length; i++) {
+          const report = E.analyzeVoiceLeading(state.progression[i - 1], state.progression[i]);
+          if (!report) continue;
+          const order = [3, 2, 1, 0];
+          const motions = order.map((index) => {
+            const voice = report.voices[index];
+            const delta = voice.semitones > 0 ? '+' + voice.semitones : String(voice.semitones);
+            return '<span class="vl-voice"><b>' + esc(voice.label) + '</b>' + esc(voice.fromName) + ' → ' + esc(voice.toName) +
+              '<i>' + esc(delta) + '</i></span>';
+          }).join('');
+          const issues = report.issues.length
+            ? '<ul class="vl-issues">' + report.issues.map((issue) => '<li>' + esc(issue) + '</li>').join('') + '</ul>'
+            : '<div class="vl-ok">✓ 无平行五/八度、隐伏五八、交叉、重叠与倾向音解决问题</div>';
+          cards.push('<div class="vl-card' + (report.issues.length ? ' has-issue' : '') + '">' +
+            '<div class="vl-head"><b>' + esc(pretty(state.progression[i - 1].roman)) + ' → ' + esc(pretty(state.progression[i].roman)) + '</b>' +
+              '<span>' + report.totalMotion + ' 半音 · ' + (report.issues.length ? report.issues.length + ' 项检查未通过' : '检查通过') + '</span></div>' +
+            '<div class="vl-motions">' + motions + '</div>' + issues +
+          '</div>');
+        }
+        return cards.length ? '<div class="vl-stack"><div class="vl-stack-title">逐声部进行与禁忌检查</div>' + cards.join('') + '</div>' : '';
       })();
     const lastCadence = result.cadences[result.cadences.length - 1];
-    $('#progressionHint').textContent = lastCadence ? '检测到：' + lastCadence.name + '（第 ' + (lastCadence.at + 1) + ' 个和弦）' : '继续扩展，或回到主功能形成收束。';
+    const lastReport = state.progression.length > 1 ? E.analyzeVoiceLeading(state.progression[state.progression.length - 2], state.progression[state.progression.length - 1]) : null;
+    $('#progressionHint').textContent = lastReport && lastReport.issues.length
+      ? '最近一次连接有 ' + lastReport.issues.length + ' 项声部进行问题；见下方逐声部检查。'
+      : (lastCadence ? '检测到：' + lastCadence.name + '（第 ' + (lastCadence.at + 1) + ' 个和弦）' : '继续扩展，或回到主功能形成收束。');
   }
 
   function renderNext() {
@@ -368,8 +476,10 @@
     const last = state.progression[state.progression.length - 1];
     const selectedPeriod = periodById(state.periodStyle);
     const noteHint = state.requiredPcs.length ? ' · 必含 ' + state.requiredPcs.map((pc) => noteLabel(pc, state.preferFlats)).join('＋') : '';
+    const voiceHint = (state.sopranoMidi == null ? '' : ' · 高音 ' + midiNoteLabel(state.sopranoMidi)) +
+      (state.inversionChoice === 'auto' ? '' : ' · ' + inversionText(Number(state.inversionChoice)));
     $('#nextHint').textContent = (last ? '从 ' + pretty(last.roman) + ' 出发' : '建立初始中心') +
-      (selectedPeriod ? ' · ' + selectedPeriod.short : '') + noteHint;
+      (selectedPeriod ? ' · ' + selectedPeriod.short : '') + noteHint + voiceHint;
     if (!nextItems.length) {
       const reason = grouped.emptyReason || '此分类暂无推荐。换成“平滑”或“色彩”，或减少约束。';
       $('#nextList').innerHTML = '<div class="next-empty">' + esc(reason) + '</div>';
@@ -380,20 +490,22 @@
       const score = Math.max(0, Math.min(1, Number(item.score) || 0));
       const targetRoman = item.targetRoman && state.nextFilter === 'modulation' ? ' → ' + pretty(item.targetRoman) : '';
       const reasons = (item.reasons || []).slice(0, 2).join(' · ');
-      const warning = (item.warnings || [])[0] || '';
+      const warnings = [...new Set(item.warnings || [])];
       const periods = (item.periodFits || E.chordPeriodFits(chord)).map(periodBadgeHtml).join('');
       const roles = (item.constraintRoles || []).filter((entry) => entry.role)
         .map((entry) => noteLabel(entry.pc, state.preferFlats) + '＝' + entry.role).join(' · ');
-      return '<button class="next-item" data-next="' + i + '" title="' + esc(chordTitle(chord)) + '">' +
-        '<span class="next-top"><span class="next-roman">' + esc(pretty(chord.roman)) + targetRoman + '</span><span class="next-chord">' + esc(chord.noteNames.map(pretty).join(' · ')) + '</span><span class="next-score"><i style="width:' + Math.round(score * 100) + '%"></i></span></span>' +
+      return '<button class="next-item' + (warnings.length ? ' has-issue' : '') + '" data-next="' + i + '" title="' + esc(chordTitle(chord) + (item.voicing ? ' · ' + inversionText(item.voicing.inversion) : '')) + '">' +
+        '<span class="next-top"><span class="next-roman">' + esc(pretty(chord.roman)) + targetRoman + '</span><span class="next-chord">' + esc(chord.noteNames.map(pretty).join(' · ')) +
+          (item.voicing ? '<small>' + esc(inversionText(item.voicing.inversion)) + '</small>' : '') + '</span><span class="next-score"><i style="width:' + Math.round(score * 100) + '%"></i></span></span>' +
+        (item.voicing ? satbNotesHtml(item.voicing, 'next-satb') : '') +
         '<span class="next-reason">' + esc(reasons || chord.functionLabel || '可用连接') + '</span>' +
         '<span class="next-periods">' + periods + (roles ? '<span class="next-constraint">含 ' + esc(roles) + '</span>' : '') + '</span>' +
-        (warning ? '<span class="next-warning">⚠ ' + esc(warning) + '</span>' : '') +
+        (warnings.length ? '<span class="next-warning">⚠ ' + esc(warnings.slice(0, 2).join(' · ')) + (warnings.length > 2 ? ' …' : '') + '</span>' : '') +
       '</button>';
     }).join('');
     $$('#nextList [data-next]').forEach((btn) => btn.addEventListener('click', () => {
       const item = nextItems[Number(btn.dataset.next)];
-      if (item) { selectChord(item.chord); addToProgression(item.chord); }
+      if (item) { selectChord(item.chord); addToProgression(item.chord, item); }
     }));
   }
 
@@ -432,6 +544,27 @@
       ? '<div class="info-line"><b>指定音</b><span>' + esc(constraintRoleText(chord)) + ' · ' +
         (E.chordIncludesPcs(chord, state.requiredPcs) ? '已满足' : '未满足') + '</span></div>'
       : '';
+    const selectedIndex = state.progression.indexOf(chord);
+    const previous = selectedIndex > 0 ? state.progression[selectedIndex - 1] :
+      (selectedIndex < 0 ? state.progression[state.progression.length - 1] || null : null);
+    const detailVoicing = resolvedVoicing(chord, previous);
+    const detailReport = detailVoicing && previous ? E.analyzeVoiceLeading(previous, E.materializeVoicing(chord, detailVoicing)) : null;
+    const playableChord = detailVoicing && !E.voicingFromChord(chord) ? E.materializeVoicing(chord, detailVoicing) : chord;
+    const detailVoiceInfo = detailVoicing
+      ? '<div class="info-line"><b>SATB</b><span>' + satbNotesHtml(detailVoicing) + ' · ' + esc(inversionText(detailVoicing.inversion)) +
+        ' · 低音 ' + esc(midiNoteLabel(detailVoicing.bass)) + '</span></div>'
+      : '<div class="info-line"><b>SATB</b><span class="warn-text">' + esc(E.voicingFailureReason(chord, harmonizationOptions())) + '</span></div>';
+    const detailMotion = detailReport ? [3, 2, 1, 0].map((index) => {
+      const voice = detailReport.voices[index];
+      const delta = voice.semitones > 0 ? '+' + voice.semitones : String(voice.semitones);
+      return '<span class="vl-voice"><b>' + esc(voice.label) + '</b>' + esc(voice.fromName) + ' → ' + esc(voice.toName) + '<i>' + esc(delta) + '</i></span>';
+    }).join('') : '';
+    const detailVoiceCheck = detailReport
+      ? '<div class="detail-voice-check"><h4>与前一和弦的声部检查</h4><div class="vl-motions">' + detailMotion + '</div>' +
+        (detailReport.issues.length
+          ? '<ul class="vl-issues">' + detailReport.issues.map((issue) => '<li>' + esc(issue) + '</li>').join('') + '</ul>'
+          : '<div class="vl-ok">✓ 无平行五/八度、隐伏五八、交叉、重叠与倾向音问题</div>') + '</div>'
+      : '';
     const connOpts = harmonizationOptions();
     connOpts.limit = 16;
     detailConnections = E.nextCandidates([chord], state.tonic, state.mode, connOpts).slice(0, 7);
@@ -457,23 +590,24 @@
         '<h4>原理与应用</h4><p>' + esc(chord.description || chord.functionLabel || '和弦的功能由当前调域与上下文决定。') + '</p>' +
         '<div class="info-list"><div class="info-line"><b>当前功能</b><span>' + esc(chord.function) + ' · ' + esc(chord.functionLabel || '') + '</span></div>' +
         '<div class="info-line"><b>音集</b><span>[' + chord.pcs.join(', ') + '] · ' + chord.pcs.length + ' 音</span></div>' +
-        '<div class="info-line"><b>稳定度</b><span>' + Math.round((chord.stability || 0) * 100) + '% · 色彩度 ' + Math.round((chord.color || 0) * 100) + '%</span></div>' + constraintInfo + '</div>' +
+        '<div class="info-line"><b>稳定度</b><span>' + Math.round((chord.stability || 0) * 100) + '% · 色彩度 ' + Math.round((chord.color || 0) * 100) + '%</span></div>' +
+        constraintInfo + detailVoiceInfo + '</div>' +
         '<div class="tag-row"><span class="tag ' + tagClass + '">' + esc(chord.functionLabel || chord.function) + '</span>' +
         uniq((chord.tags || []).concat(chord.seventh ? ['七和弦'] : [])).slice(0, 7).map((tag) => '<span class="tag">' + esc(tag) + '</span>').join('') + '</div>' +
         '<h4 class="detail-period-heading">时期语法 <span class="muted">适用 ≠ 年代归属</span></h4>' +
         '<div class="period-usage-list">' + periodUsage + '</div>' + periodBasis +
       '</div><div>' +
-        '<h4>倾向音与解决</h4>' + (tendency ? '<ul class="tendency-list">' + tendency + '</ul>' : '<p>没有必须解决的强倾向音；可用共同音、级进或色彩关系连接。</p>') +
+        detailVoiceCheck + '<h4>倾向音与解决</h4>' + (tendency ? '<ul class="tendency-list">' + tendency + '</ul>' : '<p>没有必须解决的强倾向音；可用共同音、级进或色彩关系连接。</p>') +
         '<h4>在此调中的其他解释</h4><div class="tag-row">' + replacements.map((r) => '<span class="tag gold">' + esc(pretty(r.roman)) + ' · ' + esc(r.function) + '</span>').join('') + '</div>' +
         '<h4 style="margin-top:12px">跨调式用途 <span class="muted">点击设为目标</span></h4><div class="interpret-list">' + interpretations + '</div>' +
         '<h4 style="margin-top:12px">推荐后续</h4><div class="connection-list">' + connections + '</div>' +
       '</div></div>';
-    $('#detailPlay').addEventListener('click', () => playChord(chord));
-    $('#detailRoll').addEventListener('click', () => playChord(chord, true));
-    $('#detailAdd').addEventListener('click', () => addToProgression(chord));
+    $('#detailPlay').addEventListener('click', () => playChord(playableChord));
+    $('#detailRoll').addEventListener('click', () => playChord(playableChord, true));
+    $('#detailAdd').addEventListener('click', () => addToProgression(playableChord));
     $$('#detailContent [data-detail-conn]').forEach((btn) => btn.addEventListener('click', () => {
       const item = detailConnections[Number(btn.dataset.detailConn)];
-      if (item) { selectChord(item.chord); addToProgression(item.chord); }
+      if (item) { selectChord(item.chord); addToProgression(item.chord, item); }
     }));
     $$('#detailContent [data-interpret]').forEach((btn) => btn.addEventListener('click', () => {
       const item = detailInterpretations[Number(btn.dataset.interpret)];
@@ -485,8 +619,13 @@
 
   function playChord(chord, roll) {
     try {
-      const notes = A.playChord(chord, { roll: !!roll, duration: 1.5 });
-      $('#keyboardReadout').textContent = '正在试听 ' + chord.roman + '：' + chord.noteNames.map(pretty).join(' · ') + '（MIDI ' + notes.join(', ') + '）';
+      const previous = state.progression[state.progression.length - 1] || null;
+      const prepared = chordWithVoicing(chord, previous);
+      const notes = A.playChord(prepared, { roll: !!roll, duration: 1.5 });
+      const voicing = E.voicingFromChord(prepared);
+      $('#keyboardReadout').textContent = '正在试听 ' + chord.roman + '：' + chord.noteNames.map(pretty).join(' · ') +
+        (voicing ? '（S ' + midiNoteLabel(voicing.soprano) + ' · A ' + midiNoteLabel(voicing.alto) + ' · T ' + midiNoteLabel(voicing.tenor) + ' · B ' + midiNoteLabel(voicing.bass) + '）' : '') +
+        '（MIDI ' + notes.join(', ') + '）';
     } catch (error) {
       toast(error.message);
     }
@@ -535,13 +674,15 @@
       const midi = Number(key.dataset.midi);
       key.classList.toggle('highlight', pcs.includes(midi % 12));
       key.classList.toggle('required-note', state.requiredPcs.includes(midi % 12));
+      key.classList.toggle('soprano-note', state.sopranoMidi != null && midi === state.sopranoMidi);
     });
     const requiredReadout = state.requiredPcs.length
       ? '｜必含 ' + state.requiredPcs.map((pc) => noteLabel(pc, state.preferFlats)).join('、') : '';
+    const sopranoReadout = state.sopranoMidi == null ? '' : '｜固定高音 ' + midiNoteLabel(state.sopranoMidi);
     if (chord) {
-      $('#keyboardReadout').textContent = chord.roman + '：' + chord.noteNames.map(pretty).join(' · ') + requiredReadout + '｜点击琴键可单独试听';
+      $('#keyboardReadout').textContent = chord.roman + '：' + chord.noteNames.map(pretty).join(' · ') + requiredReadout + sopranoReadout + '｜点击琴键可单独试听';
     } else if (requiredReadout) {
-      $('#keyboardReadout').textContent = '必含音高亮' + requiredReadout + '｜点击琴键可单独试听';
+      $('#keyboardReadout').textContent = '必含音高亮' + requiredReadout + sopranoReadout + '｜点击琴键可单独试听';
     }
   }
 
@@ -642,7 +783,7 @@
     $$('#routeList [data-use-route]').forEach((btn) => btn.addEventListener('click', () => {
       const route = routes[Number(btn.dataset.useRoute)];
       if (!route) return;
-      state.progression = route.steps.map((step) => step.chord);
+      state.progression = progressionWithVoicings(route.steps.map((step) => step.chord));
       renderProgression();
       renderNext();
       toast('已写入 ' + route.recipe + '，可在推演台试听。');
@@ -654,7 +795,7 @@
     const route = routes[index];
     if (!route) return;
     try {
-      const chords = route.steps.map((step) => step.chord);
+      const chords = progressionWithVoicings(route.steps.map((step) => step.chord));
       const token = ++playbackToken;
       A.playProgression(chords, {
         beat: 0.82,
@@ -1052,6 +1193,7 @@
     if (!state.progression.length) { toast('先加入至少一个和弦。'); return; }
     try {
       const token = ++playbackToken;
+      state.progression = progressionWithVoicings(state.progression);
       $$('#progression .prog-item').forEach((el) => el.classList.remove('playing'));
       A.playProgression(state.progression, {
         beat: 0.78,
@@ -1060,7 +1202,9 @@
           $$('#progression .prog-item').forEach((el) => el.classList.remove('playing'));
           const item = $('#progression .prog-item[data-prog="' + i + '"]');
           if (item) item.classList.add('playing');
-          $('#progressionHint').textContent = '正在播放：' + pretty(chord.roman) + ' · ' + chord.noteNames.map(pretty).join(' · ');
+          const voicing = E.voicingFromChord(chord);
+          $('#progressionHint').textContent = '正在播放：' + pretty(chord.roman) + ' · ' + chord.noteNames.map(pretty).join(' · ') +
+            (voicing ? ' · S ' + midiNoteLabel(voicing.soprano) + ' / B ' + midiNoteLabel(voicing.bass) : '');
         },
         onDone: () => {
           if (token !== playbackToken) return;
@@ -1073,7 +1217,8 @@
 
   function exportMidi() {
     if (!state.progression.length) { toast('进行为空，无法导出 MIDI。'); return; }
-    const bytes = M.buildMidi(state.progression);
+    const voiced = progressionWithVoicings(state.progression);
+    const bytes = M.buildMidi(voiced);
     const blob = new Blob([bytes], { type: 'audio/midi' });
     const url = URL.createObjectURL(blob);
     const link = document.createElement('a');
@@ -1132,6 +1277,14 @@
       $$('#nextFilter button').forEach((item) => item.classList.toggle('active', item.dataset.next === state.nextFilter));
       updateHarmonizationFilters();
     }));
+    $('#sopranoNote').addEventListener('change', (event) => {
+      state.sopranoMidi = event.target.value === '' ? null : Number(event.target.value);
+      updateHarmonizationFilters();
+    });
+    $('#inversionChoice').addEventListener('change', (event) => {
+      state.inversionChoice = event.target.value || 'auto';
+      updateHarmonizationFilters();
+    });
     $('#btnClearMelodyPcs').addEventListener('click', () => {
       if (!state.requiredPcs.length) {
         toast('当前没有指定必含音。');

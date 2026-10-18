@@ -45,6 +45,46 @@ test('honors inversion bass in playback voicing', () => {
   assert.ok(voicing.some((midi) => midi % 12 === 0));
 });
 
+test('uses the selected SATB voicing for playback and MIDI export', () => {
+  const chord = E.makeChord({ rootName:'C', quality:'maj' });
+  const selected = E.materializeVoicing(chord, {
+    midis:[48, 55, 64, 72], inversion:0, bassPc:0
+  });
+  assert.deepEqual(A.chordVoicing(selected, 36), [48, 55, 64, 72]);
+  const bytes = M.buildMidi([selected]);
+  const noteOns = [];
+  let index = 22;
+  let tick = 0;
+  while (index < bytes.length - 3) {
+    let delta = 0, byte = 0;
+    do {
+      byte = bytes[index++];
+      delta = (delta << 7) | (byte & 0x7F);
+    } while (byte & 0x80);
+    tick += delta;
+    const status = bytes[index++];
+    if (status === 0xFF) {
+      index += 1;
+      let length = 0;
+      do {
+        byte = bytes[index++];
+        length = (length << 7) | (byte & 0x7F);
+      } while (byte & 0x80);
+      index += length;
+    } else if (status === 0x90) {
+      const note = bytes[index++];
+      const velocity = bytes[index++];
+      if (velocity > 0) noteOns.push(note);
+    } else if (status === 0x80) {
+      index += 2;
+    } else {
+      break;
+    }
+  }
+  assert.deepEqual(noteOns.sort((a, b) => a - b), [48, 55, 64, 72]);
+  assert.ok(tick > 0);
+});
+
 test('exports a structurally valid standard MIDI file', () => {
   const catalog = E.buildCatalog('C', 'major', {});
   const progression = ['I', 'V7', 'I'].map((roman) => catalog.find((item) => item.roman === roman));

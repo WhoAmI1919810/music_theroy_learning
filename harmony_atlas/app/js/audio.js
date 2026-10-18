@@ -94,6 +94,9 @@
   function chordVoicing(chord, base) {
     base = base == null ? 48 : base;
     if (!chord || !chord.pcs || !chord.pcs.length) return [];
+    const explicit = chord.voicing && Array.isArray(chord.voicing.midis) ? chord.voicing.midis :
+      (Array.isArray(chord.midis) ? chord.midis : null);
+    if (explicit && explicit.length === 4) return explicit.map(Number);
     const rootPc = chord.rootPc == null ? chord.pcs[0] : chord.rootPc;
     const bassPc = chord.bassPc == null ? rootPc : chord.bassPc;
     const bass = nearestMidi(bassPc, base);

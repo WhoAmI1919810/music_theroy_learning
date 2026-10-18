@@ -1213,7 +1213,7 @@ rit<br>
 ![徐平力《高级和声学教程》 PDF p.379（整页影印）](../assets/books/xu_advanced/p0379.jpg)
 
 <!-- MANUAL-REFS:p0379 -->
-<div class="manual-refs"><strong>手册使用本页</strong><ul><li id="ref-claim-voice-leading-parallels-p0379" class="manual-ref-item" data-kind="claim"><span class="ref-kind">论点</span><a href="../和声学手册.html#claim-voice-leading-parallels">声部进行与不协和解决 · voice-leading.parallels</a><br><span class="ref-text">手册提炼：平行纯五度、纯八度削弱声部独立性，因此传统调性写作把它们视为需要避免的进行。</span></li></ul></div>
+<div class="manual-refs"><strong>手册使用本页</strong><ul><li id="ref-claim-voice-leading-parallels-p0379" class="manual-ref-item" data-kind="claim"><span class="ref-kind">论点</span><a href="../和声学手册.html#claim-voice-leading-parallels">声部进行与不协和解决 · voice-leading.parallels</a><br><span class="ref-text">手册提炼：平行纯五度、纯八度削弱声部独立性，因此传统调性写作把它们视为需要避免的进行。</span></li><li id="ref-prose-cite-xu_advanced-p0379-1-p0379" class="manual-ref-item" data-kind="prose"><span class="ref-kind">正文引用</span><a href="../和声学手册.html#cite-xu_advanced-p0379-1">手册正文引用</a><br><span class="ref-text">平行纯五度、纯八度：两个声部以相同纯音程同向移动到新的纯音程，会削弱独立性，传统写作中避免。桑桐教程 PDF p.24、柴可夫斯基 PDF p.21、《概述》PDF p.103、斯波索宾上册答案 PDF p.20、徐平力 PDF p.379、桑桐《半音化的历史演进》PDF p.114、佩尔西采蒂 PDF p.68、基泽勒 PDF p.56。</span></li></ul></div>
 
 <div class="ocr-text">第十九章<br>
 和声演变的几个问题<br>

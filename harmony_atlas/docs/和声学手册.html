@@ -19,6 +19,7 @@ ul,ol{padding-left:26px}li{margin:5px 0}.tag{display:inline-block;padding:2px 7p
 @media(max-width:900px){.layout{display:block;padding:12px}aside{position:relative;top:0;max-height:42vh;overflow:auto;margin-bottom:12px}.toc-l2,.toc-l3{display:inline-block;margin:2px}.toc-l3{padding-left:6px}main{padding:28px 20px 60px;border-radius:14px}h1{font-size:27px}h2{font-size:22px}.example-figure{padding:7px;border-radius:8px}.example-figure figcaption{font-size:11px}}
 @media print{aside{display:none}.layout{display:block;max-width:none;padding:0}main{border:0;box-shadow:none;background:#fff;color:#111;padding:0}h1,h2,h3,h4{color:#111;-webkit-text-fill-color:#111}a{color:#333}th{background:#eee;color:#111}.table-wrap{overflow:visible}table{min-width:0}body{background:#fff}.example-figure{background:#fff;border:1px solid #bbb;padding:4px}.example-figure img{max-height:245mm}.example-figure figcaption{color:#333}}
 </style><link rel="stylesheet" href="manual-visuals.css">
+
 <script data-site-theme-init>(function(){var d=document.documentElement;var t='light';try{var s=localStorage.getItem('music-site-theme');if(s==='dark'||s==='light')t=s;}catch(e){}d.setAttribute('data-theme',t);d.style.colorScheme=t;var p=location.pathname;var section='home';if(p.indexOf('/harmony_atlas/docs/books/')>=0)section='harmony-books';else if(p.indexOf('/harmony_atlas/docs/')>=0)section='harmony-manual';else if(p.indexOf('/harmony_atlas/app/')>=0)section='harmony-app';else if(p.indexOf('/counterpoint_atlas/docs/books/')>=0)section='counterpoint-books';else if(p.indexOf('/counterpoint_atlas/docs/')>=0)section='counterpoint-manual';else if(p.indexOf('/counterpoint_atlas/tutorial/')>=0)section='counterpoint-tutorial';else if(p.indexOf('/counterpoint_atlas/app/')>=0)section='counterpoint-app';else if(p.indexOf('/orchestration_atlas/docs/books/')>=0)section='orchestration-books';else if(p.indexOf('/orchestration_atlas/docs/')>=0)section='orchestration-manual';else if(p.indexOf('/orchestration_atlas/app/')>=0)section='orchestration-app';d.setAttribute('data-site-section',section);var m=document.querySelector('meta[name="theme-color"]');if(m)m.setAttribute('content',t==='dark'?'#0b1119':'#f5efe4');})();</script>
 <link rel="stylesheet" href="../../site-theme.css" data-site-theme-css>
 </head>
@@ -85,10 +86,22 @@ ul,ol{padding-left:26px}li{margin:5px 0}.tag{display:inline-block;padding:2px 7p
 <p>这些规则分别见《调性和声及20世纪音乐概述》PDF <a href="books/tonal_20c_overview.html#ref-prose-cite-tonal_20c_overview-p0229-1-p0229">p.229–230</a>、<a href="books/tonal_20c_overview.html#ref-prose-cite-tonal_20c_overview-p0402-1-p0402">p.402–403</a>，以及柴可夫斯基 PDF <a href="books/tchaikovsky_guide.html#ref-prose-cite-tchaikovsky_guide-p0046-1-p0046">p.46</a>。</p>
 <h3 id="h-14">2.4 声部独立性：平行五、八度与隐伏进行</h3>
 <p>四部和声需要维持声部独立：共同音保持、级进优先、反向进行与倾向音解决共同作用。</p>
+<a class="anchor" id="cite-sangtong_tutorial-p0024-1"></a>
 <a class="anchor" id="cite-tchaikovsky_guide-p0021-1"></a>
 <a class="anchor" id="cite-tonal_20c_overview-p0103-1"></a>
-<ul><li><strong>平行纯五度、纯八度</strong>：两个声部以相同纯音程同向移动到新的纯音程，会削弱独立性，传统写作中避免（柴可夫斯基 PDF <a href="books/tchaikovsky_guide.html#ref-prose-cite-tchaikovsky_guide-p0021-1-p0021">p.21</a>；《概述》PDF <a href="books/tonal_20c_overview.html#ref-prose-cite-tonal_20c_overview-p0103-1-p0103">p.103</a>）。</li><li><strong>隐伏五、八度</strong>：外声部同向进入纯五/纯八，尤其上方声部跳进时需避免；保留共同音或改反向可消除。</li><li><strong>平行三、六度</strong>：通常可用，但仍需服从整体声部平衡与终止处理。</li><li><strong>声部交叉与过大跳进</strong>：会破坏声部身份与可唱性，即使未被列为硬性禁则。</li></ul>
-<p>程序的 <code>voiceLeading()</code> 用最小权匹配估算两和弦之间的半音移动总量，并报告共同音；该函数不能替代人工检查隐藏五八、声部交叉与具体织体。</p>
+<a class="anchor" id="cite-spossbin_answers_1-p0020-1"></a>
+<a class="anchor" id="cite-xu_advanced-p0379-1"></a>
+<a class="anchor" id="cite-sangtong_chromatic-p0114-1"></a>
+<a class="anchor" id="cite-persichetti_20c-p0068-1"></a>
+<a class="anchor" id="cite-kizler_20c-p0056-1"></a>
+<ul><li><strong>平行纯五度、纯八度</strong>：两个声部以相同纯音程同向移动到新的纯音程，会削弱独立性，传统写作中避免。桑桐教程 PDF <a href="books/sangtong_tutorial.html#ref-prose-cite-sangtong_tutorial-p0024-1-p0024">p.24</a>、柴可夫斯基 PDF <a href="books/tchaikovsky_guide.html#ref-prose-cite-tchaikovsky_guide-p0021-1-p0021">p.21</a>、《概述》PDF <a href="books/tonal_20c_overview.html#ref-prose-cite-tonal_20c_overview-p0103-1-p0103">p.103</a>、斯波索宾上册答案 PDF <a href="books/spossbin_answers_1.html#ref-prose-cite-spossbin_answers_1-p0020-1-p0020">p.20</a>、徐平力 PDF <a href="books/xu_advanced.html#ref-prose-cite-xu_advanced-p0379-1-p0379">p.379</a>、桑桐《半音化的历史演进》PDF <a href="books/sangtong_chromatic.html#ref-prose-cite-sangtong_chromatic-p0114-1-p0114">p.114</a>、佩尔西采蒂 PDF <a href="books/persichetti_20c.html#ref-prose-cite-persichetti_20c-p0068-1-p0068">p.68</a>、基泽勒 PDF <a href="books/kizler_20c.html#ref-prose-cite-kizler_20c-p0056-1-p0056">p.56</a>。</li><li><strong>隐伏五、八度</strong>：外声部同向进入纯五/纯八，尤其上方声部跳进时需避免；保留共同音或改反向可消除。</li><li><strong>平行三、六度</strong>：通常可用，但仍需服从整体声部平衡与终止处理。</li><li><strong>声部交叉与过大跳进</strong>：会破坏声部身份与可唱性，即使未被列为硬性禁则。</li></ul>
+<a class="anchor" id="cite-spossbin_answers_2-p0205-1"></a>
+<p>平行规则以同一连续声部进行为前提；乐句断开处的相同音程不必按连续平行处理（斯波索宾下册答案 PDF <a href="books/spossbin_answers_2.html#ref-prose-cite-spossbin_answers_2-p0205-1-p0205">p.205</a>）。</p>
+<p>程序的 <code>listVoicings()</code> 从和弦音、SATB 音域、声部顺序与间距生成实际四声部；<code>bestVoicingForChord()</code> 可按固定高音和指定转位筛选，并以最小声部移动与最少禁忌项选择排列；<code>analyzeVoiceLeading()</code> 对相邻四声部逐一检查平行五度、平行八度、平行同度、隐伏五八、交叉、重叠和倾向音解决。</p>
+<a class="anchor" id="cite-sangtong_six-p0123-1"></a>
+<a class="anchor" id="cite-spossbin_answers_1-p0002-1"></a>
+<a class="anchor" id="cite-tonal_20c_overview-p0600-1"></a>
+<p>同一旋律与低音通常存在多条合格四部写法；语法约束限定可行域，而不是产生唯一答案（桑桐《和声学专题六讲》PDF <a href="books/sangtong_six.html#ref-prose-cite-sangtong_six-p0123-1-p0123">p.123</a>、斯波索宾上册答案 PDF <a href="books/spossbin_answers_1.html#ref-prose-cite-spossbin_answers_1-p0002-1-p0002">p.2</a>、《概述》PDF <a href="books/tonal_20c_overview.html#ref-prose-cite-tonal_20c_overview-p0600-1-p0600">p.600</a>）。</p>
 <h3 id="h-15">2.5 功能语法：T–S–D–T 及其例外</h3>
 <a class="anchor" id="cite-sangtong_tutorial-p0032-1"></a>
 <p>桑桐 PDF <a href="books/sangtong_tutorial.html#ref-prose-cite-sangtong_tutorial-p0032-1-p0032">p.32–34</a> 将调内三和弦按稳定/不稳定与倾向关系归入三类功能：</p>
