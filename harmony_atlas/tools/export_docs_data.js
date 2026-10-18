@@ -43,8 +43,10 @@ function modeActionRows(mode) {
     for (const item of interpretations) {
       if (item.targetTonic === 'C' && item.targetMode === mode.id) continue;
       const target = {
+        tonic: item.targetTonic,
         label: pretty(item.targetLabel),
         roman: pretty(item.targetRoman),
+        function: item.targetFunction,
         isPivot: !!item.isPivot,
         category: item.targetCategory,
         relation: item.relation.label,
@@ -133,7 +135,15 @@ const routes = [
       recipe: route.recipe,
       score: route.score,
       explanation: route.explanation,
-      steps: route.steps.map((step) => ({ roman: pretty(step.roman), notes: step.noteNames.map(pretty) }))
+      steps: route.steps.map((step) => ({
+        roman: pretty(step.roman),
+        notes: step.noteNames.map(pretty),
+        category: step.category || '',
+        function: step.function || '',
+        key: step.key || '',
+        sourceRoman: step.sourceRoman ? pretty(step.sourceRoman) : '',
+        targetRoman: step.targetRoman ? pretty(step.targetRoman) : ''
+      }))
     }))
   };
 });

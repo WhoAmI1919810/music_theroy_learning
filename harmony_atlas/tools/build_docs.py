@@ -802,12 +802,13 @@ ul,ol{padding-left:26px}li{margin:5px 0}.tag{display:inline-block;padding:2px 7p
 '''
 
 
-def write_html(markdown):
+def write_html(markdown, data):
     body, toc = md_to_html(markdown)
+    visual_data = json.dumps(data, ensure_ascii=False, separators=(',', ':')).replace('</', '<\\/')
     document = '''<!DOCTYPE html>
 <html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>和声学理论手册 · Harmony Atlas</title><style>%s</style></head>
-<body><div class="layout"><aside><div class="brand"><div class="mark">H</div><b>和声学理论手册</b></div><nav>%s</nav><a class="back" href="../app/index.html">← 返回推演台</a></aside><main>%s</main></div></body></html>''' % (HTML_CSS, toc, body)
+<link rel="icon" href="data:,"><title>和声学理论手册 · Harmony Atlas</title><style>%s</style><link rel="stylesheet" href="manual-visuals.css"></head>
+<body><div class="layout"><aside><div class="brand"><div class="mark">H</div><b>和声学理论手册</b></div><nav>%s</nav><a class="back" href="../app/index.html">← 返回推演台</a></aside><main>%s</main></div><script type="application/json" id="manual-visual-data">%s</script><script src="manual-visuals.js"></script></body></html>''' % (HTML_CSS, toc, body, visual_data)
     with open(MANUAL_HTML, 'w', encoding='utf-8', newline='\n') as handle:
         handle.write(document)
 
@@ -834,7 +835,7 @@ def main():
     gallery = read_json(EXAMPLE_JSON)
     markdown, prose_entries = render_manual(data, source_map, books_meta, gallery)
     annotations = build_book_annotations(data, source_map, gallery, prose_entries)
-    write_html(markdown)
+    write_html(markdown, data)
     write_source_js(source_map)
     write_json(BOOK_ANNOTATIONS, annotations)
     print('manual markdown:', MANUAL_MD)
