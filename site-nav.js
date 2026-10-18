@@ -46,19 +46,22 @@
   ];
 
   var css = [
-    ".site-nav{position:relative;z-index:120;background:#0b1118;border-bottom:1px solid rgba(180,200,224,.22);color:#edf3fa;font:12px/1.4 'Segoe UI','Microsoft YaHei',sans-serif}",
-    ".site-nav-inner{width:min(calc(100% - 24px),1180px);margin:0 auto;display:flex;align-items:center;gap:7px;min-height:46px}",
+    ":root{--music-site-nav-height:46px}",
+    "html{scroll-padding-top:calc(var(--music-site-nav-height) + 10px)}:target{scroll-margin-top:calc(var(--music-site-nav-height) + 10px)}",
+    ".site-nav{position:sticky;top:0;z-index:120;background:rgba(11,17,24,.96);border-bottom:1px solid rgba(180,200,224,.22);box-shadow:0 8px 24px rgba(0,0,0,.28);color:#edf3fa;font:12px/1.4 'Segoe UI','Microsoft YaHei',sans-serif;-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px)}",
+    ".site-nav-inner{width:min(calc(100% - 24px),1180px);margin:0 auto;display:flex;align-items:center;gap:7px;min-height:var(--music-site-nav-height)}",
     ".site-nav button,.site-nav summary{appearance:none;border:1px solid rgba(180,200,224,.22);border-radius:8px;background:rgba(255,255,255,.035);color:#c8d4e1;font:inherit;padding:7px 10px;cursor:pointer}",
     ".site-nav button:hover,.site-nav summary:hover,.site-nav a:hover{color:#fff;border-color:rgba(238,177,91,.6)}",
     ".site-nav .site-back{white-space:nowrap}",
     ".site-home{display:inline-flex;align-items:center;padding:7px 4px;color:#eeb15b;text-decoration:none;white-space:nowrap}",
     ".site-jump{position:relative}",
     ".site-jump summary{list-style:none;white-space:nowrap}.site-jump summary::-webkit-details-marker{display:none}.site-jump summary:after{content:' ▾';color:#eeb15b}",
-    ".site-jump-panel{position:fixed;top:54px;left:12px;right:12px;z-index:130;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;width:min(760px,calc(100vw - 24px));margin:0 auto;padding:15px;border:1px solid rgba(180,200,224,.28);border-radius:12px;background:#101a26;box-shadow:0 22px 55px rgba(0,0,0,.5)}",
+    ".site-jump-panel{position:fixed;top:calc(var(--music-site-nav-height) + 8px);left:12px;right:12px;z-index:130;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;width:min(760px,calc(100vw - 24px));margin:0 auto;padding:15px;border:1px solid rgba(180,200,224,.28);border-radius:12px;background:#101a26;box-shadow:0 22px 55px rgba(0,0,0,.5)}",
     ".site-jump-group b{display:block;margin:0 0 7px;color:#eeb15b;font-size:10px;letter-spacing:.08em}.site-jump-group a{display:block;padding:6px 7px;border-radius:6px;color:#c8d4e1;text-decoration:none}.site-jump-group a[aria-current='page']{background:rgba(238,177,91,.16);color:#fff}",
     ".site-context{margin-left:auto;color:#8494a9;font-size:10px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}",
-    "@media(max-width:620px){.site-nav-inner{width:calc(100% - 16px);gap:4px;min-height:44px}.site-nav button,.site-nav summary{padding:6px 8px;font-size:11px}.site-home{font-size:11px;padding:6px 2px}.site-context{display:none}.site-jump-panel{top:50px;left:8px;right:8px;width:auto;grid-template-columns:1fr 1fr;max-height:calc(100vh - 62px);overflow:auto}}",
-    "@media(max-width:380px){.site-home{display:none}.site-jump-panel{grid-template-columns:1fr}}"
+    "@media(max-width:620px){:root{--music-site-nav-height:44px}.site-nav-inner{width:calc(100% - 16px);gap:4px}.site-nav button,.site-nav summary{padding:6px 8px;font-size:11px}.site-home{font-size:11px;padding:6px 2px}.site-context{display:none}.site-jump-panel{left:8px;right:8px;width:auto;grid-template-columns:1fr 1fr;max-height:calc(100vh - var(--music-site-nav-height) - 16px);max-height:calc(100dvh - var(--music-site-nav-height) - 16px);overflow:auto}}",
+    "@media(max-width:380px){.site-home{display:none}.site-jump-panel{grid-template-columns:1fr}}",
+    "@media print{.site-nav{display:none!important}}"
   ].join("");
 
   var style = document.createElement("style");
@@ -147,4 +150,9 @@
   document.addEventListener("keydown", function (event) {
     if (event.key === "Escape") details.open = false;
   });
+  var lastScrollY = window.scrollY;
+  window.addEventListener("scroll", function () {
+    if (details.open && Math.abs(window.scrollY - lastScrollY) > 4) details.open = false;
+    lastScrollY = window.scrollY;
+  }, { passive: true });
 })();
