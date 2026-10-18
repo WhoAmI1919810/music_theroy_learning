@@ -1,0 +1,489 @@
+{
+  "version": 1,
+  "claims": [
+    {
+      "id": "form.definition",
+      "topic": "曲式的定义",
+      "statement": "曲式是作品按一定逻辑组织的结构层级；材料、句法、终止与调性共同决定边界，名称只是对已识别关系的概括。",
+      "books": [
+        {
+          "book": "wuzuqiang",
+          "page": 10,
+          "quote": "简单说来，音乐作品的合于一定逻辑的结构便称为曲式。曲式由每首作品的内容所决定，并努力与内容取得统一。"
+        },
+        {
+          "book": "qian1",
+          "page": 17,
+          "quote": "乐段是构成独立段落的最小的结构。"
+        },
+        {
+          "book": "schoenberg_fund",
+          "page": 11,
+          "quote": "The chief requirements for the creation of a comprehensible form are logic and coherence."
+        }
+      ],
+      "supports": [
+        "form",
+        "logic",
+        "coherence"
+      ],
+      "confidence": "direct"
+    },
+    {
+      "id": "material.motive",
+      "topic": "动机与材料",
+      "statement": "动机是可识别的最小材料单位；音程、节奏、重音或和声框架在变化中保持身份，重复与变奏由此建立统一性。",
+      "books": [
+        {
+          "book": "gaiqius",
+          "page": 4,
+          "quote": "（1）可以对动机本身在旋律或节奏上作一些非本质的(即少量的，不重要的)改变。"
+        },
+        {
+          "book": "lizhenhua",
+          "page": 12,
+          "quote": "首要的是先找到乐逗，然后重点掌握对乐汇、乐节、乐句、乐段的区别点和界定方法"
+        },
+        {
+          "book": "schoenberg_fund",
+          "page": 15,
+          "quote": "The features of a motive are intervals and rhythms"
+        }
+      ],
+      "supports": [
+        "motive",
+        "identity",
+        "variation"
+      ],
+      "confidence": "direct"
+    },
+    {
+      "id": "syntax.phrase-period",
+      "topic": "乐句与乐段",
+      "statement": "乐句由材料分组与终止共同划界；乐段由一个或数个乐句组成，并以终止的呼应形成相对完整的乐思。",
+      "books": [
+        {
+          "book": "qian1",
+          "page": 17,
+          "quote": "乐段的组成部分是乐句，乐句间互相用终止式划分开来，又通过终止式的功能关系联合成有机的曲式结构。"
+        },
+        {
+          "book": "wuzuqiang",
+          "page": 54,
+          "quote": "它表达一个完整或相对完整的乐思"
+        },
+        {
+          "book": "lizhenhua",
+          "page": 13,
+          "quote": "单一部曲式的一级曲式结构就是乐段。它的次级曲式是乐句、乐节、乐汇。"
+        },
+        {
+          "book": "lijiti",
+          "page": 40,
+          "quote": "两个乐段一呼一应，形成复乐段。"
+        }
+      ],
+      "supports": [
+        "phrase",
+        "period",
+        "hierarchy"
+      ],
+      "confidence": "direct"
+    },
+    {
+      "id": "closure.cadence",
+      "topic": "终止与闭合",
+      "statement": "终止由和声终止式、旋律落点与节奏停顿共同形成；它划分句读，并决定哪一个结构层级真正闭合。",
+      "books": [
+        {
+          "book": "qian1",
+          "page": 17,
+          "quote": "和声和旋律的完满终止是乐段结束时的典型标志。"
+        },
+        {
+          "book": "wuzuqiang",
+          "page": 54,
+          "quote": "由和声这一因素形成的终止式的稳定或不稳定给予乐段的完整性以极大的影响"
+        },
+        {
+          "book": "lizhenhua",
+          "page": 13,
+          "quote": "半终止与全终止又构成呼应关系"
+        }
+      ],
+      "supports": [
+        "cadence",
+        "closure",
+        "phrase"
+      ],
+      "confidence": "direct"
+    },
+    {
+      "id": "process.repetition-contrast-return",
+      "topic": "重复、对比与回归",
+      "statement": "重复确认材料身份，对比建立段落距离，回归恢复统一；三者在不同层级上组合，生成二部、三部、回旋与奏鸣结构。",
+      "books": [
+        {
+          "book": "qian2",
+          "page": 6,
+          "quote": "主题的呈示、展开和再现"
+        },
+        {
+          "book": "qian1",
+          "page": 305,
+          "quote": "变奏是发展音乐的重要手法之一"
+        },
+        {
+          "book": "lizhenhua",
+          "page": 71,
+          "quote": "第三部分是第一部分的再现"
+        },
+        {
+          "book": "wuzuqiang",
+          "page": 120,
+          "quote": "单三部曲式的第三部分如果基本上重复或变化重复曲式的第-部分音乐，则称为有再现的单三部曲式。"
+        },
+        {
+          "book": "schoenberg_fund",
+          "page": 15,
+          "quote": "Variation, it must be remembered, is repetition in which some features are changed and the rest preserved."
+        }
+      ],
+      "supports": [
+        "repetition",
+        "contrast",
+        "return",
+        "variation"
+      ],
+      "confidence": "direct"
+    },
+    {
+      "id": "type.binary",
+      "topic": "二部曲式",
+      "statement": "二部曲式由两个承担完整结构功能的部分组成；B 可以并列对比、展开 A，或含局部再现，并在末尾完成全曲闭合。",
+      "books": [
+        {
+          "book": "qian1",
+          "page": 90,
+          "quote": "单二部曲式由两个部分组成，通常第一部分为乐段，第二部分为乐段或规模相当于乐段的段落。"
+        },
+        {
+          "book": "lizhenhua",
+          "page": 42,
+          "quote": "因此，这首歌曲是并列单二部曲式。"
+        }
+      ],
+      "supports": [
+        "binary",
+        "contrast",
+        "closure"
+      ],
+      "confidence": "direct"
+    },
+    {
+      "id": "type.ternary",
+      "topic": "三部曲式",
+      "statement": "三部曲式以 A—B—A 为骨架；真正的判据是第三部分形成可辨识的再现，而不是段落数量等于三。",
+      "books": [
+        {
+          "book": "qian1",
+          "page": 117,
+          "quote": "单三部曲式由三个部分组成。"
+        },
+        {
+          "book": "wuzuqiang",
+          "page": 120,
+          "quote": "单三部曲式的第三部分如果基本上重复或变化重复曲式的第-部分音乐，则称为有再现的单三部曲式。"
+        },
+        {
+          "book": "lizhenhua",
+          "page": 71,
+          "quote": "第三部分是第一部分的再现"
+        }
+      ],
+      "supports": [
+        "ternary",
+        "recapitulation",
+        "return"
+      ],
+      "confidence": "direct"
+    },
+    {
+      "id": "type.compound",
+      "topic": "复三部曲式",
+      "statement": "复三部曲式要求内部层级：A 或 B 至少一侧达到二部或三部曲式规模，整体再形成 A—B—A。",
+      "books": [
+        {
+          "book": "qian1",
+          "page": 161,
+          "quote": "复三部曲式包含三个部分，其中至少有一个部分是大于乐段的结构（单二部或单三部曲式），这是复三部曲式与单三部曲式的主要区别。"
+        },
+        {
+          "book": "lizhenhua",
+          "page": 86,
+          "quote": "由“三声中部”构成的复三部曲式的再现部十分多样"
+        },
+        {
+          "book": "lijiti",
+          "page": 105,
+          "quote": "古老的三声中部写法通常都采用收拢性结构，即最后和声做完满终止，以突出它自身就是一种完整的单二或单三部曲式"
+        }
+      ],
+      "supports": [
+        "compound",
+        "hierarchy",
+        "ternary"
+      ],
+      "confidence": "direct"
+    },
+    {
+      "id": "type.rondo",
+      "topic": "回旋曲式",
+      "statement": "回旋曲式由主部 A 的多次回归与不同插部交替构成；至少三次主部、两个不同插部，才形成完整回旋。",
+      "books": [
+        {
+          "book": "qian1",
+          "page": 230,
+          "quote": "基本主题（称为“主部”或“迭句”）出现三次以上"
+        },
+        {
+          "book": "wuzuqiang",
+          "page": 175,
+          "quote": "回旋曲式的结构，至少必须具有相平衡的五个部分"
+        },
+        {
+          "book": "lizhenhua",
+          "page": 115,
+          "quote": "各插部的材料与主部之间都不同程度的存在对比性"
+        }
+      ],
+      "supports": [
+        "rondo",
+        "return",
+        "episode"
+      ],
+      "confidence": "direct"
+    },
+    {
+      "id": "type.variation",
+      "topic": "变奏曲式",
+      "statement": "变奏曲式由主题及连续变奏构成全曲；变奏类型取决于每次保留的骨架是低音、和声、旋律还是结构。",
+      "books": [
+        {
+          "book": "qian1",
+          "page": 305,
+          "quote": "首先是主题的完整叙述，然后是它的一系列变化重复"
+        },
+        {
+          "book": "lizhenhua",
+          "page": 165,
+          "quote": "唯一保持未变的就是它的和声功能序列"
+        },
+        {
+          "book": "gaiqius",
+          "page": 4,
+          "quote": "可以用模进，即通过动机在其他音级或其他调上的出现，来代替动机原封不动的反复。"
+        },
+        {
+          "book": "schoenberg_fund",
+          "page": 15,
+          "quote": "Variation, it must be remembered, is repetition in which some features are changed and the rest preserved."
+        }
+      ],
+      "supports": [
+        "variation",
+        "theme",
+        "invariant"
+      ],
+      "confidence": "direct"
+    },
+    {
+      "id": "type.sonata",
+      "topic": "奏鸣曲式",
+      "statement": "奏鸣曲式以呈示部的调性二分、展开部的不稳定和再现部的调性统一为核心；典型呈示部含主部、连接部、副部与结束部。",
+      "books": [
+        {
+          "book": "qian2",
+          "page": 6,
+          "quote": "奏鸣曲式可分为完全的奏鸣曲式和不完全的奏鸣曲式两种。"
+        },
+        {
+          "book": "qian2",
+          "page": 7,
+          "quote": "一般主部在主调上，连接部从主调转向属系调，副部和结束部均在属系调上"
+        },
+        {
+          "book": "qian2",
+          "page": 9,
+          "quote": "再现部中副部的主要变化是调性服从于主部"
+        },
+        {
+          "book": "lizhenhua",
+          "page": 238,
+          "quote": "而应该从主题材料的呈示、展开、再现等方面来观察、划分它的结构。"
+        }
+      ],
+      "supports": [
+        "sonata",
+        "exposition",
+        "development",
+        "recapitulation"
+      ],
+      "confidence": "direct"
+    },
+    {
+      "id": "tonality.structure",
+      "topic": "调性与大型结构",
+      "statement": "大型曲式的调性布局先建立稳定区域，再通过离开、对比与回归解决张力；再现部的调性服从是奏鸣原则的核心证据。",
+      "books": [
+        {
+          "book": "qian2",
+          "page": 7,
+          "quote": "一般主部在主调上，连接部从主调转向属系调，副部和结束部均在属系调上"
+        },
+        {
+          "book": "qian2",
+          "page": 9,
+          "quote": "再现部中副部的主要变化是调性服从于主部"
+        },
+        {
+          "book": "lizhenhua",
+          "page": 238,
+          "quote": "这是因为在第二部分结构上的分裂、调性的转移更多些。"
+        }
+      ],
+      "supports": [
+        "tonal-plan",
+        "sonata",
+        "recapitulation"
+      ],
+      "confidence": "direct"
+    },
+    {
+      "id": "type.sonata-rondo",
+      "topic": "回旋奏鸣曲式",
+      "statement": "回旋奏鸣曲式结合回旋的多重回归与奏鸣的调性服从；主部多次出现，副部在再现时回到主调。",
+      "books": [
+        {
+          "book": "qian2",
+          "page": 78,
+          "quote": "奏鸣回旋曲式是因奏鸣曲式和回旋曲式互相影响而形成的"
+        },
+        {
+          "book": "wuzuqiang",
+          "page": 310,
+          "quote": "回旋曲式与奏鸣曲式互相影响，形成一种具有典型意义的新曲式，称为“回旋奏鸣曲式”，它兼有回旋曲式与奏鸣曲式结构上的某些特点。"
+        }
+      ],
+      "supports": [
+        "sonata-rondo",
+        "rondo",
+        "sonata",
+        "tonal-resolution"
+      ],
+      "confidence": "direct"
+    },
+    {
+      "id": "type.cycle",
+      "topic": "套曲曲式",
+      "statement": "套曲由若干相对独立、彼此对比的乐章组成；整体统一由内容构思、调性、速度与体裁关系建立。",
+      "books": [
+        {
+          "book": "wuzuqiang",
+          "page": 332,
+          "quote": "套曲曲式（或称“套曲”）是一种由若干在曲式结构上各自独立、音乐性质上互相对比的部分组合而成的特殊曲式。"
+        },
+        {
+          "book": "qian1",
+          "page": 305,
+          "quote": "变奏曲像是一种套曲曲式"
+        }
+      ],
+      "supports": [
+        "cycle",
+        "multi-movement",
+        "contrast"
+      ],
+      "confidence": "direct"
+    },
+    {
+      "id": "type.mixed",
+      "topic": "混合与自由曲式",
+      "statement": "混合曲式在同一作品内结合两种以上结构原则；自由曲式则突破定型，但仍须由材料、调性与段落关系说明其逻辑。",
+      "books": [
+        {
+          "book": "qian2",
+          "page": 131,
+          "quote": "一部作品中同时存在两种或两种以上的结构原则，称为混合曲式。"
+        },
+        {
+          "book": "wuzuqiang",
+          "page": 386,
+          "quote": "两种或两种以上不同曲式的某些典型特征综合体现于一首单乐章作品的结构之内"
+        }
+      ],
+      "supports": [
+        "mixed",
+        "free-form",
+        "combination"
+      ],
+      "confidence": "direct"
+    },
+    {
+      "id": "analysis.protocol",
+      "topic": "分析流程",
+      "statement": "分析应先划分材料与句读，再标出终止层级，追踪调性路径，检查结构比例，最后命名并记录例外。",
+      "books": [
+        {
+          "book": "lizhenhua",
+          "page": 12,
+          "quote": "4.学会先宏观，再微观，然后再宏观的分析方法。"
+        },
+        {
+          "book": "qian1",
+          "page": 17,
+          "quote": "乐段的组成部分是乐句，乐句间互相用终止式划分开来，又通过终止式的功能关系联合成有机的曲式结构。"
+        },
+        {
+          "book": "schoenberg_fund",
+          "page": 11,
+          "quote": "The chief requirements for the creation of a comprehensible form are logic and coherence."
+        }
+      ],
+      "supports": [
+        "analysis",
+        "method",
+        "hierarchy"
+      ],
+      "confidence": "direct"
+    },
+    {
+      "id": "proportion.symmetry",
+      "topic": "对称与比例",
+      "statement": "对称、拱形与倒装结构由材料、调性和段落的对应关系建立；判定必须核对中心轴与两端对应，而不能只凭轮廓相似。",
+      "books": [
+        {
+          "book": "lizhenhua",
+          "page": 306,
+          "quote": "以乐曲的中心为轴，在其两侧相对应地形成拱形对称的结构"
+        },
+        {
+          "book": "lizhenhua",
+          "page": 307,
+          "quote": "以第三段为中心，在它两边的第二、四乐段的材料、调性相同；再往两边的第一、五乐段的材料、调性相同。"
+        },
+        {
+          "book": "qian2",
+          "page": 133,
+          "quote": "奏鸣曲式与对称曲式原则的结合，主要是由倒装的再现部而产生的。"
+        }
+      ],
+      "supports": [
+        "symmetry",
+        "arch",
+        "proportion"
+      ],
+      "confidence": "direct"
+    }
+  ]
+}

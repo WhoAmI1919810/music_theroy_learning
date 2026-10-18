@@ -110,11 +110,11 @@ def process_part(task):
             'chars': sum(len(r.get('text', '')) for r in rows),
             'elapsed': round(sum(r.get('elapsed', 0) for r in rows), 1)}
 
-def build_tasks(books, chunk, scale, limit_pages):
+def build_tasks(books, chunk, scale, limit_pages, source_dir=None):
     tasks = []
     for b in books:
         n = b['pages'] if not limit_pages else min(b['pages'], limit_pages)
-        pdf = os.path.join(os.path.dirname(ROOT), b['file'])
+        pdf = os.path.join(source_dir or os.path.dirname(ROOT), b['file'])
         for start in range(0, n, chunk):
             end = min(start + chunk, n)
             part = os.path.join(PART_DIR, '%s__%04d_%04d.jsonl' % (b['id'], start, end))
@@ -132,6 +132,7 @@ def main():
     ap.add_argument('--scale', type=float, default=2.2)
     ap.add_argument('--limit-pages', type=int, default=0)
     ap.add_argument('--priority-max', type=int, default=99)
+    ap.add_argument('--source-dir', default='', help='directory containing the source PDFs')
     args = ap.parse_args()
     with open(os.path.join(ROOT, 'corpus', 'books.json'), encoding='utf-8-sig') as fh:
         meta = json.load(fh)
@@ -143,7 +144,8 @@ def main():
         books = [b for b in all_books if b.get('priority', 99) <= args.priority_max]
     if not books:
         print('no books selected'); return
-    tasks = build_tasks(books, args.chunk, args.scale, args.limit_pages)
+    tasks = build_tasks(books, args.chunk, args.scale, args.limit_pages,
+                        source_dir=args.source_dir or None)
     total_pages = sum(t['end'] - t['start'] for t in tasks)
     print('books=%d tasks=%d pages=%d workers=%d scale=%s' % (len(books), len(tasks), total_pages, args.workers, args.scale), flush=True)
     t0 = time.time(); done_pages = 0; failed = 0

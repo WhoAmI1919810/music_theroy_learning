@@ -319,7 +319,7 @@
         { book:'sangtong_chromatic', page:9, quote:'19世纪的半音化是浪漫主义音乐风格的主线，感情世界的特殊载体。它既扩大了调性范围，又模糊或削弱了调性领域的区分，直接引向了20世纪广阔的半音化天地。' }
       ],
       nodes:['diatonic','dominant','voiceLeading','inversion','seventh','cadence','sequence','secondaryDominant','tonicization','modalInterchange','neapolitan','aug6','dim7','chromaticism','pivot','modulation','enharmonicModulation','colorHarmony','functionNetwork','prolongation','form'],
-      books:['xu_advanced','sangtong_six','sangtong_chromatic','huacui_color','tong_function_net','beethoven_sonata','schoenberg_harmony','tonal_20c_overview']
+      books:['xu_advanced','sangtong_six','sangtong_chromatic','huacui_color','tong_function_net','beethoven_sonata','schoenberg_harmony','schoenberg_structural_functions','tonal_20c_overview']
     },
     {
       id:'modernPostTonal',
@@ -347,6 +347,7 @@
     { id:'tonal_20c_overview', short:'调性和声概述', title:'调性和声及20世纪音乐概述', author:'', year:'', role:'调性和声与20世纪技法总览' },
     { id:'tchaikovsky_guide', short:'柴可夫斯基指南', title:'和声学指南', author:'柴可夫斯基', year:'', role:'实践写作与连接规则' },
     { id:'schoenberg_harmony', short:'勋伯格和声学', title:'和声学', author:'勋伯格', year:'', role:'功能和声原理与表现性' },
+    { id:'schoenberg_structural_functions', short:'和声的结构功能', title:'和声的结构功能', author:'勋伯格', year:'', role:'结构功能、领域与曲式中的和声' },
     { id:'spossbin_answers_1', short:'斯波索宾答案上', title:'和声学上册答案', author:'斯波索宾等', year:'', role:'习题解答与写作范例' },
     { id:'spossbin_answers_2', short:'斯波索宾答案下', title:'和声学下册答案', author:'斯波索宾等', year:'', role:'高级习题与转调范例' },
     { id:'sangtong_six', short:'桑桐六讲', title:'和声学专题六讲', author:'桑桐', year:'', role:'专题研究与方法论' },

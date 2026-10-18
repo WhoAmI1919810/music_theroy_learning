@@ -2286,6 +2286,212 @@
         }
       ]
     },
+    "schoenberg_structural_functions": {
+      "9": [
+        {
+          "kind": "claim",
+          "id": "voice-leading.parallels",
+          "anchor": "ref-claim-voice-leading-parallels-p0009",
+          "label": "声部进行与不协和解决 · voice-leading.parallels",
+          "text": "手册提炼：平行纯五度、纯八度削弱声部独立性，因此传统调性写作把它们视为需要避免的进行。",
+          "href": "../和声学手册.html#claim-voice-leading-parallels"
+        },
+        {
+          "kind": "claim",
+          "id": "seventh.general-resolution",
+          "anchor": "ref-claim-seventh-general-resolution-p0009",
+          "label": "七和弦、九和弦与不协和等级 · seventh.general-resolution",
+          "text": "手册提炼：七和弦是不协和和弦，需准备并按倾向解决；其七音通常下行级进，属七是最强的功能和声形态。",
+          "href": "../和声学手册.html#claim-seventh-general-resolution"
+        },
+        {
+          "kind": "profile",
+          "id": "profile-schoenberg_structural_functions-p0009",
+          "anchor": "ref-profile-profile-schoenberg_structural_functions-p0009",
+          "label": "教材代表页 · 和声的结构功能",
+          "text": "手册将本页列为《和声的结构功能》代表页；该书定位：把功能和声放回结构目的：根音进行、代替音与领域、游移和弦、扩张调性，以及乐句、乐段、过渡、贯串和持续音如何承担曲式功能。",
+          "href": "../和声学手册.html#book-profiles"
+        }
+      ],
+      "11": [
+        {
+          "kind": "claim",
+          "id": "root-motion.fourth-up",
+          "anchor": "ref-claim-root-motion-fourth-up-p0011",
+          "label": "自然音级功能：T–S–D · root-motion.fourth-up",
+          "text": "手册提炼：根音向上四度的进行具有最强的功能推进力；新根音把前一和弦根音纳入自身结构，从听感上提升其功能等级。",
+          "href": "../和声学手册.html#claim-root-motion-fourth-up"
+        },
+        {
+          "kind": "profile",
+          "id": "profile-schoenberg_structural_functions-p0011",
+          "anchor": "ref-profile-profile-schoenberg_structural_functions-p0011",
+          "label": "教材代表页 · 和声的结构功能",
+          "text": "手册将本页列为《和声的结构功能》代表页；该书定位：把功能和声放回结构目的：根音进行、代替音与领域、游移和弦、扩张调性，以及乐句、乐段、过渡、贯串和持续音如何承担曲式功能。",
+          "href": "../和声学手册.html#book-profiles"
+        }
+      ],
+      "44": [
+        {
+          "kind": "claim",
+          "id": "function-network.wandering-chords",
+          "anchor": "ref-claim-function-network-wandering-chords-p0044",
+          "label": "功能网与功能转换 · function-network.wandering-chords",
+          "text": "手册提炼：游移和弦不固定属于某一调，其功能由前后和弦决定，并可在多个方向与远关系调之间连接；同一和弦因此可被重新解释。",
+          "href": "../和声学手册.html#claim-function-network-wandering-chords"
+        },
+        {
+          "kind": "profile",
+          "id": "profile-schoenberg_structural_functions-p0044",
+          "anchor": "ref-profile-profile-schoenberg_structural_functions-p0044",
+          "label": "教材代表页 · 和声的结构功能",
+          "text": "手册将本页列为《和声的结构功能》代表页；该书定位：把功能和声放回结构目的：根音进行、代替音与领域、游移和弦、扩张调性，以及乐句、乐段、过渡、贯串和持续音如何承担曲式功能。",
+          "href": "../和声学手册.html#book-profiles"
+        }
+      ],
+      "60": [
+        {
+          "kind": "claim",
+          "id": "pivot.neutral-chord-double-label",
+          "anchor": "ref-claim-pivot-neutral-chord-double-label-p0060",
+          "label": "中介和弦与转调 · pivot.neutral-chord-double-label",
+          "text": "手册提炼：转调初期以两调共同的中立和弦为媒介，并对其作双重功能标记；随后进入新调属和弦，再用终止式确认新调。",
+          "href": "../和声学手册.html#claim-pivot-neutral-chord-double-label"
+        },
+        {
+          "kind": "profile",
+          "id": "profile-schoenberg_structural_functions-p0060",
+          "anchor": "ref-profile-profile-schoenberg_structural_functions-p0060",
+          "label": "教材代表页 · 和声的结构功能",
+          "text": "手册将本页列为《和声的结构功能》代表页；该书定位：把功能和声放回结构目的：根音进行、代替音与领域、游移和弦、扩张调性，以及乐句、乐段、过渡、贯串和持续音如何承担曲式功能。",
+          "href": "../和声学手册.html#book-profiles"
+        }
+      ],
+      "68": [
+        {
+          "kind": "profile",
+          "id": "profile-schoenberg_structural_functions-p0068",
+          "anchor": "ref-profile-profile-schoenberg_structural_functions-p0068",
+          "label": "教材代表页 · 和声的结构功能",
+          "text": "手册将本页列为《和声的结构功能》代表页；该书定位：把功能和声放回结构目的：根音进行、代替音与领域、游移和弦、扩张调性，以及乐句、乐段、过渡、贯串和持续音如何承担曲式功能。",
+          "href": "../和声学手册.html#book-profiles"
+        }
+      ],
+      "89": [
+        {
+          "kind": "claim",
+          "id": "modulation.distance",
+          "anchor": "ref-claim-modulation-distance-p0089",
+          "label": "转调体系：类型、距离与确认 · modulation.distance",
+          "text": "手册提炼：调性远近应综合调号、共同和弦、主音距离与转调方法来判定，不能只看调号差。",
+          "href": "../和声学手册.html#claim-modulation-distance"
+        },
+        {
+          "kind": "profile",
+          "id": "profile-schoenberg_structural_functions-p0089",
+          "anchor": "ref-profile-profile-schoenberg_structural_functions-p0089",
+          "label": "教材代表页 · 和声的结构功能",
+          "text": "手册将本页列为《和声的结构功能》代表页；该书定位：把功能和声放回结构目的：根音进行、代替音与领域、游移和弦、扩张调性，以及乐句、乐段、过渡、贯串和持续音如何承担曲式功能。",
+          "href": "../和声学手册.html#book-profiles"
+        }
+      ],
+      "98": [
+        {
+          "kind": "profile",
+          "id": "profile-schoenberg_structural_functions-p0098",
+          "anchor": "ref-profile-profile-schoenberg_structural_functions-p0098",
+          "label": "教材代表页 · 和声的结构功能",
+          "text": "手册将本页列为《和声的结构功能》代表页；该书定位：把功能和声放回结构目的：根音进行、代替音与领域、游移和弦、扩张调性，以及乐句、乐段、过渡、贯串和持续音如何承担曲式功能。",
+          "href": "../和声学手册.html#book-profiles"
+        }
+      ],
+      "143": [
+        {
+          "kind": "profile",
+          "id": "profile-schoenberg_structural_functions-p0143",
+          "anchor": "ref-profile-profile-schoenberg_structural_functions-p0143",
+          "label": "教材代表页 · 和声的结构功能",
+          "text": "手册将本页列为《和声的结构功能》代表页；该书定位：把功能和声放回结构目的：根音进行、代替音与领域、游移和弦、扩张调性，以及乐句、乐段、过渡、贯串和持续音如何承担曲式功能。",
+          "href": "../和声学手册.html#book-profiles"
+        }
+      ],
+      "145": [
+        {
+          "kind": "claim",
+          "id": "form.micro-macro",
+          "anchor": "ref-claim-form-micro-macro-p0145",
+          "label": "曲式中的和声策略 · form.micro-macro",
+          "text": "手册提炼：微观和声事件需与宏观调性布局互相校验，才能解释其在曲式中的功能。",
+          "href": "../和声学手册.html#claim-form-micro-macro"
+        },
+        {
+          "kind": "profile",
+          "id": "profile-schoenberg_structural_functions-p0145",
+          "anchor": "ref-profile-profile-schoenberg_structural_functions-p0145",
+          "label": "教材代表页 · 和声的结构功能",
+          "text": "手册将本页列为《和声的结构功能》代表页；该书定位：把功能和声放回结构目的：根音进行、代替音与领域、游移和弦、扩张调性，以及乐句、乐段、过渡、贯串和持续音如何承担曲式功能。",
+          "href": "../和声学手册.html#book-profiles"
+        }
+      ],
+      "166": [
+        {
+          "kind": "profile",
+          "id": "profile-schoenberg_structural_functions-p0166",
+          "anchor": "ref-profile-profile-schoenberg_structural_functions-p0166",
+          "label": "教材代表页 · 和声的结构功能",
+          "text": "手册将本页列为《和声的结构功能》代表页；该书定位：把功能和声放回结构目的：根音进行、代替音与领域、游移和弦、扩张调性，以及乐句、乐段、过渡、贯串和持续音如何承担曲式功能。",
+          "href": "../和声学手册.html#book-profiles"
+        }
+      ],
+      "171": [
+        {
+          "kind": "profile",
+          "id": "profile-schoenberg_structural_functions-p0171",
+          "anchor": "ref-profile-profile-schoenberg_structural_functions-p0171",
+          "label": "教材代表页 · 和声的结构功能",
+          "text": "手册将本页列为《和声的结构功能》代表页；该书定位：把功能和声放回结构目的：根音进行、代替音与领域、游移和弦、扩张调性，以及乐句、乐段、过渡、贯串和持续音如何承担曲式功能。",
+          "href": "../和声学手册.html#book-profiles"
+        }
+      ],
+      "173": [
+        {
+          "kind": "claim",
+          "id": "form.sonata-conflict",
+          "anchor": "ref-claim-form-sonata-conflict-p0173",
+          "label": "曲式中的和声策略 · form.sonata-conflict",
+          "text": "手册提炼：奏鸣曲呈示部建立主调与副调的主题/调性冲突，展开部扩大不稳定，再现部把副调主题带回主调解决冲突。",
+          "href": "../和声学手册.html#claim-form-sonata-conflict"
+        },
+        {
+          "kind": "profile",
+          "id": "profile-schoenberg_structural_functions-p0173",
+          "anchor": "ref-profile-profile-schoenberg_structural_functions-p0173",
+          "label": "教材代表页 · 和声的结构功能",
+          "text": "手册将本页列为《和声的结构功能》代表页；该书定位：把功能和声放回结构目的：根音进行、代替音与领域、游移和弦、扩张调性，以及乐句、乐段、过渡、贯串和持续音如何承担曲式功能。",
+          "href": "../和声学手册.html#book-profiles"
+        }
+      ],
+      "178": [
+        {
+          "kind": "profile",
+          "id": "profile-schoenberg_structural_functions-p0178",
+          "anchor": "ref-profile-profile-schoenberg_structural_functions-p0178",
+          "label": "教材代表页 · 和声的结构功能",
+          "text": "手册将本页列为《和声的结构功能》代表页；该书定位：把功能和声放回结构目的：根音进行、代替音与领域、游移和弦、扩张调性，以及乐句、乐段、过渡、贯串和持续音如何承担曲式功能。",
+          "href": "../和声学手册.html#book-profiles"
+        }
+      ],
+      "202": [
+        {
+          "kind": "profile",
+          "id": "profile-schoenberg_structural_functions-p0202",
+          "anchor": "ref-profile-profile-schoenberg_structural_functions-p0202",
+          "label": "教材代表页 · 和声的结构功能",
+          "text": "手册将本页列为《和声的结构功能》代表页；该书定位：把功能和声放回结构目的：根音进行、代替音与领域、游移和弦、扩张调性，以及乐句、乐段、过渡、贯串和持续音如何承担曲式功能。",
+          "href": "../和声学手册.html#book-profiles"
+        }
+      ]
+    },
     "spossbin_answers_1": {
       "2": [
         {

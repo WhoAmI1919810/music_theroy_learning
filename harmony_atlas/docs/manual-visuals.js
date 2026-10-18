@@ -1200,7 +1200,7 @@
   function renderBooks() {
     var rows = tableRows('visual-books');
     if (!rows.length) return;
-    var visual = makeVisual('教材索引', '十五本教材：角色、代表页与互证位置',
+    var visual = makeVisual('教材索引', '十六本教材：角色、代表页与互证位置',
       '卡片保留每本教材在本体系中的分工与代表页。页码可直接跳到影印页与 OCR 对照。');
     var grid = element('div', 'mv-books');
     rows.forEach(function (cells) {
@@ -1222,7 +1222,7 @@
     archiveLink.href = 'books/index.html';
     archive.appendChild(archiveLink);
     visual.body.appendChild(archive);
-    placeVisual('visual-books', visual.section, '展开十五本教材原始表格');
+    placeVisual('visual-books', visual.section, '展开十六本教材原始表格');
   }
 
   function run(render, label) {

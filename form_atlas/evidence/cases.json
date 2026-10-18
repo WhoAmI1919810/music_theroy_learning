@@ -1,0 +1,395 @@
+{
+  "version": 1,
+  "cases": [
+    {
+      "id": "chopin-a-prelude", "composer": "肖邦", "title": "A大调前奏曲 Op.28 No.7", "work": "24首前奏曲",
+      "form": "single",
+      "summary": "四句平行乐段构成单一部曲式；每两句形成一次属—主呼应，后半以换尾与和声变化完成稳定终止。",
+      "structure": [
+        {"label": "a", "role": "statement", "sub": "1–4，主题呈示", "weight": 1},
+        {"label": "b", "role": "contrast", "sub": "5–8，模进展开", "weight": 1},
+        {"label": "a′", "role": "a", "sub": "9–12，合头换尾", "weight": 1},
+        {"label": "b′", "role": "b", "sub": "13–16，稳定终止", "weight": 1}
+      ],
+      "tonalPath": [
+        {"label": "A大调", "note": "主题建立", "state": "home"},
+        {"label": "b小调", "note": "高潮处短暂离调", "state": "away"},
+        {"label": "A大调", "note": "终点闭合", "state": "return"}
+      ],
+      "analysis": "教材先比较八个两小节乐节，再依据每两乐节形成的 D—T 收拢关系确定四个乐句；随后用终止呼应判断四句同属一个乐段。关键不在“四句”本身，而在每个终止承担何种句读功能。",
+      "cues": ["第1–2小节的主题由上行跳进和同音反复组成，后面多次保留这一轮廓。", "第8小节停在未完成感较强的地方，第16小节才出现稳定主和弦。", "第9–10小节回到开头材料，但后句改变了跳进与终止，形成合头换尾。"],
+      "sources": [{"book": "lizhenhua", "page": 14, "label": "李贞华 · 单一部实例分析"}],
+      "relatedClaims": ["syntax.phrase-period", "closure.cadence", "material.motive"]
+    },
+    {
+      "id": "xianxinghai-february", "composer": "冼星海", "title": "二月里来", "work": "生产大合唱",
+      "form": "single",
+      "summary": "四句起承转合乐段：起句呈示核心音调，承句延续，转句引入对比，合句回到核心材料并完成终止。",
+      "structure": [
+        {"label": "起", "role": "statement", "sub": "核心音调", "weight": 1},
+        {"label": "承", "role": "a", "sub": "延续与模进", "weight": 1},
+        {"label": "转", "role": "contrast", "sub": "材料 / 音区对比", "weight": 1},
+        {"label": "合", "role": "a", "sub": "回归与终止", "weight": 1}
+      ],
+      "tonalPath": [
+        {"label": "主调", "note": "起句建立", "state": "home"},
+        {"label": "属方向", "note": "承、转推进", "state": "away"},
+        {"label": "主调", "note": "合句收束", "state": "return"}
+      ],
+      "analysis": "起承转合不是四个标签，而是材料功能序列：起句建立核心，承句保持同一性，转句提供对比，合句重建统一。判断时仍需由句读、终止和旋律落点支持。",
+      "cues": ["四句长度相近，但第三句的旋律走向与节奏分组明显改变。", "最后一句重新出现开头核心音调，并以更稳定的终止收束。", "旋律内部有民族调式色彩，不能只用功能和声标签解释其句法。"],
+      "sources": [{"book": "lizhenhua", "page": 21, "label": "李贞华 · 起承转合乐段"}, {"book": "qian1", "page": 36, "label": "钱亦平 · 四乐句乐段例"}],
+      "relatedClaims": ["syntax.phrase-period", "closure.cadence", "material.motive"]
+    },
+    {
+      "id": "chopin-e-prelude", "composer": "肖邦", "title": "e小调前奏曲 Op.28 No.4", "work": "24首前奏曲",
+      "form": "single",
+      "summary": "扩充性乐段。前半建立乐思，后半通过连续和声推进与旋律扩充推迟终止，最后才在主调闭合。",
+      "structure": [
+        {"label": "a", "role": "statement", "sub": "主题陈述", "weight": 1},
+        {"label": "a′", "role": "a", "sub": "变化重复", "weight": 1},
+        {"label": "扩充", "role": "development", "sub": "终止前扩张", "weight": 1.15},
+        {"label": "终止", "role": "closing", "sub": "主调闭合", "weight": 0.45}
+      ],
+      "tonalPath": [
+        {"label": "e小调", "note": "主题", "state": "home"},
+        {"label": "下属 / 属方向", "note": "扩充推进", "state": "away"},
+        {"label": "e小调", "note": "终止", "state": "return"}
+      ],
+      "analysis": "该曲的结构感来自“终止被推迟”：材料仍可追踪，但和声不断改变目标，使典型乐段的收束向后扩张。扩充发生在终止之前，因此不能与终止后的补充混为一谈。",
+      "cues": ["旋律材料短小而反复，和声节奏却持续变化。", "越接近结尾，终止越被推迟，形成结构张力。", "最后的主调终止同时结束旋律与和声的未完成感。"],
+      "sources": [{"book": "lizhenhua", "page": 32, "label": "李贞华 · 扩充性乐段"}],
+      "relatedClaims": ["syntax.phrase-period", "closure.cadence", "tonality.structure"]
+    },
+    {
+      "id": "schubert-death-maiden", "composer": "舒伯特", "title": "死神与少女 D.531", "work": "艺术歌曲",
+      "form": "binary",
+      "summary": "并列单二部曲式。两个部分在人物语气、织体与调性上形成对比，第二部分承担全曲的最终闭合。",
+      "structure": [
+        {"label": "A", "role": "statement", "sub": "少女的请求", "weight": 1},
+        {"label": "B", "role": "contrast", "sub": "死神的回答", "weight": 1.15}
+      ],
+      "tonalPath": [
+        {"label": "d小调", "note": "A 建立", "state": "home"},
+        {"label": "对比和声区", "note": "B 改变语气", "state": "away"},
+        {"label": "d小调", "note": "全曲闭合", "state": "return"}
+      ],
+      "analysis": "这部歌曲的二部性不是两个诗节机械对应，而是两个人物话语的结构分工：A 建立请求与不安，B 以低音区、不同织体和终止完成回答。声乐作品还要同时检查诗节、钢琴动机与人声句法的对应。",
+      "cues": ["钢琴低音与和声密度在 B 段明显改变。", "两个角色的旋律音区与节奏姿态不同，但材料仍有动机联系。", "结尾的调性闭合由 B 段完成，因此 B 不是 A 的补充。"],
+      "sources": [{"book": "lizhenhua", "page": 42, "label": "李贞华 · 并列单二部"}],
+      "relatedClaims": ["type.binary", "closure.cadence", "process.repetition-contrast-return"]
+    },
+    {
+      "id": "bach-english-sarabande", "composer": "巴赫", "title": "第二英国组曲·萨拉班德", "work": "英国组曲 BWV 807",
+      "form": "binary",
+      "summary": "古二部曲式。第一部分从主调走向属调并反复，第二部分从属方向展开、模进，最后回到主调闭合。",
+      "structure": [
+        {"label": "A", "role": "statement", "sub": "主调 → 属调，反复", "weight": 1},
+        {"label": "B", "role": "contrast", "sub": "展开 → 主调，反复", "weight": 1.15}
+      ],
+      "tonalPath": [
+        {"label": "a小调", "note": "A 开始", "state": "home"},
+        {"label": "e小调", "note": "A 结束", "state": "away"},
+        {"label": "a小调", "note": "B 回归", "state": "return"}
+      ],
+      "analysis": "古二部曲式的核心是两部分共同完成调性旅程：A 把调性带到属方向，B 从该方向继续展开并返回主调。反复记号强化了两个部分的独立听觉边界，但不把 B 变成新的三部性再现。",
+      "cues": ["A 段末尾在属调形成稳定终止并反复。", "B 段开头没有完整重述 A，而是从新和声位置展开。", "末尾回到主调，完成全曲而非仅一个乐段的闭合。"],
+      "sources": [{"book": "lizhenhua", "page": 52, "label": "李贞华 · 古二部曲式"}],
+      "relatedClaims": ["type.binary", "tonality.structure", "process.repetition-contrast-return"]
+    },
+    {
+      "id": "he-luting-mutong", "composer": "贺绿汀", "title": "牧童短笛", "work": "钢琴曲",
+      "form": "ternary",
+      "summary": "双主题对比性再现单三部曲式。A 段以复调化线条为主，B 段转为舞蹈性节奏与不同织体，A′ 回到开头材料。",
+      "structure": [
+        {"label": "A", "role": "statement", "sub": "主题与复调织体", "weight": 1.15},
+        {"label": "B", "role": "contrast", "sub": "舞蹈性中段", "weight": 1},
+        {"label": "A′", "role": "a", "sub": "主题再现", "weight": 1.15}
+      ],
+      "tonalPath": [
+        {"label": "主调", "note": "A", "state": "home"},
+        {"label": "对比调性 / 调式色彩", "note": "B", "state": "away"},
+        {"label": "主调", "note": "A′", "state": "return"}
+      ],
+      "analysis": "A 与 B 的对比同时发生在主题、织体与节奏层；A′ 的回归让全曲形成真正的三部性。教材还强调中西合璧的写法：五声性旋律与复调、和声处理共同塑造结构。",
+      "cues": ["A 段两条旋律线相互追逐，织体偏复调。", "B 段节奏更规整、舞蹈性更强，低音与和弦写法改变。", "A′ 重新出现开头旋律，形成明确回归而不是继续展开。"],
+      "sources": [{"book": "lizhenhua", "page": 71, "label": "李贞华 · 对比性再现单三部"}],
+      "relatedClaims": ["type.ternary", "process.repetition-contrast-return", "material.motive"]
+    },
+    {
+      "id": "grieg-anitra", "composer": "格里格", "title": "阿尼特拉舞曲 Op.46 No.3", "work": "《培尔·金特》组曲",
+      "form": "ternary",
+      "summary": "混合性中段的再现单三部曲式。中段既保留主题材料与节奏联系，又引入新的调性与织体因素。",
+      "structure": [
+        {"label": "A", "role": "statement", "sub": "东方风格主题", "weight": 1.1},
+        {"label": "B", "role": "contrast", "sub": "混合性中段", "weight": 1},
+        {"label": "A′", "role": "a", "sub": "再现与收束", "weight": 1.1}
+      ],
+      "tonalPath": [
+        {"label": "b小调", "note": "A", "state": "home"},
+        {"label": "对比调性", "note": "B", "state": "away"},
+        {"label": "b小调", "note": "A′", "state": "return"}
+      ],
+      "analysis": "教材把 B 称为混合性中段，是因为它既非纯对比新主题，也不是纯粹展开 A：新材料与 A 的节奏、动机因素同时存在。这类中段正好说明单三部曲式不能只按“新材料/旧材料”二分。",
+      "cues": ["A 段的装饰性旋律与固定节奏型建立舞曲性格。", "B 段改变调性与配器，但仍能听到 A 的节奏细胞。", "A′ 回到主调与主题，构成清晰三段闭合。"],
+      "sources": [{"book": "lizhenhua", "page": 77, "label": "李贞华 · 混合性中段"}, {"book": "qian1", "page": 133, "label": "钱亦平 · 阿尼特拉舞曲例"}],
+      "relatedClaims": ["type.ternary", "material.motive", "process.repetition-contrast-return"]
+    },
+    {
+      "id": "chopin-nocturne-48-1", "composer": "肖邦", "title": "c小调夜曲 Op.48 No.1", "work": "夜曲",
+      "form": "compound",
+      "summary": "复三部曲式。A 段自身形成完整小曲式，B 段为三声中部型对比，A 段再现时发生规模与织体变化。",
+      "structure": [
+        {"label": "A", "role": "a", "sub": "内部 a—b—a", "weight": 1.2},
+        {"label": "B", "role": "contrast", "sub": "三声中部型中部", "weight": 1},
+        {"label": "A′", "role": "a", "sub": "变化再现", "weight": 1.2}
+      ],
+      "tonalPath": [
+        {"label": "c小调", "note": "A", "state": "home"},
+        {"label": "对比调性", "note": "B", "state": "away"},
+        {"label": "c小调", "note": "A′", "state": "return"}
+      ],
+      "analysis": "判为复三部的关键不是篇幅，而是 A 与 B 都具备内部曲式。B 形成稳定的三声中部型对比，再现的 A′ 又在更高紧张度上重组织体与终止。",
+      "cues": ["A 段内部已经可以再分为完整的小三段。", "B 段的调性与材料建立独立区域，不只是 A 的展开。", "A′ 的回归规模扩大，织体与动力性明显增强。"],
+      "sources": [{"book": "lizhenhua", "page": 86, "label": "李贞华 · 三声中部复三部"}, {"book": "qian1", "page": 184, "label": "钱亦平 · c小调夜曲例"}],
+      "relatedClaims": ["type.compound", "type.ternary", "tonality.structure"]
+    },
+    {
+      "id": "beethoven-dawn-iii", "composer": "贝多芬", "title": "C大调钢琴奏鸣曲 Op.53“黎明”第三乐章", "work": "第21钢琴奏鸣曲",
+      "form": "rondo",
+      "summary": "维也纳古典成熟期回旋曲式。主部多次回归，插部提供对比性材料与调性区域，尾声巩固主调。",
+      "structure": [
+        {"label": "A", "role": "a", "sub": "回旋主部", "weight": 1},
+        {"label": "B", "role": "b", "sub": "第一插部", "weight": 0.9},
+        {"label": "A", "role": "a", "sub": "主部回归", "weight": 0.9},
+        {"label": "C", "role": "c", "sub": "第二插部 / 展开", "weight": 0.9},
+        {"label": "A", "role": "a", "sub": "回归与尾声", "weight": 1.1}
+      ],
+      "tonalPath": [
+        {"label": "C大调", "note": "A", "state": "home"},
+        {"label": "对比调性", "note": "B", "state": "away"},
+        {"label": "C大调", "note": "A", "state": "return"},
+        {"label": "下属 / 远关系", "note": "C", "state": "away"},
+        {"label": "C大调", "note": "A + 尾声", "state": "return"}
+      ],
+      "analysis": "回旋的确认依赖主部回归次数与每次回归的段落功能。该乐章的插部不只是连接，而各自形成可辨的调性与材料区域；尾声仍属于回旋框架，不另立新曲式。",
+      "cues": ["主部每次回归都保持清晰的主题身份。", "两个插部在调性、织体和材料上与主部形成不同区域。", "尾声继续使用主部材料，功能是巩固而非引入新的结构阶段。"],
+      "sources": [{"book": "lizhenhua", "page": 115, "label": "李贞华 · 19世纪以前回旋曲式实例"}],
+      "relatedClaims": ["type.rondo", "process.repetition-contrast-return", "tonality.structure"]
+    },
+    {
+      "id": "bach-crucifixus", "composer": "巴赫", "title": "《b小调弥撒》第16首·碟刑", "work": "Mass in B minor, Crucifixus",
+      "form": "variation",
+      "summary": "固定低音变奏。四小节低音主题反复出现，上方声部与和声配置持续变化，形成帕萨卡利亚式结构。",
+      "structure": [
+        {"label": "低音主题", "role": "statement", "sub": "四小节", "weight": 0.8},
+        {"label": "V1–V4", "role": "a", "sub": "上方声部变化", "weight": 1},
+        {"label": "V5–V8", "role": "b", "sub": "织体与和声加密", "weight": 1},
+        {"label": "V9–V12", "role": "c", "sub": "张力积累", "weight": 1},
+        {"label": "收束", "role": "closing", "sub": "终止", "weight": 0.5}
+      ],
+      "tonalPath": [
+        {"label": "d小调", "note": "固定低音建立", "state": "home"},
+        {"label": "持续变奏", "note": "和声色彩变化", "state": "away"},
+        {"label": "d小调", "note": "最终收束", "state": "return"}
+      ],
+      "analysis": "固定低音变奏中，保持项是低音线条及其结构位置；变化项是上方旋律、和声密度、声部数量与配器。不能因为低音不变就说和声不变：同一低音型每次回到原位时，上方声部的音程结构、功能色彩与张力都在重写，低音提供的是变奏骨架而不是固定和声。教材据此把它归入固定低音变奏，并要求逐段比较上方声部的处理。",
+      "cues": ["四小节低音型不断回到同一结构位置。", "上方声部逐渐增加密度，不协和与半音化增强。", "结尾的和声解决把长期积累的张力收束。"],
+      "sources": [{"book": "lizhenhua", "page": 157, "label": "李贞华 · 固定低音变奏"}],
+      "relatedClaims": ["type.variation", "material.motive", "tonality.structure"]
+    },
+    {
+      "id": "beethoven-32-variations", "composer": "贝多芬", "title": "c小调32首变奏曲 WoO 80", "work": "钢琴变奏曲",
+      "form": "variation",
+      "summary": "固定和声变奏。主题的八小节和声骨架被反复保持，织体、节奏与旋律音型不断改变。",
+      "structure": [
+        {"label": "主题", "role": "statement", "sub": "八小节和声骨架", "weight": 1},
+        {"label": "V1–V8", "role": "a", "sub": "音型化", "weight": 1},
+        {"label": "V9–V20", "role": "b", "sub": "织体与节奏变化", "weight": 1.2},
+        {"label": "V21–V32", "role": "c", "sub": "密度与性格展开", "weight": 1.2}
+      ],
+      "tonalPath": [
+        {"label": "c小调", "note": "主题与主要变奏", "state": "home"},
+        {"label": "同名 / 关系色彩", "note": "局部变化", "state": "away"},
+        {"label": "c小调", "note": "结束", "state": "return"}
+      ],
+      "analysis": "该作保持的是主题的和声进行与段落长度，而非固定低音或固定旋律。变奏的识别特征是“同一和声骨架上的不同织体与音型”，这正好区分固定和声变奏与其他类型。",
+      "cues": ["每段大致保持相同的和声节奏与终止框架。", "旋律表面不断改变，但低音与和声支点可追踪。", "变奏组通过音区、密度和性格形成整体布局。"],
+      "sources": [{"book": "lizhenhua", "page": 165, "label": "李贞华 · 固定和声变奏"}],
+      "relatedClaims": ["type.variation", "tonality.structure", "material.motive"]
+    },
+    {
+      "id": "mozart-k331", "composer": "莫扎特", "title": "A大调钢琴奏鸣曲 K.331 第一乐章", "work": "第11钢琴奏鸣曲",
+      "form": "variation",
+      "summary": "装饰变奏。主题旋律与和声骨架保持可辨，变奏通过装饰音、节奏细分、织体与音区改变性格。",
+      "structure": [
+        {"label": "主题", "role": "statement", "sub": "歌唱性主题", "weight": 1},
+        {"label": "V1–V2", "role": "a", "sub": "旋律装饰", "weight": 0.9},
+        {"label": "V3–V4", "role": "b", "sub": "调式 / 织体变化", "weight": 0.9},
+        {"label": "V5–V6", "role": "c", "sub": "性格与密度展开", "weight": 1}
+      ],
+      "tonalPath": [
+        {"label": "A大调", "note": "主题", "state": "home"},
+        {"label": "a小调 / 对比色彩", "note": "部分变奏", "state": "away"},
+        {"label": "A大调", "note": "回归", "state": "return"}
+      ],
+      "analysis": "装饰变奏的核心是保留主题的旋律轮廓与和声框架，同时把节奏时值细分、加入装饰或改变织体。判断时不能只看表面音符数量；要能追踪主题骨架。",
+      "cues": ["主题的旋律轮廓与和声进行在多数变奏中仍可辨认。", "越往后，织体密度、音区和装饰程度越大。", "小调性变奏提供色彩对比，但不改变整套变奏的主题身份。"],
+      "sources": [{"book": "lizhenhua", "page": 196, "label": "李贞华 · 装饰变奏"}],
+      "relatedClaims": ["type.variation", "material.motive", "process.repetition-contrast-return"]
+    },
+    {
+      "id": "brahms-symphony1-finale", "composer": "勃拉姆斯", "title": "第一交响曲 Op.68 末乐章", "work": "c小调第一交响曲",
+      "form": "variation",
+      "summary": "末乐章以基础动机和固定低音式反复组织大段结构，既属于变奏思维，又与奏鸣—套曲的终曲布局结合。",
+      "structure": [
+        {"label": "基础动机", "role": "statement", "sub": "低声部反复", "weight": 0.8},
+        {"label": "反复与移位", "role": "a", "sub": "动机变形", "weight": 1},
+        {"label": "展开", "role": "development", "sub": "动机转移 / 模进", "weight": 1.1},
+        {"label": "主题回归", "role": "a", "sub": "结构收束", "weight": 1}
+      ],
+      "tonalPath": [
+        {"label": "c小调", "note": "基础动机", "state": "home"},
+        {"label": "远关系 / 移位", "note": "动机展开", "state": "away"},
+        {"label": "C大调", "note": "终曲肯定", "state": "return"}
+      ],
+      "analysis": "该丘斯用这个例子说明基础动机可以在同一声部反复、移位并改变和声配置。分析时要区分“动机反复”与“主题变奏”：前者可成为后者的材料基础，但还要看它是否支撑整个段落。",
+      "cues": ["低声部短动机多次原样或移位出现。", "上方旋律、和声与配器持续改变，形成段落推进。", "终曲的调性由 c 小调转向 C 大调，完成整体肯定。"],
+      "sources": [{"book": "gaiqius", "page": 4, "label": "该丘斯 · 基础动机与变奏"}],
+      "relatedClaims": ["material.motive", "type.variation", "type.cycle"]
+    },
+    {
+      "id": "beethoven-appassionata", "composer": "贝多芬", "title": "f小调钢琴奏鸣曲 Op.57“热情”第一乐章", "work": "第23钢琴奏鸣曲",
+      "form": "sonata",
+      "summary": "成熟奏鸣曲式。呈示部建立主部与副部的调性对立，展开部通过动机分裂和调性运动积累张力，再现部让副部服从主调。",
+      "structure": [
+        {"label": "呈示部", "role": "statement", "sub": "P—T—S—K", "weight": 1.3},
+        {"label": "展开部", "role": "development", "sub": "动机展开 / 调性游移", "weight": 1},
+        {"label": "再现部", "role": "a", "sub": "副部回主调", "weight": 1.3},
+        {"label": "尾声", "role": "closing", "sub": "巩固", "weight": 0.5}
+      ],
+      "tonalPath": [
+        {"label": "f小调", "note": "主部", "state": "home"},
+        {"label": "A♭大调", "note": "副部", "state": "away"},
+        {"label": "不稳定调性", "note": "展开", "state": "away"},
+        {"label": "f小调", "note": "副部服从主调", "state": "return"}
+      ],
+      "analysis": "奏鸣曲式的核心不是“两个主题”，而是调性对立如何被解决。展开部把主题动机拆解、转位并在多个调性中重组；再现部的关键是副部从 A♭ 大调回到 f 小调。",
+      "cues": ["主部动机短促、和声紧张，副部旋律性增强并转到关系大调。", "展开部频繁改变调性与音区，主题材料被切碎重组。", "再现部副部不再是 A♭ 大调，而在 f 小调完成统一。"],
+      "sources": [{"book": "lizhenhua", "page": 238, "label": "李贞华 · 成熟奏鸣曲式实例"}],
+      "relatedClaims": ["type.sonata", "tonality.structure", "process.repetition-contrast-return"]
+    },
+    {
+      "id": "beethoven-op2no1-iv", "composer": "贝多芬", "title": "f小调钢琴奏鸣曲 Op.2 No.1 第四乐章", "work": "第1钢琴奏鸣曲",
+      "form": "sonata",
+      "summary": "以奏鸣原则组织的终曲。呈示部的主部与副部形成调性分离，展开部压缩材料，再现部完成副部向主调的服从。",
+      "structure": [
+        {"label": "呈示部", "role": "statement", "sub": "主部—连接—副部—结束", "weight": 1.3},
+        {"label": "展开部", "role": "development", "sub": "短小、集中", "weight": 0.9},
+        {"label": "再现部", "role": "a", "sub": "调性统一", "weight": 1.3}
+      ],
+      "tonalPath": [
+        {"label": "f小调", "note": "主部", "state": "home"},
+        {"label": "A♭大调", "note": "副部", "state": "away"},
+        {"label": "f小调", "note": "再现统一", "state": "return"}
+      ],
+      "analysis": "钱亦平以本曲作为奏鸣曲式实例，说明呈示部四部分、展开部的调性不稳定与再现部的调性服从如何共同成立。终曲速度快、规模紧，但结构条件没有因此改变。",
+      "cues": ["呈示部副部建立在关系大调，和主部形成明确调性距离。", "展开部短而集中，主要处理呈示部动机。", "再现部副部回到 f 小调，完成奏鸣曲式的核心解决。"],
+      "sources": [{"book": "qian2", "page": 11, "label": "钱亦平·下 · 奏鸣曲式实例"}],
+      "relatedClaims": ["type.sonata", "tonality.structure", "closure.cadence"]
+    },
+    {
+      "id": "chopin-ballade-1", "composer": "肖邦", "title": "g小调第一叙事曲 Op.23", "work": "叙事曲",
+      "form": "mixed",
+      "summary": "奏鸣原则、变奏与叙事性段落组合的混合曲式。主题材料多次变形，调性布局与回归不服从单一典型图式。",
+      "structure": [
+        {"label": "引子", "role": "neutral", "sub": "叙述姿态", "weight": 0.5},
+        {"label": "主部", "role": "statement", "sub": "g小调", "weight": 1},
+        {"label": "副部群", "role": "contrast", "sub": "E♭大调等", "weight": 1.15},
+        {"label": "展开", "role": "development", "sub": "主题变形", "weight": 1.2},
+        {"label": "再现", "role": "a", "sub": "调性 / 材料重组", "weight": 1.1},
+        {"label": "尾声", "role": "closing", "sub": "悲剧性收束", "weight": 0.8}
+      ],
+      "tonalPath": [
+        {"label": "g小调", "note": "主部", "state": "home"},
+        {"label": "E♭大调", "note": "副部", "state": "away"},
+        {"label": "多调性展开", "note": "叙事推进", "state": "away"},
+        {"label": "g小调", "note": "回归 / 尾声", "state": "return"}
+      ],
+      "analysis": "把这首叙事曲硬称为标准奏鸣曲式会丢失它的叙事段落与主题变形。更准确的做法是先指出哪些段落采用奏鸣的调性对立与再现，再指出变奏、回旋或自由展开原则在何处介入。",
+      "cues": ["副部主题在后续段落中多次变形，不只是原样再现。", "调性回归与主题回归并不总在同一时刻发生。", "尾声不是附属收尾，而是重新组织主部材料的结构阶段。"],
+      "sources": [{"book": "qian2", "page": 52, "label": "钱亦平·下 · 叙事曲分析"}],
+      "relatedClaims": ["type.mixed", "type.sonata", "tonality.structure"]
+    },
+    {
+      "id": "beethoven-op13-iii", "composer": "贝多芬", "title": "c小调钢琴奏鸣曲 Op.13“悲怆”第三乐章", "work": "第8钢琴奏鸣曲",
+      "form": "sonata-rondo",
+      "summary": "回旋奏鸣曲式。主部多次回归，副部先在对比调出现，再现时服从主调；回旋框架与奏鸣调性关系同时成立。",
+      "structure": [
+        {"label": "A", "role": "a", "sub": "c小调主部", "weight": 1},
+        {"label": "B", "role": "b", "sub": "E♭大调副部", "weight": 0.9},
+        {"label": "A", "role": "a", "sub": "回归", "weight": 0.85},
+        {"label": "C", "role": "development", "sub": "展开 / 插部", "weight": 0.9},
+        {"label": "A", "role": "a", "sub": "回归", "weight": 0.85},
+        {"label": "B′", "role": "b", "sub": "副部回 c 小调", "weight": 0.9},
+        {"label": "A", "role": "a", "sub": "结束", "weight": 1}
+      ],
+      "tonalPath": [
+        {"label": "c小调", "note": "A", "state": "home"},
+        {"label": "E♭大调", "note": "B", "state": "away"},
+        {"label": "c小调", "note": "A", "state": "return"},
+        {"label": "展开 / 对比", "note": "C", "state": "away"},
+        {"label": "c小调", "note": "B′ 与 A", "state": "return"}
+      ],
+      "analysis": "本曲同时满足两个条件：A 多次回归形成回旋框架；B 在再现中从 E♭ 大调回到 c 小调，满足奏鸣的调性服从。只看到回旋图式会漏掉调性解决，只看到奏鸣调性会漏掉多次回归。",
+      "cues": ["主部 A 多次以清晰主题身份返回。", "B 首次在关系大调，末次回到主调。", "C 段承担展开与插部双重功能，是混合判定的关键。"],
+      "sources": [{"book": "qian2", "page": 93, "label": "钱亦平·下 · 回旋奏鸣曲式实例"}],
+      "relatedClaims": ["type.sonata-rondo", "type.rondo", "type.sonata"]
+    },
+    {
+      "id": "chopin-fantasy-polonaise", "composer": "肖邦", "title": "幻想波兰舞曲 Op.61", "work": "钢琴独奏",
+      "form": "mixed",
+      "summary": "混合曲式。奏鸣、变奏、回旋与波兰舞曲体裁因素交替出现，结构不能由单一图式完整解释。",
+      "structure": [
+        {"label": "引子", "role": "neutral", "sub": "自由宣叙", "weight": 0.5},
+        {"label": "A", "role": "a", "sub": "主题群", "weight": 1},
+        {"label": "B", "role": "b", "sub": "对比 / 展开", "weight": 1.1},
+        {"label": "A′", "role": "a", "sub": "变形回归", "weight": 1},
+        {"label": "C", "role": "c", "sub": "新插部", "weight": 0.9},
+        {"label": "尾声", "role": "closing", "sub": "综合", "weight": 0.8}
+      ],
+      "tonalPath": [
+        {"label": "A♭大调", "note": "主调", "state": "home"},
+        {"label": "远关系调", "note": "中段", "state": "away"},
+        {"label": "A♭大调", "note": "回归 / 尾声", "state": "return"}
+      ],
+      "analysis": "钱亦平把这首作品放在混合曲式章节，并非因为它“自由到无法分析”，而是因为主题回归、调性服从、变奏与体裁段落各自只解释一部分。分析报告应明确标注各原则的适用范围。",
+      "cues": ["开头宣叙性段落与后续波兰舞曲节奏形成强烈体裁对比。", "主题回归常伴随织体、调性位置或性格变化。", "尾声重新综合前面材料，而不是只重复主调。"],
+      "sources": [{"book": "qian2", "page": 184, "label": "钱亦平·下 · 混合曲式实例"}],
+      "relatedClaims": ["type.mixed", "analysis.protocol", "tonality.structure"]
+    },
+    {
+      "id": "schubert-mein-haus", "composer": "舒伯特", "title": "我的家", "work": "艺术歌曲",
+      "form": "mixed",
+      "summary": "集中对称曲式。多个段落围绕一个中心形成对称布局，材料与调性在中心两侧形成镜像式对应。",
+      "structure": [
+        {"label": "A", "role": "a", "sub": "外侧", "weight": 1},
+        {"label": "B", "role": "b", "sub": "内侧", "weight": 0.9},
+        {"label": "C", "role": "statement", "sub": "中心", "weight": 1.1},
+        {"label": "B′", "role": "b", "sub": "内侧回归", "weight": 0.9},
+        {"label": "A′", "role": "a", "sub": "外侧回归", "weight": 1}
+      ],
+      "tonalPath": [
+        {"label": "主调", "note": "外侧", "state": "home"},
+        {"label": "对比调性", "note": "内侧", "state": "away"},
+        {"label": "中心调性", "note": "中心", "state": "away"},
+        {"label": "对比调性", "note": "内侧回归", "state": "return"},
+        {"label": "主调", "note": "外侧回归", "state": "return"}
+      ],
+      "analysis": "集中对称不是“听起来很对称”，而是材料、调性与段落在中心两侧形成可核验的对应关系。它与回旋的区别在于：回旋以同一主部多次回归为骨架，集中对称则以一个中心和两侧映射为骨架。",
+      "cues": ["中心段落在材料或调性上具有最高对比度。", "中心两侧的段落可按材料与调性成对对应。", "整体闭合依赖两侧回归，而不是重复一个主部。"],
+      "sources": [{"book": "lizhenhua", "page": 307, "label": "李贞华 · 集中对称曲式"}],
+      "relatedClaims": ["type.mixed", "proportion.symmetry", "tonality.structure"]
+    }
+  ]
+}

@@ -102,7 +102,7 @@ def load_ocr(book_id):
             if not line.strip():
                 continue
             row = json.loads(line)
-            if row.get('type') != 'page':
+            if row.get('type', 'page') != 'page':
                 continue
             pages[int(row['page'])] = row
     return pages
@@ -290,12 +290,15 @@ def build_one(book, index_row, ocr_pages, duplicate_of=None, canonical=None,
     markdown_path = os.path.join(BOOKS_DIR, book['id'] + '.md')
     html_path = os.path.join(BOOKS_DIR, book['id'] + '.html')
     pdf_path = os.path.join(source_dir or SOURCE_DIR, book['file'])
-    if set(ocr_pages) != set(range(1, book['pages'] + 1)):
-        missing = sorted(set(range(1, book['pages'] + 1)) - set(ocr_pages))
-        extra = sorted(set(ocr_pages) - set(range(1, book['pages'] + 1)))
-        raise RuntimeError('%s OCR page mismatch: missing=%s extra=%s' % (book['id'], missing[:8], extra[:8]))
-
     annotation_pages = sorted({int(page) for page in (page_annotations or {})})
+    required_ocr_pages = set(annotation_pages) if annotation_pages else set(range(1, book['pages'] + 1))
+    if not required_ocr_pages.issubset(set(ocr_pages)):
+        missing = sorted(required_ocr_pages - set(ocr_pages))
+        raise RuntimeError('%s OCR page mismatch: missing=%s' % (book['id'], missing[:8]))
+    extra = sorted(set(ocr_pages) - set(range(1, book['pages'] + 1)))
+    if extra:
+        raise RuntimeError('%s OCR page mismatch: extra=%s' % (book['id'], extra[:8]))
+
     archive_pages = annotation_pages or list(range(1, book['pages'] + 1))
     if not duplicate_of:
         if annotations_only:

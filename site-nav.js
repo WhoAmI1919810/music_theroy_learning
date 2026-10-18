@@ -10,6 +10,9 @@
   var themeButton = null;
 
   function sectionFromPath(path) {
+    if (path.indexOf("/form_atlas/docs/books/") >= 0) return "form-books";
+    if (path.indexOf("/form_atlas/docs/") >= 0) return "form-manual";
+    if (path.indexOf("/form_atlas/app/") >= 0) return "form-app";
     if (path.indexOf("/harmony_atlas/docs/books/") >= 0) return "harmony-books";
     if (path.indexOf("/harmony_atlas/docs/") >= 0) return "harmony-manual";
     if (path.indexOf("/harmony_atlas/app/") >= 0) return "harmony-app";
@@ -60,6 +63,14 @@
       ]
     },
     {
+      label: "曲式",
+      links: [
+        ["理论地图", "form_atlas/app/"],
+        ["理论手册", "form_atlas/docs/曲式学手册.html"],
+        ["教材证据", "form_atlas/docs/books/"]
+      ]
+    },
+    {
       label: "配器",
       links: [
         ["推演台", "orchestration_atlas/app/"],
@@ -89,7 +100,7 @@
     ".site-home{display:inline-flex;align-items:center;padding:7px 4px;color:var(--theme-gold,#eeb15b);text-decoration:none;white-space:nowrap}",
     ".site-jump{position:relative}",
     ".site-jump summary{list-style:none;white-space:nowrap}.site-jump summary::-webkit-details-marker{display:none}.site-jump summary:after{content:' ▾';color:var(--theme-gold,#eeb15b)}",
-    ".site-jump-panel{position:fixed;top:calc(var(--music-site-nav-height) + 8px);left:12px;right:12px;z-index:130;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;width:min(760px,calc(100vw - 24px));margin:0 auto;padding:15px;border:1px solid var(--theme-nav-border,rgba(180,200,224,.28));border-radius:12px;background:var(--theme-nav-panel,#101a26);box-shadow:var(--theme-nav-shadow,0 22px 55px rgba(0,0,0,.5))}",
+    ".site-jump-panel{position:fixed;top:calc(var(--music-site-nav-height) + 8px);left:12px;right:12px;z-index:130;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px;width:min(880px,calc(100vw - 24px));margin:0 auto;padding:15px;border:1px solid var(--theme-nav-border,rgba(180,200,224,.28));border-radius:12px;background:var(--theme-nav-panel,#101a26);box-shadow:var(--theme-nav-shadow,0 22px 55px rgba(0,0,0,.5))}",
     ".site-jump-group b{display:block;margin:0 0 7px;color:var(--theme-gold,#eeb15b);font-size:10px;letter-spacing:.08em}.site-jump-group a{display:block;padding:6px 7px;border-radius:6px;color:var(--theme-nav-muted,#c8d4e1);text-decoration:none}.site-jump-group a[aria-current='page']{background:var(--theme-nav-active,rgba(238,177,91,.16));color:var(--theme-nav-text,#fff)}",
     ".site-context{margin-left:auto;color:var(--theme-nav-muted,#8494a9);font-size:10px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}",
     ".site-theme-toggle{display:inline-flex;align-items:center;gap:5px;white-space:nowrap}.site-theme-icon{color:var(--theme-gold,#eeb15b);font-size:14px;line-height:1}.site-theme-label{line-height:1}.site-theme-toggle[aria-pressed='true']{border-color:color-mix(in srgb,var(--theme-teal,#69d7c1) 46%,var(--theme-nav-border,rgba(180,200,224,.22)));background:color-mix(in srgb,var(--theme-teal,#69d7c1) 10%,var(--theme-nav-panel,#101a26))}",
@@ -118,6 +129,7 @@
     } catch (error) { return false; }
   }
   function contextLabel() {
+    if (current.indexOf("/form_atlas/") >= 0) return "曲式系统";
     if (current.indexOf("/harmony_atlas/") >= 0) return "和声系统";
     if (current.indexOf("/orchestration_atlas/") >= 0) return "配器系统";
     if (current.indexOf("/counterpoint_atlas/") >= 0) return "复调系统";

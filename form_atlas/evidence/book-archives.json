@@ -1,0 +1,133 @@
+{
+  "version": 1,
+  "generatedAt": "2026-10-18T15:27:56+00:00",
+  "settings": {
+    "maxWidth": 1800,
+    "jpegQuality": 82
+  },
+  "totals": {
+    "books": 7,
+    "citedPages": 48,
+    "images": 48
+  },
+  "books": [
+    {
+      "id": "qian1",
+      "title": "钱亦平《音乐作品分析简明教程（上）》",
+      "pages": 376,
+      "citedPages": [
+        17,
+        36,
+        90,
+        117,
+        133,
+        161,
+        184,
+        230,
+        305
+      ],
+      "imageCount": 9,
+      "imageBytes": 1565409,
+      "ocrPages": 6
+    },
+    {
+      "id": "qian2",
+      "title": "钱亦平《音乐作品分析简明教程（下）》",
+      "pages": 348,
+      "citedPages": [
+        6,
+        7,
+        9,
+        11,
+        52,
+        78,
+        93,
+        131,
+        133,
+        184
+      ],
+      "imageCount": 10,
+      "imageBytes": 2069075,
+      "ocrPages": 10
+    },
+    {
+      "id": "gaiqius",
+      "title": "柏西·该丘斯《大型曲式学》",
+      "pages": 262,
+      "citedPages": [
+        4
+      ],
+      "imageCount": 1,
+      "imageBytes": 189837,
+      "ocrPages": 1
+    },
+    {
+      "id": "lijiti",
+      "title": "李吉提《曲式与作品分析》",
+      "pages": 270,
+      "citedPages": [
+        40,
+        105
+      ],
+      "imageCount": 2,
+      "imageBytes": 587481,
+      "ocrPages": 2
+    },
+    {
+      "id": "lizhenhua",
+      "title": "李贞华《曲式与作品分析实用教程》",
+      "pages": 318,
+      "citedPages": [
+        12,
+        13,
+        14,
+        21,
+        32,
+        42,
+        52,
+        71,
+        77,
+        86,
+        115,
+        157,
+        165,
+        196,
+        238,
+        306,
+        307
+      ],
+      "imageCount": 17,
+      "imageBytes": 6205176,
+      "ocrPages": 13
+    },
+    {
+      "id": "wuzuqiang",
+      "title": "吴祖强《曲式与作品分析（第二版）》",
+      "pages": 417,
+      "citedPages": [
+        10,
+        54,
+        120,
+        175,
+        310,
+        332,
+        386
+      ],
+      "imageCount": 7,
+      "imageBytes": 1635929,
+      "ocrPages": 7
+    },
+    {
+      "id": "schoenberg_fund",
+      "title": "Arnold Schoenberg, Fundamentals of Musical Composition",
+      "pages": 125,
+      "citedPages": [
+        11,
+        15
+      ],
+      "imageCount": 2,
+      "imageBytes": 515189,
+      "ocrPages": 2
+    }
+  ]
+}

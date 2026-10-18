@@ -71,8 +71,9 @@ test('generates modulation routes for all sixteen target modes without crashing'
 
 test('matches the published archive manifest without raw PDFs', () => {
   const manifest = JSON.parse(fs.readFileSync(path.join(root, 'evidence', 'public-deploy.json'), 'utf8'));
+  const catalog = JSON.parse(fs.readFileSync(path.join(root, 'corpus', 'books.json'), 'utf8'));
   assert.equal(manifest.mode, 'public-deploy');
-  assert.equal(manifest.bookCount, 15);
+  assert.equal(manifest.bookCount, catalog.books.length);
   assert.equal(manifest.books.length, manifest.bookCount);
   assert.equal(manifest.pageCount,
     manifest.books.reduce((sum, book) => sum + book.pageCount, 0));

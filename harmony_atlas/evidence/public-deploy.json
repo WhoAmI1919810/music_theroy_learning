@@ -2,8 +2,8 @@
   "mode": "public-deploy",
   "generatedAt": "2026-10-18",
   "source": "docs/和声学手册.html citation anchors",
-  "bookCount": 15,
-  "pageCount": 312,
+  "bookCount": 16,
+  "pageCount": 326,
   "books": [
     {
       "id": "sangtong_tutorial",
@@ -221,6 +221,27 @@
         247
       ],
       "pageCount": 23
+    },
+    {
+      "id": "schoenberg_structural_functions",
+      "html": "docs/books/schoenberg_structural_functions.html",
+      "pages": [
+        9,
+        11,
+        44,
+        60,
+        68,
+        89,
+        98,
+        143,
+        145,
+        166,
+        171,
+        173,
+        178,
+        202
+      ],
+      "pageCount": 14
     },
     {
       "id": "spossbin_answers_1",

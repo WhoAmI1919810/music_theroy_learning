@@ -1390,7 +1390,7 @@
     renderNeo();
     analyzeCurrentSet();
     renderTheoryMap();
-    $('#footerMeta').textContent = '15 本独立教材 · ' + D.THEORY_MAP.length + ' 个理论节点 · 离线运行';
+    $('#footerMeta').textContent = '16 本独立教材 · ' + D.THEORY_MAP.length + ' 个理论节点 · 离线运行';
     window.addEventListener('resize', () => {
       clearTimeout(mapResizeTimer);
       mapResizeTimer = setTimeout(drawMapThreads, 160);

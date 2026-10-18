@@ -1,0 +1,14 @@
+{
+  "name": "form-atlas",
+  "private": true,
+  "version": "1.0.0",
+  "description": "A concept-first atlas of musical form with textbook-page evidence and analysis cases",
+  "scripts": {
+    "build:data": "node tools/export_data.js",
+    "build:books": "python tools/build_books.py",
+    "build:manual": "python tools/build_manual.py",
+    "build": "npm run build:data && python tools/build_books.py && python tools/build_manual.py",
+    "test": "node --test tests/theory.test.js tests/cases.test.js tests/ui.test.js",
+    "serve": "python -m http.server 8765"
+  }
+}

@@ -308,6 +308,11 @@
           "book": "sangtong_chromatic",
           "page": 114,
           "quote": "增五六和弦，在古典时期，它的应用增加，作为常用的变和弦，正因莫扎特在应用这一和弦时常采取半音下行平行五度的解决方法而被命名为“莫扎特五度”，因而在和声写作中并不禁用"
+        },
+        {
+          "book": "schoenberg_structural_functions",
+          "page": 9,
+          "quote": "虽然我们还应特别注意避免平行八度或五度、隐伏八度或五度。"
         }
       ],
       "supports": [
@@ -467,6 +472,11 @@
           "book": "xu_advanced",
           "page": 186,
           "quote": "③传统和声中的意外进行一般在功能序进上意外，声部进行上不意外，不协和音（如七和弦的七音）还是要解决的"
+        },
+        {
+          "book": "schoenberg_structural_functions",
+          "page": 9,
+          "quote": "在一个七和弦里，不协和音常下行一级，成为后一和弦的三音或五音"
         }
       ],
       "supports": [
@@ -1066,6 +1076,11 @@
           "book": "schoenberg_harmony",
           "page": 80,
           "quote": "一般说来，我们总是选取较短的距离来进行转调，但有时也选取看来似乎较长，但实际上却是较短的距离来进行"
+        },
+        {
+          "book": "schoenberg_structural_functions",
+          "page": 89,
+          "quote": "如果调或领域的主音和主调的主音相距大、小二度或减五度、增四度的话，那末这些调和领域在上面所提到的这段时期里的作曲家们看起来就不是常和主调发生关系的。"
         }
       ],
       "supports": [
@@ -1474,6 +1489,11 @@
           "book": "sangtong_six",
           "page": 245,
           "quote": "它的主部、副部与它们的展开等各个部分，都需要用不同的和声手法来处理。"
+        },
+        {
+          "book": "schoenberg_structural_functions",
+          "page": 173,
+          "quote": "因为在再现部中，所有的副题都应在主音领域中出现"
         }
       ],
       "supports": [
@@ -1541,6 +1561,11 @@
           "book": "tchaikovsky_guide",
           "page": 47,
           "quote": "根音四度上行跳进或五度下行跳进到主和弦的根音"
+        },
+        {
+          "book": "schoenberg_structural_functions",
+          "page": 11,
+          "quote": "当根音按四度上行时，第-一和弦的根音价值贬低，成为第二和弦的五音。"
         }
       ],
       "supports": [
@@ -1564,6 +1589,11 @@
           "book": "schoenberg_harmony",
           "page": 82,
           "quote": "为了使新调的出现清楚明确，于是再加一个终止式。"
+        },
+        {
+          "book": "schoenberg_structural_functions",
+          "page": 60,
+          "quote": "只用一个自然音阶以外的和弦不能建立领域，也不能明确地离弃一个领域。这种和弦究竟归入哪一领域，应决定于它们的用法。"
         }
       ],
       "supports": [
@@ -1637,6 +1667,11 @@
           "book": "xu_advanced",
           "page": 206,
           "quote": "在前调和弦功能的认定上，有一定的主观性和多种可能性（游移和弦的特征）"
+        },
+        {
+          "book": "schoenberg_structural_functions",
+          "page": 44,
+          "quote": "很多属于这类的和弦应取名游移和弦，因为它们好象是在各领域之间（即使不是在各调之间）徘徊不定似的。"
         }
       ],
       "supports": [
@@ -2419,6 +2454,11 @@
           "book": "beethoven_sonata",
           "page": 6,
           "quote": "从而通过微观分析，达到宏观认识。"
+        },
+        {
+          "book": "schoenberg_structural_functions",
+          "page": 145,
+          "quote": "在产生对比中，和声起着决定性的作用。"
         }
       ],
       "supports": [
@@ -2758,6 +2798,41 @@
         "wandering-chord"
       ],
       "status": "complete"
+    },
+    {
+      "book": "schoenberg_structural_functions",
+      "short": "和声的结构功能",
+      "title": "勋伯格《和声的结构功能》",
+      "file": "勋伯格《和声的结构功能》.pdf",
+      "pages": 236,
+      "role": "把功能和声放回结构目的：根音进行、代替音与领域、游移和弦、扩张调性，以及乐句、乐段、过渡、贯串和持续音如何承担曲式功能。",
+      "keyPages": [
+        9,
+        11,
+        44,
+        60,
+        68,
+        89,
+        98,
+        143,
+        145,
+        166,
+        171,
+        173,
+        178,
+        202
+      ],
+      "themes": [
+        "structural-function",
+        "root-motion",
+        "region",
+        "wandering-chord",
+        "expanded-tonality",
+        "phrase-structure",
+        "transition",
+        "pedal"
+      ],
+      "status": "partial"
     },
     {
       "book": "spossbin_answers_1",

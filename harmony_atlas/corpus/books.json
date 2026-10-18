@@ -5,6 +5,7 @@
     {"id":"tonal_20c_overview","title":"《调性和声及20世纪音乐概述》","file":"调性和声及20世纪音乐概述.pdf","pages":702,"kind":"tonal_and_20c","priority":3,"unique":true},
     {"id":"tchaikovsky_guide","title":"柴可夫斯基《和声学指南》","file":"柴可夫斯基《和声学指南》.pdf","pages":202,"kind":"tonal_theory","priority":4,"unique":true},
     {"id":"schoenberg_harmony","title":"勋伯格《和声学》","file":"勋伯格《勋伯格和声学》.pdf","pages":264,"kind":"tonal_theory","priority":5,"unique":true},
+    {"id":"schoenberg_structural_functions","title":"勋伯格《和声的结构功能》","file":"勋伯格《和声的结构功能》.pdf","pages":236,"kind":"structural_function","priority":5,"unique":true},
     {"id":"spossbin_answers_1","title":"斯波索宾和声学上册答案","file":"斯波索宾和声学上册答案.pdf","pages":250,"kind":"exercises","priority":6,"unique":true},
     {"id":"spossbin_answers_2","title":"斯波索宾和声学下册答案","file":"斯波索宾和声学下册答案.pdf","pages":232,"kind":"exercises","priority":7,"unique":true},
     {"id":"sangtong_six","title":"桑桐《和声学专题六讲》","file":"桑桐 - 和声学专题六讲 - 人民音乐出版社.pdf","pages":366,"kind":"advanced_tonal","priority":8,"unique":true},

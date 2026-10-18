@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-17T20:44:11+00:00",
+  "generatedAt": "2026-10-18T15:26:59+00:00",
   "note": "Per-page facsimile images plus OCR text; physical PDF pagination.",
   "settings": {
     "maxScale": 2.0,
@@ -9,11 +9,11 @@
     "jpegQuality": 84
   },
   "totals": {
-    "pdfs": 15,
-    "uniqueBooks": 15,
-    "uniquePages": 5427,
-    "archivePages": 312,
-    "uniquePageImages": 312
+    "pdfs": 16,
+    "uniqueBooks": 16,
+    "uniquePages": 5663,
+    "archivePages": 326,
+    "uniquePageImages": 326
   },
   "books": [
     {
@@ -285,6 +285,38 @@
       "imagePattern": "p%04d.jpg",
       "imageBytes": 14920627,
       "ocrMeanConfidence": 0.93,
+      "duplicateOf": null,
+      "canonicalTitle": null
+    },
+    {
+      "id": "schoenberg_structural_functions",
+      "title": "勋伯格《和声的结构功能》",
+      "file": "勋伯格《和声的结构功能》.pdf",
+      "pages": 236,
+      "archivePages": 14,
+      "citedPages": [
+        9,
+        11,
+        44,
+        60,
+        68,
+        89,
+        98,
+        143,
+        145,
+        166,
+        171,
+        173,
+        178,
+        202
+      ],
+      "priority": 5,
+      "markdown": "books/schoenberg_structural_functions.md",
+      "html": "books/schoenberg_structural_functions.html",
+      "imageDir": "assets/books/schoenberg_structural_functions",
+      "imagePattern": "p%04d.jpg",
+      "imageBytes": 6702716,
+      "ocrMeanConfidence": 0.873,
       "duplicateOf": null,
       "canonicalTitle": null
     },

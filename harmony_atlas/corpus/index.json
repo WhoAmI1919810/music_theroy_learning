@@ -50,6 +50,16 @@
     "kind": "tonal_theory"
   },
   {
+    "id": "schoenberg_structural_functions",
+    "title": "勋伯格《和声的结构功能》",
+    "pages_total": 236,
+    "pages_ocr": 67,
+    "chars": 17632,
+    "mean_conf": 0.875,
+    "complete": false,
+    "kind": "structural_function"
+  },
+  {
     "id": "spossbin_answers_1",
     "title": "斯波索宾和声学上册答案",
     "pages_total": 250,
