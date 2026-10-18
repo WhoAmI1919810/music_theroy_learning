@@ -520,30 +520,107 @@
       const axis = midis[0];
       return midis.map((midi) => axis * 2 - midi);
     }
+    if (transform === "retrograde-inversion") {
+      const axis = midis[0];
+      return midis.slice().reverse().map((midi) => axis * 2 - midi);
+    }
     return midis.slice();
   }
 
   function generateCanon(subjectNotes, options) {
-    const settings = Object.assign({ delay: 4, interval: 12, transform: "none", duration: 1 }, options || {});
+    const settings = Object.assign({
+      delay: 4,
+      interval: 12,
+      transform: "none",
+      duration: 1,
+      voices: 2,
+      cycles: 1,
+      entryMode: "cumulative"
+    }, options || {});
     const subject = (Array.isArray(subjectNotes) ? subjectNotes : String(subjectNotes).split(/\s+/)).map(noteToMidi).filter((midi) => midi !== null);
     const transformed = transformSubject(subject, settings.transform);
-    const duxDuration = settings.duration;
-    const comesDuration = settings.transform === "augmentation" ? settings.duration * 2 : settings.duration;
-    const duxEvents = subject.map((midi, index) => ({ voice: "dux", start: index * duxDuration, duration: duxDuration, midi }));
-    const comesEvents = transformed.map((midi, index) => ({
-      voice: "comes",
-      start: settings.delay + index * comesDuration,
-      duration: comesDuration,
-      midi: midi + settings.interval
-    }));
-    const events = duxEvents.concat(comesEvents);
-    const totalBeats = Math.ceil(Math.max(...events.map((event) => event.start + event.duration)) / 4) * 4;
-    const duxGrid = fillBeatGrid(duxEvents, totalBeats);
-    const comesGrid = fillBeatGrid(comesEvents, totalBeats);
-    const diagnostics = analyzeCounterpoint([
-      { name: "Dux", notes: duxGrid.grid },
-      { name: "Comes", notes: comesGrid.grid }
-    ], { beatsPerBar: 4, style: "free" });
+    const voiceCount = Math.max(2, Math.min(6, Math.round(Number(settings.voices) || 2)));
+    const cycles = Math.max(1, Math.min(4, Math.round(Number(settings.cycles) || 1)));
+    const baseDuration = Math.max(1, Math.round(Number(settings.duration) || 1));
+    const voiceDuration = settings.transform === "augmentation" ? baseDuration * 2 : baseDuration;
+    const voiceIds = ["dux", "comes", "voice3", "voice4", "voice5", "voice6"];
+    const voiceNames = ["V1 主句", "V2 应句", "V3 应句", "V4 应句", "V5 应句", "V6 应句"];
+    const entries = [];
+    const events = [];
+    const rows = [];
+    const marker = {};
+
+    function transpositionForVoice(index) {
+      if (index === 0) return 0;
+      if (settings.entryMode === "alternating") return index % 2 === 0 ? 0 : settings.interval;
+      if (settings.entryMode === "octaves") return index * 12;
+      return index * settings.interval;
+    }
+
+    function fitCanonPitch(midi) {
+      let output = midi;
+      while (output < 43) output += 12;
+      while (output > 88) output -= 12;
+      return output;
+    }
+
+    for (let voiceIndex = 0; voiceIndex < voiceCount; voiceIndex += 1) {
+      const voiceEvents = [];
+      const transposition = transpositionForVoice(voiceIndex);
+      const voiceSequence = voiceIndex === 0 ? subject : transformed;
+      const voiceStep = voiceIndex === 0 ? baseDuration : voiceDuration;
+      const voiceCycleBeats = voiceSequence.length * voiceStep;
+      for (let round = 0; round < cycles; round += 1) {
+        const roundStart = round * voiceCycleBeats + voiceIndex * settings.delay;
+        voiceSequence.forEach((midi, noteIndex) => {
+          voiceEvents.push({
+            voice: voiceIds[voiceIndex],
+            voiceName: voiceNames[voiceIndex],
+            round: round + 1,
+            start: roundStart + noteIndex * voiceStep,
+            duration: voiceStep,
+            midi: fitCanonPitch(midi + transposition)
+          });
+        });
+        entries.push({
+          voiceId: voiceIds[voiceIndex],
+          voiceName: voiceNames[voiceIndex],
+          role: voiceIndex === 0 ? "主句" : "应句",
+          round: round + 1,
+          start: roundStart,
+          startBar: Math.floor(roundStart / 4) + 1,
+          startBeat: roundStart % 4 + 1,
+          transposition,
+          transform: voiceIndex === 0 ? "none" : settings.transform,
+          cycles: cycles,
+          noteCount: voiceSequence.length
+        });
+      }
+      events.push(...voiceEvents);
+    }
+
+    const rawTotalBeats = events.length ? Math.max(...events.map((event) => event.start + event.duration)) : 0;
+    const totalBeats = Math.max(4, Math.ceil(rawTotalBeats / 4) * 4);
+    const analyzedVoices = [];
+    for (let voiceIndex = 0; voiceIndex < voiceCount; voiceIndex += 1) {
+      const voiceEvents = events.filter((event) => event.voice === voiceIds[voiceIndex]);
+      const grid = fillBeatGrid(voiceEvents, totalBeats);
+      marker[voiceIds[voiceIndex]] = grid.marker;
+      analyzedVoices.push({ name: voiceNames[voiceIndex], notes: grid.grid });
+      const midis = voiceEvents.map((event) => event.midi);
+      rows.push({
+        id: voiceIds[voiceIndex],
+        name: voiceNames[voiceIndex],
+        marker: grid.marker,
+        noteCount: midis.length,
+        range: midis.length ? midiToName(Math.min(...midis)) + "–" + midiToName(Math.max(...midis)) : "—"
+      });
+    }
+    const diagnostics = subject.length ? analyzeCounterpoint(analyzedVoices, { beatsPerBar: 4, style: "free" }) : {
+      voices: [],
+      issues: [{ id: "empty-canon", severity: "error", type: "input", message: "主句为空。", label: "输入", voices: [] }],
+      summary: { errors: 1, warnings: 0, status: "需修改" }
+    };
     if (settings.transform === "augmentation") {
       diagnostics.issues.unshift({
         id: "augmentation-check", severity: "warning", type: "augmentation", message: "扩大卡农改变了强拍位置；原弱拍不协和可能移到强拍，必须重新逐拍检查。", label: "扩大", voices: []
@@ -554,14 +631,42 @@
         id: "diatonic-check", severity: "warning", type: "diatonic", message: "当前为半音精确移位。若要保持调性，需在应句中调整个别音；调性卡农不能只靠整体平移。", label: "调性", voices: []
       });
     }
+    if (settings.delay < voiceDuration * 2) {
+      diagnostics.issues.unshift({
+        id: "dense-entry", severity: "warning", type: "density", message: "相邻声部只隔 " + settings.delay + " 拍进入，叠置很密；逐次进入处要检查二度碰撞、声部交叉与可听辨性。", label: "进入密度", voices: []
+      });
+    }
+    if (voiceCount >= 4) {
+      diagnostics.issues.unshift({
+        id: "many-voices", severity: "info", type: "voices", message: voiceCount + " 个声部同时复制主题时，音区分配比横向模仿更容易出问题；先保证每对相邻声部可分辨。", label: "多声部", voices: []
+      });
+    }
+    if (cycles > 1) {
+      diagnostics.issues.unshift({
+        id: "cycle-seam", severity: "info", type: "cycle", message: "每个声部连续重复 " + cycles + " 轮；轮次接缝处也是模仿点，不能只检查第一轮。", label: "多轮", voices: []
+      });
+    }
+    const errors = diagnostics.issues.filter((item) => item.severity === "error").length;
+    const warnings = diagnostics.issues.filter((item) => item.severity === "warning").length;
+    diagnostics.summary = {
+      errors,
+      warnings,
+      status: errors ? "需修改" : warnings ? "可接受，需复核提示" : "通过"
+    };
+    if (voiceCount === 2) {
+      marker.dux = marker.dux || [];
+      marker.comes = marker.comes || [];
+    }
     return {
       subject,
       transformed,
       events,
+      entries,
+      rows,
       totalBeats,
-      marker: { dux: duxGrid.marker, comes: comesGrid.marker },
+      marker,
       diagnostics,
-      settings
+      settings: Object.assign({}, settings, { voices: voiceCount, cycles: cycles })
     };
   }
 
@@ -623,92 +728,553 @@
     });
   }
 
-  const VOICE_LABELS = ["S", "A", "T", "B"];
+  const VOICE_LABELS = ["S", "A", "T", "B", "V5"];
+  const VOICE_RANGES = {
+    S: [60, 86], A: [55, 81], T: [48, 74], B: [40, 67], V5: [36, 62]
+  };
+  const SHARP_KEY_NAMES = ["C", "C♯", "D", "D♯", "E", "F", "F♯", "G", "G♯", "A", "A♯", "B"];
+  const FLAT_KEY_NAMES = ["C", "D♭", "D", "E♭", "E", "F", "G♭", "G", "A♭", "A", "B♭", "B"];
+
+  function voiceLabelsForCount(count) {
+    if (count === 2) return ["S", "A"];
+    if (count === 3) return ["S", "A", "B"];
+    return VOICE_LABELS.slice(0, count);
+  }
+
+  function parseSubjectText(input) {
+    const text = Array.isArray(input) ? input.join(" ") : String(input == null ? "" : input);
+    const tokens = text.split(/[\s,|]+/).map((token) => token.trim()).filter(Boolean);
+    const events = [];
+    const invalid = [];
+    let cursor = 0;
+    for (const token of tokens) {
+      const parts = token.split(":");
+      const notePart = parts[0];
+      let duration = parts.length > 1 ? Number(parts[1]) : 1;
+      if (!Number.isInteger(duration) || duration < 1 || duration > 16) {
+        invalid.push(token);
+        duration = 1;
+      }
+      if (/^(?:-|\.|R|rest|休止)$/i.test(notePart)) {
+        cursor += duration;
+        continue;
+      }
+      const midi = noteToMidi(notePart);
+      if (midi === null) {
+        invalid.push(token);
+        cursor += duration;
+        continue;
+      }
+      events.push({ midi, start: cursor, duration });
+      cursor += duration;
+    }
+    return { events, totalBeats: cursor, invalid };
+  }
+
+  function barNumber(beat) {
+    return Math.floor(Math.max(0, beat) / 4) + 1;
+  }
+
+  function alignToBar(beat) {
+    return Math.ceil(Math.max(0, beat) / 4) * 4;
+  }
+
+  function eventsSpan(events) {
+    return events.length ? Math.max(...events.map((event) => event.start + event.duration)) : 0;
+  }
+
+  function shiftEvents(events, semitones) {
+    return events.map((event) => Object.assign({}, event, { midi: event.midi + semitones }));
+  }
+
+  function fitEventsToRange(events, voice) {
+    const range = VOICE_RANGES[voice] || [48, 84];
+    if (!events.length) return [];
+    const min = Math.min(...events.map((event) => event.midi));
+    const max = Math.max(...events.map((event) => event.midi));
+    const octaveShift = Math.round(((range[0] + range[1]) / 2 - (min + max) / 2) / 12);
+    return events.map((event) => {
+      let midi = event.midi + octaveShift * 12;
+      while (midi < range[0]) midi += 12;
+      while (midi > range[1]) midi -= 12;
+      return Object.assign({}, event, { midi });
+    });
+  }
+
+  function shortestPitchShift(fromPc, toPc) {
+    let shift = pitchClass(toPc - fromPc);
+    if (shift > 6) shift -= 12;
+    return shift;
+  }
+
+  function invertEventsInKey(events, key, mode) {
+    if (!events.length) return { events: [], diatonic: true, outside: [] };
+    const keyData = KEY_SIGNATURES[key] || KEY_SIGNATURES.C;
+    const pcs = keyData[mode] || keyData.major;
+    const scaleMidis = [];
+    for (let midi = 24; midi <= 108; midi += 1) {
+      if (pcs.includes(pitchClass(midi))) scaleMidis.push(midi);
+    }
+    const indexes = events.map((event) => scaleMidis.indexOf(event.midi));
+    const outside = events.filter((event, index) => indexes[index] < 0).map((event) => midiToName(event.midi));
+    if (outside.length) {
+      const inverted = transformSubject(events.map((event) => event.midi), "inversion");
+      return {
+        events: events.map((event, index) => Object.assign({}, event, { midi: inverted[index] })),
+        diatonic: false,
+        outside
+      };
+    }
+    const axis = indexes[0];
+    return {
+      events: events.map((event, index) => Object.assign({}, event, {
+        midi: scaleMidis[Math.max(0, Math.min(scaleMidis.length - 1, axis * 2 - indexes[index]))]
+      })),
+      diatonic: true,
+      outside: []
+    };
+  }
+
+  function keyName(pc, mode, preferFlats) {
+    const names = preferFlats ? FLAT_KEY_NAMES : SHARP_KEY_NAMES;
+    return names[pitchClass(pc)] + " " + (mode === "major" ? "大调" : "小调");
+  }
+
+  function makeSectionPlan(id, label, type, startBeat, endBeat, fields) {
+    const safeStart = Math.max(0, startBeat);
+    const safeEnd = Math.max(safeStart + 1, endBeat);
+    return Object.assign({
+      id,
+      label,
+      type,
+      startBeat: safeStart,
+      endBeat: safeEnd,
+      startBar: barNumber(safeStart),
+      endBar: barNumber(safeEnd - 1),
+      bars: barNumber(safeEnd - 1) - barNumber(safeStart) + 1
+    }, fields || {});
+  }
+
+  function makeFugueEntry(options) {
+    const voice = options.voice;
+    const placed = fitEventsToRange(options.events, voice);
+    const span = eventsSpan(placed);
+    const events = placed.map((event) => Object.assign({}, event, {
+      voice,
+      start: options.startBeat + event.start
+    }));
+    const midis = events.map((event) => event.midi);
+    return {
+      id: options.id,
+      sectionId: options.sectionId,
+      section: options.section,
+      voice,
+      form: options.form,
+      key: options.key,
+      keyMode: options.keyMode || "major",
+      startBeat: options.startBeat,
+      endBeat: options.startBeat + span,
+      bar: barNumber(options.startBeat),
+      startBar: barNumber(options.startBeat),
+      endBar: barNumber(options.startBeat + Math.max(0, span - 1)),
+      beats: span,
+      notes: midis,
+      events,
+      range: midis.length ? midiToName(Math.min(...midis)) + "–" + midiToName(Math.max(...midis)) : "—",
+      overlap: Boolean(options.overlap),
+      strettoGap: options.strettoGap || 0,
+      role: options.role || ""
+    };
+  }
+
+  function makeCounterSubject(subjectEvents, key, mode) {
+    if (!subjectEvents.length) return null;
+    const scale = scaleForPlan(key, mode);
+    const line = solveStrongLine(subjectEvents.map((event) => event.midi), scale.pcs);
+    const events = fitEventsToRange(subjectEvents.map((event, index) => Object.assign({}, event, { midi: line[index] })), "S");
+    const pair = analyzeInvertiblePair(subjectEvents, events);
+    return {
+      events,
+      names: events.map((event) => midiToName(event.midi)),
+      range: events.length ? midiToName(Math.min(...events.map((event) => event.midi))) + "–" + midiToName(Math.max(...events.map((event) => event.midi))) : "—",
+      invertibility: pair
+    };
+  }
+
+  function analyzeInvertiblePair(baseEvents, counterEvents) {
+    const baseByStart = new Map(baseEvents.map((event) => [event.start, event]));
+    let total = 0;
+    let directConsonant = 0;
+    let invertedConsonant = 0;
+    let passBoth = 0;
+    for (const counter of counterEvents) {
+      const base = baseByStart.get(counter.start);
+      if (!base) continue;
+      total += 1;
+      const simple = intervalInfo(Math.min(base.midi, counter.midi), Math.max(base.midi, counter.midi)).simple;
+      const inverted = (12 - simple) % 12;
+      const directOk = CONSONANT.has(simple);
+      const invertedOk = CONSONANT.has(inverted);
+      if (directOk) directConsonant += 1;
+      if (invertedOk) invertedConsonant += 1;
+      if (directOk && invertedOk) passBoth += 1;
+    }
+    return {
+      total,
+      directConsonant,
+      invertedConsonant,
+      passBoth,
+      passRate: total ? passBoth / total : 0
+    };
+  }
 
   function planFugue(input) {
-    const settings = Object.assign({ key: "C", mode: "major", voices: 3, answerType: "tonal", subjectType: "classic", layout: "standard" }, input || {});
-    const subject = makeSubject(settings.key, settings.mode, settings.subjectType);
+    const settings = Object.assign({
+      key: "C",
+      mode: "major",
+      voices: 3,
+      answerType: "tonal",
+      subjectType: "classic",
+      layout: "standard",
+      subjectText: "",
+      entrySpacing: "auto",
+      recapMode: "original"
+    }, input || {});
+    settings.voices = Math.max(2, Math.min(5, Math.round(Number(settings.voices) || 3)));
+    const keyData = KEY_SIGNATURES[settings.key] || KEY_SIGNATURES.C;
+    const scalePcs = keyData[settings.mode] || keyData.major;
+    const baseTonic = keyData.tonic;
+    const preferFlats = /b/.test(settings.key) || settings.key === "F";
+    const hasCustomSubject = settings.subjectText != null && String(settings.subjectText).trim().length > 0;
+    let parsed;
+    if (hasCustomSubject) {
+      parsed = parseSubjectText(settings.subjectText);
+    } else {
+      const generatedSubject = makeSubject(settings.key, settings.mode, settings.subjectType);
+      parsed = {
+        events: generatedSubject.map((midi, index) => ({ midi, start: index, duration: 1 })),
+        totalBeats: generatedSubject.length,
+        invalid: []
+      };
+    }
+    if (!parsed.events.length) throw new Error("主题至少需要一个可识别的音名，例如 C4 或 C4:2。");
+
+    const subjectEvents = parsed.events;
+    const subject = subjectEvents.map((event) => event.midi);
+    const subjectSpan = Math.max(parsed.totalBeats || 0, eventsSpan(subjectEvents));
     const answer = makeAnswer(subject, settings.key, settings.mode, settings.answerType);
-    const subjectLength = Math.max(8, subject.length);
-    const step = 4;
+    const answerEvents = subjectEvents.map((event, index) => Object.assign({}, event, { midi: answer[index] }));
+    const answerRelation = analyzeAnswerRelation(subject, answer);
+    const voiceOrder = voiceLabelsForCount(settings.voices);
+    const spacingBars = settings.entrySpacing === "auto"
+      ? Math.max(1, Math.ceil(subjectSpan / 4))
+      : Math.max(1, Math.min(8, Math.round(Number(settings.entrySpacing) || 1)));
+    const spacingBeats = spacingBars * 4;
+    const relativeTonic = settings.mode === "major" ? (baseTonic + 9) % 12 : (baseTonic + 3) % 12;
+    const relativeMode = settings.mode === "major" ? "minor" : "major";
+    const subdominantTonic = (baseTonic + 5) % 12;
+    const dominantTonic = (baseTonic + 7) % 12;
     const entries = [];
     const sections = [];
-    let cursor = 1;
-    const voiceOrder = Array.from({ length: settings.voices }, (_, index) => VOICE_LABELS[index] || "V" + (index + 1));
+    const diagnostics = [];
+    const playbackEvents = [];
+    let cursor = 0;
+
+    function addDiagnostic(severity, type, message, label) {
+      diagnostics.push({ id: type + "-" + diagnostics.length, severity, type, message, label: label || "结构检查", voices: [] });
+    }
+
+    const expositionEntries = [];
     for (let index = 0; index < settings.voices; index += 1) {
       const form = index % 2 === 0 ? "主题" : "答题";
-      entries.push({
+      const startBeat = index * spacingBeats;
+      const entry = makeFugueEntry({
+        id: "exposition-" + (index + 1),
+        sectionId: "exposition",
         section: "呈示部",
         voice: voiceOrder[index],
         form,
         key: form === "主题" ? "主调" : "属调",
-        bar: cursor,
-        beats: subjectLength,
-        notes: form === "主题" ? subject : answer
+        keyMode: form === "主题" ? settings.mode : settings.mode,
+        startBeat,
+        events: form === "主题" ? subjectEvents : answerEvents
       });
-      cursor += step;
+      entries.push(entry);
+      expositionEntries.push(entry);
+      playbackEvents.push(...entry.events);
+      cursor = Math.max(cursor, entry.endBeat);
     }
-    sections.push({ id: "exposition", label: "呈示部", start: 1, end: cursor - step + subjectLength - 1, note: "所有声部在主、属范围完成进入。" });
-    cursor += 4;
-    entries.push({ section: "间插段 I", voice: "—", form: "间插", key: "转调", bar: cursor, beats: 8, notes: [] });
-    sections.push({ id: "episode1", label: "间插段 I", start: cursor, end: cursor + 7, note: "从主题或对题抽取动机，模进到下一调。" });
-    cursor += 8;
+    const expositionEnd = alignToBar(cursor + 4);
+    sections.push(makeSectionPlan("exposition", "呈示部", "exposition", 0, expositionEnd, {
+      summary: expositionEntries.map((entry) => entry.voice + " " + entry.form).join(" · "),
+      function: "建立主调与属调，让所有声部按主题/答题交替完成首次进入。",
+      material: ["完整主题 T", (settings.answerType === "tonal" ? "守调答题 A" : "真实答题 A"), "第二进入起可加入固定对题 CS 候选"],
+      entrySummary: expositionEntries.map((entry) => entry.voice + "：" + entry.form + "（第 " + entry.startBar + " 小节）").join("；"),
+      tonalPlan: "主调 " + keyName(baseTonic, settings.mode, preferFlats) + " → 属调 " + keyName(dominantTonic, settings.mode, preferFlats) + "；只在主属轴心内确认调性。",
+      texture: "主题与答题交替；新声部进入后，先前声部转入对题或自由对位。",
+      cadence: "第 " + barNumber(Math.max(0, expositionEnd - 1)) + " 小节前收束；优先半终止或不完全终止，避免过早完满终止。",
+      task: "先固定主题音高与时值，再为答题逐音核对该改与不该改的位置；不要为了填满和声改写主题头。",
+      checkpoints: ["每次进入的第一音与调性是否清楚", "答题是否保持主题节奏与可辨轮廓", "进入间隔内是否出现声部交叉或连续五/八度"]
+    }));
 
-    const middleKeys = settings.mode === "major" ? ["关系小调", "下属调", "下属关系小调"] : ["关系大调", "下属调", "下属关系大调"];
-    const middleCount = settings.layout === "compact" ? 0 : 2;
-    for (let index = 0; index < middleCount; index += 1) {
-      entries.push({
+    function addEpisode(id, label, startBeat, targetTonic, targetMode, nextDescription) {
+      const start = alignToBar(startBeat);
+      const end = start + 8;
+      const targetLabel = keyName(targetTonic, targetMode, preferFlats);
+      sections.push(makeSectionPlan(id, label, "episode", start, end, {
+        summary: "动机模进 → " + targetLabel,
+        function: "在两次主题进入之间完成调性过渡，同时让主题材料继续可听。",
+        material: ["主题头 3–4 音", "对题尾部的节奏型", "低声部功能进行"],
+        entrySummary: "下一进入：" + nextDescription,
+        tonalPlan: "从当前调出发，经两次模进锁定 " + targetLabel + "；第二遍改变模进步长或方向，避免机械重复。",
+        texture: "一段建立动机，一段作模进转调；至少保留一个声部作长音或 pedal 支点。",
+        cadence: "在间插末尾用目标调的 V 或 ii–V 准备下一主题进入。",
+        task: "先写出两次模进的起点与落点，再填纵向音程；转调枢轴要能同时解释前后两调。",
+        checkpoints: ["模进是否保持动机节奏", "每次转调是否有枢轴和弦", "低声部与上方声部是否形成连续完全音程"]
+      }));
+      return end;
+    }
+
+    cursor = addEpisode("episode1", "间插段 I", expositionEnd, relativeTonic, relativeMode, voiceOrder[0] + " 在 " + keyName(relativeTonic, relativeMode, preferFlats) + " 进入");
+
+    function addMiddleEntry(index, targetTonic, targetMode, startBeat, voice, relationLabel) {
+      const start = alignToBar(startBeat);
+      const shift = shortestPitchShift(baseTonic, targetTonic);
+      const entry = makeFugueEntry({
+        id: "middle-" + index,
+        sectionId: "middle-" + index,
         section: "中间部",
-        voice: voiceOrder[(index + 1) % voiceOrder.length],
+        voice,
         form: "主题",
-        key: middleKeys[index] || "近关系调",
-        bar: cursor,
-        beats: subjectLength,
-        notes: subject
+        key: keyName(targetTonic, targetMode, preferFlats),
+        keyMode: targetMode,
+        startBeat: start,
+        events: shiftEvents(subjectEvents, shift)
       });
-      sections.push({ id: "middle-" + (index + 1), label: "中间进入 " + (index + 1), start: cursor, end: cursor + subjectLength - 1, note: "离开主属轴心，保持主题完整轮廓。" });
-      cursor += subjectLength + 2;
-      entries.push({ section: "间插段 " + (index + 2), voice: "—", form: "间插", key: "转调", bar: cursor, beats: 6, notes: [] });
-      sections.push({ id: "episode-" + (index + 2), label: "间插段 " + (index + 2), start: cursor, end: cursor + 5, note: "把和声送回主调或下一进入。" });
-      cursor += 6;
+      entries.push(entry);
+      playbackEvents.push(...entry.events);
+      const end = alignToBar(entry.endBeat + 4);
+      sections.push(makeSectionPlan("middle-" + index, "中间进入 " + index, "middle", start, end, {
+        summary: entry.voice + " 主题 → " + entry.key,
+        function: "离开主属轴心，用一次完整主题进入建立新的调性支点。",
+        material: ["完整主题", "伴随声部的对题或自由模仿"],
+        entrySummary: entry.voice + "：" + entry.form + "（第 " + entry.startBar + " 小节，音域 " + entry.range + "）",
+        tonalPlan: relationLabel + "：从主调转入 " + entry.key + "；进入前先用新调的属功能准备。",
+        texture: "主题在新调进入；先前声部优先保留对题，不足时用主题头作模仿。",
+        cadence: "进入后用新调的 V–I 或半终止巩固，再交给下一间插段。",
+        task: "检查主题移位后的音域与临时升降号；若主题含主属跳进，确认在新调仍保持同样的调性含义。",
+        checkpoints: ["主题头是否仍可辨认", "新调属功能是否在进入前出现", "对题与主题的纵向音程是否可解释"]
+      }));
+      return end;
     }
 
-    const strettoStart = cursor;
-    entries.push({ section: "密接和应", voice: voiceOrder[0], form: "主题", key: "主调", bar: cursor, beats: subjectLength, notes: subject, overlap: true });
-    cursor += 2;
-    entries.push({ section: "密接和应", voice: voiceOrder[1] || voiceOrder[0], form: "答题", key: "属调", bar: cursor, beats: subjectLength, notes: answer, overlap: true });
-    sections.push({ id: "stretto", label: "密接和应", start: strettoStart, end: cursor + subjectLength - 1, note: "主题未结束即再次进入；先检查重叠处的纵向音程。" });
-    cursor += subjectLength;
-    entries.push({ section: "属持续", voice: "低声部", form: "持续音", key: "属持续", bar: cursor, beats: 8, notes: [] });
-    sections.push({ id: "pedal", label: "属持续", start: cursor, end: cursor + 7, note: "属音持续加强回到主调的倾向。" });
-    cursor += 8;
-    entries.push({ section: "再现", voice: voiceOrder[0], form: "主题", key: "主调", bar: cursor, beats: subjectLength, notes: subject });
-    sections.push({ id: "recap", label: "再现", start: cursor, end: cursor + subjectLength - 1, note: "回到主调；常改变声部顺序、对题或紧接写法。" });
-    cursor += subjectLength;
-    entries.push({ section: "尾声", voice: "全声部", form: "终止", key: "主调", bar: cursor, beats: 4, notes: [] });
-    sections.push({ id: "coda", label: "尾声", start: cursor, end: cursor + 3, note: "用终止、持续音或紧接余波完成收束。" });
+    if (settings.layout !== "compact") {
+      cursor = addMiddleEntry(1, relativeTonic, relativeMode, cursor, voiceOrder[1] || voiceOrder[0], "关系调方向");
+      cursor = addEpisode("episode2", "间插段 II", cursor, subdominantTonic, settings.mode, voiceOrder[Math.min(2, voiceOrder.length - 1)] + " 在下属方向进入");
+      cursor = addMiddleEntry(2, subdominantTonic, settings.mode, cursor, voiceOrder[Math.min(2, voiceOrder.length - 1)], "下属方向");
+      cursor = addEpisode("episode3", "间插段 III", cursor, dominantTonic, settings.mode, "密接和应从主调与属调叠置进入");
+    }
 
-    const diagnostics = [];
-    const range = Math.max(...subject) - Math.min(...subject);
-    if (range > 12) diagnostics.push({ severity: "warning", message: "主题音域超过一个八度；声乐赋格通常更窄，器乐赋格也要确认多声部进入时的音区。" });
-    if (settings.answerType === "tonal") diagnostics.push({ severity: "info", message: "调性答题已把首次属音位置改回主音一侧；请在实际旋律中复核是否仍保留主题轮廓。" });
-    if (settings.answerType === "real") diagnostics.push({ severity: "info", message: "真实答题保持逐音移位；若主题首部含主属跳进，检查答题是否越过呈示部的主属范围。" });
-    if (settings.voices > 4) diagnostics.push({ severity: "warning", message: "五声部以上会显著压缩主题音区与紧接空间；需逐次进入复核。" });
-    diagnostics.push({ severity: "ok", message: "骨架只安排结构位置、调性与进入顺序，不生成完整可演奏赋格。" });
+    const strettoStart = alignToBar(cursor);
+    const strettoGap = Math.max(2, Math.floor(subjectSpan / 2));
+    const strettoCount = settings.voices >= 3 ? 3 : 2;
+    const strettoEntries = [];
+    for (let index = 0; index < strettoCount; index += 1) {
+      const form = index === 1 ? "答题" : "主题";
+      const startBeat = strettoStart + index * strettoGap;
+      const entry = makeFugueEntry({
+        id: "stretto-" + (index + 1),
+        sectionId: "stretto",
+        section: "密接和应",
+        voice: voiceOrder[index % voiceOrder.length],
+        form,
+        key: form === "主题" ? "主调" : "属调",
+        keyMode: settings.mode,
+        startBeat,
+        events: form === "主题" ? subjectEvents : answerEvents,
+        overlap: true,
+        strettoGap
+      });
+      entries.push(entry);
+      strettoEntries.push(entry);
+      playbackEvents.push(...entry.events);
+      cursor = Math.max(cursor, entry.endBeat);
+    }
+    const strettoEnd = alignToBar(cursor + 4);
+    sections.push(makeSectionPlan("stretto", "密接和应", "stretto", strettoStart, strettoEnd, {
+      summary: strettoEntries.map((entry) => entry.voice + " " + entry.form).join(" · ") + " · 间隔 " + strettoGap + " 拍",
+      function: "让主题在尚未结束时再次进入，用重叠制造密度并收紧结构。",
+      material: ["主题头/完整主题", "答题", "密接窗口内的自由对位"],
+      entrySummary: strettoEntries.map((entry) => entry.voice + "：" + entry.form + "（第 " + entry.startBar + " 小节，间隔 " + strettoGap + " 拍）").join("；"),
+      tonalPlan: "主调与属调叠置；密接段内不频繁转调，靠进入关系制造张力。",
+      texture: "每次进入都压缩前一次的时间空间；必要时删去主题尾部，只保留可辨认头三音。",
+      cadence: "密接末尾接属持续或直接进入主调再现。",
+      task: "逐次检查新进入的第一音与已发声部的纵向音程；优先保留主题头，尾部的自由处理比头更重要。",
+      checkpoints: ["第二次进入是否在主题结束前发生", "每个重叠点是否有可解释的协和/不协和", "主题是否被连续完全音程淹没"]
+    }));
+
+    const pedalStart = alignToBar(strettoEnd);
+    const pedalEnd = pedalStart + 8;
+    const pedalMidi = fitEventsToRange([{ midi: baseTonic + 7, start: 0, duration: 8 }], voiceOrder[voiceOrder.length - 1])[0].midi;
+    const pedalEntry = makeFugueEntry({
+      id: "pedal-1",
+      sectionId: "pedal",
+      section: "属持续",
+      voice: "低声部",
+      form: "持续音",
+      key: "属持续",
+      keyMode: settings.mode,
+      startBeat: pedalStart,
+      events: [{ midi: pedalMidi, start: 0, duration: 8 }]
+    });
+    entries.push(pedalEntry);
+    playbackEvents.push(...pedalEntry.events);
+    sections.push(makeSectionPlan("pedal", "属持续", "pedal", pedalStart, pedalEnd, {
+      summary: "低声部属音持续 2 小节",
+      function: "把属到主的和声张力拉长，为再现与终止制造支点。",
+      material: ["低声部属音持续", "上方主题头、对题或终止音型"],
+      entrySummary: "低声部：" + midiToName(pedalMidi, preferFlats) + "（第 " + barNumber(pedalStart) + "–" + barNumber(pedalEnd - 1) + " 小节）",
+      tonalPlan: "属持续为 " + keyName(baseTonic, settings.mode, preferFlats) + " 的 V；上方可经过下属/重属，但最终解决到主。",
+      texture: "低音保持，上方声部继续复调运动；不要把持续音写成静态和弦。",
+      cadence: "持续音结束必须解决到主和弦或主调终止。",
+      task: "确认持续音上方的不协和都能按和弦外音、延留或离调解释。",
+      checkpoints: ["持续音是否真正保持属音", "上方不协和是否有解决", "解决时低音是否进入主音"]
+    }));
+
+    const recapStart = alignToBar(pedalEnd);
+    let recapSource = subjectEvents;
+    if (settings.recapMode === "inversion") {
+      const inverted = invertEventsInKey(subjectEvents, settings.key, settings.mode);
+      recapSource = inverted.events;
+      if (inverted.diatonic) {
+        addDiagnostic("info", "recap-inversion", "再现倒影按 " + keyName(baseTonic, settings.mode, preferFlats) + " 的调式音级围绕主题首音作轴，音高仍留在调内。", "再现");
+      } else {
+        addDiagnostic("warning", "recap-inversion", "主题含调外音，再现倒影改用半音倒影；请逐音检查倒影后的调性与声部音域。", "再现");
+      }
+    }
+    const recapEntry = makeFugueEntry({
+      id: "recap-1",
+      sectionId: "recap",
+      section: "再现",
+      voice: voiceOrder[0],
+      form: settings.recapMode === "inversion" ? "主题倒影" : "主题",
+      key: "主调",
+      keyMode: settings.mode,
+      startBeat: recapStart,
+      events: recapSource
+    });
+    entries.push(recapEntry);
+    playbackEvents.push(...recapEntry.events);
+    const recapEnd = alignToBar(recapEntry.endBeat + 4);
+    sections.push(makeSectionPlan("recap", "再现", "recap", recapStart, recapEnd, {
+      summary: recapEntry.voice + " " + recapEntry.form + " → 主调",
+      function: "回到主调并重新确认主题，让前面的调性运动收束。",
+      material: [recapEntry.form, "可与呈示部交换对题/声部顺序", "紧接或持续音的余波"],
+      entrySummary: recapEntry.voice + "：" + recapEntry.form + "（第 " + recapEntry.startBar + " 小节，音域 " + recapEntry.range + "）",
+      tonalPlan: "回到主调 " + keyName(baseTonic, settings.mode, preferFlats) + "；避免在再现中途再次建立稳定新调。",
+      texture: "主题回到主调，可改变声部顺序或把对题移到另一个声部。",
+      cadence: "第 " + barNumber(recapEnd - 1) + " 小节完成主调终止。",
+      task: "检查再现与呈示部的材料关系：哪些保持不变，哪些通过声部交换或倒影形成变化。",
+      checkpoints: ["主题是否清楚回到主调", "声部交换后是否仍可转位", "终止前是否解决所有悬置不协和"]
+    }));
+
+    const codaStart = alignToBar(recapEnd);
+    const codaEnd = codaStart + 4;
+    const cadenceBass = fitEventsToRange([{ midi: baseTonic, start: 0, duration: 4 }], voiceOrder[voiceOrder.length - 1])[0].midi;
+    playbackEvents.push({ voice: voiceOrder[voiceOrder.length - 1], start: codaStart, duration: 4, midi: cadenceBass });
+    entries.push({
+      id: "coda-1",
+      sectionId: "coda",
+      section: "尾声",
+      voice: "全声部",
+      form: "终止",
+      key: "主调",
+      keyMode: settings.mode,
+      startBeat: codaStart,
+      endBeat: codaEnd,
+      bar: barNumber(codaStart),
+      startBar: barNumber(codaStart),
+      endBar: barNumber(codaEnd - 1),
+      beats: 4,
+      notes: [],
+      events: [],
+      range: "—"
+    });
+    sections.push(makeSectionPlan("coda", "尾声", "coda", codaStart, codaEnd, {
+      summary: "主调终止 · 1 小节",
+      function: "用终止、持续音解决或紧接余波结束全曲。",
+      material: ["主调终止式", "主题头短引用（可选）"],
+      entrySummary: "全声部：主调终止",
+      tonalPlan: "主调 V–I 或 iv–V–I；不再引入新的稳定调性。",
+      texture: "可全声部收束，也可保留一个声部的主题头作为最后引用。",
+      cadence: "第 " + barNumber(codaStart) + " 小节完成完满终止。",
+      task: "最后检查终止四六、导音解决与低音进行；不要让密接的余波掩盖终止。",
+      checkpoints: ["终止是否落在主音", "导音是否上行解决", "最后低音是否清楚支持主和弦"]
+    }));
+
+    const counterSubject = makeCounterSubject(subjectEvents, settings.key, settings.mode);
+    const outOfKey = subjectEvents
+      .map((event) => midiToName(event.midi, preferFlats))
+      .filter((name, index) => !scalePcs.includes(pitchClass(subjectEvents[index].midi)));
+    const firstDegree = scalePcs.indexOf(pitchClass(subject[0]));
+    if (parsed.invalid.length) addDiagnostic("warning", "parse", "有 " + parsed.invalid.length + " 个主题记号无法识别，已跳过：" + parsed.invalid.join("、") + "。时值写法用 C4:2。", "主题输入");
+    if (outOfKey.length) addDiagnostic("warning", "subject-scale", "主题含调外音：" + Array.from(new Set(outOfKey)).join("、") + "。这在半音化主题中可以是特性，但答题与中间进入的调性解释要逐音复核。", "主题");
+    if (subjectSpan < 4) addDiagnostic("warning", "subject-length", "主题只有 " + subjectSpan + " 拍；过短会让答题和紧接缺少可辨认的材料。", "主题");
+    if (firstDegree < 0) addDiagnostic("warning", "subject-start", "主题首音不在所选调内；请确认这是有意的半音化起句，还是主音/调式输入错误。", "主题");
+    else if (firstDegree !== 0 && firstDegree !== 4) addDiagnostic("info", "subject-start", "主题从第 " + (firstDegree + 1) + " 级开始；请确认这是有意的弱起/属音起句，而不是调性输入错误。", "主题");
+    if (subjectSpan > 16) addDiagnostic("warning", "subject-memory", "主题长达 " + subjectSpan + " 拍；在紧接与多声部进入中要删减尾部或只保留主题头。", "主题");
+    const subjectRange = Math.max(...subject) - Math.min(...subject);
+    if (subjectRange > 12) addDiagnostic("warning", "range", "主题音域超过一个八度；检查各声部移位后的实际音域。", "主题");
+    if (answerRelation && !answerRelation.dominantRelation) addDiagnostic("warning", "answer", "答题与主题的主音程关系不是典型的五度/四度；请确认答题类型或主题调性。", "答题");
+    if (settings.answerType === "tonal") addDiagnostic("info", "tonal-answer", "守调答题只应改写越过主属边界的位置；当前方案保留了主题节奏，具体改写需逐音复核。", "答题");
+    if (settings.answerType === "real") addDiagnostic("info", "real-answer", "真实答题逐音移高五度；若主题含主属跳进，检查答题是否越过呈示部的主属范围。", "答题");
+    if (counterSubject && counterSubject.invertibility.total) {
+      const pass = counterSubject.invertibility.passBoth + "/" + counterSubject.invertibility.total;
+      addDiagnostic(counterSubject.invertibility.passRate >= 0.75 ? "info" : "warning", "countersubject", "对题候选与主题原位协和 " + counterSubject.invertibility.directConsonant + "/" + counterSubject.invertibility.total + " 处，八度转位后仍协和 " + pass + " 处；转位失败的位置要改音。", "对题");
+    }
+    addDiagnostic("info", "draft", "结构计划固定了主题、答题、调性、进入顺序、间插目标与终止位置；具体对位仍需逐段写作。", "交付边界");
+
+    const totalBeats = codaEnd;
+    const gridEvents = [];
+    entries.forEach((entry) => {
+      const gridVoice = entry.voice === "低声部" ? voiceOrder[voiceOrder.length - 1] : entry.voice;
+      entry.events.forEach((event) => gridEvents.push(Object.assign({}, event, { voice: gridVoice })));
+    });
+    const gridRows = voiceOrder.map((voice) => {
+      const events = gridEvents.filter((event) => event.voice === voice);
+      const grid = fillBeatGrid(events, totalBeats);
+      const midis = events.map((event) => event.midi);
+      return {
+        name: voice,
+        marker: grid.marker,
+        eventCount: events.length,
+        range: midis.length ? midiToName(Math.min(...midis), preferFlats) + "–" + midiToName(Math.max(...midis), preferFlats) : "—"
+      };
+    });
+    playbackEvents.sort((a, b) => a.start - b.start || a.midi - b.midi);
 
     return {
       settings,
       subject,
       answer,
-      subjectNames: subject.map((midi) => midiToName(midi)),
-      answerNames: answer.map((midi) => midiToName(midi)),
+      subjectEvents,
+      answerEvents,
+      counterSubject,
+      subjectNames: subject.map((midi) => midiToName(midi, preferFlats)),
+      answerNames: answer.map((midi) => midiToName(midi, preferFlats)),
+      answerRelation,
       entries,
       sections,
+      gridRows,
+      playbackEvents,
       diagnostics,
-      bars: cursor + 4
+      bars: barNumber(totalBeats - 1),
+      totalBeats,
+      subjectSpan,
+      spacingBars,
+      source: hasCustomSubject ? "custom" : "preset"
     };
   }
-
   function analyzeAnswerRelation(subject, answer) {
     const subjectMidis = subject.map(noteToMidi).filter((midi) => midi !== null);
     const answerMidis = answer.map(noteToMidi).filter((midi) => midi !== null);

@@ -35,7 +35,16 @@
     ]
   };
   const TRANSFORM_LABELS = {
-    none: "原形", inversion: "倒影", retrograde: "逆行", augmentation: "扩大时值"
+    none: "原形", inversion: "倒影", retrograde: "逆行", "retrograde-inversion": "逆行倒影", augmentation: "扩大时值"
+  };
+  const ENTRY_MODE_LABELS = {
+    cumulative: "逐声部累积移位", alternating: "主调/属调交替", octaves: "逐声部八度分层"
+  };
+  const PRESET_RHYTHMS = {
+    classic: [1, 1, 2, 1, 2, 1, 1, 1, 2],
+    leaping: [1, 1, 1, 2, 1, 1, 2, 1],
+    chromatic: [1, 1, 1, 1, 2, 1, 1, 2],
+    compact: [1, 1, 2, 1, 1, 2, 2]
   };
   const state = {
     activeTab: "periods",
@@ -97,13 +106,15 @@
     node.className = "status-pill" + (tone ? " " + tone : "");
   }
 
-  function renderIssues(container, issues, emptyText) {
+  function renderIssues(container, issues, emptyText, maxVisible) {
     if (!container) return;
     if (!issues || !issues.length) {
       container.innerHTML = '<div class="empty-state good">' + esc(emptyText || "未发现需要报告的问题。") + "</div>";
       return;
     }
-    container.innerHTML = issues.map((issue) => {
+    const visible = maxVisible ? issues.slice(0, maxVisible) : issues;
+    const hidden = issues.length - visible.length;
+    container.innerHTML = visible.map((issue) => {
       const severity = issue.severity || "info";
       const position = issue.label || (issue.position ? "第 " + issue.position + " 拍" : "全局");
       const voices = issue.voices && issue.voices.length ? issue.voices.join(" / ") : "";
@@ -112,7 +123,7 @@
         "<p>" + esc(issue.message) + "</p>" +
         (voices || issue.detail ? '<div class="issue-meta">' + esc(voices) + (voices && issue.detail ? " · " : "") + esc(issue.detail || "") + "</div>" : "") +
         "</article>";
-    }).join("");
+    }).join("") + (hidden > 0 ? '<div class="issue-overflow">另有 ' + hidden + ' 条同类检查未展开；先修前 ' + visible.length + ' 条，再重新生成以减少重复提示。</div>' : "");
   }
 
   function severityLabel(severity) {
@@ -146,6 +157,53 @@
           '" title="第 ' + bar + " 小节第 " + beat + ' 拍">' + esc(marker || (rest ? "·" : marker)) + "</span>";
       }).join("");
       return '<div class="score-row"><div class="voice-name">' + esc(row.name) + '</div><div class="beat-line">' + cells + "</div></div>";
+    }).join("");
+  }
+
+  function signedSemitones(value) {
+    return value === 0 ? "同度" : (value > 0 ? "+" : "") + value + " 半音";
+  }
+
+  function eventToken(event, preferFlats) {
+    const duration = Number(event.duration) || 1;
+    return noteName(event.midi, preferFlats) + (duration !== 1 ? ":" + duration : "");
+  }
+
+  function eventList(events, preferFlats) {
+    return (events || []).map((event) => eventToken(event, preferFlats)).join(" ");
+  }
+
+  function noteChipLine(label, events, className, preferFlats) {
+    const notes = (events || []).map((event) => {
+      const duration = Number(event.duration) || 1;
+      return '<span class="subject-note">' + esc(noteName(event.midi, preferFlats)) +
+        (duration !== 1 ? '<small>' + duration + '拍</small>' : "") + "</span>";
+    }).join("");
+    return '<div class="subject-line ' + esc(className || "") + '"><span class="subject-label">' + esc(label) + '</span><div class="subject-notes">' + notes + "</div></div>";
+  }
+
+  function planFact(label, value) {
+    const text = Array.isArray(value) ? value.join(" · ") : value;
+    return '<div><dt>' + esc(label) + '</dt><dd>' + esc(text || "—") + "</dd></div>";
+  }
+
+  function renderFugueSectionPlans(container, sections) {
+    if (!container) return;
+    container.innerHTML = (sections || []).map((section) => {
+      const checks = (section.checkpoints || []).map((item) => "<li>" + esc(item) + "</li>").join("");
+      return '<article class="section-plan ' + esc(section.type) + '">' +
+        '<header><div><span class="plan-range">第 ' + section.startBar + "–" + section.endBar + ' 小节 · ' + section.bars + ' 小节</span><h4>' + esc(section.label) + '</h4></div><span class="plan-type">' + esc(section.type === "episode" ? "间插" : section.type === "middle" ? "中间部" : section.type === "stretto" ? "密接" : section.type === "pedal" ? "持续音" : section.type === "recap" ? "再现" : section.type === "coda" ? "终止" : "呈示") + "</span></header>" +
+        '<p class="plan-function">' + esc(section.function) + "</p>" +
+        '<dl class="plan-facts">' +
+        planFact("材料", section.material) +
+        planFact("进入", section.entrySummary) +
+        planFact("调性", section.tonalPlan) +
+        planFact("织体", section.texture) +
+        planFact("终止", section.cadence) +
+        planFact("写作任务", section.task) +
+        "</dl>" +
+        (checks ? '<div class="plan-checks"><b>交付检查</b><ul>' + checks + "</ul></div>" : "") +
+        "</article>";
     }).join("");
   }
 
@@ -299,7 +357,7 @@
       if (preset) subjectInput.value = preset.notes.join(" ");
       generateCanon();
     });
-    ["#canonDelay", "#canonInterval", "#canonTransform"].forEach((selector) => $(selector).addEventListener("change", generateCanon));
+    ["#canonDelay", "#canonInterval", "#canonTransform", "#canonVoices", "#canonCycles", "#canonEntryMode"].forEach((selector) => $(selector).addEventListener("change", generateCanon));
     $("#btnGenerateCanon").addEventListener("click", generateCanon);
     $("#btnPlayCanon").addEventListener("click", () => {
       if (state.canonResult) playEvents(state.canonResult.events, 0.22, "sine");
@@ -314,9 +372,12 @@
     const delay = Number($("#canonDelay").value);
     const interval = Number($("#canonInterval").value);
     const transform = $("#canonTransform").value;
+    const voices = Number($("#canonVoices").value);
+    const cycles = Number($("#canonCycles").value);
+    const entryMode = $("#canonEntryMode").value;
     let result;
     try {
-      result = E.generateCanon(tokens, { delay, interval, transform, duration: 1 });
+      result = E.generateCanon(tokens, { delay, interval, transform, duration: 1, voices, cycles, entryMode });
     } catch (error) {
       renderIssues($("#canonIssues"), [{ severity: "error", label: "生成失败", message: error.message }]);
       return;
@@ -327,14 +388,16 @@
     }
     state.canonResult = result;
     const intervalLabel = $("#canonInterval").selectedOptions[0] ? $("#canonInterval").selectedOptions[0].textContent : String(interval);
-    $("#canonMeta").textContent = "应句：" + (TRANSFORM_LABELS[transform] || transform) + " · " + intervalLabel + " · 延迟 " + delay + " 拍";
-    renderScoreRows($("#canonScore"), [
-      { name: "Dux 主句", marker: result.marker.dux },
-      { name: "Comes 应句", marker: result.marker.comes }
-    ], 4, "暂无可显示的卡农关系。");
+    $("#canonMeta").textContent = result.settings.voices + " 声部 · " + result.settings.cycles + " 轮 · " + (ENTRY_MODE_LABELS[entryMode] || entryMode) + " · " + (TRANSFORM_LABELS[transform] || transform) + " · " + intervalLabel + " · 延迟 " + delay + " 拍";
+    renderScoreRows($("#canonScore"), result.rows.map((row) => ({ name: row.name, marker: row.marker })), 4, "暂无可显示的卡农关系。");
+    const rowRanges = {};
+    result.rows.forEach((row) => { rowRanges[row.id] = row.range; });
+    $("#canonTable").innerHTML = "<thead><tr><th>轮次</th><th>声部</th><th>进入</th><th>相对移位</th><th>变形</th><th>音数</th><th>实际音域</th></tr></thead><tbody>" +
+      result.entries.map((entry) => "<tr><td>第 " + entry.round + " 轮</td><td>" + esc(entry.voiceName) + "</td><td>第 " + entry.startBar + " 小节第 " + entry.startBeat + " 拍</td><td>" + esc(signedSemitones(entry.transposition)) + "</td><td>" + esc(TRANSFORM_LABELS[entry.transform] || entry.transform) + "</td><td>" + entry.noteCount + "</td><td class=note-cell>" + esc(rowRanges[entry.voiceId] || "—") + "</td></tr>").join("") +
+      "</tbody>";
     const summary = result.diagnostics.summary || { errors: 0, warnings: 0, status: "已生成" };
     renderSummary($("#canonSummary"), summary);
-    renderIssues($("#canonIssues"), result.diagnostics.issues, "当前时间差与移位关系下，重叠声部未发现结构性冲突。");
+    renderIssues($("#canonIssues"), result.diagnostics.issues, "当前时间差与移位关系下，重叠声部未发现结构性冲突。", 24);
     $("#btnPlayCanon").disabled = false;
   }
 
@@ -342,15 +405,58 @@
     const keySelect = $("#fugueKey");
     if (!keySelect) return;
     keySelect.innerHTML = Object.keys(D.KEY_SIGNATURES).map((key) => '<option value="' + esc(key) + '">' + esc(key) + "</option>").join("");
-    ["#fugueKey", "#fugueMode", "#fugueVoices", "#fugueAnswer", "#fugueSubject", "#fugueLayout"].forEach((selector) => {
+    const presetSelect = $("#fugueSubjectPreset");
+    const subjectInput = $("#fugueSubjectNotes");
+    presetSelect.innerHTML = D.SUBJECT_PRESETS.map((preset) => '<option value="' + esc(preset.id) + '">' + esc(preset.label) + "</option>").join("");
+
+    function presetText(type) {
+      const prototype = E.planFugue({
+        key: $("#fugueKey").value,
+        mode: $("#fugueMode").value,
+        voices: 3,
+        answerType: "tonal",
+        subjectType: type,
+        layout: "standard"
+      });
+      const rhythm = PRESET_RHYTHMS[type] || [];
+      const preferFlats = /b/.test($("#fugueKey").value) || $("#fugueKey").value === "F";
+      return prototype.subjectEvents.map((event, index) => noteName(event.midi, preferFlats) + ":" + (rhythm[index] || 1)).join(" ");
+    }
+
+    function applyPresetSubject() {
+      const type = presetSelect.value || "classic";
+      subjectInput.value = presetText(type);
+      state.lastFuguePresetText = subjectInput.value;
+    }
+
+    presetSelect.addEventListener("change", () => {
+      applyPresetSubject();
+      planFugue();
+    });
+    subjectInput.addEventListener("change", planFugue);
+    $("#fugueKey").addEventListener("change", () => {
+      const current = subjectInput.value.trim();
+      if (!current || current === String(state.lastFuguePresetText || "").trim()) applyPresetSubject();
+      planFugue();
+    });
+    $("#fugueMode").addEventListener("change", () => {
+      const current = subjectInput.value.trim();
+      if (!current || current === String(state.lastFuguePresetText || "").trim()) applyPresetSubject();
+      planFugue();
+    });
+    ["#fugueVoices", "#fugueAnswer", "#fugueLayout", "#fugueEntrySpacing", "#fugueRecap"].forEach((selector) => {
       $(selector).addEventListener("change", planFugue);
     });
     $("#btnPlanFugue").addEventListener("click", planFugue);
-    $("#fuguePrinciple").innerHTML = '<p class="eyebrow">先结构，后音符</p><h3>赋格骨架的五个判断</h3>' +
+    $("#btnPlayFugue").addEventListener("click", () => {
+      if (state.fugueResult) playEvents(state.fugueResult.playbackEvents, 0.24, "triangle");
+    });
+    $("#fuguePrinciple").innerHTML = '<p class="eyebrow">主题决定答题，答题决定后续空间</p><h3>赋格计划的七个判断</h3>' +
       '<div class="check-list"><ul>' +
-      ["主题能否在转调、倒影与密接中保持可辨认？", "答题是真实移位还是需要守调调整？", "所有声部是否在主属范围完成进入？", "间插段是否真正承担转调与动力？", "再现是否回到主调并改变材料关系？"].map((item) => "<li>" + esc(item) + "</li>").join("") +
-      "</ul></div>" + evidenceLinks(["fugue.subject-identity", "fugue.tonal-answer", "fugue.exposition-principles", "fugue.episode-function", "fugue.recap"], true) +
+      ["主题的音高、时值、音域和起句级数是否固定到可以逐次复制？", "答题采用守调还是真实移位，取决于主题是否触碰主属边界。", "呈示部是否让所有声部完成进入，并建立主调/属调关系？", "固定对题与主题在原位和转位都要能解释；不能只检查一个位置。", "间插段是否从主题或对题抽取动机，并明确把调性送到下一进入？", "密接和应是否真的让主题未结束就再次进入，而不是普通连续进入？", "持续音、再现与尾声是否分别承担属准备、主调回归与终止？"].map((item) => "<li>" + esc(item) + "</li>").join("") +
+      "</ul></div>" + evidenceLinks(["fugue.definition", "fugue.subject-identity", "fugue.subject-properties", "fugue.subject-memory", "fugue.answer-dominant", "fugue.tonal-answer", "fugue.countersubject", "fugue.exposition-order", "fugue.exposition-principles", "fugue.episode-definition", "fugue.episode-function", "fugue.middle", "fugue.stretto-definition", "fugue.stretto-difference", "fugue.pedal", "fugue.recap", "fugue.overall", "fugue.bach-structure"], true) +
       manualLink(["fugue.overall"], "打开赋格章");
+    applyPresetSubject();
     planFugue();
   }
 
@@ -360,41 +466,50 @@
       mode: $("#fugueMode").value,
       voices: Number($("#fugueVoices").value),
       answerType: $("#fugueAnswer").value,
-      subjectType: $("#fugueSubject").value,
-      layout: $("#fugueLayout").value
+      subjectType: $("#fugueSubjectPreset").value,
+      layout: $("#fugueLayout").value,
+      subjectText: $("#fugueSubjectNotes").value,
+      entrySpacing: $("#fugueEntrySpacing").value,
+      recapMode: $("#fugueRecap").value
     };
     let result;
     try {
       result = E.planFugue(settings);
     } catch (error) {
       renderIssues($("#fugueIssues"), [{ severity: "error", label: "生成失败", message: error.message }]);
+      $("#btnPlayFugue").disabled = true;
       return;
     }
     state.fugueResult = result;
     const preferFlats = /b/.test(settings.key) || settings.key === "F";
-    $("#fugueMeta").textContent = result.subjectNames.length + " 音主题 · " + result.answerNames.length + " 音答题 · 约 " + result.bars + " 小节骨架";
-    $("#fugueSubjectLine").innerHTML = '<div class="subject-line"><span class="subject-label">T</span><div class="subject-notes">' +
-      result.subject.map((midi) => '<span class="subject-note">' + esc(noteName(midi, preferFlats)) + "</span>").join("") +
-      '</div></div><div class="subject-line answer"><span class="subject-label">A</span><div class="subject-notes">' +
-      result.answer.map((midi) => '<span class="subject-note">' + esc(noteName(midi, preferFlats)) + "</span>").join("") + "</div></div>";
-    const totalBars = Math.max(1, ...result.sections.map((section) => section.end));
+    $("#fugueMeta").textContent = result.subjectNames.length + " 音主题 · " + result.subjectSpan + " 拍 · " + settings.voices + " 声部 · 约 " + result.bars + " 小节计划";
+    const invertibility = result.counterSubject && result.counterSubject.invertibility;
+    const csNote = invertibility && invertibility.total
+      ? "对题候选：原位协和 " + invertibility.directConsonant + "/" + invertibility.total + "，八度转位后仍协和 " + invertibility.passBoth + "/" + invertibility.total + "。转位失败处必须改音，不能直接当作固定对题。"
+      : "对题候选需要结合具体声部写作。";
+    $("#fugueSubjectLine").innerHTML = noteChipLine("T", result.subjectEvents, "theme", preferFlats) +
+      noteChipLine("A", result.answerEvents, "answer", preferFlats) +
+      (result.counterSubject ? noteChipLine("CS", result.counterSubject.events, "counter", preferFlats) : "") +
+      '<div class="subject-foot">' + esc(csNote) + "</div>";
+    renderScoreRows($("#fugueScore"), result.gridRows.map((row) => ({ name: row.name, marker: row.marker })), 4, "暂无主题进入。");
+    const totalBars = Math.max(1, result.bars);
     $("#fugueChart").innerHTML = '<div class="chart-scale">' + result.sections.map((section) => {
-      const span = Math.max(1, section.end - section.start + 1);
-      const width = Math.max(5, span / totalBars * 100);
-      const className = section.id.indexOf("stretto") === 0 ? "stretto" : section.id.indexOf("episode") === 0 ? "episode" : section.id.indexOf("middle") === 0 ? "middle" : section.id.indexOf("pedal") === 0 ? "pedal" : section.id.indexOf("recap") === 0 ? "recap" : "exposition";
-      return '<div class="chart-part ' + className + '" style="flex:0 0 ' + width.toFixed(2) + '%" title="' + esc(section.note) + '"><b>' + esc(section.label) + "</b><span>" + section.start + "–" + section.end + "</span></div>";
+      const width = Math.max(5, section.bars / totalBars * 100);
+      return '<div class="chart-part ' + esc(section.type) + '" style="flex:0 0 ' + width.toFixed(2) + '%" title="' + esc(section.summary || section.function) + '"><b>' + esc(section.label) + "</b><span>" + section.startBar + "–" + section.endBar + "</span></div>";
     }).join("") + "</div>";
+    renderFugueSectionPlans($("#fugueSections"), result.sections);
     const rows = result.entries.map((entry) => {
-      const noteText = entry.notes && entry.notes.length ? entry.notes.slice(0, 6).map((midi) => noteName(midi, preferFlats)).join(" ") + (entry.notes.length > 6 ? "…" : "") : "—";
-      return "<tr><td>" + esc(entry.section) + "</td><td>" + esc(entry.voice) + "</td><td>" + esc(entry.form) + "</td><td>" + esc(entry.key) + "</td><td>" + entry.bar + "</td><td>" + entry.beats + "</td><td class=note-cell>" + esc(noteText) + "</td></tr>";
+      const noteText = entry.events && entry.events.length ? eventList(entry.events, preferFlats) : "—";
+      return "<tr><td>" + esc(entry.section) + "</td><td>" + esc(entry.voice) + "</td><td>" + esc(entry.form) + "</td><td>" + esc(entry.key) + "</td><td>" + entry.startBar + "–" + entry.endBar + "</td><td>" + entry.beats + "</td><td class=note-cell>" + esc(noteText) + "</td><td class=note-cell>" + esc(entry.range) + "</td></tr>";
     }).join("");
-    $("#fugueTable").innerHTML = "<thead><tr><th>段落</th><th>声部</th><th>形式</th><th>调性</th><th>小节</th><th>拍数</th><th>音高轮廓</th></tr></thead><tbody>" + rows + "</tbody>";
-    const issues = result.diagnostics.map((item, index) => Object.assign({ label: "结构检查", id: "fugue-check-" + index }, item));
+    $("#fugueTable").innerHTML = "<thead><tr><th>段落</th><th>声部</th><th>形式</th><th>调性</th><th>起止小节</th><th>拍数</th><th>实际音高与时值</th><th>音域</th></tr></thead><tbody>" + rows + "</tbody>";
+    const issues = result.diagnostics.map((item, index) => Object.assign({ label: item.label || "结构检查", id: item.id || "fugue-check-" + index }, item));
     const errors = issues.filter((item) => item.severity === "error").length;
     const warnings = issues.filter((item) => item.severity === "warning").length;
     renderSummary($("#fugueSummary"), { errors, warnings, status: errors ? "需修改" : warnings ? "可生成，需复核" : "结构可用" });
     renderIssues($("#fugueIssues"), issues, "结构计划未发现硬性冲突。具体音高与纵向音程仍需逐段写作。");
-    $("#fugueSubjectLine").setAttribute("aria-label", "主题与答题音高轮廓");
+    $("#btnPlayFugue").disabled = !result.playbackEvents.length;
+    $("#fugueSubjectLine").setAttribute("aria-label", "主题、答题与对题候选");
   }
 
   function initChecker() {

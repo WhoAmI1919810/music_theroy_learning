@@ -66,6 +66,70 @@ test("canon applies transformation to the comes, not to both voices", () => {
   assert.equal(augmented.events.find((event) => event.voice === "comes").duration, 2);
 });
 
+test("multi-voice canon expands every voice across repeated cycles", () => {
+  const subject = ["C4", "D4", "E4", "G4", "A4"];
+  const result = E.generateCanon(subject, {
+    delay: 2,
+    interval: 12,
+    transform: "none",
+    voices: 4,
+    cycles: 2,
+    entryMode: "cumulative"
+  });
+  assert.equal(result.rows.length, 4);
+  assert.equal(result.entries.length, 8);
+  assert.equal(result.events.filter((event) => event.voice === "dux").length, subject.length * 2);
+  assert.equal(result.events.filter((event) => event.voice === "voice4").length, subject.length * 2);
+  assert.ok(result.entries.some((entry) => entry.round === 2 && entry.voiceId === "voice4"));
+  const voice3Start = Math.min(...result.events.filter((event) => event.voice === "voice3").map((event) => event.start));
+  const voice4Start = Math.min(...result.events.filter((event) => event.voice === "voice4").map((event) => event.start));
+  assert.ok(voice4Start > voice3Start);
+  assert.ok(result.totalBeats >= 16);
+});
+
+test("fugue accepts a user subject with rhythm and plans every section", () => {
+  const subjectText = "C4:1 D4:1 E4:2 G4:1 A4:2 G4:1 E4:1 D4:1 C4:2";
+  const result = E.planFugue({
+    key: "C",
+    mode: "major",
+    voices: 4,
+    answerType: "tonal",
+    subjectText,
+    layout: "standard",
+    entrySpacing: "auto"
+  });
+  assert.deepEqual(result.subject, [60, 62, 64, 67, 69, 67, 64, 62, 60]);
+  assert.deepEqual(result.subjectEvents.map((event) => event.duration), [1, 1, 2, 1, 2, 1, 1, 1, 2]);
+  assert.equal(result.subjectSpan, 12);
+  assert.equal(result.source, "custom");
+  assert.equal(result.entries.filter((entry) => entry.section === "呈示部").length, 4);
+  assert.deepEqual(result.entries.find((entry) => entry.section === "呈示部").events.map((event) => event.duration), [1, 1, 2, 1, 2, 1, 1, 1, 2]);
+  assert.ok(result.sections.some((section) => section.type === "episode" && section.material.length));
+  assert.ok(result.sections.some((section) => section.type === "stretto" && section.checkpoints.length));
+  assert.ok(result.sections.some((section) => section.type === "pedal" && section.cadence));
+  assert.ok(result.sections.every((section) => section.function && section.material && section.tonalPlan && section.texture && section.cadence && section.task));
+  assert.ok(result.counterSubject.events.length === result.subjectEvents.length);
+  assert.ok(result.counterSubject.invertibility.total === result.subjectEvents.length);
+  assert.ok(result.playbackEvents.length > result.subjectEvents.length);
+});
+
+test("fugue can mark the recap with an inverted subject", () => {
+  const result = E.planFugue({
+    key: "C",
+    mode: "major",
+    voices: 3,
+    answerType: "tonal",
+    subjectType: "classic",
+    layout: "compact",
+    recapMode: "inversion"
+  });
+  const recap = result.entries.find((entry) => entry.section === "再现");
+  assert.equal(recap.form, "主题倒影");
+  assert.notDeepEqual(recap.notes, result.subject);
+  assert.equal(recap.key, "主调");
+  assert.ok(recap.notes.every((midi) => [0, 2, 4, 5, 7, 9, 11].includes(E.pitchClass(midi))));
+});
+
 test("checker identifies parallel fifths and strong-beat dissonance", () => {
   const parallel = E.analyzeCounterpoint("S: C5 D5 E5 F5 G5\nA: F4 G4 A4 B4 C5", { beatsPerBar: 4, style: "strict" });
   assert.ok(parallel.issues.some((issue) => issue.type === "parallel-fifth"));

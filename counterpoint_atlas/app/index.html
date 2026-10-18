@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#0c1218">
-<meta name="description" content="复调写作推演台：分类对位、卡农、赋格骨架、声部检查与教材页证据。">
+<meta name="description" content="复调写作推演台：分类对位、2–6 声部多轮卡农、自定义主题赋格逐段计划、声部检查与教材页证据。">
 <title>复调推演台 · Counterpoint Atlas</title>
 <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2032%2032'%3E%3Crect%20width='32'%20height='32'%20rx='8'%20fill='%23eeb15b'/%3E%3Ctext%20x='16'%20y='23'%20text-anchor='middle'%20font-size='20'%20font-family='serif'%20fill='%2320170c'%3EC%3C/text%3E%3C/svg%3E">
 <link rel="stylesheet" href="css/style.css">
@@ -34,7 +34,7 @@
   <section class="hero" aria-labelledby="hero-title">
     <p class="eyebrow">规则 · 生成 · 检查 · 可回查</p>
     <h1 id="hero-title">把复调写作拆成可检查的条件</h1>
-    <p class="lead">从五类对位的强拍与不协和处理，到卡农的进入关系、赋格的调性布局。生成器只给规则合格的骨架，检查器指出具体声部、拍点与冲突。</p>
+    <p class="lead">从五类对位的强拍与不协和处理，到多声部多轮卡农，再到读取自选主题的赋格逐段计划。生成器展开实际声部与位置，检查器指出具体拍点和冲突。</p>
     <div class="hero-notes">
       <span><b>46</b> 个教材页锚点</span>
       <span><b>40</b> 条直接论点</span>
@@ -93,30 +93,37 @@
 
     <section class="tab-panel" id="panel-canon">
       <div class="section-head">
-        <div><p class="eyebrow">时间差 + 音程 + 变形</p><h2>卡农不是重复，是可预测的复制</h2></div>
-        <p class="section-note">先写应句进入前的主句片段，再按音程抄写，最后续写主句与已出现应句相对的部分。生成器按这一顺序模拟。</p>
+        <div><p class="eyebrow">时间差 + 音程 + 变形 + 声部层</p><h2>从两声部一句，推到多声部多轮</h2></div>
+        <p class="section-note">每个后续声部都按同一主句复制；可以叠加到六声部，并让每次进入连续重复多轮。生成器会把所有声部逐拍展开，再检查每一对实际发声。</p>
       </div>
       <div class="tool-grid canon-tools">
         <section class="panel controls">
           <label class="field"><span>主句预设</span><select id="subjectPreset"></select></label>
           <label class="field"><span>主句音高（可编辑）</span><textarea id="canonSubject" rows="3" spellcheck="false"></textarea></label>
-          <div class="control-row">
-            <label class="field"><span>进入延迟（拍）</span><select id="canonDelay"><option value="2">2 拍</option><option value="4" selected>4 拍（1 小节）</option><option value="6">6 拍</option><option value="8">8 拍（2 小节）</option></select></label>
-            <label class="field"><span>音程</span><select id="canonInterval"><option value="12" selected>上八度</option><option value="7">上五度</option><option value="-5">下四度</option><option value="9">上六度</option><option value="16">上十度</option><option value="0">同度</option></select></label>
+          <div class="control-row three">
+            <label class="field"><span>声部数</span><select id="canonVoices"><option value="2" selected>2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option></select></label>
+            <label class="field"><span>相邻进入延迟</span><select id="canonDelay"><option value="2">2 拍</option><option value="4" selected>4 拍（1 小节）</option><option value="6">6 拍</option><option value="8">8 拍（2 小节）</option></select></label>
+            <label class="field"><span>追句音程</span><select id="canonInterval"><option value="12" selected>上八度</option><option value="7">上五度</option><option value="-5">下四度</option><option value="9">上六度</option><option value="16">上十度</option><option value="0">同度</option></select></label>
           </div>
-          <label class="field"><span>变形</span><select id="canonTransform"><option value="none" selected>原形</option><option value="inversion">倒影</option><option value="retrograde">逆行</option><option value="augmentation">扩大时值</option></select></label>
+          <div class="control-row three">
+            <label class="field"><span>多声部叠入</span><select id="canonEntryMode"><option value="cumulative" selected>逐声部累积移位</option><option value="alternating">主调/属调交替</option><option value="octaves">逐声部八度分层</option></select></label>
+            <label class="field"><span>应句变形</span><select id="canonTransform"><option value="none" selected>原形</option><option value="inversion">倒影</option><option value="retrograde">逆行</option><option value="retrograde-inversion">逆行倒影</option><option value="augmentation">扩大时值</option></select></label>
+            <label class="field"><span>每声部轮数</span><select id="canonCycles"><option value="1" selected>1 轮</option><option value="2">2 轮</option><option value="3">3 轮</option><option value="4">4 轮</option></select></label>
+          </div>
           <div class="button-row"><button class="button primary" id="btnGenerateCanon" type="button">生成卡农关系</button><button class="button" id="btnPlayCanon" type="button" disabled>▶ 试听</button></div>
         </section>
         <section class="panel principle-card">
-          <p class="eyebrow">两个必须同时成立的平面</p><h3>横向：应句复制主句；纵向：重叠处仍能对位</h3>
-          <p>进入延迟决定重叠密度；音程决定应句的音区与调性后果；变形改变旋律轮廓或时值，但不取消这两个平面。</p>
-          <div class="rule-pair"><div><b>非八度卡农</b><span>精确移位可能产生临时升降号；为保持调性，应句常需改动个别音。</span></div><div><b>紧接进入</b><span>时间差越小，声部越容易交错；同度/二度卡农常改写为八度/十度。</span></div></div>
+          <p class="eyebrow">每个声部都要同时满足横向复制与纵向对位</p><h3>多声部不是把二声部练习并排叠加</h3>
+          <p>每个后续声部都按延迟复制主句；只要存在第三个声部，就要同时检查 V1–V2、V1–V3、V2–V3。多轮重复还要检查每轮接缝，因为接缝同样会产生新的模仿与叠置。</p>
+          <div class="rule-pair"><div><b>非八度卡农</b><span>精确移位可能产生临时升降号；为保持调性，应句常需改动个别音。</span></div><div><b>紧接进入</b><span>时间差越小，声部越容易交错；同度/二度卡农常改写为八度/十度。</span></div><div><b>多声部叠入</b><span>累积五度会迅速抬高音区；实际输出会折返八度，但声部关系仍须逐对复核。</span></div><div><b>多轮周期</b><span>相似进入会重复出现；若主题长于延迟，轮次之间会形成持续叠置。</span></div></div>
           <div class="source-links" id="canonSources"></div>
         </section>
       </div>
       <section class="panel output-panel">
-        <div class="panel-head"><h3>两声部时间网格</h3><span class="muted" id="canonMeta"></span></div>
+        <div class="panel-head"><h3>多声部时间网格</h3><span class="muted" id="canonMeta"></span></div>
         <div class="score-scroll" id="canonScore"><div class="empty-state">生成后显示主句与应句。</div></div>
+        <div class="subhead"><h4>声部进入与叠置计划</h4><span>进入位置、实际移位、每轮关系与音域</span></div>
+        <div class="table-wrap"><table class="plan-table" id="canonTable"></table></div>
         <div class="diagnostic-summary" id="canonSummary"></div>
         <div class="issue-list" id="canonIssues"></div>
       </section>
@@ -124,29 +131,38 @@
 
     <section class="tab-panel" id="panel-fugue">
       <div class="section-head">
-        <div><p class="eyebrow">主题进入 × 调性运动</p><h2>先搭结构，再写具体对位</h2></div>
-        <p class="section-note">赋格骨架只决定：谁在什么时候、什么调、以主题还是答题进入，以及间插、紧接、持续音和再现的位置。</p>
+        <div><p class="eyebrow">给定主题 × 调性运动 × 逐段任务</p><h2>把自己的主题写成可执行的赋格计划</h2></div>
+        <p class="section-note">录入带时值的主题后，系统生成答题、对题候选、声部进入表，并把呈示、间插、中间进入、密接、持续音、再现与尾声逐段拆成材料、调性、织体、终止和检查任务。</p>
       </div>
       <div class="tool-grid">
         <section class="panel controls fugue-controls">
+          <label class="field"><span>主题预设</span><select id="fugueSubjectPreset"></select></label>
+          <label class="field"><span>主题音高与时值（每音用音名，冒号后为拍数）</span><textarea id="fugueSubjectNotes" rows="4" spellcheck="false"></textarea></label>
+          <div class="field-help">例：<code>C4:1 D4:1 E4:2 G4:1</code>。不写时值默认为 1 拍；休止可用 <code>-:2</code>。换主音或调式时，未改动的预设主题会自动跟随。</div>
           <div class="control-row three">
             <label class="field"><span>主音</span><select id="fugueKey"></select></label>
             <label class="field"><span>调式</span><select id="fugueMode"><option value="major">大调</option><option value="minor">小调</option></select></label>
             <label class="field"><span>声部</span><select id="fugueVoices"><option value="2">2</option><option value="3" selected>3</option><option value="4">4</option><option value="5">5</option></select></label>
           </div>
-          <div class="control-row">
+          <div class="control-row three">
             <label class="field"><span>答题</span><select id="fugueAnswer"><option value="tonal" selected>守调答题</option><option value="real">真实答题</option></select></label>
-            <label class="field"><span>主题轮廓</span><select id="fugueSubject"><option value="classic" selected>级进拱形</option><option value="leaping">跳进型</option><option value="compact">短小型</option><option value="chromatic">半音型</option></select></label>
+            <label class="field"><span>结构规模</span><select id="fugueLayout"><option value="standard" selected>标准：两次中间进入</option><option value="compact">紧凑：呈示 + 紧接 + 再现</option></select></label>
+            <label class="field"><span>声部进入间隔</span><select id="fugueEntrySpacing"><option value="auto" selected>自动（容纳主题）</option><option value="1">1 小节</option><option value="2">2 小节</option><option value="4">4 小节</option></select></label>
           </div>
-          <label class="field"><span>结构规模</span><select id="fugueLayout"><option value="standard" selected>标准：中间部 + 紧接 + 持续音</option><option value="compact">紧凑：呈示 + 紧接 + 再现</option></select></label>
-          <div class="button-row"><button class="button primary" id="btnPlanFugue" type="button">生成赋格结构计划</button></div>
+          <label class="field"><span>再现形态</span><select id="fugueRecap"><option value="original" selected>原形回到主调</option><option value="inversion">倒影回到主调</option></select></label>
+          <div class="button-row"><button class="button primary" id="btnPlanFugue" type="button">生成赋格结构计划</button><button class="button" id="btnPlayFugue" type="button" disabled>▶ 试听主题进入</button></div>
         </section>
         <section class="panel principle-card" id="fuguePrinciple"></section>
       </div>
       <section class="panel output-panel">
         <div class="panel-head"><h3>主题与答题</h3><span class="muted" id="fugueMeta"></span></div>
         <div class="subject-strip" id="fugueSubjectLine"></div>
+        <div class="mini-note">声部网格只显示主题、答题与持续音的进入骨架；间插段和对题的实际织体见下方逐段计划。</div>
+        <div class="score-scroll" id="fugueScore"><div class="empty-state">生成后显示各声部的主题/答题进入。</div></div>
         <div class="chart-wrap"><div class="structure-chart" id="fugueChart"></div></div>
+        <div class="subhead"><h4>逐段写作计划</h4><span>每段的材料、调性、织体、终止与交付检查</span></div>
+        <div class="section-plan-grid" id="fugueSections"></div>
+        <div class="subhead"><h4>主题进入表</h4><span>完整音高、时值、声部、调性与起止位置</span></div>
         <div class="table-wrap"><table class="plan-table" id="fugueTable"></table></div>
         <div class="diagnostic-summary" id="fugueSummary"></div>
         <div class="issue-list" id="fugueIssues"></div>
