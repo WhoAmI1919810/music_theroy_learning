@@ -7,7 +7,7 @@
       "id": "hist.style-system",
       "group": "history",
       "title": "对位规则依附于当时的调式与和声语言",
-      "principle": "分类对位不是超历史的自然法。文艺复兴调式、巴洛克大小调与二十世纪音高组织，会改变什么算协和、什么算必须解决的 dissonance。",
+      "principle": "分类对位受历史语法约束。文艺复兴调式、巴洛克大小调与二十世纪音高组织，会改变什么算协和、什么算必须解决的 dissonance。",
       "manualAnchor": "periods",
       "citations": [
         {
@@ -46,7 +46,7 @@
     {
       "id": "hist.strict-training",
       "group": "history",
-      "title": "严格复对位是进入自由写作的训练，不是创作禁令",
+      "title": "严格复对位是进入自由写作的训练",
       "principle": "复对位的严格练习把可转位性、协和框架与声部独立压缩成可控条件；实际作品仍按风格放松细节。",
       "manualAnchor": "periods",
       "citations": [
@@ -220,7 +220,7 @@
       "id": "species.fifth-rhythm",
       "group": "species",
       "title": "第五类：混合节奏仍服从强拍和声，但不能机械重复",
-      "principle": "第五类把前四类的音型合并。判断标准不是音符越多越自由，而是每个结构强拍仍能读出和声，同时各声部的节奏重音错开。",
+      "principle": "第五类把前四类的音型合并。判断标准是每个结构强拍仍能读出和声，同时各声部的节奏重音错开。",
       "manualAnchor": "species-5",
       "citations": [
         {
@@ -241,7 +241,7 @@
       "id": "invert.definition",
       "group": "invertible",
       "title": "复对位：交换声部后和声仍然成立",
-      "principle": "复对位的核心不是“写两条好旋律”，而是同一对音高关系在上下交换后仍满足纵向规则。写作时必须同时检查原位与转位。",
+      "principle": "复对位的核心是同一对音高关系在上下交换后仍满足纵向规则。写作时必须同时检查原位与转位。",
       "manualAnchor": "invertible",
       "citations": [
         {
@@ -303,7 +303,7 @@
       "id": "canon.definition",
       "group": "canon",
       "title": "卡农是完全模仿；应句持续追随主句",
-      "principle": "卡农不是“听起来像模仿”，而是应句按确定的时间差和音程关系复制主句。局部停止模仿后转入自由对位的，不再构成完整卡农。",
+      "principle": "卡农要求应句按确定的时间差和音程关系复制主句。局部停止模仿后转入自由对位的，不再构成完整卡农。",
       "manualAnchor": "canon",
       "citations": [
         {
@@ -366,7 +366,7 @@
       "id": "canon.overlap",
       "group": "canon",
       "title": "紧接进入会压缩声部空间",
-      "principle": "同度或二度卡农常因声部交错难以辨认，于是改写为八度或十度卡农；这不是规避规则，而是在保持卡农关系的同时保留声部辨识度。",
+      "principle": "同度或二度卡农常因声部交错难以辨认，于是改写为八度或十度卡农；这样既保持卡农关系，也保留声部辨识度。",
       "manualAnchor": "canon",
       "citations": [
         {
@@ -380,7 +380,7 @@
     {
       "id": "fugue.definition",
       "group": "fugue",
-      "title": "赋格用模仿与对比展开一个固定主题，不等于通篇卡农",
+      "title": "赋格用模仿与对比展开一个固定主题",
       "principle": "卡农要求从头到尾精确模仿；赋格只把模仿作为结构手段，并加入调性布局、对题、间插段、紧接和再现。",
       "manualAnchor": "fugue-overall",
       "citations": [
@@ -403,7 +403,7 @@
       "id": "fugue.subject-identity",
       "group": "fugue",
       "title": "主题必须可辨认、可重复、可发展",
-      "principle": "主题不是随便一句旋律。首部要有清楚的动机与节奏标记，使它在转调、扩大、倒影或密接中仍能被听出；同时要能承载答题、对题和间插段。",
+      "principle": "主题要有清楚的动机与节奏标记，使它在转调、扩大、倒影或密接中仍能被听出；同时要能承载答题、对题和间插段。",
       "manualAnchor": "fugue-subject",
       "citations": [
         {
@@ -459,7 +459,7 @@
       "id": "fugue.answer-dominant",
       "group": "fugue",
       "title": "答题是主题在属方向的回答",
-      "principle": "答题不是新主题。它通常把主题移高五度或移低四度，使呈示部的主、属两极建立起来；答题的尾部若回主调，就完成一次调性往返。",
+      "principle": "答题通常把主题移高五度或移低四度，使呈示部的主、属两极建立起来；答题的尾部若回主调，就完成一次调性往返。",
       "manualAnchor": "fugue-answer",
       "citations": [
         {
@@ -509,7 +509,7 @@
       "id": "fugue.countersubject",
       "group": "fugue",
       "title": "对题在答题进入时形成，固定对题要与主题构成可转位关系",
-      "principle": "对题不是伴奏。它在答题出现时与主题的声部继续对位，常以节奏和音调的对比补足主题；若每次随主题出现，就须按二重对位写作，使上下交换仍成立。",
+      "principle": "对题在答题出现时与主题的声部继续对位，常以节奏和音调的对比补足主题；若每次随主题出现，就须按二重对位写作，使上下交换仍成立。",
       "manualAnchor": "fugue-countersubject",
       "citations": [
         {
@@ -553,7 +553,7 @@
       "id": "fugue.exposition-principles",
       "group": "fugue",
       "title": "呈示部要求所有声部出场，并建立主属调性",
-      "principle": "呈示部不是“主题第一次出现”的同义词，而是所有声部依次陈述主题或答题的段落。它通常停在主调，随后才进入中间部。",
+      "principle": "呈示部由所有声部依次陈述主题或答题。它通常停在主调，随后才进入中间部。",
       "manualAnchor": "fugue-exposition",
       "citations": [
         {
@@ -575,7 +575,7 @@
       "id": "fugue.episode-definition",
       "group": "fugue",
       "title": "间插段位于主题再次进入之前",
-      "principle": "间插段不是主题陈述，而是连接。它通常从主题或对题抽取动机，以模进、模仿或转位推进和声，并把音乐送到下一调的入口。",
+      "principle": "间插段承担连接。它通常从主题或对题抽取动机，以模进、模仿或转位推进和声，并把音乐送到下一调的入口。",
       "manualAnchor": "fugue-episode",
       "citations": [
         {
@@ -674,7 +674,7 @@
     {
       "id": "fugue.stretto-difference",
       "group": "fugue",
-      "title": "密接和应不是整首卡农",
+      "title": "密接和应的局部重叠",
       "principle": "它只在局部让主题重叠；重叠结束后仍回到自由对位、间插或下一次主题进入。",
       "manualAnchor": "fugue-stretto",
       "citations": [
@@ -697,7 +697,7 @@
       "id": "fugue.recap",
       "group": "fugue",
       "title": "再现以主调回归为骨架，常带变化",
-      "principle": "再现不是把呈示部抄一遍。它通常回到主调，并改变声部顺序、对题、紧接、织体或主题变形，使前面材料获得总结。",
+      "principle": "再现通常回到主调，并改变声部顺序、对题、紧接、织体或主题变形，使前面材料获得总结。",
       "manualAnchor": "fugue-recap",
       "citations": [
         {
@@ -770,7 +770,7 @@
       "id": "fugue.multiple",
       "group": "fugue",
       "title": "二重/三重赋格：每个主题都有独立呈示与发展",
-      "principle": "多主题赋格不是把两个动机硬叠在一起。每个主题要能独立成为完整乐思，并预先写成可转位的组合，才能在再现中交换声部。",
+      "principle": "多主题赋格要求每个主题能独立成为完整乐思，并预先写成可转位的组合，才能在再现中交换声部。",
       "manualAnchor": "fugue-multiple",
       "citations": [
         {
@@ -836,7 +836,7 @@
       "id": "modern.parallels",
       "group": "modern",
       "title": "现代对位可以允许平行五度",
-      "principle": "当纵向音响不再由传统三和弦功能主导时，平行完全音程可以成为有控制的线条结果。米德尔顿的规则同时保留了纯八度的限制；这不是“所有现代作品都如此”。",
+      "principle": "当纵向音响不再由传统三和弦功能主导时，平行完全音程可以成为有控制的线条结果。米德尔顿的规则同时保留了纯八度的限制。",
       "manualAnchor": "modern",
       "citations": [
         {

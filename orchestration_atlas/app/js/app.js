@@ -145,7 +145,7 @@
     const timeline = document.getElementById("periodTimeline");
     timeline.innerHTML = PERIODS.map((period) =>
       '<button class="period-card' + (period.id === state.selectedPeriod ? " active" : "") + '" type="button" data-period="' + period.id + '">' +
-        "<b>" + escapeHTML(period.label) + "</b><span>" + escapeHTML(period.range) + "</span><small>" + escapeHTML(period.summary) + "</small></button>"
+        "<span>" + escapeHTML(period.range) + "</span><b>" + escapeHTML(period.label) + "</b></button>"
     ).join("");
     timeline.querySelectorAll("[data-period]").forEach((button) => {
       button.addEventListener("click", () => {
@@ -158,7 +158,7 @@
     const eightIds = ["M11", "M05", "M06", "M13", "M03", "M17", "M19", "M20"];
     document.getElementById("overviewMechanisms").innerHTML = eightIds.map((id) => {
       const mechanism = MECHANISM_MAP[id];
-      return '<button class="mini-card" type="button" data-mechanism="' + id + '"><b>' + escapeHTML(mechanism.title) + "</b><span>" + escapeHTML(mechanism.principle) + "</span></button>";
+      return '<button class="mechanism-row" type="button" data-mechanism="' + id + '"><b>' + escapeHTML(mechanism.title) + "</b><span>" + escapeHTML(mechanism.principle) + "</span></button>";
     }).join("");
     document.querySelectorAll("[data-mechanism]").forEach((button) => {
       button.addEventListener("click", () => openMechanism(button.dataset.mechanism));
@@ -174,8 +174,8 @@
       return '<a href="' + citationHref(Object.assign({ claimId: claim.id }, citation)) + '" target="_blank" rel="noopener">' + escapeHTML(BOOK_MAP[citation.book].short) + " " + pageLabel(citation.pdfPage) + "</a>";
     }).filter(Boolean).join(" · ");
     document.getElementById("periodDetail").innerHTML =
-      "<p>" + escapeHTML(period.summary) + "</p><ul>" + period.changes.map((change) => "<li>" + escapeHTML(change) + "</li>").join("") + "</ul>" +
-      '<p class="footnote">阶段依据：' + sourceLinks + "</p>";
+      "<p>" + escapeHTML(period.summary) + "</p><p>" + period.changes.map((change) => escapeHTML(change)).join("；") + "。</p>" +
+      '<p class="footnote">教材依据：' + sourceLinks + "</p>";
   }
 
   function initStudio() {
@@ -475,7 +475,7 @@
     return '<details class="candidate-details"><summary>评分与备选</summary>' +
       '<div class="feature-grid"><span>舒适音区<b>' + pct(features.comfort) + '</b></span><span>角色适配<b>' + pct(features.roleFit) + '</b></span><span>力度余量<b>' + pct(features.dynamicFit) + '</b></span><span>敏捷度<b>' + pct(features.agilityFit) + '</b></span><span>持续力<b>' + pct(features.sustainFit) + '</b></span><span>掩蔽惩罚<b>' + pct(features.maskingPenalty) + '</b></span></div>' +
       (alternatives ? '<div class="candidate-list"><b>同层备选</b><ol>' + alternatives + '</ol></div>' : '') +
-      '<p class="score-note">' + (assignment.manual ? "手选乐器不参与自动排名；这些指标只用于核对音区、角色与持续能力。" : "相对分只用于同一结构层的候选比较，不是作品质量分。") + '</p></details>';
+      '<p class="score-note">' + (assignment.manual ? "手选乐器不参与自动排名；这些指标只用于核对音区、角色与持续能力。" : "相对分只比较同一结构层内的候选，表示相对适配度。") + '</p></details>';
   }
 
   function renderAssignments(plan) {

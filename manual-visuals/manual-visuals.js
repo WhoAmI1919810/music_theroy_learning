@@ -101,21 +101,21 @@
   function sectionLead(kind) {
     var text = {
       constraint: '把同一条写法放回四层条件中检查；任何一层未定义，后面的“能不能用”都没有唯一答案。',
-      periods: '历史阶段改变的是材料、不协和处理与结构化方式，而不是把旧规则简单宣布为错误。',
-      intervals: '横轴是半音距离。完全协和、不完全协和与不协和不是审美等级，而是这个语法中的位置与解决要求。',
-      species: '节奏型决定强拍能放什么、弱拍能容纳什么；音符密度不是难度本身。',
+      periods: '历史阶段改变材料、不协和处理与结构化方式。',
+      intervals: '横轴是半音距离。完全协和、不完全协和与不协和表示这个语法中的位置与解决要求。',
+      species: '节奏型决定强拍能放什么、弱拍能容纳什么；难度由不协和的处理条件决定。',
       inversion: '复对位的关键是可计算的转位结果：原形通过交换声部得到新的音程，再逐拍验算。',
       canon: '五个参数共同决定重叠密度与声部空间；先写死主句再整体平移，通常会在重叠段失效。',
       canonTypes: '所有卡农都保留“复制”关系，变化发生在移位、方向、时值与声部组合。',
-      fugue: '赋格不是持续卡农；它把主题进入、调性工作、间插与收束组织成三段功能。',
+      fugue: '赋格把主题进入、调性工作、间插与收束组织成三段功能。',
       diagnosis: '按“材料→纵向→横向→结构”的顺序定位问题，避免用声部数量或力度掩盖前面的语法错误。',
       evidence: '色条只表示各组条目数，不表示论证强度；每条论点的页码与原文仍在下方原始表中。',
-      books: '书的页数不等于权重；这里只把每本教材的分工、代表页与引用页面放在同一视线上。',
+      books: '这里并排列出每本教材的分工、代表页与引用页面。',
       principles: '每条原理都压缩成“物理/听觉条件→直接操作”。先改变条件，再增加乐器或力度。',
       relations: '配器同时处理纵向、横向、音色与权重四个关系；任何一项单独最优都可能破坏其余三项。',
       orchestrationPeriods: '乐器构造与演奏技术变化会扩大可用手段；声学条件本身没有随时代改变。',
       ranges: '色条给出实际音域与舒适音区。音域是简化范围，实际可用性还受演奏者、力度、连奏与音准控制影响。',
-      layers: '结构层不是乐器清单；先确定听者应该辨认什么，再决定由谁演奏。',
+      layers: '先确定听者应辨认的结构层，再决定由谁演奏。',
       roles: '前景、中景、背景必须落实到音区、起音、力度与事件密度；只在分析表上写“前景”不会改变听觉。',
       trouble: '从左到右是修正顺序：先检查条件，再移动音区或错开起音，最后才增加人数与力度。',
       orchestrationBooks: '这里显示每本教材在本手册中的分工与已引用页数，完整页面入口仍在下方原始表中。'
@@ -137,7 +137,7 @@
       stack.appendChild(row);
     });
     visual.body.appendChild(stack);
-    visual.body.appendChild(note('四层不是并列清单：材料与时间先限制可用音程，声部关系再限制纵向写法，曲式功能最后决定该手法在此处是否有意义。'));
+    visual.body.appendChild(note('四层依次限制：材料与时间先限制可用音程，声部关系再限制纵向写法，曲式功能最后决定该手法在此处是否有意义。'));
     return visual;
   }
 
@@ -212,7 +212,7 @@
       legend.appendChild(entry);
     });
     visual.body.appendChild(legend);
-    visual.body.appendChild(note('纯四度被放在“二声部中通常不协和”的位置。这不是声学上比三度更粗糙，而是此语法要求它由三度、六度或终止公式解释。'));
+    visual.body.appendChild(note('纯四度被放在“二声部中通常不协和”的位置。此语法要求它由三度、六度或终止公式解释。'));
     return visual;
   }
 
@@ -250,7 +250,7 @@
       list.appendChild(row);
     });
     visual.body.appendChild(list);
-    visual.body.appendChild(note('圆点表示对位声部的发声音点，竖线位置表示固定调或小节骨架。第四类与第五类的难点在于不协和的进入位置，而不是音符数量。'));
+    visual.body.appendChild(note('圆点表示对位声部的发声音点，竖线位置表示固定调或小节骨架。第四类与第五类的难点在于不协和的进入位置。'));
     return visual;
   }
 
@@ -288,7 +288,7 @@
       grid.appendChild(card);
     });
     visual.body.appendChild(grid);
-    visual.body.appendChild(note('参数不是五个独立旋钮：改变进入延迟会改变每拍同时发声的声部数，改变时值会改变不协和落在强拍还是弱拍。'));
+    visual.body.appendChild(note('五个参数相互牵连：改变进入延迟会改变每拍同时发声的声部数，改变时值会改变不协和落在强拍还是弱拍。'));
     return visual;
   }
 
@@ -303,7 +303,7 @@
       append(card,
         element('h4', '', cellText(cells[0])),
         element('p', '', '复制：' + cellText(cells[1])),
-        field('写作要点', cellText(cells[2])));
+        field('写法', cellText(cells[2])));
       list.appendChild(card);
     });
     append(map, root, list);
@@ -449,7 +449,7 @@
   }
 
   function renderRelationQuadrants(rows) {
-    var visual = makeVisual('四维关系', '配器不是音色清单，而是四组同时成立的约束', sectionLead('relations'));
+    var visual = makeVisual('四维关系', '配器：四组同时成立的约束', sectionLead('relations'));
     var grid = element('div', 'mtv-quadrants');
     rows.forEach(function (cells) {
       var card = element('article', 'mtv-quadrant');
@@ -460,7 +460,7 @@
       grid.appendChild(card);
     });
     visual.body.appendChild(grid);
-    visual.body.appendChild(note('四组关系没有固定优先级；当旋律被盖住时，先查纵向音区与横向事件密度，再查音色与权重，而不是先加人数。'));
+    visual.body.appendChild(note('四组关系没有固定优先级；当旋律被盖住时，先查纵向音区与横向事件密度，再查音色与权重，最后考虑人数。'));
     return visual;
   }
 

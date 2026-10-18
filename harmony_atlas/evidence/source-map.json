@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "note": "所有页码均为 PDF 物理页码（从 PDF 第 1 页起算），不是书内印刷页码。引文用于核验论点，不作为乐谱校勘文本；涉及临时记号与谱例时仍应回看 PDF。",
+  "note": "所有页码均为 PDF 物理页码（从 PDF 第 1 页起算），与书内印刷页码分开。引文用于核验论点，不作为乐谱校勘文本；涉及临时记号与谱例时仍应回看 PDF。",
   "claims": [
     {
       "id": "interval.inversion",
@@ -165,7 +165,7 @@
     {
       "id": "diatonic.function-sequence",
       "node": "diatonic",
-      "claim": "功能和声的基本序列是稳定—不稳定—稳定，典型为 T–S–D–T；D–S 属特殊情况而非常规。",
+      "claim": "功能和声的基本序列是稳定—不稳定—稳定，典型为 T–S–D–T；D–S 属特殊情况。",
       "books": [
         {
           "book": "sangtong_tutorial",
@@ -2043,7 +2043,7 @@
     {
       "id": "function-network.definition",
       "node": "functionNetwork",
-      "claim": "功能网是诸种和声进行与调性中心之间的逻辑关系及其相互关系的总图，而非单一和弦的功能标签。",
+      "claim": "功能网是诸种和声进行与调性中心之间的逻辑关系及其相互关系的总图；单个和弦标签不足以概括。",
       "books": [
         {
           "book": "tong_function_net",
@@ -2291,7 +2291,7 @@
     {
       "id": "atonal.harmony-not-tonality",
       "node": "atonal",
-      "claim": "和声技法不等于调性功能；剥除调性功能后，和弦仍可作为具有自身结构的音响单位被组织。",
+      "claim": "和声技法可与调性功能分离；剥除调性功能后，和弦仍可作为具有自身结构的音响单位被组织。",
       "books": [
         {
           "book": "kizler_20c",
@@ -2309,7 +2309,7 @@
     {
       "id": "atonal.harmony-technique-survives",
       "node": "atonal",
-      "claim": "功能性和声的退场不等于和声技法死亡；二十世纪音乐继续以音高、音色、密度、音区与织体组织纵向关系。",
+      "claim": "功能性和声退场后，和声技法继续以音高、音色、密度、音区与织体组织纵向关系。",
       "books": [
         {
           "book": "kizler_20c",
@@ -2471,7 +2471,7 @@
     {
       "id": "modal-interchange.beethoven-mode-mixture",
       "node": "modalInterchange",
-      "claim": "贝多芬把调式交替用于奏鸣曲式的主题与调性对比，使色彩变化承担结构作用，而非只是局部装饰。",
+      "claim": "贝多芬把调式交替用于奏鸣曲式的主题与调性对比，使色彩变化承担结构作用，超出局部装饰。",
       "books": [
         {
           "book": "beethoven_sonata",
@@ -2593,7 +2593,7 @@
     {
       "id": "color-harmony.color-progression",
       "node": "colorHarmony",
-      "claim": "连续采用较强色彩对比的和声进行可组织为色彩性和弦序列，其逻辑是色彩张力与解决，而非传统 T–S–D 的简单替代。",
+      "claim": "连续采用较强色彩对比的和声进行可组织为色彩性和弦序列，其逻辑是色彩张力与解决，可独立于传统 T–S–D。",
       "books": [
         {
           "book": "huacui_color",

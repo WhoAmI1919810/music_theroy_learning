@@ -25,7 +25,7 @@
     ],
     romantic: [
       "先判断复调素材在整体曲式中承担什么结构功能。",
-      "把可转位、卡农或赋格段放进主调织体，而不是孤立练习。",
+      "把可转位、卡农或赋格段放进主调织体，结合真实作品练习。",
       "用实际作品的半音语法复核声部解决，不机械套用严格规则。"
     ],
     modern: [
@@ -453,7 +453,7 @@
     });
     $("#fuguePrinciple").innerHTML = '<p class="eyebrow">主题决定答题，答题决定后续空间</p><h3>赋格计划的七个判断</h3>' +
       '<div class="check-list"><ul>' +
-      ["主题的音高、时值、音域和起句级数是否固定到可以逐次复制？", "答题采用守调还是真实移位，取决于主题是否触碰主属边界。", "呈示部是否让所有声部完成进入，并建立主调/属调关系？", "固定对题与主题在原位和转位都要能解释；不能只检查一个位置。", "间插段是否从主题或对题抽取动机，并明确把调性送到下一进入？", "密接和应是否真的让主题未结束就再次进入，而不是普通连续进入？", "持续音、再现与尾声是否分别承担属准备、主调回归与终止？"].map((item) => "<li>" + esc(item) + "</li>").join("") +
+      ["主题的音高、时值、音域和起句级数是否固定到可以逐次复制？", "答题采用守调还是真实移位，取决于主题是否触碰主属边界。", "呈示部是否让所有声部完成进入，并建立主调/属调关系？", "固定对题与主题在原位和转位都要能解释；不能只检查一个位置。", "间插段是否从主题或对题抽取动机，并明确把调性送到下一进入？", "密接和应是否让主题在未结束时再次进入？", "持续音、再现与尾声是否分别承担属准备、主调回归与终止？"].map((item) => "<li>" + esc(item) + "</li>").join("") +
       "</ul></div>" + evidenceLinks(["fugue.definition", "fugue.subject-identity", "fugue.subject-properties", "fugue.subject-memory", "fugue.answer-dominant", "fugue.tonal-answer", "fugue.countersubject", "fugue.exposition-order", "fugue.exposition-principles", "fugue.episode-definition", "fugue.episode-function", "fugue.middle", "fugue.stretto-definition", "fugue.stretto-difference", "fugue.pedal", "fugue.recap", "fugue.overall", "fugue.bach-structure"], true) +
       manualLink(["fugue.overall"], "打开赋格章");
     applyPresetSubject();

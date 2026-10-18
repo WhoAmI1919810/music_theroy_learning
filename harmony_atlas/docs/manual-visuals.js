@@ -189,7 +189,7 @@
     var rows = tableRows('visual-principles');
     if (!rows.length) return;
     var visual = makeVisual('机制图', '八条原理：从可检验机制到直接操作',
-      '每张卡把原理拆成“为什么成立”和“现场怎么做”。教材页码保留在卡片底部。');
+      '每一行先给出可检验的机制，再给出可直接执行的操作；教材页码列在同一行末。');
     var grid = element('div', 'mv-principles');
     rows.forEach(function (cells) {
       var card = element('article', 'mv-principle');
@@ -215,7 +215,7 @@
     var rows = tableRows('visual-levels');
     if (!rows.length) return;
     var visual = makeVisual('层级图', '六个层级：问题、材料与输出的对应关系',
-      '从上到下增加分析尺度；左侧标签是系统中的层级，不是教材章节号。');
+      '从上到下增加分析尺度；左侧标签是系统中的层级，教材章节号另列。');
     var stack = element('div', 'mv-levels');
     rows.forEach(function (cells) {
       var row = element('div', 'mv-level');
@@ -373,7 +373,7 @@
     var rows = tableRows('visual-periods');
     if (!rows.length) return;
     var visual = makeVisual('时间轴', '三阶段：新增变量、和声结果与未改变的条件',
-      '时间只作旁证。每张卡更重要的信息是：这一阶段新增了哪些可控变量，以及哪些底层约束仍在。');
+      '时间只作旁证。每一阶段要比较的是：新增了哪些可控变量，以及哪些底层约束仍在。');
     var timeline = element('div', 'mv-timeline');
     rows.forEach(function (cells) {
       var stage = element('article', 'mv-stage');
@@ -588,8 +588,8 @@
   function renderGoals() {
     var rows = tableRows('visual-goals');
     if (!rows.length) return;
-    var visual = makeVisual('配器卡', '目标效果：材料、进行与风险修正',
-      '从“想得到什么效果”反查可用材料；每张卡同时列出最容易出错的地方。');
+    var visual = makeVisual('目标反查', '目标效果：材料、进行与风险修正',
+      '从“想得到什么效果”反查可用材料；每个目标同时列出最容易出错的地方。');
     var grid = element('div', 'mv-goals');
     rows.forEach(function (cells) {
       var card = element('article', 'mv-goal');
@@ -610,7 +610,7 @@
       grid.appendChild(card);
     });
     visual.body.appendChild(grid);
-    visual.body.appendChild(note('这些是可操作的编配建议，不是教材强制规则；效果还受旋律、节奏、音区、织体与持续时间影响。'));
+    visual.body.appendChild(note('这些是可操作的编配建议；效果还受旋律、节奏、音区、织体与持续时间影响。'));
     placeVisual('visual-goals', visual.section, '展开目标效果原始表格');
   }
 
@@ -1157,8 +1157,8 @@
   function renderModulationTypes() {
     var rows = tableRows('visual-modulation-types');
     if (!rows.length) return;
-    var visual = makeVisual('方法卡', '十种转调方法：做法、适用场景与失效条件',
-      '每张卡聚焦一个操作入口，并把它最容易出错的条件放在同一视线内。');
+    var visual = makeVisual('转调方法', '十种转调方法：做法、适用场景与失效条件',
+      '每种方法聚焦一个操作入口，并把最容易出错的条件放在同一段内。');
     var grid = element('div', 'mv-methods');
     rows.forEach(function (cells) {
       var card = element('article', 'mv-method');
@@ -1180,7 +1180,7 @@
     var rows = tableRows('visual-tonicization');
     if (!rows.length) return;
     var visual = makeVisual('判据谱', '离调与转调：六项证据的强弱变化',
-      '每一行按同一维度比较两种分析。实际作品常落在两端之间，应写明证据，而不是只贴一个标签。');
+      '每一行按同一维度比较两种分析。实际作品常落在两端之间，应写明证据，避免只贴标签。');
     var list = element('div', 'mv-spectrum');
     rows.forEach(function (cells) {
       var row = element('div', 'mv-spectrum-row');
@@ -1201,7 +1201,7 @@
     var rows = tableRows('visual-books');
     if (!rows.length) return;
     var visual = makeVisual('教材索引', '十六本教材：角色、代表页与互证位置',
-      '卡片保留每本教材在本体系中的分工与代表页。页码可直接跳到影印页与 OCR 对照。');
+      '每本教材保留在本体系中的分工与代表页。页码可直接跳到影印页与 OCR 对照。');
     var grid = element('div', 'mv-books');
     rows.forEach(function (cells) {
       var card = element('article', 'mv-book');

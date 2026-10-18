@@ -211,7 +211,7 @@
 
   function renderPrinciples() {
     $('#principleCards').innerHTML = principles.map((item) =>
-      '<article class="power"><b>' + escapeHtml(item.label) + '</b><span>' + escapeHtml(item.operation) + '</span><small>' + escapeHtml(item.effect) + '</small></article>'
+      '<article class="principle-row"><b>' + escapeHtml(item.label) + '</b><span class="principle-operation">' + escapeHtml(item.operation) + '</span><p>' + escapeHtml(item.effect) + '</p></article>'
     ).join('');
   }
 
@@ -222,11 +222,10 @@
     ).join('');
     $$('.chip', filter).forEach((button) => button.addEventListener('click', () => filterForms(button.dataset.formFilter)));
     $('#formGrid').innerHTML = forms.map((form) =>
-      '<article class="card form-card" data-form-card="' + form.id + '">' +
-        '<span class="en">' + escapeHtml(form.en) + '</span><h3>' + escapeHtml(form.label) + '</h3>' +
-        renderStrip(form.preview, true) +
-        '<p>' + escapeHtml(form.definition) + '</p>' +
-        '<button class="open-form" type="button" data-open-form="' + form.id + '">查看判定条件与案例</button>' +
+      '<article class="form-card" data-form-card="' + form.id + '">' +
+        '<div class="form-card-head"><span class="en">' + escapeHtml(form.en) + '</span><h3>' + escapeHtml(form.label) + '</h3></div>' +
+        '<div class="form-card-strip">' + renderStrip(form.preview, true) + '</div>' +
+        '<div class="form-card-copy"><p>' + escapeHtml(form.definition) + '</p><button class="open-form" type="button" data-open-form="' + form.id + '">查看判定条件与案例</button></div>' +
       '</article>'
     ).join('');
     $$('[data-open-form]').forEach((button) => button.addEventListener('click', () => showForm(button.dataset.openForm, true)));
@@ -303,7 +302,7 @@
       const source = (item.sources || [])[0] || {};
       const form = formById[item.form];
       const image = item.image ? '../docs/assets/cases/' + item.image : pageImage(source.book, source.page);
-      return '<article class="card case-card" data-case="' + item.id + '">' +
+      return '<article class="case-card" data-case="' + item.id + '">' +
         '<div class="case-thumb"><img loading="lazy" decoding="async" src="' + escapeHtml(image) + '" alt="' + escapeHtml(item.composer + '《' + item.title + '》教材页') + '"><span class="page-tag">PDF p.' + escapeHtml(source.page) + '</span></div>' +
         '<div class="case-body"><span class="kicker">' + escapeHtml(form ? form.label : item.formLabel || '') + '</span><h3>' + escapeHtml(item.composer + '《' + item.title + '》') + '</h3>' +
         '<p>' + escapeHtml(item.summary) + '</p>' +
@@ -346,7 +345,7 @@
     $('#sourceGrid').innerHTML = books.map((book) => {
       const count = claims.reduce((total, claim) => total + (claim.books || []).filter((source) => source.book === book.id).length, 0);
       const caseCount = cases.reduce((total, item) => total + (item.sources || []).filter((source) => source.book === book.id).length, 0);
-      return '<article class="card source-card"><h3>' + escapeHtml(book.title) + '</h3><div class="meta">' + escapeHtml(book.short || book.id) + ' · ' + book.pages + ' 页 · ' + count + ' 条论点引用 · ' + caseCount + ' 个案例页</div>' +
+      return '<article class="source-card"><h3>' + escapeHtml(book.title) + '</h3><div class="meta">' + escapeHtml(book.short || book.id) + ' · ' + book.pages + ' 页 · ' + count + ' 条论点引用 · ' + caseCount + ' 个案例页</div>' +
         '<p>' + escapeHtml(book.role) + '</p><div class="detail-links"><a href="../docs/books/' + encodeURIComponent(book.id) + '.html">引用页影印 ↗</a></div></article>';
     }).join('');
     const table = $('#coverageTable');

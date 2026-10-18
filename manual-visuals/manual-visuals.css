@@ -15,14 +15,15 @@
   --mtv-chip: rgba(255, 255, 255, .035);
   --mtv-wash: rgba(255, 255, 255, .022);
   --mtv-shadow: rgba(0, 0, 0, .22);
-  margin: 22px 0;
-  padding: 18px;
-  border: 1px solid var(--mtv-line);
-  border-radius: 16px;
-  background: radial-gradient(circle at 100% 0, color-mix(in srgb, var(--mtv-gold) 7%, transparent), transparent 36%), var(--mtv-bg);
+  margin: 30px 0;
+  padding: 18px 0 0;
+  border: 0;
+  border-top: 1px solid var(--mtv-line);
+  border-radius: 0;
+  background: transparent;
   color: var(--mtv-text);
   font: 13px/1.6 "Segoe UI", "Microsoft YaHei", sans-serif;
-  box-shadow: 0 18px 50px var(--mtv-shadow);
+  box-shadow: none;
 }
 .mtv-light .mtv {
   --mtv-bg: #fffaf1;
@@ -50,7 +51,7 @@
 .mtv-badge { display: inline-flex; align-items: center; gap: 4px; padding: 2px 7px; border: 1px solid color-mix(in srgb, var(--mtv-teal) 30%, var(--mtv-line)); border-radius: 999px; background: color-mix(in srgb, var(--mtv-teal) 8%, transparent); color: var(--mtv-teal); font-size: 9px; white-space: nowrap; }
 .mtv-badge.gold { border-color: color-mix(in srgb, var(--mtv-gold) 34%, var(--mtv-line)); background: color-mix(in srgb, var(--mtv-gold) 9%, transparent); color: var(--mtv-gold); }
 .mtv-badge.warm { border-color: color-mix(in srgb, var(--mtv-warm) 34%, var(--mtv-line)); background: color-mix(in srgb, var(--mtv-warm) 8%, transparent); color: var(--mtv-warm); }
-.mtv-note { margin: 10px 0 0; padding: 8px 10px; border-left: 3px solid var(--mtv-gold); border-radius: 0 7px 7px 0; background: color-mix(in srgb, var(--mtv-gold) 7%, transparent); color: var(--mtv-muted); font-size: 10px; }
+.mtv-note { margin: 10px 0 0; padding: 8px 0 0 11px; border-left: 2px solid var(--mtv-gold); border-radius: 0; background: transparent; color: var(--mtv-muted); font-size: 10px; }
 .mtv-note a { color: var(--mtv-gold); }
 .mtv-scroll { overflow-x: auto; scrollbar-width: thin; }
 .mtv-scroll-hint { display: none; margin: 0 0 7px; color: var(--mtv-muted); font-size: 9px; }
@@ -67,10 +68,6 @@
 .mtv-arrow { display: grid; place-items: center; color: var(--mtv-gold); font-size: 16px; }
 .mtv-grid-2 { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
 .mtv-grid-3 { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; }
-.mtv-card { min-width: 0; padding: 10px; border: 1px solid var(--mtv-line); border-radius: 10px; background: var(--mtv-wash); }
-.mtv-card h4 { margin: 0; color: var(--mtv-text); font: 650 12px/1.4 "Noto Sans SC", "Microsoft YaHei", sans-serif; }
-.mtv-card p { margin: 4px 0 0; color: var(--mtv-muted); font-size: 9.5px; }
-.mtv-card strong { color: var(--mtv-text); font-weight: 650; }
 .mtv-source { color: var(--mtv-muted); font-size: 9px; }
 .mtv-source a { color: var(--mtv-gold); }
 
@@ -259,13 +256,56 @@
 .mtv-trouble-step.is-avoid { background: color-mix(in srgb, var(--mtv-warm) 9%, transparent); }
 .mtv-trouble-step.is-avoid b { color: var(--mtv-warm); }
 
+/* Text-heavy modules read as annotated rows; genuine diagrams keep their geometry. */
+.mtv-stack-row,
+.mtv-phase,
+.mtv-transform,
+.mtv-param,
+.mtv-branch-card,
+.mtv-form-segment,
+.mtv-evidence-group,
+.mtv-book,
+.mtv-principle,
+.mtv-quadrant,
+.mtv-layer,
+.mtv-role,
+.mtv-trouble {
+  border: 0;
+  border-top: 1px solid color-mix(in srgb, var(--mtv-line) 76%, transparent);
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+}
+.mtv-stack-index {
+  width: auto;
+  height: auto;
+  border: 0;
+  border-radius: 0;
+  background: none;
+}
+.mtv-principle-flow .mtv-field,
+.mtv-role-fields .mtv-field {
+  padding: 0;
+  border-radius: 0;
+  background: transparent;
+}
+.mtv-trouble-step {
+  padding: 6px 6px 6px 0;
+  border-radius: 0;
+  background: transparent;
+}
+.mtv-trouble-step + .mtv-trouble-step {
+  padding-left: 6px;
+  border-left: 1px solid color-mix(in srgb, var(--mtv-line) 60%, transparent);
+}
+
 @media (max-width: 940px) {
   .mtv-grid-3, .mtv-evidence-grid, .mtv-branch-list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .mtv-param-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   .mtv-form-timeline { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 @media (max-width: 720px) {
-  .mtv { padding: 13px; border-radius: 12px; }
+  .mtv { padding: 13px 0 0; border-radius: 0; }
   .mtv-title { font-size: 16px; }
   .mtv-stack-row, .mtv-layer, .mtv-species-row { grid-template-columns: 34px minmax(0, 1fr); }
   .mtv-stack-name, .mtv-layer-name, .mtv-species-name { grid-column: 2; }
@@ -292,7 +332,7 @@
   .mtv-range-inline-dyn { display: inline; }
 }
 @media print {
-  .mtv { break-inside: avoid; box-shadow: none; background: #fff; color: #111; border-color: #aaa; }
+  .mtv { break-inside: avoid; box-shadow: none; background: transparent; color: #111; border: 0; border-top: 1px solid #aaa; }
   .mtv-details { display: block; }
   .mtv-details > summary { display: none; }
   .mtv-details .table-wrap { display: none; }

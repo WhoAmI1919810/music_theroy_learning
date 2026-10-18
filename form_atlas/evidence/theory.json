@@ -19,9 +19,9 @@
     {
       "id": "phrase", "label": "乐句", "en": "Phrase", "layer": "material", "x": 130, "y": 184,
       "summary": "由一个或数个乐节组成、通常以终止或可感句读收束的旋律单位。乐句边界必须由材料分组和终止共同支持。",
-      "question": "这组音为什么在此处听起来是一句，而不是继续延伸？",
+      "question": "哪些材料分组与终止使这组音在此处形成句读？",
       "test": "比较前后材料的分组、和声节奏与终止位置；若只有停顿而没有终止支持，应继续检查扩充或连接。",
-      "error": "按小节数机械切句；相同长度不等于同一句法层级。",
+      "error": "按小节数机械切句；长度相同仍可能属于不同句法层级。",
       "claims": ["syntax.phrase-period", "closure.cadence"], "cases": ["chopin-a-prelude", "xianxinghai-february"]
     },
     {
@@ -34,7 +34,7 @@
     },
     {
       "id": "cadence", "label": "终止", "en": "Cadence", "layer": "closure", "x": 130, "y": 452,
-      "summary": "终止式和声、旋律落点与节奏停顿共同形成的结构标点；它决定句读，而不是装饰性的收尾。",
+      "summary": "终止式和声、旋律落点与节奏停顿共同形成结构标点，决定句读与收尾层级。",
       "question": "哪一个终止真正结束了当前层级？",
       "test": "辨认终止型、所在调性、旋律落音与后续材料；半终止通常保持开放，全终止建立更强闭合。",
       "error": "把任意长音或休止当终止；转调终止可能结束前一段，却同时开启下一段。",
@@ -44,7 +44,7 @@
       "id": "repetition", "label": "重复", "en": "Repetition", "layer": "process", "x": 350, "y": 78,
       "summary": "原样或近似重述材料，用来确认主题身份、扩大规模并建立听者的记忆预期。",
       "question": "重复的是旋律、节奏、和声框架，还是整体段落？",
-      "test": "标出重复的层级与变化位置；句内模进不等于整段再现，低音或和声改变也可能改变结构功能。",
+      "test": "标出重复的层级与变化位置；句内模进只作用于局部，整段再现需有独立段落回归。低音或和声改变也会改变结构功能。",
       "error": "把所有相似开头都算作再现；再现通常要求前面已经形成可辨识的完整段落。",
       "claims": ["process.repetition-contrast-return", "type.binary"], "cases": ["chopin-a-prelude", "bach-english-sarabande"]
     },
@@ -98,7 +98,7 @@
     },
     {
       "id": "ternary", "label": "三部曲式", "en": "Ternary Form", "layer": "type", "x": 590, "y": 219,
-      "summary": "呈示—对比—回归的三段结构；关键在于对比段之后出现可辨识的再现，而不是单纯有三个段落。",
+      "summary": "呈示—对比—回归的三段结构；关键在于对比段之后出现可辨识的再现。段落数量本身不构成判据。",
       "question": "第三部分是否回到第一部分的材料与稳定调性？",
       "test": "比较 A 与 A′ 的主题身份、调性和终止；检查 B 是否形成足够的结构对比并准备回归。",
       "error": "把 A—B—C 也称为三部曲式；没有再现时更接近并列结构或三段体，应说明所用原则。",
@@ -109,14 +109,14 @@
       "summary": "每个大段自身达到独立曲式层级的三部结构，常见 A（小三部）—B（三声中部或插部）—A（再现）。",
       "question": "A 与 B 是否各自包含完整的内部曲式？",
       "test": "把每个大段继续分段；若内部已形成二部或三部，且整体为 A—B—A，才属于复三部。",
-      "error": "按长度判断“复”；复三部与单三部的差别是层级，不是小节数。",
+      "error": "按长度判断“复”；复三部与单三部的差别在内部层级。",
       "claims": ["type.compound", "type.ternary"], "cases": ["chopin-nocturne-48-1"]
     },
     {
       "id": "rondo", "label": "回旋曲式", "en": "Rondo", "layer": "type", "x": 590, "y": 395,
       "summary": "主部多次回归，其间插入一个或多个对比性插部；主部每次回归可原样或变化。",
       "question": "主部是否形成至少三次可分句的出现？",
-      "test": "标出 A 的每次出现与插部 B/C；确认回归具有段落功能，而非句内模进或尾声引用。",
+      "test": "标出 A 的每次出现与插部 B/C；确认回归具有段落功能。句内模进或尾声引用不足以构成回归。",
       "error": "把任何 A—B—A 都叫回旋；回旋需要多次回归和至少两个插入段，或明确的回旋原则。",
       "claims": ["type.rondo", "process.repetition-contrast-return"], "cases": ["beethoven-dawn-iii", "beethoven-op13-iii"]
     },
@@ -130,7 +130,7 @@
     },
     {
       "id": "sonata", "label": "奏鸣曲式", "en": "Sonata Form", "layer": "large", "x": 820, "y": 219,
-      "summary": "以呈示部的调性二分、展开部的调性 destabilization、再现部的调性统一为核心的大型结构。主题数量与是否两个主题不是唯一标准。",
+      "summary": "以呈示部的调性二分、展开部的调性 destabilization、再现部的调性统一为核心的大型结构。主题数量不作硬性限定。",
       "question": "副部或副题群是否在再现部服从主调？",
       "test": "划分主部、连接、副部、结束部；检查展开部的调性运动与准备句，再确认再现部是否完成调性服从。",
       "error": "看到两个主题就判奏鸣曲式；没有调性对立与再现统一，仍可能只是三部性或混合结构。",
@@ -147,7 +147,7 @@
     {
       "id": "cycle", "label": "套曲曲式", "en": "Cyclic Form", "layer": "large", "x": 820, "y": 550,
       "summary": "由多个相对独立的乐章或段落组成整体；统一来自调性计划、速度与体裁对比、主题关联或叙事布局。",
-      "question": "各乐章为什么属于同一整体，而不是可随意拆开的合集？",
+      "question": "哪些调性、材料与终止关系使各乐章共同构成一个整体？",
       "test": "比较乐章间的调性关系、速度序列、体裁功能、主题动机与终止安排。",
       "error": "把组曲或奏鸣套曲只当若干单曲相加；整体层面的调性和材料关系才是套曲结构。",
       "claims": ["type.cycle", "tonality.structure"], "cases": []
@@ -198,8 +198,8 @@
       "definition": "以乐段或乐段群独立构成全曲。内部可以有扩充、补充、复乐段、展开或对比因素，但结尾才形成全曲级闭合。",
       "preview": [{"label": "A", "role": "statement", "sub": "乐段 / 乐段群", "weight": 1}],
       "structure": [{"label": "A", "role": "statement", "sub": "乐段或乐段群；内部可扩充", "weight": 1}],
-      "tests": ["识别主乐思的完整终止；确认没有形成独立对比段", "若出现复乐段，说明后半是重复而非新结构层级", "把扩充、补充和尾声与基本段落分开"],
-      "errors": ["有对比材料不等于二部曲式；需看它是否形成独立段落和终止。", "复乐段属于一个乐段的扩大，不等于单二部曲式。"],
+      "tests": ["识别主乐思的完整终止；确认没有形成独立对比段", "若出现复乐段，说明后半属于重复，未形成新的结构层级", "把扩充、补充和尾声与基本段落分开"],
+      "errors": ["有对比材料仍需形成独立段落和终止，才能构成二部曲式。", "复乐段是一个乐段的扩大，仍属单一部曲式。"],
       "tonality": [{"label": "主调", "state": "home", "note": "全曲闭合"}, {"label": "局部离调", "state": "away", "note": "不建立新调"}],
       "tonalNote": "调性通常保持主调；局部离调用于扩充或补充，不在结构上形成独立调性区域。",
       "claims": ["syntax.phrase-period", "closure.cadence"], "cases": ["chopin-a-prelude", "chopin-e-prelude", "xianxinghai-february"]
@@ -209,18 +209,18 @@
       "definition": "由两个结构部分共同完成全曲。第二部分可以并列对比、展开第一部分的材料，或带有局部再现；其结尾承担整曲闭合。",
       "preview": [{"label": "A", "role": "statement", "sub": "第一部分", "weight": 1}, {"label": "B", "role": "contrast", "sub": "对比 / 展开 / 回归", "weight": 1}],
       "structure": [{"label": "A", "role": "statement", "sub": "建立主调与材料", "weight": 1}, {"label": "B", "role": "contrast", "sub": "离开、展开并闭合全曲", "weight": 1}],
-      "tests": ["确认两个部分各自承担结构功能，而不是两个乐段简单相加", "判断 B 是新材料、A 的展开，还是含再现", "检查 B 的末尾是否完成主调闭合"],
-      "errors": ["二部不等于两个乐段；两个乐段也可能只是单一部曲式的一部分。", "B 末尾出现 A 的材料片段，不一定构成完整三部性再现。"],
+      "tests": ["确认两个部分各自承担独立结构功能，并共同完成全曲", "判断 B 是新材料、A 的展开，还是含再现", "检查 B 的末尾是否完成主调闭合"],
+      "errors": ["二部曲式要求两个部分共同完成全曲；两个乐段也可能只是单一部曲式的一部分。", "B 末尾出现 A 的材料片段，不一定构成完整三部性再现。"],
       "tonality": [{"label": "主调", "state": "home", "note": "A 建立"}, {"label": "属 / 关系调", "state": "away", "note": "B 离开"}, {"label": "主调", "state": "return", "note": "B 末闭合"}],
       "tonalNote": "二部曲式常在第一部分结束于属调或关系调，第二部分经展开后回到主调。调性闭合位置是判断第二部分边界的重要证据。",
       "claims": ["type.binary", "process.repetition-contrast-return"], "cases": ["schubert-death-maiden", "bach-english-sarabande"]
     },
     {
       "id": "ternary", "label": "三部曲式", "short": "三部", "en": "Ternary Form",
-      "definition": "A—B—A 的呈示、对比与再现结构。真正的判定点是第三部分是否形成可辨识的再现，而非只有三段。",
+      "definition": "A—B—A 的呈示、对比与再现结构。判定点是第三部分形成可辨识的再现；段落数量本身不构成判据。",
       "preview": [{"label": "A", "role": "statement", "sub": "呈示", "weight": 1}, {"label": "B", "role": "contrast", "sub": "对比 / 展开", "weight": 1}, {"label": "A′", "role": "a", "sub": "再现", "weight": 1}],
       "structure": [{"label": "A", "role": "statement", "sub": "主题与主调", "weight": 1}, {"label": "B", "role": "contrast", "sub": "对比材料与调性", "weight": 1}, {"label": "A′", "role": "a", "sub": "再现，可变化或动力化", "weight": 1}],
-      "tests": ["比较 A 与 A′ 的主题身份、调性和终止", "确认 B 形成段落级对比，而非仅句内变化", "判断 A′ 是原样、变化、减缩或动力化再现"],
+      "tests": ["比较 A 与 A′ 的主题身份、调性和终止", "确认 B 形成段落级对比；句内变化不足以构成 B 段", "判断 A′ 是原样、变化、减缩或动力化再现"],
       "errors": ["A—B—C 没有再现时，不应仅凭三段数量称三部曲式。", "带再现的单二部与单三部的界线在于再现部分的规模与独立程度。"],
       "tonality": [{"label": "主调", "state": "home", "note": "A"}, {"label": "对比调", "state": "away", "note": "B"}, {"label": "主调", "state": "return", "note": "A′"}],
       "tonalNote": "B 常转入关系调、属调或下属方向；A′ 回到主调并重建闭合。若第三部分只回材料不回调性，应说明其特殊处理。",
@@ -232,7 +232,7 @@
       "preview": [{"label": "A", "role": "a", "sub": "内部为完整小曲式", "weight": 1.2}, {"label": "B", "role": "contrast", "sub": "三声中部 / 插部", "weight": 1}, {"label": "A", "role": "a", "sub": "再现", "weight": 1.2}],
       "structure": [{"label": "A", "role": "a", "sub": "a—b—a 或二部", "weight": 1.2}, {"label": "B", "role": "contrast", "sub": "c—d—c / 插部", "weight": 1}, {"label": "A", "role": "a", "sub": "整体再现", "weight": 1.2}],
       "tests": ["把大段 A 和 B 继续向下分段，确认内部曲式成立", "判断 B 是三声中部型稳定中部，还是插部型展开中部", "检查整曲层面是否形成 A—B—A"],
-      "errors": ["复三部不是“更长的单三部”；关键是内部层级。", "三声中部并不要求只能由三件乐器演奏，名称来自历史体裁与位置。"],
+      "errors": ["复三部的判据是内部层级：A 与 B 各自具备内部曲式。", "三声中部并不要求只能由三件乐器演奏，名称来自历史体裁与位置。"],
       "tonality": [{"label": "主调", "state": "home", "note": "A"}, {"label": "对比调", "state": "away", "note": "B"}, {"label": "主调", "state": "return", "note": "A 再现"}],
       "tonalNote": "三声中部常形成稳定的对比调性区域；插部性中部则可能更不稳定。整体回归时主调与 A 的材料共同恢复。",
       "claims": ["type.compound", "type.ternary"], "cases": ["chopin-nocturne-48-1"]
@@ -253,8 +253,8 @@
       "definition": "主题及其一系列变奏构成全曲。固定低音、固定和声、固定旋律、装饰变奏与自由变奏的差别，在于每次变奏保留哪一层材料。",
       "preview": [{"label": "T", "role": "statement", "sub": "主题", "weight": 1}, {"label": "V1", "role": "a", "sub": "变奏一", "weight": 0.9}, {"label": "V2", "role": "b", "sub": "变奏二", "weight": 0.9}, {"label": "V3", "role": "c", "sub": "变奏三", "weight": 0.9}, {"label": "…", "role": "neutral", "sub": "继续", "weight": 0.6}],
       "structure": [{"label": "主题", "role": "statement", "sub": "建立保持项", "weight": 1}, {"label": "V1", "role": "a", "sub": "改变织体 / 旋律", "weight": 0.9}, {"label": "V2", "role": "b", "sub": "改变和声 / 节奏", "weight": 0.9}, {"label": "V3", "role": "c", "sub": "改变性格 / 音区", "weight": 0.9}, {"label": "…", "role": "neutral", "sub": "变奏链", "weight": 0.6}],
-      "tests": ["确认主题与变奏构成全曲主干，而非局部重复", "逐段列出保留项：低音、和声、旋律、结构或性格", "判断变奏类型及变奏组的调性、速度与织体布局"],
-      "errors": ["固定低音变奏不等于和声不变；上方声部与和声配置可以持续变化。", "自由变奏也不等于完全失去主题联系，需说明保留的是哪一层。"],
+      "tests": ["确认主题与变奏构成全曲主干；局部重复不足以构成变奏曲式", "逐段列出保留项：低音、和声、旋律、结构或性格", "判断变奏类型及变奏组的调性、速度与织体布局"],
+      "errors": ["固定低音变奏保持低音线条及其结构位置，上方声部与和声配置仍可持续变化。", "自由变奏仍保留主题的某一层联系，分析需说明保留项。"],
       "tonality": [{"label": "主题调", "state": "home", "note": "建立"}, {"label": "变奏组", "state": "away", "note": "可转调 / 调式交替"}, {"label": "回归", "state": "return", "note": "常回主调"}],
       "tonalNote": "变奏组可以保持同一调性，也可以在后期变奏转入关系调、同名调或远关系调；调性计划常与变奏的性格布局同步。",
       "claims": ["type.variation", "material.motive"], "cases": ["bach-crucifixus", "beethoven-32-variations", "mozart-k331", "brahms-symphony1-finale"]
@@ -265,7 +265,7 @@
       "preview": [{"label": "呈示", "role": "statement", "sub": "主部—连接—副部—结束", "weight": 1.3}, {"label": "展开", "role": "development", "sub": "调性分裂与材料展开", "weight": 1}, {"label": "再现", "role": "a", "sub": "调性服从", "weight": 1.3}, {"label": "尾声", "role": "closing", "sub": "可选", "weight": 0.45}],
       "structure": [{"label": "呈示部", "role": "statement", "sub": "P—T—S—K", "weight": 1.3}, {"label": "展开部", "role": "development", "sub": "展开 / 插部 / 准备句", "weight": 1}, {"label": "再现部", "role": "a", "sub": "P—T—S—K，副部服从主调", "weight": 1.3}, {"label": "尾声", "role": "closing", "sub": "巩固主调", "weight": 0.45}],
       "tests": ["划分呈示部四部分，确认主部与副部群的调性关系", "检查展开部的调性运动、假再现与准备句", "确认再现部副部或副题群是否回到主调", "区分完全奏鸣、省略展开部与古奏鸣曲式"],
-      "errors": ["主题数量不是定义核心；单主题奏鸣曲式同样存在。", "展开部不一定只展开主部；可以展开副部、用插部或结合复调手法。"],
+      "errors": ["奏鸣曲式的定义核心是调性运动；单主题奏鸣曲式同样成立。", "展开部不一定只展开主部；可以展开副部、用插部或结合复调手法。"],
       "tonality": [{"label": "主调", "state": "home", "note": "主部"}, {"label": "属 / 关系调", "state": "away", "note": "副部"}, {"label": "不稳定", "state": "away", "note": "展开部"}, {"label": "主调", "state": "return", "note": "再现部统一"}],
       "tonalNote": "奏鸣曲式的结构张力首先来自呈示部的调性二分，并由再现部的调性统一解决。连接部的转调、展开部的下属方向与准备句的属持续音都服务于这一路径。",
       "claims": ["type.sonata", "tonality.structure", "process.repetition-contrast-return"], "cases": ["beethoven-appassionata", "beethoven-op2no1-iv", "chopin-ballade-1"]
@@ -286,19 +286,19 @@
       "definition": "多个相对独立的乐章或大型段落组成整体。统一可由调性计划、速度与体裁对比、主题关联、叙事或仪式功能建立。",
       "preview": [{"label": "I", "role": "a", "sub": "快", "weight": 1}, {"label": "II", "role": "b", "sub": "慢", "weight": 0.9}, {"label": "III", "role": "c", "sub": "舞曲 / 谐谑", "weight": 0.9}, {"label": "IV", "role": "a", "sub": "终曲", "weight": 1.1}],
       "structure": [{"label": "乐章 I", "role": "a", "sub": "建立主调与体裁", "weight": 1}, {"label": "乐章 II", "role": "b", "sub": "速度 / 调性对比", "weight": 0.9}, {"label": "乐章 III", "role": "c", "sub": "舞曲或谐谑功能", "weight": 0.9}, {"label": "终曲", "role": "a", "sub": "回归与总结", "weight": 1.1}],
-      "tests": ["比较乐章之间的调性、速度、体裁与主题关系", "区分古组曲、新型组曲、奏鸣—交响套曲与声乐套曲", "确认整体是否存在跨乐章的结构安排，而非任意集合"],
-      "errors": ["套曲不等于把若干独立曲目拼在一起；整体层面的调性与功能关系必须成立。", "多乐章作品不一定采用奏鸣—交响套曲的典型速度序列。"],
+      "tests": ["比较乐章之间的调性、速度、体裁与主题关系", "区分古组曲、新型组曲、奏鸣—交响套曲与声乐套曲", "确认整体存在跨乐章的结构安排；任意集合不足以构成套曲"],
+      "errors": ["套曲要求整体层面的调性与功能关系成立。", "多乐章作品不一定采用奏鸣—交响套曲的典型速度序列。"],
       "tonality": [{"label": "主调", "state": "home", "note": "第一乐章"}, {"label": "关系调 / 下属", "state": "away", "note": "中间乐章"}, {"label": "主调 / 同名调", "state": "return", "note": "终曲"}],
       "tonalNote": "调性计划是套曲统一的重要手段；中间乐章可形成关系调、下属方向或色彩性对比，终曲常回到主调或同名调完成整体闭合。",
       "claims": ["type.cycle", "tonality.structure"], "cases": []
     },
     {
       "id": "mixed", "label": "混合与自由曲式", "short": "混合 / 自由", "en": "Mixed / Free Form",
-      "definition": "组合两种以上曲式原则，或以非典型次序组织段落。它不是“没有曲式”，而是无法由单一模板完整解释。",
+      "definition": "组合两种以上曲式原则，或以非典型次序组织段落；单一模板无法完整解释。",
       "preview": [{"label": "A", "role": "a", "sub": "主题", "weight": 1}, {"label": "B", "role": "b", "sub": "对比", "weight": 0.9}, {"label": "展开", "role": "development", "sub": "奏鸣 / 变奏原则", "weight": 1}, {"label": "A′", "role": "a", "sub": "回归", "weight": 0.9}, {"label": "C", "role": "c", "sub": "新插部", "weight": 0.8}],
       "structure": [{"label": "A", "role": "a", "sub": "主题", "weight": 1}, {"label": "B", "role": "b", "sub": "对比", "weight": 0.9}, {"label": "展开", "role": "development", "sub": "组合奏鸣 / 变奏 / 回旋", "weight": 1}, {"label": "A′", "role": "a", "sub": "回归", "weight": 0.9}, {"label": "C", "role": "c", "sub": "新插部 / 尾声", "weight": 0.8}],
       "tests": ["先分段，再标出每段所用的结构原则", "检查调性布局与主题回归是否互相支持", "说明为何单一曲式名称不足以覆盖全曲"],
-      "errors": ["“自由”不代表无需分析；恰恰需要更清楚的材料与调性证据。", "混合曲式不是多种名称的堆叠；应指出各原则在哪些段落起作用。"],
+      "errors": ["标为“自由”的段落仍需材料与调性证据。", "混合曲式应指出各原则在哪些段落起作用。"],
       "tonality": [{"label": "主调", "state": "home", "note": "开场"}, {"label": "多调性区域", "state": "away", "note": "中段"}, {"label": "主调", "state": "return", "note": "回归"}, {"label": "开放 / 再次离开", "state": "away", "note": "自由展开"}],
       "tonalNote": "混合曲式的调性路径往往不服从单一模板；分析时应逐段建立调性，再说明哪些回归或调性服从仍然起作用。",
       "claims": ["type.mixed", "analysis.protocol"], "cases": ["chopin-ballade-1", "chopin-fantasy-polonaise", "schubert-mein-haus"]
@@ -307,10 +307,10 @@
   "analysisSteps": [
     {"id": "segment", "title": "划出最小可辨单位", "detail": "先标动机、乐节和乐句，不急着命名 A/B。以材料分组、重音与和声节奏确定最小单位。", "check": "我已标出动机、乐节与乐句的边界，并写明依据。"},
     {"id": "cadence", "title": "标终止与结构标点", "detail": "逐个终止判断类型、所在调性、旋律落音与后续材料。终止决定哪个层级真正闭合。", "check": "我区分了半终止、全终止、转调终止与假终止。"},
-    {"id": "materials", "title": "比较材料身份", "detail": "把每段写成同一、变化、对比或展开；变化要说明保留了什么、改变了什么。", "check": "我为每一段列出了保留项与变化项，而不是只写相同/不同。"},
+    {"id": "materials", "title": "比较材料身份", "detail": "把每段写成同一、变化、对比或展开；变化要说明保留了什么、改变了什么。", "check": "我为每一段列出了保留项与变化项，并说明依据。"},
     {"id": "tonality", "title": "画出调性路径", "detail": "标出稳定调性、经过性离调、转调与回归；区分局部色彩和结构性的调性区域。", "check": "我能指出调性在哪里离开、在哪里建立、是否回到主调。"},
     {"id": "hierarchy", "title": "检查段落层级", "detail": "把每个大段继续向下分段；判断它是乐段、单曲式还是复曲式的组成部分。", "check": "我检查了内部层级，而没有只按长度判断“单/复”。"},
-    {"id": "proportion", "title": "记录比例、织体与速度", "detail": "材料关系之外，比例、织体密度、速度与音区也参与结构感；它们应支持而不是替代分段证据。", "check": "我写明了比例、织体、速度或音区如何支持结构判断。"},
+    {"id": "proportion", "title": "记录比例、织体与速度", "detail": "材料关系之外，比例、织体密度、速度与音区也参与结构感；它们作为分段证据的补充。", "check": "我写明了比例、织体、速度或音区如何支持结构判断。"},
     {"id": "name", "title": "最后命名并保留例外", "detail": "当典型名称无法覆盖全部结构时，说明组合了哪些曲式原则；不要把例外硬塞进模板。", "check": "我的命名与证据一致，并说明了任何不规则或混合处理。"}
   ],
   "coverageTopics": [

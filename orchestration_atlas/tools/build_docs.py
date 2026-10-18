@@ -312,16 +312,16 @@ MANUAL_CSS = r'''
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.8 "Noto Serif SC","Source Han Serif SC","Songti SC",serif}
 a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}
 .manual-layout{display:grid;grid-template-columns:250px minmax(0,900px);gap:26px;max-width:1240px;margin:0 auto;padding:28px}
-.manual-nav{position:sticky;top:20px;align-self:start;max-height:calc(100vh - 40px);overflow:auto;background:rgba(255,253,248,.94);border:1px solid var(--line);border-radius:14px;padding:18px;font:12px/1.5 "Noto Sans SC","Microsoft YaHei",sans-serif}
+.manual-nav{position:sticky;top:20px;align-self:start;max-height:calc(100vh - 40px);overflow:auto;background:transparent;border:0;border-right:1px solid var(--line);border-radius:0;padding:18px 18px 18px 0;font:12px/1.5 "Noto Sans SC","Microsoft YaHei",sans-serif}
 .manual-nav b{display:block;font-size:16px;margin-bottom:5px}.manual-nav .meta{color:var(--muted);font-size:10px;margin-bottom:12px}.manual-nav a{display:block;padding:3px 5px;border-radius:5px;color:#4f5c58}.manual-nav a:hover{background:var(--wash);text-decoration:none}.manual-nav .app-link{margin-top:12px;padding:7px 9px;background:var(--accent);color:white;text-align:center;border-radius:7px}
-main{min-width:0;background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:44px 58px 72px;box-shadow:0 18px 54px rgba(38,31,22,.08)}
+main{min-width:0;background:transparent;border:0;border-radius:0;padding:44px 0 72px;box-shadow:none}
 h1,h2,h3,h4{font-family:"Noto Sans SC","Source Han Sans SC","Microsoft YaHei",sans-serif;line-height:1.38}h1{margin:0 0 20px;font-size:34px;letter-spacing:-.02em}h2{font-size:25px;margin:48px 0 14px;padding-top:12px;border-top:1px solid var(--line)}h3{font-size:19px;margin:28px 0 10px;color:#304441}h4{font-size:15px;margin:20px 0 6px;color:var(--accent)}
-p{margin:10px 0}.lead{font-size:18px;color:#465450}blockquote{margin:18px 0;padding:15px 18px;border-left:3px solid var(--accent);background:var(--wash);color:#52605c;font-size:14px}
+p{margin:10px 0}.lead{font-size:18px;color:#465450}blockquote{margin:18px 0;padding:10px 0 10px 16px;border-left:3px solid var(--accent);background:transparent;color:#52605c;font-size:14px}
 main img{display:block;max-width:100%;height:auto;margin:16px 0 6px;border:1px solid var(--line);border-radius:10px;background:white}
 code{padding:1px 5px;border-radius:4px;background:#ece6da;font:13px ui-monospace,Consolas,monospace}hr{border:0;border-top:1px solid var(--line);margin:26px 0}
 ul,ol{padding-left:24px}li{margin:5px 0}.table-wrap{overflow:auto;margin:16px 0}table{width:100%;border-collapse:collapse;font:12px/1.6 "Noto Sans SC","Microsoft YaHei",sans-serif}th,td{border-bottom:1px solid var(--line);padding:8px 9px;text-align:left;vertical-align:top}th{background:var(--wash);color:#4b3c2c;font-weight:700}tr:hover td{background:#fcfaf4}
-.callout{border:1px solid var(--line);border-radius:10px;padding:14px 16px;background:var(--wash);margin:14px 0}.mechanism-anchor{scroll-margin-top:20px}
-@media(max-width:860px){.manual-layout{display:block;padding:10px}.manual-nav{position:relative;top:0;max-height:none;margin-bottom:10px}main{padding:25px 17px 50px;border-radius:12px}h1{font-size:27px}h2{font-size:22px}.table-wrap{margin-left:-4px;margin-right:-4px}}
+.callout{border:0;border-top:1px solid var(--line);border-radius:0;padding:14px 0 0;background:transparent;margin:14px 0}.mechanism-anchor{scroll-margin-top:20px}
+@media(max-width:860px){.manual-layout{display:block;padding:10px}.manual-nav{position:relative;top:0;max-height:none;margin-bottom:10px;padding:0 0 12px;border-right:0;border-bottom:1px solid var(--line)}main{padding:25px 0 50px;border-radius:0}h1{font-size:27px}h2{font-size:22px}.table-wrap{margin-left:-4px;margin-right:-4px}}
 @media print{.manual-nav{display:none}.manual-layout{display:block;max-width:none;padding:0}main{border:0;box-shadow:none;padding:0}body{background:white}h2{page-break-after:avoid}a{color:#222}}
 '''
 

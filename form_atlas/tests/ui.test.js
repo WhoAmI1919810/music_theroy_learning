@@ -47,5 +47,6 @@ test("home page exposes four systems and the form entry", () => {
   assert.match(home, /四套系统/);
   assert.match(home, /form_atlas\/app\//);
   assert.match(home, /曲式理论地图/);
-  assert.match(home, /勋伯格《和声的结构功能》/);
+  assert.match(home, /Form Atlas/);
+  assert.match(home, /form_atlas\/docs\/曲式学手册\.html/);
 });

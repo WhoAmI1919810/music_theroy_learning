@@ -10,6 +10,8 @@
 <link rel="stylesheet" href="css/style.css">
 
 
+
+
 <script data-site-theme-init>(function(){var d=document.documentElement;var t='light';try{var s=localStorage.getItem('music-site-theme');if(s==='dark'||s==='light')t=s;}catch(e){}d.setAttribute('data-theme',t);d.style.colorScheme=t;var p=location.pathname;var section='home';if(p.indexOf('/harmony_atlas/docs/books/')>=0)section='harmony-books';else if(p.indexOf('/harmony_atlas/docs/')>=0)section='harmony-manual';else if(p.indexOf('/harmony_atlas/app/')>=0)section='harmony-app';else if(p.indexOf('/counterpoint_atlas/docs/books/')>=0)section='counterpoint-books';else if(p.indexOf('/counterpoint_atlas/docs/')>=0)section='counterpoint-manual';else if(p.indexOf('/counterpoint_atlas/tutorial/')>=0)section='counterpoint-tutorial';else if(p.indexOf('/counterpoint_atlas/app/')>=0)section='counterpoint-app';else if(p.indexOf('/orchestration_atlas/docs/books/')>=0)section='orchestration-books';else if(p.indexOf('/orchestration_atlas/docs/')>=0)section='orchestration-manual';else if(p.indexOf('/orchestration_atlas/app/')>=0)section='orchestration-app';d.setAttribute('data-site-section',section);var m=document.querySelector('meta[name="theme-color"]');if(m)m.setAttribute('content',t==='dark'?'#0b1119':'#f5efe4');})();</script>
 <link rel="stylesheet" href="../../site-theme.css" data-site-theme-css>
 </head>
@@ -55,12 +57,12 @@
     <section class="tab-panel active" id="panel-periods">
       <div class="section-head">
         <div><p class="eyebrow">先换问题，再换规则</p><h2>四个阶段，四种约束系统</h2></div>
-        <p class="section-note">每张卡只回答：当时的写作问题是什么、规则为什么变化、哪些手法成为结构手段。</p>
+        <p class="section-note">每个时期只回答：当时的写作问题是什么、规则为什么变化、哪些手法成为结构手段。</p>
       </div>
       <div class="timeline" id="periodTabs" role="tablist" aria-label="历史阶段"></div>
       <div class="period-layout">
-        <article class="panel period-detail" id="periodDetail" aria-live="polite"></article>
-        <aside class="panel side-stack">
+        <article class="period-detail" id="periodDetail" aria-live="polite"></article>
+        <aside class="side-stack">
           <div class="panel-head"><h3>本阶段的判断顺序</h3></div>
           <ol class="compact-list" id="periodSteps"></ol>
           <div class="evidence-note" id="periodEvidence"></div>
@@ -79,7 +81,7 @@
           <label class="field"><span>固定调</span><select id="cfSelect"></select></label>
           <div class="field"><span>对位类型</span><div class="segmented" id="speciesButtons"></div></div>
           <div class="button-row"><button class="button primary" id="btnGenerateSpecies" type="button">生成对位骨架</button><button class="button" id="btnPlaySpecies" type="button" disabled>▶ 试听</button></div>
-          <div class="mini-note">试听为简单正弦波，只用于核对节奏和音高，不代表音乐表现。</div>
+          <div class="mini-note">试听使用简单正弦波，用于核对节奏和音高。</div>
         </section>
         <section class="panel principle-card" id="speciesPrinciple"></section>
       </div>
@@ -113,7 +115,7 @@
           <div class="button-row"><button class="button primary" id="btnGenerateCanon" type="button">生成卡农关系</button><button class="button" id="btnPlayCanon" type="button" disabled>▶ 试听</button></div>
         </section>
         <section class="panel principle-card">
-          <p class="eyebrow">每个声部都要同时满足横向复制与纵向对位</p><h3>多声部不是把二声部练习并排叠加</h3>
+          <p class="eyebrow">每个声部都要同时满足横向复制与纵向对位</p><h3>多声部对位：横向复制与纵向约束同时成立</h3>
           <p>每个后续声部都按延迟复制主句；只要存在第三个声部，就要同时检查 V1–V2、V1–V3、V2–V3。多轮重复还要检查每轮接缝，因为接缝同样会产生新的模仿与叠置。</p>
           <div class="rule-pair"><div><b>非八度卡农</b><span>精确移位可能产生临时升降号；为保持调性，应句常需改动个别音。</span></div><div><b>紧接进入</b><span>时间差越小，声部越容易交错；同度/二度卡农常改写为八度/十度。</span></div><div><b>多声部叠入</b><span>累积五度会迅速抬高音区；实际输出会折返八度，但声部关系仍须逐对复核。</span></div><div><b>多轮周期</b><span>相似进入会重复出现；若主题长于延迟，轮次之间会形成持续叠置。</span></div></div>
           <div class="source-links" id="canonSources"></div>

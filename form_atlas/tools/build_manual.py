@@ -49,22 +49,20 @@ CSS = r'''
 *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:66px}body{margin:0;min-width:320px;background:transparent;color:var(--ink);font:16px/1.8 "Noto Serif SC","Source Han Serif SC","Songti SC",Georgia,serif;-webkit-font-smoothing:antialiased}img,svg{max-width:100%}a{color:var(--teal);text-decoration:none}a:hover{text-decoration:underline}
 .skip{position:absolute;left:-9999px;top:8px;z-index:50;background:var(--gold);color:#17120b;padding:9px 13px;border-radius:8px}.skip:focus{left:12px}
 .manual-layout{width:min(calc(100% - 30px),1320px);margin:0 auto;display:grid;grid-template-columns:250px minmax(0,1fr);gap:22px;padding:22px 0 55px;align-items:start}
-.manual-aside{position:sticky;top:calc(var(--music-site-nav-height,46px) + 12px);max-height:calc(100vh - var(--music-site-nav-height,46px) - 24px);overflow:auto;padding:16px;border:1px solid var(--line);border-radius:13px;background:color-mix(in srgb,var(--paper) 92%,transparent);box-shadow:var(--theme-shadow);font-family:"Segoe UI","Noto Sans SC","Microsoft YaHei",sans-serif}
+.manual-aside{position:sticky;top:calc(var(--music-site-nav-height,46px) + 12px);max-height:calc(100vh - var(--music-site-nav-height,46px) - 24px);overflow:auto;padding:16px 16px 16px 0;border:0;border-right:1px solid var(--line);border-radius:0;background:transparent;box-shadow:none;font-family:"Segoe UI","Noto Sans SC","Microsoft YaHei",sans-serif}
 .manual-brand{display:flex;gap:9px;align-items:center;margin-bottom:13px}.manual-mark{width:34px;height:34px;display:grid;place-items:center;border-radius:9px;background:linear-gradient(145deg,var(--gold),color-mix(in srgb,var(--gold) 60%,#754616));color:#17120b;font:800 18px/1 serif}.manual-brand b{display:block;font-size:14px}.manual-brand small{display:block;color:var(--muted);font-size:9px;letter-spacing:.09em;text-transform:uppercase}.manual-aside nav{display:grid;gap:2px}.manual-aside nav a{padding:5px 7px;border-radius:6px;color:var(--theme-soft);font-size:11px}.manual-aside nav a:hover{background:var(--theme-surface-2);color:var(--ink);text-decoration:none}.manual-aside nav .sub{padding-left:18px;color:var(--muted);font-size:10px}.aside-links{display:flex;gap:5px;flex-wrap:wrap;margin-top:12px}.aside-links a{border:1px solid var(--line);border-radius:6px;padding:4px 7px;font-size:9px;background:var(--theme-surface-2)}
 .manual-main{min-width:0}.manual-head{padding:clamp(26px,5vw,58px) 0 25px;border-bottom:2px solid var(--line)}.eyebrow{margin:0 0 9px;color:var(--teal);font-size:10px;font-weight:750;letter-spacing:.16em;text-transform:uppercase;font-family:"Segoe UI",sans-serif}.manual-head h1{margin:0;font-size:clamp(34px,5vw,58px);line-height:1.12;letter-spacing:-.04em}.manual-head .lead{max-width:800px;margin:17px 0 0;color:var(--theme-soft);font-size:15px}.meta-line{margin-top:11px;color:var(--muted);font:10px/1.7 ui-monospace,monospace}
-section.chapter{margin:35px 0 0;scroll-margin-top:66px}.chapter>h2{margin:0 0 13px;padding-bottom:8px;border-bottom:1px solid var(--line);font-size:clamp(23px,3.5vw,34px);line-height:1.35;letter-spacing:-.02em}.chapter h3{margin:24px 0 8px;font-size:20px}.chapter h4{margin:18px 0 6px;font-size:15px;color:var(--gold)}.chapter p{margin:8px 0;color:var(--theme-soft)}.chapter ul,.chapter ol{padding-left:23px;color:var(--theme-soft)}.chapter li{margin:5px 0}.callout{padding:14px 16px;border:1px solid var(--line);border-left:4px solid var(--gold);border-radius:0 10px 10px 0;background:var(--theme-gold-soft);color:var(--theme-soft);font-size:13px}.callout strong{color:var(--gold)}
-.chain{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:7px;margin:15px 0}.chain div{padding:13px;border:1px solid var(--line);border-radius:9px;background:var(--theme-surface-2);font-size:12px}.chain b{display:block;color:var(--gold);font-size:11px}.chain span{display:block;color:var(--muted);margin-top:4px;line-height:1.55}
+section.chapter{margin:35px 0 0;scroll-margin-top:66px}.chapter>h2{margin:0 0 13px;padding-bottom:8px;border-bottom:1px solid var(--line);font-size:clamp(23px,3.5vw,34px);line-height:1.35;letter-spacing:-.02em}.chapter h3{margin:24px 0 8px;font-size:20px}.chapter h4{margin:18px 0 6px;font-size:15px;color:var(--gold)}.chapter p{margin:8px 0;color:var(--theme-soft)}.chapter ul,.chapter ol{padding-left:23px;color:var(--theme-soft)}.chapter li{margin:5px 0}.criterion{margin:14px 0;padding:10px 0 0;border-top:1px solid var(--line);color:var(--theme-soft);font-size:14px}.criterion strong{color:var(--gold)}.principle-prose{margin:14px 0;color:var(--theme-soft);font-size:14px;line-height:1.85}.principle-prose strong{color:var(--gold)}
+.chain{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:7px;margin:15px 0}.chain div{padding:10px 0 0;border:0;border-top:2px solid var(--gold);border-radius:0;background:transparent;font-size:12px}.chain b{display:block;color:var(--gold);font-size:11px}.chain span{display:block;color:var(--muted);margin-top:4px;line-height:1.55}
 .concept-graph{overflow:auto;margin:16px 0 20px;padding:10px;border:1px solid var(--line);border-radius:12px;background:var(--theme-surface-2);-webkit-overflow-scrolling:touch}.concept-graph svg{display:block;width:100%;min-width:760px;height:auto}.graph-edge{stroke:var(--theme-line-strong,#6b7280);stroke-width:1.25;fill:none}.graph-edge-label{font:9px ui-sans-serif,"Microsoft YaHei",sans-serif;fill:var(--muted);paint-order:stroke;stroke:var(--theme-surface-2);stroke-width:4px;stroke-linejoin:round}.graph-node rect{stroke:var(--line);stroke-width:1}.graph-node text{font-family:"Noto Sans SC","Microsoft YaHei",sans-serif;fill:var(--ink);text-anchor:middle;dominant-baseline:middle}.graph-node .node-label{font-size:11px;font-weight:700}.graph-node .node-en{font-size:7px;fill:var(--muted);letter-spacing:.03em}.graph-node.layer-material rect{fill:color-mix(in srgb,var(--gold) 20%,var(--paper))}.graph-node.layer-closure rect{fill:color-mix(in srgb,var(--red) 15%,var(--paper))}.graph-node.layer-process rect{fill:color-mix(in srgb,var(--violet) 17%,var(--paper))}.graph-node.layer-type rect{fill:color-mix(in srgb,var(--teal) 16%,var(--paper))}.graph-node.layer-large rect{fill:color-mix(in srgb,var(--theme-soft) 16%,var(--paper))}.graph-legend{display:flex;flex-wrap:wrap;gap:7px;margin:8px 0 0}.graph-legend span{padding:3px 7px;border:1px solid var(--line);border-radius:20px;color:var(--muted);font:9px ui-sans-serif,sans-serif}
-.principles{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px;margin:14px 0}.principle{padding:13px;border:1px solid var(--line);border-radius:9px;background:var(--theme-surface-2)}.principle b{display:block;color:var(--gold);font-size:13px}.principle span{display:block;color:var(--theme-soft);font-size:12px;margin-top:3px}.principle small{display:block;color:var(--muted);font-size:10px;margin-top:6px}
-.node-card{margin:12px 0;padding:15px 17px;border:1px solid var(--line);border-radius:11px;background:var(--paper);break-inside:avoid}.node-card h3{margin:0;font-size:18px}.node-card .en{color:var(--muted);font:9px ui-monospace,monospace;letter-spacing:.08em;text-transform:uppercase}.node-card p{font-size:13px}.node-card dl{display:grid;grid-template-columns:70px 1fr;gap:6px;margin:10px 0 0;font-size:12px}.node-card dt{color:var(--muted)}.node-card dd{margin:0;color:var(--theme-soft)}
-.form-section{margin:23px 0 0;padding:18px;border:1px solid var(--line);border-radius:12px;background:var(--paper);break-inside:avoid;scroll-margin-top:66px}.form-section h3{margin:0;font-size:23px}.form-section>.en{color:var(--muted);font:9px ui-monospace,monospace}.form-section p{font-size:13px}.strip{display:flex;min-height:52px;margin:12px 0;border:1px solid var(--line);border-radius:8px;overflow:hidden;background:var(--theme-surface-2)}.seg{display:flex;flex-direction:column;justify-content:center;align-items:center;min-width:0;padding:7px;border-right:1px solid var(--line);text-align:center;font-size:11px}.seg:last-child{border-right:0}.seg b{line-height:1.25}.seg small{color:var(--muted);font-size:9px}.seg.a{background:var(--theme-gold-soft)}.seg.b{background:var(--theme-teal-soft)}.seg.c{background:var(--theme-violet-soft)}.seg.d{background:var(--theme-blue-soft)}.seg.development{background:var(--theme-red-soft)}.seg.closing{background:var(--theme-surface-3)}.seg.neutral{background:var(--theme-surface-2)}
-.split{display:grid;grid-template-columns:1fr 1fr;gap:12px}.box{padding:12px 14px;border:1px solid var(--line);border-radius:9px;background:var(--theme-surface-2)}.box h4{margin:0 0 6px}.box ul{margin:0;padding-left:18px;font-size:12px}
-.cites{margin:10px 0 0;padding:9px 12px;border-left:3px solid var(--gold);background:var(--theme-gold-soft);border-radius:0 8px 8px 0;font:11px/1.65 "Segoe UI","Microsoft YaHei",sans-serif}.cites b{display:block;color:var(--gold);margin-bottom:4px}.cites a{display:inline-block;margin:2px 5px 2px 0;padding:2px 6px;border:1px solid var(--line);border-radius:5px;background:var(--theme-surface);font-size:10px}
-.case-entry{margin:18px 0;padding:17px;border:1px solid var(--line);border-radius:12px;background:var(--paper);break-inside:avoid;scroll-margin-top:66px}.case-entry h3{margin:0}.case-entry .case-kicker{color:var(--teal);font:10px "Segoe UI",sans-serif;letter-spacing:.08em}.case-entry p{font-size:13px}.case-note{font-size:12px;color:var(--muted)}.source-list{margin:9px 0 0;padding:0;list-style:none;display:grid;gap:5px}.source-list li{font-size:10px;color:var(--muted)}.source-list a{font-size:10px}
-.claim{scroll-margin-top:66px;margin:12px 0;padding:14px 16px;border:1px solid var(--line);border-radius:10px;background:var(--paper);font-family:"Segoe UI","Noto Sans SC","Microsoft YaHei",sans-serif}.claim h3{margin:0;font-size:14px}.claim .statement{color:var(--theme-soft);font-size:12px}.claim blockquote{margin:7px 0 2px;padding-left:10px;border-left:2px solid var(--line);color:var(--theme-soft);font-size:11px}.claim cite{font-style:normal;color:var(--muted);font-size:10px}
+.node-card{margin:16px 0;padding:14px 0 0;border:0;border-top:1px solid var(--line);border-radius:0;background:transparent;break-inside:avoid}.node-card h3{margin:0;font-size:18px}.node-card .en{color:var(--muted);font:9px ui-monospace,monospace;letter-spacing:.08em;text-transform:uppercase}.node-card p{font-size:13px}.node-card dl{display:grid;grid-template-columns:70px 1fr;gap:6px;margin:10px 0 0;font-size:12px}.node-card dt{color:var(--muted)}.node-card dd{margin:0;color:var(--theme-soft)}
+.form-section{margin:26px 0 0;padding:18px 0 0;border:0;border-top:1px solid var(--line);border-radius:0;background:transparent;break-inside:avoid;scroll-margin-top:66px}.form-section h3{margin:0;font-size:23px}.form-section>.en{color:var(--muted);font:9px ui-monospace,monospace}.form-section p{font-size:13px}.strip{display:flex;min-height:52px;margin:12px 0;border:1px solid var(--line);border-radius:8px;overflow:hidden;background:var(--theme-surface-2)}.seg{display:flex;flex-direction:column;justify-content:center;align-items:center;min-width:0;padding:7px;border-right:1px solid var(--line);text-align:center;font-size:11px}.seg:last-child{border-right:0}.seg b{line-height:1.25}.seg small{color:var(--muted);font-size:9px}.seg.a{background:var(--theme-gold-soft)}.seg.b{background:var(--theme-teal-soft)}.seg.c{background:var(--theme-violet-soft)}.seg.d{background:var(--theme-blue-soft)}.seg.development{background:var(--theme-red-soft)}.seg.closing{background:var(--theme-surface-3)}.seg.neutral{background:var(--theme-surface-2)}
+.cites{margin:10px 0 0;padding:7px 0 0 12px;border-left:3px solid var(--gold);background:transparent;border-radius:0;font:11px/1.65 "Segoe UI","Microsoft YaHei",sans-serif}.cites b{display:block;color:var(--gold);margin-bottom:4px}.cites a{display:inline;padding:0;border:0;border-bottom:1px solid color-mix(in srgb,var(--gold) 38%,transparent);background:none;font-size:10px}.cites a:hover{text-decoration:none;border-bottom-color:var(--gold)}
+.case-entry{margin:22px 0;padding:16px 0 0;border:0;border-top:1px solid var(--line);border-radius:0;background:transparent;break-inside:avoid;scroll-margin-top:66px}.case-entry h3{margin:0}.case-entry .case-kicker{color:var(--teal);font:10px "Segoe UI",sans-serif;letter-spacing:.08em}.case-entry p{font-size:13px}.case-note{font-size:12px;color:var(--muted)}.source-list{margin:9px 0 0;padding:0;list-style:none;display:grid;gap:5px}.source-list li{font-size:10px;color:var(--muted)}.source-list a{font-size:10px}
+.claim{scroll-margin-top:66px;margin:16px 0;padding:14px 0 0;border:0;border-top:1px solid var(--line);border-radius:0;background:transparent;font-family:"Segoe UI","Noto Sans SC","Microsoft YaHei",sans-serif}.claim h3{margin:0;font-size:14px}.claim .statement{color:var(--theme-soft);font-size:12px}.claim blockquote{margin:7px 0 2px;padding-left:10px;border-left:2px solid var(--line);color:var(--theme-soft);font-size:11px}.claim cite{font-style:normal;color:var(--muted);font-size:10px}
 .manual-footer{margin-top:42px;padding:18px 0 0;border-top:1px solid var(--line);color:var(--muted);font:10px/1.65 "Segoe UI",sans-serif}
-@media(max-width:960px){.manual-layout{display:block;width:calc(100% - 20px);padding-top:12px}.manual-aside{position:relative;top:auto;max-height:none;margin-bottom:13px}.manual-aside nav{grid-template-columns:1fr 1fr}.manual-aside nav .sub{padding-left:7px}.manual-main{min-width:0}.chain{grid-template-columns:1fr 1fr}.split{grid-template-columns:1fr}}
-@media(max-width:600px){.manual-head h1{font-size:33px}.manual-head .lead{font-size:13px}.chain,.principles{grid-template-columns:1fr}.manual-aside nav{grid-template-columns:1fr}.form-section,.case-entry,.claim{padding:12px}.cites a{font-size:9px}.strip{min-height:46px}.seg{padding:5px 3px;font-size:9px}.seg small{font-size:8px}}
+@media(max-width:960px){.manual-layout{display:block;width:calc(100% - 20px);padding-top:12px}.manual-aside{position:relative;top:auto;max-height:none;margin-bottom:13px;padding:0 0 13px;border-right:0;border-bottom:1px solid var(--line)}.manual-aside nav{grid-template-columns:1fr 1fr}.manual-aside nav .sub{padding-left:7px}.manual-main{min-width:0}.chain{grid-template-columns:1fr 1fr}}
+@media(max-width:600px){.manual-head h1{font-size:33px}.manual-head .lead{font-size:13px}.chain{grid-template-columns:1fr}.manual-aside nav{grid-template-columns:1fr}.form-section,.case-entry,.claim{padding:12px 0 0}.cites a{font-size:9px}.strip{min-height:46px}.seg{padding:5px 3px;font-size:9px}.seg small{font-size:8px}}
 @media print{.manual-aside,.skip{display:none}.manual-layout{display:block;width:auto;padding:0}.manual-head{padding:0 0 15px}.form-section,.case-entry,.claim,.node-card{box-shadow:none}.cites a{border:0;background:none;padding:0}}
 '''
 
@@ -75,7 +73,7 @@ def source_links_for_claim(claim, manual_prefix=""):
         links.append('<a href="books/%s.html#%s">%s · PDF p.%d</a>' % (
             source["book"], ref_anchor(claim["id"], source["page"]), esc(book_by_id[source["book"]]["short"]), source["page"]
         ))
-    return "".join(links)
+    return " · ".join(links)
 
 
 def claims_for(form):
@@ -94,7 +92,7 @@ def all_claim_links(form):
             links.append('<a href="books/%s.html#%s">%s · p.%d</a>' % (
                 source["book"], ref_anchor(claim["id"], source["page"]), esc(book_by_id[source["book"]]["short"]), source["page"]
             ))
-    return "".join(links)
+    return " · ".join(links)
 
 
 def render_strip(segments):
@@ -169,20 +167,20 @@ def build_html(theory, claims, cases):
         len(book_by_id), len(claims), len(theory["forms"]), len(cases)))
 
     body.append('<section class="chapter" id="overview"><h2>1. 总览：不要先报曲式名</h2>')
-    body.append('<p>曲式名称是对一组结构关系的概括，不是分析起点。先回答四个问题，再决定名称；如果名称无法覆盖全部段落，就明确说明作品组合了哪些曲式原则。</p>')
+    body.append('<p>曲式名称是对一组结构关系的概括。先回答四个问题，再决定名称；如果名称无法覆盖全部段落，就明确说明作品组合了哪些曲式原则。</p>')
     body.append('<div class="chain"><div><b>01 材料</b><span>动机、主题、乐句之间是同一、变化、对比还是展开？</span></div><div><b>02 闭合</b><span>终止在哪里形成句读？哪个层级真正结束？</span></div><div><b>03 调性</b><span>调性在哪里离开、建立、回归？是否服从主调？</span></div><div><b>04 类型</b><span>用材料布局、终止层级、调性路径和比例共同命名。</span></div></div>')
-    body.append('<div class="callout"><strong>核心判据：</strong>主题数量不能单独定义奏鸣曲式；段落数量不能单独区分二部与三部；篇幅不能单独区分单三部与复三部。类型由关系决定，不由标签数量决定。</div>')
+    body.append('<p class="criterion"><strong>核心判据：</strong>主题数量不能单独定义奏鸣曲式；段落数量不能单独区分二部与三部；篇幅不能单独区分单三部与复三部。类型由关系决定，不由标签数量决定。</p>')
     body.append('</section>')
 
     body.append('<section class="chapter" id="principles"><h2>2. 四种结构操作</h2>')
-    body.append('<div class="principles">')
-    for principle in theory["principles"]:
-        body.append('<div class="principle"><b>%s</b><span>%s</span><small>%s</small></div>' % (
-            esc(principle["label"]), esc(principle["operation"]), esc(principle["effect"])))
-    body.append('</div></section>')
+    principle_text = "；".join(
+        "<strong>%s</strong>：%s，%s" % (esc(principle["label"]), esc(principle["operation"]), esc(principle["effect"]))
+        for principle in theory["principles"])
+    body.append('<p class="principle-prose">%s。</p>' % principle_text)
+    body.append('</section>')
 
     body.append('<section class="chapter" id="concepts"><h2>3. 概念地图：从材料到类型</h2>')
-    body.append('<p>下图是概念之间的生成关系，不是固定创作步骤。实际作品可以跳过某一级，也可以把多个原则叠在同一段落中；箭头表示“在什么条件下生成下一层结构”。</p>')
+    body.append('<p>下图表示概念之间的生成关系。实际作品可以跳过某一级，也可以把多个原则叠在同一段落中；箭头表示“在什么条件下生成下一层结构”。</p>')
     body.append(render_concept_graph(theory))
     for layer in theory["layers"]:
         body.append('<h3 id="layer-%s">%s</h3>' % (esc(layer["id"]), esc(layer["label"])))
@@ -210,10 +208,11 @@ def build_html(theory, claims, cases):
         body.append('<article class="form-section" id="form-%s"><span class="en">%s</span><h3>%s</h3>' % (esc(form["id"]), esc(form["en"]), esc(form["label"])))
         body.append(render_strip(form["structure"]))
         body.append('<p>%s</p>' % esc(form["definition"]))
-        body.append('<div class="split"><div class="box"><h4>判定条件</h4><ul>%s</ul></div><div class="box"><h4>容易混淆</h4><ul>%s</ul></div></div>' % (
-            "".join('<li>%s</li>' % esc(item) for item in form.get("tests", [])),
-            "".join('<li>%s</li>' % esc(item) for item in form.get("errors", []))))
-        body.append('<div class="box" style="margin-top:10px"><h4>调性与结构张力</h4><p>%s</p></div>' % esc(form.get("tonalNote", "")))
+        body.append('<p><strong>判定条件：</strong>%s</p>' % esc(sentence_join(form.get("tests", []))))
+        body.append('<p><strong>容易混淆：</strong>%s</p>' % esc(sentence_join(form.get("errors", []))))
+        tonal_note = esc(form.get("tonalNote", ""))
+        if tonal_note:
+            body.append('<p><strong>调性与结构张力：</strong>%s</p>' % tonal_note)
         related_cases = [item for item in cases if item["id"] in form.get("cases", [])]
         if related_cases:
             body.append('<p class="case-note">相关案例：%s</p>' % " · ".join('<a href="#case-%s">%s《%s》</a>' % (esc(item["id"]), esc(item["composer"]), esc(item["title"])) for item in related_cases))
@@ -231,7 +230,7 @@ def build_html(theory, claims, cases):
             esc(item["id"]), esc(form.get("label", "")), esc(item["composer"]), esc(item["title"])))
         body.append(render_strip(item["structure"]))
         body.append('<p>%s</p>' % esc(item["analysis"]))
-        body.append('<h4>听什么</h4><ul>%s</ul>' % "".join('<li>%s</li>' % esc(cue) for cue in item.get("cues", [])))
+        body.append('<p><strong>听什么：</strong>%s</p>' % esc(sentence_join(item.get("cues", []))))
         body.append('<h4>教材依据</h4><ul class="source-list">')
         for source in item.get("sources", []):
             body.append('<li><a href="books/%s.html#%s">%s · PDF p.%d ↗</a> %s</li>' % (
@@ -255,7 +254,7 @@ def build_html(theory, claims, cases):
                 esc(source["quote"]), esc(book_by_id[source["book"]]["title"]), source["book"], ref_anchor(claim["id"], source["page"]), source["page"]))
         body.append('</article>')
     body.append('</section>')
-    body.append('<footer class="manual-footer">曲式理论地图 · 静态手册 · 引用页仅用于学习核验。教材页码均为 PDF 物理页；OCR 只辅助检索，谱例以影印为准。</footer>')
+    body.append('<footer class="manual-footer">曲式理论地图 · 静态手册。教材页码均为 PDF 物理页；OCR 只辅助检索，谱例以影印为准。</footer>')
 
     return '''<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#0b1119"><meta name="description" content="曲式理论体系：材料、句法、终止、调性布局与曲式类型，附教材页依据和作品案例。"><title>曲式学手册 · Form Atlas</title>%s<link rel="stylesheet" href="../../site-theme.css" data-site-theme-css><style>%s</style></head><body><a class="skip" href="#main">跳到主要内容</a><div class="manual-layout">%s<main class="manual-main" id="main">%s</main></div><script src="../../site-nav.js" data-site-nav></script></body></html>''' % (
         THEME_INIT, CSS, "".join(aside), "".join(body))
@@ -281,14 +280,10 @@ def build_markdown(theory, claims, cases):
             lines += ["教材依据：" + "；".join(links), ""]
     lines += ["## 3. 曲式类型", ""]
     for form in theory["forms"]:
-        lines += ["### %s" % form["label"], "", form["definition"], "", "结构：`%s`" % " | ".join(segment["label"] for segment in form["structure"]), "", "判定条件：", ""]
-        lines += ["- " + item for item in form.get("tests", [])]
-        lines += ["", "容易混淆：", ""] + ["- " + item for item in form.get("errors", [])]
-        lines += ["", form.get("tonalNote", ""), ""]
+        lines += ["### %s" % form["label"], "", form["definition"], "", "结构：`%s`" % " | ".join(segment["label"] for segment in form["structure"]), "", "判定条件：" + sentence_join(form.get("tests", [])), "", "容易混淆：" + sentence_join(form.get("errors", [])), "", "调性与结构张力：" + form.get("tonalNote", ""), ""]
     lines += ["## 4. 教材案例", ""]
     for item in cases:
-        lines += ["### %s《%s》" % (item["composer"], item["title"]), "", item["analysis"], "", "结构：`%s`" % " | ".join(segment["label"] for segment in item["structure"]), "", "听什么："]
-        lines += ["- " + cue for cue in item.get("cues", [])]
+        lines += ["### %s《%s》" % (item["composer"], item["title"]), "", item["analysis"], "", "结构：`%s`" % " | ".join(segment["label"] for segment in item["structure"]), "", "听什么：" + sentence_join(item.get("cues", []))]
         lines += ["", "教材依据："]
         for source in item.get("sources", []):
             lines.append("- [%s，PDF p.%d](books/%s.html#%s) %s" % (book_by_id[source["book"]]["title"], source["page"], source["book"], case_ref_anchor(item["id"], source["page"]), source.get("label", "")))
@@ -308,6 +303,18 @@ def build_markdown(theory, claims, cases):
 book_by_id = {}
 claim_by_id = {}
 form_by_id = {}
+
+
+def sentence_join(items):
+    parts = []
+    for item in items:
+        text = str(item or "").strip()
+        if not text:
+            continue
+        if text[-1] not in "。！？":
+            text += "。"
+        parts.append(text)
+    return "".join(parts)
 
 
 def main():

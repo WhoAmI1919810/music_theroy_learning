@@ -238,12 +238,24 @@ html[data-theme] .hero h1 span,
 html[data-theme] .lead,
 html[data-theme] .project p,
 html[data-theme] .note p { color: var(--theme-soft); }
-html[data-theme] .facts li,
+html[data-theme] .facts li {
+  border: 0;
+  background: none;
+  color: var(--theme-muted);
+}
 html[data-theme] .tags li {
   border-color: var(--theme-line);
   background: color-mix(in srgb, var(--theme-surface) 70%, var(--theme-bg));
   color: var(--theme-muted);
 }
+html[data-theme] .chain-node b,
+html[data-theme] .system-main h3,
+html[data-theme] .scope h2 { color: var(--theme-text); }
+html[data-theme] .chain-node span,
+html[data-theme] .system-main .en,
+html[data-theme] .system-method,
+html[data-theme] .scope p { color: var(--theme-muted); }
+html[data-theme] .system-row { border-color: var(--theme-line); }
 html[data-theme] .tags li { color: var(--theme-soft); }
 html[data-theme] .project {
   background: linear-gradient(160deg, var(--theme-surface), color-mix(in srgb, var(--theme-surface-2) 84%, var(--theme-bg)));
@@ -397,15 +409,12 @@ html[data-theme] .header-link {
 html[data-theme] .header-link:hover { background: var(--theme-surface-2); }
 html[data-theme] .app-header .brand-mark { color: #21170b; }
 html[data-theme] .tabs { background: color-mix(in srgb, var(--theme-surface) 92%, transparent); }
-html[data-site-section="orchestration-app"] .hero { background: radial-gradient(circle at 100% 0, var(--theme-gold-soft), transparent 42%), var(--theme-surface); }
+html[data-site-section="orchestration-app"] .hero { background: transparent; }
 html[data-theme] .signal-row { border-color: var(--theme-line); }
 html[data-theme] .signal-row small,
 html[data-theme] .muted,
 html[data-theme] .footnote { color: var(--theme-muted); }
-html[data-theme] .period-card,
 html[data-theme] .mini-card,
-html[data-theme] .formula-item,
-html[data-theme] .technique-card,
 html[data-theme] .metric { background: var(--theme-surface-2); border-color: var(--theme-line); }
 html[data-site-section="orchestration-app"] .primary { background: var(--theme-accent); color: #fff; }
 html[data-theme] .secondary { background: transparent; color: var(--theme-text); }
@@ -619,9 +628,9 @@ html[data-theme="light"] .manual-visual {
   --mv-gold: var(--theme-gold);
   --mv-teal: var(--theme-teal);
   --mv-warm: var(--theme-warm);
-  background: linear-gradient(145deg, var(--theme-surface), color-mix(in srgb, var(--theme-surface-2) 76%, var(--theme-bg)));
+  background: transparent;
   color: var(--theme-text);
-  box-shadow: var(--theme-shadow);
+  box-shadow: none;
 }
 html[data-theme="dark"] .manual-visual {
   --mv-bg: var(--theme-surface);
@@ -633,7 +642,7 @@ html[data-theme="dark"] .manual-visual {
   --mv-gold: var(--theme-gold);
   --mv-teal: var(--theme-teal);
   --mv-warm: var(--theme-warm);
-  background: linear-gradient(145deg, var(--theme-surface), color-mix(in srgb, var(--theme-bg-2) 68%, var(--theme-surface)));
+  background: transparent;
 }
 html[data-theme="light"] .manual-visual :is(.mv-title, .mv-panel h4, .mv-em, .mv-level-tag, .mv-level-main b, .mv-principle h4, .mv-stage h4, .mv-goal h4, .mv-mode-info h4, .mv-triad b, .mv-chord-pick b, .mv-resolution .from b, .mv-resolution .to b, .mv-dag-node:hover, .mv-dag-node:focus-visible, .mv-dag-node.is-active, .mv-mode-pick:hover, .mv-mode-pick:focus-visible, .mv-mode-pick.is-active, .mv-chord-pick:hover, .mv-chord-pick:focus-visible, .mv-chord-pick.is-active, .mv-dag-detail strong) { color: var(--theme-text); }
 html[data-theme="light"] .manual-visual :is(.mv-panel, .mv-level, .mv-dag-node, .mv-mode-pick, .mv-chord-pick, .mv-dag-detail, .mv-resolution, .mv-goal, .mv-stage) { background: var(--theme-surface-2); border-color: var(--theme-line); color: var(--theme-soft); }
@@ -651,6 +660,45 @@ html[data-theme="light"] .manual-visual .mv-route-tab.is-active { border-color: 
 html[data-theme="light"] .manual-visual .mv-network-stage { background: radial-gradient(circle at center, var(--theme-surface) 0, var(--theme-surface-2) 74%); }
 html[data-theme="light"] .manual-visual .mv-network-source { background: var(--theme-gold-soft); border-color: var(--theme-gold); color: var(--theme-text); }
 html[data-theme="light"] .manual-visual .mv-network-detail { background: color-mix(in srgb, var(--theme-surface-2) 64%, transparent); border-color: var(--theme-line); }
+
+/* Reading surfaces: figures keep their diagrams, not an outer card. */
+html[data-theme] .manual-visual,
+html[data-theme] .mtv {
+  margin: 30px 0;
+  padding: 18px 0 0;
+  border: 0;
+  border-top: 1px solid var(--theme-line);
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+}
+html[data-theme] .manual-visual :is(.mv-principle, .mv-goal, .mv-method, .mv-book,
+  .mv-cadence, .mv-evidence-group, .mv-spectrum-row, .mv-resolution) {
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+}
+html[data-theme] .manual-visual .mv-level {
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid var(--theme-line);
+  border-radius: 0;
+}
+
+/* Text blocks stay on the reading surface; timelines and diagrams keep their own lines. */
+html[data-theme] .manual-visual .mv-stage {
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+}
+html[data-theme][data-site-section="form-app"] .claim,
+html[data-theme][data-site-section="form-manual"] .claim {
+  border-color: var(--theme-line);
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+}
 
 @media print {
   html[data-theme] .site-nav { display: none !important; }

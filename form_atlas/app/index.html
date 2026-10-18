@@ -30,16 +30,9 @@
 
   <section class="hero" aria-labelledby="page-title">
     <p class="eyebrow">材料关系 · 结构闭合 · 调性布局 · 教材可回查</p>
-    <h1 id="page-title">曲式不是套模板，<br>而是判断材料如何形成层级</h1>
+    <h1 id="page-title">曲式判断<br>材料如何形成层级</h1>
     <p class="lead">先看主题材料怎样重复、变化和对比，再看终止在哪里闭合、调性离开后是否回归，最后才用二部、三部、回旋、变奏、奏鸣等名称概括结构。地图、结构条带与案例都按这个顺序组织。</p>
-    <ul class="facts">
-      <li><b data-count="books">7</b> 本教材</li>
-      <li><b data-count="claims">0</b> 条教材论点</li>
-      <li><b data-count="pages">0</b> 个引用页</li>
-      <li><b data-count="forms">0</b> 种曲式</li>
-      <li><b data-count="cases">0</b> 个分析案例</li>
-      <li>桌面与移动端</li>
-    </ul>
+    <p class="factline"><b data-count="books">7</b> 本教材 · <b data-count="claims">0</b> 条教材论点 · <b data-count="pages">0</b> 个引用页 · <b data-count="forms">0</b> 种曲式 · <b data-count="cases">0</b> 个分析案例</p>
   </section>
 
   <nav class="tabs" id="tabs" role="tablist" aria-label="曲式系统页面">
@@ -70,7 +63,7 @@
             <g id="mapNodes"></g>
           </svg>
         </div>
-        <aside class="card map-detail" id="mapDetail" aria-live="polite"></aside>
+        <aside class="map-detail" id="mapDetail" aria-live="polite"></aside>
       </div>
       <div class="section-head"><div><p class="eyebrow">判断顺序</p><h2>四次判断，避免先报曲式名</h2></div></div>
       <div class="chain" aria-label="曲式判断四步">
@@ -79,31 +72,31 @@
         <div class="chain-step"><span class="num">03 / TONALITY</span><b>调性运动</b><span>主调、属调、下属方向与回归关系决定更大层级的张力，尤其是在奏鸣曲式中。</span></div>
         <div class="chain-step"><span class="num">04 / TYPE</span><b>结构类型</b><span>用层级、材料布局、调性布局和比例共同命名；不符合典型图式时说明它组合了哪些原则。</span></div>
       </div>
-      <div class="powers" id="principleCards"></div>
-      <div class="warning"><b>常见误判：</b>主题数量不能单独定义奏鸣曲式；段落数量不能单独区分单三部与复三部；回旋曲式也不能只凭“开头材料又出现了”确认，必须检查主部是否形成多次、可分句的回归。</div>
+      <div class="principle-rows" id="principleCards"></div>
+      <p class="warning"><b>常见误判：</b>主题数量不能单独定义奏鸣曲式；段落数量不能单独区分单三部与复三部；回旋曲式也不能只凭“开头材料又出现了”确认，必须检查主部是否形成多次、可分句的回归。</p>
     </section>
 
     <section class="panel" id="panel-forms" role="tabpanel" aria-labelledby="tab-forms">
       <div class="section-head">
-        <div><p class="eyebrow">类型与判定条件</p><h2>每种曲式都对应一组可检查关系</h2><p>结构条带只是压缩图；点击卡片可看定义、边界条件、常见误判、调性布局和相关案例。</p></div>
+        <div><p class="eyebrow">类型与判定条件</p><h2>每种曲式都对应一组可检查关系</h2><p>结构条带只是压缩图；点击曲式条目可看定义、边界条件、常见误判、调性布局和相关案例。</p></div>
         <p class="aside-note">条带宽度仅为示意，不按作品实际小节数比例绘制。</p>
       </div>
       <div class="form-filter" id="formFilter" role="group" aria-label="筛选曲式类型"></div>
       <div class="form-grid" id="formGrid"></div>
-      <section class="card form-detail" id="formDetail" hidden aria-live="polite"></section>
+      <section class="form-detail" id="formDetail" hidden aria-live="polite"></section>
     </section>
 
     <section class="panel" id="panel-cases" role="tabpanel" aria-labelledby="tab-cases">
       <div class="section-head">
         <div><p class="eyebrow">教材分析实例</p><h2>把结构判断落到具体作品</h2><p>每个案例给出分段、调性路径、听辨线索和教材页码。谱例页可通过“核对教材页”直接查看整版影印。</p></div>
-        <p class="aside-note">案例的段落比例是分析示意，不是精确小节比例；具体小节与谱例以教材页为准。</p>
+        <p class="aside-note">案例的段落比例是分析示意；具体小节与谱例以教材页为准。</p>
       </div>
       <div class="case-tools">
         <input id="caseSearch" type="search" placeholder="搜索作曲家、作品或曲式…" aria-label="搜索案例">
         <span class="chip active" data-case-filter="all">全部</span>
       </div>
       <div class="case-grid" id="caseGrid"></div>
-      <section class="card case-detail" id="caseDetail" hidden aria-live="polite"></section>
+      <section class="case-detail" id="caseDetail" hidden aria-live="polite"></section>
     </section>
 
     <section class="panel" id="panel-analysis" role="tabpanel" aria-labelledby="tab-analysis">
@@ -111,10 +104,10 @@
         <div><p class="eyebrow">可复用分析流程</p><h2>从最小句读到整体曲式</h2><p>它不会替你判定曲式。每一步要求你写出证据，最后再决定名称；分析结果只保存在当前浏览器。</p></div>
       </div>
       <div class="analysis-layout">
-        <div class="card card-pad">
+        <div class="analysis-main">
           <ol class="analysis-steps" id="analysisSteps"></ol>
         </div>
-        <aside class="card card-pad analysis-side">
+        <aside class="analysis-side">
           <h3>分析记录</h3>
           <label class="field">作品<input id="workName" type="text" placeholder="作曲家《作品》"></label>
           <label class="field">暂定曲式<select id="provisionalForm"></select></label>
@@ -131,7 +124,7 @@
         <div><p class="eyebrow">教材依据与覆盖</p><h2>每条理论判断回到具体 PDF 页</h2><p>同一理论在多种教材中出现的，全部列出。表中“直接依据”指该页明确讨论对应问题；“案例”指该页含作品分析或谱例。</p></div>
         <p class="aside-note">页码均为 PDF 物理页。OCR 只用于检索，谱例与临时记号以整版影印为准。</p>
       </div>
-      <div class="card card-pad" style="margin-bottom:13px">
+      <div class="coverage-section" style="margin-bottom:13px">
         <div class="section-head" style="margin-top:0"><div><h2 style="font-size:21px">教材覆盖矩阵</h2></div></div>
         <div class="table-scroll"><table class="coverage" id="coverageTable"></table></div>
       </div>
@@ -141,7 +134,7 @@
     </section>
   </main>
 
-  <footer class="footer"><span>曲式理论地图 · 静态页面 · 引用页仅用于学习核验</span><span><a href="../docs/曲式学手册.html">理论手册</a> · <a href="../docs/books/">教材证据</a> · <a href="../../README.md">项目说明</a></span></footer>
+  <footer class="footer"><span>曲式理论地图 · 静态页面</span><span><a href="../docs/曲式学手册.html">理论手册</a> · <a href="../docs/books/">教材证据</a> · <a href="../../README.md">项目说明</a></span></footer>
 </div>
 <script src="data/theory-data.js"></script>
 <script src="js/app.js"></script>

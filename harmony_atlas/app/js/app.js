@@ -539,7 +539,7 @@
     const selectedPeriod = periodById(state.periodStyle);
     const periodBasis = selectedPeriod
       ? '<div class="detail-period-basis"><b>本档教材依据</b>' + periodBasisLinks(selectedPeriod.id) + '</div>'
-      : '<div class="detail-period-basis">标签表示和弦可适用的历史语法，不是年代归属；同一和弦可以在多个阶段出现。</div>';
+      : '<div class="detail-period-basis">标签表示和弦可适用的历史语法；同一和弦可以跨阶段出现。</div>';
     const constraintInfo = state.requiredPcs.length
       ? '<div class="info-line"><b>指定音</b><span>' + esc(constraintRoleText(chord)) + ' · ' +
         (E.chordIncludesPcs(chord, state.requiredPcs) ? '已满足' : '未满足') + '</span></div>'
@@ -1150,7 +1150,7 @@
     };
     const relationChip = (id) => isNode(id)
       ? '<button class="relation-chip" data-map-rel="' + esc(id) + '">' + esc(title(id)) + '</button>'
-      : '<span class="relation-chip external" title="应用结果，不是理论节点">' + esc(title(id)) + '</span>';
+      : '<span class="relation-chip external" title="应用结果">' + esc(title(id)) + '</span>';
     const periods = (D.PERIODS || []).filter((period) => period.nodes.includes(node.id));
     $('#mapDetail').innerHTML = '<div class="map-detail-content"><span class="layer-badge">' + esc(LAYER_NAMES[node.layer] || ('层 ' + node.layer)) + ' · L' + node.layer + '</span>' +
       '<h3>' + esc(node.title) + '</h3>' +

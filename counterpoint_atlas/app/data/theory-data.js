@@ -15,7 +15,7 @@
         "平行五度、平行八度按实际发声音程逐对检查，不只看每拍第一个音。"
       ],
       techniques: ["五类对位", "固定调", "单对位", "八/十/十二度复对位", "严格卡农"],
-      caution: "严格对位是约束训练，不是文艺复兴作品的全部语法。作品仍会使用装饰、节奏与终止上的自由。",
+      caution: "严格对位是约束训练，覆盖文艺复兴对位的基本语法；作品还会使用装饰、节奏与终止上的自由。",
       claims: ["hist.style-system", "species.first-boundaries", "species.second-passing", "species.fourth-suspension"],
       manual: "periods"
     },
@@ -25,14 +25,14 @@
       years: "约 1600–1750",
       eyebrow: "大小调 · 功能和声 · 主题展开",
       problem: "低音和声成为骨架，对位声部必须同时服从旋律独立与功能进行。赋格要把一个主题变成整首曲子的结构。",
-      shift: "“自由”不是不守规则，而是不协和可按和弦外音、延留、七和弦与离调来解释。主题、答题、对题、间插段和持续音形成可扩展的调性结构。",
+      shift: "“自由”对位让不协和按和弦外音、延留、七和弦与离调来解释。主题、答题、对题、间插段和持续音形成可扩展的调性结构。",
       rules: [
         "答题通常把主题移高五度或移低四度；守调答题只改会越过主属边界的位置。",
         "呈示部完成所有声部的主题/答题进入；中间部用关系调、下属方向和间插段展开。",
         "密接和应让主题在未结束时再次进入；持续音把属到主的结构支点拉长。"
       ],
       techniques: ["主题/答题/对题", "呈示部", "间插段", "中间部", "密接和应", "持续音", "二重赋格"],
-      caution: "真实答题与守调答题不是风格高低之分，而是主题是否包含主属冲突、是否转调的技术选择。",
+      caution: "真实答题与守调答题取决于主题是否包含主属冲突、是否转调。",
       claims: ["hist.tonal-basis", "fugue.answer-dominant", "fugue.tonal-answer", "fugue.exposition-order", "fugue.stretto-definition"],
       manual: "periods"
     },
@@ -66,7 +66,7 @@
         "线条形态、声部交错、音区分离与节奏独立仍决定复调是否可听辨。"
       ],
       techniques: ["线性对位", "平行音程", "多调性", "十二音", "音级集合", "音色分层"],
-      caution: "米德尔顿允许平行五度，不等于所有现代风格都允许；八度限制、音阶材料与作品内部规则仍可能更严。",
+      caution: "米德尔顿允许平行五度；八度限制、音阶材料与作品内部规则仍可能更严。",
       claims: ["modern.parallels", "modern.intervals", "modern.scale", "modern.linear"],
       manual: "modern"
     }
@@ -118,7 +118,7 @@
       title: "切分音与延留",
       ratio: "syncopation",
       rule: "延留音先在弱拍作为和弦音出现，连线进入下一强拍；若在新和声上不协和，就必须向下级进解决。",
-      why: "切分让同一音跨越和声变化。协和音变成不协和音时，张力来自和声改变而不是旋律跳进；解决方向因此必须是下行级进。",
+      why: "切分让同一音跨越和声变化。协和音变成不协和音时，张力来自和声改变；解决方向因此必须是下行级进。",
       strong: "强拍可协和，也可由延留音形成不协和；后者必须解决。",
       weak: "弱拍是预备或解决的位置，不能随意制造未准备的不协和。",
       checks: ["预备音是否为和弦音", "强拍延留是否下行级进解决", "链式延留是否每步合法"],
@@ -131,7 +131,7 @@
       title: "混合节奏",
       ratio: "mixed",
       rule: "合并前四类的音型。结构强拍仍要能读出和声，弱拍可用经过、辅助和延留；节奏重音不能每小节机械重复。",
-      why: "第五类不是“随便写”，而是把多种不协和处理放在同一小节内。判断标准从单一节奏型转为：每个结构点是否有和声解释。",
+      why: "第五类把多种不协和处理放在同一小节内。判断标准从单一节奏型转为：每个结构点是否有和声解释。",
       strong: "结构强拍仍优先协和。",
       weak: "根据所在节奏位置判断经过、辅助、延留或和弦音。",
       checks: ["强拍不协和", "节奏型连续重复", "整小节切分造成固定调空隙", "终止前的解决"],
@@ -154,7 +154,7 @@
     { id: "answer", title: "答题", question: "主题的主属冲突是否需要守调调整？", test: "通常上五度/下四度；真实答题或守调答题；尾部是否回主调。", manual: "fugue-answer" },
     { id: "countersubject", title: "对题", question: "它能否在主题与答题之间保持节奏与音调对比？", test: "固定对题要与主题构成可转位组合；自由对题可只出现一次。", manual: "fugue-countersubject" },
     { id: "exposition", title: "呈示部", question: "所有声部是否都在主属范围内完成进入？", test: "二声部 T–A；三声部 T–A–T；四声部 T–A–T–A；可加补充进入。", manual: "fugue-exposition" },
-    { id: "episode", title: "间插段", question: "它是否承担连接、模进或转调，而不是另一个主题？", test: "材料来自主题/对题/小结尾；和声不稳定；结尾导入下一调。", manual: "fugue-episode" },
+    { id: "episode", title: "间插段", question: "它是否承担连接、模进或转调？", test: "材料来自主题/对题/小结尾；和声不稳定；结尾导入下一调。", manual: "fugue-episode" },
     { id: "middle", title: "中间部", question: "调性是否离开主属轴心，同时保持主题轮廓？", test: "完整主题进入与间插段交替；关系调、下属方向、远关系按篇幅安排。", manual: "fugue-middle" },
     { id: "stretto", title: "密接和应", question: "主题能否在未结束时叠入另一声部？", test: "进入间隔、音程、音区、调性都要设计；常在高潮或再现前出现。", manual: "fugue-stretto" },
     { id: "pedal", title: "持续音", question: "它是否在和弦音上开始并以和弦音结束？", test: "属持续加强回归；主持续确认收束；可在任何声部或形成持续和弦。", manual: "fugue-recap" },
@@ -213,7 +213,7 @@
 
   const CLAIM_TITLES = {
     "hist.style-system": "对位规则依附于当时的调式与和声语言",
-    "hist.strict-training": "严格复对位是训练，不是创作禁令",
+    "hist.strict-training": "严格复对位作为写作训练",
     "hist.tonal-basis": "巴洛克赋格以大小调功能和声为底层",
     "species.first-boundaries": "首尾完全协和，内部避免连续完全协和",
     "species.second-passing": "强拍协和，弱拍经过/辅助",
@@ -229,7 +229,7 @@
     "canon.process": "分段写卡农，不先写完主句",
     "canon.delay": "进入距离通常一到三小节",
     "canon.overlap": "紧接进入会压缩声部空间",
-    "fugue.definition": "赋格不等于通篇卡农",
+    "fugue.definition": "赋格的结构",
     "fugue.subject-identity": "主题必须可辨认、可重复、可发展",
     "fugue.subject-properties": "主题的调性、长度、音域与收束",
     "fugue.answer-dominant": "答题在属方向回答",
@@ -241,7 +241,7 @@
     "fugue.episode-function": "间插段承担转调与动力",
     "fugue.middle": "中间部是主题进入与间插段交替",
     "fugue.stretto-definition": "密接和应是主题未结束就再次进入",
-    "fugue.stretto-difference": "密接和应不是整首卡农",
+    "fugue.stretto-difference": "密接和应的结构位置",
     "fugue.recap": "再现以主调回归为骨架",
     "fugue.pedal": "持续音加强属到主的支点",
     "fugue.overall": "整体布局把主题进入与调性对齐",

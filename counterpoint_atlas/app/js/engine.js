@@ -1221,11 +1221,11 @@
     if (outOfKey.length) addDiagnostic("warning", "subject-scale", "主题含调外音：" + Array.from(new Set(outOfKey)).join("、") + "。这在半音化主题中可以是特性，但答题与中间进入的调性解释要逐音复核。", "主题");
     if (subjectSpan < 4) addDiagnostic("warning", "subject-length", "主题只有 " + subjectSpan + " 拍；过短会让答题和紧接缺少可辨认的材料。", "主题");
     if (firstDegree < 0) addDiagnostic("warning", "subject-start", "主题首音不在所选调内；请确认这是有意的半音化起句，还是主音/调式输入错误。", "主题");
-    else if (firstDegree !== 0 && firstDegree !== 4) addDiagnostic("info", "subject-start", "主题从第 " + (firstDegree + 1) + " 级开始；请确认这是有意的弱起/属音起句，而不是调性输入错误。", "主题");
+    else if (firstDegree !== 0 && firstDegree !== 4) addDiagnostic("info", "subject-start", "主题从第 " + (firstDegree + 1) + " 级开始；请确认这是有意的弱起/属音起句，或检查调性输入。", "主题");
     if (subjectSpan > 16) addDiagnostic("warning", "subject-memory", "主题长达 " + subjectSpan + " 拍；在紧接与多声部进入中要删减尾部或只保留主题头。", "主题");
     const subjectRange = Math.max(...subject) - Math.min(...subject);
     if (subjectRange > 12) addDiagnostic("warning", "range", "主题音域超过一个八度；检查各声部移位后的实际音域。", "主题");
-    if (answerRelation && !answerRelation.dominantRelation) addDiagnostic("warning", "answer", "答题与主题的主音程关系不是典型的五度/四度；请确认答题类型或主题调性。", "答题");
+    if (answerRelation && !answerRelation.dominantRelation) addDiagnostic("warning", "answer", "答题与主题的主音程关系偏离典型的五度/四度；请确认答题类型或主题调性。", "答题");
     if (settings.answerType === "tonal") addDiagnostic("info", "tonal-answer", "守调答题只应改写越过主属边界的位置；当前方案保留了主题节奏，具体改写需逐音复核。", "答题");
     if (settings.answerType === "real") addDiagnostic("info", "real-answer", "真实答题逐音移高五度；若主题含主属跳进，检查答题是否越过呈示部的主属范围。", "答题");
     if (counterSubject && counterSubject.invertibility.total) {
