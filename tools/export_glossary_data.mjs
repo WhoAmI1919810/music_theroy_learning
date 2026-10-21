@@ -3,6 +3,7 @@ import fs from "node:fs";
 import path from "node:path";
 import vm from "node:vm";
 import { fileURLToPath } from "node:url";
+import { ENRICHMENTS } from "./glossary-enrichment.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const OUT = path.join(ROOT, "glossary", "terms.json");
@@ -33,6 +34,10 @@ const harmony = loadScript("harmony_atlas/app/js/theory-data.js", ["HarmonyData"
 const counterpoint = loadScript("counterpoint_atlas/app/data/theory-data.js", ["CounterpointData"]);
 const orchestration = loadScript("orchestration_atlas/app/data/theory-data.js", ["OrchestrationData"]);
 const form = JSON.parse(fs.readFileSync(path.join(ROOT, "form_atlas", "evidence", "theory.json"), "utf8"));
+const harmonySources = JSON.parse(fs.readFileSync(path.join(ROOT, "harmony_atlas", "evidence", "source-map.json"), "utf8"));
+const orchestrationSources = JSON.parse(fs.readFileSync(path.join(ROOT, "orchestration_atlas", "evidence", "source-map.json"), "utf8"));
+const counterpointSources = JSON.parse(fs.readFileSync(path.join(ROOT, "counterpoint_atlas", "evidence", "source-map.json"), "utf8"));
+const formSources = JSON.parse(fs.readFileSync(path.join(ROOT, "form_atlas", "evidence", "source-map.json"), "utf8"));
 
 const SUBJECTS = [
   {
@@ -145,6 +150,10 @@ function add(subjectId, groupId, key, title, definition, options = {}) {
     aliases: Array.from(new Set((options.aliases || []).map((item) => String(item).trim()).filter((item) => item && item !== String(title).trim()))),
     definition: cleanProse(definition).trim(),
     note: cleanProse(options.note || "").trim(),
+    write: cleanProse(options.write || "").trim(),
+    check: cleanProse(options.check || "").trim(),
+    case: cleanProse(options.case || "").trim(),
+    sources: [],
     see: options.see || [],
   };
   if (!term.title || !term.definition) throw new Error("Incomplete term: " + id);
@@ -484,6 +493,152 @@ for (const [group, key, title, definition, options] of formCurated) {
 requireCoverage("form.node", form.nodes, (item) => item.id);
 requireCoverage("form.form", form.forms, (item) => item.id);
 requireCoverage("form.principle", form.principles, (item) => item.label);
+
+const HARMONY_BOOK_SHORT = new Map((harmonySources.bookProfiles || []).map((book) => [book.book, book.short]));
+const ORCHESTRATION_BOOK_SHORT = new Map(orchestrationSources.BOOKS.map((book) => [book.id, book.short]));
+const COUNTERPOINT_BOOK_SHORT = {
+  cannan: "《对位法》",
+  chen_hong: "《对位化和声学》",
+  chen_new: "《赋格学新论》",
+  chen_write: "《赋格曲写作》",
+  duan_lower: "《复调音乐》下",
+  duan_upper: "《复调音乐》上",
+  higgs: "《赋格曲》",
+  kirkpatrick: "《对位法概要》",
+  lin: "《复调音乐简明教程》",
+  miao: "《对位法概论》",
+  middleton: "《现代对位及其和声》",
+  prout: "《复对位法与卡农》",
+  skrebkov: "《复调音乐》",
+  suxia: "《实用对位法》",
+  wenfeng: "《复调音乐分析与写作》",
+  yang_free: "《自由对位法》",
+  yang_species: "《分类对位法》",
+  yao: "《巴赫赋格曲的研究》",
+};
+const FORM_BOOK_SHORT = {
+  gaiqius: "该丘斯《大型曲式学》",
+  lijiti: "李吉提《曲式与作品分析》",
+  lizhenhua: "李贞华《曲式与作品分析》",
+  qian1: "钱亦平《作品分析》上",
+  qian2: "钱亦平《作品分析》下",
+  schoenberg_fund: "勋伯格《作曲基本原理》",
+  wuzuqiang: "吴祖强《曲式与作品分析》",
+};
+const SOURCE_SYSTEMS = {
+  harmony: {
+    folder: "harmony_atlas",
+    claims: new Map(harmonySources.claims.map((claim) => [claim.id, claim])),
+  },
+  orchestration: {
+    folder: "orchestration_atlas",
+    claims: new Map(orchestrationSources.CLAIMS.map((claim) => [claim.id, claim])),
+  },
+  counterpoint: {
+    folder: "counterpoint_atlas",
+    claims: new Map(counterpointSources.claims.map((claim) => [claim.id, claim])),
+  },
+  form: {
+    folder: "form_atlas",
+    claims: new Map(formSources.claims.map((claim) => [claim.id, claim])),
+  },
+};
+
+function pageAnchor(page) {
+  return "p" + String(page).padStart(4, "0");
+}
+
+function sentenceJoin(...parts) {
+  return parts
+    .filter(Boolean)
+    .map((part) => String(part).trim().replace(/[。！？!?]+$/u, ""))
+    .filter(Boolean)
+    .join("。");
+}
+
+function citationDetails(system, claim, citation) {
+  if (system === "harmony") {
+    return {
+      book: citation.book,
+      page: citation.page,
+      label: (HARMONY_BOOK_SHORT.get(citation.book) || citation.book) + " PDF p." + citation.page,
+      title: sentenceJoin(claim.claim, citation.quote),
+    };
+  }
+  if (system === "orchestration") {
+    return {
+      book: citation.book,
+      page: citation.pdfPage,
+      label: (ORCHESTRATION_BOOK_SHORT.get(citation.book) || citation.book)
+        + (citation.printedPage ? " 印刷 p." + citation.printedPage : " PDF p." + citation.pdfPage),
+      title: sentenceJoin(citation.chapter, citation.quote),
+    };
+  }
+  if (system === "counterpoint") {
+    return {
+      book: citation.bookId,
+      page: citation.pdfPage,
+      label: (COUNTERPOINT_BOOK_SHORT[citation.bookId] || citation.bookId)
+        + (citation.printedPage ? " 印刷 p." + citation.printedPage : " PDF p." + citation.pdfPage),
+      title: sentenceJoin(citation.chapter || claim.title, citation.quote),
+    };
+  }
+  return {
+    book: citation.book,
+    page: citation.page,
+    label: (FORM_BOOK_SHORT[citation.book] || citation.book) + " PDF p." + citation.page,
+    title: sentenceJoin(claim.topic, citation.quote),
+  };
+}
+
+function expandSourceRef(reference) {
+  const system = SOURCE_SYSTEMS[reference.system];
+  if (!system) throw new Error("Unknown source system: " + reference.system);
+  const claim = system.claims.get(reference.claim);
+  if (!claim) throw new Error("Unknown " + reference.system + " source claim: " + reference.claim);
+  const citations = claim.citations || claim.books;
+  if (!citations || !citations.length) throw new Error("Source claim has no citations: " + reference.claim);
+  return citations.map((citation) => {
+    const details = citationDetails(reference.system, claim, citation);
+    if (!details.book || !details.page) throw new Error("Incomplete citation on " + reference.claim);
+    const anchor = pageAnchor(details.page);
+    return {
+      label: details.label,
+      href: "../" + system.folder + "/docs/books/" + details.book + ".html#" + anchor,
+      title: details.title,
+    };
+  });
+}
+
+function applyEnrichments() {
+  const byId = new Map(terms.map((term) => [term.id, term]));
+  for (const [id, data] of Object.entries(ENRICHMENTS)) {
+    const term = byId.get(id);
+    if (!term) throw new Error("Enrichment targets unknown term: " + id);
+    if (data.title) term.title = cleanProse(data.title).trim();
+    if (data.definition) term.definition = cleanProse(data.definition).trim();
+    if (data.write) term.write = cleanProse(data.write).trim();
+    if (data.check) term.check = cleanProse(data.check).trim();
+    if (data.case) term.case = cleanProse(data.case).trim();
+    if (!term.write && !term.check && !term.case) throw new Error("Enrichment has no practical content: " + id);
+    if (data.sources) {
+      const expanded = data.sources.flatMap(expandSourceRef);
+      const unique = new Map();
+      for (const source of expanded) {
+        const target = path.resolve(path.dirname(OUT), source.href.split("#")[0]);
+        if (!fs.existsSync(target)) throw new Error("Missing source page for " + id + ": " + source.href);
+        const anchor = source.href.split("#")[1];
+        if (anchor && !fs.readFileSync(target, "utf8").includes('id="' + anchor + '"')) {
+          throw new Error("Missing source anchor for " + id + ": " + source.href);
+        }
+        unique.set(source.href + "|" + source.label, source);
+      }
+      term.sources = [...unique.values()];
+    }
+  }
+}
+
+applyEnrichments();
 
 const termIds = new Set(terms.map((term) => term.id));
 for (const term of terms) {
