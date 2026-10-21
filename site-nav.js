@@ -10,6 +10,7 @@
   var themeButton = null;
 
   function sectionFromPath(path) {
+    if (path.indexOf("/glossary/") >= 0) return "glossary";
     if (path.indexOf("/form_atlas/docs/books/") >= 0) return "form-books";
     if (path.indexOf("/form_atlas/docs/") >= 0) return "form-manual";
     if (path.indexOf("/form_atlas/app/") >= 0) return "form-app";
@@ -51,7 +52,8 @@
     {
       label: "总览",
       links: [
-        ["工作台", "index.html"]
+        ["工作台", "index.html"],
+        ["全站名词", "glossary/"]
       ]
     },
     {
@@ -59,6 +61,7 @@
       links: [
         ["推演台", "harmony_atlas/app/"],
         ["理论手册", "harmony_atlas/docs/和声学手册.html"],
+        ["名词解释", "glossary/#harmony"],
         ["教材证据", "harmony_atlas/docs/books/"]
       ]
     },
@@ -67,6 +70,7 @@
       links: [
         ["理论地图", "form_atlas/app/"],
         ["理论手册", "form_atlas/docs/曲式学手册.html"],
+        ["名词解释", "glossary/#form"],
         ["教材证据", "form_atlas/docs/books/"]
       ]
     },
@@ -75,6 +79,7 @@
       links: [
         ["推演台", "orchestration_atlas/app/"],
         ["理论手册", "orchestration_atlas/docs/配器法手册.html"],
+        ["名词解释", "glossary/#orchestration"],
         ["教材证据", "orchestration_atlas/docs/books/"]
       ]
     },
@@ -84,6 +89,7 @@
         ["教程", "counterpoint_atlas/tutorial/"],
         ["推演台", "counterpoint_atlas/app/"],
         ["理论手册", "counterpoint_atlas/docs/复调音乐手册.html"],
+        ["名词解释", "glossary/#counterpoint"],
         ["教材证据", "counterpoint_atlas/docs/books/"]
       ]
     }
@@ -123,12 +129,15 @@
   }
   function isCurrent(href) {
     try {
-      var a = new URL(href).pathname.replace(/\/index\.html$/, "/");
+      var target = new URL(href);
+      var a = target.pathname.replace(/\/index\.html$/, "/");
       var b = current.replace(/\/index\.html$/, "/");
-      return a === b;
+      if (a !== b) return false;
+      return target.hash ? target.hash === window.location.hash : true;
     } catch (error) { return false; }
   }
   function contextLabel() {
+    if (current.indexOf("/glossary/") >= 0) return "名词索引";
     if (current.indexOf("/form_atlas/") >= 0) return "曲式系统";
     if (current.indexOf("/harmony_atlas/") >= 0) return "和声系统";
     if (current.indexOf("/orchestration_atlas/") >= 0) return "配器系统";

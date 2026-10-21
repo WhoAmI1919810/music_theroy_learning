@@ -1,0 +1,3342 @@
+{
+  "version": 1,
+  "scope": "四套理论系统中使用的理论概念、类型、技法与判定术语",
+  "subjects": [
+    {
+      "id": "harmony",
+      "label": "和声",
+      "en": "Harmony",
+      "description": "调式、和弦、功能、声部进行、终止、转调与后调性材料。",
+      "app": "../harmony_atlas/app/",
+      "manual": "../harmony_atlas/docs/和声学手册.html",
+      "groups": [
+        [
+          "pitch",
+          "调式、音阶与音级"
+        ],
+        [
+          "chord",
+          "和弦类型"
+        ],
+        [
+          "function",
+          "功能、声部与不协和"
+        ],
+        [
+          "cadence",
+          "终止式"
+        ],
+        [
+          "progression",
+          "常见和声进行"
+        ],
+        [
+          "chromatic",
+          "半音化与离调"
+        ],
+        [
+          "modulation",
+          "转调与色彩"
+        ],
+        [
+          "posttonal",
+          "后调性组织"
+        ],
+        [
+          "structure",
+          "结构延长与分析"
+        ]
+      ]
+    },
+    {
+      "id": "form",
+      "label": "曲式",
+      "en": "Form",
+      "description": "材料与句法、终止、结构过程、曲式类型、段落功能与结构原则。",
+      "app": "../form_atlas/app/",
+      "manual": "../form_atlas/docs/曲式学手册.html",
+      "groups": [
+        [
+          "material",
+          "材料与句法"
+        ],
+        [
+          "closure",
+          "终止与闭合"
+        ],
+        [
+          "process",
+          "结构过程与调性"
+        ],
+        [
+          "types",
+          "曲式类型"
+        ],
+        [
+          "section",
+          "段落功能"
+        ],
+        [
+          "principle",
+          "结构原则"
+        ],
+        [
+          "analysis",
+          "分析概念"
+        ]
+      ]
+    },
+    {
+      "id": "orchestration",
+      "label": "配器",
+      "en": "Orchestration",
+      "description": "声学、乐器能力、结构层、组合方式、平衡、时间过程、历史风格与总谱实现。",
+      "app": "../orchestration_atlas/app/",
+      "manual": "../orchestration_atlas/docs/配器法手册.html",
+      "groups": [
+        [
+          "layers",
+          "分析层级"
+        ],
+        [
+          "layer-acoustics",
+          "声学与听觉"
+        ],
+        [
+          "layer-instrument",
+          "乐器能力与记谱"
+        ],
+        [
+          "layer-structure",
+          "结构分析与角色"
+        ],
+        [
+          "layer-combination",
+          "加倍、分部与排列"
+        ],
+        [
+          "layer-balance",
+          "平衡、掩蔽与织体"
+        ],
+        [
+          "layer-time",
+          "时间过程与全奏"
+        ],
+        [
+          "layer-notation",
+          "历史风格与总谱"
+        ],
+        [
+          "history",
+          "历史编制"
+        ]
+      ]
+    },
+    {
+      "id": "counterpoint",
+      "label": "复调",
+      "en": "Counterpoint",
+      "description": "对位语法、五类对位、卡农、赋格结构、历史阶段与现当代扩展。",
+      "app": "../counterpoint_atlas/app/",
+      "tutorial": "../counterpoint_atlas/tutorial/",
+      "manual": "../counterpoint_atlas/docs/复调音乐手册.html",
+      "groups": [
+        [
+          "basics",
+          "对位语法"
+        ],
+        [
+          "species",
+          "五类对位"
+        ],
+        [
+          "canon",
+          "卡农"
+        ],
+        [
+          "fugue",
+          "赋格结构"
+        ],
+        [
+          "history",
+          "历史与现当代语法"
+        ]
+      ]
+    }
+  ],
+  "terms": [
+    {
+      "id": "harmony-mode-major",
+      "subject": "harmony",
+      "group": "pitch",
+      "title": "大调（Ionian）",
+      "en": "Ionian",
+      "aliases": [
+        "大调"
+      ],
+      "definition": "音阶结构与音级功能：明亮、稳定、中心明确。",
+      "note": "音级功能：I 主功能；II 下属功能；III 主功能（弱）；IV 下属功能；V 属功能；VI 主功能（替代）；VII 属功能。",
+      "see": []
+    },
+    {
+      "id": "harmony-mode-naturalminor",
+      "subject": "harmony",
+      "group": "pitch",
+      "title": "自然小调（Aeolian）",
+      "en": "Aeolian",
+      "aliases": [
+        "自然小调"
+      ],
+      "definition": "音阶结构与音级功能：柔和、暗淡、下属色彩重。",
+      "note": "音级功能：I 主功能；II 下属功能；III 主功能（中介）；IV 下属功能；V 属功能（弱）；VI 下属功能；VII 属功能（下主音）。",
+      "see": []
+    },
+    {
+      "id": "harmony-mode-harmonicminor",
+      "subject": "harmony",
+      "group": "pitch",
+      "title": "和声小调",
+      "en": "",
+      "aliases": [],
+      "definition": "音阶结构与音级功能：张力强、导音明确、东方/戏剧色彩。",
+      "note": "音级功能：I 主功能；II 下属功能；III 主功能（增三）；IV 下属功能；V 属功能（强）；VI 下属功能；VII 属功能（导音）。",
+      "see": []
+    },
+    {
+      "id": "harmony-mode-melodicminor",
+      "subject": "harmony",
+      "group": "pitch",
+      "title": "旋律小调（上行）",
+      "en": "",
+      "aliases": [
+        "旋律小调"
+      ],
+      "definition": "音阶结构与音级功能：明亮化的小调、爵士/浪漫色彩。",
+      "note": "音级功能：I 主功能；II 下属功能；III 主功能（增三）；IV 下属功能；V 属功能（强）；VI 下属/属前；VII 属功能（导音）。",
+      "see": []
+    },
+    {
+      "id": "harmony-mode-dorian",
+      "subject": "harmony",
+      "group": "pitch",
+      "title": "多利亚（Dorian）",
+      "en": "Dorian",
+      "aliases": [
+        "多利亚"
+      ],
+      "definition": "音阶结构与音级功能：小调底色、自然 VI、明亮 IV。",
+      "note": "音级功能：I 主功能；II 下属功能；III 主功能（弱）；IV 下属功能（明亮）；V 属功能（弱）；VI 下属功能；VII 属功能（下主音）。",
+      "see": []
+    },
+    {
+      "id": "harmony-mode-phrygian",
+      "subject": "harmony",
+      "group": "pitch",
+      "title": "弗里几亚（Phrygian）",
+      "en": "Phrygian",
+      "aliases": [
+        "弗里几亚"
+      ],
+      "definition": "音阶结构与音级功能：西班牙/东方色彩、♭II 强烈倾向。",
+      "note": "音级功能：I 主功能；II 色彩/属前（♭II）；III 主功能（弱）；IV 下属功能；V 属功能（弱）；VI 下属功能；VII 属功能（下主音）。",
+      "see": []
+    },
+    {
+      "id": "harmony-mode-lydian",
+      "subject": "harmony",
+      "group": "pitch",
+      "title": "利底亚（Lydian）",
+      "en": "Lydian",
+      "aliases": [
+        "利底亚"
+      ],
+      "definition": "音阶结构与音级功能：明亮、悬浮、♯IV 色彩。",
+      "note": "音级功能：I 主功能；II 下属/色彩（II）；III 主功能（弱）；IV 色彩/属前（♯IV°）；V 属功能；VI 下属功能；VII 属功能（导音）。",
+      "see": []
+    },
+    {
+      "id": "harmony-mode-mixolydian",
+      "subject": "harmony",
+      "group": "pitch",
+      "title": "混合利底亚（Mixolydian）",
+      "en": "Mixolydian",
+      "aliases": [
+        "混合利底亚"
+      ],
+      "definition": "音阶结构与音级功能：大调底色、♭VII 回归、布鲁斯/摇滚。",
+      "note": "音级功能：I 主功能；II 下属功能；III 属功能（弱）；IV 下属功能；V 属功能（弱）；VI 下属功能；VII 色彩/属前（♭VII）。",
+      "see": []
+    },
+    {
+      "id": "harmony-mode-locrian",
+      "subject": "harmony",
+      "group": "pitch",
+      "title": "洛克里亚（Locrian）",
+      "en": "Locrian",
+      "aliases": [
+        "洛克里亚"
+      ],
+      "definition": "音阶结构与音级功能：不稳定、减五度中心、色彩性。",
+      "note": "音级功能：I 中心不稳定；II 下属功能；III 主功能（弱）；IV 下属功能；V 色彩（♭V）；VI 下属功能；VII 属功能（弱）。",
+      "see": []
+    },
+    {
+      "id": "harmony-mode-harmonicmajor",
+      "subject": "harmony",
+      "group": "pitch",
+      "title": "和声大调",
+      "en": "",
+      "aliases": [],
+      "definition": "音阶结构与音级功能：大调中的小下属、♭VI 色彩。",
+      "note": "音级功能：I 主功能；II 下属功能（减）；III 主功能（弱）；IV 下属功能；V 属功能；VI 下属功能（♭VI）；VII 属功能（导音）。",
+      "see": []
+    },
+    {
+      "id": "harmony-mode-doubleharmonic",
+      "subject": "harmony",
+      "group": "pitch",
+      "title": "双和声大调",
+      "en": "",
+      "aliases": [
+        "双和声"
+      ],
+      "definition": "音阶结构与音级功能：强烈异域色彩、♭II 与 ♯IV。",
+      "note": "音级功能：I 主功能；II 色彩/属前（♭II）；III 主功能（弱）；IV 下属功能；V 属功能；VI 下属功能（♭VI）；VII 属功能（导音）。",
+      "see": []
+    },
+    {
+      "id": "harmony-mode-wholetone",
+      "subject": "harmony",
+      "group": "pitch",
+      "title": "全音阶",
+      "en": "",
+      "aliases": [],
+      "definition": "音阶结构与音级功能：悬浮、无导音、对称。",
+      "note": "音级功能：I 色彩；II 色彩；III 色彩；IV 色彩；V 色彩；VI 色彩。",
+      "see": []
+    },
+    {
+      "id": "harmony-mode-octatonichw",
+      "subject": "harmony",
+      "group": "pitch",
+      "title": "八声音阶（半-全）",
+      "en": "",
+      "aliases": [
+        "八声半全"
+      ],
+      "definition": "音阶结构与音级功能：对称、属七/减七混合。",
+      "note": "音级功能：I 色彩；II 色彩；III 色彩；IV 色彩；V 色彩；VI 色彩；VII 色彩；VIII 色彩。",
+      "see": []
+    },
+    {
+      "id": "harmony-mode-octatonicwh",
+      "subject": "harmony",
+      "group": "pitch",
+      "title": "八声音阶（全-半）",
+      "en": "",
+      "aliases": [
+        "八声全半"
+      ],
+      "definition": "音阶结构与音级功能：对称、减三/增三混合。",
+      "note": "音级功能：I 色彩；II 色彩；III 色彩；IV 色彩；V 色彩；VI 色彩；VII 色彩；VIII 色彩。",
+      "see": []
+    },
+    {
+      "id": "harmony-mode-majorpentatonic",
+      "subject": "harmony",
+      "group": "pitch",
+      "title": "大调五声",
+      "en": "",
+      "aliases": [
+        "五声大调"
+      ],
+      "definition": "音阶结构与音级功能：开放、无半音、民族/流行。",
+      "note": "音级功能：I 主；II 下属；III 主（替代）；V 属（弱）；VI 下属。",
+      "see": []
+    },
+    {
+      "id": "harmony-mode-minorpentatonic",
+      "subject": "harmony",
+      "group": "pitch",
+      "title": "小调五声",
+      "en": "",
+      "aliases": [
+        "五声小调"
+      ],
+      "definition": "音阶结构与音级功能：开放、布鲁斯基础。",
+      "note": "音级功能：I 主；III 下属；IV 属（弱）；V 下属；VII 色彩。",
+      "see": []
+    },
+    {
+      "id": "harmony-quality-maj",
+      "subject": "harmony",
+      "group": "chord",
+      "title": "大三和弦",
+      "en": "",
+      "aliases": [],
+      "definition": "包含根音、大三度、纯五度。",
+      "note": "三和弦、挂留或加音和弦。",
+      "see": []
+    },
+    {
+      "id": "harmony-quality-min",
+      "subject": "harmony",
+      "group": "chord",
+      "title": "小三和弦",
+      "en": "",
+      "aliases": [
+        "m"
+      ],
+      "definition": "包含根音、小三度、纯五度。",
+      "note": "三和弦、挂留或加音和弦。",
+      "see": []
+    },
+    {
+      "id": "harmony-quality-dim",
+      "subject": "harmony",
+      "group": "chord",
+      "title": "减三和弦",
+      "en": "",
+      "aliases": [
+        "°"
+      ],
+      "definition": "包含根音、小三度、减五度。",
+      "note": "三和弦、挂留或加音和弦。",
+      "see": []
+    },
+    {
+      "id": "harmony-quality-aug",
+      "subject": "harmony",
+      "group": "chord",
+      "title": "增三和弦",
+      "en": "",
+      "aliases": [
+        "+"
+      ],
+      "definition": "包含根音、大三度、小六度。",
+      "note": "三和弦、挂留或加音和弦。",
+      "see": []
+    },
+    {
+      "id": "harmony-quality-sus4",
+      "subject": "harmony",
+      "group": "chord",
+      "title": "挂四和弦",
+      "en": "",
+      "aliases": [
+        "sus4"
+      ],
+      "definition": "包含根音、纯四度、纯五度。",
+      "note": "三和弦、挂留或加音和弦。",
+      "see": []
+    },
+    {
+      "id": "harmony-quality-sus2",
+      "subject": "harmony",
+      "group": "chord",
+      "title": "挂二和弦",
+      "en": "",
+      "aliases": [
+        "sus2"
+      ],
+      "definition": "包含根音、大二度、纯五度。",
+      "note": "三和弦、挂留或加音和弦。",
+      "see": []
+    },
+    {
+      "id": "harmony-quality-maj7",
+      "subject": "harmony",
+      "group": "chord",
+      "title": "大七和弦",
+      "en": "",
+      "aliases": [
+        "maj7"
+      ],
+      "definition": "包含根音、大三度、纯五度、大七度。",
+      "note": "七和弦类。",
+      "see": []
+    },
+    {
+      "id": "harmony-quality-dom7",
+      "subject": "harmony",
+      "group": "chord",
+      "title": "属七和弦",
+      "en": "",
+      "aliases": [
+        "7"
+      ],
+      "definition": "包含根音、大三度、纯五度、小七度。",
+      "note": "七和弦类。",
+      "see": []
+    },
+    {
+      "id": "harmony-quality-min7",
+      "subject": "harmony",
+      "group": "chord",
+      "title": "小七和弦",
+      "en": "",
+      "aliases": [
+        "m7"
+      ],
+      "definition": "包含根音、小三度、纯五度、小七度。",
+      "note": "七和弦类。",
+      "see": []
+    },
+    {
+      "id": "harmony-quality-hdim7",
+      "subject": "harmony",
+      "group": "chord",
+      "title": "半减七和弦",
+      "en": "",
+      "aliases": [
+        "ø7"
+      ],
+      "definition": "包含根音、小三度、减五度、小七度。",
+      "note": "七和弦类。",
+      "see": []
+    },
+    {
+      "id": "harmony-quality-dim7",
+      "subject": "harmony",
+      "group": "chord",
+      "title": "减七和弦",
+      "en": "",
+      "aliases": [
+        "°7"
+      ],
+      "definition": "包含根音、小三度、减五度、大六度。",
+      "note": "七和弦类。",
+      "see": []
+    },
+    {
+      "id": "harmony-quality-mmaj7",
+      "subject": "harmony",
+      "group": "chord",
+      "title": "小大七和弦",
+      "en": "",
+      "aliases": [
+        "mMaj7"
+      ],
+      "definition": "包含根音、小三度、纯五度、大七度。",
+      "note": "七和弦类。",
+      "see": []
+    },
+    {
+      "id": "harmony-quality-aug7",
+      "subject": "harmony",
+      "group": "chord",
+      "title": "增属七和弦",
+      "en": "",
+      "aliases": [
+        "7♯5"
+      ],
+      "definition": "包含根音、大三度、小六度、小七度。",
+      "note": "七和弦类。",
+      "see": []
+    },
+    {
+      "id": "harmony-quality-augmaj7",
+      "subject": "harmony",
+      "group": "chord",
+      "title": "增大七和弦",
+      "en": "",
+      "aliases": [
+        "maj7♯5"
+      ],
+      "definition": "包含根音、大三度、小六度、大七度。",
+      "note": "七和弦类。",
+      "see": []
+    },
+    {
+      "id": "harmony-quality-add9",
+      "subject": "harmony",
+      "group": "chord",
+      "title": "加九和弦",
+      "en": "",
+      "aliases": [
+        "add9"
+      ],
+      "definition": "包含根音、大三度、纯五度、大九度。",
+      "note": "三和弦、挂留或加音和弦。",
+      "see": []
+    },
+    {
+      "id": "harmony-quality-madd9",
+      "subject": "harmony",
+      "group": "chord",
+      "title": "小加九和弦",
+      "en": "",
+      "aliases": [
+        "m(add9)"
+      ],
+      "definition": "包含根音、小三度、纯五度、大九度。",
+      "note": "三和弦、挂留或加音和弦。",
+      "see": []
+    },
+    {
+      "id": "harmony-quality-six",
+      "subject": "harmony",
+      "group": "chord",
+      "title": "大六和弦",
+      "en": "",
+      "aliases": [
+        "6"
+      ],
+      "definition": "包含根音、大三度、纯五度、大六度。",
+      "note": "三和弦、挂留或加音和弦。",
+      "see": []
+    },
+    {
+      "id": "harmony-quality-m6",
+      "subject": "harmony",
+      "group": "chord",
+      "title": "小六和弦",
+      "en": "",
+      "aliases": [
+        "m6"
+      ],
+      "definition": "包含根音、小三度、纯五度、大六度。",
+      "note": "三和弦、挂留或加音和弦。",
+      "see": []
+    },
+    {
+      "id": "harmony-quality-dom9",
+      "subject": "harmony",
+      "group": "chord",
+      "title": "属九和弦",
+      "en": "",
+      "aliases": [
+        "9"
+      ],
+      "definition": "包含根音、大三度、纯五度、小七度、大九度。",
+      "note": "七和弦类。",
+      "see": []
+    },
+    {
+      "id": "harmony-quality-dom7b9",
+      "subject": "harmony",
+      "group": "chord",
+      "title": "属七♭九",
+      "en": "",
+      "aliases": [
+        "7♭9"
+      ],
+      "definition": "包含根音、大三度、纯五度、小七度、小九度。",
+      "note": "七和弦类。",
+      "see": []
+    },
+    {
+      "id": "harmony-quality-dom7s9",
+      "subject": "harmony",
+      "group": "chord",
+      "title": "属七♯九",
+      "en": "",
+      "aliases": [
+        "7♯9"
+      ],
+      "definition": "包含根音、大三度、纯五度、小七度、小十度。",
+      "note": "七和弦类。",
+      "see": []
+    },
+    {
+      "id": "harmony-quality-dom7s11",
+      "subject": "harmony",
+      "group": "chord",
+      "title": "属七♯十一",
+      "en": "",
+      "aliases": [
+        "7♯11"
+      ],
+      "definition": "包含根音、大三度、纯五度、小七度、18 个半音。",
+      "note": "七和弦类。",
+      "see": []
+    },
+    {
+      "id": "harmony-cadence-pac",
+      "subject": "harmony",
+      "group": "cadence",
+      "title": "完满正格终止",
+      "en": "",
+      "aliases": [],
+      "definition": "属和弦（常含七音）解决到原位主和弦，主音在最高声部；属七的导音上行、七音下行。",
+      "note": "进行：V(7) → I；功能：D→T。",
+      "see": []
+    },
+    {
+      "id": "harmony-cadence-iac",
+      "subject": "harmony",
+      "group": "cadence",
+      "title": "不完满正格终止",
+      "en": "",
+      "aliases": [],
+      "definition": "仍为属到主，但主和弦转位、旋律不在主音、或属和弦转位，收束感较弱。",
+      "note": "进行：V(7) → I；功能：D→T。",
+      "see": []
+    },
+    {
+      "id": "harmony-cadence-hc",
+      "subject": "harmony",
+      "group": "cadence",
+      "title": "半终止",
+      "en": "",
+      "aliases": [],
+      "definition": "停在属功能上，制造未完成感；前接 ii、IV、vi 或 I6。",
+      "note": "进行：… → V（或 V7）；功能：→D。",
+      "see": []
+    },
+    {
+      "id": "harmony-cadence-pc",
+      "subject": "harmony",
+      "group": "cadence",
+      "title": "变格终止",
+      "en": "",
+      "aliases": [],
+      "definition": "下属到主，常用于宗教/赞美诗/尾声；小下属 iv→I 色彩更暗。",
+      "note": "进行：IV → I（或 iv → I）；功能：S→T。",
+      "see": []
+    },
+    {
+      "id": "harmony-cadence-deceptive",
+      "subject": "harmony",
+      "group": "cadence",
+      "title": "阻碍终止",
+      "en": "",
+      "aliases": [],
+      "definition": "属和弦本应到主，却到六级，延长乐句；六级的根音常为属七导音的上行解决。",
+      "note": "进行：V(7) → vi（或 VI）；功能：D→T替代。",
+      "see": []
+    },
+    {
+      "id": "harmony-cadence-phrygian",
+      "subject": "harmony",
+      "group": "cadence",
+      "title": "弗里几亚终止",
+      "en": "",
+      "aliases": [],
+      "definition": "小调中 iv6 的 ♭6 级下行到属的导音/五音；♭II→I 为弗里几亚色彩终止。",
+      "note": "进行：iv6 → V（或 ♭II → I）；功能：S→D。",
+      "see": []
+    },
+    {
+      "id": "harmony-cadence-andalusian",
+      "subject": "harmony",
+      "group": "cadence",
+      "title": "安达卢西亚终止",
+      "en": "",
+      "aliases": [],
+      "definition": "低音下行四音列，最后 V→i；也可 i–♭VII–♭VI–♭V–iv–i。",
+      "note": "进行：i → ♭VII → ♭VI → V；功能：下行tetrachord。",
+      "see": []
+    },
+    {
+      "id": "harmony-cadence-plagalmodal",
+      "subject": "harmony",
+      "group": "cadence",
+      "title": "调式变格终止",
+      "en": "",
+      "aliases": [],
+      "definition": "下主音大三和弦直接回主，弱化导音、强化调式色彩。",
+      "note": "进行：♭VII → I（Mixolydian）；功能：C→T。",
+      "see": []
+    },
+    {
+      "id": "harmony-recipe-ii-v-i",
+      "subject": "harmony",
+      "group": "progression",
+      "title": "ii–V–I",
+      "en": "",
+      "aliases": [],
+      "definition": "功能和声最核心的终止公式；ii 预备属，V7 的导音与七音形成双向倾向，I 解决。",
+      "note": "常见变体：iiø7–V7–i；ii–V–I6；ii–V–vi（阻碍）。",
+      "see": []
+    },
+    {
+      "id": "harmony-recipe-iv-v-i",
+      "subject": "harmony",
+      "group": "progression",
+      "title": "IV–V–I",
+      "en": "",
+      "aliases": [],
+      "definition": "下属直接推动属，再解决到主；比 ii–V–I 更开放、更少七和弦张力。",
+      "note": "常见变体：iv–V–i；IV–V–I6；IV–V–vi。",
+      "see": []
+    },
+    {
+      "id": "harmony-recipe-i-v-vi-iv",
+      "subject": "harmony",
+      "group": "progression",
+      "title": "I–V–vi–IV",
+      "en": "",
+      "aliases": [],
+      "definition": "循环四和弦；V→vi 为阻碍解决，vi→IV 为下属回归，适合循环段落。",
+      "note": "常见变体：vi–IV–I–V；I–V–vi–iii–IV。",
+      "see": []
+    },
+    {
+      "id": "harmony-recipe-i-bvii-bvi-v",
+      "subject": "harmony",
+      "group": "progression",
+      "title": "i–♭VII–♭VI–V",
+      "en": "",
+      "aliases": [],
+      "definition": "低音下行四音列，♭VII/♭VI 为自然小调借用；最后 V 使用和声小调导音。",
+      "note": "常见变体：i–♭VII–♭VI–♭V–iv–i；i–♭VI–♭VII–i。",
+      "see": []
+    },
+    {
+      "id": "harmony-recipe-i-bvii-iv-i",
+      "subject": "harmony",
+      "group": "progression",
+      "title": "I–♭VII–IV–I",
+      "en": "",
+      "aliases": [],
+      "definition": "混合利底亚/布鲁斯公式，♭VII 直接回主，避免导音。",
+      "note": "常见变体：I–♭VII–I；I–IV–♭VII–I。",
+      "see": []
+    },
+    {
+      "id": "harmony-recipe-i-bvi-bvii-i",
+      "subject": "harmony",
+      "group": "progression",
+      "title": "I–♭VI–♭VII–I",
+      "en": "",
+      "aliases": [],
+      "definition": "同主音小调借用，♭VI–♭VII–I 形成“自然小调上行终止”的宏大色彩。",
+      "note": "常见变体：i–♭VI–♭VII–i；I–♭VI–IV–I。",
+      "see": []
+    },
+    {
+      "id": "harmony-recipe-i-iii-iv-i",
+      "subject": "harmony",
+      "group": "progression",
+      "title": "I–III–IV–I",
+      "en": "",
+      "aliases": [],
+      "definition": "III 为同主音小调借用/色彩中介，声部平滑，适合梦幻/悬浮段落。",
+      "note": "常见变体：I–♭III–IV–I；I–III–vi–IV。",
+      "see": []
+    },
+    {
+      "id": "harmony-recipe-vi-iv-i-v",
+      "subject": "harmony",
+      "group": "progression",
+      "title": "vi–IV–I–V",
+      "en": "",
+      "aliases": [],
+      "definition": "从主功能替代开始，下属扩张，再回主并推向属；循环感强。",
+      "note": "常见变体：vi–IV–V–I；vi–ii–V–I。",
+      "see": []
+    },
+    {
+      "id": "harmony-recipe-pachelbel",
+      "subject": "harmony",
+      "group": "progression",
+      "title": "帕赫贝尔循环",
+      "en": "",
+      "aliases": [],
+      "definition": "低音下行五度循环的变体；iii 作为主功能替代，IV–I 为变格进行。",
+      "note": "常见变体：I–V–vi–iii–IV–I–ii–V。",
+      "see": []
+    },
+    {
+      "id": "harmony-recipe-circle",
+      "subject": "harmony",
+      "group": "progression",
+      "title": "五度循环",
+      "en": "",
+      "aliases": [],
+      "definition": "根音下行五度（上行四度）连续进行，功能链条最顺；可用七和弦与替代。",
+      "note": "常见变体：iii–vi–ii–V–I；I–IV–vii–iii–vi–ii–V–I。",
+      "see": []
+    },
+    {
+      "id": "harmony-recipe-backdoor",
+      "subject": "harmony",
+      "group": "progression",
+      "title": "后门终止",
+      "en": "",
+      "aliases": [],
+      "definition": "♭VII7 代替 V7 进入 I；iv7 预备，♭VII7 的三音/七音形成半音倾向。",
+      "note": "常见变体：iv–♭VII7–I；iiø7–♭VII7–I。",
+      "see": []
+    },
+    {
+      "id": "harmony-recipe-tritonesub",
+      "subject": "harmony",
+      "group": "progression",
+      "title": "三全音替代",
+      "en": "",
+      "aliases": [],
+      "definition": "♭II7 与 V7 共享三全音，低音半音下行到主；可保留原旋律音。",
+      "note": "常见变体：ii7–♭II7–I；V7–♭II7–I。",
+      "see": []
+    },
+    {
+      "id": "harmony-modulation-pivot",
+      "subject": "harmony",
+      "group": "modulation",
+      "title": "中介和弦转调",
+      "en": "",
+      "aliases": [],
+      "definition": "两调共有的和弦在听感上“同一和弦、两种功能”，用它把旧调功能重释为新调功能。",
+      "note": "步骤：在新调中找一个与旧调和弦同音集的和弦；让该和弦在新调中承担自然功能（常为 ii、IV、V、vi）；接新调属和弦与主和弦确认。",
+      "see": []
+    },
+    {
+      "id": "harmony-modulation-direct",
+      "subject": "harmony",
+      "group": "modulation",
+      "title": "直接转调/对置",
+      "en": "",
+      "aliases": [],
+      "definition": "不做预备，直接以新调属—主确立新中心；靠终止式与重复巩固。",
+      "note": "步骤：旧调停在任何和弦；直接进入新调 V7；解决到新调 I 并延续。",
+      "see": []
+    },
+    {
+      "id": "harmony-modulation-commontone",
+      "subject": "harmony",
+      "group": "modulation",
+      "title": "共同音转调",
+      "en": "",
+      "aliases": [],
+      "definition": "保持一个音作为听觉锚点，改变其和声身份，逐步换掉其余音。",
+      "note": "步骤：找出两调共同音；用含该音的和弦连接；在新调中把该音解释为三音/五音/七音；接新调属—主。",
+      "see": []
+    },
+    {
+      "id": "harmony-modulation-enharmonic",
+      "subject": "harmony",
+      "group": "modulation",
+      "title": "等音转调：操作步骤",
+      "en": "",
+      "aliases": [],
+      "definition": "利用增六和弦与属七、减七和弦的等音同构，把同一音响重新记谱为另一调的功能。",
+      "note": "步骤：建立增六/减七音响；等音改写其中一个音；把和弦解释为新调的 V7 或 vii°7；解决到新调。",
+      "see": []
+    },
+    {
+      "id": "harmony-modulation-chromaticmediant",
+      "subject": "harmony",
+      "group": "modulation",
+      "title": "色彩中介转调",
+      "en": "",
+      "aliases": [],
+      "definition": "大三度/小三度关系的三和弦共享少量音，声部平滑但调性突然；用共同音与半音进行连接。",
+      "note": "步骤：从主和弦直接到 bIII/bVI/III/VI；保持共同音、半音移动其他声部；用新调 V—I 确认。",
+      "see": []
+    },
+    {
+      "id": "harmony-modulation-modal",
+      "subject": "harmony",
+      "group": "modulation",
+      "title": "调式转调/同主音交替",
+      "en": "",
+      "aliases": [],
+      "definition": "保持主音不变，改变三度、六度、七度，使同一主音获得不同调式色彩。",
+      "note": "步骤：保持主和弦或主音；引入新调式特征音（如 ♭3、♭6、♭7、♯4）；用新调式终止式巩固。",
+      "see": []
+    },
+    {
+      "id": "harmony-modulation-relative",
+      "subject": "harmony",
+      "group": "modulation",
+      "title": "关系大小调转调",
+      "en": "",
+      "aliases": [],
+      "definition": "共享同一音阶，主音相差小三度；通过 iii/vi 等共同和弦或直接主和弦对置。",
+      "note": "步骤：用共同和弦（如 C 大调的 vi = a 小调的 i）；接新调 V 或 iv；确认新主音。",
+      "see": []
+    },
+    {
+      "id": "harmony-modulation-sequential",
+      "subject": "harmony",
+      "group": "modulation",
+      "title": "模进转调",
+      "en": "",
+      "aliases": [],
+      "definition": "把同一音型整体移位，移位后的终止式自然确立新调；转调通过连续过程建立新调，落点不止单个和弦。",
+      "note": "步骤：建立可移位的和声单元；按二度/三度/五度整体移位；在新调上用终止式收束。",
+      "see": []
+    },
+    {
+      "id": "harmony-modulation-neapolitan",
+      "subject": "harmony",
+      "group": "modulation",
+      "title": "拿波里转调",
+      "en": "",
+      "aliases": [],
+      "definition": "♭II 作为新调的下属/属前，强导向新调 V；也可作为远关系调的桥梁。",
+      "note": "步骤：引入新调 ♭II6；解决到新调 V；到新调 I。",
+      "see": []
+    },
+    {
+      "id": "harmony-theory-interval",
+      "subject": "harmony",
+      "group": "pitch",
+      "title": "音程、音高集合与音名拼写",
+      "en": "",
+      "aliases": [],
+      "definition": "和声分析以音与音之间的音程关系为最小单位；同一音集在不同等音记谱下可能承担不同功能。",
+      "note": "应用：等音转调；增六和弦记谱；集合论音程向量。",
+      "see": []
+    },
+    {
+      "id": "harmony-theory-scale",
+      "subject": "harmony",
+      "group": "pitch",
+      "title": "调式、音阶与音级",
+      "en": "",
+      "aliases": [],
+      "definition": "调式由“主音 + 音程结构 + 特征音”确定；音阶决定各级和弦质量、倾向与可用材料。",
+      "note": "应用：调式写作；同主音交替；五声/布鲁斯/对称音阶。",
+      "see": []
+    },
+    {
+      "id": "harmony-theory-triad",
+      "subject": "harmony",
+      "group": "chord",
+      "title": "三和弦与七和弦（前置速查）",
+      "en": "",
+      "aliases": [],
+      "definition": "三度叠置产生三和弦；加入七度产生七和弦。和弦的性质由根音、三音、五音、七音的音程决定。",
+      "note": "应用：所有后续和声材料。",
+      "see": []
+    },
+    {
+      "id": "harmony-theory-diatonic",
+      "subject": "harmony",
+      "group": "function",
+      "title": "自然音级功能：T–S–D",
+      "en": "",
+      "aliases": [],
+      "definition": "调内和弦按根音功能分为主（T）、下属（S）、属（D）三组；功能描述和弦在当前调中心中的倾向角色，同一和弦可因上下文改变功能。",
+      "note": "应用：功能进行；终止式；曲式层级。",
+      "see": []
+    },
+    {
+      "id": "harmony-theory-dominant",
+      "subject": "harmony",
+      "group": "function",
+      "title": "属功能与属七解决",
+      "en": "",
+      "aliases": [],
+      "definition": "属和弦的导音（scale degree 7）上行到主音，属七的七音下行到三级；两个倾向音构成三全音，解决时向内/向外收缩，产生最强的调性确认。",
+      "note": "应用：正格终止；副属和弦；转调后的新调确认；三全音替代。",
+      "see": []
+    },
+    {
+      "id": "harmony-theory-voiceleading",
+      "subject": "harmony",
+      "group": "function",
+      "title": "声部进行与不协和解决",
+      "en": "",
+      "aliases": [],
+      "definition": "和声连接的本质是各声部的独立进行；优先共同音、级进、避免平行五八度，倾向音按解决方向移动。",
+      "note": "应用：四部和声写作；和弦连接评分；转调连接。",
+      "see": []
+    },
+    {
+      "id": "harmony-theory-inversion",
+      "subject": "harmony",
+      "group": "function",
+      "title": "转位、低音与和声节奏",
+      "en": "",
+      "aliases": [],
+      "definition": "低音决定和弦的听觉重心与功能强度；转位削弱根音支持，使和弦更适合经过、延长与连接。",
+      "note": "应用：低音线写作；终止四六；和声节奏。",
+      "see": []
+    },
+    {
+      "id": "harmony-theory-seventh",
+      "subject": "harmony",
+      "group": "function",
+      "title": "七和弦、九和弦与不协和等级",
+      "en": "",
+      "aliases": [],
+      "definition": "七度增加不协和与方向性；属七的三全音最强，减七的对称性最强，大七/小七更偏色彩。",
+      "note": "应用：ii–V–I；副属七；减七转调；爵士延伸音。",
+      "see": []
+    },
+    {
+      "id": "harmony-theory-cadence",
+      "subject": "harmony",
+      "group": "cadence",
+      "title": "终止式",
+      "en": "",
+      "aliases": [],
+      "definition": "终止式是“功能张力 + 节拍/旋律位置 + 低音”共同形成的收束；同样的 V–I 在不同位置有不同强度。",
+      "note": "应用：乐段结构；转调确认；曲式分析。",
+      "see": []
+    },
+    {
+      "id": "harmony-theory-sequence",
+      "subject": "harmony",
+      "group": "chromatic",
+      "title": "模进与五度循环",
+      "en": "",
+      "aliases": [],
+      "definition": "同一音型在不同音级重复，形成局部功能链；五度下行循环是最自然的模进基础。",
+      "note": "应用：展开部；连接段；爵士 turnaround。",
+      "see": []
+    },
+    {
+      "id": "harmony-theory-secondarydominant",
+      "subject": "harmony",
+      "group": "chromatic",
+      "title": "副属和弦与离调",
+      "en": "",
+      "aliases": [],
+      "definition": "把任一调内和弦临时当作“主”，在它前面插入其属和弦（V/x）或导音和弦（vii°/x），形成局部 tonicization；离调不改变全局调中心。",
+      "note": "应用：装饰终止；扩展乐句；转调预备。",
+      "see": []
+    },
+    {
+      "id": "harmony-theory-tonicization",
+      "subject": "harmony",
+      "group": "chromatic",
+      "title": "临时主音化（离调）",
+      "en": "",
+      "aliases": [],
+      "definition": "离调是“短暂地把某音级当主”，通过副属—目标、持续低音或旋律强调建立；与转调的区别在持续时间与终止确认。",
+      "note": "应用：副属链；半音化低音；奏鸣曲过渡。",
+      "see": []
+    },
+    {
+      "id": "harmony-theory-modalinterchange",
+      "subject": "harmony",
+      "group": "chromatic",
+      "title": "同主音调式交替（借用和弦）",
+      "en": "",
+      "aliases": [],
+      "definition": "保持主音，从同主音的其他调式借用和弦；其核心是三度、六度或七度的改变，并由此获得新的和弦质量。",
+      "note": "应用：流行/摇滚；电影配乐；浪漫主义色彩。",
+      "see": []
+    },
+    {
+      "id": "harmony-theory-neapolitan",
+      "subject": "harmony",
+      "group": "chromatic",
+      "title": "拿波里和弦（♭II）",
+      "en": "",
+      "aliases": [],
+      "definition": "♭II 是大调/小调中降低二级的大三和弦，常以第一转位出现；其 ♭2 级半音下行到主音/导音，♭6 级下行到属音，形成强烈的下属—属倾向。",
+      "note": "应用：小调戏剧性；模进；转调。",
+      "see": []
+    },
+    {
+      "id": "harmony-theory-aug6",
+      "subject": "harmony",
+      "group": "chromatic",
+      "title": "增六和弦",
+      "en": "",
+      "aliases": [],
+      "definition": "增六度（♭6 与 ♯4）向外扩张到八度（5 与 5），因此强烈导向属和弦；意/法/德三种增六和弦区别在中间音。",
+      "note": "应用：半音化和声；远关系转调；浪漫主义终止。",
+      "see": []
+    },
+    {
+      "id": "harmony-theory-dim7",
+      "subject": "harmony",
+      "group": "chromatic",
+      "title": "减七和弦与等音网络",
+      "en": "",
+      "aliases": [],
+      "definition": "减七由三个小三度叠置，对称且只有三种转位；同一音响可属于四个调，是等音转调最灵活的连接和弦。",
+      "note": "应用：远关系转调；半音化经过；电影/戏剧。",
+      "see": []
+    },
+    {
+      "id": "harmony-theory-chromaticism",
+      "subject": "harmony",
+      "group": "chromatic",
+      "title": "半音化与变化和弦",
+      "en": "",
+      "aliases": [],
+      "definition": "半音化的判据是变化音具有明确的声部倾向与功能角色；变化和弦必须能被解决或重释。",
+      "note": "应用：浪漫主义和声；爵士重配；电影配乐。",
+      "see": []
+    },
+    {
+      "id": "harmony-theory-pivot",
+      "subject": "harmony",
+      "group": "modulation",
+      "title": "中介和弦与转调",
+      "en": "",
+      "aliases": [],
+      "definition": "转调是旧调功能逐渐失效、新调功能逐渐确立的过程；中介和弦为两调共有，同一音集在旧调与新调中承担不同功能，重释后再由新调终止确认。",
+      "note": "应用：近关系转调；奏鸣曲展开部；流行桥段。",
+      "see": []
+    },
+    {
+      "id": "harmony-theory-modulation",
+      "subject": "harmony",
+      "group": "modulation",
+      "title": "转调体系：类型、距离与确认",
+      "en": "",
+      "aliases": [],
+      "definition": "转调距离由音集重合度、共同和弦数、主音关系共同决定；转调成功与否取决于新调属—主是否被终止式确认。",
+      "note": "应用：曲式展开；段落对比；电影转场。",
+      "see": []
+    },
+    {
+      "id": "harmony-theory-enharmonicmodulation",
+      "subject": "harmony",
+      "group": "modulation",
+      "title": "等音转调",
+      "en": "",
+      "aliases": [],
+      "definition": "同一十二平均律音响可对应不同记谱与功能；等音转调通过“改记谱”把旧和弦变成新调的属/导和弦。",
+      "note": "应用：远关系转调；浪漫主义；爵士三全音替代。",
+      "see": []
+    },
+    {
+      "id": "harmony-theory-colorharmony",
+      "subject": "harmony",
+      "group": "modulation",
+      "title": "色彩和声与调式色彩",
+      "en": "",
+      "aliases": [],
+      "definition": "当功能张力减弱，和弦的“色彩”由音程结构、调式特征音、密度、音区与音色共同决定；色彩连接可以替代功能进行。",
+      "note": "应用：印象主义；电影配乐；流行编曲。",
+      "see": []
+    },
+    {
+      "id": "harmony-theory-functionnetwork",
+      "subject": "harmony",
+      "group": "modulation",
+      "title": "功能网与功能转换",
+      "en": "",
+      "aliases": [],
+      "definition": "把和弦视为功能网络中的节点，连接权重由共同音、根音关系、倾向音与历史用法决定；功能可转换、可重叠、可网络化。",
+      "note": "应用：近现代和声分析；和声重配；风格模拟。",
+      "see": []
+    },
+    {
+      "id": "harmony-theory-settheory",
+      "subject": "harmony",
+      "group": "posttonal",
+      "title": "音级集合与集合类",
+      "en": "",
+      "aliases": [],
+      "definition": "无调性音乐用无序音高集合组织音高；集合的移位、倒影、互补与音程向量描述其结构关系。",
+      "note": "应用：无调性分析；动机统一；音高组织。",
+      "see": []
+    },
+    {
+      "id": "harmony-theory-symmetry",
+      "subject": "harmony",
+      "group": "posttonal",
+      "title": "对称音阶与有限移位",
+      "en": "",
+      "aliases": [],
+      "definition": "全音阶、八声音阶、增三/减七和弦具有移位对称性；对称性削弱调性中心，产生“悬浮/循环”音响。",
+      "note": "应用：印象主义；电影悬疑；爵士 altered scale。",
+      "see": []
+    },
+    {
+      "id": "harmony-theory-atonal",
+      "subject": "harmony",
+      "group": "posttonal",
+      "title": "无调性与自由音高组织",
+      "en": "",
+      "aliases": [],
+      "definition": "无调性用音程细胞、集合关系、音区、节奏与音色组织音高，调性功能不再承担结构作用。",
+      "note": "应用：第二维也纳乐派；自由无调性；现代配乐。",
+      "see": []
+    },
+    {
+      "id": "harmony-theory-serialism",
+      "subject": "harmony",
+      "group": "posttonal",
+      "title": "十二音序列与序列和声",
+      "en": "",
+      "aliases": [],
+      "definition": "十二音序列把十二个音级组织成有序集合；和声由序列分段、同时陈述与组合关系产生；调内功能不支配连接。",
+      "note": "应用：勋伯格/贝尔格/韦伯恩；整体序列；现代作曲。",
+      "see": []
+    },
+    {
+      "id": "harmony-theory-prolongation",
+      "subject": "harmony",
+      "group": "structure",
+      "title": "延长、层次与曲式",
+      "en": "",
+      "aliases": [],
+      "definition": "表面和弦延长深层的功能关系；分析要区分结构和弦与装饰和弦，并把和声节奏与曲式层级对应。",
+      "note": "应用：奏鸣曲式；浪漫主义作品；贝多芬分析。",
+      "see": []
+    },
+    {
+      "id": "harmony-theory-form",
+      "subject": "harmony",
+      "group": "structure",
+      "title": "曲式中的和声策略",
+      "en": "",
+      "aliases": [],
+      "definition": "曲式通过调性布局、终止式分布与材料重复来组织；和声策略随段落功能变化（呈示/展开/再现/尾声）。",
+      "note": "应用：奏鸣曲式；三部性；流行曲式。",
+      "see": []
+    },
+    {
+      "id": "harmony-period-commonpractice",
+      "subject": "harmony",
+      "group": "structure",
+      "title": "古典与共同实践",
+      "en": "",
+      "aliases": [
+        "古典"
+      ],
+      "definition": "调性中心、功能语法与声部规范。这里的“古典”是广义的共同实践传统，不限于狭义的古典主义时期；它建立大小调功能、终止、转位与近关系转调的基本语法。",
+      "note": "时间范围：约 1600–1820。",
+      "see": []
+    },
+    {
+      "id": "harmony-period-expandedtonality",
+      "subject": "harmony",
+      "group": "structure",
+      "title": "浪漫主义与调性扩张",
+      "en": "",
+      "aliases": [
+        "浪漫"
+      ],
+      "definition": "交替、变和弦、远关系与色彩功能。浪漫派至早期现代的调性仍以中心音为参照，但通过调式交替、拿波里、增六、减七、等音转调与色彩中介不断扩展功能边界。",
+      "note": "时间范围：约 1820–1945。",
+      "see": []
+    },
+    {
+      "id": "harmony-period-modernposttonal",
+      "subject": "harmony",
+      "group": "structure",
+      "title": "现代与后调性",
+      "en": "",
+      "aliases": [
+        "现代"
+      ],
+      "definition": "对称音阶、集合、无调性与十二音。20 世纪包括“无调性”及其他写法：调性扩张、调式/对称材料、集合组织、十二音与音色和声长期并存。阶段之间重叠，不能用年代替代作品分析。",
+      "note": "时间范围：约 1900 至今。",
+      "see": []
+    },
+    {
+      "id": "harmony-mode",
+      "subject": "harmony",
+      "group": "pitch",
+      "title": "调式",
+      "en": "Mode",
+      "aliases": [],
+      "definition": "以主音、音阶结构和音级关系组织音高材料的系统；同一主音可以对应多种调式。",
+      "note": "",
+      "see": []
+    },
+    {
+      "id": "harmony-key",
+      "subject": "harmony",
+      "group": "pitch",
+      "title": "调性",
+      "en": "Tonality",
+      "aliases": [],
+      "definition": "以主音或主和弦为稳定中心，并由功能、终止与音高材料共同建立的音高组织。",
+      "note": "",
+      "see": []
+    },
+    {
+      "id": "harmony-pitch-class",
+      "subject": "harmony",
+      "group": "pitch",
+      "title": "音级",
+      "en": "Pitch class",
+      "aliases": [],
+      "definition": "忽略八度位置后得到的十二个音高类别，用 0–11 表示；音名拼写仍保留功能信息。",
+      "note": "",
+      "see": []
+    },
+    {
+      "id": "harmony-tonic-function",
+      "subject": "harmony",
+      "group": "function",
+      "title": "主功能",
+      "en": "Tonic function",
+      "aliases": [
+        "T"
+      ],
+      "definition": "以主和弦及主音稳定为中心的功能力量，记作 T；收束与回归通常由它完成。",
+      "note": "",
+      "see": []
+    },
+    {
+      "id": "harmony-subdominant-function",
+      "subject": "harmony",
+      "group": "function",
+      "title": "下属功能",
+      "en": "Subdominant function",
+      "aliases": [
+        "S"
+      ],
+      "definition": "推动音乐离开主中心、预备属功能的功能力量，记作 S；ii、IV 及其变体常承担这一功能。",
+      "note": "",
+      "see": []
+    },
+    {
+      "id": "harmony-dominant-function",
+      "subject": "harmony",
+      "group": "function",
+      "title": "属功能",
+      "en": "Dominant function",
+      "aliases": [
+        "D"
+      ],
+      "definition": "以属和弦、导音和属七和弦的倾向性推动回到主的功能，记作 D。",
+      "note": "",
+      "see": []
+    },
+    {
+      "id": "harmony-color-function",
+      "subject": "harmony",
+      "group": "function",
+      "title": "色彩功能",
+      "en": "Color function",
+      "aliases": [
+        "C"
+      ],
+      "definition": "由调式特征音、和弦结构、音区或音色建立的和声作用，记作 C；它不一定服从 T–S–D 的单一方向。",
+      "note": "",
+      "see": []
+    },
+    {
+      "id": "harmony-tendency-tone",
+      "subject": "harmony",
+      "group": "function",
+      "title": "倾向音",
+      "en": "Tendency tone",
+      "aliases": [],
+      "definition": "在特定调性语法中具有固定解决方向的音，例如属七的导音向上、七音向下。",
+      "note": "",
+      "see": []
+    },
+    {
+      "id": "harmony-voice-leading",
+      "subject": "harmony",
+      "group": "function",
+      "title": "声部进行",
+      "en": "Voice leading",
+      "aliases": [],
+      "definition": "各声部从一音或一和弦移动到下一音或下一和弦的横向轨迹，包括级进、跳进、共同音保持与解决。",
+      "note": "",
+      "see": []
+    },
+    {
+      "id": "harmony-parallel-fifth",
+      "subject": "harmony",
+      "group": "function",
+      "title": "平行五度",
+      "en": "Parallel fifths",
+      "aliases": [],
+      "definition": "两个声部从纯五度同向进行到另一个纯五度；连续空五度会削弱声部独立性。",
+      "note": "",
+      "see": []
+    },
+    {
+      "id": "harmony-parallel-octave",
+      "subject": "harmony",
+      "group": "function",
+      "title": "平行八度",
+      "en": "Parallel octaves",
+      "aliases": [],
+      "definition": "两个声部从八度或同度同向进行到另一个八度或同度；连续完全协和会让声部合并。",
+      "note": "",
+      "see": []
+    },
+    {
+      "id": "harmony-hidden-fifth-octave",
+      "subject": "harmony",
+      "group": "function",
+      "title": "隐伏五度与八度",
+      "en": "Hidden fifths and octaves",
+      "aliases": [],
+      "definition": "外声部同向跳进后进入纯五度或八度，且高声部为跳进；是否受限取决于风格与前后条件。",
+      "note": "",
+      "see": []
+    },
+    {
+      "id": "harmony-nonchord-tone",
+      "subject": "harmony",
+      "group": "function",
+      "title": "和弦外音",
+      "en": "Non-chord tone",
+      "aliases": [],
+      "definition": "不属于当前和弦结构的音，由经过、辅助、延留、先现等方式连接和弦音。",
+      "note": "",
+      "see": []
+    },
+    {
+      "id": "harmony-passing-tone",
+      "subject": "harmony",
+      "group": "function",
+      "title": "经过音",
+      "en": "Passing tone",
+      "aliases": [],
+      "definition": "在两个不同的和弦音之间级进经过的非和弦音，通常位于弱拍或弱位。",
+      "note": "",
+      "see": []
+    },
+    {
+      "id": "harmony-neighbor-tone",
+      "subject": "harmony",
+      "group": "function",
+      "title": "辅助音",
+      "en": "Neighbor tone",
+      "aliases": [],
+      "definition": "从和弦音级进离开后回到同一和弦音的非和弦音，分为上辅助音与下辅助音。",
+      "note": "",
+      "see": []
+    },
+    {
+      "id": "harmony-suspension",
+      "subject": "harmony",
+      "group": "function",
+      "title": "延留音",
+      "en": "Suspension",
+      "aliases": [],
+      "definition": "前一和弦的音延续到后一和弦形成不协和，再级进解决；需要预备、延留与解决三个阶段。",
+      "note": "",
+      "see": []
+    },
+    {
+      "id": "harmony-anticipation",
+      "subject": "harmony",
+      "group": "function",
+      "title": "先现音",
+      "en": "Anticipation",
+      "aliases": [],
+      "definition": "后一和弦的音提前出现在前一和弦中，通常作为弱拍装饰。",
+      "note": "",
+      "see": []
+    },
+    {
+      "id": "harmony-tonicization",
+      "subject": "harmony",
+      "group": "modulation",
+      "title": "离调",
+      "en": "Tonicization",
+      "aliases": [],
+      "definition": "短暂把某一和弦当作临时主音，通过副属、副下属或临时终止建立局部中心，随后回到原调。",
+      "note": "",
+      "see": []
+    },
+    {
+      "id": "harmony-modulation-term",
+      "subject": "harmony",
+      "group": "modulation",
+      "title": "转调",
+      "en": "Modulation",
+      "aliases": [],
+      "definition": "在新调建立稳定中心，并由新调终止或持续功能确认；它与短暂离调的差别在确认程度与结构层级。",
+      "note": "",
+      "see": []
+    },
+    {
+      "id": "harmony-near-related-key",
+      "subject": "harmony",
+      "group": "modulation",
+      "title": "近关系调",
+      "en": "Closely related key",
+      "aliases": [],
+      "definition": "调号相差一个升降号以内、或与主调共享主要功能和弦的调，常用于共同实践时期的转调。",
+      "note": "",
+      "see": []
+    },
+    {
+      "id": "harmony-remote-key",
+      "subject": "harmony",
+      "group": "modulation",
+      "title": "远关系调",
+      "en": "Remote key",
+      "aliases": [],
+      "definition": "与当前调缺少直接共同功能和弦、需要中介、等音或色彩关系连接的调。",
+      "note": "",
+      "see": []
+    },
+    {
+      "id": "counterpoint-period-renaissance",
+      "subject": "counterpoint",
+      "group": "history",
+      "title": "文艺复兴严格对位",
+      "en": "",
+      "aliases": [],
+      "definition": "协和由音程类别决定；不协和必须出现在可解释的位置。纯四度在二声部中被当作不协和，五度与八度虽稳定，却会因连续进行而让声部失去独立性。",
+      "note": "约 1450–1600。没有功能和声作为兜底，两个声部要靠音程等级、节拍位置和解决方式直接组织纵向关系。",
+      "see": []
+    },
+    {
+      "id": "counterpoint-period-baroque",
+      "subject": "counterpoint",
+      "group": "history",
+      "title": "巴洛克自由对位与赋格",
+      "en": "",
+      "aliases": [],
+      "definition": "“自由”对位让不协和按和弦外音、延留、七和弦与离调来解释。主题、答题、对题、间插段和持续音形成可扩展的调性结构。",
+      "note": "约 1600–1750。低音和声成为骨架，对位声部必须同时服从旋律独立与功能进行。赋格要把一个主题变成整首曲子的结构。",
+      "see": []
+    },
+    {
+      "id": "counterpoint-period-romantic",
+      "subject": "counterpoint",
+      "group": "history",
+      "title": "古典—浪漫时期的复调化",
+      "en": "",
+      "aliases": [],
+      "definition": "严格复对位被系统化为教材与可转位练习，同时作曲家把卡农、赋格、倒影和密接嵌入主调织体。半音化扩展和声，但声部解决仍重要。",
+      "note": "约 1750–1900。复调不再只属于独立赋格或教会调式作品，而要在奏鸣曲、交响曲、室内乐与歌剧中承担动机发展和结构连接。",
+      "see": []
+    },
+    {
+      "id": "counterpoint-period-modern",
+      "subject": "counterpoint",
+      "group": "history",
+      "title": "二十世纪以来的现代对位",
+      "en": "",
+      "aliases": [],
+      "definition": "五度可以与八度不再同权；平行五度可被允许，不协和未必需要解决。音阶集合、十二音、多调性与音色分层成为新的约束系统。",
+      "note": "约 1900–今。功能和声不再是共同语法后，纵向协和、解决方向与调性中心都可以重新定义。复调仍要靠线条、音程与结构组织。",
+      "see": []
+    },
+    {
+      "id": "counterpoint-species-first",
+      "subject": "counterpoint",
+      "group": "species",
+      "title": "第一类：一音对一音",
+      "en": "",
+      "aliases": [],
+      "definition": "每个固定调音对一个小节级或同级的对位音；所有纵向音程都必须是协和音程；首尾用完全协和确认调性。",
+      "note": "一音对一时没有经过音可以缓冲，任何不协和都会直接成为结构音。纯四度在二声部中缺乏三度、六度的填充，因此归入不协和。",
+      "see": []
+    },
+    {
+      "id": "counterpoint-species-second",
+      "subject": "counterpoint",
+      "group": "species",
+      "title": "第二类：一音对二音",
+      "en": "",
+      "aliases": [],
+      "definition": "每小节第一个音是强拍结构音，后一个音可以是不协和，但必须是级进经过音或辅助音。",
+      "note": "节奏加快后，弱拍可以用旋律运动填满和声空隙；不协和因此从“结构音”降为“连接音”。",
+      "see": []
+    },
+    {
+      "id": "counterpoint-species-third",
+      "subject": "counterpoint",
+      "group": "species",
+      "title": "第三类：一音对四音",
+      "en": "",
+      "aliases": [],
+      "definition": "每小节第一个音通常是结构音；其余音可由经过音、辅助音或和弦音组成，但不能让平行五/八度在相邻发声音符间出现。",
+      "note": "音符更密，和声节奏仍由固定调和小节首音决定；装饰音越自由，越需要检查相邻实际音程。",
+      "see": []
+    },
+    {
+      "id": "counterpoint-species-fourth",
+      "subject": "counterpoint",
+      "group": "species",
+      "title": "第四类：切分音与延留",
+      "en": "",
+      "aliases": [],
+      "definition": "延留音先在弱拍作为和弦音出现，连线进入下一强拍；若在新和声上不协和，就必须向下级进解决。",
+      "note": "切分让同一音跨越和声变化。协和音变成不协和音时，张力来自和声改变；解决方向因此必须是下行级进。",
+      "see": []
+    },
+    {
+      "id": "counterpoint-species-fifth",
+      "subject": "counterpoint",
+      "group": "species",
+      "title": "第五类：混合节奏",
+      "en": "",
+      "aliases": [],
+      "definition": "合并前四类的音型。结构强拍仍要能读出和声，弱拍可用经过、辅助和延留；节奏重音不能每小节机械重复。",
+      "note": "第五类把多种不协和处理放在同一小节内。判断标准从单一节奏型转为：每个结构点是否有和声解释。",
+      "see": []
+    },
+    {
+      "id": "counterpoint-canon-interval",
+      "subject": "counterpoint",
+      "group": "canon",
+      "title": "音程卡农",
+      "en": "",
+      "aliases": [],
+      "definition": "应句 = 主句移高/移低固定音程",
+      "note": "非八度卡农常需调性调整，避免把旋律推入远关系。",
+      "see": []
+    },
+    {
+      "id": "counterpoint-canon-inversion",
+      "subject": "counterpoint",
+      "group": "canon",
+      "title": "倒影卡农",
+      "en": "",
+      "aliases": [],
+      "definition": "应句把主句的旋律方向围绕轴音反向进行；轴音决定哪些音程保持不变。",
+      "note": "轴音决定哪些音程保持不变、哪些会改变性质。",
+      "see": []
+    },
+    {
+      "id": "counterpoint-canon-retrograde",
+      "subject": "counterpoint",
+      "group": "canon",
+      "title": "逆行卡农",
+      "en": "",
+      "aliases": [],
+      "definition": "应句从主句末尾向开头复制",
+      "note": "节奏与和声必须从两端同时成立，写作难度高于同向卡农。",
+      "see": []
+    },
+    {
+      "id": "counterpoint-canon-augmentation",
+      "subject": "counterpoint",
+      "group": "canon",
+      "title": "扩大/缩小卡农",
+      "en": "",
+      "aliases": [],
+      "definition": "应句把主句的节奏时值按固定比例扩大或缩小，形成时间尺度上的变形。",
+      "note": "时值扩大后，原本弱拍的不协和可能落到强拍，必须重新检查。",
+      "see": []
+    },
+    {
+      "id": "counterpoint-canon-infinite",
+      "subject": "counterpoint",
+      "group": "canon",
+      "title": "无终卡农",
+      "en": "",
+      "aliases": [],
+      "definition": "结尾同时可作为开头的对位",
+      "note": "关键是最后一句既要接回开头，又要成为前一句的合法对位。",
+      "see": []
+    },
+    {
+      "id": "counterpoint-canon-double",
+      "subject": "counterpoint",
+      "group": "canon",
+      "title": "二重卡农",
+      "en": "",
+      "aliases": [],
+      "definition": "两条主句同时被两条应句模仿",
+      "note": "除横向卡农关系外，还要保证纵向可转位或可结合。",
+      "see": []
+    },
+    {
+      "id": "counterpoint-fugue-subject",
+      "subject": "counterpoint",
+      "group": "fugue",
+      "title": "主题",
+      "en": "",
+      "aliases": [],
+      "definition": "首部动机清楚；调性明确；能承受答题、对题、紧接与变形。",
+      "note": "判断问题：它是否短到能记住，又长到能成为完整乐思？",
+      "see": []
+    },
+    {
+      "id": "counterpoint-fugue-answer",
+      "subject": "counterpoint",
+      "group": "fugue",
+      "title": "答题",
+      "en": "",
+      "aliases": [],
+      "definition": "通常上五度/下四度；真实答题或守调答题；尾部是否回主调。",
+      "note": "判断问题：主题的主属冲突是否需要守调调整？",
+      "see": []
+    },
+    {
+      "id": "counterpoint-fugue-countersubject",
+      "subject": "counterpoint",
+      "group": "fugue",
+      "title": "对题",
+      "en": "",
+      "aliases": [],
+      "definition": "固定对题要与主题构成可转位组合；自由对题可只出现一次。",
+      "note": "判断问题：它能否在主题与答题之间保持节奏与音调对比？",
+      "see": []
+    },
+    {
+      "id": "counterpoint-fugue-exposition",
+      "subject": "counterpoint",
+      "group": "fugue",
+      "title": "呈示部",
+      "en": "",
+      "aliases": [],
+      "definition": "二声部 T–A；三声部 T–A–T；四声部 T–A–T–A；可加补充进入。",
+      "note": "判断问题：所有声部是否都在主属范围内完成进入？",
+      "see": []
+    },
+    {
+      "id": "counterpoint-fugue-episode",
+      "subject": "counterpoint",
+      "group": "fugue",
+      "title": "间插段",
+      "en": "",
+      "aliases": [],
+      "definition": "材料来自主题/对题/小结尾；和声不稳定；结尾导入下一调。",
+      "note": "判断问题：它是否承担连接、模进或转调？",
+      "see": []
+    },
+    {
+      "id": "counterpoint-fugue-middle",
+      "subject": "counterpoint",
+      "group": "fugue",
+      "title": "中间部",
+      "en": "",
+      "aliases": [],
+      "definition": "完整主题进入与间插段交替；关系调、下属方向、远关系按篇幅安排。",
+      "note": "判断问题：调性是否离开主属轴心，同时保持主题轮廓？",
+      "see": []
+    },
+    {
+      "id": "counterpoint-fugue-stretto",
+      "subject": "counterpoint",
+      "group": "fugue",
+      "title": "密接和应",
+      "en": "",
+      "aliases": [],
+      "definition": "进入间隔、音程、音区、调性都要设计；常在高潮或再现前出现。",
+      "note": "判断问题：主题能否在未结束时叠入另一声部？",
+      "see": []
+    },
+    {
+      "id": "counterpoint-fugue-pedal",
+      "subject": "counterpoint",
+      "group": "fugue",
+      "title": "持续音",
+      "en": "",
+      "aliases": [],
+      "definition": "属持续加强回归；主持续确认收束；可在任何声部或形成持续和弦。",
+      "note": "判断问题：它是否在和弦音上开始并以和弦音结束？",
+      "see": []
+    },
+    {
+      "id": "counterpoint-fugue-recap",
+      "subject": "counterpoint",
+      "group": "fugue",
+      "title": "再现与尾声",
+      "en": "",
+      "aliases": [],
+      "definition": "不原样重复；可改变声部顺序、对题、紧接、倒影、扩大或织体。",
+      "note": "判断问题：主调是否回归，材料是否获得总结？",
+      "see": []
+    },
+    {
+      "id": "counterpoint-fugue-multiple",
+      "subject": "counterpoint",
+      "group": "fugue",
+      "title": "多重赋格",
+      "en": "",
+      "aliases": [],
+      "definition": "二重/三重主题通常先写成八度或其它音程的二/三重对位。",
+      "note": "判断问题：每个主题是否都能独立呈示并与其它主题结合？",
+      "see": []
+    },
+    {
+      "id": "counterpoint-counterpoint",
+      "subject": "counterpoint",
+      "group": "basics",
+      "title": "对位",
+      "en": "Counterpoint",
+      "aliases": [],
+      "definition": "两个或多个旋律线同时进行时，由横向方向、纵向音程、节拍位置和解决关系共同形成的写作语法。",
+      "note": "",
+      "see": []
+    },
+    {
+      "id": "counterpoint-species-counterpoint",
+      "subject": "counterpoint",
+      "group": "basics",
+      "title": "分类对位",
+      "en": "Species counterpoint",
+      "aliases": [],
+      "definition": "按固定调与对位声部的节奏比例分级训练的严格对位方法，从一音对一音推进到混合节奏。",
+      "note": "",
+      "see": []
+    },
+    {
+      "id": "counterpoint-cantus-firmus",
+      "subject": "counterpoint",
+      "group": "basics",
+      "title": "固定调",
+      "en": "Cantus firmus",
+      "aliases": [],
+      "definition": "作为对位写作骨架的既有旋律，通常按全音符或较长时值陈述，其他声部围绕它组织音程与解决。",
+      "note": "",
+      "see": []
+    },
+    {
+      "id": "counterpoint-strict-counterpoint",
+      "subject": "counterpoint",
+      "group": "basics",
+      "title": "严格对位",
+      "en": "Strict counterpoint",
+      "aliases": [],
+      "definition": "以教会调式、分类节奏和协和音程等级为核心的对位训练语法。",
+      "note": "",
+      "see": []
+    },
+    {
+      "id": "counterpoint-free-counterpoint",
+      "subject": "counterpoint",
+      "group": "basics",
+      "title": "自由对位",
+      "en": "Free counterpoint",
+      "aliases": [],
+      "definition": "以大小调功能和声为底层，不协和按和弦外音、七和弦与离调解释的对位语法。",
+      "note": "",
+      "see": []
+    },
+    {
+      "id": "counterpoint-imitation",
+      "subject": "counterpoint",
+      "group": "basics",
+      "title": "模仿",
+      "en": "Imitation",
+      "aliases": [],
+      "definition": "后一声部重复前一声部材料的写法；重复可以改变音程、时值、方向或进入时间。",
+      "note": "",
+      "see": []
+    },
+    {
+      "id": "counterpoint-invertible-counterpoint",
+      "subject": "counterpoint",
+      "group": "basics",
+      "title": "复对位",
+      "en": "Invertible counterpoint",
+      "aliases": [],
+      "definition": "两条或更多旋律交换上下位置后仍能成立的对位组合；转位音程需预先计算。",
+      "note": "",
+      "see": []
+    },
+    {
+      "id": "counterpoint-interval-inversion",
+      "subject": "counterpoint",
+      "group": "basics",
+      "title": "音程转位",
+      "en": "Interval inversion",
+      "aliases": [],
+      "definition": "把下方音移高八度或上方音移低八度后得到的新音程；原音程与转位音程的度数相加为九。",
+      "note": "",
+      "see": []
+    },
+    {
+      "id": "counterpoint-consonance",
+      "subject": "counterpoint",
+      "group": "basics",
+      "title": "协和音程",
+      "en": "Consonance",
+      "aliases": [],
+      "definition": "在特定对位语法中可以作为独立结构音的音程；严格二声部对位以三度、六度、五度和八度为主要协和音程。",
+      "note": "",
+      "see": []
+    },
+    {
+      "id": "counterpoint-dissonance",
+      "subject": "counterpoint",
+      "group": "basics",
+      "title": "不协和音程",
+      "en": "Dissonance",
+      "aliases": [],
+      "definition": "需要经过、辅助、延留或解决处理的音程；其合法性取决于节拍位置和前后运动。",
+      "note": "",
+      "see": []
+    },
+    {
+      "id": "counterpoint-passing-tone-cp",
+      "subject": "counterpoint",
+      "group": "basics",
+      "title": "经过音",
+      "en": "Passing tone",
+      "aliases": [],
+      "definition": "在两个不同音之间级进经过的弱拍音，用来填充旋律运动。",
+      "note": "",
+      "see": []
+    },
+    {
+      "id": "counterpoint-neighbor-tone-cp",
+      "subject": "counterpoint",
+      "group": "basics",
+      "title": "辅助音",
+      "en": "Neighbor tone",
+      "aliases": [],
+      "definition": "离开结构音后级进返回同一结构音的弱拍音。",
+      "note": "",
+      "see": []
+    },
+    {
+      "id": "counterpoint-suspension-cp",
+      "subject": "counterpoint",
+      "group": "basics",
+      "title": "延留音",
+      "en": "Suspension",
+      "aliases": [],
+      "definition": "前一拍预备为协和音，跨过和声变化后在强拍形成不协和，并通常下行级进解决。",
+      "note": "",
+      "see": []
+    },
+    {
+      "id": "counterpoint-anticipation-cp",
+      "subject": "counterpoint",
+      "group": "basics",
+      "title": "先现音",
+      "en": "Anticipation",
+      "aliases": [],
+      "definition": "后一和声的音提前进入前一拍，形成弱拍不协和或节奏连接。",
+      "note": "",
+      "see": []
+    },
+    {
+      "id": "counterpoint-parallel-fifth-cp",
+      "subject": "counterpoint",
+      "group": "basics",
+      "title": "平行五度",
+      "en": "Parallel fifths",
+      "aliases": [],
+      "definition": "两声部连续同向进入纯五度；严格对位逐对发声音符检查，不只看每拍首音。",
+      "note": "",
+      "see": []
+    },
+    {
+      "id": "counterpoint-parallel-octave-cp",
+      "subject": "counterpoint",
+      "group": "basics",
+      "title": "平行八度",
+      "en": "Parallel octaves",
+      "aliases": [],
+      "definition": "两声部连续同向进入八度或同度；完全协和连续出现会让声部失去独立性。",
+      "note": "",
+      "see": []
+    },
+    {
+      "id": "counterpoint-hidden-perfect-cp",
+      "subject": "counterpoint",
+      "group": "basics",
+      "title": "隐伏五度与八度",
+      "en": "Hidden fifths and octaves",
+      "aliases": [],
+      "definition": "外声部同向跳进进入纯五度或八度；严格写作中需要结合旋律方向与前后音程判断。",
+      "note": "",
+      "see": []
+    },
+    {
+      "id": "counterpoint-voice-crossing",
+      "subject": "counterpoint",
+      "group": "basics",
+      "title": "声部超越",
+      "en": "Voice crossing",
+      "aliases": [],
+      "definition": "一个声部越过相邻声部后继续停留在其另一侧，导致声部顺序改变。",
+      "note": "",
+      "see": []
+    },
+    {
+      "id": "counterpoint-voice-overlap",
+      "subject": "counterpoint",
+      "group": "basics",
+      "title": "声部交错",
+      "en": "Voice overlap",
+      "aliases": [],
+      "definition": "后一音越过相邻声部前一音的位置，造成短暂交叠。",
+      "note": "",
+      "see": []
+    },
+    {
+      "id": "counterpoint-canon",
+      "subject": "counterpoint",
+      "group": "canon",
+      "title": "卡农",
+      "en": "Canon",
+      "aliases": [],
+      "definition": "同一主句按固定时间差和音程关系被后续声部模仿，并可叠加变形、重复轮次与更多声部。",
+      "note": "",
+      "see": []
+    },
+    {
+      "id": "counterpoint-fugue",
+      "subject": "counterpoint",
+      "group": "fugue",
+      "title": "赋格",
+      "en": "Fugue",
+      "aliases": [],
+      "definition": "以一个主题在多个声部依次进入为基础，通过答题、对题、间插段、中间部、密接和应和再现组织全曲的复调体裁。",
+      "note": "",
+      "see": []
+    },
+    {
+      "id": "counterpoint-real-answer",
+      "subject": "counterpoint",
+      "group": "fugue",
+      "title": "真实答题",
+      "en": "Real answer",
+      "aliases": [],
+      "definition": "把主题严格移位到属方向，保留主题全部音程的答题。",
+      "note": "",
+      "see": []
+    },
+    {
+      "id": "counterpoint-tonal-answer",
+      "subject": "counterpoint",
+      "group": "fugue",
+      "title": "守调答题",
+      "en": "Tonal answer",
+      "aliases": [],
+      "definition": "在主题越过主属边界处调整音程，使答题继续留在主调范围内的答题。",
+      "note": "",
+      "see": []
+    },
+    {
+      "id": "counterpoint-linear-counterpoint",
+      "subject": "counterpoint",
+      "group": "history",
+      "title": "线性对位",
+      "en": "Linear counterpoint",
+      "aliases": [],
+      "definition": "以各线条的旋律完整、音程关系和音区分离为主要组织手段，功能和声不承担唯一约束。",
+      "note": "",
+      "see": []
+    },
+    {
+      "id": "counterpoint-polymodality",
+      "subject": "counterpoint",
+      "group": "history",
+      "title": "多调性",
+      "en": "Polytonality",
+      "aliases": [],
+      "definition": "不同声部或层次同时围绕不同调中心组织音高，纵向关系由音程与材料协调。",
+      "note": "",
+      "see": []
+    },
+    {
+      "id": "counterpoint-twelve-tone-cp",
+      "subject": "counterpoint",
+      "group": "history",
+      "title": "十二音",
+      "en": "Twelve-tone",
+      "aliases": [],
+      "definition": "把十二个音级组织成序列，并通过原型、逆行、倒影与逆行倒影安排音高关系的复调材料。",
+      "note": "",
+      "see": []
+    },
+    {
+      "id": "counterpoint-pitch-class-set-cp",
+      "subject": "counterpoint",
+      "group": "history",
+      "title": "音级集合",
+      "en": "Pitch-class set",
+      "aliases": [],
+      "definition": "用无序音高类别及其移位、倒影、补集和音程向量描述无调性音高关系的分析单位。",
+      "note": "",
+      "see": []
+    },
+    {
+      "id": "counterpoint-timbre-layering",
+      "subject": "counterpoint",
+      "group": "history",
+      "title": "音色分层",
+      "en": "Timbre layering",
+      "aliases": [],
+      "definition": "用不同音色、音区和发音法划分同时进行的线条，使音色成为可听辨的结构参数。",
+      "note": "",
+      "see": []
+    },
+    {
+      "id": "orchestration-layer-acoustics",
+      "subject": "orchestration",
+      "group": "layers",
+      "title": "声学与听觉",
+      "en": "",
+      "aliases": [],
+      "definition": "配器分析层级：声音怎样产生、被分辨与被掩蔽？",
+      "note": "",
+      "see": []
+    },
+    {
+      "id": "orchestration-layer-instrument",
+      "subject": "orchestration",
+      "group": "layers",
+      "title": "乐器能力",
+      "en": "",
+      "aliases": [],
+      "definition": "配器分析层级：每件乐器在不同音区、力度与时间条件下能做什么？",
+      "note": "",
+      "see": []
+    },
+    {
+      "id": "orchestration-layer-structure",
+      "subject": "orchestration",
+      "group": "layers",
+      "title": "结构分析",
+      "en": "",
+      "aliases": [],
+      "definition": "配器分析层级：总谱里有哪些独立结构层？",
+      "note": "",
+      "see": []
+    },
+    {
+      "id": "orchestration-layer-combination",
+      "subject": "orchestration",
+      "group": "layers",
+      "title": "组合语法",
+      "en": "",
+      "aliases": [],
+      "definition": "配器分析层级：同度、八度、混合加倍、分部与排列怎样改变结果？",
+      "note": "",
+      "see": []
+    },
+    {
+      "id": "orchestration-layer-balance",
+      "subject": "orchestration",
+      "group": "layers",
+      "title": "平衡与织体",
+      "en": "",
+      "aliases": [],
+      "definition": "配器分析层级：听者能否按预期分辨各层？",
+      "note": "",
+      "see": []
+    },
+    {
+      "id": "orchestration-layer-time",
+      "subject": "orchestration",
+      "group": "layers",
+      "title": "时间过程",
+      "en": "",
+      "aliases": [],
+      "definition": "配器分析层级：转接、呼应、全奏与高潮怎样形成过程？",
+      "note": "",
+      "see": []
+    },
+    {
+      "id": "orchestration-layer-notation",
+      "subject": "orchestration",
+      "group": "layers",
+      "title": "风格与制谱",
+      "en": "",
+      "aliases": [],
+      "definition": "配器分析层级：历史条件、记谱与可演奏性怎样约束选择？",
+      "note": "",
+      "see": []
+    },
+    {
+      "id": "orchestration-node-spectrum",
+      "subject": "orchestration",
+      "group": "layer-acoustics",
+      "title": "频谱与音色",
+      "en": "",
+      "aliases": [],
+      "definition": "音色由基频、谐波强度、共振峰与噪声成分共同决定。",
+      "note": "同一音高在不同乐器上会有不同的谐波分布和共振峰；音区改变时，这些分布也随之改变。音色随音高、力度与演奏法变化，不能当作固定标签。",
+      "see": []
+    },
+    {
+      "id": "orchestration-node-transient",
+      "subject": "orchestration",
+      "group": "layer-acoustics",
+      "title": "起音与瞬态",
+      "en": "",
+      "aliases": [],
+      "definition": "起音阶段常比稳态更能区分乐器，也决定合奏是否整齐。",
+      "note": "弓压、气流、舌奏、槌击和唇振的起始速度不同，形成不同瞬态。瞬态对齐时，多个乐器更容易融合；瞬态错开时，即使音高相同也会听成两个事件。",
+      "see": []
+    },
+    {
+      "id": "orchestration-node-loudness",
+      "subject": "orchestration",
+      "group": "layer-acoustics",
+      "title": "响度与力度曲线",
+      "en": "",
+      "aliases": [],
+      "definition": "感知响度取决于音区、频谱、持续时间和演奏力度，乐器数量只是其中一个变量。",
+      "note": "相同数量的加倍不会线性增加响度；不同音区的等响曲线也不同。一个在舒适音区强奏的乐器，可能比两件在极端音区弱奏的乐器更突出。",
+      "see": []
+    },
+    {
+      "id": "orchestration-node-masking",
+      "subject": "orchestration",
+      "group": "layer-acoustics",
+      "title": "掩蔽",
+      "en": "",
+      "aliases": [],
+      "definition": "当两个声音在频谱、时间与空间上重叠，较弱者会被较强者遮住。",
+      "note": "掩蔽取决于重叠的频带、时间包络、声源方向与听者的注意力。相同或相近音区、相同节奏、相近瞬态最容易互相掩蔽。",
+      "see": []
+    },
+    {
+      "id": "orchestration-node-range",
+      "subject": "orchestration",
+      "group": "layer-instrument",
+      "title": "音域与有效音区",
+      "en": "",
+      "aliases": [],
+      "definition": "能奏出某音仍需检查是否可用；极端音区会改变音量、音色、音准与控制成本。",
+      "note": "乐器的物理音域、常用音域和高强度音域彼此不同。越接近边界，动态余量、发音稳定性和音色可控性越差。",
+      "see": []
+    },
+    {
+      "id": "orchestration-node-envelope",
+      "subject": "orchestration",
+      "group": "layer-instrument",
+      "title": "力度包络与持续",
+      "en": "",
+      "aliases": [],
+      "definition": "每种发音都有起音、衰减、持续和释放；织体必须服从这条时间曲线。",
+      "note": "弦乐可维持并改变音量，管乐受气息限制，钢琴与拨弦自然衰减，打击乐的瞬态和余音决定可写节奏。持续能力与力度曲线共同约束声部写法。",
+      "see": []
+    },
+    {
+      "id": "orchestration-node-agility",
+      "subject": "orchestration",
+      "group": "layer-instrument",
+      "title": "敏捷度与发音法",
+      "en": "",
+      "aliases": [],
+      "definition": "快速音型、连奏、跳奏和滑音的可行性因乐器与音区而异。",
+      "note": "按键、按弦、换把、滑管和双簧控制都有时间成本。音型越密、跨度越大、连断变化越多，实际可达到的速度和清晰度越低。",
+      "see": []
+    },
+    {
+      "id": "orchestration-node-endurance",
+      "subject": "orchestration",
+      "group": "layer-instrument",
+      "title": "耐力与换气/换弓",
+      "en": "",
+      "aliases": [],
+      "definition": "演奏者的生理限制会改变乐句长度、力度和音准。",
+      "note": "管乐需要换气，铜管高音区消耗唇力，弦乐持续强奏消耗弓段与体力。超出耐力后，音准、音色和力度都会下降。",
+      "see": []
+    },
+    {
+      "id": "orchestration-node-transposition",
+      "subject": "orchestration",
+      "group": "layer-instrument",
+      "title": "移调与总谱顺序",
+      "en": "",
+      "aliases": [],
+      "definition": "记谱音高、实际发声音高与总谱位置必须分开核对。",
+      "note": "移调乐器写作音与实际发声存在固定音程；不同乐器的记谱音区也会改变演奏难度。配器判断必须以实际发声音高和音区为准。",
+      "see": []
+    },
+    {
+      "id": "orchestration-node-timbreroles",
+      "subject": "orchestration",
+      "group": "layer-instrument",
+      "title": "融合度与穿透力",
+      "en": "",
+      "aliases": [],
+      "definition": "融合与穿透由音区、力度和相邻声部共同决定，乐器名称只提供粗略预期。",
+      "note": "频谱越接近、起音越一致，融合越强；频谱越集中、音区越突出、瞬态越清晰，穿透越强。同一乐器可以在不同条件下承担不同角色。",
+      "see": []
+    },
+    {
+      "id": "orchestration-node-layers",
+      "subject": "orchestration",
+      "group": "layer-structure",
+      "title": "结构层识别",
+      "en": "",
+      "aliases": [],
+      "definition": "先忽略乐器音色，把总谱还原为旋律、低音、和声、对位、踏板与节奏层。",
+      "note": "配器分析先确定音乐由哪些结构因素构成，再查看乐器怎样分配。乐器清单属于第二层信息。",
+      "see": []
+    },
+    {
+      "id": "orchestration-node-priority",
+      "subject": "orchestration",
+      "group": "layer-structure",
+      "title": "角色优先级",
+      "en": "",
+      "aliases": [],
+      "definition": "先决定听者此刻必须听清什么，再分配乐器与力度。",
+      "note": "同一时刻各结构层的听觉权重不同。旋律、低音、对位、节奏和特殊音色可以轮流成为前景；没有优先级，所有乐器平均用力只会降低清晰度。",
+      "see": []
+    },
+    {
+      "id": "orchestration-node-unison",
+      "subject": "orchestration",
+      "group": "layer-combination",
+      "title": "同度加倍",
+      "en": "",
+      "aliases": [],
+      "definition": "同度加倍巩固音高、音准与音色，不增加新的旋律声部。",
+      "note": "两个乐器奏同一实际音高时，基频相同，差异主要在谐波与瞬态。它会增加同频带的响度贡献和音准稳定，也会增加掩蔽与音准冲突。",
+      "see": []
+    },
+    {
+      "id": "orchestration-node-octave",
+      "subject": "orchestration",
+      "group": "layer-combination",
+      "title": "八度加倍",
+      "en": "",
+      "aliases": [],
+      "definition": "八度加倍扩展音高平面与高频能量，不新增结构因素；是否增加该声部的响度贡献，取决于人数、组别与音区。",
+      "note": "八度关系的基频成 2:1，谐波高度重合，听感仍归入同一个旋律声部。辟斯顿比较单个声部时指出，八度重复不增加该声部的响度贡献，同度重复会增加；原书把这一差别称为“音的重量”。阿德勒讨论八度全奏时，响度与频带覆盖来自多个八度、更多组别与更多演奏者同时扩张。两者测量对象不同，不能把“加一个八度”直接等同于“加倍响度”。",
+      "see": []
+    },
+    {
+      "id": "orchestration-node-mixeddoubling",
+      "subject": "orchestration",
+      "group": "layer-combination",
+      "title": "混合加倍",
+      "en": "",
+      "aliases": [],
+      "definition": "不同乐器同奏会合成新的频谱，补充的是频带和瞬态，结构层数量不变。",
+      "note": "混合音色的结果取决于各乐器谐波、共振峰和起音的叠加。互补的频带会补足对应频段的能量并提高清晰度，重叠的频带只会增加响度和掩蔽。",
+      "see": []
+    },
+    {
+      "id": "orchestration-node-divisi",
+      "subject": "orchestration",
+      "group": "layer-combination",
+      "title": "分部与多弦",
+      "en": "",
+      "aliases": [],
+      "definition": "弦乐分部能增加和弦音与独立线条，但会减少每一声部的人数、响度贡献和统一度。",
+      "note": "把同一弦乐组拆成更多声部，可获得更完整的和声或对位；代价是每个分部的演奏者减少、音准协调变难、强奏时的响度与统一度下降。",
+      "see": []
+    },
+    {
+      "id": "orchestration-node-spacing",
+      "subject": "orchestration",
+      "group": "layer-combination",
+      "title": "和弦排列与间距",
+      "en": "",
+      "aliases": [],
+      "definition": "低音区需要更宽的音程，高音区可以更密；间距影响清晰度和各频段的响度分配。",
+      "note": "低频波长大，相邻低音的谐波更容易落在同一临界带内，形成粗糙或浑浊；上方声部间距较小仍可分辨。和弦排列要结合音区与音色；固定四声部模板不能覆盖所有情况。",
+      "see": []
+    },
+    {
+      "id": "orchestration-node-pedal",
+      "subject": "orchestration",
+      "group": "layer-combination",
+      "title": "踏板音与持续音",
+      "en": "",
+      "aliases": [],
+      "definition": "持续音固定调中心或和声框架，同时减少中声部的攻击事件。",
+      "note": "持续低音或中音提供稳定参照，使上方和声变化更容易被听成同一中心内的变化。持续音也占据一个频带与一个演奏资源，可能限制内声部。",
+      "see": []
+    },
+    {
+      "id": "orchestration-node-fgmg",
+      "subject": "orchestration",
+      "group": "layer-balance",
+      "title": "前景、中景、背景",
+      "en": "",
+      "aliases": [],
+      "definition": "把全乐队分配到不同听觉层级，让每层拥有可分辨的音区、节奏或力度位置。",
+      "note": "听者同时能分辨的独立层有限。前景需要最清晰的音区、瞬态和力度；中景提供对位或节奏支撑；背景提供和声、持续与音色。层级差异必须能被听出来，不能只写在分析表里。",
+      "see": []
+    },
+    {
+      "id": "orchestration-node-maskingcontrol",
+      "subject": "orchestration",
+      "group": "layer-balance",
+      "title": "掩蔽控制",
+      "en": "",
+      "aliases": [],
+      "definition": "先改变音区与时间，再改变音色与力度；四者按代价从低到高排列。",
+      "note": "音区分离最直接，节奏/起音分离次之，音色分离需要乐器资源，力度分离会压缩表情范围。有效的配器通常同时使用两到三种分离手段。",
+      "see": []
+    },
+    {
+      "id": "orchestration-node-density",
+      "subject": "orchestration",
+      "group": "layer-balance",
+      "title": "织体密度",
+      "en": "",
+      "aliases": [],
+      "definition": "密度由同时发声的独立层数、音区占用和事件速率共同决定。",
+      "note": "增加乐器数量不一定增加有效密度；增加独立节奏、独立音区和独立音色才会显著增加听感复杂度。同度加倍只增加同频带的响度贡献与人数支撑，不增加可辨独立层数。",
+      "see": []
+    },
+    {
+      "id": "orchestration-node-transfer",
+      "subject": "orchestration",
+      "group": "layer-time",
+      "title": "乐器转接",
+      "en": "",
+      "aliases": [],
+      "definition": "换手要交叠音高、力度与发音，否则线条会在换手处出现音量凹陷或音色跳变。",
+      "note": "不同乐器的起音、音色和力度曲线不同。转接时短暂交叠可以让后一乐器先建立声音，再让前一乐器退出；完全齐切容易造成音量凹陷或音色跳变。",
+      "see": []
+    },
+    {
+      "id": "orchestration-node-call",
+      "subject": "orchestration",
+      "group": "layer-time",
+      "title": "呼应、对答与回声",
+      "en": "",
+      "aliases": [],
+      "definition": "用音色、音区和空间位置划分句法；同一句平均分给所有乐器会削弱句法轮廓。",
+      "note": "听者用音色变化和空间位置追踪声源。短句交给不同音区或不同组别，可以形成对话；重复时降低力度、改变音区或加弱音器，可以形成回声。",
+      "see": []
+    },
+    {
+      "id": "orchestration-node-tutti",
+      "subject": "orchestration",
+      "group": "layer-time",
+      "title": "全奏",
+      "en": "",
+      "aliases": [],
+      "definition": "全奏为不同结构层分配不同权重，各层使用各自材料。",
+      "note": "全奏的力度来自多个频带和多个结构层同时被填充。让每件乐器都奏同一音型会受音域限制、造成瞬态拥挤，实际清晰度反而下降。",
+      "see": []
+    },
+    {
+      "id": "orchestration-node-build",
+      "subject": "orchestration",
+      "group": "layer-time",
+      "title": "积累与释放",
+      "en": "",
+      "aliases": [],
+      "definition": "高潮需要可听的积累过程和释放后的对比；持续最大密度会消除这种参照。",
+      "note": "听感上的增长依赖频谱变宽、音区扩展、力度上升、事件密度增加和协和/不协和张力。把所有参数同时拉满后，后续变化就失去参照。",
+      "see": []
+    },
+    {
+      "id": "orchestration-node-style",
+      "subject": "orchestration",
+      "group": "layer-notation",
+      "title": "历史风格与可用资源",
+      "en": "",
+      "aliases": [],
+      "definition": "编制、乐器构造和演奏惯例会改变可行写法；声学原理不变，选择范围会变。",
+      "note": "自然铜管受调性与音高限制，阀键铜管扩大了半音能力；木管按键与演奏技术也随时代变化。历史风格判断必须落实到具体乐器、音区和演奏法。",
+      "see": []
+    },
+    {
+      "id": "orchestration-node-score",
+      "subject": "orchestration",
+      "group": "layer-notation",
+      "title": "总谱实现与检查",
+      "en": "",
+      "aliases": [],
+      "definition": "把配器决定写成可演奏、可校对、可分谱的记谱。",
+      "note": "总谱必须同时满足实际音高、移调、谱号、换气、换弓、力度、分页和分谱提取。任何一项错误都会让原本合理的配器无法实现。",
+      "see": []
+    },
+    {
+      "id": "orchestration-period-classical",
+      "subject": "orchestration",
+      "group": "history",
+      "title": "古典时期",
+      "en": "",
+      "aliases": [],
+      "definition": "弦乐组构成稳定核心，木管与铜管按角色和调性条件加入；优先保证旋律、低音与和声层的清晰分工。",
+      "note": "约 1700–1820。弦乐四声部成为可复用的基础；木管常作同度/八度补强或音色对比；自然铜管受音高与调性限制；低音与和声框架先于音色装饰。",
+      "see": []
+    },
+    {
+      "id": "orchestration-period-expanded",
+      "subject": "orchestration",
+      "group": "history",
+      "title": "浪漫时期",
+      "en": "",
+      "aliases": [],
+      "definition": "阀键铜管、辅助木管和大型打击乐进入常规编制；力度范围、音色混合和结构层次同时扩张。",
+      "note": "约 1820–1945。铜管可演奏完整半音并承担旋律；木管组扩展高、低端音域；前景/中景/背景成为乐队整体分配问题；加倍、混合音色与全奏规模显著增加。",
+      "see": []
+    },
+    {
+      "id": "orchestration-period-modern",
+      "subject": "orchestration",
+      "group": "history",
+      "title": "现代时期",
+      "en": "",
+      "aliases": [],
+      "definition": "音色、噪声、瞬态、极端音区和空间位置可以直接构成结构；传统角色分工仍可用，但不再是唯一语法。",
+      "note": "约 1900 至今。音色成为独立的结构参数；打击乐与扩展技法参与音高/时间组织；极端音区与不稳定频谱被有意使用；分层、拼贴、音块与点描不再服从单一功能和声层级。",
+      "see": []
+    },
+    {
+      "id": "orchestration-orchestration",
+      "subject": "orchestration",
+      "group": "layers",
+      "title": "配器",
+      "en": "Orchestration",
+      "aliases": [
+        "管弦乐法"
+      ],
+      "definition": "把音高材料、结构层、乐器能力、音区、响度、音色与演奏条件分配到具体乐器组合的写作与检查过程。",
+      "note": "",
+      "see": []
+    },
+    {
+      "id": "orchestration-fundamental",
+      "subject": "orchestration",
+      "group": "layer-acoustics",
+      "title": "基频",
+      "en": "Fundamental frequency",
+      "aliases": [],
+      "definition": "周期性振动的最低频率，决定听到的基本音高；泛音位于其整数倍附近。",
+      "note": "",
+      "see": []
+    },
+    {
+      "id": "orchestration-harmonic",
+      "subject": "orchestration",
+      "group": "layer-acoustics",
+      "title": "谐波",
+      "en": "Harmonic",
+      "aliases": [],
+      "definition": "基频整数倍附近的频率成分，其相对强度影响音色与融合。",
+      "note": "",
+      "see": []
+    },
+    {
+      "id": "orchestration-formant",
+      "subject": "orchestration",
+      "group": "layer-acoustics",
+      "title": "共振峰",
+      "en": "Formant",
+      "aliases": [],
+      "definition": "乐器或声道共振形成的频率能量峰，强化特定频带并影响元音感、音色与穿透力。",
+      "note": "",
+      "see": []
+    },
+    {
+      "id": "orchestration-noise-component",
+      "subject": "orchestration",
+      "group": "layer-acoustics",
+      "title": "噪声成分",
+      "en": "Noise component",
+      "aliases": [],
+      "definition": "气流、弓噪、槌击等非周期成分，常集中在起音或特殊演奏法中。",
+      "note": "",
+      "see": []
+    },
+    {
+      "id": "orchestration-equal-loudness",
+      "subject": "orchestration",
+      "group": "layer-acoustics",
+      "title": "等响曲线",
+      "en": "Equal-loudness contour",
+      "aliases": [],
+      "definition": "描述不同频率在同一声压级下听感响度差异的曲线；音区改变时，平衡判断也要改变。",
+      "note": "",
+      "see": []
+    },
+    {
+      "id": "orchestration-critical-band",
+      "subject": "orchestration",
+      "group": "layer-acoustics",
+      "title": "临界频带",
+      "en": "Critical band",
+      "aliases": [],
+      "definition": "听觉频率分辨率的一段范围；相近频率落在同一临界带内时更容易互相掩蔽。",
+      "note": "",
+      "see": []
+    },
+    {
+      "id": "orchestration-written-pitch",
+      "subject": "orchestration",
+      "group": "layer-instrument",
+      "title": "记谱音高",
+      "en": "Written pitch",
+      "aliases": [],
+      "definition": "移调乐器谱面上写出的音高，与实际发声音高相差固定音程。",
+      "note": "",
+      "see": []
+    },
+    {
+      "id": "orchestration-sounding-pitch",
+      "subject": "orchestration",
+      "group": "layer-instrument",
+      "title": "实际发声音高",
+      "en": "Sounding pitch",
+      "aliases": [],
+      "definition": "乐器发声后到达听者的真实音高，配器中的音区、间距与掩蔽判断以此为准。",
+      "note": "",
+      "see": []
+    },
+    {
+      "id": "orchestration-breath",
+      "subject": "orchestration",
+      "group": "layer-instrument",
+      "title": "换气",
+      "en": "Breath",
+      "aliases": [],
+      "definition": "管乐演奏者重新吸气的位置；乐句长度、力度和音区消耗共同决定可行间隔。",
+      "note": "",
+      "see": []
+    },
+    {
+      "id": "orchestration-bowing",
+      "subject": "orchestration",
+      "group": "layer-instrument",
+      "title": "换弓与弓法",
+      "en": "Bowing",
+      "aliases": [],
+      "definition": "弦乐通过弓段、弓速、弓压和换弓方向控制起音、持续与力度；写法需要给换弓留出位置。",
+      "note": "",
+      "see": []
+    },
+    {
+      "id": "orchestration-mute",
+      "subject": "orchestration",
+      "group": "layer-instrument",
+      "title": "弱音器",
+      "en": "Mute",
+      "aliases": [],
+      "definition": "附加在乐器上改变振动与辐射的装置，通常削弱高频、改变瞬态与音量。",
+      "note": "",
+      "see": []
+    },
+    {
+      "id": "orchestration-vibrato",
+      "subject": "orchestration",
+      "group": "layer-instrument",
+      "title": "揉弦",
+      "en": "Vibrato",
+      "aliases": [],
+      "definition": "通过周期性改变音高或张力形成的波动，影响持续音的色彩、融合与表现。",
+      "note": "",
+      "see": []
+    },
+    {
+      "id": "orchestration-part-extraction",
+      "subject": "orchestration",
+      "group": "layer-notation",
+      "title": "分谱",
+      "en": "Part extraction",
+      "aliases": [],
+      "definition": "从总谱提取给各演奏者使用的独立声部，需要检查移调、休止、换页、换气和分句。",
+      "note": "",
+      "see": []
+    },
+    {
+      "id": "orchestration-piano-reduction",
+      "subject": "orchestration",
+      "group": "layer-notation",
+      "title": "缩谱",
+      "en": "Piano reduction",
+      "aliases": [],
+      "definition": "把总谱压缩到钢琴或少量谱表用于排练与核对；缩谱上的可行写法仍需回到实际乐器检查。",
+      "note": "",
+      "see": []
+    },
+    {
+      "id": "orchestration-texture",
+      "subject": "orchestration",
+      "group": "layer-balance",
+      "title": "织体",
+      "en": "Texture",
+      "aliases": [],
+      "definition": "同时发声的结构层、音区占用、节奏密度与音色分工形成的整体组织。",
+      "note": "",
+      "see": []
+    },
+    {
+      "id": "form-node-motive",
+      "subject": "form",
+      "group": "material",
+      "title": "动机",
+      "en": "Motive",
+      "aliases": [],
+      "definition": "最短的可识别材料单位；其价值来自音程、节奏、重音或和声特征能否在变化中保持身份。",
+      "note": "判断问题：哪些特征使两处材料被听成同一动机？",
+      "see": []
+    },
+    {
+      "id": "form-node-phrase",
+      "subject": "form",
+      "group": "material",
+      "title": "乐句",
+      "en": "Phrase",
+      "aliases": [],
+      "definition": "由一个或数个乐节组成、通常以终止或可感句读收束的旋律单位。乐句边界必须由材料分组和终止共同支持。",
+      "note": "判断问题：哪些材料分组与终止使这组音在此处形成句读？",
+      "see": []
+    },
+    {
+      "id": "form-node-period",
+      "subject": "form",
+      "group": "material",
+      "title": "乐段",
+      "en": "Period",
+      "aliases": [],
+      "definition": "能表达一个相对完整乐思、并以终止形成呼应或闭合的句法单位。平行、对比、起承转合、复乐段等差异取决于材料关系与终止关系。",
+      "note": "判断问题：这是一个乐段、两个乐段，还是更大曲式的一部分？",
+      "see": []
+    },
+    {
+      "id": "form-node-cadence",
+      "subject": "form",
+      "group": "closure",
+      "title": "终止",
+      "en": "Cadence",
+      "aliases": [],
+      "definition": "终止式和声、旋律落点与节奏停顿共同形成结构标点，决定句读与收尾层级。",
+      "note": "判断问题：哪一个终止真正结束了当前层级？",
+      "see": []
+    },
+    {
+      "id": "form-node-repetition",
+      "subject": "form",
+      "group": "process",
+      "title": "重复",
+      "en": "Repetition",
+      "aliases": [],
+      "definition": "原样或近似重述材料，用来确认主题身份、扩大规模并建立听者的记忆预期。",
+      "note": "判断问题：重复的是旋律、节奏、和声框架，还是整体段落？",
+      "see": []
+    },
+    {
+      "id": "form-node-variation",
+      "subject": "form",
+      "group": "process",
+      "title": "变化",
+      "en": "Variation",
+      "aliases": [],
+      "definition": "保留部分识别特征，同时改变旋律、节奏、和声、织体或音色；变化程度决定它仍是重复、变奏还是新材料。",
+      "note": "判断问题：哪些参数保持不变，哪些参数被改变？",
+      "see": []
+    },
+    {
+      "id": "form-node-contrast",
+      "subject": "form",
+      "group": "process",
+      "title": "对比",
+      "en": "Contrast",
+      "aliases": [],
+      "definition": "在材料、调性、织体、速度或体裁上引入可辨差异，从而划分段落并建立张力。",
+      "note": "判断问题：对比发生在哪一级：乐句内部、段落之间，还是乐章之间？",
+      "see": []
+    },
+    {
+      "id": "form-node-return",
+      "subject": "form",
+      "group": "process",
+      "title": "回归",
+      "en": "Return",
+      "aliases": [],
+      "definition": "在对比或展开之后重新建立开头材料或主调。回归可以原样、变化、动力化或仅局部出现。",
+      "note": "判断问题：回归的是材料、调性，还是两者同时回归？",
+      "see": []
+    },
+    {
+      "id": "form-node-tonalplan",
+      "subject": "form",
+      "group": "process",
+      "title": "调性布局",
+      "en": "Tonal Plan",
+      "aliases": [],
+      "definition": "调性离开、到达与回归的路径；它能把相同材料组织成不同结构，也能在材料变化时维持整体统一。",
+      "note": "判断问题：哪些调性被建立，哪些只被经过？最后回到什么调？",
+      "see": []
+    },
+    {
+      "id": "form-form-single",
+      "subject": "form",
+      "group": "types",
+      "title": "单一部曲式",
+      "en": "One-Part Form",
+      "aliases": [
+        "单一部"
+      ],
+      "definition": "以乐段或乐段群独立构成全曲。内部可以有扩充、补充、复乐段、展开或对比因素，但结尾才形成全曲级闭合。",
+      "note": "判定：识别主乐思的完整终止；确认没有形成独立对比段；若出现复乐段，说明后半属于重复，未形成新的结构层级；把扩充、补充和尾声与基本段落分开。",
+      "see": []
+    },
+    {
+      "id": "form-form-binary",
+      "subject": "form",
+      "group": "types",
+      "title": "二部曲式",
+      "en": "Binary Form",
+      "aliases": [
+        "二部"
+      ],
+      "definition": "由两个结构部分共同完成全曲。第二部分可以并列对比、展开第一部分的材料，或带有局部再现；其结尾承担整曲闭合。",
+      "note": "判定：确认两个部分各自承担独立结构功能，并共同完成全曲；判断 B 是新材料、A 的展开，还是含再现；检查 B 的末尾是否完成主调闭合。",
+      "see": []
+    },
+    {
+      "id": "form-form-ternary",
+      "subject": "form",
+      "group": "types",
+      "title": "三部曲式",
+      "en": "Ternary Form",
+      "aliases": [
+        "三部"
+      ],
+      "definition": "A—B—A 的呈示、对比与再现结构。判定点是第三部分形成可辨识的再现；段落数量本身不构成判据。",
+      "note": "判定：比较 A 与 A′ 的主题身份、调性和终止；确认 B 形成段落级对比；句内变化不足以构成 B 段；判断 A′ 是原样、变化、减缩或动力化再现。",
+      "see": []
+    },
+    {
+      "id": "form-form-compound",
+      "subject": "form",
+      "group": "types",
+      "title": "复三部曲式",
+      "en": "Compound Ternary Form",
+      "aliases": [
+        "复三部"
+      ],
+      "definition": "整体为 A—B—A，其中 A 与 B 各自达到二部或三部等独立曲式层级。常见 B 为三声中部或插部性中部。",
+      "note": "判定：把大段 A 和 B 继续向下分段，确认内部曲式成立；判断 B 是三声中部型稳定中部，还是插部型展开中部；检查整曲层面是否形成 A—B—A。",
+      "see": []
+    },
+    {
+      "id": "form-form-rondo",
+      "subject": "form",
+      "group": "types",
+      "title": "回旋曲式",
+      "en": "Rondo Form",
+      "aliases": [
+        "回旋"
+      ],
+      "definition": "主部 A 多次回归，其间由对比插部 B、C 等分隔。常见 A—B—A—C—A；主部回归可原样或变化。",
+      "note": "判定：标出主部 A 的每次完整或可辨回归；确认插部形成段落级对比，并区分展开性插部与对比性插部；检查主部回归时调性与材料是否保持或变化。",
+      "see": []
+    },
+    {
+      "id": "form-form-variation",
+      "subject": "form",
+      "group": "types",
+      "title": "变奏曲式",
+      "en": "Variation Form",
+      "aliases": [
+        "变奏"
+      ],
+      "definition": "主题及其一系列变奏构成全曲。固定低音、固定和声、固定旋律、装饰变奏与自由变奏的差别，在于每次变奏保留哪一层材料。",
+      "note": "判定：确认主题与变奏构成全曲主干；局部重复不足以构成变奏曲式；逐段列出保留项：低音、和声、旋律、结构或性格；判断变奏类型及变奏组的调性、速度与织体布局。",
+      "see": []
+    },
+    {
+      "id": "form-form-sonata",
+      "subject": "form",
+      "group": "types",
+      "title": "奏鸣曲式",
+      "en": "Sonata Form",
+      "aliases": [
+        "奏鸣"
+      ],
+      "definition": "以呈示部的调性二分、展开部的调性不稳定和再现部的调性统一为核心。典型呈示部含主部、连接部、副部、结束部，但主题数量可按作品变化。",
+      "note": "判定：划分呈示部四部分，确认主部与副部群的调性关系；检查展开部的调性运动、假再现与准备句；确认再现部副部或副题群是否回到主调；区分完全奏鸣、省略展开部与古奏鸣曲式。",
+      "see": []
+    },
+    {
+      "id": "form-form-sonata-rondo",
+      "subject": "form",
+      "group": "types",
+      "title": "回旋奏鸣曲式",
+      "en": "Sonata-Rondo Form",
+      "aliases": [
+        "回旋奏鸣"
+      ],
+      "definition": "回旋的多重回归与奏鸣的调性服从结合。典型为 A—B—A—C—A—B—A，C 常承担展开功能，末次 B 回到主调。",
+      "note": "判定：先按回旋确认 A 的多次回归；再按奏鸣确认 B 与 B′ 的调性关系；判断 C 是展开部、插部还是两者结合。",
+      "see": []
+    },
+    {
+      "id": "form-form-cycle",
+      "subject": "form",
+      "group": "types",
+      "title": "套曲曲式",
+      "en": "Cyclic Form",
+      "aliases": [
+        "套曲"
+      ],
+      "definition": "多个相对独立的乐章或大型段落组成整体。统一可由调性计划、速度与体裁对比、主题关联、叙事或仪式功能建立。",
+      "note": "判定：比较乐章之间的调性、速度、体裁与主题关系；区分古组曲、新型组曲、奏鸣—交响套曲与声乐套曲；确认整体存在跨乐章的结构安排；任意集合不足以构成套曲。",
+      "see": []
+    },
+    {
+      "id": "form-form-mixed",
+      "subject": "form",
+      "group": "types",
+      "title": "混合与自由曲式",
+      "en": "Mixed / Free Form",
+      "aliases": [
+        "混合 / 自由"
+      ],
+      "definition": "组合两种以上曲式原则，或以非典型次序组织段落；单一模板无法完整解释。",
+      "note": "判定：先分段，再标出每段所用的结构原则；检查调性布局与主题回归是否互相支持；说明为何单一曲式名称不足以覆盖全曲。",
+      "see": []
+    },
+    {
+      "id": "form-principle-1",
+      "subject": "form",
+      "group": "principle",
+      "title": "同一性",
+      "en": "",
+      "aliases": [],
+      "definition": "让听者确认材料身份，并形成记忆预期。",
+      "note": "结构操作：重复、模进、变奏。",
+      "see": []
+    },
+    {
+      "id": "form-principle-2",
+      "subject": "form",
+      "group": "principle",
+      "title": "对比性",
+      "en": "",
+      "aliases": [],
+      "definition": "切分结构、制造张力，为回归建立距离。",
+      "note": "结构操作：新主题、新调性、新织体、新速度。",
+      "see": []
+    },
+    {
+      "id": "form-principle-3",
+      "subject": "form",
+      "group": "principle",
+      "title": "闭合性",
+      "en": "",
+      "aliases": [],
+      "definition": "把连续音乐切成可命名的句法层级。",
+      "note": "结构操作：终止、调性稳定、节奏停顿。",
+      "see": []
+    },
+    {
+      "id": "form-principle-4",
+      "subject": "form",
+      "group": "principle",
+      "title": "层级性",
+      "en": "",
+      "aliases": [],
+      "definition": "区分单三部与复三部、单乐章与套曲。",
+      "note": "结构操作：段落内部再分段，或若干段落合成大段。",
+      "see": []
+    },
+    {
+      "id": "form-form",
+      "subject": "form",
+      "group": "material",
+      "title": "曲式",
+      "en": "Form",
+      "aliases": [],
+      "definition": "由材料身份、句法分组、终止层级、调性布局和段落比例共同形成的结构类型。",
+      "note": "",
+      "see": []
+    },
+    {
+      "id": "form-theme",
+      "subject": "form",
+      "group": "material",
+      "title": "主题",
+      "en": "Theme",
+      "aliases": [],
+      "definition": "能建立作品或段落身份、并可供重复、变化、展开或回归的材料单位。",
+      "note": "",
+      "see": []
+    },
+    {
+      "id": "form-phrase-member",
+      "subject": "form",
+      "group": "material",
+      "title": "乐节",
+      "en": "Phrase member",
+      "aliases": [],
+      "definition": "乐句内部由材料分组、重音或和声节奏切出的较小句法单位。",
+      "note": "",
+      "see": []
+    },
+    {
+      "id": "form-period-group",
+      "subject": "form",
+      "group": "material",
+      "title": "复乐段",
+      "en": "Double period",
+      "aliases": [],
+      "definition": "由两个或更多乐段组合成更高一级句法单位的结构；各乐段通常形成呼应或并置。",
+      "note": "",
+      "see": []
+    },
+    {
+      "id": "form-punctuation",
+      "subject": "form",
+      "group": "material",
+      "title": "句读",
+      "en": "Phrase punctuation",
+      "aliases": [],
+      "definition": "由材料停顿、和声终止、节奏收束和旋律落点共同形成的句法标点。",
+      "note": "",
+      "see": []
+    },
+    {
+      "id": "form-perfect-cadence",
+      "subject": "form",
+      "group": "closure",
+      "title": "全终止",
+      "en": "Authentic cadence",
+      "aliases": [],
+      "definition": "由属到主并在主调形成稳定收束的终止，通常结束乐句、乐段或更大结构层级。",
+      "note": "",
+      "see": []
+    },
+    {
+      "id": "form-half-cadence",
+      "subject": "form",
+      "group": "closure",
+      "title": "半终止",
+      "en": "Half cadence",
+      "aliases": [],
+      "definition": "停在属功能或其他开放和弦上的终止，形成未完成感并保留后续继续。",
+      "note": "",
+      "see": []
+    },
+    {
+      "id": "form-plagal-cadence",
+      "subject": "form",
+      "group": "closure",
+      "title": "变格终止",
+      "en": "Plagal cadence",
+      "aliases": [],
+      "definition": "由下属到主的终止，常用于圣咏、尾声或强化主调色彩。",
+      "note": "",
+      "see": []
+    },
+    {
+      "id": "form-deceptive-cadence",
+      "subject": "form",
+      "group": "closure",
+      "title": "阻碍终止",
+      "en": "Deceptive cadence",
+      "aliases": [],
+      "definition": "属和弦本应进入主和弦，却进入六级或其他替代和弦，从而推迟收束并扩展乐句。",
+      "note": "",
+      "see": []
+    },
+    {
+      "id": "form-modulatory-cadence",
+      "subject": "form",
+      "group": "closure",
+      "title": "转调终止",
+      "en": "Modulatory cadence",
+      "aliases": [],
+      "definition": "在新调中形成终止并确认新调，同时结束前一结构层级。",
+      "note": "",
+      "see": []
+    },
+    {
+      "id": "form-false-cadence",
+      "subject": "form",
+      "group": "closure",
+      "title": "假终止",
+      "en": "False cadence",
+      "aliases": [],
+      "definition": "出现类似终止的和声或停顿，但后续材料继续展开，收束层级并未真正完成。",
+      "note": "",
+      "see": []
+    },
+    {
+      "id": "form-sequence",
+      "subject": "form",
+      "group": "process",
+      "title": "模进",
+      "en": "Sequence",
+      "aliases": [],
+      "definition": "同一材料或和声型按固定音程、级数或节奏反复移位，形成方向明确的结构过程。",
+      "note": "",
+      "see": []
+    },
+    {
+      "id": "form-expansion",
+      "subject": "form",
+      "group": "process",
+      "title": "扩充",
+      "en": "Expansion",
+      "aliases": [],
+      "definition": "在句法单位内部通过重复、模进、阻碍或延长终止扩大篇幅，结构边界仍保持开放。",
+      "note": "",
+      "see": []
+    },
+    {
+      "id": "form-supplement",
+      "subject": "form",
+      "group": "process",
+      "title": "补充",
+      "en": "Supplement",
+      "aliases": [],
+      "definition": "结构已经闭合后追加的材料，用来加强终止、延长结束感或引入连接。",
+      "note": "",
+      "see": []
+    },
+    {
+      "id": "form-development",
+      "subject": "form",
+      "group": "process",
+      "title": "展开",
+      "en": "Development",
+      "aliases": [],
+      "definition": "把已有材料拆解、模进、转调、对位化或改变织体，使材料离开原始形态并建立张力。",
+      "note": "",
+      "see": []
+    },
+    {
+      "id": "form-exposition",
+      "subject": "form",
+      "group": "section",
+      "title": "呈示部",
+      "en": "Exposition",
+      "aliases": [],
+      "definition": "提出主要主题、建立主调与副部调性关系并完成段落闭合的结构部分。",
+      "note": "",
+      "see": []
+    },
+    {
+      "id": "form-development-section",
+      "subject": "form",
+      "group": "section",
+      "title": "展开部",
+      "en": "Development section",
+      "aliases": [],
+      "definition": "以材料发展、调性不稳定和段落重组制造距离，为再现准备回归。",
+      "note": "",
+      "see": []
+    },
+    {
+      "id": "form-recapitulation",
+      "subject": "form",
+      "group": "section",
+      "title": "再现部",
+      "en": "Recapitulation",
+      "aliases": [],
+      "definition": "主要材料回归，并通过调性服从把呈示部中分离的调性区域统一到主调。",
+      "note": "",
+      "see": []
+    },
+    {
+      "id": "form-main-theme",
+      "subject": "form",
+      "group": "section",
+      "title": "主部",
+      "en": "Principal theme group",
+      "aliases": [],
+      "definition": "奏鸣曲式中首先建立主调与主要材料的段落。",
+      "note": "",
+      "see": []
+    },
+    {
+      "id": "form-transition",
+      "subject": "form",
+      "group": "section",
+      "title": "连接部",
+      "en": "Transition",
+      "aliases": [],
+      "definition": "在主部与副部之间完成材料过渡、调性转移并为副部准备新调的段落。",
+      "note": "",
+      "see": []
+    },
+    {
+      "id": "form-subordinate-theme",
+      "subject": "form",
+      "group": "section",
+      "title": "副部",
+      "en": "Subordinate theme group",
+      "aliases": [],
+      "definition": "奏鸣曲式中与主部形成材料或调性对比的主题区域，再现时通常回到主调。",
+      "note": "",
+      "see": []
+    },
+    {
+      "id": "form-closing-section",
+      "subject": "form",
+      "group": "section",
+      "title": "结束部",
+      "en": "Closing section",
+      "aliases": [],
+      "definition": "呈示部或再现部中巩固副部调性、补充材料并完成段落闭合的部分。",
+      "note": "",
+      "see": []
+    },
+    {
+      "id": "form-trio",
+      "subject": "form",
+      "group": "section",
+      "title": "三声中部",
+      "en": "Trio",
+      "aliases": [],
+      "definition": "复三部曲式中间段的常见类型，材料与织体较独立，常带有舞曲或进行性特征。",
+      "note": "",
+      "see": []
+    },
+    {
+      "id": "form-episode",
+      "subject": "form",
+      "group": "section",
+      "title": "插部",
+      "en": "Episode",
+      "aliases": [],
+      "definition": "回旋或复三部结构中位于主部之间的对比段落，材料通常不承担主部身份。",
+      "note": "",
+      "see": []
+    },
+    {
+      "id": "form-introduction",
+      "subject": "form",
+      "group": "section",
+      "title": "引子",
+      "en": "Introduction",
+      "aliases": [],
+      "definition": "主题或主部出现之前的准备段落，用来建立调性、速度、气氛或材料线索。",
+      "note": "",
+      "see": []
+    },
+    {
+      "id": "form-coda",
+      "subject": "form",
+      "group": "section",
+      "title": "尾声",
+      "en": "Coda",
+      "aliases": [],
+      "definition": "主要结构闭合之后用于总结、扩展终止或改变结构重心的结束段落。",
+      "note": "",
+      "see": []
+    },
+    {
+      "id": "form-tonal-subordination",
+      "subject": "form",
+      "group": "analysis",
+      "title": "调性服从",
+      "en": "Tonal subordination",
+      "aliases": [],
+      "definition": "奏鸣原则中副部在再现时回到主调，使呈示部的调性二分在再现部得到统一。",
+      "note": "",
+      "see": []
+    },
+    {
+      "id": "form-false-recapitulation",
+      "subject": "form",
+      "group": "analysis",
+      "title": "假再现",
+      "en": "False recapitulation",
+      "aliases": [],
+      "definition": "主部材料在主调尚未真正回归时提前出现，用来延迟或强化真正的再现。",
+      "note": "",
+      "see": []
+    },
+    {
+      "id": "form-structural-level",
+      "subject": "form",
+      "group": "analysis",
+      "title": "结构层级",
+      "en": "Structural level",
+      "aliases": [],
+      "definition": "同一段落可以同时属于乐句、乐段、单曲式或复曲式的不同层级，判断需说明当前分析尺度。",
+      "note": "",
+      "see": []
+    },
+    {
+      "id": "form-arch-form",
+      "subject": "form",
+      "group": "analysis",
+      "title": "拱形结构",
+      "en": "Arch form",
+      "aliases": [],
+      "definition": "材料、调性或段落关系以中心为轴形成对称对应，常见 A–B–C–B′–A′。",
+      "note": "",
+      "see": []
+    },
+    {
+      "id": "form-symmetry-form",
+      "subject": "form",
+      "group": "analysis",
+      "title": "对称结构",
+      "en": "Symmetrical form",
+      "aliases": [],
+      "definition": "段落、比例或调性关系围绕中心轴形成镜像或对应；判断需要核对两端材料与调性。",
+      "note": "",
+      "see": []
+    }
+  ]
+}
